@@ -3,7 +3,7 @@ import path from "path";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import { bibliotecaCultural } from "./src/data/bibliotecaCultural.js";
-import { resolverMensagemLocalmente, sugerirTemasAlternativos } from "./src/utils/conversationalEngine.js";
+import { resolverMensagemLocalmente, sugerirTemasAlternativos, extrairNome } from "./src/utils/conversationalEngine.js";
 
 const app = express();
 const PORT = 3000;
@@ -344,9 +344,19 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
 // --- API CHAT HANDLER (ALIASES AS /api/groq FOR BACKWARDS COMPATIBILITY) ---
 app.post("/api/groq", async (req: Request, res: Response) => {
   try {
-    const { mensagem } = req.body;
+    const { mensagem, nomeCrianca: clientNomeCrianca } = req.body;
     if (!mensagem || typeof mensagem !== "string") {
       return res.status(400).json({ error: "Mensagem é obrigatória" });
+    }
+
+    let nomeCrianca = clientNomeCrianca || null;
+    let acabouDeSeApresentar = false;
+
+    // Detect / extract child name from the current message
+    const nomeExtraido = extrairNome(mensagem);
+    if (nomeExtraido) {
+      nomeCrianca = nomeExtraido;
+      acabouDeSeApresentar = true;
     }
 
     const lib = await carregarBiblioteca();
@@ -377,17 +387,26 @@ app.post("/api/groq", async (req: Request, res: Response) => {
     if (!textoFinal) {
       if (ai) {
         try {
+          let systemInstruction = 
+            "Você é o Candinho, um professor de arte e pintor muito simpático e acolhedor para crianças de 10 anos. " +
+            "Responda sempre em português de forma simples, alegre e muito breve (máximo 3 frases). " +
+            "Sempre use uma linguagem positiva e entusiasmada, usando analogias de pintura e pinceladas. " +
+            "NUNCA repita o nome do artista mais de duas vezes. " +
+            "Se não descobrir sobre quem é o artista, responda gentilmente: 'Não conheço esse artista ainda, mas vou pesquisar na minha paleta! 🎨'. " +
+            "Diga se o artista nasceu ou faleceu em tal época de forma amigável no corpo do texto, sem criar listas ou cabeçalhos.";
+
+          if (nomeCrianca) {
+            systemInstruction += ` O nome da criança que está conversando com você é ${nomeCrianca}. Trate-a com muito carinho e use o nome dela em suas respostas de forma natural e fofa para manter uma conversa acolhedora e focar na arte (por exemplo, chamando-a de 'meu amigo ${nomeCrianca}' ou '${nomeCrianca}').`;
+            if (acabouDeSeApresentar) {
+              systemInstruction += ` IMPORTANTE: A criança acabou de falar o nome dela pela primeira vez (${nomeCrianca}). Seja extremamente simpático, comemore saber o nome dela e dê as boas-vindas calorosamente!`;
+            }
+          }
+
           const responseGemini = await ai.models.generateContent({
             model: "gemini-3.5-flash",
             contents: mensagem,
             config: {
-              systemInstruction: 
-                "Você é o Candinho, um professor de arte e pintor muito simpático e acolhedor para crianças de 10 anos. " +
-                "Responda sempre em português de forma simples, alegre e muito breve (máximo 3 frases). " +
-                "Sempre use uma linguagem positiva e entusiasmada, usando analogias de pintura e pinceladas. " +
-                "NUNCA repita o nome do artista mais de duas vezes. " +
-                "Se não descobrir sobre quem é o artista, responda gentilmente: 'Não conheço esse artista ainda, mas vou pesquisar na minha paleta! 🎨'. " +
-                "Diga se o artista nasceu ou faleceu em tal época de forma amigável no corpo do texto, sem criar listas ou cabeçalhos.",
+              systemInstruction: systemInstruction,
               temperature: 0.5,
             },
           });
@@ -402,6 +421,24 @@ app.post("/api/groq", async (req: Request, res: Response) => {
       }
     }
 
+    // Se temos o nome da criança E usamos as respostas do dicionário local/fallback (que não passam pelo Gemini),
+    // nós personalizamos e tecemos o nome neles de forma dinâmica!
+    if (nomeCrianca && (localResult || !ai)) {
+      if (acabouDeSeApresentar) {
+        textoFinal = `Que espetáculo de nome, **${nomeCrianca}**! 🎨 Que alegria gigante ter você aqui comigo na minha paleta de descobertas! ✨\n\n${textoFinal}`;
+      } else if (Math.random() < 0.35) {
+        // 35% chance of inserting the child's name in standard local replies so it feels organic
+        const nameIntros = [
+          `Veja só, **${nomeCrianca}**: `,
+          `Sabe, **${nomeCrianca}**, `,
+          `Olha que interessante, **${nomeCrianca}**! `,
+          `Que pergunta fantástica, **${nomeCrianca}**! `
+        ];
+        const chosenIntro = nameIntros[Math.floor(Math.random() * nameIntros.length)];
+        textoFinal = `${chosenIntro}${textoFinal}`;
+      }
+    }
+
     // 3. Busca Imagem Unificada (Wikimedia com fallback para Pexels)
     const imagemResult = await buscarImagem(mensagem, localResult?.matchedKey, lib);
 
@@ -411,7 +448,8 @@ app.post("/api/groq", async (req: Request, res: Response) => {
       image: imagemResult,
       info: infoExtra.nascimento || infoExtra.morte || infoExtra.estilo ? infoExtra : null,
       googleArts: { url: `https://artsandculture.google.com/search?q=${encodeURIComponent(mensagem)}` },
-      matchedKey: localResult?.matchedKey
+      matchedKey: localResult?.matchedKey,
+      nomeCrianca: nomeCrianca
     });
 
   } catch (error) {

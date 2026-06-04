@@ -1,3 +1,5 @@
+import { CURIOSIDADES_ACERVO, buscarCuriosidadePorKeyword } from "../data/curiosidadesAcervo.js";
+
 export interface DialogIntent {
   keywords: string[];
   reply: string;
@@ -246,6 +248,18 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
 
+  // Step A.00: Check our rich curiosities acervo first for precise keyword questions
+  const matchedCuriosity = buscarCuriosidadePorKeyword(mensagem);
+  if (matchedCuriosity) {
+    let reply = `💡 **Que curiosidade fantástica!**\n\n**Pergunta:** ${matchedCuriosity.pergunta}\n\n👉 **Resposta:** ${matchedCuriosity.resposta}`;
+    if (matchedCuriosity.detalhes) {
+      reply += `\n\n🤓 **Curiosidade extra:** ${matchedCuriosity.detalhes}`;
+    }
+    return {
+      reply: reply
+    };
+  }
+
   // Step A.0: Check for specific Candinho / Portinari / Artists triggers with high-priority word-boundary regexes
   for (const intent of PORTINARI_INTENTS) {
     const matched = intent.keywords.some(keyword => {
@@ -290,9 +304,14 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
     normalizedMsg.includes("fato da arte") ||
     normalizedMsg.includes("fato")
   ) {
-    const randomCuriosity = getRandomElement(CURIOSIDADES_CANDINHO);
+    // Combine standard curiosities with the detailed ones from our acervo
+    const allAcervoItems = CURIOSIDADES_ACERVO.flatMap(cat => 
+      cat.items.map(item => `${item.emoji} **${item.pergunta}**\n${item.resposta}`)
+    );
+    const combinedCuriosities = [...CURIOSIDADES_CANDINHO, ...allAcervoItems];
+    const randomCuriosity = getRandomElement(combinedCuriosities);
     return {
-      reply: `Uau! O universo da arte é cheio de segredos fantásticos e mistérios mágicos! ✨ Veja que curiosidade sensacional eu busquei na minha paleta de conhecimentos:\n\n💡 **Você sabia?** ${randomCuriosity}\n\nIncrível, não é? A arte sempre nos ajuda a ver em novos tons! Se quiser ouvir outra curiosidade ou saber sobre algum pintor, me pergunte! 🎨`
+      reply: `Uau! O universo da arte é cheio de segredos fantásticos e mistérios mágicos! ✨ Veja que curiosidade sensacional eu busquei na minha paleta de conhecimentos:\n\n💡 ${randomCuriosity}\n\nIncrível, não é? A arte sempre nos ajuda a ver em novos tons! Se quiser ouvir outra curiosidade ou saber sobre algum pintor, me pergunte! 🎨`
     };
   }
 
@@ -348,3 +367,44 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
   // If nothing matches, we return null so the handler knows it can fall back to AI *only* if the API is configured and online.
   return null;
 }
+
+// 6. Name extraction helper for kids
+export function extrairNome(mensagem: string): string | null {
+  const normalized = mensagem.trim();
+  
+  // Patterns for name extraction in Portuguese
+  const patterns = [
+    /(?:meu nome é|meu nome e)\s+([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:me chamo)\s+([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:sou o|sou a|sou)\s+([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:me chamam de|chamam de)\s+([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:pode me chamar de|me chama de)\s+([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:aqui é o|aqui é a|aqui e o|aqui e a)\s+([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:oi,?\s+sou\s+o|oi,?\s+sou\s+a|oi,?\s+sou)\s+([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:oi,?\s+me\s+chamo)\s+([A-ZÀ-ÿa-z\s]+)/i
+  ];
+
+  // Stopwords list of common words we shouldn't confuse as names
+  const ignoreWords = [
+    "um", "uma", "o", "a", "ele", "ela", "artista", "pintor", "desenho", 
+    "quadro", "arte", "amigo", "candinho", "professor", "aluno", "curioso",
+    "fazer", "desenhar", "colorir"
+  ];
+
+  for (const pattern of patterns) {
+    const match = normalized.match(pattern);
+    if (match && match[1]) {
+      // Grab only the first word from what match returned to avoid full sentences
+      const rawName = match[1].trim().split(/\s+/)[0];
+      if (rawName.length >= 2 && rawName.length < 20) {
+        const lowerName = rawName.toLowerCase();
+        if (!ignoreWords.includes(lowerName)) {
+          // Capitalize first letter properly
+          return rawName.charAt(0).toUpperCase() + rawName.slice(1).toLowerCase();
+        }
+      }
+    }
+  }
+  return null;
+}
+

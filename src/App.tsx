@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { bibliotecaCultural } from "./data/bibliotecaCultural";
-import { resolverMensagemLocalmente } from "./utils/conversationalEngine";
+import { resolverMensagemLocalmente, extrairNome } from "./utils/conversationalEngine";
 
 interface ImagePayload {
   imagemUrl: string;
@@ -31,20 +31,35 @@ export default function App() {
   const [inputValue, setInputValue] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
   const [modalImage, setModalImage] = useState<ImagePayload | null>(null);
-  
+  const [nomeCrianca, setNomeCrianca] = useState<string>(() => {
+    return localStorage.getItem("candinho_nome_crianca") || "";
+  });
+
   const chatEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   // Initial welcome message
   useEffect(() => {
-    setMessages([
-      {
-        id: "welcome",
-        text: "Olá! Sou o Candinho, seu amigo artista. O que vamos descobrir hoje? 🎨",
-        sender: "bot",
-        timestamp: new Date()
-      }
-    ]);
+    const nomeSalvo = localStorage.getItem("candinho_nome_crianca") || "";
+    if (nomeSalvo) {
+      setMessages([
+        {
+          id: "welcome",
+          text: `Olá, **${nomeSalvo}**! Que alegria te ver de novo na minha paleta de descobertas! O que vamos descobrir hoje, meu pequeno artista? 🎨`,
+          sender: "bot",
+          timestamp: new Date()
+        }
+      ]);
+    } else {
+      setMessages([
+        {
+          id: "welcome",
+          text: "Olá! Sou o Candinho, seu amigo artista. O que vamos descobrir hoje? 🎨 Como você se chama?",
+          sender: "bot",
+          timestamp: new Date()
+        }
+      ]);
+    }
   }, []);
 
   // Smooth scroll to bottom of chat
@@ -71,6 +86,15 @@ export default function App() {
     const queryText = text.trim();
     if (!queryText || isProcessing) return;
 
+    // Direct name extraction client-side for immediate state updates & persistence
+    const nomeEncontrado = extrairNome(queryText);
+    let updatedNome = nomeCrianca;
+    if (nomeEncontrado) {
+      setNomeCrianca(nomeEncontrado);
+      localStorage.setItem("candinho_nome_crianca", nomeEncontrado);
+      updatedNome = nomeEncontrado;
+    }
+
     // 1. Add user message
     const userMessage: Message = {
       id: `user-${Date.now()}`,
@@ -91,7 +115,10 @@ export default function App() {
       const response = await fetch("/api/groq", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ mensagem: queryText })
+        body: JSON.stringify({ 
+          mensagem: queryText,
+          nomeCrianca: updatedNome
+        })
       });
 
       if (!response.ok) {
@@ -99,6 +126,12 @@ export default function App() {
       }
 
       const data = await response.json();
+
+      // Update name if the server discovered it or corrected it
+      if (data.nomeCrianca && data.nomeCrianca !== updatedNome) {
+        setNomeCrianca(data.nomeCrianca);
+        localStorage.setItem("candinho_nome_crianca", data.nomeCrianca);
+      }
 
       const containsImageKeywords = 
         queryText.toLowerCase().includes("mostra") ||
@@ -115,11 +148,17 @@ export default function App() {
       // Auto-display image if the message is for a structured artist (local or backend)
       const shouldAutoShowImage = containsImageKeywords || isArtistMatched || !!data.matchedKey;
 
+      // Clean local result custom text if child's name was extracted client-side but not server-side
+      let replyToShow = data.reply || localResult?.reply || "Ops! Minhas tintas secaram. Pode repetir? 🎨";
+      if (nomeEncontrado && !data.nomeCrianca && localResult) {
+        replyToShow = `Que espetáculo de nome, **${nomeEncontrado}**! 🎨 Que alegria gigante ter você aqui comigo na minha paleta de descobertas! ✨\n\n${replyToShow}`;
+      }
+
       // 2. Add Candinho response
       const botMessage: Message = {
         id: `bot-${Date.now()}`,
         // Use backend reply, with local structured reply as a perfect fallback
-        text: data.reply || localResult?.reply || "Ops! Minhas tintas secaram. Pode repetir? 🎨",
+        text: replyToShow,
         sender: "bot",
         image: data.image ? {
           imagemUrl: data.image.imagemUrl,
@@ -133,7 +172,10 @@ export default function App() {
       setMessages((prev) => [...prev, botMessage]);
     } catch (error) {
       console.error(error);
-      const fallbackText = localResult?.reply || "Ops! Minha paleta bagunçou. Pode repetir? 🎨";
+      let fallbackText = localResult?.reply || "Ops! Minha paleta bagunçou. Pode repetir? 🎨";
+      if (nomeEncontrado && localResult) {
+        fallbackText = `Que espetáculo de nome, **${nomeEncontrado}**! 🎨 Que alegria gigante ter você aqui comigo na minha paleta de descobertas! ✨\n\n${fallbackText}`;
+      }
       const errorMessage: Message = {
         id: `error-${Date.now()}`,
         text: fallbackText,
@@ -162,10 +204,12 @@ export default function App() {
 
   const clearChat = () => {
     if (window.confirm("Deseja recomeçar a conversa? 🎨🧹")) {
+      localStorage.removeItem("candinho_nome_crianca");
+      setNomeCrianca("");
       setMessages([
         {
           id: "welcome-reset",
-          text: "Olá! Sou o Candinho, seu amigo artista. O que vamos descobrir hoje? 🎨",
+          text: "Olá! Sou o Candinho, seu amigo artista. O que vamos descobrir hoje? 🎨 Como você se chama?",
           sender: "bot",
           timestamp: new Date()
         }
@@ -188,7 +232,9 @@ export default function App() {
           />
           <div className="flex-1">
             <h1 className="text-[1.8rem] tracking-wider font-bold text-white leading-tight">Candinho</h1>
-            <p className="text-[#ffd700] italic opacity-90 text-sm mt-0.5">Seu amigo artista 🎨</p>
+            <p className="text-[#ffd700] italic opacity-90 text-sm mt-0.5">
+              {nomeCrianca ? `Conversando com ${nomeCrianca} 🧑‍🎨` : "Seu amigo artista 🎨"}
+            </p>
           </div>
 
           <button 
@@ -289,27 +335,6 @@ export default function App() {
           <div ref={chatEndRef} />
         </div>
 
-        {/* Sugestões Interativas Rápidas para piadas e curiosidades */}
-        <div className="flex flex-wrap gap-2.5 mb-4 justify-center items-center">
-          <button
-            onClick={() => handleSend("Me conta uma piada de arte! 🎭")}
-            disabled={isProcessing}
-            type="button"
-            className="bg-[rgba(104,109,224,0.15)] hover:bg-[rgba(104,109,224,0.35)] text-[#a5b1fc] border border-indigo-400/20 hover:border-indigo-400/40 hover:scale-[1.03] transition-all duration-200 rounded-full px-4 py-1.5 text-xs font-semibold cursor-pointer shadow-sm select-none"
-          >
-            🎭 Me conta uma piada!
-          </button>
-          
-          <button
-            onClick={() => handleSend("Qual é a curiosidade sobre arte? 💡")}
-            disabled={isProcessing}
-            type="button"
-            className="bg-[rgba(255,215,0,0.1)] hover:bg-[rgba(255,215,0,0.25)] text-[#ffd700] border border-[rgba(255,215,0,0.2)] hover:border-[rgba(255,215,0,0.4)] hover:scale-[1.03] transition-all duration-200 rounded-full px-4 py-1.5 text-xs font-semibold cursor-pointer shadow-sm select-none"
-          >
-            💡 Tem alguma curiosidade?
-          </button>
-        </div>
-
         {/* Input Area */}
         <div className="input-area flex gap-2.5">
           <input 
@@ -369,7 +394,6 @@ export default function App() {
           </div>
         </div>
       )}
-
       {/* Footer */}
       <footer className="text-center text-[0.72rem] text-slate-500 mt-4 flex items-center justify-center gap-1 select-none">
         <span>Candinho 2.0 — Criado com carinho para inspirar jovens alunos de artes!</span>
