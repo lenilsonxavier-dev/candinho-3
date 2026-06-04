@@ -6,6 +6,8 @@ import {
   Palette
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import { bibliotecaCultural } from "./data/bibliotecaCultural";
+import { resolverMensagemLocalmente } from "./utils/conversationalEngine";
 
 interface ImagePayload {
   imagemUrl: string;
@@ -31,6 +33,7 @@ export default function App() {
   const [modalImage, setModalImage] = useState<ImagePayload | null>(null);
   
   const chatEndRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   // Initial welcome message
   useEffect(() => {
@@ -53,6 +56,16 @@ export default function App() {
     scrollToBottom();
   }, [messages, isProcessing]);
 
+  // Focus typing input automatically whenever processing finishes
+  useEffect(() => {
+    if (!isProcessing) {
+      const timer = setTimeout(() => {
+        inputRef.current?.focus();
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [isProcessing]);
+
   // Handle Send message
   const handleSend = async (text: string) => {
     const queryText = text.trim();
@@ -70,6 +83,10 @@ export default function App() {
     setInputValue("");
     setIsProcessing(true);
 
+    // Verify local structured dictionary immediately (client-side matching guarantee)
+    const localResult = resolverMensagemLocalmente(queryText, bibliotecaCultural);
+    const isArtistMatched = !!localResult?.matchedKey;
+
     try {
       const response = await fetch("/api/groq", {
         method: "POST",
@@ -83,10 +100,26 @@ export default function App() {
 
       const data = await response.json();
 
+      const containsImageKeywords = 
+        queryText.toLowerCase().includes("mostra") ||
+        queryText.toLowerCase().includes("mostre") ||
+        queryText.toLowerCase().includes("ver") ||
+        queryText.toLowerCase().includes("veja") ||
+        queryText.toLowerCase().includes("imagem") ||
+        queryText.toLowerCase().includes("foto") ||
+        queryText.toLowerCase().includes("quadro") ||
+        queryText.toLowerCase().includes("pintura") ||
+        queryText.toLowerCase().includes("desenho") ||
+        queryText.toLowerCase().includes("ilustra");
+
+      // Auto-display image if the message is for a structured artist (local or backend)
+      const shouldAutoShowImage = containsImageKeywords || isArtistMatched || !!data.matchedKey;
+
       // 2. Add Candinho response
       const botMessage: Message = {
         id: `bot-${Date.now()}`,
-        text: data.reply || "Ops! Minhas tintas secaram. Pode repetir? 🎨",
+        // Use backend reply, with local structured reply as a perfect fallback
+        text: data.reply || localResult?.reply || "Ops! Minhas tintas secaram. Pode repetir? 🎨",
         sender: "bot",
         image: data.image ? {
           imagemUrl: data.image.imagemUrl,
@@ -94,15 +127,16 @@ export default function App() {
           credito: data.image.credito || "Wikimedia Commons"
         } : null,
         timestamp: new Date(),
-        isImageRequested: false // Controls lazy-loading under demand
+        isImageRequested: shouldAutoShowImage // Controls lazy-loading under demand
       };
 
       setMessages((prev) => [...prev, botMessage]);
     } catch (error) {
       console.error(error);
+      const fallbackText = localResult?.reply || "Ops! Minha paleta bagunçou. Pode repetir? 🎨";
       const errorMessage: Message = {
         id: `error-${Date.now()}`,
-        text: "Ops! Minha paleta bagunçou. Pode repetir? 🎨",
+        text: fallbackText,
         sender: "bot",
         timestamp: new Date()
       };
@@ -255,11 +289,31 @@ export default function App() {
           <div ref={chatEndRef} />
         </div>
 
-        {/* Sugestões removidas para otimizar espaço de tela */}
+        {/* Sugestões Interativas Rápidas para piadas e curiosidades */}
+        <div className="flex flex-wrap gap-2.5 mb-4 justify-center items-center">
+          <button
+            onClick={() => handleSend("Me conta uma piada de arte! 🎭")}
+            disabled={isProcessing}
+            type="button"
+            className="bg-[rgba(104,109,224,0.15)] hover:bg-[rgba(104,109,224,0.35)] text-[#a5b1fc] border border-indigo-400/20 hover:border-indigo-400/40 hover:scale-[1.03] transition-all duration-200 rounded-full px-4 py-1.5 text-xs font-semibold cursor-pointer shadow-sm select-none"
+          >
+            🎭 Me conta uma piada!
+          </button>
+          
+          <button
+            onClick={() => handleSend("Qual é a curiosidade sobre arte? 💡")}
+            disabled={isProcessing}
+            type="button"
+            className="bg-[rgba(255,215,0,0.1)] hover:bg-[rgba(255,215,0,0.25)] text-[#ffd700] border border-[rgba(255,215,0,0.2)] hover:border-[rgba(255,215,0,0.4)] hover:scale-[1.03] transition-all duration-200 rounded-full px-4 py-1.5 text-xs font-semibold cursor-pointer shadow-sm select-none"
+          >
+            💡 Tem alguma curiosidade?
+          </button>
+        </div>
 
         {/* Input Area */}
         <div className="input-area flex gap-2.5">
           <input 
+            ref={inputRef}
             type="text" 
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}

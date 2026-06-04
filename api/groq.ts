@@ -1,4 +1,5 @@
 import { bibliotecaCultural } from "../src/data/bibliotecaCultural.js";
+import { resolverMensagemLocalmente, sugerirTemasAlternativos } from "../src/utils/conversationalEngine.js";
 
 const GITHUB_BASE = "https://raw.githubusercontent.com/lenilsonxavier-dev/Candinho2.0/main/data/";
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
@@ -96,53 +97,43 @@ export default async function handler(req: any, res: any) {
         const textoBusca = messageToLower(mensagem);
         let textoFinal = "";
 
-        // 1. Biblioteca cultural
-        for (const chave in lib) {
-            const item = lib[chave];
-            if (item.palavras_chave && item.palavras_chave.some((p: string) => textoBusca.includes(p.toLowerCase()))) {
-                const partes: string[] = [];
-                if (item.inicio && item.inicio.length > 0) {
-                    partes.push(item.inicio[0]);
-                }
-                if (item.acolhimento && item.acolhimento.length > 0) {
-                    partes.push(item.acolhimento[0]);
-                }
-                if (item.explicacao_curta && item.explicacao_curta.length > 0) {
-                    partes.push(item.explicacao_curta[0]);
-                }
-                if (item.final && item.final.length > 0) {
-                    partes.push(item.final[0]);
-                } else if (item.interacao && item.interacao.length > 0) {
-                    partes.push(item.interacao[0]);
-                }
+        // 1. PRIORIDADE TOTAL: Busca local inteligente (Dados de Curadoria de forma robusta e independente de API)
+        const localResult = resolverMensagemLocalmente(mensagem, lib);
 
-                if (partes.length > 0) {
-                    textoFinal = partes.join(" ");
-                }
-                break;
-            }
+        if (localResult) {
+            textoFinal = localResult.reply;
         }
 
         // 2. Groq (IA) se necessário
-        if (!textoFinal && GROQ_API_KEY) {
-            const responseGroq = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-                method: "POST",
-                headers: { "Authorization": `Bearer ${GROQ_API_KEY}`, "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    model: "llama-3.1-8b-instant",
-                    messages: [
-                        { 
-                            role: "system", 
-                            content: "Você é o Candinho, um professor de arte para crianças de 10 anos. Responda de forma simples, gentil e muito breve (máximo 3 frases). NUNCA repita o nome do artista várias vezes. Se não souber, diga 'Não conheço esse artista ainda!'." 
-                        },
-                        { role: "user", content: mensagem }
-                    ],
-                    temperature: 0.4,
-                    max_tokens: 150
-                })
-            });
-            const dataIA: any = await responseGroq.json();
-            textoFinal = dataIA.choices?.[0]?.message?.content?.trim() || "";
+        if (!textoFinal) {
+            if (GROQ_API_KEY) {
+                try {
+                    const responseGroq = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+                        method: "POST",
+                        headers: { "Authorization": `Bearer ${GROQ_API_KEY}`, "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                            model: "llama-3.1-8b-instant",
+                            messages: [
+                                { 
+                                    role: "system", 
+                                    content: "Você é o Candinho, um professor de arte para crianças de 10 anos. Responda de forma simples, gentil e muito breve (máximo 3 frases). NUNCA repita o nome do artista várias vezes. Se não souber, diga 'Não conheço esse artista ainda!'." 
+                                },
+                                { role: "user", content: mensagem }
+                            ],
+                            temperature: 0.4,
+                            max_tokens: 150
+                        })
+                    });
+                    const dataIA: any = await responseGroq.json();
+                    textoFinal = dataIA.choices?.[0]?.message?.content?.trim() || "";
+                } catch (e) {
+                    console.error("Erro na chamada Groq, usando fallback de sugestões locais:", e);
+                    textoFinal = sugerirTemasAlternativos();
+                }
+            } else {
+                // Fallback local rico e interativo sem chaves de API: o Candinho apresenta seus temas de forma amigável!
+                textoFinal = sugerirTemasAlternativos();
+            }
         }
 
         // 3. Busca imagem sob demanda (só Wikimedia)

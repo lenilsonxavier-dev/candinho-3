@@ -3,6 +3,7 @@ import path from "path";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import { bibliotecaCultural } from "./src/data/bibliotecaCultural.js";
+import { resolverMensagemLocalmente, sugerirTemasAlternativos } from "./src/utils/conversationalEngine.js";
 
 const app = express();
 const PORT = 3000;
@@ -169,16 +170,160 @@ async function buscarNaWikimedia(artistaNome: string) {
   return null;
 }
 
+// --- IMAGENS GARANTIDAS DE ALTA QUALIDADE PARA ARTISTAS ---
+const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: string; credito: string }> = {
+  vincent_van_gogh: {
+    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/800px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+    titulo: "A Noite Estrelada",
+    credito: "Vincent van Gogh / MoMA"
+  },
+  pablo_picasso: {
+    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pablo_Picasso%2C_1907%2C_Self-portrait%2C_oil_on_canvas%2C_50_x_46_cm%2C_National_National_Gallery_of_Prague.jpg/640px-Pablo_Picasso%2C_1907%2C_Self-portrait%2C_oil_on_canvas%2C_50_x_46_cm%2C_National_National_Gallery_of_Prague.jpg",
+    titulo: "Auto-retrato de Picasso (1907)",
+    credito: "Pablo Picasso"
+  },
+  leonardo_da_vinci: {
+    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/600px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+    titulo: "Mona Lisa",
+    credito: "Leonardo da Vinci / Museu do Louvre"
+  },
+  claude_monet: {
+    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Claude_Monet%2C_Impression%2C_soleil_levant.jpg/800px-Claude_Monet%2C_Impression%2C_soleil_levant.jpg",
+    titulo: "Impressão, sol nascente",
+    credito: "Claude Monet / Musée Marmottan Monet"
+  },
+  tarsila: {
+    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/2/23/Tarsila_do_Amaral_-_Abaporu_1928.jpg",
+    titulo: "Abaporu (1928)",
+    credito: "Tarsila do Amaral"
+  },
+  portinari: {
+    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Candido_Portinari.jpg",
+    titulo: "Cândido Portinari (Retrato)",
+    credito: "Biblioteca Nacional"
+  },
+  salvador_dali: {
+    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/2/24/Salvador_Dal%C3%AD_1939.jpg",
+    titulo: "Salvador Dalí",
+    credito: "Library of Congress"
+  },
+  fridakahlo: {
+    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
+    titulo: "Frida Kahlo (Retrato)",
+    credito: "Guillermo Kahlo"
+  },
+  frida_kahlo: {
+    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg",
+    titulo: "Frida Kahlo (Retrato)",
+    credito: "Guillermo Kahlo"
+  }
+};
+
 // --- BUSCANTE UNIFICADO DE IMAGEM ---
-async function buscarImagem(pergunta: string) {
+async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
   try {
-    const stopWords = ["quem", "foi", "fale", "sobre", "ver", "obra", "quando", "nasceu", "morreu", "mostre", "imagem", "foto", "quadro", "pintura", "desenho", "ilustração", "retrato"];
-    let palavras = pergunta.toLowerCase()
-      .replace(/[?!.,]/g, "")
-      .split(/\s+/)
-      .filter(p => p.length > 2 && !stopWords.includes(p));
+    // Primeiro tenta correspondência direta com as imagens garantidas por chave identificada
+    if (matchedKey && ARTISTS_GUARANTEED_IMAGES[matchedKey]) {
+      return ARTISTS_GUARANTEED_IMAGES[matchedKey];
+    }
+
+    // Também verifica se a própria pergunta contém o nome de qualquer um de nossos artistas prioritários
+    const lowerQuery = pergunta.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
     
-    let termo = palavras.join(" ");
+    if (lowerQuery.includes("van gogh")) {
+      return ARTISTS_GUARANTEED_IMAGES.vincent_van_gogh;
+    }
+    if (lowerQuery.includes("picasso")) {
+      return ARTISTS_GUARANTEED_IMAGES.pablo_picasso;
+    }
+    if (lowerQuery.includes("da vinci") || lowerQuery.includes("leonardo")) {
+      return ARTISTS_GUARANTEED_IMAGES.leonardo_da_vinci;
+    }
+    if (lowerQuery.includes("monet")) {
+      return ARTISTS_GUARANTEED_IMAGES.claude_monet;
+    }
+    if (lowerQuery.includes("tarsila")) {
+      return ARTISTS_GUARANTEED_IMAGES.tarsila;
+    }
+    if (lowerQuery.includes("portinari") || lowerQuery.includes("candinho")) {
+      return ARTISTS_GUARANTEED_IMAGES.portinari;
+    }
+    if (lowerQuery.includes("dali")) {
+      return ARTISTS_GUARANTEED_IMAGES.salvador_dali;
+    }
+    if (lowerQuery.includes("frida")) {
+      return ARTISTS_GUARANTEED_IMAGES.frida_kahlo;
+    }
+
+    let termo = "";
+
+    // 1. Se encontramos uma correspondência exata na biblioteca local, usamos o termo limpo dela
+    if (matchedKey && lib && lib[matchedKey]) {
+      const item = lib[matchedKey];
+      if (item.subtema) {
+        termo = item.subtema.replace(/_/g, " ");
+      } else if (item.palavras_chave && item.palavras_chave.length > 0) {
+        termo = item.palavras_chave[0];
+      }
+    }
+
+    // 2. Se não temos matchedKey ou para refinamento inteligente, mapeamos nomes de artistas ou obras famosas
+    if (!termo) {
+      const queryLower = pergunta.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+      
+      if (queryLower.includes("van gogh") || queryLower.includes("vincent van gogh")) {
+        termo = "Vincent van Gogh";
+      } else if (queryLower.includes("da vinci") || queryLower.includes("leonardo da vinci") || queryLower.includes("leonardo")) {
+        termo = "Leonardo da Vinci";
+      } else if (queryLower.includes("picasso") || queryLower.includes("pablo picasso")) {
+        termo = "Pablo Picasso";
+      } else if (queryLower.includes("tarsila") || queryLower.includes("tarsila do amaral")) {
+        termo = "Tarsila do Amaral";
+      } else if (queryLower.includes("monet") || queryLower.includes("claude monet")) {
+        termo = "Claude Monet";
+      } else if (queryLower.includes("mona lisa")) {
+        termo = "Mona Lisa";
+      } else if (queryLower.includes("noite estrelada")) {
+        termo = "The Starry Night Vincent van Gogh";
+      } else if (queryLower.includes("abaporu")) {
+        termo = "Abaporu Tarsila do Amaral";
+      } else if (queryLower.includes("guernica")) {
+        termo = "Guernica Pablo Picasso";
+      } else if (queryLower.includes("machado de assis")) {
+        termo = "Machado de Assis";
+      } else if (queryLower.includes("lima barreto")) {
+        termo = "Lima Barreto";
+      } else if (queryLower.includes("conceicao evaristo")) {
+        termo = "Conceição Evaristo";
+      } else if (queryLower.includes("carolina maria de jesus")) {
+        termo = "Carolina Maria de Jesus";
+      } else if (queryLower.includes("itamar vieira")) {
+        termo = "Itamar Vieira Junior";
+      } else if (queryLower.includes("daniel munduruku")) {
+        termo = "Daniel Munduruku";
+      } else if (queryLower.includes("ailton krenak")) {
+        termo = "Ailton Krenak";
+      } else {
+        // Filtro aprimorado para remover verbos, artigos e preposições que embaçam a busca nas APIs em inglês
+        const stopWords = [
+          "quem", "foi", "fale", "sobre", "ver", "obra", "quando", "nasceu", "morreu", 
+          "mostre", "imagem", "foto", "quadro", "pintura", "desenho", "ilustração", "retrato", 
+          "quero", "queria", "gostaria", "gostava", "pode", "poderia", "me", "te", "se", "um", 
+          "uma", "do", "da", "de", "em", "na", "no", "para", "com", "onde", "como", "qual", 
+          "o que", "por que", "porque", "para", "mais", "tem", "algum", "alguma", "ilustra",
+          "desenha", "veja", "olha", "mostra", "exibir", "pinta", "pintou", "criou", "fez",
+          "uns", "umas", "dos", "das", "pelo", "pela", "por", "com", "sem", "ou"
+        ];
+        
+        let palavras = pergunta.toLowerCase()
+          .replace(/[?!.,]/g, "")
+          .split(/\s+/)
+          .filter(p => p.length > 2 && !stopWords.includes(p));
+        
+        termo = palavras.join(" ");
+      }
+    }
+
     if (!termo) return null;
 
     // Busca no Wikimedia Commons seguindo filtros estritos
@@ -210,55 +355,63 @@ app.post("/api/groq", async (req: Request, res: Response) => {
     let textoFinal = "";
     let infoExtra = { nascimento: "", morte: "", estilo: "" };
 
-    // 1. PRIORIDADE TOTAL: Busca na Biblioteca Cultural (Dados de Curadoria)
-    for (const chave in lib) {
-      const item = lib[chave];
-      if (item.palavras_chave && item.palavras_chave.some((p: string) => textoBusca.includes(p.toLowerCase()))) {
-        if (item.inicio && item.inicio.length > 0 && item.explicacao_curta && item.explicacao_curta.length > 0) {
-          textoFinal = `${item.inicio[0]} ${item.explicacao_curta[0]}`;
-        }
+    // 1. PRIORIDADE TOTAL: Busca local inteligente (Dados de Curadoria de forma robusta e independente de API)
+    const localResult = resolverMensagemLocalmente(mensagem, lib);
+
+    if (localResult) {
+      textoFinal = localResult.reply;
+      
+      // Se encontrou um item específico na biblioteca, enriquece a extra info
+      if (localResult.matchedKey) {
+        const item = lib[localResult.matchedKey];
         infoExtra = {
           nascimento: item.ano_nascimento || "---",
           morte: item.ano_falecimento || "---",
           estilo: item.categoria || "Arte"
         };
-        break;
       }
     }
 
-    // 2. Se não achou na biblioteca, chama o Gemini (com prompt para assumir persona do Candinho)
+    // 2. Se não achou resposta local e houver IA ativa, chama o Gemini.
+    // Se a IA NÃO estiver ativa (ou se a requisição de API falhar), provê sugestões inteligentes interativas!
     if (!textoFinal) {
       if (ai) {
-        const responseGemini = await ai.models.generateContent({
-          model: "gemini-3.5-flash",
-          contents: mensagem,
-          config: {
-            systemInstruction: 
-              "Você é o Candinho, um professor de arte e pintor muito simpático e acolhedor para crianças de 10 anos. " +
-              "Responda sempre em português de forma simples, alegre e muito breve (máximo 3 frases). " +
-              "Sempre use uma linguagem positiva e entusiasmada, usando analogias de pintura e pinceladas. " +
-              "NUNCA repita o nome do artista mais de duas vezes. " +
-              "Se não descobrir sobre quem é o artista, responda gentilmente: 'Não conheço esse artista ainda, mas vou pesquisar na minha paleta! 🎨'. " +
-              "Diga se o artista nasceu ou faleceu em tal época de forma amigável no corpo do texto, sem criar listas ou cabeçalhos.",
-            temperature: 0.5,
-          },
-        });
-        textoFinal = responseGemini.text || "";
+        try {
+          const responseGemini = await ai.models.generateContent({
+            model: "gemini-3.5-flash",
+            contents: mensagem,
+            config: {
+              systemInstruction: 
+                "Você é o Candinho, um professor de arte e pintor muito simpático e acolhedor para crianças de 10 anos. " +
+                "Responda sempre em português de forma simples, alegre e muito breve (máximo 3 frases). " +
+                "Sempre use uma linguagem positiva e entusiasmada, usando analogias de pintura e pinceladas. " +
+                "NUNCA repita o nome do artista mais de duas vezes. " +
+                "Se não descobrir sobre quem é o artista, responda gentilmente: 'Não conheço esse artista ainda, mas vou pesquisar na minha paleta! 🎨'. " +
+                "Diga se o artista nasceu ou faleceu em tal época de forma amigável no corpo do texto, sem criar listas ou cabeçalhos.",
+              temperature: 0.5,
+            },
+          });
+          textoFinal = responseGemini.text || "";
+        } catch (e) {
+          console.error("Erro na chamada Gemini, usando fallback de sugestões locais:", e);
+          textoFinal = sugerirTemasAlternativos();
+        }
       } else {
-        // Fallback se não houver chave de API configurada
-        textoFinal = "Olá! Adoraria conversar, mas minha paleta de cores eletrônica precisa de uma chave de ativação nas configurações! 🎨";
+        // Fallback local rico e guiado sem chaves de API: o Candinho apresenta seus temas de forma interativa e amigável!
+        textoFinal = sugerirTemasAlternativos();
       }
     }
 
     // 3. Busca Imagem Unificada (Wikimedia com fallback para Pexels)
-    const imagemResult = await buscarImagem(mensagem);
+    const imagemResult = await buscarImagem(mensagem, localResult?.matchedKey, lib);
 
     // 4. Retorno Unificado
     return res.status(200).json({
       reply: textoFinal || "Que pergunta curiosa! Vamos descobrir juntos sobre arte? 🎨",
       image: imagemResult,
       info: infoExtra.nascimento || infoExtra.morte || infoExtra.estilo ? infoExtra : null,
-      googleArts: { url: `https://artsandculture.google.com/search?q=${encodeURIComponent(mensagem)}` }
+      googleArts: { url: `https://artsandculture.google.com/search?q=${encodeURIComponent(mensagem)}` },
+      matchedKey: localResult?.matchedKey
     });
 
   } catch (error) {
