@@ -193,7 +193,7 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     credito: "Claude Monet / Musée Marmottan Monet"
   },
   tarsila: {
-    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/2/23/Tarsila_do_Amaral_-_Abaporu_1928.jpg",
+    imagemUrl: "https://i.imgur.com/y6dYEau.jpg",
     titulo: "Abaporu (1928)",
     credito: "Tarsila do Amaral"
   },
@@ -242,7 +242,7 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
     if (lowerQuery.includes("monet")) {
       return ARTISTS_GUARANTEED_IMAGES.claude_monet;
     }
-    if (lowerQuery.includes("tarsila")) {
+    if (lowerQuery.includes("tarsila") || lowerQuery.includes("abaporu")) {
       return ARTISTS_GUARANTEED_IMAGES.tarsila;
     }
     if (lowerQuery.includes("portinari") || lowerQuery.includes("candinho")) {

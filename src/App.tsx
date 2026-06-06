@@ -8,6 +8,7 @@ import {
 import { motion, AnimatePresence } from "motion/react";
 import { bibliotecaCultural } from "./data/bibliotecaCultural";
 import { resolverMensagemLocalmente, extrairNome } from "./utils/conversationalEngine";
+import Typewriter from "./components/Typewriter";
 
 interface ImagePayload {
   imagemUrl: string;
@@ -253,66 +254,73 @@ export default function App() {
           className="h-[320px] overflow-y-auto bg-[rgba(15,_52,_96,_0.4)] p-5 rounded-[20px] mb-5 flex flex-col gap-[15px] scroll-behavior-smooth custom-scrollbar"
         >
           <AnimatePresence initial={false}>
-            {messages.map((msg) => (
-              <div
-                key={msg.id}
-                className={`flex flex-col max-w-[85%] ${
-                  msg.sender === "user" ? "self-end" : "self-start"
-                }`}
-              >
+            {messages.map((msg, idx) => {
+              const isLatestBotMessage = idx === messages.length - 1;
+              return (
                 <div
-                  className={`msg p-[12px_18px] rounded-[20px] text-base leading-[1.5] shadow-md transition-all duration-300 ${
-                    msg.sender === "user" 
-                      ? "bg-[#4834d4] text-white rounded-br-[4px] self-end" 
-                      : "bg-[#686de0] text-white rounded-bl-[4px] self-start"
+                  key={msg.id}
+                  className={`flex flex-col max-w-[85%] ${
+                    msg.sender === "user" ? "self-end" : "self-start"
                   }`}
                 >
-                  {msg.sender === "bot" ? (
-                    <div className="bot-message-wrapper flex items-start gap-[15px]">
-                      <img 
-                        src="https://i.imgur.com/UDl1c5j.png" 
-                        alt="Bot icon" 
-                        className="bot-icon w-[55px] h-[55px] rounded-full object-cover mt-1 flex-shrink-0"
-                      />
-                      <div className="bot-text flex-1">
-                        <p className="whitespace-pre-line">{msg.text}</p>
-                        
-                        {/* Display "Ver Ilustração/Obra 🖼️" button under message if image exists and wasn't loaded */}
-                        {msg.image && !msg.isImageRequested && (
-                          <div className="mt-3.5 pt-3 border-t border-indigo-400/30">
-                            <button
-                              onClick={() => handleRequestImage(msg.id)}
-                              className="bg-[#ffd700] hover:bg-yellow-300 text-slate-900 px-4 py-2 rounded-full text-xs font-bold transition-all shadow hover:scale-105 cursor-pointer flex items-center gap-1.5"
-                            >
-                              <Palette size={13} />
-                              Ver Ilustração/Obra 🖼️
-                            </button>
-                          </div>
-                        )}
-
-                        {/* Renders image inline under request */}
-                        {msg.image && msg.isImageRequested && (
-                          <div className="mt-3.5 pt-3 border-t border-indigo-400/30">
-                            <img 
-                              src={msg.image.imagemUrl} 
-                              alt={msg.image.titulo}
-                              className="bot-image mt-[15px] max-w-full rounded-[15px] cursor-pointer transition-transform duration-300 hover:scale-[1.02] max-h-[300px] object-contain block mx-auto shadow-md"
-                              onClick={() => setModalImage(msg.image || null)}
-                              referrerPolicy="no-referrer"
-                            />
-                            <div className="image-credit text-[0.65rem] text-[#ffd700] mt-[5px] text-center opacity-80 font-medium">
-                              📷 Fonte: {msg.image.credito || 'Wikimedia Commons'}
+                  <div
+                    className={`msg p-[12px_18px] rounded-[20px] text-base leading-[1.5] shadow-md transition-all duration-300 ${
+                      msg.sender === "user" 
+                        ? "bg-[#4834d4] text-white rounded-br-[4px] self-end" 
+                        : "bg-[#686de0] text-white rounded-bl-[4px] self-start"
+                    }`}
+                  >
+                    {msg.sender === "bot" ? (
+                      <div className="bot-message-wrapper flex items-start gap-[15px]">
+                        <img 
+                          src="https://i.imgur.com/UDl1c5j.png" 
+                          alt="Bot icon" 
+                          className="bot-icon w-[55px] h-[55px] rounded-full object-cover mt-1 flex-shrink-0"
+                        />
+                        <div className="bot-text flex-1">
+                          {isLatestBotMessage ? (
+                            <Typewriter text={msg.text} onFinished={scrollToBottom} />
+                          ) : (
+                            <p className="whitespace-pre-line">{msg.text}</p>
+                          )}
+                          
+                          {/* Display "Ver Ilustração/Obra 🖼️" button under message if image exists and wasn't loaded */}
+                          {msg.image && !msg.isImageRequested && (
+                            <div className="mt-3.5 pt-3 border-t border-indigo-400/30">
+                              <button
+                                onClick={() => handleRequestImage(msg.id)}
+                                className="bg-[#ffd700] hover:bg-yellow-300 text-slate-900 px-4 py-2 rounded-full text-xs font-bold transition-all shadow hover:scale-105 cursor-pointer flex items-center gap-1.5"
+                              >
+                                <Palette size={13} />
+                                Ver Ilustração/Obra 🖼️
+                              </button>
                             </div>
-                          </div>
-                        )}
+                          )}
+
+                          {/* Renders image inline under request */}
+                          {msg.image && msg.isImageRequested && (
+                            <div className="mt-3.5 pt-3 border-t border-indigo-400/30">
+                              <img 
+                                src={msg.image.imagemUrl} 
+                                alt={msg.image.titulo}
+                                className="bot-image mt-[15px] max-w-full rounded-[15px] cursor-pointer transition-transform duration-300 hover:scale-[1.02] max-h-[300px] object-contain block mx-auto shadow-md"
+                                onClick={() => setModalImage(msg.image || null)}
+                                referrerPolicy="no-referrer"
+                              />
+                              <div className="image-credit text-[0.65rem] text-[#ffd700] mt-[5px] text-center opacity-80 font-medium">
+                                📷 Fonte: {msg.image.credito || 'Wikimedia Commons'}
+                              </div>
+                            </div>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  ) : (
-                    msg.text
-                  )}
+                    ) : (
+                      msg.text
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
 
             {/* Loading animator matching */}
             {isProcessing && (
