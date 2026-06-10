@@ -1,8 +1,19 @@
+import { GoogleGenAI } from "@google/genai";
 import { bibliotecaCultural } from "../src/data/bibliotecaCultural.js";
 import { resolverMensagemLocalmente, sugerirTemasAlternativos, extrairNome } from "../src/utils/conversationalEngine.js";
 
 const GITHUB_BASE = "https://raw.githubusercontent.com/lenilsonxavier-dev/Candinho2.0/main/data/";
-const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const apiKey = process.env.GEMINI_API_KEY || "";
+const ai = apiKey
+  ? new GoogleGenAI({
+      apiKey: apiKey,
+      httpOptions: {
+        headers: {
+          "User-Agent": "aistudio-build",
+        },
+      },
+    })
+  : null;
 
 let bibliotecaCache: any = null;
 
@@ -279,6 +290,11 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     imagemUrl: "https://i.imgur.com/DUWOyat.jpeg",
     titulo: "O Ouro do Azul / Pintura de Miró",
     credito: "Joan Miró"
+  },
+  carolina_maria_de_jesus: {
+    imagemUrl: "https://i.imgur.com/62oSyRt.jpeg",
+    titulo: "Carolina Maria de Jesus (Retrato)",
+    credito: "Wikimedia Commons / Arquivo Público do Estado de São Paulo"
   }
 };
 
@@ -632,6 +648,9 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
     if (lowerQuery.includes("miro") || lowerQuery.includes("miró") || lowerQuery.includes("joan miro") || lowerQuery.includes("joan miró")) {
       return ARTISTS_GUARANTEED_IMAGES.joan_miro;
     }
+    if (lowerQuery.includes("carolina maria de jesus") || lowerQuery.includes("carolina de jesus")) {
+      return ARTISTS_GUARANTEED_IMAGES.carolina_maria_de_jesus;
+    }
 
     let termo = "";
 
@@ -772,11 +791,32 @@ export default async function handler(req: any, res: any) {
     let textoFinal = "";
     let infoExtra = { nascimento: "", morte: "", estilo: "" };
 
+    const containsImageKeywords = 
+      mensagem.toLowerCase().includes("mostra") ||
+      mensagem.toLowerCase().includes("mostre") ||
+      mensagem.toLowerCase().includes("ver") ||
+      mensagem.toLowerCase().includes("veja") ||
+      mensagem.toLowerCase().includes("imagem") ||
+      mensagem.toLowerCase().includes("foto") ||
+      mensagem.toLowerCase().includes("quadro") ||
+      mensagem.toLowerCase().includes("pintura") ||
+      mensagem.toLowerCase().includes("desenho") ||
+      mensagem.toLowerCase().includes("retrat") ||
+      mensagem.toLowerCase().includes("ilustra");
+
     // 1. PRIORIDADE TOTAL: Busca local inteligente
     const localResult = resolverMensagemLocalmente(mensagem, lib);
 
     if (localResult) {
-      textoFinal = localResult.reply;
+      if (containsImageKeywords && localResult.matchedKey) {
+        const item = lib[localResult.matchedKey];
+        const nomeFormatado = item.palavras_chave?.[0]
+          ? item.palavras_chave[0].replace(/\b\w/g, (l: string) => l.toUpperCase())
+          : "Carolina Maria de Jesus";
+        textoFinal = `Com certeza! Preparei a tela para você ver a imagem de **${nomeFormatado}**! 🖼️✨`;
+      } else {
+        textoFinal = localResult.reply;
+      }
       
       if (localResult.matchedKey) {
         const item = lib[localResult.matchedKey];
@@ -788,9 +828,9 @@ export default async function handler(req: any, res: any) {
       }
     }
 
-    // 2. IA / Groq (se necessário)
+    // 2. IA / Gemini (se necessário)
     if (!textoFinal) {
-      if (GROQ_API_KEY) {
+      if (ai) {
         try {
           let systemInstruction = 
             "Você é o Candinho, um professor de arte e pintor muito simpático e acolhedor para crianças de 10 anos. " +
@@ -807,24 +847,18 @@ export default async function handler(req: any, res: any) {
             }
           }
 
-          const responseGroq = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-            method: "POST",
-            headers: { "Authorization": `Bearer ${GROQ_API_KEY}`, "Content-Type": "application/json" },
-            body: JSON.stringify({
-              model: "llama-3.1-8b-instant",
-              messages: [
-                { role: "system", content: systemInstruction },
-                { role: "user", content: mensagem }
-              ],
+          const responseGemini = await ai.models.generateContent({
+            model: "gemini-3.5-flash",
+            contents: mensagem,
+            config: {
+              systemInstruction: systemInstruction,
               temperature: 0.5,
-              max_tokens: 200
-            })
+            },
           });
 
-          const dataIA: any = await responseGroq.json();
-          textoFinal = dataIA.choices?.[0]?.message?.content?.trim() || "";
+          textoFinal = responseGemini.text || "";
         } catch (e) {
-          console.error("Erro na chamada Groq, usando fallback de sugestões locais:", e);
+          console.error("Erro na chamada Gemini, usando fallback de sugestões locais:", e);
           textoFinal = sugerirTemasAlternativos();
         }
       } else {
@@ -833,7 +867,7 @@ export default async function handler(req: any, res: any) {
     }
 
     // Customização de nome
-    if (nomeCrianca && (localResult || !GROQ_API_KEY)) {
+    if (nomeCrianca && (localResult || !ai)) {
       if (acabouDeSeApresentar) {
         textoFinal = `Que espetáculo de nome, **${nomeCrianca}**! 🎨 Que alegria gigante ter você aqui comigo na minha paleta de descobertas! ✨\n\n${textoFinal}`;
       } else if (Math.random() < 0.35) {

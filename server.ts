@@ -395,6 +395,11 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     imagemUrl: "https://i.imgur.com/DUWOyat.jpeg",
     titulo: "O Ouro do Azul / Pintura de Miró",
     credito: "Joan Miró"
+  },
+  carolina_maria_de_jesus: {
+    imagemUrl: "https://i.imgur.com/62oSyRt.jpeg",
+    titulo: "Carolina Maria de Jesus (Retrato)",
+    credito: "Wikimedia Commons / Arquivo Público do Estado de São Paulo"
   }
 };
 
@@ -561,6 +566,9 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
     }
     if (lowerQuery.includes("miro") || lowerQuery.includes("miró") || lowerQuery.includes("joan miro") || lowerQuery.includes("joan miró")) {
       return ARTISTS_GUARANTEED_IMAGES.joan_miro;
+    }
+    if (lowerQuery.includes("carolina maria de jesus") || lowerQuery.includes("carolina de jesus")) {
+      return ARTISTS_GUARANTEED_IMAGES.carolina_maria_de_jesus;
     }
 
     let termo = "";
@@ -879,11 +887,32 @@ app.post("/api/groq", async (req: Request, res: Response) => {
     let textoFinal = "";
     let infoExtra = { nascimento: "", morte: "", estilo: "" };
 
+    const containsImageKeywords = 
+      mensagem.toLowerCase().includes("mostra") ||
+      mensagem.toLowerCase().includes("mostre") ||
+      mensagem.toLowerCase().includes("ver") ||
+      mensagem.toLowerCase().includes("veja") ||
+      mensagem.toLowerCase().includes("imagem") ||
+      mensagem.toLowerCase().includes("foto") ||
+      mensagem.toLowerCase().includes("quadro") ||
+      mensagem.toLowerCase().includes("pintura") ||
+      mensagem.toLowerCase().includes("desenho") ||
+      mensagem.toLowerCase().includes("retrat") ||
+      mensagem.toLowerCase().includes("ilustra");
+
     // 1. PRIORIDADE TOTAL: Busca local inteligente (Dados de Curadoria de forma robusta e independente de API)
     const localResult = resolverMensagemLocalmente(mensagem, lib);
 
     if (localResult) {
-      textoFinal = localResult.reply;
+      if (containsImageKeywords && localResult.matchedKey) {
+        const item = lib[localResult.matchedKey];
+        const nomeFormatado = item.palavras_chave?.[0]
+          ? item.palavras_chave[0].replace(/\b\w/g, (l: string) => l.toUpperCase())
+          : "Carolina Maria de Jesus";
+        textoFinal = `Com certeza! Preparei a tela para você ver a imagem de **${nomeFormatado}**! 🖼️✨`;
+      } else {
+        textoFinal = localResult.reply;
+      }
       
       // Se encontrou um item específico na biblioteca, enriquece a extra info
       if (localResult.matchedKey) {
