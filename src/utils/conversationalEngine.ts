@@ -557,7 +557,19 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
   },
   { 
     palavras: ['tipos de dança', 'estilos de dança'], 
-    resposta: 'Existem muitos tipos de dança! Alguns exemplos: 🩰 Balé (dança clássica, técnica e disciplinada), 💃 Dança contemporânea (liberdade de movimentos, experimentação), 🕺 Danças urbanas (estilos criados em contextos urbanos e periféricos), 🎷 Jazz (improviso e raízes populares), 🇧🇷 Samba (expressão da cultura popular brasileira), 🌵 Forró (dança em par do Nordeste), 👞 Sapateado (dança rítmica com sons dos pés).' 
+    resposta: 'Existem muitos tipos de dança! Alguns exemplos: 🩰 Balé (dança clássica, técnica e disciplinada), 💃 Dança contemporânea (liberdade de movimentos, experimentação), 🕺 Danças urbanas (estilos criados em contextos urbanos e periféricos), 🎷 Jazz (improviso e raízes populares), 🇧🇷 Samba (expressão da cultura popular brasileira), 🌵 Forró (dança em par do Nordeste), 👞 Sapateado (dança rítmica com sons dos pés), 💃 Tango (passos argentinos elegantes), 🌶️ Salsa (ritmo caribenho alegre) e 👑 Valsa (deslizar suave em três tempos).' 
+  },
+  { 
+    palavras: ['tango', 'dança tango'], 
+    resposta: '💃 **TANGO**\n\n**Origem:**\nO Tango surgiu na Argentina, principalmente na cidade de Buenos Aires, há mais de 100 anos.\n\n**Características:**\nÉ uma dança feita em dupla, com movimentos elegantes, passos marcados e muita expressão. Os dançarinos costumam dançar bem próximos um do outro.' 
+  },
+  { 
+    palavras: ['salsa', 'dança salsa'], 
+    resposta: '🌶️ **SALSA**\n\n**Origem:**\nA Salsa surgiu da mistura de ritmos caribenhos, especialmente em Cuba, e ficou muito popular em vários países da América Latina.\n\n**Características:**\nÉ uma dança alegre e animada, com passos rápidos, giros e muito ritmo. Geralmente é dançada em dupla ao som de músicas vibrantes.' 
+  },
+  { 
+    palavras: ['valsa', 'dança valsa'], 
+    resposta: '👑 **VALSA**\n\n**Origem:**\nA Valsa nasceu na Áustria e na Alemanha no século XVIII.\n\n**Características:**\nÉ uma dança suave e elegante, realizada em dupla. Seus movimentos são circulares e acompanham o compasso de três tempos da música, dando a sensação de que os dançarinos estão deslizando pelo salão.' 
   },
   { 
     palavras: ['elementos da dança'], 

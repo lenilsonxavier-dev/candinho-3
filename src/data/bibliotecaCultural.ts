@@ -290,6 +290,38 @@ export const bibliotecaCultural: Record<string, BibliotecaItem> = {
     emocao: "consciencia",
     nivel: "leve"
   },
+  arte_africana: {
+    tema: "cultura_afro_brasileira",
+    subtema: "arte_africana",
+    palavras_chave: [
+      "arte africana",
+      "arte da áfrica",
+      "cultura africana"
+    ],
+    inicio: [
+      "A arte africana é incrivelmente rica, diversa e cheia de vida! 🌍"
+    ],
+    explicacao_curta: [
+      "Ela se expressa por meio de máscaras místicas, esculturas expressivas em madeira, pinturas de cores quentes e tecidos com padronagens repletas de histórias."
+    ],
+    explicacao_aprofundada: [
+      "Para os povos africanos, a arte não serve apenas para olhar; ela está ligada ao dia a dia, a rituais sagrados e à celebração dos seus ancestrais. Muitas obras imitam elementos brilhantes da natureza e representam espíritos protetores, transmitindo ensinamentos do passado."
+    ],
+    curiosidade: [
+      "A arte africana é tão expressiva e poderosa que influenciou grandes pintores do mundo inteiro, como Pablo Picasso, na criação da arte moderna! 🎨"
+    ],
+    interacao: [
+      "Você sabia que as cores e padrões dos tecidos africanos podem contar de qual família ou aldeia a pessoa faz parte?"
+    ],
+    atividade: [
+      "Que tal desenhar uma máscara com traços bem expressivos, usando círculos, triângulos e suas cores favoritas? 🖍️🎭"
+    ],
+    final: [
+      "A essência da arte africana espalha a sabedoria dos ancestrais de geração em geração! 🌟"
+    ],
+    emocao: "criatividade",
+    nivel: "leve"
+  },
 
   // --- 2. CULTURA INDÍGENA ---
   indigena_o_que_e: {
@@ -3596,6 +3628,99 @@ export const bibliotecaCultural: Record<string, BibliotecaItem> = {
       "O coco transforma música e dança em celebração 🌞"
     ],
     emocao: "animacao",
+    nivel: "leve"
+  },
+  danca_tango: {
+    tema: "dancas",
+    subtema: "tango",
+    palavras_chave: [
+      "tango",
+      "dança tango"
+    ],
+    inicio: [
+      "O Tango é uma dança cheia de expressão e muita elegância! 💃"
+    ],
+    explicacao_curta: [
+      "O Tango surgiu na Argentina, principalmente na cidade de Buenos Aires, há mais de 100 anos."
+    ],
+    explicacao_aprofundada: [
+      "É uma dança feita em dupla, com movimentos elegantes, passos marcados e muita expressão. Os dançarinos costumam dançar bem próximos um do outro."
+    ],
+    curiosidade: [
+      "O Tango começou nos bairros populares e hoje é famoso no mundo inteirinho! 🌍"
+    ],
+    interacao: [
+      "Você já viu dançarinos de tango caminhando de um jeito dramático e chique?"
+    ],
+    atividade: [
+      "Tente caminhar com elegância dando passos longos e bem firmes como um dançarino de tango! 🕺💃"
+    ],
+    final: [
+      "O tango é pura emoção e passos elegantes! ✨"
+    ],
+    emocao: "expressao",
+    nivel: "leve"
+  },
+  danca_salsa: {
+    tema: "dancas",
+    subtema: "salsa",
+    palavras_chave: [
+      "salsa",
+      "dança salsa"
+    ],
+    inicio: [
+      "A Salsa é uma dança super alegre e contagiante! 🌶️"
+    ],
+    explicacao_curta: [
+      "A Salsa surgiu da mistura de ritmos caribenhos, especialmente em Cuba, e ficou muito popular em vários países da América Latina."
+    ],
+    explicacao_aprofundada: [
+      "É uma dança alegre e animada, com passos rápidos, giros e muito ritmo. Geralmente é dançada em dupla ao som de músicas vibrantes."
+    ],
+    curiosidade: [
+      "O nome 'Salsa' significa tempero em espanhol, mostrando como essa dança é caliente e cheia de sabor! 🌶️"
+    ],
+    interacao: [
+      "Gosta de ritmos rápidos e giros animados na hora de dançar?"
+    ],
+    atividade: [
+      "Coloque uma música bem alegre e tente dar giros rápidos com os braços levantados! 🎶🤩"
+    ],
+    final: [
+      "Dançar salsa colore o dia de alegria! 🌈"
+    ],
+    emocao: "alegria",
+    nivel: "leve"
+  },
+  danca_valsa: {
+    tema: "dancas",
+    subtema: "valsa",
+    palavras_chave: [
+      "valsa",
+      "dança valsa"
+    ],
+    inicio: [
+      "A Valsa é uma das danças mais suaves e clássicas do mundo! 👑"
+    ],
+    explicacao_curta: [
+      "A Valsa nasceu na Áustria e na Alemanha no século XVIII."
+    ],
+    explicacao_aprofundada: [
+      "É uma dança suave e elegante, realizada em dupla. Seus movimentos são circulares e acompanham o compasso de três tempos da música, dando a sensação de que os dançarinos estão deslizando pelo salão."
+    ],
+    curiosidade: [
+      "O ritmo da valsa é de 1-2-3, 1-2-3 (um compasso ternário), que parece um barquinho deslizando na água! 🚣"
+    ],
+    interacao: [
+      "Qual música suave faz você querer deslizar pela sala?"
+    ],
+    atividade: [
+      "Dê três passos suaves em círculo contando: um, dois, três... parecendo deslizar no salão! 🏰"
+    ],
+    final: [
+      "A valsa nos faz flutuar na música com elegância! 👑"
+    ],
+    emocao: "harmonia",
     nivel: "leve"
   },
 

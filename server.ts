@@ -400,6 +400,196 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     imagemUrl: "https://i.imgur.com/62oSyRt.jpeg",
     titulo: "Carolina Maria de Jesus (Retrato)",
     credito: "Wikimedia Commons / Arquivo Público do Estado de São Paulo"
+  },
+  ailton_krenak: {
+    imagemUrl: "https://i.imgur.com/Wtl1cy1.jpeg",
+    titulo: "Ailton Krenak (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  auritha_tabajara: {
+    imagemUrl: "https://i.imgur.com/mumlZ4K.jpeg",
+    titulo: "Auritha Tabajara (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  conceicao_evaristo: {
+    imagemUrl: "https://i.imgur.com/9pTMeII.jpeg",
+    titulo: "Conceição Evaristo (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  daniel_munduruku: {
+    imagemUrl: "https://i.imgur.com/cl4wQV1.jpeg",
+    titulo: "Daniel Munduruku (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  davi_kopenawa: {
+    imagemUrl: "https://i.imgur.com/ZYsFmmb.jpeg",
+    titulo: "Davi Kopenawa (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  djamila_ribeiro: {
+    imagemUrl: "https://i.imgur.com/SYGuxF3.jpeg",
+    titulo: "Djamila Ribeiro (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  eliane_potiguara: {
+    imagemUrl: "https://i.imgur.com/j38A1jG.jpeg",
+    titulo: "Eliane Potiguara (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  graca_grauna: {
+    imagemUrl: "https://i.imgur.com/6WXunkG.jpeg",
+    titulo: "Graça Graúna (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  itamar_vieira_junior: {
+    imagemUrl: "https://i.imgur.com/GfsMbQh.jpeg",
+    titulo: "Itamar Vieira Jr. (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  jarid_arraes: {
+    imagemUrl: "https://i.imgur.com/mRn97Dy.jpeg",
+    titulo: "Jarid Arraes (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  julie_dorrico: {
+    imagemUrl: "https://i.imgur.com/TSToVor.jpeg",
+    titulo: "Julie Dorrico (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  kaka_wera_jeicupe: {
+    imagemUrl: "https://i.imgur.com/sHTg65V.jpeg",
+    titulo: "Kaká Werá (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  lima_barreto: {
+    imagemUrl: "https://i.imgur.com/9iGjvu1.jpeg",
+    titulo: "Lima Barreto (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  machado_de_assis: {
+    imagemUrl: "https://i.imgur.com/3vlMpK6.jpeg",
+    titulo: "Machado de Assis (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  marcia_kambeba: {
+    imagemUrl: "https://i.imgur.com/nPKqxVk.jpeg",
+    titulo: "Márcia Kambeba (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  maria_firmina_dos_reis: {
+    imagemUrl: "https://i.imgur.com/kYsLktz.jpeg",
+    titulo: "Maria Firmina dos Reis (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  olivio_jekupe: {
+    imagemUrl: "https://i.imgur.com/yZFIvN2.jpeg",
+    titulo: "Olívio Jekupe (Retrato)",
+    credito: "Wikimedia Commons / Fonte Wikipedia"
+  },
+  tango: {
+    imagemUrl: "https://i.imgur.com/S2eEbmj.jpeg",
+    titulo: "Dançando Tango",
+    credito: "Ilustração de Tango"
+  },
+  salsa: {
+    imagemUrl: "https://i.imgur.com/KNsG8wH.jpeg",
+    titulo: "Dançando Salsa",
+    credito: "Ilustração de Salsa"
+  },
+  valsa: {
+    imagemUrl: "https://i.imgur.com/6hxKnNJ.jpeg",
+    titulo: "Dançando Valsa",
+    credito: "Ilustração de Valsa"
+  },
+  rock: {
+    imagemUrl: "https://i.imgur.com/7SdA0k3.jpeg",
+    titulo: "Alegria do Rock",
+    credito: "Ilustração de Rock"
+  },
+  jongo: {
+    imagemUrl: "https://i.imgur.com/MMPXy3l.jpeg",
+    titulo: "Dançando Jongo",
+    credito: "Ilustração de Jongo"
+  },
+  congada: {
+    imagemUrl: "https://i.imgur.com/SZqtIoj.jpeg",
+    titulo: "Festa da Congada",
+    credito: "Ilustração de Congada"
+  },
+  coco_pernambucano: {
+    imagemUrl: "https://i.imgur.com/7OAUdNp.jpeg",
+    titulo: "Dançando o Coco Pernambucano",
+    credito: "Ilustração de Coco Pernambucano"
+  },
+  ciranda: {
+    imagemUrl: "https://i.imgur.com/zIlLJGr.png",
+    titulo: "Roda de Ciranda",
+    credito: "Ilustração de Ciranda"
+  },
+  hip_hop: {
+    imagemUrl: "https://i.imgur.com/B58RbYS.jpeg",
+    titulo: "Dançando Hip Hop",
+    credito: "Ilustração de Hip Hop"
+  },
+  funk: {
+    imagemUrl: "https://i.imgur.com/pTTr7cm.jpeg",
+    titulo: "Dança Funk",
+    credito: "Ilustração de Funk"
+  },
+  frevo: {
+    imagemUrl: "https://i.imgur.com/ZvsUU43.png",
+    titulo: "Dançando Frevo com Sombrinha",
+    credito: "Ilustração de Frevo"
+  },
+  fandango: {
+    imagemUrl: "https://i.imgur.com/jFjNeOU.jpeg",
+    titulo: "Dançando Fandango",
+    credito: "Ilustração de Fandango"
+  },
+  danca_de_salao: {
+    imagemUrl: "https://i.imgur.com/hNTTLUl.jpeg",
+    titulo: "Dança de Salão",
+    credito: "Ilustração de Dança de Salão"
+  },
+  danca_contemporanea: {
+    imagemUrl: "https://i.imgur.com/viD0O3q.jpeg",
+    titulo: "Dança Contemporânea",
+    credito: "Ilustração de Dança Contemporânea"
+  },
+  danca_classica: {
+    imagemUrl: "https://i.imgur.com/e5uLrzE.jpeg",
+    titulo: "Dança Clássica",
+    credito: "Ilustração de Dança Clássica"
+  },
+  cavalo_marinho: {
+    imagemUrl: "https://i.imgur.com/cVro96g.jpeg",
+    titulo: "Festa do Cavalo Marinho",
+    credito: "Ilustração de Cavalo Marinho"
+  },
+  catira: {
+    imagemUrl: "https://i.imgur.com/M6wTWYU.jpeg",
+    titulo: "Dançando Catira",
+    credito: "Ilustração de Catira"
+  },
+  carimbo: {
+    imagemUrl: "https://i.imgur.com/rjujUdi.jpeg",
+    titulo: "Dançando Carimbó",
+    credito: "Ilustração de Carimbó"
+  },
+  bale: {
+    imagemUrl: "https://i.imgur.com/pp0VUB5.jpeg",
+    titulo: "Dançando Balé",
+    credito: "Ilustração de Balé"
+  },
+  arte_indigena: {
+    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
+    titulo: "Arte Indígena",
+    credito: "Arte Indígena"
+  },
+  arte_africana: {
+    imagemUrl: "https://i.imgur.com/Q60zPHo.jpeg",
+    titulo: "Arte Africana",
+    credito: "Arte Africana"
   }
 };
 
@@ -569,6 +759,120 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
     }
     if (lowerQuery.includes("carolina maria de jesus") || lowerQuery.includes("carolina de jesus")) {
       return ARTISTS_GUARANTEED_IMAGES.carolina_maria_de_jesus;
+    }
+    if (lowerQuery.includes("ailton krenak") || lowerQuery.includes("krenak")) {
+      return ARTISTS_GUARANTEED_IMAGES.ailton_krenak;
+    }
+    if (lowerQuery.includes("auritha tabajara") || lowerQuery.includes("auritha")) {
+      return ARTISTS_GUARANTEED_IMAGES.auritha_tabajara;
+    }
+    if (lowerQuery.includes("conceicao evaristo") || lowerQuery.includes("conceição evaristo")) {
+      return ARTISTS_GUARANTEED_IMAGES.conceicao_evaristo;
+    }
+    if (lowerQuery.includes("daniel munduruku") || lowerQuery.includes("munduruku")) {
+      return ARTISTS_GUARANTEED_IMAGES.daniel_munduruku;
+    }
+    if (lowerQuery.includes("davi kopenawa") || lowerQuery.includes("kopenawa")) {
+      return ARTISTS_GUARANTEED_IMAGES.davi_kopenawa;
+    }
+    if (lowerQuery.includes("djamila ribeiro") || lowerQuery.includes("djamila")) {
+      return ARTISTS_GUARANTEED_IMAGES.djamila_ribeiro;
+    }
+    if (lowerQuery.includes("eliane potiguara") || lowerQuery.includes("eliane portiguara") || lowerQuery.includes("potiguara")) {
+      return ARTISTS_GUARANTEED_IMAGES.eliane_potiguara;
+    }
+    if (lowerQuery.includes("graca grauna") || lowerQuery.includes("graca graúna") || lowerQuery.includes("grauna")) {
+      return ARTISTS_GUARANTEED_IMAGES.graca_grauna;
+    }
+    if (lowerQuery.includes("itamar vieira") || lowerQuery.includes("itamar vieira jr")) {
+      return ARTISTS_GUARANTEED_IMAGES.itamar_vieira_junior;
+    }
+    if (lowerQuery.includes("jarid arraes") || lowerQuery.includes("jarid")) {
+      return ARTISTS_GUARANTEED_IMAGES.jarid_arraes;
+    }
+    if (lowerQuery.includes("julie dorrico") || lowerQuery.includes("dorrico")) {
+      return ARTISTS_GUARANTEED_IMAGES.julie_dorrico;
+    }
+    if (lowerQuery.includes("kaka wera") || lowerQuery.includes("kaka wera jeicupe") || lowerQuery.includes("kaká werá")) {
+      return ARTISTS_GUARANTEED_IMAGES.kaka_wera_jeicupe;
+    }
+    if (lowerQuery.includes("lima barreto")) {
+      return ARTISTS_GUARANTEED_IMAGES.lima_barreto;
+    }
+    if (lowerQuery.includes("machado de assis")) {
+      return ARTISTS_GUARANTEED_IMAGES.machado_de_assis;
+    }
+    if (lowerQuery.includes("marcia kambeba") || lowerQuery.includes("marica kambeba") || lowerQuery.includes("kambeba")) {
+      return ARTISTS_GUARANTEED_IMAGES.marcia_kambeba;
+    }
+    if (lowerQuery.includes("maria firmina") || lowerQuery.includes("firmina dos reis") || lowerQuery.includes("maria firmino")) {
+      return ARTISTS_GUARANTEED_IMAGES.maria_firmina_dos_reis;
+    }
+    if (lowerQuery.includes("olivio jekupe") || lowerQuery.includes("olivio jukupe") || lowerQuery.includes("jekupe")) {
+      return ARTISTS_GUARANTEED_IMAGES.olivio_jekupe;
+    }
+    if (lowerQuery.includes("tango")) {
+      return ARTISTS_GUARANTEED_IMAGES.tango;
+    }
+    if (lowerQuery.includes("salsa")) {
+      return ARTISTS_GUARANTEED_IMAGES.salsa;
+    }
+    if (lowerQuery.includes("valsa")) {
+      return ARTISTS_GUARANTEED_IMAGES.valsa;
+    }
+    if (lowerQuery.includes("rock")) {
+      return ARTISTS_GUARANTEED_IMAGES.rock;
+    }
+    if (lowerQuery.includes("jongo")) {
+      return ARTISTS_GUARANTEED_IMAGES.jongo;
+    }
+    if (lowerQuery.includes("congada")) {
+      return ARTISTS_GUARANTEED_IMAGES.congada;
+    }
+    if (lowerQuery.includes("coco pernambucano")) {
+      return ARTISTS_GUARANTEED_IMAGES.coco_pernambucano;
+    }
+    if (lowerQuery.includes("ciranda")) {
+      return ARTISTS_GUARANTEED_IMAGES.ciranda;
+    }
+    if (lowerQuery.includes("hip hop") || lowerQuery.includes("hiphop")) {
+      return ARTISTS_GUARANTEED_IMAGES.hip_hop;
+    }
+    if (lowerQuery.includes("funk")) {
+      return ARTISTS_GUARANTEED_IMAGES.funk;
+    }
+    if (lowerQuery.includes("frevo")) {
+      return ARTISTS_GUARANTEED_IMAGES.frevo;
+    }
+    if (lowerQuery.includes("fandango")) {
+      return ARTISTS_GUARANTEED_IMAGES.fandango;
+    }
+    if (lowerQuery.includes("danca de salao") || lowerQuery.includes("dancas de salao") || lowerQuery.includes("dança de salão") || lowerQuery.includes("danças de salão")) {
+      return ARTISTS_GUARANTEED_IMAGES.danca_de_salao;
+    }
+    if (lowerQuery.includes("danca contemporanea") || lowerQuery.includes("dança contemporânea")) {
+      return ARTISTS_GUARANTEED_IMAGES.danca_contemporanea;
+    }
+    if (lowerQuery.includes("danca classica") || lowerQuery.includes("dança clássica")) {
+      return ARTISTS_GUARANTEED_IMAGES.danca_classica;
+    }
+    if (lowerQuery.includes("cavalo marinho")) {
+      return ARTISTS_GUARANTEED_IMAGES.cavalo_marinho;
+    }
+    if (lowerQuery.includes("catira")) {
+      return ARTISTS_GUARANTEED_IMAGES.catira;
+    }
+    if (lowerQuery.includes("carimbo") || lowerQuery.includes("carimbó")) {
+      return ARTISTS_GUARANTEED_IMAGES.carimbo;
+    }
+    if (lowerQuery.includes("bale") || lowerQuery.includes("ballet") || lowerQuery.includes("balé")) {
+      return ARTISTS_GUARANTEED_IMAGES.bale;
+    }
+    if (lowerQuery.includes("arte indigena") || lowerQuery.includes("arte indígena") || lowerQuery.includes("cultura indigena") || lowerQuery.includes("cultura indígena")) {
+      return ARTISTS_GUARANTEED_IMAGES.arte_indigena;
+    }
+    if (lowerQuery.includes("arte africana") || lowerQuery.includes("cultura africana") || lowerQuery.includes("mascaras africanas") || lowerQuery.includes("máscaras africanas")) {
+      return ARTISTS_GUARANTEED_IMAGES.arte_africana;
     }
 
     let termo = "";
