@@ -816,7 +816,40 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
 
-  // Step A.000: Check our comprehensive knowledge base of art concepts, music, dance, theater, artists and emotions
+  // Step A: Search the hand-crafted cultural library entries (the primary database/lib) first using keyword normalization
+  let bestMatchKey: string | undefined = undefined;
+  let bestMatchScore = 0;
+
+  for (const chave in lib) {
+    const item = lib[chave];
+    if (!item.palavras_chave) continue;
+
+    for (const pKeyword of item.palavras_chave) {
+      const normalizedKeyword = normalizarTexto(pKeyword);
+      
+      // Let's check matching strength
+      if (normalizedMsg.includes(normalizedKeyword)) {
+        // Find match length score so specific phrases are prioritized over tiny subsets (e.g. "hip hop" over "hip")
+        const score = normalizedKeyword.length;
+        if (score > bestMatchScore) {
+          bestMatchScore = score;
+          bestMatchKey = chave;
+        }
+      }
+    }
+  }
+
+  // If we found a match in our localized cultural library, compile the perfect formatted content!
+  if (bestMatchKey) {
+    const item = lib[bestMatchKey];
+    const replyText = construirRespostaLocal(item, mensagem);
+    return {
+      reply: replyText,
+      matchedKey: bestMatchKey
+    };
+  }
+
+  // Step B: Check our comprehensive knowledge base of art concepts, music, dance, theater, artists and emotions
   let bestConhecimentoMatch: ConhecimentoItem | null = null;
   let bestConhecimentoScore = 0;
 
@@ -950,38 +983,7 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
     }
   }
 
-  // Step B: Search the cultural library entries using keyword normalization
-  let bestMatchKey: string | undefined = undefined;
-  let bestMatchScore = 0;
-
-  for (const chave in lib) {
-    const item = lib[chave];
-    if (!item.palavras_chave) continue;
-
-    for (const pKeyword of item.palavras_chave) {
-      const normalizedKeyword = normalizarTexto(pKeyword);
-      
-      // Let's check matching strength
-      if (normalizedMsg.includes(normalizedKeyword)) {
-        // Find match length score so specific phrases are prioritized over tiny subsets (e.g. "hip hop" over "hip")
-        const score = normalizedKeyword.length;
-        if (score > bestMatchScore) {
-          bestMatchScore = score;
-          bestMatchKey = chave;
-        }
-      }
-    }
-  }
-
-  // If we found a high score match in our localized cultural library, compile the perfect formatted content!
-  if (bestMatchKey) {
-    const item = lib[bestMatchKey];
-    const replyText = construirRespostaLocal(item, mensagem);
-    return {
-      reply: replyText,
-      matchedKey: bestMatchKey
-    };
-  }
+  // Step L: None matched locally.
 
   // If nothing matches, we return null so the handler knows it can fall back to AI *only* if the API is configured and online.
   return null;

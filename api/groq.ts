@@ -57,7 +57,7 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     credito: "Tarsila do Amaral"
   },
   portinari: {
-    imagemUrl: "https://i.imgur.com/8DIvcRC.jpg",
+    imagemUrl: "https://i.imgur.com/u6cdxuw.jpg",
     titulo: "Cândido Portinari (Retrato)",
     credito: "Cândido Portinari"
   },

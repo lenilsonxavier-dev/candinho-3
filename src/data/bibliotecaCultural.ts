@@ -23,15 +23,49 @@ export const bibliotecaCultural: Record<string, BibliotecaItem> = {
   portinari: {
     palavras_chave: ["portinari", "candido", "cândido", "candinho", "guerra e paz", "meninos brincando", "rodopiando"],
     inicio: [
-      "Cândido Portinari foi um dos pintores mais importantes do Brasil!",
-      "Nascido em Brodowski, no interior de São Paulo, ele amava retratar o povo brasileiro."
+      "🎨 Cândido Portinari foi um dos mais importantes artistas do Brasil! Ele nasceu em 1903, na cidade de Brodowski, São Paulo."
     ],
     explicacao_curta: [
-      "Ele pintava crianças brincando de pipa, jogadores de futebol e momentos do dia a dia com cores incríveis. Sua obra mais famosa, os painéis 'Guerra e Paz', fica na sede da ONU em Nova York!"
+      "Filho de imigrantes italianos que trabalhavam na lavoura de café, Portinari cresceu observando a vida simples do campo, tema super presente em suas pinturas."
+    ],
+    explicacao_aprofundada: [
+      "Ele fez parte do Modernismo Brasileiro, valorizando a nossa cultura. Suas obras de arte mostram trabalhadores, brincadeiras infantis (como soltar pipa e futebol), festas populares e também problemas sociais como a migração."
+    ],
+    curiosidade: [
+      "Portinari produziu mais de 5 mil obras ao longo da vida e seu trabalho é reconhecido em todo o planeta!"
+    ],
+    interacao: [
+      "Qual das obras famosas dele (como O Lavrador de Café ou Meninos Soltando Pipas) você prefere?"
+    ],
+    atividade: [
+      "Que tal fazer um desenho bem bonito mostrando a sua brincadeira favorita, inspirado no Candinho? 🪁🎨"
+    ],
+    final: [
+      "Seu trabalho continua representando lindamente a história, a cultura e o povo brasileiro! 🇧🇷"
     ],
     ano_nascimento: "1903",
     ano_falecimento: "1962",
-    categoria: "Modernismo"
+    categoria: "Modernismo",
+    resposta_direta: `🎨 **Cândido Portinari**
+
+Cândido Portinari foi um dos mais importantes artistas do Brasil. Ele nasceu em 1903, na cidade de Brodowski, no estado de São Paulo. Filho de imigrantes italianos que trabalhavam na lavoura de café, Portinari cresceu observando a vida simples do campo, tema que apareceria muitas vezes em suas pinturas.
+
+Desde criança gostava de desenhar. Aos 15 anos, mudou-se para a cidade do Rio de Janeiro para estudar na Escola Nacional de Belas Artes. Mais tarde, viajou para a França e conheceu diferentes estilos artísticos.
+
+Portinari fez parte do Modernismo Brasileiro, movimento que buscava valorizar a cultura, as pessoas e as paisagens do Brasil. Suas obras mostram trabalhadores, crianças brincando, festas populares e também problemas sociais, como a pobreza e a migração.
+
+🖼️ **Obras famosas**
+• O Lavrador de Café (1934)
+• Café (1935)
+• Meninos Soltando Pipas
+• Futebol
+• Retirantes (1944)
+• Guerra e Paz, criados para a sede da Organização das Nações Unidas.
+
+🌟 **Curiosidade**
+Portinari produziu mais de 5 mil obras ao longo da vida. Seu trabalho é reconhecido no mundo inteiro e continua sendo uma importante representação da história, da cultura e do povo brasileiro.
+
+**Resumo**: Cândido Portinari foi um pintor modernista brasileiro que retratou a vida do povo, as brincadeiras infantis e as questões sociais do Brasil, tornando-se um dos maiores artistas da história do país. 🇧🇷🎨`
   },
   tarsila: {
     palavras_chave: ["tarsila", "amaral", "abaporu", "operarios", "operários", "antropofagia"],
