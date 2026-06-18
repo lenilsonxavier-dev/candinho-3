@@ -21,7 +21,7 @@ export interface BibliotecaItem {
 export const bibliotecaCultural: Record<string, BibliotecaItem> = {
   // --- BASE ORIGINAL RE-Mapeada & Unificada ---
   portinari: {
-    palavras_chave: ["portinari", "candido", "cândido", "candinho", "guerra e paz", "meninos brincando", "rodopiando"],
+    palavras_chave: ["portinari", "candido portinari", "cândido portinari", "guerra e paz", "meninos brincando", "rodopiando"],
     inicio: [
       "🎨 Cândido Portinari foi um dos mais importantes artistas do Brasil! Ele nasceu em 1903, na cidade de Brodowski, São Paulo."
     ],

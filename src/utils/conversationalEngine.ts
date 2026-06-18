@@ -17,6 +17,34 @@ export function normalizarTexto(txt: string): string {
     .trim();
 }
 
+// 1.1 Robust keyword boundary tester to prevent substring matches (e.g., "rio" inside "curiosidade" or "so" inside "sobre")
+export function testarPalavraChave(msgNormalizada: string, kwNormalizada: string): boolean {
+  if (!msgNormalizada || !kwNormalizada) return false;
+
+  const msg = msgNormalizada.trim();
+  const kw = kwNormalizada.trim();
+
+  // Exact match of phrase or word
+  if (msg === kw) return true;
+
+  // Space-padded boundary match for words/phrases
+  const paddedMsg = ` ${msg} `;
+  const paddedKw = ` ${kw} `;
+  if (paddedMsg.includes(paddedKw)) return true;
+
+  // Singular/plural Portuguese helper for single word keywords
+  if (!kw.includes(" ")) {
+    const words = msg.split(" ");
+    for (const w of words) {
+      if (w === kw) return true;
+      if (w === kw + "s") return true;
+      if (kw === w + "s") return true;
+    }
+  }
+
+  return false;
+}
+
 // 2. Core local dialog dictionary for standard greetings and chat utilities
 const CONVERSATIONAL_INTENTS: DialogIntent[] = [
   {
@@ -380,6 +408,7 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
 
   // ===== CONCEITOS GERAIS DE ARTE =====
   { palavras: ['arte', 'o que é arte'], resposta: 'Arte é uma forma de expressão! Pode ser um desenho, pintura, dança, música, teatro… É o jeito das pessoas mostrarem sentimentos e ideias. 🎨' },
+  { palavras: ['o que e vida', 'vida', 'o que e a vida', 'significado da vida'], resposta: '🌱 A vida é o maior e mais precioso pedaço de papel em branco que recebemos! Cada dia que vivemos é como uma pincelada única que damos nesse quadro. Para os artistas, a vida é expressar amor, brincar, cantar, observar a natureza e sorrir com os amigos. Tratar a vida com carinho é o desenho mais bonito que podemos criar! 🌈✨' },
   { palavras: ['desenho', 'o que é desenho'], resposta: 'Desenho é quando usamos lápis, caneta ou giz para criar linhas e formas. Dá para desenhar tudo o que a gente imagina! 🖍️' },
   { palavras: ['pintura', 'técnicas de pintura'], resposta: 'Na pintura, existem várias técnicas: aquarela (tinta com água, suave), guache (tinta grossa), tinta a óleo (demora a secar) e até pintura com os dedos! 🎨' },
 
@@ -816,7 +845,19 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
 
-  // Step A: Search the hand-crafted cultural library entries (the primary database/lib) first using keyword normalization
+  // Step A.00: Check our rich curated curiosities acervo FIRST for precise high-quality answers (anime, manga, mona lisa, gogh, etc.)
+  const matchedCuriosity = buscarCuriosidadePorKeyword(mensagem);
+  if (matchedCuriosity) {
+    let reply = `💡 **Que curiosidade fantástica!**\n\n**Pergunta:** ${matchedCuriosity.pergunta}\n\n👉 **Resposta:** ${matchedCuriosity.resposta}`;
+    if (matchedCuriosity.detalhes) {
+      reply += `\n\n🤓 **Curiosidade extra:** ${matchedCuriosity.detalhes}`;
+    }
+    return {
+      reply: reply
+    };
+  }
+
+  // Step A: Search the hand-crafted cultural library entries (the primary database/lib) with safe word boundary check
   let bestMatchKey: string | undefined = undefined;
   let bestMatchScore = 0;
 
@@ -827,8 +868,8 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
     for (const pKeyword of item.palavras_chave) {
       const normalizedKeyword = normalizarTexto(pKeyword);
       
-      // Let's check matching strength
-      if (normalizedMsg.includes(normalizedKeyword)) {
+      // Check matching strength using robust keyword bound helper to prevent substring overlaps (like "rio" in "curiosidade")
+      if (testarPalavraChave(normalizedMsg, normalizedKeyword)) {
         // Find match length score so specific phrases are prioritized over tiny subsets (e.g. "hip hop" over "hip")
         const score = normalizedKeyword.length;
         if (score > bestMatchScore) {
@@ -858,7 +899,7 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
       const normalizedPalavra = normalizarTexto(palavra);
       if (!normalizedPalavra) continue;
 
-      if (normalizedMsg.includes(normalizedPalavra)) {
+      if (testarPalavraChave(normalizedMsg, normalizedPalavra)) {
         const score = normalizedPalavra.length;
         if (score > bestConhecimentoScore) {
           bestConhecimentoScore = score;
@@ -877,19 +918,7 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
     };
   }
 
-  // Step A.00: Check our rich curiosities acervo first for precise keyword questions
-  const matchedCuriosity = buscarCuriosidadePorKeyword(mensagem);
-  if (matchedCuriosity) {
-    let reply = `💡 **Que curiosidade fantástica!**\n\n**Pergunta:** ${matchedCuriosity.pergunta}\n\n👉 **Resposta:** ${matchedCuriosity.resposta}`;
-    if (matchedCuriosity.detalhes) {
-      reply += `\n\n🤓 **Curiosidade extra:** ${matchedCuriosity.detalhes}`;
-    }
-    return {
-      reply: reply
-    };
-  }
-
-  // Step A.0: Check for specific Candinho / Portinari / Artists triggers with high-priority word-boundary regexes
+  // Step C: Check for specific Candinho / Portinari / Artists triggers
   for (const intent of PORTINARI_INTENTS) {
     const matched = intent.keywords.some(keyword => {
       const nKw = normalizarTexto(keyword);
@@ -897,14 +926,11 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
 
       // If it's a bare short/common keyword like "candinho", "portinari", or "candido",
       // only match if the entire query is exactly that keyword or very close to it.
-      // This prevents the bot from introducing itself every time the child just addresses him (e.g. "Candinho, o que é forma?").
       if (nKw === "candinho" || nKw === "portinari" || nKw === "candido") {
         return normalizedMsg === nKw;
       }
 
-      const escapedKeyword = nKw.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-      const regex = new RegExp(`\\b${escapedKeyword}\\b`, "i");
-      return regex.test(normalizedMsg);
+      return testarPalavraChave(normalizedMsg, nKw);
     });
     
     if (matched) {
@@ -912,7 +938,7 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
     }
   }
 
-  // Step A.1: Check for Local Jokes / Piadas Trigger
+  // Step D: Check for Local Jokes / Piadas Trigger
   if (
     normalizedMsg.includes("piada") || 
     normalizedMsg.includes("engracad") || 
@@ -929,7 +955,7 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
     };
   }
 
-  // Step A.2: Check for Local Curiosities Trigger
+  // Step E: Check for Local Curiosities Trigger
   if (
     normalizedMsg.includes("curiosidade") || 
     normalizedMsg.includes("sabia que") || 
@@ -950,7 +976,27 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
     } else if (normalizedMsg.includes("teatro") || normalizedMsg.includes("palco") || normalizedMsg.includes("comedia") || normalizedMsg.includes("tragedia") || normalizedMsg.includes("grecia")) {
       randomCuriosity = getRandomElement(CURIOSIDADES_TEATRO);
       categoryPrefix = "🎭 **Dos Palcos Lendários e do Teatro Mágico!** ✨\n\n";
-    } else if (normalizedMsg.includes("desenho") || normalizedMsg.includes("pintor") || normalizedMsg.includes("artista") || normalizedMsg.includes("gogh") || normalizedMsg.includes("da vinci") || normalizedMsg.includes("pintar") || normalizedMsg.includes("pincel")) {
+    } else if (normalizedMsg.includes("anime") || normalizedMsg.includes("cartoon") || normalizedMsg.includes("goku") || normalizedMsg.includes("pokemon")) {
+      const category = CURIOSIDADES_ACERVO.find(cat => cat.id === "animes_fantastico");
+      const randomItem = category ? getRandomElement(category.items.map(i => `${i.emoji} **${i.pergunta}**\n${i.resposta}`)) : "";
+      randomCuriosity = randomItem;
+      categoryPrefix = "🌸 **Sobre os Fantásticos Animes Japoneses!** 📺\n\n";
+    } else if (normalizedMsg.includes("manga") || normalizedMsg.includes("quadrinho") || normalizedMsg.includes("tezuka")) {
+      const category = CURIOSIDADES_ACERVO.find(cat => cat.id === "mangas_origem");
+      const randomItem = category ? getRandomElement(category.items.map(i => `${i.emoji} **${i.pergunta}**\n${i.resposta}`)) : "";
+      randomCuriosity = randomItem;
+      categoryPrefix = "📖 **Sobre a Mágica Arte dos Mangás!** ✍️\n\n";
+    } else if (normalizedMsg.includes("desenho") || normalizedMsg.includes("scooby") || normalizedMsg.includes("simpsons") || normalizedMsg.includes("disney")) {
+      const category = CURIOSIDADES_ACERVO.find(cat => cat.id === "desenhos_animados");
+      const randomItem = category ? getRandomElement(category.items.map(i => `${i.emoji} **${i.pergunta}**\n${i.resposta}`)) : "";
+      randomCuriosity = randomItem;
+      categoryPrefix = "🎬 **No Mundo dos Desenhos Animados Clássicos!** 🍿\n\n";
+    } else if (normalizedMsg.includes("tartaruga") || normalizedMsg.includes("ninja")) {
+      const category = CURIOSIDADES_ACERVO.find(cat => cat.id === "tartarugas_ninja");
+      const randomItem = category ? getRandomElement(category.items.map(i => `${i.emoji} **${i.pergunta}**\n${i.resposta}`)) : "";
+      randomCuriosity = randomItem;
+      categoryPrefix = "🐢 **Poder Mutante no Renascimento da Arte!** 🍕\n\n";
+    } else if (normalizedMsg.includes("pintor") || normalizedMsg.includes("artista") || normalizedMsg.includes("gogh") || normalizedMsg.includes("da vinci") || normalizedMsg.includes("pintar") || normalizedMsg.includes("pincel")) {
       randomCuriosity = getRandomElement(CURIOSIDADES_DESENHO);
       categoryPrefix = "🎨 **Do Ateliê de Pintores e Técnicas de Desenho!** 🖌️\n\n";
     } else {
@@ -967,15 +1013,11 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
     };
   }
 
-  // Step A: First scan direct conversational intents
+  // Step F: First scan direct conversational intents
   for (const intent of CONVERSATIONAL_INTENTS) {
     const matched = intent.keywords.some(keyword => {
       const normalizedKeyword = normalizarTexto(keyword);
-      // Perfect match or message is precisely the keyword
-      return normalizedMsg === normalizedKeyword || 
-             normalizedMsg.startsWith(normalizedKeyword + " ") || 
-             normalizedMsg.endsWith(" " + normalizedKeyword) ||
-             normalizedMsg.includes(" " + normalizedKeyword + " ");
+      return testarPalavraChave(normalizedMsg, normalizedKeyword);
     });
     
     if (matched) {
@@ -983,9 +1025,7 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
     }
   }
 
-  // Step L: None matched locally.
-
-  // If nothing matches, we return null so the handler knows it can fall back to AI *only* if the API is configured and online.
+  // None matched locally. Return null to allow fallback if API is present.
   return null;
 }
 
