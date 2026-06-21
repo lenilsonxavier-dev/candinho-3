@@ -7581,7 +7581,28 @@ function getRandomElement(arr) {
   return arr[idx];
 }
 function obterImagemDaGaleria(key) {
-  const item = GALERIA_IMAGENS[key];
+  if (!key) return null;
+  let targetKey = key.toLowerCase().trim();
+  if (targetKey.includes("literatura")) {
+    targetKey = "literatura";
+  } else if (targetKey.includes("musica")) {
+    targetKey = "musica";
+  } else if (targetKey.includes("arte")) {
+    targetKey = "arte";
+  } else if (targetKey.includes("danca")) {
+    targetKey = "danca";
+  } else if (targetKey.includes("poema") || targetKey.includes("poesia")) {
+    targetKey = "poema";
+  } else if (targetKey.includes("desenho") || targetKey.includes("esboco")) {
+    targetKey = "desenho";
+  } else if (targetKey.includes("pintura")) {
+    targetKey = "pintura";
+  } else if (targetKey.includes("teatro") || targetKey.includes("palco")) {
+    targetKey = "teatro";
+  } else if (targetKey.includes("caboclinho")) {
+    targetKey = "caboclinho";
+  }
+  const item = GALERIA_IMAGENS[targetKey];
   if (!item) return null;
   if (Array.isArray(item)) {
     const idx = Math.floor(Math.random() * item.length);
@@ -9594,56 +9615,57 @@ async function buscarImagem(pergunta, matchedKey, lib) {
       const regex = new RegExp(`\\b${word}\\b`, "i");
       return regex.test(lowerQuery);
     };
-    if (matchedKey === "arte" || matchConceptWord("arte")) {
+    const mK = matchedKey ? matchedKey.toLowerCase() : "";
+    if (mK === "arte" || mK.includes("arte") || matchConceptWord("arte")) {
       return {
         imagemUrl: "https://i.imgur.com/S65idlX.jpeg",
         titulo: "O Violeiro",
         credito: "Almeida J\xFAnior"
       };
     }
-    if (matchedKey === "danca" || matchConceptWord("danca") || matchConceptWord("dancas") || matchConceptWord("dancar")) {
+    if (mK === "danca" || mK.includes("danca") || matchConceptWord("danca") || matchConceptWord("dancas") || matchConceptWord("dancar")) {
       return {
         imagemUrl: "https://i.imgur.com/3LGoXuZ.jpeg",
         titulo: "A Dan\xE7a",
         credito: "Henri Matisse"
       };
     }
-    if (matchedKey === "poema" || matchConceptWord("poema") || matchConceptWord("poemas") || matchConceptWord("poesia") || matchConceptWord("poesias") || matchConceptWord("verso") || matchConceptWord("versos")) {
+    if (mK === "poema" || mK.includes("poema") || mK.includes("poesia") || matchConceptWord("poema") || matchConceptWord("poemas") || matchConceptWord("poesia") || matchConceptWord("poesias") || matchConceptWord("verso") || matchConceptWord("versos")) {
       return {
         imagemUrl: "https://i.imgur.com/wvQLiom.jpeg",
         titulo: "Retrato de Cec\xEDlia Meireles",
         credito: "Cec\xEDlia Meireles"
       };
     }
-    if (matchedKey === "desenho" || matchConceptWord("desenho") || matchConceptWord("desenhos") || matchConceptWord("esboco") || matchConceptWord("esbocos")) {
+    if (mK === "desenho" || mK.includes("desenho") || mK.includes("esboco") || matchConceptWord("desenho") || matchConceptWord("desenhos") || matchConceptWord("esboco") || matchConceptWord("esbocos")) {
       return {
         imagemUrl: "https://i.imgur.com/qKt1FWr.jpeg",
         titulo: "Esbo\xE7o da \xDAltima Ceia",
         credito: "Leonardo da Vinci"
       };
     }
-    if (matchedKey === "literatura" || matchConceptWord("literatura")) {
+    if (mK === "literatura" || mK.includes("literatura") || matchConceptWord("literatura")) {
       return {
         imagemUrl: "https://i.imgur.com/JoFITap.jpeg",
         titulo: "Retrato do Acervo Liter\xE1rio Cl\xE1ssico",
         credito: "Acervo de Literatura Cl\xE1ssica"
       };
     }
-    if (matchedKey === "musica" || matchConceptWord("musica") || matchConceptWord("musicas")) {
+    if (mK === "musica" || mK.includes("musica") || matchConceptWord("musica") || matchConceptWord("musicas")) {
       return {
         imagemUrl: "https://i.imgur.com/8tSYMB6.jpeg",
         titulo: "Cl\xE1ssico Hist\xF3rico de Partituras e Instrumentos",
         credito: "Acervo de M\xFAsica Cl\xE1ssica"
       };
     }
-    if (matchedKey === "pintura" || matchConceptWord("pintura") || matchConceptWord("pinturas")) {
+    if (mK === "pintura" || mK.includes("pintura") || matchConceptWord("pintura") || matchConceptWord("pinturas")) {
       return {
         imagemUrl: "https://i.imgur.com/itQdr8H.jpeg",
         titulo: "No Bosque de Giverny (In the Woods at Giverny)",
         credito: "Claude Monet"
       };
     }
-    if (matchedKey === "teatro" || matchConceptWord("teatro") || matchConceptWord("teatros") || matchConceptWord("palco") || matchConceptWord("palcos")) {
+    if (mK === "teatro" || mK.includes("teatro") || mK.includes("palco") || matchConceptWord("teatro") || matchConceptWord("teatros") || matchConceptWord("palco") || matchConceptWord("palcos")) {
       return {
         imagemUrl: "https://i.imgur.com/JHzxAbj.jpeg",
         titulo: "Teatro Municipal de S\xE3o Paulo",
