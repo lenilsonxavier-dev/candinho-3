@@ -1,4 +1,5 @@
 import { CURIOSIDADES_ACERVO, buscarCuriosidadePorKeyword } from "../data/curiosidadesAcervo.js";
+import { GALERIA_IMAGENS, GaleriaItem } from "../data/galeriaImagens.js";
 
 export interface DialogIntent {
   keywords: string[];
@@ -74,6 +75,26 @@ function getRandomElement(arr?: string[] | null): string {
   if (!arr || arr.length === 0) return "";
   const idx = Math.floor(Math.random() * arr.length);
   return arr[idx];
+}
+
+export interface BotLocalResponse {
+  reply: string;
+  matchedKey?: string;
+  image?: {
+    imagemUrl: string;
+    titulo: string;
+    credito: string;
+  };
+}
+
+function obterImagemDaGaleria(key: string): { imagemUrl: string; titulo: string; credito: string } | null {
+  const item = GALERIA_IMAGENS[key];
+  if (!item) return null;
+  if (Array.isArray(item)) {
+    const idx = Math.floor(Math.random() * item.length);
+    return item[idx];
+  }
+  return item;
 }
 
 // 3. Builds a customized, structured conversational response natively using metadata parameters
@@ -1131,7 +1152,7 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
   }
 ];
 
-export function resolverMensagemLocalmente(mensagem: string, lib: Record<string, any>): { reply: string, matchedKey?: string } | null {
+function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any>): { reply: string, matchedKey?: string } | null {
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
 
@@ -1319,6 +1340,24 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
 
   // None matched locally. Return null to allow fallback if API is present.
   return null;
+}
+
+export function resolverMensagemLocalmente(mensagem: string, lib: Record<string, any>): BotLocalResponse | null {
+  const result = resolverMensagemLocalmenteRaw(mensagem, lib);
+  if (!result) return null;
+
+  // Se houver matchedKey, vamos verificar se existe imagem correspondente na nossa Galeria
+  if (result.matchedKey) {
+    const imgObj = obterImagemDaGaleria(result.matchedKey);
+    if (imgObj) {
+      return {
+        ...result,
+        image: imgObj
+      };
+    }
+  }
+
+  return result;
 }
 
 // 6. Name extraction helper for kids

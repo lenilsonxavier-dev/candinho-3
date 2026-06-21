@@ -188,7 +188,11 @@ export default function App() {
           imagemUrl: data.image.imagemUrl,
           titulo: data.image.titulo || "Obra de arte",
           credito: data.image.credito || "Wikimedia Commons"
-        } : null,
+        } : (localResult?.image ? {
+          imagemUrl: localResult.image.imagemUrl,
+          titulo: localResult.image.titulo || "Obra de arte",
+          credito: localResult.image.credito || "Wikimedia Commons"
+        } : null),
         timestamp: new Date(),
         isImageRequested: shouldAutoShowImage // Controls lazy-loading under demand
       };
@@ -200,11 +204,49 @@ export default function App() {
       if (nomeEncontrado && localResult) {
         fallbackText = `Que espetáculo de nome, **${nomeEncontrado}**! 🎨 Que alegria gigante ter você aqui comigo na minha paleta de descobertas! ✨\n\n${fallbackText}`;
       }
+
+      const containsImageKeywords = 
+        queryText.toLowerCase().includes("mostra") ||
+        queryText.toLowerCase().includes("mostre") ||
+        queryText.toLowerCase().includes("ver") ||
+        queryText.toLowerCase().includes("veja") ||
+        queryText.toLowerCase().includes("imagem") ||
+        queryText.toLowerCase().includes("foto") ||
+        queryText.toLowerCase().includes("quadro") ||
+        queryText.toLowerCase().includes("pintura") ||
+        queryText.toLowerCase().includes("desenho") ||
+        queryText.toLowerCase().includes("ilustra") ||
+        queryText.toLowerCase().includes("esboço") ||
+        queryText.toLowerCase().includes("esboco") ||
+        queryText.toLowerCase().includes("arte") ||
+        queryText.toLowerCase().includes("dança") ||
+        queryText.toLowerCase().includes("danca") ||
+        queryText.toLowerCase().includes("poema") ||
+        queryText.toLowerCase().includes("poesia") ||
+        queryText.toLowerCase().includes("verso") ||
+        queryText.toLowerCase().includes("literatura") ||
+        queryText.toLowerCase().includes("música") ||
+        queryText.toLowerCase().includes("musica") ||
+        queryText.toLowerCase().includes("teatro") ||
+        queryText.toLowerCase().includes("palco") ||
+        queryText.toLowerCase().includes("piada") ||
+        queryText.toLowerCase().includes("charada") ||
+        queryText.toLowerCase().includes("curiosidade") ||
+        queryText.toLowerCase().includes("sabia que");
+
+      const shouldAutoShowImage = containsImageKeywords || isArtistMatched || !!localResult?.matchedKey;
+
       const errorMessage: Message = {
         id: `error-${Date.now()}`,
         text: fallbackText,
         sender: "bot",
-        timestamp: new Date()
+        image: localResult?.image ? {
+          imagemUrl: localResult.image.imagemUrl,
+          titulo: localResult.image.titulo || "Obra de arte",
+          credito: localResult.image.credito || "Wikimedia Commons"
+        } : null,
+        timestamp: new Date(),
+        isImageRequested: shouldAutoShowImage
       };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {

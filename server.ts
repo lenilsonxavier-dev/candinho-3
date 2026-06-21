@@ -1416,7 +1416,7 @@ app.post("/api/groq", async (req: Request, res: Response) => {
         credito: "Ilustração do Candinho"
       };
     } else {
-      imagemResult = await buscarImagem(mensagem, localResult?.matchedKey, lib);
+      imagemResult = localResult?.image || await buscarImagem(mensagem, localResult?.matchedKey, lib);
     }
 
     // 4. Retorno Unificado

@@ -1209,7 +1209,7 @@ export default async function handler(req: any, res: any) {
         credito: "Ilustração do Candinho"
       };
     } else {
-      imagemResult = await buscarImagem(mensagem, localResult?.matchedKey, lib);
+      imagemResult = localResult?.image || await buscarImagem(mensagem, localResult?.matchedKey, lib);
     }
 
     return res.status(200).json({
