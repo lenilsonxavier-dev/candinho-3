@@ -875,6 +875,113 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
       return ARTISTS_GUARANTEED_IMAGES.arte_africana;
     }
 
+    // --- CONCEITOS, PIADAS E CURIOSIDADES COM IMAGENS ESPECÍFICAS GARANTIDAS ---
+    const matchConceptWord = (word: string) => {
+      const regex = new RegExp(`\\b${word}\\b`, "i");
+      return regex.test(lowerQuery);
+    };
+
+    if (matchConceptWord("arte")) {
+      return {
+        imagemUrl: "https://i.imgur.com/S65idlX.jpeg",
+        titulo: "O Violeiro",
+        credito: "Almeida Júnior"
+      };
+    }
+    if (matchConceptWord("danca") || matchConceptWord("dancas") || matchConceptWord("dancar")) {
+      return {
+        imagemUrl: "https://i.imgur.com/3LGoXuZ.jpeg",
+        titulo: "A Dança",
+        credito: "Henri Matisse"
+      };
+    }
+    if (matchConceptWord("poema") || matchConceptWord("poemas") || matchConceptWord("poesia") || matchConceptWord("poesias") || matchConceptWord("verso") || matchConceptWord("versos")) {
+      return {
+        imagemUrl: "https://i.imgur.com/wvQLiom.jpeg",
+        titulo: "Retrato de Cecília Meireles",
+        credito: "Cecília Meireles"
+      };
+    }
+    if (matchConceptWord("desenho") || matchConceptWord("desenhos") || matchConceptWord("esboco") || matchConceptWord("esbocos")) {
+      return {
+        imagemUrl: "https://i.imgur.com/qKt1FWr.jpeg",
+        titulo: "Esboço da Última Ceia (Última Ceia sketch)",
+        credito: "Leonardo da Vinci"
+      };
+    }
+    if (matchConceptWord("literatura")) {
+      return {
+        imagemUrl: "https://i.imgur.com/JoFITap.jpeg",
+        titulo: "A Literatura",
+        credito: "Acervo de Literatura"
+      };
+    }
+    if (matchConceptWord("musica") || matchConceptWord("musicas")) {
+      return {
+        imagemUrl: "https://i.imgur.com/8tSYMB6.jpeg",
+        titulo: "A Música",
+        credito: "Acervo de Música"
+      };
+    }
+    if (matchConceptWord("pintura") || matchConceptWord("pinturas")) {
+      return {
+        imagemUrl: "https://i.imgur.com/itQdr8H.jpeg",
+        titulo: "No Bosque de Giverny (In the Woods at Giverny)",
+        credito: "Claude Monet"
+      };
+    }
+    if (matchConceptWord("teatro") || matchConceptWord("teatros") || matchConceptWord("palco") || matchConceptWord("palcos")) {
+      return {
+        imagemUrl: "https://i.imgur.com/JHzxAbj.jpeg",
+        titulo: "Teatro Municipal de São Paulo",
+        credito: "Teatro Municipal de SP"
+      };
+    }
+
+    if (matchConceptWord("piada") || matchConceptWord("piadas") || matchConceptWord("engracado") || matchConceptWord("charada") || matchConceptWord("charadas") || matchConceptWord("brincadeira") || matchConceptWord("humor") || matchConceptWord("rir") || matchConceptWord("sorrir")) {
+      const IMAGENS_PIADAS = [
+        {
+          imagemUrl: "https://i.imgur.com/D0qsROZ.jpeg",
+          titulo: "As Quatro Estações (Le Saisons)",
+          credito: "Giuseppe Arcimboldo"
+        },
+        {
+          imagemUrl: "https://i.imgur.com/4zBo1Q2.jpeg",
+          titulo: "Mãos Desenhando (Drawing Hands)",
+          credito: "M. C. Escher"
+        },
+        {
+          imagemUrl: "https://i.imgur.com/s1Ed4RY.jpeg",
+          titulo: "Retrato de Rodolfo II (Vertumno)",
+          credito: "Giuseppe Arcimboldo"
+        },
+        {
+          imagemUrl: "https://i.imgur.com/Lk68fFd.jpeg",
+          titulo: "Relatividade (Relativity)",
+          credito: "M. C. Escher"
+        }
+      ];
+      const idx = Math.floor(Math.random() * IMAGENS_PIADAS.length);
+      return IMAGENS_PIADAS[idx];
+    }
+
+    if (matchConceptWord("curiosidade") || matchConceptWord("curiosidades") || lowerQuery.includes("sabia que") || lowerQuery.includes("voce sabia")) {
+      const IMAGENS_CURIOSIDADES = [
+        {
+          imagemUrl: "https://i.imgur.com/Bmzw190.jpeg",
+          titulo: "Sabedoria da Arte (Coruja)",
+          credito: "Acervo de Curiosidades"
+        },
+        {
+          imagemUrl: "https://i.imgur.com/5gUFu6O.jpeg",
+          titulo: "Autorretrato de Leonardo da Vinci",
+          credito: "Leonardo da Vinci"
+        }
+      ];
+      const idx = Math.floor(Math.random() * IMAGENS_CURIOSIDADES.length);
+      return IMAGENS_CURIOSIDADES[idx];
+    }
+
     let termo = "";
 
     // 1. Se encontramos uma correspondência exata na biblioteca local, usamos o termo limpo dela
