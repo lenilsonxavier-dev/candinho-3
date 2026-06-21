@@ -881,64 +881,64 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
       return regex.test(lowerQuery);
     };
 
-    if (matchConceptWord("arte")) {
+    if (matchedKey === "arte" || matchConceptWord("arte")) {
       return {
         imagemUrl: "https://i.imgur.com/S65idlX.jpeg",
         titulo: "O Violeiro",
         credito: "Almeida Júnior"
       };
     }
-    if (matchConceptWord("danca") || matchConceptWord("dancas") || matchConceptWord("dancar")) {
+    if (matchedKey === "danca" || matchConceptWord("danca") || matchConceptWord("dancas") || matchConceptWord("dancar")) {
       return {
         imagemUrl: "https://i.imgur.com/3LGoXuZ.jpeg",
         titulo: "A Dança",
         credito: "Henri Matisse"
       };
     }
-    if (matchConceptWord("poema") || matchConceptWord("poemas") || matchConceptWord("poesia") || matchConceptWord("poesias") || matchConceptWord("verso") || matchConceptWord("versos")) {
+    if (matchedKey === "poema" || matchConceptWord("poema") || matchConceptWord("poemas") || matchConceptWord("poesia") || matchConceptWord("poesias") || matchConceptWord("verso") || matchConceptWord("versos")) {
       return {
         imagemUrl: "https://i.imgur.com/wvQLiom.jpeg",
         titulo: "Retrato de Cecília Meireles",
         credito: "Cecília Meireles"
       };
     }
-    if (matchConceptWord("desenho") || matchConceptWord("desenhos") || matchConceptWord("esboco") || matchConceptWord("esbocos")) {
+    if (matchedKey === "desenho" || matchConceptWord("desenho") || matchConceptWord("desenhos") || matchConceptWord("esboco") || matchConceptWord("esbocos")) {
       return {
         imagemUrl: "https://i.imgur.com/qKt1FWr.jpeg",
-        titulo: "Esboço da Última Ceia (Última Ceia sketch)",
+        titulo: "Esboço da Última Ceia",
         credito: "Leonardo da Vinci"
       };
     }
-    if (matchConceptWord("literatura")) {
+    if (matchedKey === "literatura" || matchConceptWord("literatura")) {
       return {
         imagemUrl: "https://i.imgur.com/JoFITap.jpeg",
-        titulo: "A Literatura",
-        credito: "Acervo de Literatura"
+        titulo: "Retrato do Acervo Literário Clássico",
+        credito: "Acervo de Literatura Clássica"
       };
     }
-    if (matchConceptWord("musica") || matchConceptWord("musicas")) {
+    if (matchedKey === "musica" || matchConceptWord("musica") || matchConceptWord("musicas")) {
       return {
         imagemUrl: "https://i.imgur.com/8tSYMB6.jpeg",
-        titulo: "A Música",
-        credito: "Acervo de Música"
+        titulo: "Clássico Histórico de Partituras e Instrumentos",
+        credito: "Acervo de Música Clássica"
       };
     }
-    if (matchConceptWord("pintura") || matchConceptWord("pinturas")) {
+    if (matchedKey === "pintura" || matchConceptWord("pintura") || matchConceptWord("pinturas")) {
       return {
         imagemUrl: "https://i.imgur.com/itQdr8H.jpeg",
         titulo: "No Bosque de Giverny (In the Woods at Giverny)",
         credito: "Claude Monet"
       };
     }
-    if (matchConceptWord("teatro") || matchConceptWord("teatros") || matchConceptWord("palco") || matchConceptWord("palcos")) {
+    if (matchedKey === "teatro" || matchConceptWord("teatro") || matchConceptWord("teatros") || matchConceptWord("palco") || matchConceptWord("palcos")) {
       return {
         imagemUrl: "https://i.imgur.com/JHzxAbj.jpeg",
         titulo: "Teatro Municipal de São Paulo",
-        credito: "Teatro Municipal de SP"
+        credito: "Teatro Municipal de São Paulo"
       };
     }
 
-    if (matchConceptWord("piada") || matchConceptWord("piadas") || matchConceptWord("engracado") || matchConceptWord("charada") || matchConceptWord("charadas") || matchConceptWord("brincadeira") || matchConceptWord("humor") || matchConceptWord("rir") || matchConceptWord("sorrir")) {
+    if (matchedKey === "piada" || matchConceptWord("piada") || matchConceptWord("piadas") || matchConceptWord("engracado") || matchConceptWord("charada") || matchConceptWord("charadas") || matchConceptWord("brincadeira") || matchConceptWord("humor") || matchConceptWord("rir") || matchConceptWord("sorrir")) {
       const IMAGENS_PIADAS = [
         {
           imagemUrl: "https://i.imgur.com/D0qsROZ.jpeg",
@@ -952,7 +952,7 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
         },
         {
           imagemUrl: "https://i.imgur.com/s1Ed4RY.jpeg",
-          titulo: "Retrato de Rodolfo II (Vertumno)",
+          titulo: "Retrato do Imperador Rodolfo II como Vertumno",
           credito: "Giuseppe Arcimboldo"
         },
         {
@@ -965,16 +965,16 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
       return IMAGENS_PIADAS[idx];
     }
 
-    if (matchConceptWord("curiosidade") || matchConceptWord("curiosidades") || lowerQuery.includes("sabia que") || lowerQuery.includes("voce sabia")) {
+    if (matchedKey === "curiosidade" || matchConceptWord("curiosidade") || matchConceptWord("curiosidades") || lowerQuery.includes("sabia que") || lowerQuery.includes("voce sabia")) {
       const IMAGENS_CURIOSIDADES = [
         {
           imagemUrl: "https://i.imgur.com/Bmzw190.jpeg",
-          titulo: "Sabedoria da Arte (Coruja)",
+          titulo: "A Coruja da Sabedoria e Astronomia",
           credito: "Acervo de Curiosidades"
         },
         {
           imagemUrl: "https://i.imgur.com/5gUFu6O.jpeg",
-          titulo: "Autorretrato de Leonardo da Vinci",
+          titulo: "Autorretrato",
           credito: "Leonardo da Vinci"
         }
       ];

@@ -407,15 +407,41 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
   },
 
   // ===== CONCEITOS GERAIS DE ARTE =====
-  { palavras: ['arte', 'o que é arte'], resposta: 'Arte é uma forma de expressão! Pode ser um desenho, pintura, dança, música, teatro… É o jeito das pessoas mostrarem sentimentos e ideias. 🎨' },
+  { 
+    palavras: ['arte', 'o que é arte', 'definir arte', 'definição de arte'], 
+    resposta: 'Arte é uma forma de expressão! Pode ser um desenho, pintura, dança, música, teatro… É o jeito das pessoas mostrarem sentimentos e ideias. 🎨',
+    matchedKey: 'arte'
+  },
+  { 
+    palavras: ['dança', 'danca', 'danças', 'dancas', 'dançar', 'o que é dança', 'o que é danca'], 
+    resposta: 'A dança é a arte de mexer o corpo seguindo o ritmo de uma música! 🩰 É como desenhar no ar usando nossos passos, pulos e giros. Através da dança, celebramos a união, a alegria e a energia de estarmos todos juntos! Você gosta de dançar, meu amigo? 🌟💃',
+    matchedKey: 'danca'
+  },
+  { 
+    palavras: ['poema', 'poemas', 'poesia', 'poesias', 'verso', 'versos'], 
+    resposta: 'A poesia é a arte de pintar usando palavras! 📝 Um poema é como uma música escrita, onde cada linha é um verso que rima e brinca com o som. Os poetas usam palavras doces e sentimentos para colorir o papel com amor e imaginação! ✨',
+    matchedKey: 'poema'
+  },
+  { 
+    palavras: ['literatura', 'o que é literatura'], 
+    resposta: 'A literatura é a arte de escrever histórias mágicas e livros que nos levam a viajar no tempo e no espaço sem sair do lugar! 📚 É onde os livros reúnem os maiores tesouros da imaginação humana. Cada página lida é como uma nova cor que descobrimos na nossa mente!',
+    matchedKey: 'literatura'
+  },
+  { 
+    palavras: ['música', 'musica', 'músicas', 'musicas', 'o que é música', 'o que é musica'], 
+    resposta: 'A música é a arte de combinar sons e silêncios de maneira linda! 🎶 É a pintura que entra pelos nossos ouvidos. Os instrumentos e as notas musicais cantam histórias e despertam sentimentos de alegria, calma e festa em nosso coração! 🎼🎷',
+    matchedKey: 'musica'
+  },
   { palavras: ['o que e vida', 'vida', 'o que e a vida', 'significado da vida'], resposta: '🌱 A vida é o maior e mais precioso pedaço de papel em branco que recebemos! Cada dia que vivemos é como uma pincelada única que damos nesse quadro. Para os artistas, a vida é expressar amor, brincar, cantar, observar a natureza e sorrir com os amigos. Tratar a vida com carinho é o desenho mais bonito que podemos criar! 🌈✨' },
   {
-    palavras: ['desenho', 'o que é desenho', 'desenhos'],
-    resposta: 'Desenho é quando usamos lápis, caneta ou giz para criar linhas e formas. Dá para desenhar tudo o que a gente imagina! Existem vários tipos fascinantes de desenho, como de observação, realismo, mangá e caricature. Quer saber mais sobre os tipos de desenho? Me pergunte: "quais os tipos de desenho?" 🖍️'
+    palavras: ['desenho', 'o que é desenho', 'desenhos', 'esboço', 'esboco', 'esboços', 'esbocos'],
+    resposta: 'Desenho é quando usamos lápis, caneta ou giz para criar linhas e formas. Dá para desenhar tudo o que a gente imagina! Existem vários tipos fascinantes de desenho, como de observação, realismo, mangá e caricatura. Quer saber mais sobre os tipos de desenho? Me pergunte: "quais os tipos de desenho?" 🖍️',
+    matchedKey: 'desenho'
   },
   {
     palavras: ['pintura', 'técnicas de pintura', 'pinturas'],
-    resposta: 'Na pintura, existem várias técnicas e estilos incríveis! Podemos pintar de forma realista, impressionista, abstrata, surrealista ou cubista, e usar tintas como guache, aquarela, acrílica ou óleo! Quer saber mais sobre estilos? Pergunte-me: "quais os estilos de pintura?" 🎨'
+    resposta: 'Na pintura, existem várias técnicas e estilos incríveis! Podemos pintar de forma realista, impressionista, abstrata, surrealista ou cubista, e usar tintas como guache, aquarela, acrílica ou óleo! Quer saber mais sobre estilos? Pergunte-me: "quais os estilos de pintura?" 🎨',
+    matchedKey: 'pintura'
   },
 
   // ===== NOVOS FLUXOS DE MATERIAIS DE ARTE, DESIGN E PINTURA =====
@@ -930,7 +956,8 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
   // ===== TEATRO =====
   { 
     palavras: ['teatro', 'o que é teatro', 'definição de teatro'], 
-    resposta: '🎭 Teatro é a arte de contar histórias usando o corpo, a voz, o espaço e a imaginação. É quando pessoas se transformam em personagens e convidam o público para entrar em outro mundo sem sair do lugar. O palco vira floresta, castelo, escola, planeta distante… tudo pode nascer ali.' 
+    resposta: '🎭 Teatro é a arte de contar histórias usando o corpo, a voz, o espaço e a imaginação. É quando pessoas se transformam em personagens e convidam o público para entrar em outro mundo sem sair do lugar. O palco vira floresta, castelo, escola, planeta distante… tudo pode nascer ali.',
+    matchedKey: 'teatro'
   },
   { 
     palavras: ['origem do teatro', 'história do teatro', 'teatro grego'], 
@@ -1214,7 +1241,8 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
   ) {
     const randomJoke = getRandomElement(PIADAS_CANDINHO);
     return {
-      reply: `Haha! Sabia que eu adoro uma boa piada para alegrar o nosso dia? 🎨 Sorrir deixa nossa inspiração gigante! Lá vai uma charada da minha paleta:\n\n👉 **${randomJoke}**\n\nQue tal? Vamos continuar desenhando ou quer ouvir mais alguma piada ou curiosidade? 😄`
+      reply: `Haha! Sabia que eu adoro uma boa piada para alegrar o nosso dia? 🎨 Sorrir deixa nossa inspiração gigante! Lá vai uma charada da minha paleta:\n\n👉 **${randomJoke}**\n\nQue tal? Vamos continuar desenhando ou quer ouvir mais alguma piada ou curiosidade? 😄`,
+      matchedKey: "piada"
     };
   }
 
@@ -1272,7 +1300,8 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
     }
 
     return {
-      reply: `Uau! O universo da arte é cheio de segredos fantásticos e mistérios mágicos! ✨ Veja que curiosidade sensacional eu busquei no meu conhecimento:\n\n${categoryPrefix}${randomCuriosity}\n\nIncrível, não é? A arte sempre nos ajuda a ver em novos tons! Se quiser ouvir outra curiosidade ou saber sobre algum pintor, me pergunte! 🎨`
+      reply: `Uau! O universo da arte é cheio de segredos fantásticos e mistérios mágicos! ✨ Veja que curiosidade sensacional eu busquei no meu conhecimento:\n\n${categoryPrefix}${randomCuriosity}\n\nIncrível, não é? A arte sempre nos ajuda a ver em novos tons! Se quiser ouvir outra curiosidade ou saber sobre algum pintor, me pergunte! 🎨`,
+      matchedKey: "curiosidade"
     };
   }
 

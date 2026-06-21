@@ -150,7 +150,24 @@ export default function App() {
         queryText.toLowerCase().includes("quadro") ||
         queryText.toLowerCase().includes("pintura") ||
         queryText.toLowerCase().includes("desenho") ||
-        queryText.toLowerCase().includes("ilustra");
+        queryText.toLowerCase().includes("ilustra") ||
+        queryText.toLowerCase().includes("esboço") ||
+        queryText.toLowerCase().includes("esboco") ||
+        queryText.toLowerCase().includes("arte") ||
+        queryText.toLowerCase().includes("dança") ||
+        queryText.toLowerCase().includes("danca") ||
+        queryText.toLowerCase().includes("poema") ||
+        queryText.toLowerCase().includes("poesia") ||
+        queryText.toLowerCase().includes("verso") ||
+        queryText.toLowerCase().includes("literatura") ||
+        queryText.toLowerCase().includes("música") ||
+        queryText.toLowerCase().includes("musica") ||
+        queryText.toLowerCase().includes("teatro") ||
+        queryText.toLowerCase().includes("palco") ||
+        queryText.toLowerCase().includes("piada") ||
+        queryText.toLowerCase().includes("charada") ||
+        queryText.toLowerCase().includes("curiosidade") ||
+        queryText.toLowerCase().includes("sabia que");
 
       // Auto-display image if the message is for a structured artist (local or backend)
       const shouldAutoShowImage = containsImageKeywords || isArtistMatched || !!data.matchedKey;
