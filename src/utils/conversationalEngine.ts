@@ -1168,6 +1168,83 @@ function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any
     };
   }
 
+  // Step A.01: Check for Local Jokes / Piadas Trigger
+  if (
+    normalizedMsg.includes("piada") || 
+    normalizedMsg.includes("engracad") || 
+    normalizedMsg.includes("charada") || 
+    normalizedMsg.includes("brincadeira") || 
+    normalizedMsg.includes("risada") || 
+    normalizedMsg.includes("humor") || 
+    normalizedMsg.includes("rir") ||
+    normalizedMsg.includes("sorrir")
+  ) {
+    const randomJoke = getRandomElement(PIADAS_CANDINHO);
+    return {
+      reply: `Haha! Sabia que eu adoro uma boa piada para alegrar o nosso dia? 🎨 Sorrir deixa nossa inspiração gigante! Lá vai uma charada da minha paleta:\n\n👉 **${randomJoke}**\n\nQue tal? Vamos continuar desenhando ou quer ouvir mais alguma piada ou curiosidade? 😄`,
+      matchedKey: "piada"
+    };
+  }
+
+  // Step A.02: Check for Local Curiosities Trigger
+  if (
+    normalizedMsg.includes("curiosidade") || 
+    normalizedMsg.includes("sabia que") || 
+    normalizedMsg.includes("voce sabia") || 
+    normalizedMsg.includes("fato extraordinario") || 
+    normalizedMsg.includes("fato interessante") || 
+    normalizedMsg.includes("novidade") || 
+    normalizedMsg.includes("segredo") || 
+    normalizedMsg.includes("fato da arte") ||
+    normalizedMsg.includes("fato")
+  ) {
+    let randomCuriosity = "";
+    let categoryPrefix = "";
+
+    if (normalizedMsg.includes("danca") || normalizedMsg.includes("balé") || normalizedMsg.includes("bale") || normalizedMsg.includes("dançar")) {
+      randomCuriosity = getRandomElement(CURIOSIDADES_DANCA);
+      categoryPrefix = "🩰 **Sobre o Ritmo Fascinante da Dança!** 🌟\n\n";
+    } else if (normalizedMsg.includes("teatro") || normalizedMsg.includes("palco") || normalizedMsg.includes("comedia") || normalizedMsg.includes("tragedia") || normalizedMsg.includes("grecia")) {
+      randomCuriosity = getRandomElement(CURIOSIDADES_TEATRO);
+      categoryPrefix = "🎭 **Dos Palcos Lendários e do Teatro Mágico!** ✨\n\n";
+    } else if (normalizedMsg.includes("anime") || normalizedMsg.includes("cartoon") || normalizedMsg.includes("goku") || normalizedMsg.includes("pokemon")) {
+      const category = CURIOSIDADES_ACERVO.find(cat => cat.id === "animes_fantastico");
+      const randomItem = category ? getRandomElement(category.items.map(i => `${i.emoji} **${i.pergunta}**\n${i.resposta}`)) : "";
+      randomCuriosity = randomItem;
+      categoryPrefix = "🌸 **Sobre os Fantásticos Animes Japoneses!** 📺\n\n";
+    } else if (normalizedMsg.includes("manga") || normalizedMsg.includes("quadrinho") || normalizedMsg.includes("tezuka")) {
+      const category = CURIOSIDADES_ACERVO.find(cat => cat.id === "mangas_origem");
+      const randomItem = category ? getRandomElement(category.items.map(i => `${i.emoji} **${i.pergunta}**\n${i.resposta}`)) : "";
+      randomCuriosity = randomItem;
+      categoryPrefix = "📖 **Sobre a Mágica Arte dos Mangás!** ✍️\n\n";
+    } else if (normalizedMsg.includes("desenho") || normalizedMsg.includes("scooby") || normalizedMsg.includes("simpsons") || normalizedMsg.includes("disney")) {
+      const category = CURIOSIDADES_ACERVO.find(cat => cat.id === "desenhos_animados");
+      const randomItem = category ? getRandomElement(category.items.map(i => `${i.emoji} **${i.pergunta}**\n${i.resposta}`)) : "";
+      randomCuriosity = randomItem;
+      categoryPrefix = "🎬 **No Mundo dos Desenhos Animados Clássicos!** 🍿\n\n";
+    } else if (normalizedMsg.includes("tartaruga") || normalizedMsg.includes("ninja")) {
+      const category = CURIOSIDADES_ACERVO.find(cat => cat.id === "tartarugas_ninja");
+      const randomItem = category ? getRandomElement(category.items.map(i => `${i.emoji} **${i.pergunta}**\n${i.resposta}`)) : "";
+      randomCuriosity = randomItem;
+      categoryPrefix = "🐢 **Poder Mutante no Renascimento da Arte!** 🍕\n\n";
+    } else if (normalizedMsg.includes("pintor") || normalizedMsg.includes("artista") || normalizedMsg.includes("gogh") || normalizedMsg.includes("da vinci") || normalizedMsg.includes("pintar") || normalizedMsg.includes("pincel")) {
+      randomCuriosity = getRandomElement(CURIOSIDADES_DESENHO);
+      categoryPrefix = "🎨 **Do Ateliê de Pintores e Técnicas de Desenho!** 🖌️\n\n";
+    } else {
+      const allAcervoItems = CURIOSIDADES_ACERVO.flatMap(cat => 
+        cat.items.map(item => `${item.emoji} **${item.pergunta}**\n${item.resposta}`)
+      );
+      const combinedCuriosities = [...CURIOSIDADES_CANDINHO, ...allAcervoItems];
+      randomCuriosity = getRandomElement(combinedCuriosities);
+      categoryPrefix = "✨ **Do Meu Baú de Mistérios Artísticos!**\n\n";
+    }
+
+    return {
+      reply: `Uau! O universo da arte é cheio de segredos fantásticos e mistérios mágicos! ✨ Veja que curiosidade sensacional eu busquei no meu conhecimento:\n\n${categoryPrefix}${randomCuriosity}\n\nIncrível, não é? A arte sempre nos ajuda a ver em novos tons! Se quiser ouvir outra curiosidade ou saber sobre algum pintor, me pergunte! 🎨`,
+      matchedKey: "curiosidade"
+    };
+  }
+
   // Step A: Search the hand-crafted cultural library entries (the primary database/lib) with safe word boundary check
   let bestMatchKey: string | undefined = undefined;
   let bestMatchScore = 0;
@@ -1247,83 +1324,6 @@ function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any
     if (matched) {
       return { reply: intent.reply };
     }
-  }
-
-  // Step D: Check for Local Jokes / Piadas Trigger
-  if (
-    normalizedMsg.includes("piada") || 
-    normalizedMsg.includes("engracad") || 
-    normalizedMsg.includes("charada") || 
-    normalizedMsg.includes("brincadeira") || 
-    normalizedMsg.includes("risada") || 
-    normalizedMsg.includes("humor") || 
-    normalizedMsg.includes("rir") ||
-    normalizedMsg.includes("sorrir")
-  ) {
-    const randomJoke = getRandomElement(PIADAS_CANDINHO);
-    return {
-      reply: `Haha! Sabia que eu adoro uma boa piada para alegrar o nosso dia? 🎨 Sorrir deixa nossa inspiração gigante! Lá vai uma charada da minha paleta:\n\n👉 **${randomJoke}**\n\nQue tal? Vamos continuar desenhando ou quer ouvir mais alguma piada ou curiosidade? 😄`,
-      matchedKey: "piada"
-    };
-  }
-
-  // Step E: Check for Local Curiosities Trigger
-  if (
-    normalizedMsg.includes("curiosidade") || 
-    normalizedMsg.includes("sabia que") || 
-    normalizedMsg.includes("voce sabia") || 
-    normalizedMsg.includes("fato extraordinario") || 
-    normalizedMsg.includes("fato interessante") || 
-    normalizedMsg.includes("novidade") || 
-    normalizedMsg.includes("segredo") || 
-    normalizedMsg.includes("fato da arte") ||
-    normalizedMsg.includes("fato")
-  ) {
-    let randomCuriosity = "";
-    let categoryPrefix = "";
-
-    if (normalizedMsg.includes("danca") || normalizedMsg.includes("balé") || normalizedMsg.includes("bale") || normalizedMsg.includes("dançar")) {
-      randomCuriosity = getRandomElement(CURIOSIDADES_DANCA);
-      categoryPrefix = "🩰 **Sobre o Ritmo Fascinante da Dança!** 🌟\n\n";
-    } else if (normalizedMsg.includes("teatro") || normalizedMsg.includes("palco") || normalizedMsg.includes("comedia") || normalizedMsg.includes("tragedia") || normalizedMsg.includes("grecia")) {
-      randomCuriosity = getRandomElement(CURIOSIDADES_TEATRO);
-      categoryPrefix = "🎭 **Dos Palcos Lendários e do Teatro Mágico!** ✨\n\n";
-    } else if (normalizedMsg.includes("anime") || normalizedMsg.includes("cartoon") || normalizedMsg.includes("goku") || normalizedMsg.includes("pokemon")) {
-      const category = CURIOSIDADES_ACERVO.find(cat => cat.id === "animes_fantastico");
-      const randomItem = category ? getRandomElement(category.items.map(i => `${i.emoji} **${i.pergunta}**\n${i.resposta}`)) : "";
-      randomCuriosity = randomItem;
-      categoryPrefix = "🌸 **Sobre os Fantásticos Animes Japoneses!** 📺\n\n";
-    } else if (normalizedMsg.includes("manga") || normalizedMsg.includes("quadrinho") || normalizedMsg.includes("tezuka")) {
-      const category = CURIOSIDADES_ACERVO.find(cat => cat.id === "mangas_origem");
-      const randomItem = category ? getRandomElement(category.items.map(i => `${i.emoji} **${i.pergunta}**\n${i.resposta}`)) : "";
-      randomCuriosity = randomItem;
-      categoryPrefix = "📖 **Sobre a Mágica Arte dos Mangás!** ✍️\n\n";
-    } else if (normalizedMsg.includes("desenho") || normalizedMsg.includes("scooby") || normalizedMsg.includes("simpsons") || normalizedMsg.includes("disney")) {
-      const category = CURIOSIDADES_ACERVO.find(cat => cat.id === "desenhos_animados");
-      const randomItem = category ? getRandomElement(category.items.map(i => `${i.emoji} **${i.pergunta}**\n${i.resposta}`)) : "";
-      randomCuriosity = randomItem;
-      categoryPrefix = "🎬 **No Mundo dos Desenhos Animados Clássicos!** 🍿\n\n";
-    } else if (normalizedMsg.includes("tartaruga") || normalizedMsg.includes("ninja")) {
-      const category = CURIOSIDADES_ACERVO.find(cat => cat.id === "tartarugas_ninja");
-      const randomItem = category ? getRandomElement(category.items.map(i => `${i.emoji} **${i.pergunta}**\n${i.resposta}`)) : "";
-      randomCuriosity = randomItem;
-      categoryPrefix = "🐢 **Poder Mutante no Renascimento da Arte!** 🍕\n\n";
-    } else if (normalizedMsg.includes("pintor") || normalizedMsg.includes("artista") || normalizedMsg.includes("gogh") || normalizedMsg.includes("da vinci") || normalizedMsg.includes("pintar") || normalizedMsg.includes("pincel")) {
-      randomCuriosity = getRandomElement(CURIOSIDADES_DESENHO);
-      categoryPrefix = "🎨 **Do Ateliê de Pintores e Técnicas de Desenho!** 🖌️\n\n";
-    } else {
-      const allAcervoItems = CURIOSIDADES_ACERVO.flatMap(cat => 
-        cat.items.map(item => `${item.emoji} **${item.pergunta}**\n${item.resposta}`)
-      );
-      const combinedCuriosities = [...CURIOSIDADES_CANDINHO, ...allAcervoItems];
-      randomCuriosity = getRandomElement(combinedCuriosities);
-      categoryPrefix = "✨ **Do Meu Baú de Mistérios Artísticos!**\n\n";
-    }
-
-    return {
-      reply: `Uau! O universo da arte é cheio de segredos fantásticos e mistérios mágicos! ✨ Veja que curiosidade sensacional eu busquei no meu conhecimento:\n\n${categoryPrefix}${randomCuriosity}\n\nIncrível, não é? A arte sempre nos ajuda a ver em novos tons! Se quiser ouvir outra curiosidade ou saber sobre algum pintor, me pergunte! 🎨`,
-      matchedKey: "curiosidade"
-    };
   }
 
   // Step F: First scan direct conversational intents

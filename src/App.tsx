@@ -30,6 +30,11 @@ interface Message {
 const getProxiedImageUrl = (url: string) => {
   if (!url) return "";
   if (url.startsWith("/") || url.startsWith("data:")) return url;
+  
+  // Se rodar no GitHub Pages ou ambiente puramente client-side estático do usuário, bypassa o proxy de imagem para evitar 404
+  if (typeof window !== "undefined" && (window.location.hostname.includes("github.io") || (window.location.hostname.includes("localhost") === false && window.location.hostname.includes("run.app") === false))) {
+    return url;
+  }
   return `/api/proxy-image?url=${encodeURIComponent(url)}`;
 };
 
