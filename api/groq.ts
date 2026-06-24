@@ -397,94 +397,94 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     credito: "Ilustração de Valsa"
   },
   rock: {
-    imagemUrl: "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?auto=format&fit=crop&w=600&q=80",
+    imagemUrl: "https://i.imgur.com/7SdA0k3.jpeg",
     titulo: "Alegria do Rock",
-    credito: "Unsplash / Fotografia de Rock"
+    credito: "Ilustração de Rock"
   },
   jongo: {
-    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Jongo_no_Sudeste_brasileiro.jpg",
+    imagemUrl: "https://i.imgur.com/MMPXy3l.jpeg",
     titulo: "Dançando Jongo",
-    credito: "Wikimedia Commons / Jongo no Sudeste brasileiro"
+    credito: "Ilustração de Jongo"
   },
   congada: {
-    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Festa_do_Congado_em_Itapecerica_%28MG%29_-_2015.jpg",
+    imagemUrl: "https://i.imgur.com/SZqtIoj.jpeg",
     titulo: "Festa da Congada",
-    credito: "Wikimedia Commons / Festa do Congado"
+    credito: "Ilustração de Congada"
   },
   coco_pernambucano: {
-    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Coco_de_roda_Arcoverde.jpg",
+    imagemUrl: "https://i.imgur.com/7OAUdNp.jpeg",
     titulo: "Dançando o Coco Pernambucano",
-    credito: "Wikimedia Commons / Coco de Roda"
+    credito: "Ilustração de Coco Pernambucano"
   },
   ciranda: {
-    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Ciranda_de_Tarituba.jpg",
+    imagemUrl: "https://i.imgur.com/zIlLJGr.png",
     titulo: "Roda de Ciranda",
-    credito: "Wikimedia Commons / Ciranda de Tarituba"
+    credito: "Ilustração de Ciranda"
   },
   hip_hop: {
-    imagemUrl: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80",
+    imagemUrl: "https://i.imgur.com/B58RbYS.jpeg",
     titulo: "Dançando Hip Hop",
-    credito: "Unsplash / Dançarino de Hip Hop"
+    credito: "Ilustração de Hip Hop"
   },
   funk: {
-    imagemUrl: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
+    imagemUrl: "https://i.imgur.com/pTTr7cm.jpeg",
     titulo: "Dança Funk",
-    credito: "Unsplash / Celebração e Dança"
+    credito: "Ilustração de Funk"
   },
   frevo: {
-    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Passistas_de_frevo.jpg",
+    imagemUrl: "https://i.imgur.com/ZvsUU43.png",
     titulo: "Dançando Frevo com Sombrinha",
-    credito: "Wikimedia Commons / Passistas de Frevo em Recife"
+    credito: "Ilustração de Frevo"
   },
   fandango: {
-    imagemUrl: "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=600&q=80",
+    imagemUrl: "https://i.imgur.com/jFjNeOU.jpeg",
     titulo: "Dançando Fandango",
-    credito: "Unsplash / Dança Tradicional"
+    credito: "Ilustração de Fandango"
   },
   danca_de_salao: {
-    imagemUrl: "https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=600&q=80",
+    imagemUrl: "https://i.imgur.com/hNTTLUl.jpeg",
     titulo: "Dança de Salão",
-    credito: "Unsplash / Dança de Salão"
+    credito: "Ilustração de Dança de Salão"
   },
   danca_contemporanea: {
-    imagemUrl: "https://images.unsplash.com/photo-1508847154043-be12a3b4dca9?auto=format&fit=crop&w=600&q=80",
+    imagemUrl: "https://i.imgur.com/viD0O3q.jpeg",
     titulo: "Dança Contemporânea",
-    credito: "Unsplash / Dança Contemporânea"
+    credito: "Ilustração de Dança Contemporânea"
   },
   danca_classica: {
-    imagemUrl: "https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=600&q=80",
+    imagemUrl: "https://i.imgur.com/e5uLrzE.jpeg",
     titulo: "Dança Clássica",
-    credito: "Unsplash / Bailarina Clássica"
+    credito: "Ilustração de Dança Clássica"
   },
   cavalo_marinho: {
-    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Cavalo_Marinho_Estrela_de_Ouro_%28Condado-PE%29.jpg",
+    imagemUrl: "https://i.imgur.com/cVro96g.jpeg",
     titulo: "Festa do Cavalo Marinho",
-    credito: "Wikimedia Commons / Brincadores de Cavalo Marinho"
+    credito: "Ilustração de Cavalo Marinho"
   },
   catira: {
-    imagemUrl: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=600&q=80",
+    imagemUrl: "https://i.imgur.com/M6wTWYU.jpeg",
     titulo: "Dançando Catira",
-    credito: "Unsplash / Sapateado e Ritmo"
+    credito: "Ilustração de Catira"
   },
   carimbo: {
-    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Carimb%C3%B3_-_Dan%C3%A7a_Folcl%C3%B3rica.jpg",
+    imagemUrl: "https://i.imgur.com/rjujUdi.jpeg",
     titulo: "Dançando Carimbó",
-    credito: "Wikimedia Commons / Dançarinos de Carimbó no Pará"
+    credito: "Ilustração de Carimbó"
   },
   bale: {
-    imagemUrl: "https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=600&q=80",
+    imagemUrl: "https://i.imgur.com/pp0VUB5.jpeg",
     titulo: "Dançando Balé",
-    credito: "Unsplash / Arte do Balé"
+    credito: "Ilustração de Balé"
   },
   arte_indigena: {
-    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Vaso_gargalo_marajoara.jpg",
+    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
     titulo: "Arte Indígena",
-    credito: "Wikimedia Commons / Cerâmica Marajoara"
+    credito: "Arte Indígena"
   },
   arte_africana: {
-    imagemUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4e/M%C3%A1scara_africana_-_Cole%C3%A7%C3%A3o_de_Arte_Africana_do_Museu_Nacional_do_Rio_de_Janeiro_-_01.jpg",
+    imagemUrl: "https://i.imgur.com/Q60zPHo.jpeg",
     titulo: "Arte Africana",
-    credito: "Wikimedia Commons / Coleção de Arte Africana do Museu Nacional"
+    credito: "Arte Africana"
   },
   danca_brasil: {
     imagemUrl: "https://i.imgur.com/CVHkdCZ.jpeg",

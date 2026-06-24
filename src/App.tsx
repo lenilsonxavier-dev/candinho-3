@@ -31,6 +31,12 @@ const getProxiedImageUrl = (url: string) => {
   if (!url) return "";
   if (url.startsWith("/") || url.startsWith("data:")) return url;
   
+  // Imgur bloqueia requisições vindas do IP do Cloud Run (Google Cloud),
+  // mas funciona perfeitamente direto no cliente usando referrerPolicy="no-referrer"
+  if (url.includes("imgur.com")) {
+    return url;
+  }
+  
   // Se rodar no GitHub Pages (puramente estático), bypassa o proxy de imagem para evitar 404
   if (typeof window !== "undefined" && window.location.hostname.includes("github.io")) {
     return url;
