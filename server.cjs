@@ -7452,196 +7452,191 @@ var GALERIA_IMAGENS = {
   arte: {
     imagemUrl: "https://i.imgur.com/S65idlX.jpeg",
     titulo: "O Violeiro",
-    credito: "Almeida J\xFAnior"
+    credito: "Wikimedia Commons"
   },
   danca: {
-    imagemUrl: "https://i.imgur.com/3LGoXuZ.jpeg",
-    titulo: "A Dan\xE7a",
-    credito: "Henri Matisse"
+    imagemUrl: "https://candinho-20.vercel.app/imagens/definicao-danca.jpg",
+    titulo: "Defini\xE7\xE3o de Dan\xE7a",
+    credito: "Wikimedia Commons"
   },
   poema: {
-    imagemUrl: "https://i.imgur.com/wvQLiom.jpeg",
-    titulo: "Retrato de Cec\xEDlia Meireles",
-    credito: "Acervo de Literatura Cl\xE1ssica"
+    imagemUrl: "https://candinho-20.vercel.app/imagens/definicao-poesia.jpg",
+    titulo: "Defini\xE7\xE3o de Poesia",
+    credito: "Wikimedia Commons"
   },
   desenho: {
-    imagemUrl: "https://i.imgur.com/qKt1FWr.jpeg",
-    titulo: "Esbo\xE7o da \xDAltima Ceia",
-    credito: "Leonardo da Vinci"
+    imagemUrl: "https://candinho-20.vercel.app/imagens/definicao-de-desenho.jpg",
+    titulo: "Defini\xE7\xE3o de Desenho",
+    credito: "Wikimedia Commons"
   },
   literatura: {
-    imagemUrl: "https://i.imgur.com/JoFITap.jpeg",
-    titulo: "Retrato do Acervo Liter\xE1rio Cl\xE1ssico",
-    credito: "Acervo de Literatura Cl\xE1ssica"
+    imagemUrl: "https://candinho-20.vercel.app/imagens/definicao-literatura.jpg",
+    titulo: "Defini\xE7\xE3o de Literatura",
+    credito: "Wikimedia Commons"
   },
   musica: {
-    imagemUrl: "https://i.imgur.com/8tSYMB6.jpeg",
-    titulo: "Cl\xE1ssico Hist\xF3rico de Partituras e Instrumentos",
-    credito: "Acervo de M\xFAsica Cl\xE1ssica"
+    imagemUrl: "https://candinho-20.vercel.app/imagens/definicao-musica.jpg",
+    titulo: "Defini\xE7\xE3o de M\xFAsica",
+    credito: "Wikimedia Commons"
   },
   pintura: {
-    imagemUrl: "https://i.imgur.com/itQdr8H.jpeg",
-    titulo: "No Bosque de Giverny (In the Woods at Giverny)",
-    credito: "Claude Monet"
+    imagemUrl: "https://candinho-20.vercel.app/imagens/deinicao-pintura.jpg",
+    titulo: "Defini\xE7\xE3o de Pintura",
+    credito: "Wikimedia Commons"
   },
   teatro: {
-    imagemUrl: "https://i.imgur.com/JHzxAbj.jpeg",
-    titulo: "Teatro Municipal de S\xE3o Paulo",
-    credito: "Teatro Municipal de S\xE3o Paulo"
+    imagemUrl: "https://candinho-20.vercel.app/imagens/deinicao-de-teatro.jpg",
+    titulo: "Defini\xE7\xE3o de Teatro",
+    credito: "Wikimedia Commons"
   },
   piada: [
     {
-      imagemUrl: "https://i.imgur.com/D0qsROZ.jpeg",
-      titulo: "As Quatro Esta\xE7\xF5es (Le Saisons)",
-      credito: "Giuseppe Arcimboldo"
+      imagemUrl: "https://candinho-20.vercel.app/imagens/piada.jpg",
+      titulo: "Piada de Arte",
+      credito: "Wikimedia Commons"
     },
     {
-      imagemUrl: "https://i.imgur.com/4zBo1Q2.jpeg",
-      titulo: "M\xE3os Desenhando (Drawing Hands)",
-      credito: "M. C. Escher"
-    },
-    {
-      imagemUrl: "https://i.imgur.com/s1Ed4RY.jpeg",
-      titulo: "Retrato do Imperador Rodolfo II como Vertumno",
-      credito: "Giuseppe Arcimboldo"
-    },
-    {
-      imagemUrl: "https://i.imgur.com/Lk68fFd.jpeg",
-      titulo: "Relatividade (Relativity)",
-      credito: "M. C. Escher"
+      imagemUrl: "https://candinho-20.vercel.app/imagens/piada-2.jpg",
+      titulo: "Outra Piada de Arte",
+      credito: "Wikimedia Commons"
     }
   ],
   curiosidade: [
     {
-      imagemUrl: "https://i.imgur.com/Bmzw190.jpeg",
-      titulo: "A Coruja da Sabedoria e Astronomia",
-      credito: "Acervo de Curiosidades"
+      imagemUrl: "https://candinho-20.vercel.app/imagens/curiosidade.JPG",
+      titulo: "Curiosidades sobre Arte",
+      credito: "Wikimedia Commons"
     },
     {
-      imagemUrl: "https://i.imgur.com/5gUFu6O.jpeg",
-      titulo: "Autorretrato",
-      credito: "Leonardo da Vinci"
+      imagemUrl: "https://candinho-20.vercel.app/imagens/curiosidade-1.jpg",
+      titulo: "Sabia que?",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://candinho-20.vercel.app/imagens/curiosidade-2.jpg",
+      titulo: "Fato Curioso",
+      credito: "Wikimedia Commons"
     }
   ],
   caboclinho: {
-    imagemUrl: "https://i.imgur.com/H36yCWI.jpg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-caboclinho.jpg",
     titulo: "Dan\xE7a dos Caboclinhos",
-    credito: "Manifesta\xE7\xE3o Folcl\xF3rica e Cultural Brasileira"
+    credito: "Wikimedia Commons"
   },
   tango: {
-    imagemUrl: "https://i.imgur.com/S2eEbmj.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-tango.jpg",
     titulo: "Dan\xE7ando Tango",
-    credito: "Ilustra\xE7\xE3o de Tango"
+    credito: "Wikimedia Commons"
   },
   salsa: {
-    imagemUrl: "https://i.imgur.com/KNsG8wH.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-salsa.jpg",
     titulo: "Dan\xE7ando Salsa",
-    credito: "Ilustra\xE7\xE3o de Salsa"
+    credito: "Wikimedia Commons"
   },
   valsa: {
-    imagemUrl: "https://i.imgur.com/6hxKnNJ.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-valsa.jpg",
     titulo: "Dan\xE7ando Valsa",
-    credito: "Ilustra\xE7\xE3o de Valsa"
+    credito: "Wikimedia Commons"
   },
   rock: {
-    imagemUrl: "https://i.imgur.com/7SdA0k3.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-rock.jpg",
     titulo: "Alegria do Rock",
-    credito: "Ilustra\xE7\xE3o de Rock"
+    credito: "Wikimedia Commons"
   },
   jongo: {
-    imagemUrl: "https://i.imgur.com/MMPXy3l.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-jongo.jpg",
     titulo: "Dan\xE7ando Jongo",
-    credito: "Ilustra\xE7\xE3o de Jongo"
+    credito: "Wikimedia Commons"
   },
   congada: {
-    imagemUrl: "https://i.imgur.com/SZqtIoj.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-congada.jpg",
     titulo: "Festa da Congada",
-    credito: "Ilustra\xE7\xE3o de Congada"
+    credito: "Wikimedia Commons"
   },
   coco_pernambucano: {
-    imagemUrl: "https://i.imgur.com/7OAUdNp.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-coco.jpg",
     titulo: "Dan\xE7ando o Coco Pernambucano",
-    credito: "Ilustra\xE7\xE3o de Coco Pernambucano"
+    credito: "Wikimedia Commons"
   },
   ciranda: {
-    imagemUrl: "https://i.imgur.com/zIlLJGr.png",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-ciranda.png",
     titulo: "Roda de Ciranda",
-    credito: "Ilustra\xE7\xE3o de Ciranda"
+    credito: "Wikimedia Commons"
   },
   hip_hop: {
-    imagemUrl: "https://i.imgur.com/B58RbYS.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-hip-hop.jpg",
     titulo: "Dan\xE7ando Hip Hop",
-    credito: "Ilustra\xE7\xE3o de Hip Hop"
+    credito: "Wikimedia Commons"
   },
   funk: {
-    imagemUrl: "https://i.imgur.com/pTTr7cm.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-funk.jpg",
     titulo: "Dan\xE7a Funk",
-    credito: "Ilustra\xE7\xE3o de Funk"
+    credito: "Wikimedia Commons"
   },
   frevo: {
-    imagemUrl: "https://i.imgur.com/ZvsUU43.png",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-frevo.png",
     titulo: "Dan\xE7ando Frevo com Sombrinha",
-    credito: "Ilustra\xE7\xE3o de Frevo"
+    credito: "Wikimedia Commons"
   },
   fandango: {
-    imagemUrl: "https://i.imgur.com/jFjNeOU.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-fandango.jpg",
     titulo: "Dan\xE7ando Fandango",
-    credito: "Ilustra\xE7\xE3o de Fandango"
+    credito: "Wikimedia Commons"
   },
   danca_de_salao: {
-    imagemUrl: "https://i.imgur.com/hNTTLUl.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-danca-de-salao.jpg",
     titulo: "Dan\xE7a de Sal\xE3o",
-    credito: "Ilustra\xE7\xE3o de Dan\xE7a de Sal\xE3o"
+    credito: "Wikimedia Commons"
   },
   danca_contemporanea: {
-    imagemUrl: "https://i.imgur.com/viD0O3q.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-contemporanea.jpg",
     titulo: "Dan\xE7a Contempor\xE2nea",
-    credito: "Ilustra\xE7\xE3o de Dan\xE7a Contempor\xE2nea"
+    credito: "Wikimedia Commons"
   },
   danca_classica: {
-    imagemUrl: "https://i.imgur.com/e5uLrzE.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-classica.jpg",
     titulo: "Dan\xE7a Cl\xE1ssica",
-    credito: "Ilustra\xE7\xE3o de Dan\xE7a Cl\xE1ssica"
+    credito: "Wikimedia Commons"
   },
   cavalo_marinho: {
-    imagemUrl: "https://i.imgur.com/cVro96g.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-cavalo-marinho.jpg",
     titulo: "Festa do Cavalo Marinho",
-    credito: "Ilustra\xE7\xE3o de Cavalo Marinho"
+    credito: "Wikimedia Commons"
   },
   catira: {
-    imagemUrl: "https://i.imgur.com/M6wTWYU.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-catira.jpg",
     titulo: "Dan\xE7ando Catira",
-    credito: "Ilustra\xE7\xE3o de Catira"
+    credito: "Wikimedia Commons"
   },
   carimbo: {
-    imagemUrl: "https://i.imgur.com/rjujUdi.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-carimbo.jpg",
     titulo: "Dan\xE7ando Carimb\xF3",
-    credito: "Ilustra\xE7\xE3o de Carimb\xF3"
+    credito: "Wikimedia Commons"
   },
   bale: {
-    imagemUrl: "https://i.imgur.com/pp0VUB5.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-bale.jpg",
     titulo: "Dan\xE7ando Bal\xE9",
-    credito: "Ilustra\xE7\xE3o de Bal\xE9"
+    credito: "Wikimedia Commons"
   },
   arte_indigena: {
-    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/cultura-indigena.jpg",
     titulo: "Arte Ind\xEDgena",
-    credito: "Ilustra\xE7\xE3o de Arte Ind\xEDgena"
+    credito: "Wikimedia Commons"
   },
   arte_africana: {
-    imagemUrl: "https://i.imgur.com/Q60zPHo.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/cultura-africana.jpg",
     titulo: "Arte Africana",
-    credito: "Ilustra\xE7\xE3o de Arte Africana"
+    credito: "Wikimedia Commons"
   },
   danca_brasil: {
-    imagemUrl: "https://i.imgur.com/CVHkdCZ.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/historia-da-danca-no-brasil.jpg",
     titulo: "Dan\xE7a Tradicional no Brasil",
-    credito: "Acervo de Dan\xE7a do Brasil"
+    credito: "Wikimedia Commons"
   },
   desenho_brasil: {
-    imagemUrl: "https://i.imgur.com/KSd4nHC.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/historia-do-desenho-no-brasil.jpg",
     titulo: "Desenho na Hist\xF3ria do Brasil",
-    credito: "Acervo de Desenho do Brasil"
+    credito: "Wikimedia Commons"
   }
 };
 
@@ -7698,6 +7693,24 @@ function getRandomElement(arr) {
 function obterImagemDaGaleria(key) {
   if (!key) return null;
   let targetKey = key.toLowerCase().trim();
+  if (targetKey.startsWith("danca_")) {
+    const semDanca = targetKey.substring(6);
+    if (GALERIA_IMAGENS[semDanca]) {
+      targetKey = semDanca;
+    } else if (semDanca === "salao") {
+      targetKey = "danca_de_salao";
+    } else if (semDanca === "coco_pernambucano") {
+      targetKey = "coco_pernambucano";
+    }
+  }
+  if (GALERIA_IMAGENS[targetKey]) {
+    const item2 = GALERIA_IMAGENS[targetKey];
+    if (Array.isArray(item2)) {
+      const idx = Math.floor(Math.random() * item2.length);
+      return item2[idx];
+    }
+    return item2;
+  }
   if (targetKey === "danca_brasil" || targetKey === "danca_no_brasil" || targetKey === "historia_danca_brasil") {
     targetKey = "danca_brasil";
   } else if (targetKey === "desenho_brasil" || targetKey === "desenho_no_brasil" || targetKey === "historia_desenho_brasil") {
@@ -9587,128 +9600,144 @@ var ARTISTS_GUARANTEED_IMAGES = {
     titulo: "Ol\xEDvio Jekupe (Retrato)",
     credito: "Wikimedia Commons / Fonte Wikipedia"
   },
+  caboclinho: {
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-caboclinho.jpg",
+    titulo: "Dan\xE7a dos Caboclinhos",
+    credito: "Wikimedia Commons"
+  },
   tango: {
-    imagemUrl: "https://i.imgur.com/S2eEbmj.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-tango.jpg",
     titulo: "Dan\xE7ando Tango",
-    credito: "Ilustra\xE7\xE3o de Tango"
+    credito: "Wikimedia Commons"
   },
   salsa: {
-    imagemUrl: "https://i.imgur.com/KNsG8wH.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-salsa.jpg",
     titulo: "Dan\xE7ando Salsa",
-    credito: "Ilustra\xE7\xE3o de Salsa"
+    credito: "Wikimedia Commons"
   },
   valsa: {
-    imagemUrl: "https://i.imgur.com/6hxKnNJ.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-valsa.jpg",
     titulo: "Dan\xE7ando Valsa",
-    credito: "Ilustra\xE7\xE3o de Valsa"
+    credito: "Wikimedia Commons"
   },
   rock: {
-    imagemUrl: "https://i.imgur.com/7SdA0k3.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-rock.jpg",
     titulo: "Alegria do Rock",
-    credito: "Ilustra\xE7\xE3o de Rock"
+    credito: "Wikimedia Commons"
   },
   jongo: {
-    imagemUrl: "https://i.imgur.com/MMPXy3l.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-jongo.jpg",
     titulo: "Dan\xE7ando Jongo",
-    credito: "Ilustra\xE7\xE3o de Jongo"
+    credito: "Wikimedia Commons"
   },
   congada: {
-    imagemUrl: "https://i.imgur.com/SZqtIoj.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-congada.jpg",
     titulo: "Festa da Congada",
-    credito: "Ilustra\xE7\xE3o de Congada"
+    credito: "Wikimedia Commons"
   },
   coco_pernambucano: {
-    imagemUrl: "https://i.imgur.com/7OAUdNp.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-coco.jpg",
     titulo: "Dan\xE7ando o Coco Pernambucano",
-    credito: "Ilustra\xE7\xE3o de Coco Pernambucano"
+    credito: "Wikimedia Commons"
   },
   ciranda: {
-    imagemUrl: "https://i.imgur.com/zIlLJGr.png",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-ciranda.png",
     titulo: "Roda de Ciranda",
-    credito: "Ilustra\xE7\xE3o de Ciranda"
+    credito: "Wikimedia Commons"
   },
   hip_hop: {
-    imagemUrl: "https://i.imgur.com/B58RbYS.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-hip-hop.jpg",
     titulo: "Dan\xE7ando Hip Hop",
-    credito: "Ilustra\xE7\xE3o de Hip Hop"
+    credito: "Wikimedia Commons"
   },
   funk: {
-    imagemUrl: "https://i.imgur.com/pTTr7cm.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-funk.jpg",
     titulo: "Dan\xE7a Funk",
-    credito: "Ilustra\xE7\xE3o de Funk"
+    credito: "Wikimedia Commons"
   },
   frevo: {
-    imagemUrl: "https://i.imgur.com/ZvsUU43.png",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-frevo.png",
     titulo: "Dan\xE7ando Frevo com Sombrinha",
-    credito: "Ilustra\xE7\xE3o de Frevo"
+    credito: "Wikimedia Commons"
   },
   fandango: {
-    imagemUrl: "https://i.imgur.com/jFjNeOU.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-fandango.jpg",
     titulo: "Dan\xE7ando Fandango",
-    credito: "Ilustra\xE7\xE3o de Fandango"
+    credito: "Wikimedia Commons"
   },
   danca_de_salao: {
-    imagemUrl: "https://i.imgur.com/hNTTLUl.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-danca-de-salao.jpg",
     titulo: "Dan\xE7a de Sal\xE3o",
-    credito: "Ilustra\xE7\xE3o de Dan\xE7a de Sal\xE3o"
+    credito: "Wikimedia Commons"
   },
   danca_contemporanea: {
-    imagemUrl: "https://i.imgur.com/viD0O3q.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-contemporanea.jpg",
     titulo: "Dan\xE7a Contempor\xE2nea",
-    credito: "Ilustra\xE7\xE3o de Dan\xE7a Contempor\xE2nea"
+    credito: "Wikimedia Commons"
   },
   danca_classica: {
-    imagemUrl: "https://i.imgur.com/e5uLrzE.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-classica.jpg",
     titulo: "Dan\xE7a Cl\xE1ssica",
-    credito: "Ilustra\xE7\xE3o de Dan\xE7a Cl\xE1ssica"
+    credito: "Wikimedia Commons"
   },
   cavalo_marinho: {
-    imagemUrl: "https://i.imgur.com/cVro96g.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-cavalo-marinho.jpg",
     titulo: "Festa do Cavalo Marinho",
-    credito: "Ilustra\xE7\xE3o de Cavalo Marinho"
+    credito: "Wikimedia Commons"
   },
   catira: {
-    imagemUrl: "https://i.imgur.com/M6wTWYU.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-catira.jpg",
     titulo: "Dan\xE7ando Catira",
-    credito: "Ilustra\xE7\xE3o de Catira"
+    credito: "Wikimedia Commons"
   },
   carimbo: {
-    imagemUrl: "https://i.imgur.com/rjujUdi.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-carimbo.jpg",
     titulo: "Dan\xE7ando Carimb\xF3",
-    credito: "Ilustra\xE7\xE3o de Carimb\xF3"
+    credito: "Wikimedia Commons"
   },
   bale: {
-    imagemUrl: "https://i.imgur.com/pp0VUB5.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-bale.jpg",
     titulo: "Dan\xE7ando Bal\xE9",
-    credito: "Ilustra\xE7\xE3o de Bal\xE9"
+    credito: "Wikimedia Commons"
   },
   arte_indigena: {
-    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/cultura-indigena.jpg",
     titulo: "Arte Ind\xEDgena",
-    credito: "Arte Ind\xEDgena"
+    credito: "Wikimedia Commons"
   },
   arte_africana: {
-    imagemUrl: "https://i.imgur.com/Q60zPHo.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/cultura-africana.jpg",
     titulo: "Arte Africana",
-    credito: "Arte Africana"
+    credito: "Wikimedia Commons"
   },
   danca_brasil: {
-    imagemUrl: "https://i.imgur.com/CVHkdCZ.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/historia-da-danca-no-brasil.jpg",
     titulo: "Dan\xE7a Tradicional no Brasil",
-    credito: "Acervo de Dan\xE7a do Brasil"
+    credito: "Wikimedia Commons"
   },
   desenho_brasil: {
-    imagemUrl: "https://i.imgur.com/KSd4nHC.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/historia-do-desenho-no-brasil.jpg",
     titulo: "Desenho na Hist\xF3ria do Brasil",
-    credito: "Acervo de Desenho do Brasil"
+    credito: "Wikimedia Commons"
   }
 };
 async function buscarImagem(pergunta, matchedKey, lib) {
   try {
-    if (matchedKey && ARTISTS_GUARANTEED_IMAGES[matchedKey]) {
-      return ARTISTS_GUARANTEED_IMAGES[matchedKey];
+    let mK = matchedKey ? matchedKey.toLowerCase().trim() : "";
+    if (mK.startsWith("danca_")) {
+      const semDanca = mK.substring(6);
+      if (ARTISTS_GUARANTEED_IMAGES[semDanca]) {
+        mK = semDanca;
+      } else if (semDanca === "salao") {
+        mK = "danca_de_salao";
+      } else if (semDanca === "coco_pernambucano") {
+        mK = "coco_pernambucano";
+      }
     }
-    const lowerQuery = pergunta.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    if (mK && ARTISTS_GUARANTEED_IMAGES[mK]) {
+      return ARTISTS_GUARANTEED_IMAGES[mK];
+    }
+    const lowerQuery = pergunta.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/-/g, " ");
     if (lowerQuery.includes("van gogh") || lowerQuery.includes("van goh")) {
       return ARTISTS_GUARANTEED_IMAGES.vincent_van_gogh;
     }
@@ -9934,11 +9963,14 @@ async function buscarImagem(pergunta, matchedKey, lib) {
     if (lowerQuery.includes("congada")) {
       return ARTISTS_GUARANTEED_IMAGES.congada;
     }
-    if (lowerQuery.includes("coco pernambucano")) {
+    if (lowerQuery.includes("coco") || lowerQuery.includes("coco pernambucano")) {
       return ARTISTS_GUARANTEED_IMAGES.coco_pernambucano;
     }
     if (lowerQuery.includes("ciranda")) {
       return ARTISTS_GUARANTEED_IMAGES.ciranda;
+    }
+    if (lowerQuery.includes("caboclinho") || lowerQuery.includes("caboclinhos") || lowerQuery.includes("cabocnho")) {
+      return ARTISTS_GUARANTEED_IMAGES.caboclinho;
     }
     if (lowerQuery.includes("hip hop") || lowerQuery.includes("hiphop")) {
       return ARTISTS_GUARANTEED_IMAGES.hip_hop;
@@ -9989,7 +10021,6 @@ async function buscarImagem(pergunta, matchedKey, lib) {
       const regex = new RegExp(`\\b${word}\\b`, "i");
       return regex.test(lowerQuery);
     };
-    const mK = matchedKey ? matchedKey.toLowerCase() : "";
     if (mK === "arte" || mK.includes("arte") || matchConceptWord("arte")) {
       return {
         imagemUrl: "https://i.imgur.com/S65idlX.jpeg",
