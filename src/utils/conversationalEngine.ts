@@ -91,6 +91,29 @@ function obterImagemDaGaleria(key: string): { imagemUrl: string; titulo: string;
   if (!key) return null;
   
   let targetKey = key.toLowerCase().trim();
+
+  // Mapear chaves da biblioteca cultural que começam com danca_ para as chaves corretas da galeria
+  if (targetKey.startsWith("danca_")) {
+    const semDanca = targetKey.substring(6); // e.g. "danca_frevo" -> "frevo", "danca_bale" -> "bale"
+    if (GALERIA_IMAGENS[semDanca]) {
+      targetKey = semDanca;
+    } else if (semDanca === "salao") {
+      targetKey = "danca_de_salao";
+    } else if (semDanca === "coco_pernambucano") {
+      targetKey = "coco_pernambucano";
+    }
+  }
+  
+  // Se a chave existir diretamente na galeria (incluindo chaves específicas como bale, caboclinho, danca_contemporanea, etc.),
+  // retornamos ela imediatamente para evitar que as regras de normalização de fallback a colapsem em "danca", "literatura", etc.
+  if (GALERIA_IMAGENS[targetKey]) {
+    const item = GALERIA_IMAGENS[targetKey];
+    if (Array.isArray(item)) {
+      const idx = Math.floor(Math.random() * item.length);
+      return item[idx];
+    }
+    return item;
+  }
   
   // Normalizar sub-chaves ou variações da biblioteca cultural para as chaves básicas da galeria
   if (targetKey === "danca_brasil" || targetKey === "danca_no_brasil" || targetKey === "historia_danca_brasil") {

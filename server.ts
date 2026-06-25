@@ -486,133 +486,150 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     titulo: "Olívio Jekupe (Retrato)",
     credito: "Wikimedia Commons / Fonte Wikipedia"
   },
+  caboclinho: {
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-caboclinho.jpg",
+    titulo: "Dança dos Caboclinhos",
+    credito: "Wikimedia Commons"
+  },
   tango: {
-    imagemUrl: "https://i.imgur.com/S2eEbmj.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-tango.jpg",
     titulo: "Dançando Tango",
-    credito: "Ilustração de Tango"
+    credito: "Wikimedia Commons"
   },
   salsa: {
-    imagemUrl: "https://i.imgur.com/KNsG8wH.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-salsa.jpg",
     titulo: "Dançando Salsa",
-    credito: "Ilustração de Salsa"
+    credito: "Wikimedia Commons"
   },
   valsa: {
-    imagemUrl: "https://i.imgur.com/6hxKnNJ.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-valsa.jpg",
     titulo: "Dançando Valsa",
-    credito: "Ilustração de Valsa"
+    credito: "Wikimedia Commons"
   },
   rock: {
-    imagemUrl: "https://i.imgur.com/7SdA0k3.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-rock.jpg",
     titulo: "Alegria do Rock",
-    credito: "Ilustração de Rock"
+    credito: "Wikimedia Commons"
   },
   jongo: {
-    imagemUrl: "https://i.imgur.com/MMPXy3l.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-jongo.jpg",
     titulo: "Dançando Jongo",
-    credito: "Ilustração de Jongo"
+    credito: "Wikimedia Commons"
   },
   congada: {
-    imagemUrl: "https://i.imgur.com/SZqtIoj.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-congada.jpg",
     titulo: "Festa da Congada",
-    credito: "Ilustração de Congada"
+    credito: "Wikimedia Commons"
   },
   coco_pernambucano: {
-    imagemUrl: "https://i.imgur.com/7OAUdNp.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-coco.jpg",
     titulo: "Dançando o Coco Pernambucano",
-    credito: "Ilustração de Coco Pernambucano"
+    credito: "Wikimedia Commons"
   },
   ciranda: {
-    imagemUrl: "https://i.imgur.com/zIlLJGr.png",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-ciranda.png",
     titulo: "Roda de Ciranda",
-    credito: "Ilustração de Ciranda"
+    credito: "Wikimedia Commons"
   },
   hip_hop: {
-    imagemUrl: "https://i.imgur.com/B58RbYS.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-hip-hop.jpg",
     titulo: "Dançando Hip Hop",
-    credito: "Ilustração de Hip Hop"
+    credito: "Wikimedia Commons"
   },
   funk: {
-    imagemUrl: "https://i.imgur.com/pTTr7cm.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-funk.jpg",
     titulo: "Dança Funk",
-    credito: "Ilustração de Funk"
+    credito: "Wikimedia Commons"
   },
   frevo: {
-    imagemUrl: "https://i.imgur.com/ZvsUU43.png",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-frevo.png",
     titulo: "Dançando Frevo com Sombrinha",
-    credito: "Ilustração de Frevo"
+    credito: "Wikimedia Commons"
   },
   fandango: {
-    imagemUrl: "https://i.imgur.com/jFjNeOU.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-fandango.jpg",
     titulo: "Dançando Fandango",
-    credito: "Ilustração de Fandango"
+    credito: "Wikimedia Commons"
   },
   danca_de_salao: {
-    imagemUrl: "https://i.imgur.com/hNTTLUl.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-danca-de-salao.jpg",
     titulo: "Dança de Salão",
-    credito: "Ilustração de Dança de Salão"
+    credito: "Wikimedia Commons"
   },
   danca_contemporanea: {
-    imagemUrl: "https://i.imgur.com/viD0O3q.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-contemporanea.jpg",
     titulo: "Dança Contemporânea",
-    credito: "Ilustração de Dança Contemporânea"
+    credito: "Wikimedia Commons"
   },
   danca_classica: {
-    imagemUrl: "https://i.imgur.com/e5uLrzE.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-classica.jpg",
     titulo: "Dança Clássica",
-    credito: "Ilustração de Dança Clássica"
+    credito: "Wikimedia Commons"
   },
   cavalo_marinho: {
-    imagemUrl: "https://i.imgur.com/cVro96g.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-cavalo-marinho.jpg",
     titulo: "Festa do Cavalo Marinho",
-    credito: "Ilustração de Cavalo Marinho"
+    credito: "Wikimedia Commons"
   },
   catira: {
-    imagemUrl: "https://i.imgur.com/M6wTWYU.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-catira.jpg",
     titulo: "Dançando Catira",
-    credito: "Ilustração de Catira"
+    credito: "Wikimedia Commons"
   },
   carimbo: {
-    imagemUrl: "https://i.imgur.com/rjujUdi.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-carimbo.jpg",
     titulo: "Dançando Carimbó",
-    credito: "Ilustração de Carimbó"
+    credito: "Wikimedia Commons"
   },
   bale: {
-    imagemUrl: "https://i.imgur.com/pp0VUB5.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/danca-bale.jpg",
     titulo: "Dançando Balé",
-    credito: "Ilustração de Balé"
+    credito: "Wikimedia Commons"
   },
   arte_indigena: {
-    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/cultura-indigena.jpg",
     titulo: "Arte Indígena",
-    credito: "Arte Indígena"
+    credito: "Wikimedia Commons"
   },
   arte_africana: {
-    imagemUrl: "https://i.imgur.com/Q60zPHo.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/cultura-africana.jpg",
     titulo: "Arte Africana",
-    credito: "Arte Africana"
+    credito: "Wikimedia Commons"
   },
   danca_brasil: {
-    imagemUrl: "https://i.imgur.com/CVHkdCZ.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/historia-da-danca-no-brasil.jpg",
     titulo: "Dança Tradicional no Brasil",
-    credito: "Acervo de Dança do Brasil"
+    credito: "Wikimedia Commons"
   },
   desenho_brasil: {
-    imagemUrl: "https://i.imgur.com/KSd4nHC.jpeg",
+    imagemUrl: "https://candinho-20.vercel.app/imagens/historia-do-desenho-no-brasil.jpg",
     titulo: "Desenho na História do Brasil",
-    credito: "Acervo de Desenho do Brasil"
+    credito: "Wikimedia Commons"
   }
 };
 
 // --- BUSCANTE UNIFICADO DE IMAGEM ---
 async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
   try {
+    let mK = matchedKey ? matchedKey.toLowerCase().trim() : "";
+    if (mK.startsWith("danca_")) {
+      const semDanca = mK.substring(6);
+      if (ARTISTS_GUARANTEED_IMAGES[semDanca]) {
+        mK = semDanca;
+      } else if (semDanca === "salao") {
+        mK = "danca_de_salao";
+      } else if (semDanca === "coco_pernambucano") {
+        mK = "coco_pernambucano";
+      }
+    }
+
     // Primeiro tenta correspondência direta com as imagens garantidas por chave identificada
-    if (matchedKey && ARTISTS_GUARANTEED_IMAGES[matchedKey]) {
-      return ARTISTS_GUARANTEED_IMAGES[matchedKey];
+    if (mK && ARTISTS_GUARANTEED_IMAGES[mK]) {
+      return ARTISTS_GUARANTEED_IMAGES[mK];
     }
 
     // Também verifica se a própria pergunta contém o nome de qualquer um de nossos artistas prioritários
-    const lowerQuery = pergunta.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const lowerQuery = pergunta.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/-/g, " ");
     
     if (lowerQuery.includes("van gogh") || lowerQuery.includes("van goh")) {
       return ARTISTS_GUARANTEED_IMAGES.vincent_van_gogh;
@@ -839,11 +856,14 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
     if (lowerQuery.includes("congada")) {
       return ARTISTS_GUARANTEED_IMAGES.congada;
     }
-    if (lowerQuery.includes("coco pernambucano")) {
+    if (lowerQuery.includes("coco") || lowerQuery.includes("coco pernambucano")) {
       return ARTISTS_GUARANTEED_IMAGES.coco_pernambucano;
     }
     if (lowerQuery.includes("ciranda")) {
       return ARTISTS_GUARANTEED_IMAGES.ciranda;
+    }
+    if (lowerQuery.includes("caboclinho") || lowerQuery.includes("caboclinhos") || lowerQuery.includes("cabocnho")) {
+      return ARTISTS_GUARANTEED_IMAGES.caboclinho;
     }
     if (lowerQuery.includes("hip hop") || lowerQuery.includes("hiphop")) {
       return ARTISTS_GUARANTEED_IMAGES.hip_hop;
@@ -896,8 +916,6 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
       const regex = new RegExp(`\\b${word}\\b`, "i");
       return regex.test(lowerQuery);
     };
-
-    const mK = matchedKey ? matchedKey.toLowerCase() : "";
 
     if (mK === "arte" || mK.includes("arte") || matchConceptWord("arte")) {
       return {

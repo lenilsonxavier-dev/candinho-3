@@ -31,9 +31,8 @@ const getProxiedImageUrl = (url: string) => {
   if (!url) return "";
   if (url.startsWith("/") || url.startsWith("data:")) return url;
   
-  // Imgur bloqueia requisições vindas do IP do Cloud Run (Google Cloud),
-  // mas funciona perfeitamente direto no cliente usando referrerPolicy="no-referrer"
-  if (url.includes("imgur.com")) {
+  // Imgur e GitHubusercontent funcionam perfeitamente direto no cliente
+  if (url.includes("imgur.com") || url.includes("githubusercontent.com")) {
     return url;
   }
   
@@ -49,6 +48,7 @@ export default function App() {
   const [inputValue, setInputValue] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
   const [modalImage, setModalImage] = useState<ImagePayload | null>(null);
+  const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [nomeCrianca, setNomeCrianca] = useState<string>(() => {
     return localStorage.getItem("candinho_nome_crianca") || "";
   });
@@ -280,18 +280,21 @@ export default function App() {
   };
 
   const clearChat = () => {
-    if (window.confirm("Deseja recomeçar a conversa? 🎨🧹")) {
-      localStorage.removeItem("candinho_nome_crianca");
-      setNomeCrianca("");
-      setMessages([
-        {
-          id: "welcome-reset",
-          text: "Olá! Sou o Candinho, seu amigo artista. O que vamos descobrir hoje? 🎨 Como você se chama?",
-          sender: "bot",
-          timestamp: new Date()
-        }
-      ]);
-    }
+    setShowResetConfirm(true);
+  };
+
+  const confirmReset = () => {
+    localStorage.removeItem("candinho_nome_crianca");
+    setNomeCrianca("");
+    setMessages([
+      {
+        id: "welcome-reset",
+        text: "Olá! Sou o Candinho, seu amigo artista. O que vamos descobrir hoje? 🎨 Como você se chama?",
+        sender: "bot",
+        timestamp: new Date()
+      }
+    ]);
+    setShowResetConfirm(false);
   };
 
   return (
@@ -481,6 +484,41 @@ export default function App() {
           </div>
         </div>
       )}
+      {/* Custom Confirmation Modal for Resetting the Chat (to bypass iframe blocks on window.confirm) */}
+      {showResetConfirm && (
+        <div 
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex justify-center items-center p-4"
+          onClick={() => setShowResetConfirm(false)}
+        >
+          <div 
+            className="w-full max-w-md bg-[#16213e] rounded-[24px] p-6 shadow-2xl border border-[#ffd700]/30 text-center relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="mx-auto w-16 h-16 rounded-full bg-slate-800/60 flex items-center justify-center text-3xl mb-4">
+              🎨
+            </div>
+            <h3 className="text-white font-bold text-xl mb-2">Recomeçar conversa?</h3>
+            <p className="text-gray-300 text-sm mb-6">
+              Deseja recomeçar a conversa com o Candinho? Isso limpará o histórico atual de mensagens e esquecerá o seu nome cadastrado. 🧹
+            </p>
+            <div className="flex gap-3 justify-center">
+              <button
+                onClick={() => setShowResetConfirm(false)}
+                className="px-5 py-2.5 rounded-full text-white bg-slate-800/80 hover:bg-slate-700 transition-all font-semibold text-sm cursor-pointer border border-slate-700 min-w-[100px]"
+              >
+                Voltar
+              </button>
+              <button
+                onClick={confirmReset}
+                className="px-5 py-2.5 rounded-full text-white bg-[#e94560] hover:bg-[#d6344d] transition-all font-semibold text-sm cursor-pointer min-w-[100px] shadow-lg shadow-rose-950/40"
+              >
+                Recomeçar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Footer */}
       <footer className="text-center text-[0.72rem] text-slate-500 mt-4 flex items-center justify-center gap-1 select-none">
         <span>Candinho 2.0 — Criado com carinho para inspirar jovens alunos de artes!</span>
