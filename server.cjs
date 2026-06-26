@@ -7452,189 +7452,194 @@ var GALERIA_IMAGENS = {
   arte: {
     imagemUrl: "https://i.imgur.com/S65idlX.jpeg",
     titulo: "O Violeiro",
-    credito: "Wikimedia Commons"
+    credito: "Almeida J\xFAnior"
   },
   danca: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/definicao-danca.jpg",
-    titulo: "Defini\xE7\xE3o de Dan\xE7a",
-    credito: "Wikimedia Commons"
+    imagemUrl: "https://i.imgur.com/3LGoXuZ.jpeg",
+    titulo: "A Dan\xE7a",
+    credito: "Henri Matisse"
   },
   poema: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/definicao-poesia.jpg",
-    titulo: "Defini\xE7\xE3o de Poesia",
-    credito: "Wikimedia Commons"
+    imagemUrl: "https://i.imgur.com/wvQLiom.jpeg",
+    titulo: "Retrato de Cec\xEDlia Meireles",
+    credito: "Cec\xEDlia Meireles"
   },
   desenho: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/definicao-desenho.jpg",
-    titulo: "Defini\xE7\xE3o de Desenho",
-    credito: "Wikimedia Commons"
+    imagemUrl: "https://i.imgur.com/qKt1FWr.jpeg",
+    titulo: "Esbo\xE7o da \xDAltima Ceia",
+    credito: "Leonardo da Vinci"
   },
   literatura: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/definicao-literatura.jpg",
-    titulo: "Defini\xE7\xE3o de Literatura",
-    credito: "Wikimedia Commons"
+    imagemUrl: "https://i.imgur.com/JoFITap.jpeg",
+    titulo: "Retrato do Acervo Liter\xE1rio Cl\xE1ssico",
+    credito: "Acervo de Literatura Cl\xE1ssica"
   },
   musica: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/definicao-musica.jpg",
-    titulo: "Defini\xE7\xE3o de M\xFAsica",
-    credito: "Wikimedia Commons"
+    imagemUrl: "https://i.imgur.com/8tSYMB6.jpeg",
+    titulo: "Cl\xE1ssico Hist\xF3rico de Partituras e Instrumentos",
+    credito: "Acervo de M\xFAsica Cl\xE1ssica"
   },
   pintura: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/historia-da-arte.jpg",
-    titulo: "Defini\xE7\xE3o de Pintura",
-    credito: "Wikimedia Commons"
+    imagemUrl: "https://i.imgur.com/itQdr8H.jpeg",
+    titulo: "No Bosque de Giverny (In the Woods at Giverny)",
+    credito: "Claude Monet"
   },
   teatro: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/historia-do-teatro.jpg",
-    titulo: "Defini\xE7\xE3o de Teatro",
-    credito: "Wikimedia Commons"
+    imagemUrl: "https://i.imgur.com/JHzxAbj.jpeg",
+    titulo: "Teatro Municipal de S\xE3o Paulo",
+    credito: "Teatro Municipal de S\xE3o Paulo"
   },
   piada: [
     {
-      imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/piada.jpg",
-      titulo: "Piada de Arte",
-      credito: "Wikimedia Commons"
+      imagemUrl: "https://i.imgur.com/D0qsROZ.jpeg",
+      titulo: "As Quatro Esta\xE7\xF5es (Le Saisons)",
+      credito: "Giuseppe Arcimboldo"
     },
     {
-      imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/piada-1.jpg",
-      titulo: "Outra Piada de Arte",
-      credito: "Wikimedia Commons"
+      imagemUrl: "https://i.imgur.com/4zBo1Q2.jpeg",
+      titulo: "M\xE3os Desenhando (Drawing Hands)",
+      credito: "M. C. Escher"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/s1Ed4RY.jpeg",
+      titulo: "Retrato do Imperador Rodolfo II como Vertumno",
+      credito: "Giuseppe Arcimboldo"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/Lk68fFd.jpeg",
+      titulo: "Relatividade (Relativity)",
+      credito: "M. C. Escher"
     }
   ],
   curiosidade: [
     {
-      imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/curiosidade.jpg",
-      titulo: "Curiosidades sobre Arte",
-      credito: "Wikimedia Commons"
+      imagemUrl: "https://i.imgur.com/Bmzw190.jpeg",
+      titulo: "A Coruja da Sabedoria e Astronomia",
+      credito: "Acervo de Curiosidades"
     },
     {
-      imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/curiosidade-1.jpg",
-      titulo: "Sabia que?",
-      credito: "Wikimedia Commons"
-    },
-    {
-      imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/curiosidade-2.jpg",
-      titulo: "Fato Curioso",
-      credito: "Wikimedia Commons"
+      imagemUrl: "https://i.imgur.com/5gUFu6O.jpeg",
+      titulo: "Autorretrato",
+      credito: "Leonardo da Vinci"
     }
   ],
   caboclinho: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-caboclinhos.jpg",
+    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
     titulo: "Dan\xE7a dos Caboclinhos",
     credito: "Wikimedia Commons"
   },
   tango: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-tango.jpg",
+    imagemUrl: "https://i.imgur.com/S2eEbmj.jpeg",
     titulo: "Dan\xE7ando Tango",
     credito: "Wikimedia Commons"
   },
   salsa: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-salsa.jpg",
+    imagemUrl: "https://i.imgur.com/KNsG8wH.jpeg",
     titulo: "Dan\xE7ando Salsa",
     credito: "Wikimedia Commons"
   },
   valsa: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-valsa.jpg",
+    imagemUrl: "https://i.imgur.com/6hxKnNJ.jpeg",
     titulo: "Dan\xE7ando Valsa",
     credito: "Wikimedia Commons"
   },
   rock: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-rock.jpg",
+    imagemUrl: "https://i.imgur.com/7SdA0k3.jpeg",
     titulo: "Alegria do Rock",
     credito: "Wikimedia Commons"
   },
   jongo: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-jongo.jpg",
+    imagemUrl: "https://i.imgur.com/MMPXy3l.jpeg",
     titulo: "Dan\xE7ando Jongo",
     credito: "Wikimedia Commons"
   },
   congada: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-congada.jpg",
+    imagemUrl: "https://i.imgur.com/SZqtIoj.jpeg",
     titulo: "Festa da Congada",
     credito: "Wikimedia Commons"
   },
   coco_pernambucano: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-do-coco.jpg",
+    imagemUrl: "https://i.imgur.com/7OAUdNp.jpeg",
     titulo: "Dan\xE7ando o Coco Pernambucano",
     credito: "Wikimedia Commons"
   },
   ciranda: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-ciranda.png",
+    imagemUrl: "https://i.imgur.com/zIlLJGr.png",
     titulo: "Roda de Ciranda",
     credito: "Wikimedia Commons"
   },
   hip_hop: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-hip-hop.jpg",
+    imagemUrl: "https://i.imgur.com/B58RbYS.jpeg",
     titulo: "Dan\xE7ando Hip Hop",
     credito: "Wikimedia Commons"
   },
   funk: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-funk.jpg",
+    imagemUrl: "https://i.imgur.com/pTTr7cm.jpeg",
     titulo: "Dan\xE7a Funk",
     credito: "Wikimedia Commons"
   },
   frevo: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-frevo.png",
+    imagemUrl: "https://i.imgur.com/ZvsUU43.png",
     titulo: "Dan\xE7ando Frevo com Sombrinha",
     credito: "Wikimedia Commons"
   },
   fandango: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-fandango.jpg",
+    imagemUrl: "https://i.imgur.com/jFjNeOU.jpeg",
     titulo: "Dan\xE7ando Fandango",
     credito: "Wikimedia Commons"
   },
   danca_de_salao: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-de-salao.jpg",
+    imagemUrl: "https://i.imgur.com/hNTTLUl.jpeg",
     titulo: "Dan\xE7a de Sal\xE3o",
     credito: "Wikimedia Commons"
   },
   danca_contemporanea: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-contemporanea.jpg",
+    imagemUrl: "https://i.imgur.com/viD0O3q.jpeg",
     titulo: "Dan\xE7a Contempor\xE2nea",
     credito: "Wikimedia Commons"
   },
   danca_classica: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-classica.jpg",
+    imagemUrl: "https://i.imgur.com/e5uLrzE.jpeg",
     titulo: "Dan\xE7a Cl\xE1ssica",
     credito: "Wikimedia Commons"
   },
   cavalo_marinho: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-cavalo-marinho.jpg",
+    imagemUrl: "https://i.imgur.com/cVro96g.jpeg",
     titulo: "Festa do Cavalo Marinho",
     credito: "Wikimedia Commons"
   },
   catira: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-catira.jpg",
+    imagemUrl: "https://i.imgur.com/M6wTWYU.jpeg",
     titulo: "Dan\xE7ando Catira",
     credito: "Wikimedia Commons"
   },
   carimbo: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-carimbo.jpg",
+    imagemUrl: "https://i.imgur.com/rjujUdi.jpeg",
     titulo: "Dan\xE7ando Carimb\xF3",
     credito: "Wikimedia Commons"
   },
   bale: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-bale.jpg",
+    imagemUrl: "https://i.imgur.com/pp0VUB5.jpeg",
     titulo: "Dan\xE7ando Bal\xE9",
     credito: "Wikimedia Commons"
   },
   arte_indigena: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/cultura-indigena.jpg",
+    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
     titulo: "Arte Ind\xEDgena",
     credito: "Wikimedia Commons"
   },
   arte_africana: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/cultura-africana.jpg",
+    imagemUrl: "https://i.imgur.com/Q60zPHo.jpeg",
     titulo: "Arte Africana",
     credito: "Wikimedia Commons"
   },
   danca_brasil: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/historia-da-danca-brasil.jpg",
+    imagemUrl: "https://i.imgur.com/rjujUdi.jpeg",
     titulo: "Dan\xE7a Tradicional no Brasil",
     credito: "Wikimedia Commons"
   },
   desenho_brasil: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/historia-do-desenho-no-brasil.jpg",
+    imagemUrl: "https://i.imgur.com/4zBo1Q2.jpeg",
     titulo: "Desenho na Hist\xF3ria do Brasil",
     credito: "Wikimedia Commons"
   }
@@ -9601,122 +9606,122 @@ var ARTISTS_GUARANTEED_IMAGES = {
     credito: "Wikimedia Commons / Fonte Wikipedia"
   },
   caboclinho: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-caboclinhos.jpg",
+    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
     titulo: "Dan\xE7a dos Caboclinhos",
     credito: "Wikimedia Commons"
   },
   tango: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-tango.jpg",
+    imagemUrl: "https://i.imgur.com/S2eEbmj.jpeg",
     titulo: "Dan\xE7ando Tango",
     credito: "Wikimedia Commons"
   },
   salsa: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-salsa.jpg",
+    imagemUrl: "https://i.imgur.com/KNsG8wH.jpeg",
     titulo: "Dan\xE7ando Salsa",
     credito: "Wikimedia Commons"
   },
   valsa: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-valsa.jpg",
+    imagemUrl: "https://i.imgur.com/6hxKnNJ.jpeg",
     titulo: "Dan\xE7ando Valsa",
     credito: "Wikimedia Commons"
   },
   rock: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-rock.jpg",
+    imagemUrl: "https://i.imgur.com/7SdA0k3.jpeg",
     titulo: "Alegria do Rock",
     credito: "Wikimedia Commons"
   },
   jongo: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-jongo.jpg",
+    imagemUrl: "https://i.imgur.com/MMPXy3l.jpeg",
     titulo: "Dan\xE7ando Jongo",
     credito: "Wikimedia Commons"
   },
   congada: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-congada.jpg",
+    imagemUrl: "https://i.imgur.com/SZqtIoj.jpeg",
     titulo: "Festa da Congada",
     credito: "Wikimedia Commons"
   },
   coco_pernambucano: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-do-coco.jpg",
+    imagemUrl: "https://i.imgur.com/7OAUdNp.jpeg",
     titulo: "Dan\xE7ando o Coco Pernambucano",
     credito: "Wikimedia Commons"
   },
   ciranda: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-ciranda.png",
+    imagemUrl: "https://i.imgur.com/zIlLJGr.png",
     titulo: "Roda de Ciranda",
     credito: "Wikimedia Commons"
   },
   hip_hop: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-hip-hop.jpg",
+    imagemUrl: "https://i.imgur.com/B58RbYS.jpeg",
     titulo: "Dan\xE7ando Hip Hop",
     credito: "Wikimedia Commons"
   },
   funk: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-funk.jpg",
+    imagemUrl: "https://i.imgur.com/pTTr7cm.jpeg",
     titulo: "Dan\xE7a Funk",
     credito: "Wikimedia Commons"
   },
   frevo: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-frevo.png",
+    imagemUrl: "https://i.imgur.com/ZvsUU43.png",
     titulo: "Dan\xE7ando Frevo com Sombrinha",
     credito: "Wikimedia Commons"
   },
   fandango: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-fandango.jpg",
+    imagemUrl: "https://i.imgur.com/jFjNeOU.jpeg",
     titulo: "Dan\xE7ando Fandango",
     credito: "Wikimedia Commons"
   },
   danca_de_salao: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-de-salao.jpg",
+    imagemUrl: "https://i.imgur.com/hNTTLUl.jpeg",
     titulo: "Dan\xE7a de Sal\xE3o",
     credito: "Wikimedia Commons"
   },
   danca_contemporanea: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-contemporanea.jpg",
+    imagemUrl: "https://i.imgur.com/viD0O3q.jpeg",
     titulo: "Dan\xE7a Contempor\xE2nea",
     credito: "Wikimedia Commons"
   },
   danca_classica: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-classica.jpg",
+    imagemUrl: "https://i.imgur.com/e5uLrzE.jpeg",
     titulo: "Dan\xE7a Cl\xE1ssica",
     credito: "Wikimedia Commons"
   },
   cavalo_marinho: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-cavalo-marinho.jpg",
+    imagemUrl: "https://i.imgur.com/cVro96g.jpeg",
     titulo: "Festa do Cavalo Marinho",
     credito: "Wikimedia Commons"
   },
   catira: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-catira.jpg",
+    imagemUrl: "https://i.imgur.com/M6wTWYU.jpeg",
     titulo: "Dan\xE7ando Catira",
     credito: "Wikimedia Commons"
   },
   carimbo: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-carimbo.jpg",
+    imagemUrl: "https://i.imgur.com/rjujUdi.jpeg",
     titulo: "Dan\xE7ando Carimb\xF3",
     credito: "Wikimedia Commons"
   },
   bale: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/danca-bale.jpg",
+    imagemUrl: "https://i.imgur.com/pp0VUB5.jpeg",
     titulo: "Dan\xE7ando Bal\xE9",
     credito: "Wikimedia Commons"
   },
   arte_indigena: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/cultura-indigena.jpg",
+    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
     titulo: "Arte Ind\xEDgena",
     credito: "Wikimedia Commons"
   },
   arte_africana: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/cultura-africana.jpg",
+    imagemUrl: "https://i.imgur.com/Q60zPHo.jpeg",
     titulo: "Arte Africana",
     credito: "Wikimedia Commons"
   },
   danca_brasil: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/historia-da-danca-brasil.jpg",
+    imagemUrl: "https://i.imgur.com/rjujUdi.jpeg",
     titulo: "Dan\xE7a Tradicional no Brasil",
     credito: "Wikimedia Commons"
   },
   desenho_brasil: {
-    imagemUrl: "https://raw.githubusercontent.com/lenilsonxavier-dev/candinho-3/main/public/imagens/historia-do-desenho-no-brasil.jpg",
+    imagemUrl: "https://i.imgur.com/4zBo1Q2.jpeg",
     titulo: "Desenho na Hist\xF3ria do Brasil",
     credito: "Wikimedia Commons"
   }
@@ -10378,6 +10383,24 @@ app.get("/api/proxy-image", async (req, res) => {
       return res.status(400).send("Apenas protocolos de imagem seguros permitidos");
     }
     let targetUrl = imageUrl.trim();
+    if (targetUrl.includes("githubusercontent.com/lenilsonxavier-dev/candinho-3") && targetUrl.includes("/imagens/")) {
+      const parts = targetUrl.split("/imagens/");
+      const fileName = parts[parts.length - 1];
+      const localFilePath = import_path.default.join(process.cwd(), "public", "imagens", fileName);
+      try {
+        const fs = await import("fs/promises");
+        const exists = await fs.access(localFilePath).then(() => true).catch(() => false);
+        if (exists) {
+          const mime = targetUrl.endsWith(".png") ? "image/png" : "image/jpeg";
+          res.setHeader("Content-Type", mime);
+          res.setHeader("Cache-Control", "public, max-age=86400");
+          const fileData = await fs.readFile(localFilePath);
+          return res.send(fileData);
+        }
+      } catch (fsErr) {
+        console.error("Erro ao ler imagem local no proxy:", fsErr);
+      }
+    }
     try {
       const parsedUrl = new URL(targetUrl);
       targetUrl = parsedUrl.toString();
