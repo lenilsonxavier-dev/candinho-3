@@ -7485,9 +7485,14 @@ var GALERIA_IMAGENS = {
     credito: "Claude Monet"
   },
   teatro: {
-    imagemUrl: "https://i.imgur.com/JHzxAbj.jpeg",
+    imagemUrl: "https://i.imgur.com/JHzxAbj.jpg",
     titulo: "Teatro Municipal de S\xE3o Paulo",
     credito: "Teatro Municipal de S\xE3o Paulo"
+  },
+  teatro_historia: {
+    imagemUrl: "https://i.imgur.com/3di4jIS.jpeg",
+    titulo: "Hist\xF3ria do Teatro",
+    credito: "Wikimedia Commons"
   },
   piada: [
     {
@@ -7524,7 +7529,7 @@ var GALERIA_IMAGENS = {
     }
   ],
   caboclinho: {
-    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
+    imagemUrl: "https://i.imgur.com/H36yCWI.jpg",
     titulo: "Dan\xE7a dos Caboclinhos",
     credito: "Wikimedia Commons"
   },
@@ -7624,7 +7629,7 @@ var GALERIA_IMAGENS = {
     credito: "Wikimedia Commons"
   },
   arte_indigena: {
-    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
+    imagemUrl: "https://i.imgur.com/1OEjWd9.jpg",
     titulo: "Arte Ind\xEDgena",
     credito: "Wikimedia Commons"
   },
@@ -7634,12 +7639,12 @@ var GALERIA_IMAGENS = {
     credito: "Wikimedia Commons"
   },
   danca_brasil: {
-    imagemUrl: "https://i.imgur.com/rjujUdi.jpeg",
+    imagemUrl: "https://i.imgur.com/CVHkdCZ.jpg",
     titulo: "Dan\xE7a Tradicional no Brasil",
     credito: "Wikimedia Commons"
   },
   desenho_brasil: {
-    imagemUrl: "https://i.imgur.com/4zBo1Q2.jpeg",
+    imagemUrl: "https://i.imgur.com/KSd4nHC.jpg",
     titulo: "Desenho na Hist\xF3ria do Brasil",
     credito: "Wikimedia Commons"
   }
@@ -9606,7 +9611,7 @@ var ARTISTS_GUARANTEED_IMAGES = {
     credito: "Wikimedia Commons / Fonte Wikipedia"
   },
   caboclinho: {
-    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
+    imagemUrl: "https://i.imgur.com/H36yCWI.jpg",
     titulo: "Dan\xE7a dos Caboclinhos",
     credito: "Wikimedia Commons"
   },
@@ -9706,7 +9711,7 @@ var ARTISTS_GUARANTEED_IMAGES = {
     credito: "Wikimedia Commons"
   },
   arte_indigena: {
-    imagemUrl: "https://i.imgur.com/1OEjWd9.jpeg",
+    imagemUrl: "https://i.imgur.com/1OEjWd9.jpg",
     titulo: "Arte Ind\xEDgena",
     credito: "Wikimedia Commons"
   },
@@ -9716,13 +9721,23 @@ var ARTISTS_GUARANTEED_IMAGES = {
     credito: "Wikimedia Commons"
   },
   danca_brasil: {
-    imagemUrl: "https://i.imgur.com/rjujUdi.jpeg",
+    imagemUrl: "https://i.imgur.com/CVHkdCZ.jpg",
     titulo: "Dan\xE7a Tradicional no Brasil",
     credito: "Wikimedia Commons"
   },
   desenho_brasil: {
-    imagemUrl: "https://i.imgur.com/4zBo1Q2.jpeg",
+    imagemUrl: "https://i.imgur.com/KSd4nHC.jpg",
     titulo: "Desenho na Hist\xF3ria do Brasil",
+    credito: "Wikimedia Commons"
+  },
+  teatro: {
+    imagemUrl: "https://i.imgur.com/JHzxAbj.jpg",
+    titulo: "Teatro Municipal de S\xE3o Paulo",
+    credito: "Teatro Municipal de S\xE3o Paulo"
+  },
+  teatro_historia: {
+    imagemUrl: "https://i.imgur.com/3di4jIS.jpeg",
+    titulo: "Hist\xF3ria do Teatro",
     credito: "Wikimedia Commons"
   }
 };
@@ -10076,8 +10091,15 @@ async function buscarImagem(pergunta, matchedKey, lib) {
       };
     }
     if (mK === "teatro" || mK.includes("teatro") || mK.includes("palco") || matchConceptWord("teatro") || matchConceptWord("teatros") || matchConceptWord("palco") || matchConceptWord("palcos")) {
+      if (lowerQuery.includes("historia") || lowerQuery.includes("origem") || lowerQuery.includes("antigo") || lowerQuery.includes("passado") || lowerQuery.includes("surgi")) {
+        return {
+          imagemUrl: "https://i.imgur.com/3di4jIS.jpeg",
+          titulo: "Hist\xF3ria do Teatro",
+          credito: "Wikimedia Commons"
+        };
+      }
       return {
-        imagemUrl: "https://i.imgur.com/JHzxAbj.jpeg",
+        imagemUrl: "https://i.imgur.com/JHzxAbj.jpg",
         titulo: "Teatro Municipal de S\xE3o Paulo",
         credito: "Teatro Municipal de S\xE3o Paulo"
       };
