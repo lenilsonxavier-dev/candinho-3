@@ -309,17 +309,17 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[linear-gradient(135deg,_#1a1a2e_0%,_#16213e_100%)] p-2 sm:p-[15px] flex flex-col justify-center items-center overflow-x-hidden font-sans">
+    <div className="min-h-screen bg-[linear-gradient(135deg,_#1a1a2e_0%,_#16213e_100%)] p-3 sm:p-6 flex flex-col items-center justify-start overflow-y-auto overflow-x-hidden font-sans">
       
       {/* Main Beautiful Container */}
-      <div className="w-full max-w-[800px] bg-[rgba(22,_33,_62,_0.95)] backdrop-blur-[15px] rounded-[24px] sm:rounded-[30px] p-3.5 sm:p-[25px] shadow-[0_15px_50px_rgba(0,0,0,0.6)] border border-[rgba(255,_215,_0,_0.2)] flex flex-col">
+      <div className="w-full max-w-[800px] bg-[rgba(22,_33,_62,_0.95)] backdrop-blur-[15px] rounded-[24px] sm:rounded-[30px] p-3.5 sm:p-[25px] shadow-[0_15px_50px_rgba(0,0,0,0.6)] border border-[rgba(255,_215,_0,_0.2)] flex flex-col my-auto">
         
         {/* Header matching HTML precisely */}
         <header className="flex items-center gap-3 sm:gap-5 mb-4 sm:mb-5 pb-3 sm:pb-[15px] border-b-2 border-[#e94560] relative">
           <img 
             src="https://i.imgur.com/fnMYS0Z.png" 
             alt="Candinho" 
-            className="w-[60px] h-[60px] sm:w-[90px] sm:h-[90px] md:w-[110px] md:h-[110px] rounded-full object-cover border-2 sm:border-3 border-[#ffd700] animate-float flex-shrink-0"
+            className="w-[55px] h-[55px] sm:w-[80px] sm:h-[80px] md:w-[95px] md:h-[95px] rounded-full object-cover border-2 sm:border-3 border-[#ffd700] animate-float flex-shrink-0"
             referrerPolicy="no-referrer"
           />
           <div className="flex-1 min-w-0 pr-16 sm:pr-0">
@@ -342,7 +342,7 @@ export default function App() {
         {/* Custom scrollbar Chat area with optimized height */}
         <div 
           id="chat"
-          className="h-[340px] sm:h-[420px] overflow-y-auto bg-[rgba(15,_52,_96,_0.4)] p-3 sm:p-5 rounded-[20px] mb-4 sm:mb-5 flex flex-col gap-3 sm:gap-[15px] scroll-behavior-smooth custom-scrollbar"
+          className="h-[300px] sm:h-[380px] md:h-[400px] overflow-y-auto bg-[rgba(15,_52,_96,_0.4)] p-3 sm:p-5 rounded-[20px] mb-4 sm:mb-5 flex flex-col gap-3 sm:gap-[15px] scroll-behavior-smooth custom-scrollbar"
         >
           <AnimatePresence initial={false}>
             {messages.map((msg, idx) => {
