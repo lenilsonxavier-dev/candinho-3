@@ -7699,6 +7699,36 @@ var GALERIA_IMAGENS = {
     imagemUrl: "https://i.imgur.com/aCJ087A.jpeg",
     titulo: "Madalena dos Santos Reinbolt",
     credito: "Madalena dos Santos Reinbolt"
+  },
+  cor: {
+    imagemUrl: "https://i.imgur.com/eOgA02Z.jpeg",
+    titulo: "Defini\xE7\xE3o de Cor",
+    credito: "Elementos da Linguagem Visual"
+  },
+  espaco: {
+    imagemUrl: "https://i.imgur.com/6VvC7Yl.jpeg",
+    titulo: "Defini\xE7\xE3o de Espa\xE7o",
+    credito: "Elementos da Linguagem Visual"
+  },
+  forma: {
+    imagemUrl: "https://i.imgur.com/EFluxXS.jpeg",
+    titulo: "Defini\xE7\xE3o de Forma",
+    credito: "Elementos da Linguagem Visual"
+  },
+  ponto: {
+    imagemUrl: "https://i.imgur.com/6VAqeIv.jpeg",
+    titulo: "Defini\xE7\xE3o de Ponto",
+    credito: "Elementos da Linguagem Visual"
+  },
+  textura: {
+    imagemUrl: "https://i.imgur.com/uxnJNbl.jpeg",
+    titulo: "Defini\xE7\xE3o de Textura",
+    credito: "Elementos da Linguagem Visual"
+  },
+  luz: {
+    imagemUrl: "https://i.imgur.com/IkFuERR.jpeg",
+    titulo: "Defini\xE7\xE3o de Luz",
+    credito: "Elementos da Linguagem Visual"
   }
 };
 
@@ -8321,7 +8351,7 @@ var CONHECIMENTO_CANDINHO = [
   },
   {
     palavras: ["simbolismo", "estilo simbolismo"],
-    resposta: "\u{1F441}\uFE0F **Simbolismo:** O quadro \xE9 uma ca\xE7a ao tesouro de segredinhos ocultos! O pintor coloca v\xE1rios enigmas e s\xEDmbolos para expressar uma mensagem po\xE9tica.\n\u{1F468}\u200D\u{1F3A8} **Artistas famosos:** Gustave Moreau, Mikhail Vrubel.\n\u{1F4A1} **Dica do Candinho:** Cada pequena flor, objeto ou adorno no cen\xE1rio esconde um significado profundo para decifrarmos! \u{1F441}\uFE0F\u2728"
+    resposta: "\u{1F441}\uFE0F **Simbolismo:** O quadro \xE9 uma ca\xE7a ao tesouro de segredinhos ocultos! O pintor coloca v\xE1rios enigmas e s\xEDmbolos para expressar uma mensagem po\xE9tica.\n\u{1F468}\u200D\u{1F3A8} **Artistas famosos:** Gustave Moreau, Mikhail Vrubel.\n\u{1F4A1} **Dica do Candinho:** Cada pequena flor, adorno ou objeto no cen\xE1rio esconde um significado profundo para decifrarmos! \u{1F441}\uFE0F\u2728"
   },
   {
     palavras: ["cubismo", "estilo cubismo"],
@@ -8332,17 +8362,48 @@ var CONHECIMENTO_CANDINHO = [
     resposta: "\u26A1 **Futurismo:** Os artistas de vanguarda eram fascinados pela acelera\xE7\xE3o dos novos autom\xF3veis, f\xE1bricas, dinamismo e luzes das cidades modernas.\n\u{1F468}\u200D\u{1F3A8} **Artistas famosos:** Umberto Boccioni, Giacomo Balla.\n\u{1F4A1} **Dica do Candinho:** Os objetos parecem duplicados ou tremelicando, dando uma real e fant\xE1stica sensa\xE7\xE3o de movimento de alta velocidade na tela! \u{1F3CE}\uFE0F\u26A1"
   },
   // ===== ELEMENTOS DAS ARTES VISUAIS =====
-  { palavras: ["ponto", "o que \xE9 ponto"], resposta: 'O ponto \xE9 a menor marca no desenho! Sozinho chama aten\xE7\xE3o, mas muitos pontos juntos podem formar linhas, formas e at\xE9 texturas. No pontilhismo, os pontos criam imagens incr\xEDveis! Seurat usou isso em "Tarde de domingo na Ilha de Grande Jatte". \u{1F534}' },
-  { palavras: ["linha", "o que \xE9 linha"], resposta: "A linha \xE9 como um ponto que saiu passeando! Pode ser reta, curva, fina ou grossa. Linhas retas parecem firmes; curvas s\xE3o mais suaves. D\xFCrer e Kandinsky adoravam brincar com linhas! \u{1F4CF}" },
-  { palavras: ["forma", "formas", "o que e forma", "o que sao formas", "o que e uma forma"], resposta: "Formas s\xE3o as figuras que criamos quando fechamos uma linha! \u{1F53A}\u{1F535}\u{1F7E9} Elas podem ser geom\xE9tricas (como c\xEDrculos, quadrados e tri\xE2ngulos) ou org\xE2nicas (com formatos livres e naturais, como uma nuvem ou uma folha). Joan Mir\xF3 e Pablo Picasso amavam brincar com formas!" },
+  {
+    palavras: ["ponto", "o que \xE9 ponto"],
+    resposta: 'O ponto \xE9 a menor marca no desenho! Sozinho chama aten\xE7\xE3o, mas muitos pontos juntos podem formar linhas, formas e at\xE9 texturas. No pontilhismo, os pontos criam imagens incr\xEDveis! Seurat usou isso em "Tarde de domingo na Ilha de Grande Jatte". \u{1F534}',
+    matchedKey: "ponto"
+  },
+  {
+    palavras: ["linha", "o que \xE9 linha"],
+    resposta: "A linha \xE9 como um ponto que saiu passeando! Pode ser reta, curva, fina ou grossa. Linhas retas parecem firmes; curvas s\xE3o mais suaves. D\xFCrer e Kandinsky adoravam brincar com linhas! \u{1F4CF}",
+    matchedKey: "linha"
+  },
+  {
+    palavras: ["forma", "formas", "o que e forma", "o que sao formas", "o que e uma forma", "defini\xE7\xE3o de forma", "definicao de forma"],
+    resposta: "Formas s\xE3o as figuras que criamos quando fechamos uma linha! \u{1F53A}\u{1F535}\u{1F7E9} Elas podem ser geom\xE9tricas (como c\xEDrculos, quadrados e tri\xE2ngulos) ou org\xE2nicas (com formatos livres e naturais, como uma nuvem ou uma folha). Joan Mir\xF3 e Pablo Picasso amavam brincar com formas!",
+    matchedKey: "forma"
+  },
+  {
+    palavras: ["espa\xE7o", "espaco", "o que \xE9 espa\xE7o", "o que e espaco", "defini\xE7\xE3o de espa\xE7o", "definicao de espaco"],
+    resposta: "O espa\xE7o na arte \xE9 a \xE1rea onde o artista cria seu trabalho! \u{1F30C} Pode ser o espa\xE7o bidimensional (como o papel ou a tela, onde jogamos com altura e largura) ou o espa\xE7o tridimensional (como nas esculturas, com profundidade de verdade). O espa\xE7o pode ser cheio (positivo) ou vazio (negativo) - os dois s\xE3o super importantes para equilibrar a imagem!",
+    matchedKey: "espaco"
+  },
+  {
+    palavras: ["textura", "o que \xE9 textura", "defini\xE7\xE3o de textura", "definicao de textura"],
+    resposta: "A textura \xE9 o aspecto de uma superf\xEDcie que podemos sentir com as m\xE3os ou imaginar com os olhos! \u{1F9F1} Pode ser \xE1spera como o tronco de uma \xE1rvore, macia como o pelo de um gatinho, lisa como um vidro ou enrugada como o papel amassado. Na pintura, artistas usam pinceladas grossas para criar texturas reais que quase d\xE1 para tocar!",
+    matchedKey: "textura"
+  },
+  {
+    palavras: ["luz", "luz e sombra", "o que \xE9 luz", "defini\xE7\xE3o de luz", "definicao de luz"],
+    resposta: "A luz na arte serve para dar volume, criar profundidade e mostrar o caminho dos olhos! \u{1F4A1} Junto com as sombras, a luz faz os objetos parecerem redondos e reais em uma folha plana. Pintores como Rembrandt eram mestres em usar fortes contrastes de luz e sombra para criar cenas m\xE1gicas e cheias de mist\xE9rio.",
+    matchedKey: "luz"
+  },
   { palavras: ["cores prim\xE1rias", "primarias", "o que s\xE3o cores prim\xE1rias"], resposta: "Cores prim\xE1rias ou puras s\xE3o aquelas que n\xE3o podem ser obtidas por meio de outras misturas. Elas s\xE3o: amarelo, azul e vermelho. Com elas, podemos criar todas as outras cores! \u{1F534}\u{1F535}\u{1F7E1}" },
   { palavras: ["cores secund\xE1rias", "secundarias", "o que s\xE3o cores secund\xE1rias"], resposta: "Cores secund\xE1rias s\xE3o geradas por meio da mistura de duas cores prim\xE1rias. \u{1F308} Amarelo + vermelho = laranja \u{1F7E0}, vermelho + azul = roxo ou violeta \u{1F7E3}, azul + amarelo = verde \u{1F7E2}. Que combina\xE7\xE3o legal!" },
   { palavras: ["cores terci\xE1rias", "terciarias", "o que s\xE3o cores terci\xE1rias"], resposta: "Cores terci\xE1rias s\xE3o geradas pela mistura de uma cor prim\xE1ria com uma cor secund\xE1ria. S\xE3o elas: vermelho-arroxeado (vinho), vermelho-alaranjado, amarelo-esverdeado, amarelo-alaranjado (bege), azul-arroxeado e azul-esverdeado (verde-\xE1gua). Um mont\xE3o de cores! \u{1F308}" },
   { palavras: ["cores complementares", "complementares", "contrastantes", "o que s\xE3o cores complementares"], resposta: "Cores complementares s\xE3o opostas no c\xEDrculo crom\xE1tico e criam o m\xE1ximo de contraste! Os tr\xEAs pares principais s\xE3o: \u{1F534} vermelho e \u{1F7E2} verde, \u{1F7E1} amarelo e \u{1F7E3} violeta (roxo), \u{1F535} azul e \u{1F7E0} laranja. Uma real\xE7a a outra! \u26A1" },
-  { palavras: ["cores quentes", "quentes", "o que s\xE3o cores quentes"], resposta: "Cores quentes transmitem sensa\xE7\xE3o de calor e energia! S\xE3o elas: vermelho, laranja e amarelo. Elas lembram sol e fogo, d\xE3o alegria e movimento! \u2600\uFE0F" },
+  { palavras: ["cores quentes", "quentes", "o que s\xE3o cores quentes"], resposta: "Cores quentes transmitem sensa\xE7\xE3o de calor e energy! S\xE3o elas: vermelho, laranja e amarelo. Elas lembram sol e fogo, d\xE3o alegria e movimento! \u2600\uFE0F" },
   { palavras: ["cores frias", "frias", "o que s\xE3o cores frias"], resposta: "Cores frias transmitem sensa\xE7\xE3o de calma e serenidade! S\xE3o elas: azul, verde e violeta (roxo). Elas lembram \xE1gua, c\xE9u e floresta. \u2744\uFE0F" },
   { palavras: ["cores neutras", "neutras", "o que s\xE3o cores neutras"], resposta: "Cores neutras s\xE3o aquelas que t\xEAm pouca reflex\xE3o da luz, como os tons de cinza e marrom. Elas s\xE3o \xF3timas para equilibrar outras cores! \u26AA\u26AB" },
-  { palavras: ["cor", "o que \xE9 cor"], resposta: 'As cores s\xE3o sensa\xE7\xF5es visuais que nossos olhos captam quando h\xE1 luz presente. A palavra "cor" vem do latim (color) e significa "cobrir" ou "ocultar". A luz branca \xE9 a uni\xE3o das sete cores do arco-\xEDris: vermelho, laranja, amarelo, verde, azul, anil e violeta. J\xE1 a cor preta representa a aus\xEAncia de luz. \u{1F308}' },
+  {
+    palavras: ["cor", "o que \xE9 cor", "defini\xE7\xE3o de cor", "definicao de cor"],
+    resposta: 'As cores s\xE3o sensa\xE7\xF5es visuais que nossos olhos captam quando h\xE1 luz presente. A palavra "cor" vem do latim (color) e significa "cobrir" ou "ocultar". A luz branca \xE9 a uni\xE3o das sete cores do arco-\xEDris: vermelho, laranja, amarelo, verde, azul, anil e violeta. J\xE1 a cor preta representa a aus\xEAncia de luz. \u{1F308}',
+    matchedKey: "cor"
+  },
   { palavras: ["c\xEDrculo crom\xE1tico", "circulo das cores", "roda de cores"], resposta: "O c\xEDrculo crom\xE1tico \xE9 como um arco-\xEDris organizado em volta. Nele, as cores est\xE3o dispostas em ordem: vermelho, laranja, amarelo, verde, azul, violeta. Ajuda a ver quais cores combinam! \u{1F504}" },
   { palavras: ["harmonia de cores", "harmonia crom\xE1tica", "combina\xE7\xE3o de cores"], resposta: "Harmonia de cores \xE9 quando escolhemos cores que ficam bonitas juntas. Por exemplo, cores vizinhas no c\xEDrculo (como azul e verde) criam harmonia suave; cores opostas (como azul e laranja) criam contraste vibrante! \u{1F308}\u2728" },
   { palavras: ["escala de cores", "gradiente", "degrad\xEA"], resposta: "Uma escala de cores \xE9 quando uma cor vai ficando mais clara ou mais escura aos poucos. Voc\xEA pode fazer isso adicionando branco (tom pastel) ou preto (sombra). Fica lindo em pinturas! \u{1F3A8}" },
@@ -9801,6 +9862,36 @@ var ARTISTS_GUARANTEED_IMAGES = {
     imagemUrl: "https://i.imgur.com/3di4jIS.jpeg",
     titulo: "Hist\xF3ria do Teatro",
     credito: "Wikimedia Commons"
+  },
+  cor: {
+    imagemUrl: "https://i.imgur.com/eOgA02Z.jpeg",
+    titulo: "Defini\xE7\xE3o de Cor",
+    credito: "Elementos da Linguagem Visual"
+  },
+  espaco: {
+    imagemUrl: "https://i.imgur.com/6VvC7Yl.jpeg",
+    titulo: "Defini\xE7\xE3o de Espa\xE7o",
+    credito: "Elementos da Linguagem Visual"
+  },
+  forma: {
+    imagemUrl: "https://i.imgur.com/EFluxXS.jpeg",
+    titulo: "Defini\xE7\xE3o de Forma",
+    credito: "Elementos da Linguagem Visual"
+  },
+  ponto: {
+    imagemUrl: "https://i.imgur.com/6VAqeIv.jpeg",
+    titulo: "Defini\xE7\xE3o de Ponto",
+    credito: "Elementos da Linguagem Visual"
+  },
+  textura: {
+    imagemUrl: "https://i.imgur.com/uxnJNbl.jpeg",
+    titulo: "Defini\xE7\xE3o de Textura",
+    credito: "Elementos da Linguagem Visual"
+  },
+  luz: {
+    imagemUrl: "https://i.imgur.com/IkFuERR.jpeg",
+    titulo: "Defini\xE7\xE3o de Luz",
+    credito: "Elementos da Linguagem Visual"
   }
 };
 async function buscarImagem(pergunta, matchedKey, lib) {
