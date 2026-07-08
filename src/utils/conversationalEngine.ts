@@ -763,7 +763,7 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
   },
   {
     palavras: ['simbolismo', 'estilo simbolismo'],
-    resposta: '👁️ **Simbolismo:** O quadro é uma caça ao tesouro de segredinhos ocultos! O pintor coloca vários enigmas e símbolos para expressar uma mensagem poética.\n👨‍🎨 **Artistas famosos:** Gustave Moreau, Mikhail Vrubel.\n💡 **Dica do Candinho:** Cada pequena flor, objeto ou adorno no cenário esconde um significado profundo para decifrarmos! 👁️✨'
+    resposta: '👁️ **Simbolismo:** O quadro é uma caça ao tesouro de segredinhos ocultos! O pintor coloca vários enigmas e símbolos para expressar uma mensagem poética.\n👨‍🎨 **Artistas famosos:** Gustave Moreau, Mikhail Vrubel.\n💡 **Dica do Candinho:** Cada pequena flor, adorno ou objeto no cenário esconde um significado profundo para decifrarmos! 👁️✨'
   },
   {
     palavras: ['cubismo', 'estilo cubismo'],
@@ -775,17 +775,48 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
   },
 
   // ===== ELEMENTOS DAS ARTES VISUAIS =====
-  { palavras: ['ponto', 'o que é ponto'], resposta: 'O ponto é a menor marca no desenho! Sozinho chama atenção, mas muitos pontos juntos podem formar linhas, formas e até texturas. No pontilhismo, os pontos criam imagens incríveis! Seurat usou isso em "Tarde de domingo na Ilha de Grande Jatte". 🔴' },
-  { palavras: ['linha', 'o que é linha'], resposta: 'A linha é como um ponto que saiu passeando! Pode ser reta, curva, fina ou grossa. Linhas retas parecem firmes; curvas são mais suaves. Dürer e Kandinsky adoravam brincar com linhas! 📏' },
-  { palavras: ['forma', 'formas', 'o que e forma', 'o que sao formas', 'o que e uma forma'], resposta: 'Formas são as figuras que criamos quando fechamos uma linha! 🔺🔵🟩 Elas podem ser geométricas (como círculos, quadrados e triângulos) ou orgânicas (com formatos livres e naturais, como uma nuvem ou uma folha). Joan Miró e Pablo Picasso amavam brincar com formas!' },
+  { 
+    palavras: ['ponto', 'o que é ponto'], 
+    resposta: 'O ponto é a menor marca no desenho! Sozinho chama atenção, mas muitos pontos juntos podem formar linhas, formas e até texturas. No pontilhismo, os pontos criam imagens incríveis! Seurat usou isso em "Tarde de domingo na Ilha de Grande Jatte". 🔴',
+    matchedKey: 'ponto'
+  },
+  { 
+    palavras: ['linha', 'o que é linha'], 
+    resposta: 'A linha é como um ponto que saiu passeando! Pode ser reta, curva, fina ou grossa. Linhas retas parecem firmes; curvas são mais suaves. Dürer e Kandinsky adoravam brincar com linhas! 📏',
+    matchedKey: 'linha'
+  },
+  { 
+    palavras: ['forma', 'formas', 'o que e forma', 'o que sao formas', 'o que e uma forma', 'definição de forma', 'definicao de forma'], 
+    resposta: 'Formas são as figuras que criamos quando fechamos uma linha! 🔺🔵🟩 Elas podem ser geométricas (como círculos, quadrados e triângulos) ou orgânicas (com formatos livres e naturais, como uma nuvem ou uma folha). Joan Miró e Pablo Picasso amavam brincar com formas!',
+    matchedKey: 'forma'
+  },
+  { 
+    palavras: ['espaço', 'espaco', 'o que é espaço', 'o que e espaco', 'definição de espaço', 'definicao de espaco'], 
+    resposta: 'O espaço na arte é a área onde o artista cria seu trabalho! 🌌 Pode ser o espaço bidimensional (como o papel ou a tela, onde jogamos com altura e largura) ou o espaço tridimensional (como nas esculturas, com profundidade de verdade). O espaço pode ser cheio (positivo) ou vazio (negativo) - os dois são super importantes para equilibrar a imagem!',
+    matchedKey: 'espaco'
+  },
+  { 
+    palavras: ['textura', 'o que é textura', 'definição de textura', 'definicao de textura'], 
+    resposta: 'A textura é o aspecto de uma superfície que podemos sentir com as mãos ou imaginar com os olhos! 🧱 Pode ser áspera como o tronco de uma árvore, macia como o pelo de um gatinho, lisa como um vidro ou enrugada como o papel amassado. Na pintura, artistas usam pinceladas grossas para criar texturas reais que quase dá para tocar!',
+    matchedKey: 'textura'
+  },
+  { 
+    palavras: ['luz', 'luz e sombra', 'o que é luz', 'definição de luz', 'definicao de luz'], 
+    resposta: 'A luz na arte serve para dar volume, criar profundidade e mostrar o caminho dos olhos! 💡 Junto com as sombras, a luz faz os objetos parecerem redondos e reais em uma folha plana. Pintores como Rembrandt eram mestres em usar fortes contrastes de luz e sombra para criar cenas mágicas e cheias de mistério.',
+    matchedKey: 'luz'
+  },
   { palavras: ['cores primárias', 'primarias', 'o que são cores primárias'], resposta: 'Cores primárias ou puras são aquelas que não podem ser obtidas por meio de outras misturas. Elas são: amarelo, azul e vermelho. Com elas, podemos criar todas as outras cores! 🔴🔵🟡' },
   { palavras: ['cores secundárias', 'secundarias', 'o que são cores secundárias'], resposta: 'Cores secundárias são geradas por meio da mistura de duas cores primárias. 🌈 Amarelo + vermelho = laranja 🟠, vermelho + azul = roxo ou violeta 🟣, azul + amarelo = verde 🟢. Que combinação legal!' },
   { palavras: ['cores terciárias', 'terciarias', 'o que são cores terciárias'], resposta: 'Cores terciárias são geradas pela mistura de uma cor primária com uma cor secundária. São elas: vermelho-arroxeado (vinho), vermelho-alaranjado, amarelo-esverdeado, amarelo-alaranjado (bege), azul-arroxeado e azul-esverdeado (verde-água). Um montão de cores! 🌈' },
   { palavras: ['cores complementares', 'complementares', 'contrastantes', 'o que são cores complementares'], resposta: 'Cores complementares são opostas no círculo cromático e criam o máximo de contraste! Os três pares principais são: 🔴 vermelho e 🟢 verde, 🟡 amarelo e 🟣 violeta (roxo), 🔵 azul e 🟠 laranja. Uma realça a outra! ⚡' },
-  { palavras: ['cores quentes', 'quentes', 'o que são cores quentes'], resposta: 'Cores quentes transmitem sensação de calor e energia! São elas: vermelho, laranja e amarelo. Elas lembram sol e fogo, dão alegria e movimento! ☀️' },
+  { palavras: ['cores quentes', 'quentes', 'o que são cores quentes'], resposta: 'Cores quentes transmitem sensação de calor e energy! São elas: vermelho, laranja e amarelo. Elas lembram sol e fogo, dão alegria e movimento! ☀️' },
   { palavras: ['cores frias', 'frias', 'o que são cores frias'], resposta: 'Cores frias transmitem sensação de calma e serenidade! São elas: azul, verde e violeta (roxo). Elas lembram água, céu e floresta. ❄️' },
   { palavras: ['cores neutras', 'neutras', 'o que são cores neutras'], resposta: 'Cores neutras são aquelas que têm pouca reflexão da luz, como os tons de cinza e marrom. Elas são ótimas para equilibrar outras cores! ⚪⚫' },
-  { palavras: ['cor', 'o que é cor'], resposta: 'As cores são sensações visuais que nossos olhos captam quando há luz presente. A palavra "cor" vem do latim (color) e significa "cobrir" ou "ocultar". A luz branca é a união das sete cores do arco-íris: vermelho, laranja, amarelo, verde, azul, anil e violeta. Já a cor preta representa a ausência de luz. 🌈' },
+  { 
+    palavras: ['cor', 'o que é cor', 'definição de cor', 'definicao de cor'], 
+    resposta: 'As cores são sensações visuais que nossos olhos captam quando há luz presente. A palavra "cor" vem do latim (color) e significa "cobrir" ou "ocultar". A luz branca é a união das sete cores do arco-íris: vermelho, laranja, amarelo, verde, azul, anil e violeta. Já a cor preta representa a ausência de luz. 🌈',
+    matchedKey: 'cor'
+  },
   { palavras: ['círculo cromático', 'circulo das cores', 'roda de cores'], resposta: 'O círculo cromático é como um arco-íris organizado em volta. Nele, as cores estão dispostas em ordem: vermelho, laranja, amarelo, verde, azul, violeta. Ajuda a ver quais cores combinam! 🔄' },
   { palavras: ['harmonia de cores', 'harmonia cromática', 'combinação de cores'], resposta: 'Harmonia de cores é quando escolhemos cores que ficam bonitas juntas. Por exemplo, cores vizinhas no círculo (como azul e verde) criam harmonia suave; cores opostas (como azul e laranja) criam contraste vibrante! 🌈✨' },
   { palavras: ['escala de cores', 'gradiente', 'degradê'], resposta: 'Uma escala de cores é quando uma cor vai ficando mais clara ou mais escura aos poucos. Você pode fazer isso adicionando branco (tom pastel) ou preto (sombra). Fica lindo em pinturas! 🎨' },

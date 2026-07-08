@@ -208,5 +208,35 @@ export const GALERIA_IMAGENS: Record<string, GaleriaItem | GaleriaItem[]> = {
     imagemUrl: "https://i.imgur.com/aCJ087A.jpeg",
     titulo: "Madalena dos Santos Reinbolt",
     credito: "Madalena dos Santos Reinbolt"
+  },
+  cor: {
+    imagemUrl: "https://i.imgur.com/eOgA02Z.jpeg",
+    titulo: "Definição de Cor",
+    credito: "Elementos da Linguagem Visual"
+  },
+  espaco: {
+    imagemUrl: "https://i.imgur.com/6VvC7Yl.jpeg",
+    titulo: "Definição de Espaço",
+    credito: "Elementos da Linguagem Visual"
+  },
+  forma: {
+    imagemUrl: "https://i.imgur.com/EFluxXS.jpeg",
+    titulo: "Definição de Forma",
+    credito: "Elementos da Linguagem Visual"
+  },
+  ponto: {
+    imagemUrl: "https://i.imgur.com/6VAqeIv.jpeg",
+    titulo: "Definição de Ponto",
+    credito: "Elementos da Linguagem Visual"
+  },
+  textura: {
+    imagemUrl: "https://i.imgur.com/uxnJNbl.jpeg",
+    titulo: "Definição de Textura",
+    credito: "Elementos da Linguagem Visual"
+  },
+  luz: {
+    imagemUrl: "https://i.imgur.com/IkFuERR.jpeg",
+    titulo: "Definição de Luz",
+    credito: "Elementos da Linguagem Visual"
   }
 };
