@@ -7729,7 +7729,72 @@ var GALERIA_IMAGENS = {
     imagemUrl: "https://i.imgur.com/IkFuERR.jpeg",
     titulo: "Defini\xE7\xE3o de Luz",
     credito: "Elementos da Linguagem Visual"
-  }
+  },
+  daiara_tukano: {
+    imagemUrl: "https://i.imgur.com/K7LshrR.jpeg",
+    titulo: "Daiara Tukano",
+    credito: "Wikimedia Commons"
+  },
+  alegria: [
+    {
+      imagemUrl: "https://i.imgur.com/1S8gq7c.jpeg",
+      titulo: "Express\xE3o de Alegria",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/ExHb40M.jpeg",
+      titulo: "Express\xE3o de Alegria",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  angustia: [
+    {
+      imagemUrl: "https://i.imgur.com/MhBc6cq.jpeg",
+      titulo: "Express\xE3o de Ang\xFAstia",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/J0iqMPv.jpeg",
+      titulo: "Express\xE3o de Ang\xFAstia",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  tristeza: [
+    {
+      imagemUrl: "https://i.imgur.com/nniw2ev.jpeg",
+      titulo: "Express\xE3o de Tristeza",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/GBeHl0x.jpeg",
+      titulo: "Express\xE3o de Melancolia",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  raiva: [
+    {
+      imagemUrl: "https://i.imgur.com/GBeHl0x.jpeg",
+      titulo: "Express\xE3o de Raiva",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/KYuqxFk.jpeg",
+      titulo: "Express\xE3o de Raiva",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  tedio: [
+    {
+      imagemUrl: "https://i.imgur.com/oVUvDT8.jpeg",
+      titulo: "Express\xE3o de T\xE9dio",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/pOiLRAd.jpeg",
+      titulo: "Express\xE3o de T\xE9dio",
+      credito: "Wikimedia Commons"
+    }
+  ]
 };
 
 // src/utils/conversationalEngine.ts
@@ -8097,6 +8162,10 @@ var atividadesRaiva = [
   "Quando a raiva chega, que tal respirarmos bem fundo como o bal\xE3o de ar do Portinari? Respire... 1... 2... 3... Agora, que tal pegarmos um papel e rabiscarmos com muita for\xE7a linhas pretas e vermelhas em zigue-zague? Depois, podemos pintar em volta com tons azuis bem calmos para fazer as pazes com a folha. Funciona super bem! \u{1F388}\u{1F9D8}\u200D\u2642\uFE0F",
   "Respire com calma, meu pequeno artista! A raiva \xE9 como uma cor vermelha muito forte e barulhenta que \xE0s vezes esquenta a nossa paleta. Que tal transformarmos essa energia em uma dan\xE7a maluca e depois desenharmos uma tempestade m\xE1gica que logo vira arco-\xEDris? Quer tentar? \u26C8\uFE0F\u{1F308}"
 ];
+var atividadesAngustia = [
+  "Ah, meu amigo, sentir ang\xFAstia no peito \xE9 como um dia cinzento e nublado. Mas sabia que os pintores usam as cores para soltar esse aperto do cora\xE7\xE3o? Que tal pegarmos uma folha branca e pintar um caminho bem bonito que leva a um lugar seguro e ensolarado? Me diga se voc\xEA gostaria de fazer isso comigo! \u{1F308}\u{1F3E1}",
+  "Eu entendo voc\xEA. \xC0s vezes o cora\xE7\xE3o fica apertadinho feito um casulo. Que tal desenharmos uma linda borboleta abrindo asas gigantes de todas as cores para voar livre no c\xE9u? Desenhar ajuda a dar asas aos nossos sentimentos! Vamos tentar? \u{1F98B}\u2728"
+];
 var atividadesFeliz = [
   "Que not\xEDcia maravilhosa! A sua alegria brilha mais que o amarelo do sol do Monet! \u{1F31F} Vamos comemorar essa felicidade desenhando um palha\xE7o bem colorido ou uma festa com muitos confetes no papel? Pode usar giz de cera, hidrocor e purpurina! Me conte o que voc\xEA mais gosta de desenhar quando est\xE1 feliz! \u{1F389}\u{1F3A8}",
   "Uau! A felicidade \xE9 a melhor colagem do nosso painel! Que tal celebrarmos dan\xE7ando sua m\xFAsica favorita ou cantando uma cantiga de roda como 'Cirandinha' comigo? Se quiser, tamb\xE9m podemos criar um personagem feliz para morar na sua imagina\xE7\xE3o! Vamos desenhar? \u{1F680}\u2728"
@@ -8108,20 +8177,29 @@ var atividadesAnsioso = [
 var CONHECIMENTO_CANDINHO = [
   // ===== RESPOSTAS EMOCIONAIS HUMANIZADAS =====
   {
-    palavras: ["estou triste", "triste", "me sinto triste", "sentindo triste"],
-    resposta: () => getRandomElement(atividadesTriste)
+    palavras: ["estou triste", "triste", "me sinto triste", "sentindo triste", "tristeza", "saudade", "melancolia"],
+    resposta: () => getRandomElement(atividadesTriste),
+    matchedKey: "tristeza"
   },
   {
-    palavras: ["estou entediado", "entediado", "t\xE9dio", "sem nada para fazer"],
-    resposta: () => getRandomElement(atividadesTedio)
+    palavras: ["estou entediado", "entediado", "t\xE9dio", "tedio", "sem nada para fazer"],
+    resposta: () => getRandomElement(atividadesTedio),
+    matchedKey: "tedio"
   },
   {
-    palavras: ["estou com raiva", "raiva", "com raiva", "zangado"],
-    resposta: () => getRandomElement(atividadesRaiva)
+    palavras: ["estou com raiva", "raiva", "com raiva", "zangado", "bravo", "raivoso"],
+    resposta: () => getRandomElement(atividadesRaiva),
+    matchedKey: "raiva"
   },
   {
-    palavras: ["estou feliz", "feliz", "alegre", "contente"],
-    resposta: () => getRandomElement(atividadesFeliz)
+    palavras: ["estou feliz", "feliz", "alegre", "contente", "alegria", "felicidade"],
+    resposta: () => getRandomElement(atividadesFeliz),
+    matchedKey: "alegria"
+  },
+  {
+    palavras: ["angustia", "ang\xFAstia", "angustiado", "angustiada", "aperto no peito", "sinto angustia"],
+    resposta: () => getRandomElement(atividadesAngustia),
+    matchedKey: "angustia"
   },
   {
     palavras: ["estou ansioso", "ansioso", "ansiedade", "nervoso"],
@@ -9464,9 +9542,9 @@ var ARTISTS_GUARANTEED_IMAGES = {
     credito: "Ren\xE9 Magritte"
   },
   daiara_tukano: {
-    imagemUrl: "https://i.imgur.com/R3art8h.jpeg",
-    titulo: "A Presen\xE7a Invis\xEDvel",
-    credito: "Daiara Tukano"
+    imagemUrl: "https://i.imgur.com/K7LshrR.jpeg",
+    titulo: "Daiara Tukano",
+    credito: "Wikimedia Commons"
   },
   paul_cezanne: {
     imagemUrl: "https://i.imgur.com/76oTs3Y.jpeg",
@@ -9892,7 +9970,67 @@ var ARTISTS_GUARANTEED_IMAGES = {
     imagemUrl: "https://i.imgur.com/IkFuERR.jpeg",
     titulo: "Defini\xE7\xE3o de Luz",
     credito: "Elementos da Linguagem Visual"
-  }
+  },
+  alegria: [
+    {
+      imagemUrl: "https://i.imgur.com/1S8gq7c.jpeg",
+      titulo: "Express\xE3o de Alegria",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/ExHb40M.jpeg",
+      titulo: "Express\xE3o de Alegria",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  angustia: [
+    {
+      imagemUrl: "https://i.imgur.com/MhBc6cq.jpeg",
+      titulo: "Express\xE3o de Ang\xFAstia",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/J0iqMPv.jpeg",
+      titulo: "Express\xE3o de Ang\xFAstia",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  tristeza: [
+    {
+      imagemUrl: "https://i.imgur.com/nniw2ev.jpeg",
+      titulo: "Express\xE3o de Tristeza",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/GBeHl0x.jpeg",
+      titulo: "Express\xE3o de Melancolia",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  raiva: [
+    {
+      imagemUrl: "https://i.imgur.com/GBeHl0x.jpeg",
+      titulo: "Express\xE3o de Raiva",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/KYuqxFk.jpeg",
+      titulo: "Express\xE3o de Raiva",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  tedio: [
+    {
+      imagemUrl: "https://i.imgur.com/oVUvDT8.jpeg",
+      titulo: "Express\xE3o de T\xE9dio",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/pOiLRAd.jpeg",
+      titulo: "Express\xE3o de T\xE9dio",
+      credito: "Wikimedia Commons"
+    }
+  ]
 };
 async function buscarImagem(pergunta, matchedKey, lib) {
   try {
@@ -9908,9 +10046,34 @@ async function buscarImagem(pergunta, matchedKey, lib) {
       }
     }
     if (mK && ARTISTS_GUARANTEED_IMAGES[mK]) {
-      return ARTISTS_GUARANTEED_IMAGES[mK];
+      const item = ARTISTS_GUARANTEED_IMAGES[mK];
+      if (Array.isArray(item)) {
+        const idx = Math.floor(Math.random() * item.length);
+        return item[idx];
+      }
+      return item;
     }
     const lowerQuery = pergunta.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/-/g, " ");
+    if (lowerQuery.includes("alegria") || lowerQuery.includes("feliz") || lowerQuery.includes("alegre") || lowerQuery.includes("contente")) {
+      const item = ARTISTS_GUARANTEED_IMAGES.alegria;
+      return Array.isArray(item) ? item[Math.floor(Math.random() * item.length)] : item;
+    }
+    if (lowerQuery.includes("angustia") || lowerQuery.includes("angustiado") || lowerQuery.includes("angustiada")) {
+      const item = ARTISTS_GUARANTEED_IMAGES.angustia;
+      return Array.isArray(item) ? item[Math.floor(Math.random() * item.length)] : item;
+    }
+    if (lowerQuery.includes("triste") || lowerQuery.includes("saudade") || lowerQuery.includes("melancolia") || lowerQuery.includes("tristeza")) {
+      const item = ARTISTS_GUARANTEED_IMAGES.tristeza;
+      return Array.isArray(item) ? item[Math.floor(Math.random() * item.length)] : item;
+    }
+    if (lowerQuery.includes("raiva") || lowerQuery.includes("zangado") || lowerQuery.includes("bravo") || lowerQuery.includes("irado") || lowerQuery.includes("raivoso")) {
+      const item = ARTISTS_GUARANTEED_IMAGES.raiva;
+      return Array.isArray(item) ? item[Math.floor(Math.random() * item.length)] : item;
+    }
+    if (lowerQuery.includes("tedio") || lowerQuery.includes("entediado") || lowerQuery.includes("entediada")) {
+      const item = ARTISTS_GUARANTEED_IMAGES.tedio;
+      return Array.isArray(item) ? item[Math.floor(Math.random() * item.length)] : item;
+    }
     if (lowerQuery.includes("van gogh") || lowerQuery.includes("van goh")) {
       return ARTISTS_GUARANTEED_IMAGES.vincent_van_gogh;
     }
