@@ -446,6 +446,11 @@ const atividadesRaiva = [
   "Respire com calma, meu pequeno artista! A raiva é como uma cor vermelha muito forte e barulhenta que às vezes esquenta a nossa paleta. Que tal transformarmos essa energia em uma dança maluca e depois desenharmos uma tempestade mágica que logo vira arco-íris? Quer tentar? ⛈️🌈"
 ];
 
+const atividadesAngustia = [
+  "Ah, meu amigo, sentir angústia no peito é como um dia cinzento e nublado. Mas sabia que os pintores usam as cores para soltar esse aperto do coração? Que tal pegarmos uma folha branca e pintar um caminho bem bonito que leva a um lugar seguro e ensolarado? Me diga se você gostaria de fazer isso comigo! 🌈🏡",
+  "Eu entendo você. Às vezes o coração fica apertadinho feito um casulo. Que tal desenharmos uma linda borboleta abrindo asas gigantes de todas as cores para voar livre no céu? Desenhar ajuda a dar asas aos nossos sentimentos! Vamos tentar? 🦋✨"
+];
+
 const atividadesFeliz = [
   "Que notícia maravilhosa! A sua alegria brilha mais que o amarelo do sol do Monet! 🌟 Vamos comemorar essa felicidade desenhando um palhaço bem colorido ou uma festa com muitos confetes no papel? Pode usar giz de cera, hidrocor e purpurina! Me conte o que você mais gosta de desenhar quando está feliz! 🎉🎨",
   "Uau! A felicidade é a melhor colagem do nosso painel! Que tal celebrarmos dançando sua música favorita ou cantando uma cantiga de roda como 'Cirandinha' comigo? Se quiser, também podemos criar um personagem feliz para morar na sua imaginação! Vamos desenhar? 🚀✨"
@@ -459,20 +464,29 @@ const atividadesAnsioso = [
 const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
   // ===== RESPOSTAS EMOCIONAIS HUMANIZADAS =====
   { 
-    palavras: ['estou triste', 'triste', 'me sinto triste', 'sentindo triste'], 
-    resposta: () => getRandomElement(atividadesTriste)
+    palavras: ['estou triste', 'triste', 'me sinto triste', 'sentindo triste', 'tristeza', 'saudade', 'melancolia'], 
+    resposta: () => getRandomElement(atividadesTriste),
+    matchedKey: 'tristeza'
   },
   { 
-    palavras: ['estou entediado', 'entediado', 'tédio', 'sem nada para fazer'], 
-    resposta: () => getRandomElement(atividadesTedio)
+    palavras: ['estou entediado', 'entediado', 'tédio', 'tedio', 'sem nada para fazer'], 
+    resposta: () => getRandomElement(atividadesTedio),
+    matchedKey: 'tedio'
   },
   { 
-    palavras: ['estou com raiva', 'raiva', 'com raiva', 'zangado'], 
-    resposta: () => getRandomElement(atividadesRaiva)
+    palavras: ['estou com raiva', 'raiva', 'com raiva', 'zangado', 'bravo', 'raivoso'], 
+    resposta: () => getRandomElement(atividadesRaiva),
+    matchedKey: 'raiva'
   },
   { 
-    palavras: ['estou feliz', 'feliz', 'alegre', 'contente'], 
-    resposta: () => getRandomElement(atividadesFeliz)
+    palavras: ['estou feliz', 'feliz', 'alegre', 'contente', 'alegria', 'felicidade'], 
+    resposta: () => getRandomElement(atividadesFeliz),
+    matchedKey: 'alegria'
+  },
+  { 
+    palavras: ['angustia', 'angústia', 'angustiado', 'angustiada', 'aperto no peito', 'sinto angustia'], 
+    resposta: () => getRandomElement(atividadesAngustia),
+    matchedKey: 'angustia'
   },
   { 
     palavras: ['estou ansioso', 'ansioso', 'ansiedade', 'nervoso'], 

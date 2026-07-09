@@ -30,7 +30,7 @@ async function carregarBiblioteca() {
 }
 
 // --- IMAGENS GARANTIDAS DE ALTA QUALIDADE PARA ARTISTAS ---
-const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: string; credito: string }> = {
+const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: string; credito: string } | { imagemUrl: string; titulo: string; credito: string }[]> = {
   vincent_van_gogh: {
     imagemUrl: "https://i.imgur.com/V0qviLK.jpg",
     titulo: "A Noite Estrelada",
@@ -117,9 +117,9 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     credito: "René Magritte"
   },
   daiara_tukano: {
-    imagemUrl: "https://i.imgur.com/R3art8h.jpeg",
-    titulo: "A Presença Invisível",
-    credito: "Daiara Tukano"
+    imagemUrl: "https://i.imgur.com/K7LshrR.jpeg",
+    titulo: "Daiara Tukano",
+    credito: "Wikimedia Commons"
   },
   paul_cezanne: {
     imagemUrl: "https://i.imgur.com/76oTs3Y.jpeg",
@@ -545,7 +545,67 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     imagemUrl: "https://i.imgur.com/IkFuERR.jpeg",
     titulo: "Definição de Luz",
     credito: "Elementos da Linguagem Visual"
-  }
+  },
+  alegria: [
+    {
+      imagemUrl: "https://i.imgur.com/1S8gq7c.jpeg",
+      titulo: "Expressão de Alegria",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/ExHb40M.jpeg",
+      titulo: "Expressão de Alegria",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  angustia: [
+    {
+      imagemUrl: "https://i.imgur.com/MhBc6cq.jpeg",
+      titulo: "Expressão de Angústia",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/J0iqMPv.jpeg",
+      titulo: "Expressão de Angústia",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  tristeza: [
+    {
+      imagemUrl: "https://i.imgur.com/nniw2ev.jpeg",
+      titulo: "Expressão de Tristeza",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/GBeHl0x.jpeg",
+      titulo: "Expressão de Melancolia",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  raiva: [
+    {
+      imagemUrl: "https://i.imgur.com/GBeHl0x.jpeg",
+      titulo: "Expressão de Raiva",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/KYuqxFk.jpeg",
+      titulo: "Expressão de Raiva",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  tedio: [
+    {
+      imagemUrl: "https://i.imgur.com/oVUvDT8.jpeg",
+      titulo: "Expressão de Tédio",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/pOiLRAd.jpeg",
+      titulo: "Expressão de Tédio",
+      credito: "Wikimedia Commons"
+    }
+  ]
 };
 
 // --- BUSCA NO PEXELS (FALLBACK) ---
@@ -751,12 +811,38 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
 
     // Primeiro tenta correspondência direta com as imagens garantidas por chave identificada
     if (mK && ARTISTS_GUARANTEED_IMAGES[mK]) {
-      return ARTISTS_GUARANTEED_IMAGES[mK];
+      const item = ARTISTS_GUARANTEED_IMAGES[mK];
+      if (Array.isArray(item)) {
+        const idx = Math.floor(Math.random() * item.length);
+        return item[idx];
+      }
+      return item;
     }
 
-    // Também verifica se a própria pergunta contém o nome de qualquer um de nossos artistas prioritários
+    // Também verifica se a própria pergunta contém o nome de qualquer um de nossos artistas prioritários ou emoções
     const lowerQuery = pergunta.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/-/g, " ");
     
+    if (lowerQuery.includes("alegria") || lowerQuery.includes("feliz") || lowerQuery.includes("alegre") || lowerQuery.includes("contente")) {
+      const item = ARTISTS_GUARANTEED_IMAGES.alegria;
+      return Array.isArray(item) ? item[Math.floor(Math.random() * item.length)] : item;
+    }
+    if (lowerQuery.includes("angustia") || lowerQuery.includes("angustiado") || lowerQuery.includes("angustiada")) {
+      const item = ARTISTS_GUARANTEED_IMAGES.angustia;
+      return Array.isArray(item) ? item[Math.floor(Math.random() * item.length)] : item;
+    }
+    if (lowerQuery.includes("triste") || lowerQuery.includes("saudade") || lowerQuery.includes("melancolia") || lowerQuery.includes("tristeza")) {
+      const item = ARTISTS_GUARANTEED_IMAGES.tristeza;
+      return Array.isArray(item) ? item[Math.floor(Math.random() * item.length)] : item;
+    }
+    if (lowerQuery.includes("raiva") || lowerQuery.includes("zangado") || lowerQuery.includes("bravo") || lowerQuery.includes("irado") || lowerQuery.includes("raivoso")) {
+      const item = ARTISTS_GUARANTEED_IMAGES.raiva;
+      return Array.isArray(item) ? item[Math.floor(Math.random() * item.length)] : item;
+    }
+    if (lowerQuery.includes("tedio") || lowerQuery.includes("entediado") || lowerQuery.includes("entediada")) {
+      const item = ARTISTS_GUARANTEED_IMAGES.tedio;
+      return Array.isArray(item) ? item[Math.floor(Math.random() * item.length)] : item;
+    }
+
     if (lowerQuery.includes("van gogh") || lowerQuery.includes("van goh")) {
       return ARTISTS_GUARANTEED_IMAGES.vincent_van_gogh;
     }

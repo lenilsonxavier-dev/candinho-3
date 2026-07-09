@@ -238,5 +238,70 @@ export const GALERIA_IMAGENS: Record<string, GaleriaItem | GaleriaItem[]> = {
     imagemUrl: "https://i.imgur.com/IkFuERR.jpeg",
     titulo: "Definição de Luz",
     credito: "Elementos da Linguagem Visual"
-  }
+  },
+  daiara_tukano: {
+    imagemUrl: "https://i.imgur.com/K7LshrR.jpeg",
+    titulo: "Daiara Tukano",
+    credito: "Wikimedia Commons"
+  },
+  alegria: [
+    {
+      imagemUrl: "https://i.imgur.com/1S8gq7c.jpeg",
+      titulo: "Expressão de Alegria",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/ExHb40M.jpeg",
+      titulo: "Expressão de Alegria",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  angustia: [
+    {
+      imagemUrl: "https://i.imgur.com/MhBc6cq.jpeg",
+      titulo: "Expressão de Angústia",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/J0iqMPv.jpeg",
+      titulo: "Expressão de Angústia",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  tristeza: [
+    {
+      imagemUrl: "https://i.imgur.com/nniw2ev.jpeg",
+      titulo: "Expressão de Tristeza",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/GBeHl0x.jpeg",
+      titulo: "Expressão de Melancolia",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  raiva: [
+    {
+      imagemUrl: "https://i.imgur.com/GBeHl0x.jpeg",
+      titulo: "Expressão de Raiva",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/KYuqxFk.jpeg",
+      titulo: "Expressão de Raiva",
+      credito: "Wikimedia Commons"
+    }
+  ],
+  tedio: [
+    {
+      imagemUrl: "https://i.imgur.com/oVUvDT8.jpeg",
+      titulo: "Expressão de Tédio",
+      credito: "Wikimedia Commons"
+    },
+    {
+      imagemUrl: "https://i.imgur.com/pOiLRAd.jpeg",
+      titulo: "Expressão de Tédio",
+      credito: "Wikimedia Commons"
+    }
+  ]
 };
