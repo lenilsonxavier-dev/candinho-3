@@ -7676,12 +7676,12 @@ var GALERIA_IMAGENS = {
     credito: "Wikimedia Commons"
   },
   arte_indigena: {
-    imagemUrl: "https://i.imgur.com/1OEjWd9.jpg",
-    titulo: "Arte Ind\xEDgena",
+    imagemUrl: "https://i.imgur.com/mxBlvdv.jpeg",
+    titulo: "Arte Ind\xEDgena Brasileira",
     credito: "Wikimedia Commons"
   },
   arte_africana: {
-    imagemUrl: "https://i.imgur.com/Q60zPHo.jpeg",
+    imagemUrl: "https://i.imgur.com/TIWhZhH.jpeg",
     titulo: "Arte Africana",
     credito: "Wikimedia Commons"
   },
@@ -7794,7 +7794,92 @@ var GALERIA_IMAGENS = {
       titulo: "Express\xE3o de T\xE9dio",
       credito: "Wikimedia Commons"
     }
-  ]
+  ],
+  modernismo: {
+    imagemUrl: "https://i.imgur.com/M7lSaXM.jpeg",
+    titulo: "Abaporu",
+    credito: "Tarsila do Amaral (Wikip\xE9dia)"
+  },
+  arte_antiga: {
+    imagemUrl: "https://i.imgur.com/NoarViK.jpeg",
+    titulo: "Arte Antiga",
+    credito: "Wikimedia Commons"
+  },
+  arte_medieval: {
+    imagemUrl: "https://i.imgur.com/L0KsfZj.jpeg",
+    titulo: "Arte Medieval",
+    credito: "Wikimedia Commons"
+  },
+  arte_crista: {
+    imagemUrl: "https://i.imgur.com/6cWfVs1.jpeg",
+    titulo: "Arte Crist\xE3",
+    credito: "Wikimedia Commons"
+  },
+  arte_grega: {
+    imagemUrl: "https://i.imgur.com/RMGy4Kx.jpeg",
+    titulo: "Arte Grega",
+    credito: "Wikimedia Commons"
+  },
+  arte_romana: {
+    imagemUrl: "https://i.imgur.com/JbkAVC8.jpeg",
+    titulo: "Arte Romana",
+    credito: "Wikimedia Commons"
+  },
+  arte_egipcia: {
+    imagemUrl: "https://i.imgur.com/NoarViK.jpeg",
+    titulo: "Arte Eg\xEDpcia",
+    credito: "Wikimedia Commons"
+  },
+  arte_japonesa: {
+    imagemUrl: "https://i.imgur.com/eP8TCyb.jpeg",
+    titulo: "Arte Japonesa",
+    credito: "Wikimedia Commons"
+  },
+  arte_chinesa: {
+    imagemUrl: "https://i.imgur.com/0NCVF0W.jpeg",
+    titulo: "Arte Chinesa",
+    credito: "Wikimedia Commons"
+  },
+  expressionismo: {
+    imagemUrl: "https://i.imgur.com/MhBc6cq.jpeg",
+    titulo: "Express\xE3o e Sentimento Expressionista",
+    credito: "Wikimedia Commons"
+  },
+  arte_europeia: {
+    imagemUrl: "https://i.imgur.com/hZuVkcg.jpeg",
+    titulo: "Arte Europeia",
+    credito: "Wikimedia Commons"
+  },
+  arte_bizantina: {
+    imagemUrl: "https://i.imgur.com/DFIiuoy.jpeg",
+    titulo: "Arte Bizantina",
+    credito: "Wikimedia Commons"
+  },
+  arte_islamica: {
+    imagemUrl: "https://i.imgur.com/FY2iXn2.jpeg",
+    titulo: "Arte Isl\xE2mica",
+    credito: "Wikimedia Commons"
+  },
+  arte_pre_colombiana: {
+    imagemUrl: "https://i.imgur.com/53fFOzu.jpeg",
+    titulo: "Arte Pr\xE9-Colombiana",
+    credito: "Wikimedia Commons"
+  },
+  arte_digital: {
+    imagemUrl: "https://i.imgur.com/9fFJxDf.jpeg",
+    titulo: "Arte Digital",
+    credito: "Wikimedia Commons"
+  },
+  arte_ia: {
+    imagemUrl: "https://i.imgur.com/PGbFKrS.jpeg",
+    titulo: "Arte com Intelig\xEAncia Artificial",
+    credito: "Wikimedia Commons"
+  },
+  arte_naif: {
+    imagemUrl: "https://i.imgur.com/qbUzNQb.jpeg",
+    titulo: "O Sonho",
+    credito: "Henri Rousseau"
+  }
 };
 
 // src/utils/conversationalEngine.ts
@@ -8823,12 +8908,99 @@ var CONHECIMENTO_CANDINHO = [
   { palavras: ["alfredo volpi", "volpi", "quem foi alfredo volpi"], resposta: "Alfredo Volpi (1896\u20131988) foi conhecido pelas \u201Cbandeirinhas\u201D coloridas, explorou formas geom\xE9tricas e cores suaves. \u{1F3E0}", matchedKey: "alfredo_volpi" },
   { palavras: ["georgina de albuquerque", "georgina", "quem foi georgina de albuquerque"], resposta: "Georgina de Albuquerque (1885\u20131962) foi uma pintora brasileira pioneira, abordou temas hist\xF3ricos e cenas do cotidiano. \u{1F4DC}", matchedKey: "georgina_de_albuquerque" },
   {
-    palavras: ["arte ind\xEDgena", "arte indigena", "arte dos \xEDndios", "cultura ind\xEDgena"],
-    resposta: "\u{1FAB6} A arte ind\xEDgena est\xE1 presente na pintura corporal, na cer\xE2mica, na cestaria, na arte plum\xE1ria (enfeites de penas) e na m\xFAsica. Cada etnia tem seus pr\xF3prios desenhos e significados, ligados \xE0 natureza e aos ancestrais. \xC9 uma arte cheia de s\xEDmbolos e tradi\xE7\xE3o!"
+    palavras: ["arte indigena brasileira", "arte ind\xEDgena brasileira", "o que e arte indigena brasileira", "o que e arte ind\xEDgena brasileira", "arte ind\xEDgena", "arte indigena", "arte dos \xEDndios", "cultura ind\xEDgena"],
+    resposta: "\u{1FAB6} **ARTE IND\xCDGENA BRASILEIRA**\n\n**O que \xE9?**\n\xC9 a arte produzida pelos povos ind\xEDgenas do Brasil. Ela faz parte do dia a dia, dos rituais e da cultura, usando materiais encontrados na natureza.\n\nEla est\xE1 super presente na pintura corporal, na cer\xE2mica, na cestaria, na arte plum\xE1ria (enfeites de penas) e na m\xFAsica! Cada etnia tem seus pr\xF3prios desenhos e significados, sempre ligados \xE0 natureza e ao respeito aos ancestrais.",
+    matchedKey: "arte_indigena"
   },
   {
-    palavras: ["arte africana", "arte da \xE1frica", "cultura africana"],
-    resposta: "\u{1F30D} A arte africana \xE9 muito rica e diversa! M\xE1scaras, esculturas em madeira, tecidos coloridos (como o kente) e instrumentos musicais como o djembe. Muitas obras representam esp\xEDritos, ancestrais e for\xE7as da natureza. Essa arte influenciou artistas como Picasso e o modernismo brasileiro."
+    palavras: ["arte africana", "o que e arte africana", "africa arte", "arte da \xE1frica", "cultura africana"],
+    resposta: "\u{1F30D} **ARTE AFRICANA**\n\n**O que \xE9?**\n\xC9 a arte criada pelos diferentes povos da \xC1frica. Ela valoriza a ancestralidade, os rituais, a m\xFAsica, a dan\xE7a, as m\xE1scaras e as esculturas.\n\nEla \xE9 super rica e diversa! Usa materiais como madeira, palha e tecidos coloridos (como o kente). Essa arte influenciou muito artistas como Picasso e o nosso pr\xF3prio modernismo brasileiro!",
+    matchedKey: "arte_africana"
+  },
+  {
+    palavras: ["modernismo", "o que e modernismo", "arte moderna", "o que e arte moderna", "periodo modernismo", "movimento modernista"],
+    resposta: "\u{1F3A8} **MODERNISMO**\n\n**O que \xE9?**\n\xC9 um movimento art\xEDstico que quis criar uma arte diferente, deixando de copiar o passado. Os artistas passaram a experimentar novas formas, cores e ideias para mostrar o mundo de maneiras criativas.\n\n\u{1F4C5} **Per\xEDodo:** Final do s\xE9culo XIX at\xE9 meados do s\xE9culo XX (aproximadamente 1890 - 1970).\n\n\u{1F3A8} **Artistas Principais:** Pablo Picasso, Tarsila do Amaral, Anita Malfatti.\n\n\u{1F31F} **Caracter\xEDsticas:**\n\u2022 Ruptura com as tradi\xE7\xF5es art\xEDsticas.\n\u2022 Experimenta\xE7\xE3o de novas t\xE9cnicas e materiais.\n\u2022 Valoriza\xE7\xE3o da criatividade e da inova\xE7\xE3o.\n\u2022 Representa\xE7\xE3o livre da realidade.\n\u2022 Diversidade de estilos (Cubismo, Surrealismo, Expressionismo, Abstracionismo etc.).\n\n\u{1F5BC}\uFE0F **Obra Importante:**\n\u2022 Abaporu.",
+    matchedKey: "modernismo"
+  },
+  {
+    palavras: ["arte antiga", "o que e arte antiga", "periodo arte antiga", "historia da arte antiga"],
+    resposta: "\u{1F3FA} **ARTE ANTIGA**\n\n**O que \xE9?**\n\xC9 a arte feita pelos primeiros povos e grandes civiliza\xE7\xF5es da Hist\xF3ria, como os eg\xEDpcios, gregos e romanos. Ela servia para contar hist\xF3rias, homenagear deuses, mostrar o poder dos reis e registrar acontecimentos importantes.\n\n\u{1F4C5} **Per\xEDodo:** Cerca de 3500 a.C. at\xE9 o s\xE9culo V d.C.\n\n\u{1F3A8} **Artistas Principais:** Produ\xE7\xE3o coletiva de diversas civiliza\xE7\xF5es (Egito, Mesopot\xE2mia, Gr\xE9cia e Roma).\n\n\u{1F31F} **Caracter\xEDsticas:**\n\u2022 Arte ligada \xE0 religi\xE3o, ao poder pol\xEDtico e \xE0 vida cotidiana.\n\u2022 Uso de pedra, m\xE1rmore, bronze e argila.\n\u2022 Constru\xE7\xE3o de templos, esculturas e monumentos.\n\u2022 Busca pela representa\xE7\xE3o da natureza e da figura humana.\n\n\u{1F5BC}\uFE0F **Obra Importante:**\n\u2022 Grande Esfinge de Giz\xE9.",
+    matchedKey: "arte_antiga"
+  },
+  {
+    palavras: ["arte medieval", "o que e arte medieval", "periodo medieval", "idade media arte"],
+    resposta: "\u26EA **ARTE MEDIEVAL**\n\n**O que \xE9?**\n\xC9 a arte produzida durante a Idade M\xE9dia. Grande parte das obras era feita para decorar igrejas e ensinar hist\xF3rias da B\xEDblia \xE0s pessoas.\n\n\u{1F4C5} **Per\xEDodo:** S\xE9culo V ao s\xE9culo XV.\n\n\u{1F3A8} **Artistas Principais:** Monges, artes\xE3os e artistas an\xF4nimos.\n\n\u{1F31F} **Caracter\xEDsticas:**\n\u2022 Predom\xEDnio da tem\xE1tica religiosa.\n\u2022 Constru\xE7\xE3o de igrejas, castelos e catedrais.\n\u2022 Pinturas, vitrais e iluminuras.\n\u2022 Pouca preocupa\xE7\xE3o com perspectiva e realismo.\n\n\u{1F5BC}\uFE0F **Obra Importante:**\n\u2022 Catedral de Notre-Dame.",
+    matchedKey: "arte_medieval"
+  },
+  {
+    palavras: ["arte crista", "arte crist\xE3", "arte religiosa", "o que e arte crista", "o que e arte crist\xE3", "o que e arte religiosa"],
+    resposta: "\u271D\uFE0F **ARTE CRIST\xC3 (ARTE RELIGIOSA)**\n\n**O que \xE9?**\n\xC9 a arte que representa hist\xF3rias da B\xEDblia, Jesus, Maria e os santos. Ela ajuda as pessoas a conhecerem e expressarem sua f\xE9.\n\n\u{1F4C5} **Per\xEDodo:** A partir do s\xE9culo I d.C. at\xE9 os dias atuais.\n\n\u{1F3A8} **Artistas Principais:** Michelangelo, Giotto di Bondone.\n\n\u{1F31F} **Caracter\xEDsticas:**\n\u2022 Representa\xE7\xE3o de passagens bibliblicas.\n\u2022 Imagens de Cristo, santos e da Virgem Maria.\n\u2022 Objetivo de ensinar e fortalecer a f\xE9.\n\u2022 Pinturas, esculturas, mosaicos e vitrais.\n\n\u{1F5BC}\uFE0F **Obra Importante:**\n\u2022 A Cria\xE7\xE3o de Ad\xE3o.",
+    matchedKey: "arte_crista"
+  },
+  {
+    palavras: ["arte grega", "o que e arte grega", "periodo arte grega", "grecia antiga arte"],
+    resposta: "\u{1F3FA} **ARTE GREGA**\n\n**O que \xE9?**\n\xC9 a arte dos antigos gregos. Eles procuravam representar a beleza, o equil\xEDbrio e o corpo humano da forma mais harmoniosa poss\xEDvel.\n\n\u{1F4C5} **Per\xEDodo:** S\xE9culo VIII a.C. ao s\xE9culo I a.C.\n\n\u{1F3A8} **Artistas Principais:** F\xEDdias, Policleto.\n\n\u{1F31F} **Caracter\xEDsticas:**\n\u2022 Busca da beleza ideal e da harmonia.\n\u2022 Esculturas com propor\xE7\xF5es perfeitas.\n\u2022 Valoriza\xE7\xE3o do corpo humano.\n\u2022 Constru\xE7\xE3o de templos e teatros.\n\n\u{1F5BC}\uFE0F **Obra Importante:**\n\u2022 Partenon.",
+    matchedKey: "arte_grega"
+  },
+  {
+    palavras: ["arte romana", "o que e arte romana", "periodo arte romana", "roma antiga arte"],
+    resposta: "\u{1F3DB}\uFE0F **ARTE ROMANA**\n\n**O que \xE9?**\n\xC9 a arte desenvolvida pelos romanos. Eles constru\xEDram grandes cidades, estradas, pontes, teatros e monumentos, mostrando a for\xE7a e a organiza\xE7\xE3o do seu imp\xE9rio.\n\n\u{1F4C5} **Per\xEDodo:** S\xE9culo VI a.C. ao s\xE9culo V d.C.\n\n\u{1F3A8} **Artistas Principais:** Artistas e arquitetos do Imp\xE9rio Romano.\n\n\u{1F31F} **Caracter\xEDsticas:**\n\u2022 Influ\xEAncia da arte grega.\n\u2022 Realismo nos retratos e esculturas.\n\u2022 Grandes obras de engenharia.\n\u2022 Constru\xE7\xE3o de anfiteatros, aquedutos e estradas.\n\n\u{1F5BC}\uFE0F **Obra Importante:**\n\u2022 Coliseu.",
+    matchedKey: "arte_romana"
+  },
+  {
+    palavras: ["arte egipcia", "arte eg\xEDpcia", "o que e arte egipcia", "o que e arte eg\xEDpcia", "egito antigo arte"],
+    resposta: "\u{1F42B} **ARTE EG\xCDPCIA**\n\n**O que \xE9?**\n\xC9 a arte criada pelos antigos eg\xEDpcios. Eles faziam pir\xE2mides, templos, esculturas e pinturas para homenagear os fara\xF3s e acreditar na vida ap\xF3s a morte.\n\n\u{1F4C5} **Per\xEDodo:** Cerca de 3000 a.C. at\xE9 30 a.C.\n\n\u{1F3A8} **Artistas Principais:** Artes\xE3os e escultores do Antigo Egito.\n\n\u{1F31F} **Caracter\xEDsticas:**\n\u2022 Arte ligada \xE0 religi\xE3o e \xE0 vida ap\xF3s a morte.\n\u2022 Pinturas com figuras de perfil e olhos de frente.\n\u2022 Hier\xF3glifos e esculturas monumentais.\n\u2022 Constru\xE7\xE3o de pir\xE2mides, templos e t\xFAmulos.\n\n\u{1F5BC}\uFE0F **Obra Importante:**\n\u2022 Pir\xE2mide de Qu\xE9ops.",
+    matchedKey: "arte_egipcia"
+  },
+  {
+    palavras: ["arte japonesa", "o que e arte japonesa", "periodo arte japonesa", "japao arte"],
+    resposta: "\u{1F38E} **ARTE JAPONESA**\n\n**O que \xE9?**\n\xC9 a arte criada no Jap\xE3o. Ela valoriza a natureza, a simplicidade, o equil\xEDbrio e a beleza dos pequenos detalhes.\n\n\u{1F4C5} **Per\xEDodo:** Do s\xE9culo III d.C. at\xE9 os dias atuais.\n\n\u{1F3A8} **Artistas Principais:** Katsushika Hokusai, Utagawa Hiroshige.\n\n\u{1F31F} **Caracter\xEDsticas:**\n\u2022 Valoriza\xE7\xE3o da natureza e das esta\xE7\xF5es do ano.\n\u2022 Tra\xE7os delicados e composi\xE7\xE3o equilibrada.\n\u2022 Uso da xilogravura (ukiyo-e).\n\u2022 Influ\xEAncia do Zen e da simplicidade.\n\n\u{1F5BC}\uFE0F **Obra Importante:**\n\u2022 A Grande Onda de Kanagawa.",
+    matchedKey: "arte_japonesa"
+  },
+  {
+    palavras: ["arte chinesa", "o que e arte chinesa", "periodo arte chinesa", "china arte"],
+    resposta: "\u{1F409} **ARTE CHINESA**\n\n**O que \xE9?**\n\xC9 a arte desenvolvida na China ao longo de milhares de anos. Ela busca mostrar a harmonia entre as pessoas, a natureza e o universo.\n\n\u{1F4C5} **Per\xEDodo:** Cerca de 3000 a.C. at\xE9 os dias atuais.\n\n\u{1F3A8} **Artistas Principais:** Gu Kaizhi, Zhang Daqian.\n\n\u{1F31F} **Caracter\xEDsticas:**\n\u2022 Harmonia entre ser humano e natureza.\n\u2022 Pinturas com tinta sobre seda e papel.\n\u2022 Caligrafia como forma de arte.\n\u2022 Influ\xEAncia do Confucionismo, Taoismo e Budismo.\n\n\u{1F5BC}\uFE0F **Obra Importante:**\n\u2022 Ao Longo do Rio Durante o Festival Qingming.",
+    matchedKey: "arte_chinesa"
+  },
+  {
+    palavras: ["expressionismo", "o que e expressionismo", "movimento expressionista"],
+    resposta: "\u{1F3AD} **EXPRESSIONISMO**\n\n**O que \xE9?**\n\xC9 um movimento art\xEDstico que mostra os sentimentos das pessoas, como alegria, medo, tristeza ou raiva, usando cores fortes e formas distorcidas.",
+    matchedKey: "expressionismo"
+  },
+  {
+    palavras: ["arte europeia", "o que e arte europeia"],
+    resposta: "\u{1F30D} **ARTE EUROPEIA**\n\n**O que \xE9?**\n\xC9 o conjunto das artes produzidas nos pa\xEDses da Europa. Dela nasceram muitos movimentos importantes, como o Renascimento, o Barroco, o Impressionismo e o Modernismo.",
+    matchedKey: "arte_europeia"
+  },
+  {
+    palavras: ["arte bizantina", "o que e arte bizantina", "bizantino", "mosaico bizantino"],
+    resposta: "\u2728 **ARTE BIZANTINA**\n\n**O que \xE9?**\n\xC9 uma arte religiosa criada no antigo Imp\xE9rio Bizantino. Ficou famosa pelos mosaicos brilhantes e pelas imagens de santos e igrejas.",
+    matchedKey: "arte_bizantina"
+  },
+  {
+    palavras: ["arte islamica", "arte isl\xE2mica", "o que e arte islamica", "o que e arte isl\xE2mica"],
+    resposta: "\u{1F319} **ARTE ISL\xC2MICA**\n\n**O que \xE9?**\n\xC9 a arte dos povos que seguem a religi\xE3o isl\xE2mica. Ela \xE9 conhecida pelos desenhos geom\xE9tricos, arabescos e pela bela caligrafia.",
+    matchedKey: "arte_islamica"
+  },
+  {
+    palavras: ["arte pre colombiana", "arte pr\xE9 colombiana", "o que e arte pre colombiana", "o que e arte pr\xE9 colombiana", "asteca", "maia", "inca"],
+    resposta: "\u{1F3DE}\uFE0F **ARTE PR\xC9-COLOMBIANA**\n\n**O que \xE9?**\n\xC9 a arte criada pelos povos que viviam nas Am\xE9ricas antes da chegada dos europeus, como maias, astecas e incas.",
+    matchedKey: "arte_pre_colombiana"
+  },
+  {
+    palavras: ["arte digital", "o que e arte digital"],
+    resposta: "\u{1F4BB} **ARTE DIGITAL**\n\n**O que \xE9?**\n\xC9 a arte feita com computadores, tablets ou celulares. Os artistas usam programas digitais para criar desenhos, pinturas, anima\xE7\xF5es e imagens.",
+    matchedKey: "arte_digital"
+  },
+  {
+    palavras: ["arte com inteligencia artificial", "arte com intelig\xEAncia artificial", "arte com ia", "o que e arte com ia", "o que e arte com inteligencia artificial", "o que e arte com intelig\xEAncia artificial", "ia arte", "inteligencia artificial arte"],
+    resposta: "\u{1F916} **ARTE COM INTELIG\xCANCIA ARTIFICIAL (IA)**\n\n**O que \xE9?**\n\xC9 uma forma de criar arte usando programas de Intelig\xEAncia Artificial. O artista d\xE1 ideias, escreve comandos ou envia imagens, e a IA ajuda a criar novas obras. O resultado depende da criatividade de quem usa essa ferramenta.\n\n\u{1F449} **Para lembrar:** A IA n\xE3o cria sozinha. Ela \xE9 uma ferramenta que trabalha junto com o artista, assim como um pincel, um l\xE1pis ou um computador. \u{1F3A8}\u{1F916}",
+    matchedKey: "arte_ia"
+  },
+  {
+    palavras: ["arte naif", "arte na\xEFf", "o que e arte naif", "o que e arte na\xEFf", "movimento naif", "movimento na\xEFf"],
+    resposta: "\u{1F33C} **ARTE NA\xCFF**\n\n**O que \xE9?**\nA Arte Na\xEFf \xE9 um estilo de arte que representa o mundo de forma simples, colorida e criativa. Os artistas pintam cenas do dia a dia, da natureza e das pessoas com muita imagina\xE7\xE3o, sem se preocupar em seguir todas as regras da pintura tradicional.\n\n\u{1F4C5} **Per\xEDodo:** Final do s\xE9culo XIX at\xE9 os dias atuais.\n\n\u{1F3A8} **Artistas Principais:** Henri Rousseau, Heitor dos Prazeres, Madalena Santos Reinbolt.\n\n\u{1F31F} **Caracter\xEDsticas:**\n\u2022 Cores vivas e alegres.\n\u2022 Pinturas simples, espont\xE2neas e cheias de detalhes.\n\u2022 Temas do cotidiano, da natureza, das festas e da cultura popular.\n\u2022 Pouca preocupa\xE7\xE3o com perspectiva e propor\xE7\xF5es.\n\u2022 Muitos artistas s\xE3o autodidatas, ou seja, aprenderam a pintar sem estudar em uma escola de arte.\n\n\u{1F449} **Para lembrar:**\nA Arte Na\xEFf mostra o mundo com um olhar simples, alegre e cheio de imagina\xE7\xE3o. \u{1F3A8}\u{1F33B}\n\n\u{1F5BC}\uFE0F **Obra Importante:**\n\u2022 O Sonho.",
+    matchedKey: "arte_naif"
   },
   {
     palavras: ["m\xE1scaras africanas"],
@@ -9139,6 +9311,52 @@ O desenho \xE9 uma das formas mais antigas de comunica\xE7\xE3o da humanidade e 
 function resolverMensagemLocalmenteRaw(mensagem, lib) {
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
+  const PERIODS_TO_PRIORITIZE = [
+    "arte_antiga",
+    "arte_egipcia",
+    "arte_grega",
+    "arte_romana",
+    "arte_medieval",
+    "arte_crista",
+    "arte_japonesa",
+    "arte_chinesa",
+    "expressionismo",
+    "arte_europeia",
+    "arte_bizantina",
+    "arte_islamica",
+    "arte_pre_colombiana",
+    "arte_digital",
+    "arte_ia",
+    "arte_africana",
+    "arte_indigena",
+    "arte_naif",
+    "modernismo"
+  ];
+  let bestPeriodMatch = null;
+  let bestPeriodScore = 0;
+  for (const item of CONHECIMENTO_CANDINHO) {
+    if (item.matchedKey && PERIODS_TO_PRIORITIZE.includes(item.matchedKey)) {
+      for (const palavra of item.palavras) {
+        const normalizedPalavra = normalizarTexto(palavra);
+        if (!normalizedPalavra) continue;
+        if (testarPalavraChave(normalizedMsg, normalizedPalavra)) {
+          const score = normalizedPalavra.length;
+          if (score > bestPeriodScore) {
+            bestPeriodScore = score;
+            bestPeriodMatch = item;
+          }
+        }
+      }
+    }
+  }
+  if (bestPeriodMatch) {
+    const resp = bestPeriodMatch.resposta;
+    const finalReply = typeof resp === "function" ? resp() : resp;
+    return {
+      reply: finalReply,
+      matchedKey: bestPeriodMatch.matchedKey
+    };
+  }
   if (normalizedMsg.includes("piada") || normalizedMsg.includes("engracad") || normalizedMsg.includes("charada") || normalizedMsg.includes("brincadeira") || normalizedMsg.includes("risada") || normalizedMsg.includes("humor") || normalizedMsg.includes("rir") || normalizedMsg.includes("sorrir")) {
     const randomJoke = getRandomElement(PIADAS_CANDINHO);
     return {
@@ -9373,7 +9591,7 @@ async function carregarBiblioteca() {
   try {
     const res = await fetch(`${GITHUB_BASE}bibliotecaCultural.json`);
     const libGitHub = res.ok ? await res.json() : {};
-    bibliotecaCache = { ...bibliotecaCultural, ...libGitHub };
+    bibliotecaCache = { ...libGitHub, ...bibliotecaCultural };
   } catch (e) {
     console.warn("Could not fetch remote library from GitHub, falling back to local:", e);
     bibliotecaCache = bibliotecaCultural;
@@ -9912,12 +10130,12 @@ var ARTISTS_GUARANTEED_IMAGES = {
     credito: "Wikimedia Commons"
   },
   arte_indigena: {
-    imagemUrl: "https://i.imgur.com/1OEjWd9.jpg",
-    titulo: "Arte Ind\xEDgena",
+    imagemUrl: "https://i.imgur.com/mxBlvdv.jpeg",
+    titulo: "Arte Ind\xEDgena Brasileira",
     credito: "Wikimedia Commons"
   },
   arte_africana: {
-    imagemUrl: "https://i.imgur.com/Q60zPHo.jpeg",
+    imagemUrl: "https://i.imgur.com/TIWhZhH.jpeg",
     titulo: "Arte Africana",
     credito: "Wikimedia Commons"
   },
@@ -10030,7 +10248,92 @@ var ARTISTS_GUARANTEED_IMAGES = {
       titulo: "Express\xE3o de T\xE9dio",
       credito: "Wikimedia Commons"
     }
-  ]
+  ],
+  modernismo: {
+    imagemUrl: "https://i.imgur.com/M7lSaXM.jpeg",
+    titulo: "Abaporu",
+    credito: "Tarsila do Amaral (Wikip\xE9dia)"
+  },
+  arte_antiga: {
+    imagemUrl: "https://i.imgur.com/NoarViK.jpeg",
+    titulo: "Arte Antiga",
+    credito: "Wikimedia Commons"
+  },
+  arte_medieval: {
+    imagemUrl: "https://i.imgur.com/L0KsfZj.jpeg",
+    titulo: "Arte Medieval",
+    credito: "Wikimedia Commons"
+  },
+  arte_crista: {
+    imagemUrl: "https://i.imgur.com/6cWfVs1.jpeg",
+    titulo: "Arte Crist\xE3",
+    credito: "Wikimedia Commons"
+  },
+  arte_grega: {
+    imagemUrl: "https://i.imgur.com/RMGy4Kx.jpeg",
+    titulo: "Arte Grega",
+    credito: "Wikimedia Commons"
+  },
+  arte_romana: {
+    imagemUrl: "https://i.imgur.com/JbkAVC8.jpeg",
+    titulo: "Arte Romana",
+    credito: "Wikimedia Commons"
+  },
+  arte_egipcia: {
+    imagemUrl: "https://i.imgur.com/NoarViK.jpeg",
+    titulo: "Arte Eg\xEDpcia",
+    credito: "Wikimedia Commons"
+  },
+  arte_japonesa: {
+    imagemUrl: "https://i.imgur.com/eP8TCyb.jpeg",
+    titulo: "Arte Japonesa",
+    credito: "Wikimedia Commons"
+  },
+  arte_chinesa: {
+    imagemUrl: "https://i.imgur.com/0NCVF0W.jpeg",
+    titulo: "Arte Chinesa",
+    credito: "Wikimedia Commons"
+  },
+  expressionismo: {
+    imagemUrl: "https://i.imgur.com/MhBc6cq.jpeg",
+    titulo: "Express\xE3o e Sentimento Expressionista",
+    credito: "Wikimedia Commons"
+  },
+  arte_europeia: {
+    imagemUrl: "https://i.imgur.com/hZuVkcg.jpeg",
+    titulo: "Arte Europeia",
+    credito: "Wikimedia Commons"
+  },
+  arte_bizantina: {
+    imagemUrl: "https://i.imgur.com/DFIiuoy.jpeg",
+    titulo: "Arte Bizantina",
+    credito: "Wikimedia Commons"
+  },
+  arte_islamica: {
+    imagemUrl: "https://i.imgur.com/FY2iXn2.jpeg",
+    titulo: "Arte Isl\xE2mica",
+    credito: "Wikimedia Commons"
+  },
+  arte_pre_colombiana: {
+    imagemUrl: "https://i.imgur.com/53fFOzu.jpeg",
+    titulo: "Arte Pr\xE9-Colombiana",
+    credito: "Wikimedia Commons"
+  },
+  arte_digital: {
+    imagemUrl: "https://i.imgur.com/9fFJxDf.jpeg",
+    titulo: "Arte Digital",
+    credito: "Wikimedia Commons"
+  },
+  arte_ia: {
+    imagemUrl: "https://i.imgur.com/PGbFKrS.jpeg",
+    titulo: "Arte com Intelig\xEAncia Artificial",
+    credito: "Wikimedia Commons"
+  },
+  arte_naif: {
+    imagemUrl: "https://i.imgur.com/qbUzNQb.jpeg",
+    titulo: "O Sonho",
+    credito: "Henri Rousseau"
+  }
 };
 async function buscarImagem(pergunta, matchedKey, lib) {
   try {
