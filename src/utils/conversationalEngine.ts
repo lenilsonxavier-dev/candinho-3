@@ -1179,12 +1179,99 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
   { palavras: ['alfredo volpi', 'volpi', 'quem foi alfredo volpi'], resposta: 'Alfredo Volpi (1896–1988) foi conhecido pelas “bandeirinhas” coloridas, explorou formas geométricas e cores suaves. 🏠', matchedKey: 'alfredo_volpi' },
   { palavras: ['georgina de albuquerque', 'georgina', 'quem foi georgina de albuquerque'], resposta: 'Georgina de Albuquerque (1885–1962) foi uma pintora brasileira pioneira, abordou temas históricos e cenas do cotidiano. 📜', matchedKey: 'georgina_de_albuquerque' },
   { 
-    palavras: ['arte indígena', 'arte indigena', 'arte dos índios', 'cultura indígena'], 
-    resposta: '🪶 A arte indígena está presente na pintura corporal, na cerâmica, na cestaria, na arte plumária (enfeites de penas) e na música. Cada etnia tem seus próprios desenhos e significados, ligados à natureza e aos ancestrais. É uma arte cheia de símbolos e tradição!' 
+    palavras: ['arte indigena brasileira', 'arte indígena brasileira', 'o que e arte indigena brasileira', 'o que e arte indígena brasileira', 'arte indígena', 'arte indigena', 'arte dos índios', 'cultura indígena'], 
+    resposta: '🪶 **ARTE INDÍGENA BRASILEIRA**\n\n**O que é?**\nÉ a arte produzida pelos povos indígenas do Brasil. Ela faz parte do dia a dia, dos rituais e da cultura, usando materiais encontrados na natureza.\n\nEla está super presente na pintura corporal, na cerâmica, na cestaria, na arte plumária (enfeites de penas) e na música! Cada etnia tem seus próprios desenhos e significados, sempre ligados à natureza e ao respeito aos ancestrais.',
+    matchedKey: 'arte_indigena'
   },
   { 
-    palavras: ['arte africana', 'arte da áfrica', 'cultura africana'], 
-    resposta: '🌍 A arte africana é muito rica e diversa! Máscaras, esculturas em madeira, tecidos coloridos (como o kente) e instrumentos musicais como o djembe. Muitas obras representam espíritos, ancestrais e forças da natureza. Essa arte influenciou artistas como Picasso e o modernismo brasileiro.' 
+    palavras: ['arte africana', 'o que e arte africana', 'africa arte', 'arte da áfrica', 'cultura africana'], 
+    resposta: '🌍 **ARTE AFRICANA**\n\n**O que é?**\nÉ a arte criada pelos diferentes povos da África. Ela valoriza a ancestralidade, os rituais, a música, a dança, as máscaras e as esculturas.\n\nEla é super rica e diversa! Usa materiais como madeira, palha e tecidos coloridos (como o kente). Essa arte influenciou muito artistas como Picasso e o nosso próprio modernismo brasileiro!',
+    matchedKey: 'arte_africana'
+  },
+  {
+    palavras: ['modernismo', 'o que e modernismo', 'arte moderna', 'o que e arte moderna', 'periodo modernismo', 'movimento modernista'],
+    resposta: '🎨 **MODERNISMO**\n\n**O que é?**\nÉ um movimento artístico que quis criar uma arte diferente, deixando de copiar o passado. Os artistas passaram a experimentar novas formas, cores e ideias para mostrar o mundo de maneiras criativas.\n\n📅 **Período:** Final do século XIX até meados do século XX (aproximadamente 1890 - 1970).\n\n🎨 **Artistas Principais:** Pablo Picasso, Tarsila do Amaral, Anita Malfatti.\n\n🌟 **Características:**\n• Ruptura com as tradições artísticas.\n• Experimentação de novas técnicas e materiais.\n• Valorização da criatividade e da inovação.\n• Representação livre da realidade.\n• Diversidade de estilos (Cubismo, Surrealismo, Expressionismo, Abstracionismo etc.).\n\n🖼️ **Obra Importante:**\n• Abaporu.',
+    matchedKey: 'modernismo'
+  },
+  {
+    palavras: ['arte antiga', 'o que e arte antiga', 'periodo arte antiga', 'historia da arte antiga'],
+    resposta: '🏺 **ARTE ANTIGA**\n\n**O que é?**\nÉ a arte feita pelos primeiros povos e grandes civilizações da História, como os egípcios, gregos e romanos. Ela servia para contar histórias, homenagear deuses, mostrar o poder dos reis e registrar acontecimentos importantes.\n\n📅 **Período:** Cerca de 3500 a.C. até o século V d.C.\n\n🎨 **Artistas Principais:** Produção coletiva de diversas civilizações (Egito, Mesopotâmia, Grécia e Roma).\n\n🌟 **Características:**\n• Arte ligada à religião, ao poder político e à vida cotidiana.\n• Uso de pedra, mármore, bronze e argila.\n• Construção de templos, esculturas e monumentos.\n• Busca pela representação da natureza e da figura humana.\n\n🖼️ **Obra Importante:**\n• Grande Esfinge de Gizé.',
+    matchedKey: 'arte_antiga'
+  },
+  {
+    palavras: ['arte medieval', 'o que e arte medieval', 'periodo medieval', 'idade media arte'],
+    resposta: '⛪ **ARTE MEDIEVAL**\n\n**O que é?**\nÉ a arte produzida durante a Idade Média. Grande parte das obras era feita para decorar igrejas e ensinar histórias da Bíblia às pessoas.\n\n📅 **Período:** Século V ao século XV.\n\n🎨 **Artistas Principais:** Monges, artesãos e artistas anônimos.\n\n🌟 **Características:**\n• Predomínio da temática religiosa.\n• Construção de igrejas, castelos e catedrais.\n• Pinturas, vitrais e iluminuras.\n• Pouca preocupação com perspectiva e realismo.\n\n🖼️ **Obra Importante:**\n• Catedral de Notre-Dame.',
+    matchedKey: 'arte_medieval'
+  },
+  {
+    palavras: ['arte crista', 'arte cristã', 'arte religiosa', 'o que e arte crista', 'o que e arte cristã', 'o que e arte religiosa'],
+    resposta: '✝️ **ARTE CRISTÃ (ARTE RELIGIOSA)**\n\n**O que é?**\nÉ a arte que representa histórias da Bíblia, Jesus, Maria e os santos. Ela ajuda as pessoas a conhecerem e expressarem sua fé.\n\n📅 **Período:** A partir do século I d.C. até os dias atuais.\n\n🎨 **Artistas Principais:** Michelangelo, Giotto di Bondone.\n\n🌟 **Características:**\n• Representação de passagens bibliblicas.\n• Imagens de Cristo, santos e da Virgem Maria.\n• Objetivo de ensinar e fortalecer a fé.\n• Pinturas, esculturas, mosaicos e vitrais.\n\n🖼️ **Obra Importante:**\n• A Criação de Adão.',
+    matchedKey: 'arte_crista'
+  },
+  {
+    palavras: ['arte grega', 'o que e arte grega', 'periodo arte grega', 'grecia antiga arte'],
+    resposta: '🏺 **ARTE GREGA**\n\n**O que é?**\nÉ a arte dos antigos gregos. Eles procuravam representar a beleza, o equilíbrio e o corpo humano da forma mais harmoniosa possível.\n\n📅 **Período:** Século VIII a.C. ao século I a.C.\n\n🎨 **Artistas Principais:** Fídias, Policleto.\n\n🌟 **Características:**\n• Busca da beleza ideal e da harmonia.\n• Esculturas com proporções perfeitas.\n• Valorização do corpo humano.\n• Construção de templos e teatros.\n\n🖼️ **Obra Importante:**\n• Partenon.',
+    matchedKey: 'arte_grega'
+  },
+  {
+    palavras: ['arte romana', 'o que e arte romana', 'periodo arte romana', 'roma antiga arte'],
+    resposta: '🏛️ **ARTE ROMANA**\n\n**O que é?**\nÉ a arte desenvolvida pelos romanos. Eles construíram grandes cidades, estradas, pontes, teatros e monumentos, mostrando a força e a organização do seu império.\n\n📅 **Período:** Século VI a.C. ao século V d.C.\n\n🎨 **Artistas Principais:** Artistas e arquitetos do Império Romano.\n\n🌟 **Características:**\n• Influência da arte grega.\n• Realismo nos retratos e esculturas.\n• Grandes obras de engenharia.\n• Construção de anfiteatros, aquedutos e estradas.\n\n🖼️ **Obra Importante:**\n• Coliseu.',
+    matchedKey: 'arte_romana'
+  },
+  {
+    palavras: ['arte egipcia', 'arte egípcia', 'o que e arte egipcia', 'o que e arte egípcia', 'egito antigo arte'],
+    resposta: '🐫 **ARTE EGÍPCIA**\n\n**O que é?**\nÉ a arte criada pelos antigos egípcios. Eles faziam pirâmides, templos, esculturas e pinturas para homenagear os faraós e acreditar na vida após a morte.\n\n📅 **Período:** Cerca de 3000 a.C. até 30 a.C.\n\n🎨 **Artistas Principais:** Artesãos e escultores do Antigo Egito.\n\n🌟 **Características:**\n• Arte ligada à religião e à vida após a morte.\n• Pinturas com figuras de perfil e olhos de frente.\n• Hieróglifos e esculturas monumentais.\n• Construção de pirâmides, templos e túmulos.\n\n🖼️ **Obra Importante:**\n• Pirâmide de Quéops.',
+    matchedKey: 'arte_egipcia'
+  },
+  {
+    palavras: ['arte japonesa', 'o que e arte japonesa', 'periodo arte japonesa', 'japao arte'],
+    resposta: '🎎 **ARTE JAPONESA**\n\n**O que é?**\nÉ a arte criada no Japão. Ela valoriza a natureza, a simplicidade, o equilíbrio e a beleza dos pequenos detalhes.\n\n📅 **Período:** Do século III d.C. até os dias atuais.\n\n🎨 **Artistas Principais:** Katsushika Hokusai, Utagawa Hiroshige.\n\n🌟 **Características:**\n• Valorização da natureza e das estações do ano.\n• Traços delicados e composição equilibrada.\n• Uso da xilogravura (ukiyo-e).\n• Influência do Zen e da simplicidade.\n\n🖼️ **Obra Importante:**\n• A Grande Onda de Kanagawa.',
+    matchedKey: 'arte_japonesa'
+  },
+  {
+    palavras: ['arte chinesa', 'o que e arte chinesa', 'periodo arte chinesa', 'china arte'],
+    resposta: '🐉 **ARTE CHINESA**\n\n**O que é?**\nÉ a arte desenvolvida na China ao longo de milhares de anos. Ela busca mostrar a harmonia entre as pessoas, a natureza e o universo.\n\n📅 **Período:** Cerca de 3000 a.C. até os dias atuais.\n\n🎨 **Artistas Principais:** Gu Kaizhi, Zhang Daqian.\n\n🌟 **Características:**\n• Harmonia entre ser humano e natureza.\n• Pinturas com tinta sobre seda e papel.\n• Caligrafia como forma de arte.\n• Influência do Confucionismo, Taoismo e Budismo.\n\n🖼️ **Obra Importante:**\n• Ao Longo do Rio Durante o Festival Qingming.',
+    matchedKey: 'arte_chinesa'
+  },
+  {
+    palavras: ['expressionismo', 'o que e expressionismo', 'movimento expressionista'],
+    resposta: '🎭 **EXPRESSIONISMO**\n\n**O que é?**\nÉ um movimento artístico que mostra os sentimentos das pessoas, como alegria, medo, tristeza ou raiva, usando cores fortes e formas distorcidas.',
+    matchedKey: 'expressionismo'
+  },
+  {
+    palavras: ['arte europeia', 'o que e arte europeia'],
+    resposta: '🌍 **ARTE EUROPEIA**\n\n**O que é?**\nÉ o conjunto das artes produzidas nos países da Europa. Dela nasceram muitos movimentos importantes, como o Renascimento, o Barroco, o Impressionismo e o Modernismo.',
+    matchedKey: 'arte_europeia'
+  },
+  {
+    palavras: ['arte bizantina', 'o que e arte bizantina', 'bizantino', 'mosaico bizantino'],
+    resposta: '✨ **ARTE BIZANTINA**\n\n**O que é?**\nÉ uma arte religiosa criada no antigo Império Bizantino. Ficou famosa pelos mosaicos brilhantes e pelas imagens de santos e igrejas.',
+    matchedKey: 'arte_bizantina'
+  },
+  {
+    palavras: ['arte islamica', 'arte islâmica', 'o que e arte islamica', 'o que e arte islâmica'],
+    resposta: '🌙 **ARTE ISLÂMICA**\n\n**O que é?**\nÉ a arte dos povos que seguem a religião islâmica. Ela é conhecida pelos desenhos geométricos, arabescos e pela bela caligrafia.',
+    matchedKey: 'arte_islamica'
+  },
+  {
+    palavras: ['arte pre colombiana', 'arte pré colombiana', 'o que e arte pre colombiana', 'o que e arte pré colombiana', 'asteca', 'maia', 'inca'],
+    resposta: '🏞️ **ARTE PRÉ-COLOMBIANA**\n\n**O que é?**\nÉ a arte criada pelos povos que viviam nas Américas antes da chegada dos europeus, como maias, astecas e incas.',
+    matchedKey: 'arte_pre_colombiana'
+  },
+  {
+    palavras: ['arte digital', 'o que e arte digital'],
+    resposta: '💻 **ARTE DIGITAL**\n\n**O que é?**\nÉ a arte feita com computadores, tablets ou celulares. Os artistas usam programas digitais para criar desenhos, pinturas, animações e imagens.',
+    matchedKey: 'arte_digital'
+  },
+  {
+    palavras: ['arte com inteligencia artificial', 'arte com inteligência artificial', 'arte com ia', 'o que e arte com ia', 'o que e arte com inteligencia artificial', 'o que e arte com inteligência artificial', 'ia arte', 'inteligencia artificial arte'],
+    resposta: '🤖 **ARTE COM INTELIGÊNCIA ARTIFICIAL (IA)**\n\n**O que é?**\nÉ uma forma de criar arte usando programas de Inteligência Artificial. O artista dá ideias, escreve comandos ou envia imagens, e a IA ajuda a criar novas obras. O resultado depende da criatividade de quem usa essa ferramenta.\n\n👉 **Para lembrar:** A IA não cria sozinha. Ela é uma ferramenta que trabalha junto com o artista, assim como um pincel, um lápis ou um computador. 🎨🤖',
+    matchedKey: 'arte_ia'
+  },
+  {
+    palavras: ['arte naif', 'arte naïf', 'o que e arte naif', 'o que e arte naïf', 'movimento naif', 'movimento naïf'],
+    resposta: '🌼 **ARTE NAÏF**\n\n**O que é?**\nA Arte Naïf é um estilo de arte que representa o mundo de forma simples, colorida e criativa. Os artistas pintam cenas do dia a dia, da natureza e das pessoas com muita imaginação, sem se preocupar em seguir todas as regras da pintura tradicional.\n\n📅 **Período:** Final do século XIX até os dias atuais.\n\n🎨 **Artistas Principais:** Henri Rousseau, Heitor dos Prazeres, Madalena Santos Reinbolt.\n\n🌟 **Características:**\n• Cores vivas e alegres.\n• Pinturas simples, espontâneas e cheias de detalhes.\n• Temas do cotidiano, da natureza, das festas e da cultura popular.\n• Pouca preocupação com perspectiva e proporções.\n• Muitos artistas são autodidatas, ou seja, aprenderam a pintar sem estudar em uma escola de arte.\n\n👉 **Para lembrar:**\nA Arte Naïf mostra o mundo com um olhar simples, alegre e cheio de imaginação. 🎨🌻\n\n🖼️ **Obra Importante:**\n• O Sonho.',
+    matchedKey: 'arte_naif'
   },
   { 
     palavras: ['máscaras africanas'], 
@@ -1338,6 +1425,43 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
 function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any>): { reply: string, matchedKey?: string } | null {
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
+
+  // Step A.00: Prioritized Art Periods Check to prevent shadowing or outdated definitions from remote libraries
+  const PERIODS_TO_PRIORITIZE = [
+    'arte_antiga', 'arte_egipcia', 'arte_grega', 'arte_romana', 'arte_medieval',
+    'arte_crista', 'arte_japonesa', 'arte_chinesa', 'expressionismo', 'arte_europeia',
+    'arte_bizantina', 'arte_islamica', 'arte_pre_colombiana', 'arte_digital', 'arte_ia',
+    'arte_africana', 'arte_indigena', 'arte_naif', 'modernismo'
+  ];
+
+  let bestPeriodMatch: any = null;
+  let bestPeriodScore = 0;
+
+  for (const item of CONHECIMENTO_CANDINHO) {
+    if (item.matchedKey && PERIODS_TO_PRIORITIZE.includes(item.matchedKey)) {
+      for (const palavra of item.palavras) {
+        const normalizedPalavra = normalizarTexto(palavra);
+        if (!normalizedPalavra) continue;
+
+        if (testarPalavraChave(normalizedMsg, normalizedPalavra)) {
+          const score = normalizedPalavra.length;
+          if (score > bestPeriodScore) {
+            bestPeriodScore = score;
+            bestPeriodMatch = item;
+          }
+        }
+      }
+    }
+  }
+
+  if (bestPeriodMatch) {
+    const resp = bestPeriodMatch.resposta;
+    const finalReply = typeof resp === "function" ? resp() : resp;
+    return {
+      reply: finalReply,
+      matchedKey: bestPeriodMatch.matchedKey
+    };
+  }
 
   // Step A.01: Check for Local Jokes / Piadas Trigger
   if (

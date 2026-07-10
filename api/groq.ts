@@ -22,7 +22,7 @@ async function carregarBiblioteca() {
   try {
     const res = await fetch(`${GITHUB_BASE}bibliotecaCultural.json`);
     const libGitHub = res.ok ? await res.json() : {};
-    bibliotecaCache = { ...bibliotecaCultural, ...libGitHub };
+    bibliotecaCache = { ...libGitHub, ...bibliotecaCultural };
   } catch (e) {
     bibliotecaCache = bibliotecaCultural;
   }
@@ -487,12 +487,12 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     credito: "Wikimedia Commons"
   },
   arte_indigena: {
-    imagemUrl: "https://i.imgur.com/1OEjWd9.jpg",
-    titulo: "Arte Indígena",
+    imagemUrl: "https://i.imgur.com/mxBlvdv.jpeg",
+    titulo: "Arte Indígena Brasileira",
     credito: "Wikimedia Commons"
   },
   arte_africana: {
-    imagemUrl: "https://i.imgur.com/Q60zPHo.jpeg",
+    imagemUrl: "https://i.imgur.com/TIWhZhH.jpeg",
     titulo: "Arte Africana",
     credito: "Wikimedia Commons"
   },
@@ -605,7 +605,92 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
       titulo: "Expressão de Tédio",
       credito: "Wikimedia Commons"
     }
-  ]
+  ],
+  modernismo: {
+    imagemUrl: "https://i.imgur.com/M7lSaXM.jpeg",
+    titulo: "Abaporu",
+    credito: "Tarsila do Amaral (Wikipédia)"
+  },
+  arte_antiga: {
+    imagemUrl: "https://i.imgur.com/NoarViK.jpeg",
+    titulo: "Arte Antiga",
+    credito: "Wikimedia Commons"
+  },
+  arte_medieval: {
+    imagemUrl: "https://i.imgur.com/L0KsfZj.jpeg",
+    titulo: "Arte Medieval",
+    credito: "Wikimedia Commons"
+  },
+  arte_crista: {
+    imagemUrl: "https://i.imgur.com/6cWfVs1.jpeg",
+    titulo: "Arte Cristã",
+    credito: "Wikimedia Commons"
+  },
+  arte_grega: {
+    imagemUrl: "https://i.imgur.com/RMGy4Kx.jpeg",
+    titulo: "Arte Grega",
+    credito: "Wikimedia Commons"
+  },
+  arte_romana: {
+    imagemUrl: "https://i.imgur.com/JbkAVC8.jpeg",
+    titulo: "Arte Romana",
+    credito: "Wikimedia Commons"
+  },
+  arte_egipcia: {
+    imagemUrl: "https://i.imgur.com/NoarViK.jpeg",
+    titulo: "Arte Egípcia",
+    credito: "Wikimedia Commons"
+  },
+  arte_japonesa: {
+    imagemUrl: "https://i.imgur.com/eP8TCyb.jpeg",
+    titulo: "Arte Japonesa",
+    credito: "Wikimedia Commons"
+  },
+  arte_chinesa: {
+    imagemUrl: "https://i.imgur.com/0NCVF0W.jpeg",
+    titulo: "Arte Chinesa",
+    credito: "Wikimedia Commons"
+  },
+  expressionismo: {
+    imagemUrl: "https://i.imgur.com/MhBc6cq.jpeg",
+    titulo: "Expressão e Sentimento Expressionista",
+    credito: "Wikimedia Commons"
+  },
+  arte_europeia: {
+    imagemUrl: "https://i.imgur.com/hZuVkcg.jpeg",
+    titulo: "Arte Europeia",
+    credito: "Wikimedia Commons"
+  },
+  arte_bizantina: {
+    imagemUrl: "https://i.imgur.com/DFIiuoy.jpeg",
+    titulo: "Arte Bizantina",
+    credito: "Wikimedia Commons"
+  },
+  arte_islamica: {
+    imagemUrl: "https://i.imgur.com/FY2iXn2.jpeg",
+    titulo: "Arte Islâmica",
+    credito: "Wikimedia Commons"
+  },
+  arte_pre_colombiana: {
+    imagemUrl: "https://i.imgur.com/53fFOzu.jpeg",
+    titulo: "Arte Pré-Colombiana",
+    credito: "Wikimedia Commons"
+  },
+  arte_digital: {
+    imagemUrl: "https://i.imgur.com/9fFJxDf.jpeg",
+    titulo: "Arte Digital",
+    credito: "Wikimedia Commons"
+  },
+  arte_ia: {
+    imagemUrl: "https://i.imgur.com/PGbFKrS.jpeg",
+    titulo: "Arte com Inteligência Artificial",
+    credito: "Wikimedia Commons"
+  },
+  arte_naif: {
+    imagemUrl: "https://i.imgur.com/qbUzNQb.jpeg",
+    titulo: "O Sonho",
+    credito: "Henri Rousseau"
+  }
 };
 
 // --- BUSCA NO PEXELS (FALLBACK) ---
