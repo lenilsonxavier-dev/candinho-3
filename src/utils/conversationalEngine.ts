@@ -1422,9 +1422,706 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
   }
 ];
 
+export interface PorqueItem {
+  keywords: string[];
+  pergunta: string;
+  resposta: string;
+  voceSabia?: string;
+  experimente?: string;
+  pergunteTambem?: string[];
+}
+
+export const PORQUES_ARTE: PorqueItem[] = [
+  // 🎨 PORQUÊS DOS MATERIAIS
+  {
+    keywords: ["guache", "tinta guache"],
+    pergunta: "Por que usamos tinta guache?",
+    resposta: "Porque o guache tem cores fortes, cobre bem o papel e seca rapidamente. Ele também permite corrigir partes da pintura e fazer novas camadas de tinta."
+  },
+  {
+    keywords: ["aquarela", "usamos aquarela"],
+    pergunta: "Por que usamos aquarela?",
+    resposta: "Porque a aquarela cria pinturas leves e transparentes. A água faz parte da pintura e produz efeitos delicados."
+  },
+  {
+    keywords: ["tinta acrilica", "acrilica"],
+    pergunta: "Por que usamos tinta acrílica?",
+    resposta: "Porque seca rápido, tem cores vivas e pode ser usada em tela, madeira, papel e outros materiais."
+  },
+  {
+    keywords: ["tinta a oleo", "tinta oleo", "oleo sobre tela"],
+    pergunta: "Por que usamos tinta a óleo?",
+    resposta: "Porque seca lentamente, permitindo misturar cores por mais tempo e criar muitos detalhes."
+  },
+  {
+    keywords: ["lapis de cor", "lapis colorido"],
+    pergunta: "Por que usamos lápis de cor?",
+    resposta: "Porque ele permite controlar melhor os detalhes e fazer diferentes intensidades de cor."
+  },
+  {
+    keywords: ["giz de cera", "giz cera"],
+    pergunta: "Por que usamos giz de cera?",
+    resposta: "Porque desliza facilmente no papel, possui cores vibrantes e é fácil de usar pelas crianças."
+  },
+  {
+    keywords: ["carvao", "carvão"],
+    pergunta: "Por que usamos carvão?",
+    resposta: "Porque cria sombras fortes e facilita o estudo da luz e do volume."
+  },
+  {
+    keywords: ["nanquim", "tinta nanquim"],
+    pergunta: "Por que usamos nanquim?",
+    resposta: "Porque produz linhas muito pretas, precisas e permanentes."
+  },
+  {
+    keywords: ["pinceis diferentes", "pinceis", "pincel diferente", "pincel"],
+    pergunta: "Por que usamos pincéis diferentes?",
+    resposta: "Porque cada pincel cria um tipo diferente de traço, textura e acabamento."
+  },
+  {
+    keywords: ["espatula", "espatulas"],
+    pergunta: "Por que usamos espátula?",
+    resposta: "Porque cria texturas grossas e efeitos que o pincel não consegue fazer."
+  },
+
+  // ✏️ PORQUÊS DO DESENHO
+  {
+    keywords: ["rascunho", "fazer rascunho", "fazemos rascunho"],
+    pergunta: "Por que fazemos um rascunho?",
+    resposta: "Porque ele ajuda a planejar o desenho antes da versão final."
+  },
+  {
+    keywords: ["formas simples", "desenhamos formas simples", "formas simples primeiro"],
+    pergunta: "Por que desenhamos formas simples primeiro?",
+    resposta: "Porque círculos, quadrados e triângulos ajudam a construir figuras mais complexas."
+  },
+  {
+    keywords: ["apagamos algumas linhas", "apagar algumas linhas", "apagamos linhas", "apagar linhas"],
+    pergunta: "Por que apagamos algumas linhas?",
+    resposta: "Porque elas serviram apenas como guia durante o desenho."
+  },
+  {
+    keywords: ["olhando para o objeto", "olhando objeto", "desenhar olhando"],
+    pergunta: "Por que desenhar olhando para o objeto?",
+    resposta: "Porque observar melhora a percepção das formas, proporções e detalhes."
+  },
+  {
+    keywords: ["todos os dias", "desenhar todos os dias", "desenhar todo dia"],
+    pergunta: "Por que desenhar todos os dias?",
+    resposta: "Porque a prática melhora a coordenação motora, a observação e a criatividade."
+  },
+  {
+    keywords: ["anatomia", "estudar anatomia"],
+    pergunta: "Por que estudar anatomia?",
+    resposta: "Porque conhecer o corpo ajuda a desenhar pessoas e animais de forma mais convincente."
+  },
+  {
+    keywords: ["perspectiva", "estudar perspectiva"],
+    pergunta: "Por que estudar perspectiva?",
+    resposta: "Porque ela cria a sensação de profundidade em uma superfície plana."
+  },
+  {
+    keywords: ["esbocos rapidos", "esboços rápidos", "esboco rapido", "esboço rápido"],
+    pergunta: "Por que fazer esboços rápidos?",
+    resposta: "Porque eles treinam o olhar e ajudam a capturar movimentos."
+  },
+
+  // 🌈 PORQUÊS DAS CORES
+  {
+    keywords: ["cores quentes", "existem cores quentes"],
+    pergunta: "Por que existem cores quentes?",
+    resposta: "Porque lembram elementos como fogo e sol e costumam transmitir energia."
+  },
+  {
+    keywords: ["cores frias", "existem cores frias"],
+    pergunta: "Por que existem cores frias?",
+    resposta: "Porque lembram água, céu e natureza, transmitindo calma."
+  },
+  {
+    keywords: ["misturamos cores", "misturar cores"],
+    pergunta: "Por que misturamos cores?",
+    resposta: "Porque novas cores podem ser criadas a partir das cores primárias."
+  },
+  {
+    keywords: ["cores parecem mais fortes", "cores mais fortes", "parecem mais fortes"],
+    pergunta: "Por que algumas cores parecem mais fortes?",
+    resposta: "Porque possuem maior intensidade e contraste."
+  },
+  {
+    keywords: ["poucas cores", "pinturas usam poucas cores", "usar poucas cores"],
+    pergunta: "Por que algumas pinturas usam poucas cores?",
+    resposta: "Porque isso cria unidade e destaca determinados elementos."
+  },
+
+  // 🖌️ PORQUÊS DAS TÉCNICAS
+  {
+    keywords: ["fazemos sombras", "sombras", "fazer sombras"],
+    pergunta: "Por que fazemos sombras?",
+    resposta: "Porque elas mostram onde a luz não chega e ajudam a criar volume."
+  },
+  {
+    keywords: ["usamos luz", "usar luz"],
+    pergunta: "Por que usamos luz?",
+    resposta: "Porque a luz revela formas, profundidade e atmosfera."
+  },
+  {
+    keywords: ["textura", "usamos textura"],
+    pergunta: "Por que usamos textura?",
+    resposta: "Porque ela faz a superfície parecer lisa, áspera, macia ou rugosa."
+  },
+  {
+    keywords: ["linhas", "usamos linhas"],
+    pergunta: "Por que usamos linhas?",
+    resposta: "Porque elas delimitam formas, mostram movimento e organizam a composição."
+  },
+  {
+    keywords: ["pontos", "usamos pontos"],
+    pergunta: "Por que usamos pontos?",
+    resposta: "Porque muitos pontos juntos podem formar imagens, texturas e sombras."
+  },
+  {
+    keywords: ["contraste", "usamos contraste"],
+    pergunta: "Por que usamos contraste?",
+    resposta: "Porque ele destaca partes importantes da obra."
+  },
+  {
+    keywords: ["equilibrio", "equilíbrio", "usamos equilibrio", "usamos equilíbrio"],
+    pergunta: "Por que usamos equilíbrio?",
+    resposta: "Porque distribui os elementos da composição de maneira agradável."
+  },
+  {
+    keywords: ["repeticao", "repetição", "usamos repeticao", "usamos repetição"],
+    pergunta: "Por que usamos repetição?",
+    resposta: "Porque ela cria ritmo visual."
+  },
+  {
+    keywords: ["simetria", "usamos simetria"],
+    pergunta: "Por que usamos simetria?",
+    resposta: "Porque transmite organização e estabilidade."
+  },
+  {
+    keywords: ["assimetria", "usamos assimetria"],
+    pergunta: "Por que usamos assimetria?",
+    resposta: "Porque pode tornar a composição mais dinâmica."
+  },
+
+  // 🏛️ HISTÓRIA DA ARTE
+  {
+    keywords: ["homens das cavernas", "homem das cavernas", "cavernas desenhavam", "caverna desenhavam"],
+    pergunta: "Por que os homens das cavernas desenhavam?",
+    resposta: "Porque registravam animais, caçadas e acontecimentos importantes de seu cotidiano."
+  },
+  {
+    keywords: ["egipcios desenhavam", "egípcios desenhavam", "egipcios", "egípcios", "pessoas de lado", "desenhavam de lado"],
+    pergunta: "Por que os egípcios desenhavam pessoas de lado?",
+    resposta: "Porque queriam mostrar cada parte do corpo pelo ângulo considerado mais reconhecível."
+  },
+  {
+    keywords: ["gregos faziam", "esculturas detalhadas", "gregos", "gregas"],
+    pergunta: "Por que os gregos faziam esculturas tão detalhadas?",
+    resposta: "Porque valorizavam a observação da natureza e do corpo humano."
+  },
+  {
+    keywords: ["romanos copiavam", "romanos", "copiavam esculturas"],
+    pergunta: "Por que os romanos copiavam esculturas gregas?",
+    resposta: "Porque admiravam a arte grega e desejavam preservar esse estilo."
+  },
+  {
+    keywords: ["arte medieval", "medieval era muito religiosa", "religiosa medieval"],
+    pergunta: "Por que a arte medieval era muito religiosa?",
+    resposta: "Porque a religião ocupava um papel central na sociedade europeia da época."
+  },
+  {
+    keywords: ["surgiu o renascimento", "surgiu renascimento", "renascimento"],
+    pergunta: "Por que surgiu o Renascimento?",
+    resposta: "Porque artistas passaram a estudar a natureza, a ciência e o ser humano de maneira mais intensa."
+  },
+  {
+    keywords: ["da vinci estudava anatomia", "leonardo da vinci anatomia", "da vinci anatomia"],
+    pergunta: "Por que Leonardo da Vinci estudava anatomia?",
+    resposta: "Porque queria compreender o corpo para representá-lo com maior precisão."
+  },
+  {
+    keywords: ["michelangelo esculpia", "esculpia marmore", "esculpia mármore"],
+    pergunta: "Por que Michelangelo esculpia mármore?",
+    resposta: "Porque o mármore é resistente, belo e permite criar muitos detalhes."
+  },
+  {
+    keywords: ["van gogh pinceladas", "van gogh", "pinceladas grossas", "gogh pinceladas"],
+    pergunta: "Por que Van Gogh usava pinceladas grossas?",
+    resposta: "Porque queria transmitir emoção e movimento através da pintura."
+  },
+  {
+    keywords: ["monet pintava a mesma", "monet mesma paisagem", "monet"],
+    pergunta: "Por que Monet pintava a mesma paisagem várias vezes?",
+    resposta: "Porque desejava mostrar como a luz mudava ao longo do dia."
+  },
+  {
+    keywords: ["picasso mudou", "picasso", "picasso mudou seu jeito"],
+    pergunta: "Por que Picasso mudou seu jeito de pintar?",
+    resposta: "Porque gostava de experimentar novas formas de representar a realidade."
+  },
+  {
+    keywords: ["surgiu a arte abstrata", "surgiu arte abstrata", "arte abstrata", "abstrata"],
+    pergunta: "Por que surgiu a arte abstrata?",
+    resposta: "Porque alguns artistas queriam expressar ideias, sentimentos e formas sem representar objetos reconhecíveis."
+  },
+  {
+    keywords: ["portinari pintava trabalhadores", "portinari", "trabalhadores"],
+    pergunta: "Por que Portinari pintava trabalhadores?",
+    resposta: "Porque desejava retratar o povo brasileiro, seu trabalho e suas dificuldades."
+  },
+  {
+    keywords: ["tarsila do amaral pintava figuras", "tarsila figuras diferentes", "tarsila figuras", "tarsila do amaral figuras"],
+    pergunta: "Por que Tarsila do Amaral pintava figuras diferentes?",
+    resposta: "Porque buscava criar uma arte com identidade brasileira, inspirada em nossa cultura e paisagens."
+  },
+
+  // 🎭 EXPRESSÃO
+  {
+    keywords: ["arte transmite emocoes", "arte transmite emoções", "transmite emocoes", "transmite emoções"],
+    pergunta: "Por que a arte transmite emoções?",
+    resposta: "Porque artistas usam cores, formas, linhas e temas para comunicar sentimentos e ideias."
+  },
+  {
+    keywords: ["pintura pode parecer triste", "pintura parecer triste", "pintura triste", "obra triste"],
+    pergunta: "Por que uma pintura pode parecer triste?",
+    resposta: "Porque elementos como cores escuras, expressões e composição podem sugerir tristeza."
+  },
+  {
+    keywords: ["obra pode causar medo", "causar medo", "obra causar medo", "obra medo"],
+    pergunta: "Por que uma obra pode causar medo?",
+    resposta: "Porque certas formas, cores e contrastes despertam sensações intensas."
+  },
+  {
+    keywords: ["cada pessoa entende", "pessoa entende de um jeito", "observador diferente"],
+    pergunta: "Por que cada pessoa entende uma obra de um jeito?",
+    resposta: "Porque cada observador possui experiências, conhecimentos e emoções diferentes."
+  },
+
+  // 🎨 CRIATIVIDADE
+  {
+    keywords: ["copiar desenhos ajuda", "copiar desenhos", "copiar ajuda"],
+    pergunta: "Por que copiar desenhos ajuda?",
+    resposta: "Porque copiar pode ensinar técnicas e desenvolver a coordenação, desde que também haja espaço para criar obras próprias."
+  },
+  {
+    keywords: ["errar faz parte", "erros ajudam", "errar faz parte da arte"],
+    pergunta: "Por que errar faz parte da arte?",
+    resposta: "Porque os erros ajudam a descobrir novas soluções e aprimorar as habilidades."
+  },
+  {
+    keywords: ["imaginar e importante", "imaginar é importante", "imaginar importante"],
+    pergunta: "Por que imaginar é importante?",
+    resposta: "Porque muitas obras de arte nascem da imaginação."
+  },
+  {
+    keywords: ["existem estilos diferentes", "estilos diferentes", "estilos de cada artista"],
+    pergunta: "Por que existem estilos diferentes?",
+    resposta: "Porque cada artista desenvolve sua própria maneira de criar."
+  },
+
+  // 🤔 CURIOSIDADES
+  {
+    keywords: ["mona lisa parece olhar", "mona lisa olhar para nos", "mona lisa olhar", "olhar mona lisa"],
+    pergunta: "Por que a Mona Lisa parece olhar para nós?",
+    resposta: "Porque Leonardo da Vinci pintou os olhos de forma que eles parecem acompanhar o observador de diferentes ângulos."
+  },
+  {
+    keywords: ["esculturas antigas nao tem bracos", "esculturas antigas sem bracos", "sem bracos", "sem braços", "esculturas sem braços"],
+    pergunta: "Por que algumas esculturas antigas não têm braços?",
+    resposta: "Porque muitas foram danificadas pelo tempo, guerras ou acidentes."
+  },
+  {
+    keywords: ["pinturas em tetos", "pintura no teto", "tetos decorados"],
+    pergunta: "Por que existem pinturas em tetos?",
+    resposta: "Porque artistas e arquitetos queriam decorar igrejas, palácios e edifícios, criando a sensação de um espaço mais grandioso."
+  },
+  {
+    keywords: ["obras valem milhoes", "obras valem milhões", "valem milhoes", "valem milhões"],
+    pergunta: "Por que algumas obras valem milhões?",
+    resposta: "Porque podem ser únicas, históricas, raras e muito importantes para a cultura."
+  },
+  {
+    keywords: ["artistas assinam", "assinatura do artista", "assinar as obras"],
+    pergunta: "Por que artistas assinam suas obras?",
+    resposta: "Porque a assinatura identifica a autoria e ajuda a registrar quem criou a obra."
+  },
+  {
+    keywords: ["museus nao deixam tocar", "nao pode tocar", "não pode tocar", "nao deixam tocar", "não deixam tocar"],
+    pergunta: "Por que museus não deixam tocar nas obras?",
+    resposta: "Porque o toque pode desgastar, sujar ou danificar materiais delicados."
+  },
+  {
+    keywords: ["pinturas racham", "pintura racha", "tela racha"],
+    pergunta: "Por que algumas pinturas racham?",
+    resposta: "Porque tinta, madeira e tela envelhecem e sofrem alterações com o tempo."
+  },
+  {
+    keywords: ["existem restauradores", "restauradores", "restaurador"],
+    pergunta: "Por que existem restauradores?",
+    resposta: "Porque eles estudam técnicas para conservar e recuperar obras de arte danificadas."
+  },
+  // 🎨 PORQUÊS SUBJETIVOS E CURIOSIDADES DO CANDINHO
+  {
+    keywords: ["fazemos arte", "fazer arte", "por que fazemos arte"],
+    pergunta: "Por que fazemos arte?",
+    resposta: "Fazemos arte para expressar ideias, sentimentos, sonhos e histórias. A arte também ajuda as pessoas a observar o mundo, imaginar coisas novas e compartilhar o que pensam com outras pessoas.",
+    voceSabia: "As pessoas fazem arte há mais de 40 mil anos. Existem pinturas feitas em cavernas muito antes da invenção da escrita.",
+    experimente: "Desenhe algo que aconteceu hoje com você. Depois mostre para alguém sem explicar. Veja o que essa pessoa consegue entender apenas olhando o desenho.",
+    pergunteTambem: ["O que é arte?", "Por que existem artistas?", "Como surgiu a arte?"]
+  },
+  {
+    keywords: ["desenhamos", "desenhar", "por que desenhamos"],
+    pergunta: "Por que desenhamos?",
+    resposta: "Desenhamos para registrar ideias, observar melhor o mundo, criar personagens, planejar objetos e mostrar nossa imaginação. Um desenho pode contar uma história mesmo sem usar palavras.",
+    voceSabia: "Antes de construir prédios, criar roupas ou fabricar carros, muitas pessoas fazem desenhos para planejar suas ideias.",
+    experimente: "Olhe para um objeto da sua casa e tente desenhá-lo durante cinco minutos.",
+    pergunteTambem: ["Como desenhar melhor?", "Por que fazer um rascunho?", "O que é um esboço?"]
+  },
+  {
+    keywords: ["pintamos", "pintar", "por que pintamos"],
+    pergunta: "Por que pintamos?",
+    resposta: "Pintamos para dar cor às nossas ideias. As cores ajudam a mostrar emoções, criar ambientes e destacar partes importantes de uma imagem.",
+    voceSabia: "Alguns artistas usam poucas cores, enquanto outros criam pinturas com centenas de tonalidades diferentes.",
+    experimente: "Faça a mesma pintura usando apenas cores quentes. Depois tente novamente usando apenas cores frias."
+  },
+  {
+    keywords: ["dancamos", "dançamos", "dancar", "dançar", "por que dançamos"],
+    pergunta: "Por que dançamos?",
+    resposta: "Dançamos para nos expressar com o corpo, acompanhar músicas, celebrar momentos especiais e nos comunicar sem falar. A dança também desenvolve equilíbrio, coordenação e criatividade.",
+    voceSabia: "Existem danças em praticamente todas as culturas do mundo, cada uma com movimentos e significados próprios.",
+    experimente: "Escolha uma música alegre e outra calma. Observe como seu corpo cria movimentos diferentes para cada uma."
+  },
+  {
+    keywords: ["cantamos", "cantar", "por que cantamos"],
+    pergunta: "Por que cantamos?",
+    resposta: "Cantamos para expressar emoções, contar histórias, celebrar acontecimentos e nos divertir. O canto também ajuda a desenvolver a memória e a respiração.",
+    voceSabia: "Antes mesmo de aprender a escrever, muitas culturas ensinavam histórias importantes por meio das canções."
+  },
+  {
+    keywords: ["teatro", "fazemos teatro", "fazer teatro", "por que fazemos teatro"],
+    pergunta: "Por que fazemos teatro?",
+    resposta: "Fazemos teatro para representar personagens, contar histórias e compreender diferentes pontos de vista. No teatro usamos o corpo, a voz e a imaginação.",
+    voceSabia: "No teatro, uma mesma história pode ser apresentada de muitas maneiras diferentes."
+  },
+  {
+    keywords: ["musica", "música", "fazemos musica", "fazemos música", "por que fazemos musica", "por que fazemos música"],
+    pergunta: "Por que fazemos música?",
+    resposta: "Fazemos música para criar sons organizados que despertam emoções, acompanham festas, contam histórias e fazem parte da cultura das pessoas.",
+    voceSabia: "Alguns instrumentos musicais têm milhares de anos de história."
+  },
+  {
+    keywords: ["aprendemos arte", "aprender arte", "por que aprendemos arte"],
+    pergunta: "Por que aprendemos arte?",
+    resposta: "Aprendemos arte porque ela desenvolve a criatividade, a observação, a imaginação e a capacidade de resolver problemas. A arte também ajuda a compreender diferentes culturas e formas de pensar.",
+    voceSabia: "Médicos, engenheiros, arquitetos, cientistas e inventores também usam habilidades desenvolvidas pela arte, como observar detalhes, imaginar soluções e criar novas ideias.",
+    experimente: "Observe um objeto comum durante um minuto. Depois tente desenhá-lo sem olhar novamente. Compare os dois momentos e descubra quantos detalhes você percebeu."
+  },
+  {
+    keywords: ["estudamos artistas", "estudar artistas", "por que estudamos artistas"],
+    pergunta: "Por que estudamos artistas?",
+    resposta: "Estudamos artistas para conhecer diferentes maneiras de criar, descobrir técnicas, entender outras épocas da história e encontrar inspiração para desenvolver nosso próprio estilo."
+  },
+  {
+    keywords: ["criatividade", "existe criatividade", "por que existe criatividade"],
+    pergunta: "Por que existe criatividade?",
+    resposta: "A criatividade existe porque o ser humano consegue imaginar possibilidades, combinar ideias e criar soluções para desafios. Ela está presente na arte, na ciência, na tecnologia e em muitas atividades do dia a dia."
+  },
+  {
+    keywords: ["imaginamos", "imaginar", "imagina", "por que imaginamos"],
+    pergunta: "Por que imaginamos?",
+    resposta: "Imaginamos para criar histórias, resolver problemas, inventar coisas novas e pensar em possibilidades que ainda não existem. A imaginação é uma das ferramentas mais importantes da arte."
+  },
+  {
+    keywords: ["aprender a desenhar", "aprender desenhar", "por que aprender a desenhar"],
+    pergunta: "Por que aprender a desenhar?",
+    resposta: "Aprender a desenhar ajuda a observar melhor o mundo, desenvolver a coordenação das mãos, organizar ideias e comunicar pensamentos por meio de imagens. Desenhar é uma habilidade que melhora com a prática."
+  }
+];
+
+function resolverPorqueMessage(normalizedMsg: string): { reply: string, matchedKey?: string } | null {
+  const isPorqueQuestion = normalizedMsg.includes("por que") || 
+                           normalizedMsg.includes("porque") || 
+                           normalizedMsg.includes("por que") || 
+                           normalizedMsg.includes("porquê") || 
+                           normalizedMsg.includes("por que ");
+
+  if (!isPorqueQuestion) return null;
+
+  let bestMatch: typeof PORQUES_ARTE[0] | null = null;
+  let bestScore = 0;
+
+  for (const item of PORQUES_ARTE) {
+    for (const kw of item.keywords) {
+      const normalizedKw = normalizarTexto(kw);
+      if (testarPalavraChave(normalizedMsg, normalizedKw)) {
+        const score = normalizedKw.length;
+        if (score > bestScore) {
+          bestScore = score;
+          bestMatch = item;
+        }
+      }
+    }
+  }
+
+  if (bestMatch) {
+    let reply = `🎨 **${bestMatch.pergunta}**\n\n${bestMatch.resposta}`;
+    if (bestMatch.voceSabia) {
+      reply += `\n\n💡 **Você sabia?**\n${bestMatch.voceSabia}`;
+    }
+    if (bestMatch.experimente) {
+      reply += `\n\n🧪 **Experimente!**\n${bestMatch.experimente}`;
+    }
+    if (bestMatch.pergunteTambem && bestMatch.pergunteTambem.length > 0) {
+      reply += `\n\n❓ **Pergunte também:**\n` + bestMatch.pergunteTambem.map(p => `- ${p}`).join("\n");
+    }
+    reply += `\n\n✨ Como seu professor de arte, adoro ver sua curiosidade colorida brilhando! Quer fazer outra pergunta ou praticar um desenho hoje?`;
+    return {
+      reply: reply,
+      matchedKey: "porque_arte_banco"
+    };
+  }
+
+  return null;
+}
+
+function resolverComoMessage(normalizedMsg: string): { reply: string, matchedKey?: string } | null {
+  const startsWithComo = normalizedMsg.startsWith("como ") || 
+                         normalizedMsg.includes(" como ") || 
+                         normalizedMsg.startsWith("me ensina a ");
+                         
+  if (!startsWithComo) return null;
+  
+  // 1. COMO DESENHAR (Categoria 1)
+  if (normalizedMsg.includes("desenhar") || normalizedMsg.includes("desenho") || normalizedMsg.includes("desenha")) {
+    if (normalizedMsg.includes("cachorro") || normalizedMsg.includes("cao") || normalizedMsg.includes("dog")) {
+      return {
+        reply: `🐾 **COMO DESENHAR UM CACHORRO** 🐶\n\nVamos desenhar juntos! Faça formas bem simples, depois una essas formas, acrescente os detalhes, passe o lápis mais forte, apague as linhas de ajuda e pinte se desejar! 🥰\n\n🎒 **Materiais:** Papel, lápis grafite, borracha e lápis de cor.\n\n✏️ **Passo a Passo:**\n1. **PASSO 1:** Desenhe um círculo para ser a cabeça.\n2. **PASSO 2:** Faça uma forma oval deitada logo abaixo para ser o corpo.\n3. **PASSO 3:** Desenhe quatro perninhas fofas embaixo da forma oval.\n4. **PASSO 4:** Faça duas orelhas caídas ou pontudas nas laterais da cabeça.\n5. **PASSO 5:** Acrescente dois olhinhos brilhantes e cheios de alegria.\n6. **PASSO 6:** Desenhe o focinho redondinho com um belo sorriso.\n7. **PASSO 7:** Faça o rabinho abanando no final do corpo.\n8. **PASSO 8:** Pinte seu novo amiguinho de quatro patas!\n\n💡 **Dicas:** Não aperte muito o lápis no começo para ficar bem fácil de apagar se errar!\n\n⚠️ **Erros comuns:** Desenhar o corpo muito longe ou separado da cabeça. Una-os bem para que ele fique gordinho!\n\n🏆 **Desafio:** Desenhe o seu cachorrinho correndo atrás de uma bola colorida em um lindo parque verde!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_desenhar_cachorro"
+      };
+    }
+    if (normalizedMsg.includes("dragao")) {
+      return {
+        reply: `🐉 **COMO DESENHAR UM DRAGÃO** 🌋\n\nVamos desenhar juntos! Faça formas bem simples, depois una essas formas, acrescente os detalhes, passe o lápis mais forte, apague as linhas de ajuda e pinte se desejar! 🥰\n\n🎒 **Materiais:** Papel, lápis grafite, borracha e canetinhas coloridas.\n\n✏️ **Passo a Passo:**\n1. **PASSO 1:** Desenhe uma forma oval deitada para o corpo e uma menor para a cabeça.\n2. **PASSO 2:** Conecte as duas formas com uma linha ondulada para ser o pescoço comprido.\n3. **PASSO 3:** Desenhe pernas fortes com dedinhos arredondados nas pontas.\n4. **PASSO 4:** Faça asas grandes de morcego nas costas do dragão.\n5. **PASSO 5:** Desenhe pequenos triângulos (espinhos) ao longo do pescoço, costas e rabo.\n6. **PASSO 6:** Acrescente olhos grandes e um sorriso simpático soltando fumaça ou foguinho.\n7. **PASSO 7:** Desenhe um rabo bem comprido que termina em formato de seta.\n8. **PASSO 8:** Pinte com suas cores favoritas (verde, vermelho, dourado ou roxo!).\n\n💡 **Dicas:** Desenhe as asas bem clarinhas no começo para ter certeza de que cabem na folha!\n\n⚠️ **Erros comuns:** Deixar o pescoço e o rabo curtos demais. Dragões adoram curvas longas e imponentes!\n\n🏆 **Desafio:** Desenhe o seu dragão bebê saindo de dentro de um ovo misterioso decorado com joias!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_desenhar_dragao"
+      };
+    }
+    if (normalizedMsg.includes("casa")) {
+      return {
+        reply: `🏠 **COMO DESENHAR UMA CASA** 🏡\n\nVamos desenhar juntos! Faça formas bem simples, depois una essas formas, acrescente os detalhes, passe o lápis mais forte, apague as linhas de ajuda e pinte se desejar! 🥰\n\n🎒 **Materiais:** Papel, lápis, régua para ajudar nas retas e lápis de cor.\n\n✏️ **Passo a Passo:**\n1. **PASSO 1:** Desenhe um quadrado grande no centro da folha para ser a parede da casa.\n2. **PASSO 2:** Faça um triângulo grande logo em cima do quadrado para ser o telhado.\n3. **PASSO 3:** Desenhe um retângulo em pé dentro do quadrado para fazer a porta.\n4. **PASSO 4:** Faça dois pequenos quadrados nas laterais para serem as janelas.\n5. **PASSO 5:** Adicione uma cruz dentro das janelas para parecer os vidros separados.\n6. **PASSO 6:** Desenhe uma chaminé retangular no telhado com fumaça subindo em caracol.\n7. **PASSO 7:** Coloque uma maçaneta redondinha na porta.\n8. **PASSO 8:** Pinte tudo com cores alegres!\n\n💡 **Dicas:** Desenhe flores na base das paredes e um caminho de pedrinhas saindo da porta!\n\n⚠️ **Erros comuns:** Fazer a porta flutuando no meio da parede. Lembre-se de encostá-la na linha do chão!\n\n🏆 **Desafio:** Desenhe uma incrível casa na árvore secreta com uma escada de cordas pendurada!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_desenhar_casa"
+      };
+    }
+    if (normalizedMsg.includes("castelo")) {
+      return {
+        reply: `🏰 **COMO DESENHAR UM CASTELO** 🛡️\n\nVamos desenhar juntos! Faça formas bem simples, depois una essas formas, acrescente os detalhes, passe o lápis mais forte, apague as linhas de ajuda e pinte se desejar! 🥰\n\n🎒 **Materiais:** Papel, lápis grafite, borracha e canetinhas de colorir.\n\n✏️ **Passo a Passo:**\n1. **PASSO 1:** Desenhe um retângulo grande deitado para ser a muralha principal.\n2. **PASSO 2:** Faça duas torres altas nas pontas usando retângulos verticais compridos.\n3. **PASSO 3:** No topo da muralha, desenhe pequenos quadradinhos subindo e descendo (muralhas denteadas).\n4. **PASSO 4:** Coloque telhados em formato de cone (triângulos altos) em cima de cada torre.\n5. **PASSO 5:** Faça um portão bem grande e arredondado bem no meio.\n6. **PASSO 6:** Desenhe bandeirinhas triangulares flutuando no topo de cada telhado cônico.\n7. **PASSO 7:** Adicione janelinhas em formato de arco de cabeça para baixo nas torres.\n8. **PASSO 8:** Pinte as paredes de cinza e azul, e use cores brilhantes e divertivas nas bandeiras!\n\n💡 **Dicas:** Faça pequenos risquinhos de "tijolos" espalhados pelas paredes para dar um toque antigo!\n\n⚠️ **Erros comuns:** Esquecer as janelas das torres! Os guardas do castelo precisam de janelinhas para vigiar!\n\n🏆 **Desafio:** Desenhe um fosso ao redor do seu castelo com uma ponte levadiça e um jacaré camarada!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_desenhar_castelo"
+      };
+    }
+    if (normalizedMsg.includes("cavalo")) {
+      return {
+        reply: `🐴 **COMO DESENHAR UM CAVALINHO** 🌾\n\nVamos desenhar juntos! Faça formas bem simples, depois una essas formas, acrescente os detalhes, passe o lápis mais forte, apague as linhas de ajuda e pinte se desejar! 🥰\n\n🎒 **Materiais:** Papel, lápis, borracha e giz de cera ou lápis colorido.\n\n✏️ **Passo a Passo:**\n1. **PASSO 1:** Desenhe uma forma oval grande e deitada para o corpo do cavalo.\n2. **PASSO 2:** Faça uma forma oval menor inclinada um pouco mais acima para ser a cabeça.\n3. **PASSO 3:** Trace duas linhas fortes para ligar a cabeça ao corpo, formando o pescoço.\n4. **PASSO 4:** Desenhe quatro pernas compridas e firmes embaixo do corpo com cascos quadrados.\n5. **PASSO 5:** Faça duas orelhas pontudinhas voltadas para cima na cabeça.\n6. **PASSO 6:** Desenhe uma crina longa no pescoço e um rabo cheio de pelos fofos voando com o vento.\n7. **PASSO 7:** Faça o olho expressivo e o focinho na ponta da cabeça.\n8. **PASSO 8:** Pinte seu cavalo de marrom, preto, branco ou cinza com manchinhas!\n\n💡 **Dicas:** Desenhar o pescoço ligeiramente grosso ajuda o cavalo a parecer forte e elegante!\n\n⚠️ **Erros comuns:** Fazer as pernas muito curtinhas ou o rabo murcho. Cavalos adoram galopar com rabos esvoaçantes!\n\n🏆 **Desafio:** Desenhe o seu cavalo saltando por cima de um tronco de árvore caída em um campo florido!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_desenhar_cavalo"
+      };
+    }
+    if (normalizedMsg.includes("paisagem")) {
+      return {
+        reply: `🏞️ **COMO DESENHAR UMA PAISAGEM LINDA** 🏔️\n\nVamos desenhar juntos! Faça formas bem simples, depois una essas formas, acrescente os detalhes, passe o lápis mais forte, apague as linhas de ajuda e pinte se desejar! 🥰\n\n🎒 **Materiais:** Papel sulfite, lápis de desenho macio, borracha e uma paleta cheia de cores.\n\n✏️ **Passo a Passo:**\n1. **PASSO 1:** Desenhe uma linha reta horizontal no meio da folha para ser a linha do horizonte (terra e céu).\n2. **PASSO 2:** Faça montanhas em ziguezague acima da linha do horizonte ao fundo.\n3. **PASSO 3:** Desenhe um grande sol redondo surgindo ou se pondo atrás das montanhas.\n4. **PASSO 4:** Crie um rio fazendo curvas, começando bem fininho perto das montanhas e ficando bem largo perto de você.\n5. **PASSO 5:** Faça algumas nuvens fofas de algodão no céu e pássaros voando em forma de "V".\n6. **PASSO 6:** Adicione grama macia e algumas árvores nas margens do seu rio.\n7. **PASSO 7:** Desenhe florzinhas coloridas espalhadas pelo chão em primeiro plano.\n8. **PASSO 8:** Pinte tudo com cores bem alegres e use degradê no céu!\n\n💡 **Dicas:** Coisas que estão longe são menores e clarinhas. Coisas perto de nós são maiores e bem nítidas!\n\n⚠️ **Erros comuns:** Desenhar o rio da mesma largura o caminho todo. Começar fino e terminar largo dá efeito de profundidade!\n\n🏆 **Desafio:** Mude o clima da paisagem! Que tal transformá-la em uma paisagem noturna com uma lua brilhante?\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_desenhar_paisagem"
+      };
+    }
+    if (normalizedMsg.includes("arvore")) {
+      return {
+        reply: `🌳 **COMO DESENHAR UMA ÁRVORE FORTE** 🍎\n\nVamos desenhar juntos! Faça formas bem simples, depois una essas formas, acrescente os detalhes, passe o lápis mais forte, apague as linhas de ajuda e pinte se desejar! 🥰\n\n🎒 **Materiais:** Papel, lápis macio, borracha e giz de cera ou lápis de cor.\n\n✏️ **Passo a Passo:**\n1. **PASSO 1:** Desenhe duas linhas verticais paralelas ligeiramente curvadas para fora para fazer o tronco.\n2. **PASSO 2:** No topo do tronco, divida as linhas abrindo em dois galhos que parecem a letra "Y".\n3. **PASSO 3:** Desenhe uma grande copa fofa de folhas contornando os galhos, parecendo uma nuvem gigante.\n4. **PASSO 4:** Adicione pequenas raízes na parte de baixo do tronco, sumindo na grama macia.\n5. **PASSO 5:** Desenhe pequenos círculos vermelhos na copa para serem maçãs deliciosas ou flores coloridas.\n6. **PASSO 6:** Faça traços curtos e ondulados dentro do tronco para imitar a textura áspera da casca da madeira.\n7. **PASSO 7:** Desenhe um arbusto pequeno ou graminha ao pé da árvore.\n8. **PASSO 8:** Pinte o tronco de marrom terra e as folhas com vários tons de verde vivo!\n\n💡 **Dicas:** Use pequenas nuvens arredondadas encavaladas para fazer a copa, isso dá muito volume real!\n\n⚠️ **Erros comuns:** Fazer o tronco reto como uma régua de parede. Árvores têm curvas e irregularidades lindas!\n\n🏆 **Desafio:** Desenhe uma simpática corujinha morando dentro de uma toca redonda no tronco da sua árvore!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_desenhar_arvore"
+      };
+    }
+    if (normalizedMsg.includes("robo")) {
+      return {
+        reply: `🤖 **COMO DESENHAR UM ROBÔ AMIGO** ⚡\n\nVamos desenhar juntos! Faça formas bem simples, depois una essas formas, acrescente os detalhes, passe o lápis mais forte, apague as linhas de ajuda e pinte se desejar! 🥰\n\n🎒 **Materiais:** Papel, lápis, borracha, caneta esferográfica preta para o contorno final e giz de cera.\n\n✏️ **Passo a Passo:**\n1. **PASSO 1:** Desenhe um quadrado médio para a cabeça e um retângulo grande abaixo para o corpo de metal.\n2. **PASSO 2:** Conecte a cabeça ao corpo com duas pequenas linhas verticais formando um pescoço de ferro.\n3. **PASSO 3:** Faça os braços e pernas usando retângulos compridos divididos em listras (tubos sanfonados).\n4. **PASSO 4:** Desenhe garras de metal no final dos braços, parecendo a letra "C".\n5. **PASSO 5:** Coloque duas antenas engraçadas na cabeça com bolinhas nas pontas.\n6. **PASSO 6:** Desenhe botões redondos, telas quadradas e lâmpadas piscantes no painel do peito do seu robô.\n7. **PASSO 7:** Faça olhos grandes em formato de círculos brilhantes e parafusos nas juntas do corpo.\n8. **PASSO 8:** Pinte com tons metálicos de cinza, prata e acenda os botões com vermelho, azul e verde brilhantes!\n\n💡 **Dicas:** Use objetos redondos, como moedas, para traçar os círculos e botões perfeitamente!\n\n⚠️ **Erros comuns:** Fazer as pernas e braços duros demais sem dobras. Linhas sanfonadas dão movimento ao robô!\n\n🏆 **Desafio:** Crie o seu robô fazendo uma tarefa super divertida, como preparando um bolo espacial gigante!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_desenhar_robo"
+      };
+    }
+    return {
+      reply: `🎨 **COMO DESENHAR QUALQUER COISA** ✨\n\nVamos desenhar juntos! Fazer desenhos incríveis é super divertido quando seguimos passos simples! 🥰\n\n🎒 **Materiais:** Papel em branco, lápis grafite macio, borracha macia e lápis coloridos.\n\n✏️ **Passo a Passo:**\n1. **PASSO 1 (Rascunhar):** Esboce a forma principal usando figuras geométricas bem fáceis (círculos para a cabeça ou flores, ovais para corpos de animais, retângulos para prédios e pernas).\n2. **PASSO 2 (Ligar as Formas):** Una as formas desenhadas com linhas suaves e delicadas para dar forma ao esqueleto do desenho.\n3. **PASSO 3 (Acrescentar Detalhes):** Desenhe as partes menores e mais detalhadas (como olhos, folhagens, janelas, dedinhos ou texturas).\n4. **PASSO 4 (Contornar):** Passe o lápis mais forte (ou uma canetinha preta fina) nas linhas definitivas que você mais gostou.\n5. **PASSO 5 (Apagar):** Apague as linhas geométricas de ajuda que você desenhou clarinho no início.\n6. **PASSO 6 (Pintar):** Dê asas à imaginação pintando seu desenho com as cores que seu coração mandar!\n\n💡 **Dicas:** Nunca aperte o lápis na folha no começo! Manter a mão bem leve é o maior segredo de todo grande artista.\n\n⚠️ **Erros comuns:** Tentar fazer os detalhes pequenininhos logo no primeiro passo. Comece sempre do maior para o menor!\n\n🏆 **Desafio:** Tente fazer o desenho do seu tema favorito em uma versão gigante ou em uma versão bebê bem fofinha!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+      matchedKey: "como_desenhar_geral"
+    };
+  }
+
+  // 2. COMO PINTAR (Categoria 2)
+  if (normalizedMsg.includes("pintar") || normalizedMsg.includes("pintura") || normalizedMsg.includes("pinta")) {
+    if (normalizedMsg.includes("por do sol")) {
+      return {
+        reply: `🌅 **COMO PINTAR UM PÔR DO SOL MÁGICO** 🎨\n\nPintar o entardecer é como espalhar calor e sentimentos na folha! Vamos fazer isso de forma linda e divertida!\n\n🎒 **Materiais:** Papel grosso (para suportar a tinta), pincéis (um largo e um bem fino), tinta guache (amarela, vermelha, azul-escura e preta), potinho com água e paninho.\n\n🎨 **Passo a Passo:**\n1. **PASSO 1:** Escolha três cores principais: amarelo, vermelho e azul-escuro.\n2. **PASSO 2:** Comece pintando de amarelo brilhante a parte mais baixa do seu céu (linha do horizonte).\n3. **PASSO 3:** Vá subindo na folha misturando um pouco de vermelho para criar um laranja quente e vibrante.\n4. **PASSO 4:** No topo da página, adicione a tinta azul-escura pura, criando um degradê suave (misture bem de leve com o vermelho para formar um roxo lindo!).\n5. **PASSO 5:** Deixe o seu céu colorido secar por cerca de 3 minutinhos.\n6. **PASSO 6:** Com o céu seco, use tinta preta pura e o pincel fino para pintar silhuetas na base (como coqueiros, montanhas ou passarinhos voando).\n7. **PASSO 7:** Finalize colocando um semicírculo amarelo-claro na linha do horizonte para representar o sol se deitando!\n\n💡 **Dicas:** Misture as tintas no papel com o pincel levemente úmido, passando-o de forma horizontal de um lado para o outro!\n\n⚠️ **Erros comuns:** Misturar preto diretamente nas cores quentes enquanto estão molhadas. O preto deve ser usado por último para silhuetas pretas perfeitas!\n\n🏆 **Desafio:** Tente pintar esse pôr do sol refletindo sobre um rio ou lago azul e dourado na parte inferior!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_pintar_por_do_sol"
+      };
+    }
+    if (normalizedMsg.includes("floresta") || normalizedMsg.includes("arvores") || normalizedMsg.includes("arvore")) {
+      return {
+        reply: `🌳 **COMO PINTAR UMA FLORESTA ENCANTADA** 🌲\n\nPintar uma floresta é dar vida a um lar cheio de mistérios e natureza! Vamos criar esse bosque maravilhoso juntos!\n\n🎒 **Materiais:** Tela de pintura ou papel grosso, tintas guache verde-claro, verde-escuro, marrom, amarelo e branco, pincéis e uma esponja de louça limpa.\n\n🎨 **Passo a Passo:**\n1. **PASSO 1:** Pinte um fundo suave misturando azul-celeste e branco para fazer o céu que aparece por trás das árvores.\n2. **PASSO 2:** Use tinta marrom diluída e um pincel plano para desenhar os troncos das árvores. Faça troncos fininhos ao fundo e mais grossos perto de você.\n3. **PASSO 3:** Umedeça a ponta da sua esponja na tinta verde-escura e dê batidinhas leves para criar as folhas densas da floresta.\n4. **PASSO 4:** Repita as batidinhas com verde-claro por cima para criar camadas de folhas iluminadas.\n5. **PASSO 5:** Adicione toques de tinta amarela no topo de algumas árvores para simular os raios de sol batendo.\n6. **PASSO 6:** Pinte o chão com batidinhas marrons e verdes para simular terra úmida e grama fofa.\n7. **PASSO 7:** Pinte pequenas flores batendo a ponta do cabo do pincel sujo de tinta vermelha ou amarela no chão!\n\n💡 **Dicas:** Deixar pequenas frestas brancas do fundo sem cobrir dá a impressão fantástica de luz real vazando entre os galhos!\n\n⚠️ **Erros comuns:** Usar apenas um tipo de verde. Misturar amarelo ao verde cria tons cheios de luz natural e riqueza!\n\n🏆 **Desafio:** Desenhe um pequeno cervo ou coelho marrom espreitando silenciosamente entre as folhagens do seu bosque!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_pintar_floresta"
+      };
+    }
+    if (normalizedMsg.includes("flor")) {
+      return {
+        reply: `🌸 **COMO PINTAR UMA LINDA FLOR** 🌺\n\nPintar flores é espalhar perfume e cores alegres pela nossa imaginação! Vamos criar uma obra de arte floral!\n\n🎒 **Materiais:** Papel, tintas de cores vivas (rosa, vermelho, violeta ou azul), tinta verde e amarela, pincel macio arredondado.\n\n🎨 **Passo a Passo:**\n1. **PASSO 1:** Pinte o fundo da folha com uma cor clarinha neutra (como azul-bebê ou verde-claro) e espere secar.\n2. **PASSO 2:** Use tinta amarela ou laranja pura para pintar um círculo gordinho bem no centro da folha (o miolo).\n3. **PASSO 3:** Carregue seu pincel com a cor escolhida para as pétalas e posicione a ponta perto do miolo, aperte um pouco e puxe para fora para pintar as pétalas redondinhas.\n4. **PASSO 4:** Repita o movimento fazendo pétalas unidas por toda a volta do círculo central.\n5. **PASSO 5:** Use tinta verde e trace um caule comprido descendo do miolo até a base da folha, com duas folhas pontudinhas nas laterais.\n6. **PASSO 6:** Molhe a pontinha do cabo do pincel na tinta branca e faça pequenos pontinhos delicados no miolo amarelo para imitar o pólen.\n7. **PASSO 7:** Adicione pequenos riscos finos de cor vermelha ou rosa-escura na base de cada pétala para dar profundidade e sombra real!\n\n💡 **Dicas:** Gire a folha de papel enquanto pinta as pétalas, isso ajuda a manter o mesmo ângulo e conforto para as suas mãos!\n\n⚠️ **Erros comuns:** Pintar as pétalas afastadas demais do miolo. Elas devem nascer e encostar diretamente no centro da flor!\n\n🏆 **Desafio:** Desenhe uma abelhinha gordinha listrada de amarelo e preto voando pertinho da sua flor recém-pintada!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_pintar_flor"
+      };
+    }
+    return {
+      reply: `🎨 **COMO INICIAR SUA PINTURA COM SUCESSO** 🖌️\n\nPintar é uma das formas mais gostosas de expressar quem somos no mundo! Vamos aprender a pintar de forma profissional!\n\n🎒 **Materiais:** Guache ou tinta acrílica escolar, pincéis de diferentes pontas, papel encorpado, potinho com água e paninho macio.\n\n🎨 **Passo a Passo:**\n1. **PASSO 1:** Escolha sempre de três a cinco cores principais antes de começar, criando uma paleta de cores harmoniosa.\n2. **PASSO 2:** Comece pintando as áreas maiores ao fundo (como o céu ou o chão) e espere secar um pouquinho.\n3. **PASSO 3:** Pinte as formas principais por cima do fundo seco, usando pinceladas firmes e sem pressa.\n4. **PASSO 4:** Aplique camadas de cores: dê uma primeira demão e, se o papel aparecer, passe mais uma demão fina após secar.\n5. **PASSO 5:** Crie luz e sombras usando um pouco de tinta branca para destacar pontos claros e cores escuras para as sombras.\n6. **PASSO 6:** Faça os contornos e pequenos detalhes (olhos, galhos, traços finos) por último, usando o pincel mais fino que tiver.\n7. **PASSO 7:** Deixe secar bem e assine sua obra de arte no cantinho inferior!\n\n💡 **Dicas:** Lave muito bem o seu pincel na água e seque-o no paninho toda vez que for mudar de cor, isso mantém as cores brilhantes e puras!\n\n⚠️ **Erros comuns:** Usar água em excesso na tinta guache, deixando-a transparente e enrugando o papel. A tinta deve ter consistência cremosa!\n\n🏆 **Desafio:** Experimente pintar usando apenas seus dedos (dedografia) ou cotonetes para criar um efeito pontilhista incrível!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+      matchedKey: "como_pintar_geral"
+    };
+  }
+
+  // 3. COMO ESCREVER (Categoria 3 & 8)
+  if (normalizedMsg.includes("escrever") || normalizedMsg.includes("escrita") || normalizedMsg.includes("escreve")) {
+    if (normalizedMsg.includes("poema")) {
+      return {
+        reply: `✍️ **COMO ESCREVER UM POEMA LINDO** 🌸\n\nPoemas são como fotografias de sentimentos tiradas com palavras do coração! Vamos escrever um juntos!\n\n✏️ **Passo a Passo:**\n1. **PASSO 1:** Escolha um tema simples e mágico (ex: seu gatinho, uma estrela cadente, a chuva batendo na janela ou a amizade).\n2. **PASSO 2:** Escreva palavras soltas que descrevem as sensações desse tema (ex: fofura, brilho, calmaria, risadas, cores).\n3. **PASSO 3:** Escreva frases curtas em cada linha. Cada linha do seu poema se chama **verso**!\n4. **PASSO 4:** Brinque com rimas engraçadas ou doces no final das frases (ex: *desenhar* combina com *brincar*, *sol* rima com *caracol*).\n5. **PASSO 5:** Use comparações divertidas e mágicas (ex: "o sol é um prato de ouro brilhando no céu" ou "o mar é um cobertor azul de sereias").\n6. **PASSO 6:** Agrupe as frases de quatro em quatro linhas, separando-as com um espaço. Esses grupos de versos se chamam **estrofes**!\n7. **PASSO 7:** Leia em voz alta e escute a música secreta que as palavras fazem! Faça pequenos ajustes se achar necessário.\n8. **PASSO 8:** Escolha um título super criativo e assine como o grande autor que você é!\n\n💡 **Dicas:** Poemas não precisam ter rimas obrigatoriamente! O mais importante é colocar sentimentos puros e sinceros no texto.\n\n⚠️ **Erros comuns:** Tentar usar palavras difíceis demais que você não usa no dia a dia. A beleza do poema mora na sua simplicidade e afeto!\n\n🏆 **Desafio:** Escreva um acróstico, onde as primeiras letras de cada linha de cima a baixo soletram o seu próprio nome!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer que eu escreva um exemplo de poema pronto para inspirar você? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_escrever_poema"
+      };
+    }
+    if (normalizedMsg.includes("carta")) {
+      if (normalizedMsg.includes("romantica") || normalizedMsg.includes("carinhoso") || normalizedMsg.includes("bilhete")) {
+        return {
+          reply: `❤️ **COMO ESCREVER UMA CARTA ROMÂNTICA OU BILHETE CARINHOSO** 💌\n\nEscrever uma carta carinhosa é uma forma mágica de enviar um abraço em forma de papel para quem amamos! Vamos aprender a estrutura ideal:\n\n✏️ **Passo a Passo:**\n1. **PASSO 1 (Cidade e Data):** Escreva no canto superior esquerdo o nome da sua cidade e o dia de hoje (ex: *Brodowski, 11 de Julho de 2026*).\n2. **PASSO 2 (Saudação de Carinho):** Comece com uma abertura doce e calorosa (ex: *Para minha pessoa mais especial do mundo,*).\n3. **PASSO 3 (O Motivo da Carta):** Diga por que você está escrevendo (ex: *Resolvi colocar em palavras todo o carinho que sinto por você e como você faz meus dias coloridos...*).\n4. **PASSO 4 (Qualidades Sinceras):** Escreva três qualidades fofas que você ama na pessoa (ex: *Eu adoro seu sorriso brilhante, seu abraço bem quentinho e como você sempre me faz rir de piadas bobas*).\n5. **PASSO 5 (Uma Memória Feliz):** Relembre um momento gostoso que vocês passaram juntos brincando ou conversando.\n6. **PASSO 6 (Uma Despedida Doce):** Escolha um tchau cheio de amor (ex: *Com todo o carinho e pinceladas de amor do meu coração,*).\n7. **PASSO 7 (Sua Assinatura):** Assine seu nome bem bonito e decore a folha com corações desenhados!\n\n💡 **Dicas:** Escrever com sua própria letra (em vez de digitar no celular) torna a carta cem vezes mais especial e emocionante!\n\n⚠️ **Erros comuns:** Escrever correndo e deixar a letra ilegível. Escreva devagarzinho, desenhando as letras com muito carinho!\n\n🏆 **Desafio:** Crie um pequeno envelope decorado dobrando papel e cole corações coloridos ou estrelas de glitter para selar o bilhete!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer que eu escreva um exemplo de bilhete romântico/carinhoso para inspirar você? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+          matchedKey: "como_escrever_carta_romantica"
+        };
+      }
+      return {
+        reply: `✉️ **COMO ESCREVER UMA CARTA PERFEITA** 📮\n\nEnviar uma carta é um dos costumes mais lindos da humanidade! Vamos organizar sua carta de forma perfeita e clara:\n\n✏️ **Passo a Passo:**\n1. **PASSO 1 (Cabeçalho):** Escreva no topo esquerdo onde você está e a data de hoje (ex: *Brodowski, 11 de Julho de 2026*).\n2. **PASSO 2 (Cumprimento):** Comece cumprimentando a pessoa com carinho (ex: *Querido amigo,* ou *Querida vovó,*).\n3. **PASSO 3 (Assunto Principal):** Conte as suas novidades, fale sobre os seus desenhos novos, suas aventuras na escola ou suas brincadeiras.\n4. **PASSO 4 (Interesse Real):** Faça perguntas sobre como a pessoa está e o que ela tem feito (ex: *Como estão as coisas por aí? Você tem desenhado bastante?*).\n5. **PASSO 5 (Carinho e Sentimento):** Diga que sente saudades e que espera receber notícias em breve.\n6. **PASSO 6 (Despedida Amigável):** Escolha um final fofo (ex: *Com muitas saudades e um grande abraço,*).\n7. **PASSO 7 (Assinatura):** Escreva seu nome no final de forma bem caprichada.\n\n💡 **Dicas:** Você pode desenhar pequenas ilustrações nas bordas do papel para deixar a carta super personalizada e linda!\n\n⚠️ **Erros comuns:** Esquecer de colocar a data. As datas ajudam a pessoa a lembrar exatamente de quando aquela conversa aconteceu no futuro!\n\n🏆 **Desafio:** Finja que você é um explorador espacial mandando notícias de Marte e escreva uma carta super divertida para a Terra!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer que eu escreva um exemplo de carta pronta para você usar como modelo? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_escrever_carta"
+      };
+    }
+    if (normalizedMsg.includes("historia") || normalizedMsg.includes("conto") || normalizedMsg.includes("redacao")) {
+      return {
+        reply: `📚 **COMO ESCREVER UMA HISTÓRIA OU REDAÇÃO FANTÁSTICA** 🦁\n\nContar histórias é criar mundos mágicos onde tudo é possível! Vamos aprender a receita para uma aventura perfeita:\n\n✏️ **Passo a Passo:**\n1. **PASSO 1 (O Herói):** Escolha quem será o protagonista (um gatinho astronauta ou uma menina com lápis mágico falante).\n2. **PASSO 2 (O Cenário):** Onde a aventura acontece? Em uma floresta flutuante ou no fundo de um pote de geleia?\n3. **PASSO 3 (A Rotina inicial):** Comece apresentando o personagem em seu dia a dia comum (ex: *Era uma vez o gatinho Pipoca...*).\n4. **PASSO 4 (O Problema):** De repente, um mistério ou desafio acontece! (ex: *Numa noite, todas as estrelas perderam o brilho!*).\n5. **PASSO 5 (A Jornada):** Mostre como o herói usa a inteligência, amizade e criatividade para tentar resolver o problema.\n6. **PASSO 6 (O Clímax):** É a parte mais emocionante, onde o problema quase vence, mas o herói encontra uma saída genial!\n7. **PASSO 7 (Final Feliz):** Mostre o que mudou no mundo e o que o herói aprendeu de importante.\n8. **PASSO 8 (Título Atraente):** Crie um título bem curioso para deixar os leitores ansiosos para ler!\n\n💡 **Dicas:** Use adjetivos muito coloridos para descrever as coisas (ex: *árvore de algodão doce cor-de-rosa*)!\n\n⚠️ **Erros comuns:** Resolver o mistério rápido demais sem dar tempo para o leitor ficar curioso. Valorize o mistério!\n\n🏆 **Desafio:** Escreva uma micro-história incrível contendo apenas cinco frases do começo ao fim!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer que eu escreva um exemplo de história mágica curta para você? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_escrever_historia"
+      };
+    }
+    if (normalizedMsg.includes("bilhete") || normalizedMsg.includes("mensagem") || normalizedMsg.includes("aniversario") || normalizedMsg.includes("convite")) {
+      return {
+        reply: `💌 **COMO ESCREVER BILHETES, MENSAGENS E CONVITES INCRÍVEIS** ✨\n\nEscrever mensagens rápidas de carinho ou convites festivos é uma delícia! Vamos aprender a estrutura para cada um:\n\n✏️ **Passo a Passo para Bilhete Carinhoso:**\n1. **PASSO 1:** Escolha um cumprimento fofo (ex: *Oi, meu amigo favorito!*).\n2. **PASSO 2:** Escreva algo curto, sincero e bonito (ex: *Vi essa flor no jardim e lembrei da sua alegria! Obrigado por ser um amigo tão legal.*).\n3. **PASSO 3:** Deixe uma frase de carinho (ex: *Tenha um dia super colorido e cheio de brincadeiras!*).\n4. **PASSO 4:** Despeça-se com fofura (ex: *Abraço quentinho do seu amigo, Candinho.*).\n\n✏️ **Passo a Passo para Convites:**\n1. **PASSO 1 (O Chamado):** Faça uma chamada animada (ex: *Você está convidado para a minha festa de aniversário galáctica!*).\n2. **PASSO 2 (As Informações de Ouro):** Coloque bem claro:\n   - 📅 **Data:** Dia 15 de Outubro\n   - ⏰ **Horário:** Às 15 horas\n   - 🏡 **Local:** Rua da Paleta Mágica, nº 100\n3. **PASSO 3 (Confirmação):** Peça para a pessoa avisar se vai conseguir ir até o dia anterior.\n\n💡 **Dicas:** Coloque uma gotinha de perfume no papel ou use canetinhas com cheiro para dar um toque mágico sensorial!\n\n⚠️ **Erros comuns:** Esquecer de colocar o horário ou local no convite. Sem as informações básicas, os convidados não conseguirão chegar!\n\n🏆 **Desafio:** Crie um convite secreto em forma de mapa do tesouro, onde o local da festa é a ilha secreta de doces!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer que eu escreva um exemplo pronto de bilhete carinhoso ou convite festivo para você? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_escrever_bilhete"
+      };
+    }
+  }
+
+  // 4. COMO CRIAR (Categoria 4)
+  if (normalizedMsg.includes("criar") || normalizedMsg.includes("cria ")) {
+    return {
+      reply: `🌟 **COMO CRIAR PERSONAGENS, MONSTROS E HERÓIS FANTÁSTICOS** 🦸‍♂️\n\nCriar um personagem é como plantar uma sementinha de vida na sua imaginação! Vamos montar a ficha completa dele juntos!\n\n✏️ **Passo a Passo da Criação:**\n1. **PASSO 1 (Identidade):** Escolha o Nome dele, a Idade e se ele é humano, robô, animal místico ou ser extraterrestre.\n2. **PASSO 2 (Superpoderes):** O que ele sabe fazer de mais incrível? (ex: voar em nuvens de algodão doce, disparar raios de cores de guache com as mãos, ou falar com animais mágicos).\n3. **PASSO 3 (O Ponto Fraco):** Todo grande herói ou monstro precisa de um ponto fraco divertido! Isso o torna amigável! (ex: derrete se comer chocolate, tem cócegas nos pés, ou perde as forças se ver água com sabão).\n4. **PASSO 4 (A Personalidade):** Ele é tagarela e brincalhão? Tímido e super inteligente? Ou dorminhoco e comilão? Escreva duas características dele.\n5. **PASSO 5 (Origem de Ouro):** De onde ele veio? (ex: nasceu dentro de um potinho de glitter brilhante ou caiu de uma estrela cadente colorida).\n6. **PASSO 6 (O Visual):** Desenhe a roupinha dele com capa, óculos misteriosos, cinto de utilidades artístico ou espinhos coloridos nas costas!\n\n💡 **Dicas:** Dê a ele um acessório muito marcante, como um boné de cabeça para baixo, uma gravata borboleta néon ou um bichinho de estimação em miniatura!\n\n⚠️ **Erros comuns:** Fazer o seu herói perfeito e sem nenhuma fraqueza. Personagens com pequenos medos ou manias engraçadas são muito mais queridos e divertidos!\n\n🏆 **Desafio:** Desenhe o seu personagem apertando as mãos e fazendo amizade com o seu pior e mais engraçado rival!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer que eu crie a ficha de um personagem inédito e divertido para você? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+      matchedKey: "como_criar_personagem"
+    };
+  }
+
+  // 5. COMO FAZER ARTE (Categoria 5 & 9)
+  if (normalizedMsg.includes("fazer arte") || normalizedMsg.includes("fazer uma") || normalizedMsg.includes("como fazer") || normalizedMsg.includes("fazer origami") || normalizedMsg.includes("dobradura") || normalizedMsg.includes("fantoche") || normalizedMsg.includes("tinta")) {
+    if (normalizedMsg.includes("origami") || normalizedMsg.includes("dobradura")) {
+      return {
+        reply: `🐶 **COMO FAZER UM ORIGAMI/DOBRADURA DE CACHORRINHO** 📄\n\nOrigami é a arte mágica de transformar uma folha de papel comum em animais e objetos incríveis dobrando!\n\n🎒 **Materiais:** Uma folha de papel cortada em formato de quadrado perfeito (todas as quatro laterais com o mesmo tamanho) e caneta preta.\n\n✂️ **Passo a Passo:**\n1. **PASSO 1:** Dobre o seu quadrado de papel ao meio juntando as pontas opostas para formar um grande triângulo perfeito. Passe bem a unha na dobra!\n2. **PASSO 2:** Coloque o triângulo na mesa com a ponta maior virada para baixo.\n3. **PASSO 3 (As Orelhas):** Dobre a ponta esquerda e a ponta direita do triângulo para baixo, criando duas lindas orelhinhas caídas de cachorrinho.\n4. **PASSO 4 (O Focinho):** Pegue a pontinha de baixo do triângulo e dobre um pouquinho para cima, formando o focinho do cãozinho.\n5. **PASSO 5 (O Rosto):** Com a caneta preta, desenhe dois olhinhos redondos brilhantes, algumas sardas na bochecha e pinte a pontinha do focinho de preto.\n6. **PASSO 6:** Desenhe manchinhas marrons ou pretas pela dobradura se quiser um cachorrinho malhado!\n\n💡 **Dicas:** O segredo do origami é apertar muito bem cada dobra usando as costas da unha ou uma colher de metal para ficar firme!\n\n⚠️ **Erros comuns:** Usar papel retangular comum. Se o papel não for um quadrado perfeito, as dobras não vão se encaixar perfeitamente!\n\n🏆 **Desafio:** Tente dobrar um barquinho de papel clássico e teste colocá-lo para navegar em um prato fundo com água azul!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer que eu ensine outra dobradura divertida passo a passo? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_fazer_origami"
+      };
+    }
+    if (normalizedMsg.includes("fantoche")) {
+      return {
+        reply: `🎭 **COMO FAZER UM FANTOCHE DE MEIA SUPER ENGRAÇADO** 🧦\n\nCriar um fantoche é dar vida a um novo amigo tagarela para contar histórias teatrais em casa!\n\n🎒 **Materiais:** Uma meia limpa e velha, pedaços de feltro ou papel colorido, dois botões grandes para os olhos, cola forte ou fita adesiva de dupla face, lã colorida.\n\n🎨 **Passo a Passo:**\n1. **PASSO 1:** Vista a meia na sua mão, posicionando seus dedos na ponta da meia e seu dedão na parte do calcanhar para fazer o movimento da boca abrindo.\n2. **PASSO 2:** Com os dedos dobrados, marque onde fica a junção da boca e cole um pedaço oval de feltro vermelho por dentro para ser a boca e a língua.\n3. **PASSO 3:** Com a meia na mão, marque os pontos acima dos dedos e cole os dois botões grandes para serem os olhinhos expressivos.\n4. **PASSO 4:** Pegue alguns fios de lã colorida, amarre-os no meio com um nozinho e cole no topo da cabeça para fazer um cabelo super descabelado e divertido!\n5. **PASSO 5:** Desenhe adereços com papel colorido: óculos redondos, cílios gigantes, gravatinha borboleta ou dentes afiados de monstrinho comilão!\n6. **PASSO 6:** Dê um nome super engraçado ao seu novo companheiro e invente uma voz bem maluca para ele!\n\n💡 **Dicas:** Use fita adesiva forte ou cola quente (com ajuda de um adulto) para fixar as peças no tecido da meia, pois cola comum pode descolar facilmente durante a brincadeira!\n\n⚠️ **Erros comuns:** Colar os olhos com a meia fora da mão e as peças ficarem tortas ao vestir. Sempre planeje o visual com o fantoche calçado na mão!\n\n🏆 **Desafio:** Reúna sua família por trás do encosto do sofá e apresente uma pequena peça de teatro cantada com o seu fantoche!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer que eu escreva um roteirinho de teatro infantil curto e engraçado para seu fantoche? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_fazer_fantoche"
+      };
+    }
+    if (normalizedMsg.includes("tinta")) {
+      return {
+        reply: `🎨 **COMO FAZER TINTA CASEIRA MÁGICA E SEGURA** 🧪\n\nFazer sua própria tinta é como se transformar em um cientista das cores em seu próprio laboratório de artes!\n\n🎒 **Materiais:** 1 copo de farinha de trigo, 1 copo de sal de cozinha refinado, 1 copo de água morna, corantes alimentícios coloridos, potinhos plásticos limpos e colheres.\n\n🎨 **Passo a Passo:**\n1. **PASSO 1:** Em um recipiente grande, misture bem o copo de farinha de trigo e o copo de sal refinado usando uma colher.\n2. **PASSO 2:** Vá adicionando a água morna bem devagarinho, mexendo sem parar, até que vire uma massa bem cremosa e lisa (com consistência de iogurte).\n3. **PASSO 3:** Distribua essa base cremosa em vários potinhos plásticos menores vazios.\n4. **PASSO 4:** Em cada potinho, pingue de 4 a 6 gotas de um corante alimentício diferente e misture vigorosamente até a cor ficar linda e brilhante!\n5. **PASSO 5:** Pegue papéis grossos ou pedaços de caixas de papelão e pinte usando pincéis, cotonetes ou os seus próprios dedinhos!\n6. **PASSO 6:** Coloque seu desenho para secar ao sol. Ao secar, o sal vai criar um efeito brilhante e saliente sensacional nas pinceladas!\n\n💡 **Dicas:** Se a tinta ficar grossa demais, adicione uma colherzinha de água. Se ficar muito líquida, acrescente uma pitadinha de farinha!\n\n⚠️ **Erros comuns:** Guardar a tinta fora da geladeira por muitos dias. Como é feita com ingredientes naturais, ela pode estragar. Guarde em potes tampados na geladeira por até 3 dias!\n\n🏆 **Desafio:** Pinte um lindo jardim espacial usando apenas sua tinta caseira e dê batidinhas de purpurina por cima enquanto a tinta estiver úmida!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer que eu dê uma receita secreta de tinta de terra ou tinta 3D que cresce no micro-ondas? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+        matchedKey: "como_fazer_tinta"
+      };
+    }
+    return {
+      reply: `🎨 **COMO FAZER ARTE ABSTRATA E OUTRAS CRIAÇÕES** ✂️\n\nFazer arte é soltar a imaginação e transformar materiais simples em decorações espetaculares! Vamos aprender a fazer uma linda Arte Abstrata:\n\n🎒 **Materiais:** Folha de papel branco grande, pincéis, tintas guache coloridas e fita crepe.\n\n🎨 **Passo a Passo:**\n1. **PASSO 1 (Cole as fita):** Cole algumas tiras de fita crepe cruzando a folha de papel em várias direções, criando espaços geométricos fechados.\n2. **PASSO 2 (Escolha as Emoções):** Pense em um sentimento! Se for alegria, separe tintas quentes (amarelo, vermelho, rosa). Se for paz, separe azuis e verdes.\n3. **PASSO 3 (Pinte os Espaços):** Pinte cada espaço delimitado pelas fitas com uma cor sólida e bem vibrante diferente.\n4. **PASSO 4 (Salpicos Divertidos):** Molhe bem o pincel na tinta e na água, segure-o acima do papel e dê batidinhas no cabo com o dedo para salpicar gotinhas coloridas por toda a folha!\n5. **PASSO 5 (A Revelação):** Espere a tinta secar completamente por alguns minutos.\n6. **PASSO 6 (Retire a Fita):** Retire as fitas crepe devagarzinho e com muito cuidado para revelar linhas brancas perfeitamente limpas cruzando seu quadro!\n\n💡 **Dicas:** Arte Abstrata não precisa parecer com coisas reais do mundo (como carros ou árvores). O foco total são o ritmo das cores, as linhas e os sentimentos!\n\n⚠️ **Erros comuns:** Retirar a fita crepe com a tinta ainda muito molhada, o que pode borrar as linhas brancas perfeitas. Tenha paciência e deixe secar bem!\n\n🏆 **Desafio:** Coloque uma música bem alegre para tocar e pinte um desenho abstrato seguindo exatamente as batidas rápidas ou lentas da melodia!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer que eu ensine a fazer um lindo Autorretrato ou uma Colagem de jornais? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+      matchedKey: "como_fazer_arte_geral"
+    };
+  }
+
+  // 6. COMO OBSERVAR / ANALISAR (Categoria 6)
+  if (normalizedMsg.includes("observar") || normalizedMsg.includes("entender uma") || normalizedMsg.includes("analisar") || normalizedMsg.includes("olhar")) {
+    return {
+      reply: `🔍 **COMO OBSERVAR E COMPREENDER OBRAS DE ARTE** 🖼️\n\nOlhar para uma pintura é como abrir uma janela para os segredos e sonhos de um artista! Vamos aprender a ser detetives da arte:\n\n✏️ **Passo a Passo da Observação:**\n1. **PASSO 1 (Os 30 segundos):** Olhe para o desenho ou pintura inteira em silêncio absoluto por 30 segundos. Deixe seus olhos passearem livremente.\n2. **PASSO 2 (O Ponto de Destaque):** O que chamou a sua atenção primeiro? Foi uma cor bem forte? Um personagem engraçado? Ou uma forma gigantesca?\n3. **PASSO 3 (As Cores Emocionais):** Repare nas cores dominantes. São quentes (amarelos, vermelhos) que dão agitação e calor? Ou frias (azuis, verdes) que trazem calmaria e mistério?\n4. **PASSO 4 (As Linhas Secretas):** Olhe os traços. Eles são retos e geométricos como construções ou são cheios de ondas e curvas que parecem flutuar no ar?\n5. **PASSO 5 (O Jogo de Detetive):** Quem são os personagens e o que eles estão fazendo? Onde eles estão? Tente inventar uma historinha curta do que aconteceu um minuto antes dessa cena ser pintada!\n6. **PASSO 6 (Sinta o Coração):** Feche os olhos e pense: que emoção essa obra traz para dentro de você? Alegria, calmaria, curiosidade ou agitação?\n\n💡 **Dicas:** Na arte, não existem respostas erradas! Cada pessoa enxerga o mundo de uma forma única e todas as opiniões são pinceladas de genialidade.\n\n⚠️ **Erros comuns:** Olhar para a obra por apenas um segundo e achar que já viu tudo. Pinturas famosas escondem detalhes escondidos e truques que só aparecem com paciência!\n\n🏆 **Desafio:** Escolha um desenho na sua casa e tente imitá-lo fazendo uma pose viva estátua igualzinha ao personagem do quadro!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer ver uma análise divertida e detalhada da famosa "Mona Lisa" ou do "Abaporu"? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+      matchedKey: "como_observar_arte"
+    };
+  }
+
+  // 7. COMO MELHORAR (Categoria 7)
+  if (normalizedMsg.includes("melhorar") || normalizedMsg.includes("desenhar melhor") || normalizedMsg.includes("pintar melhor")) {
+    return {
+      reply: `🚀 **COMO MELHORAR SEUS DESENHOS E PINTURAS TODOS OS DIAS** ⭐\n\nDesenhar e pintar são habilidades mágicas que crescem e ficam cada vez mais lindas com treino e carinho! Vamos aprender os segredos para evoluir:\n\n✏️ **Passo a Passo para Melhorar:**\n1. **PASSO 1 (Praticar Diariamente):** Tenha sempre por perto um pequeno caderno de esboços (sketchbook). Desenhar apenas 10 minutinhos todos os dias solta os músculos da mão!\n2. **PASSO 2 (Copiar com Respeito):** Olhe desenhos de artistas que você adora e tente copiar os traços deles. Isso ensina novos caminhos e formas ao seu cérebro!\n3. **PASSO 3 (Desenhar o Mundo Real):** Coloque um objeto simples sobre a mesa (uma caneca, uma maçã ou o seu brinquedo preferido) e tente desenhá-los exatamente como o vê.\n4. **PASSO 4 (Esboçar Clarito):** Comece sempre desenhando círculos e retângulos bem fraquinhos para planejar o espaço antes de colocar os detalhes definitivos.\n5. **PASSO 5 (A Borracha é Amiga):** Não tenha medo de errar e apagar! Errar faz parte do caminho e nos mostra como aperfeiçoar nossos traços.\n6. **PASSO 6 (Mudar de Materiais):** Se você só usa canetinhas, experimente giz de cera, guache, carvão ou lápis aquarela. Descubra texturas novas!\n\n💡 **Dicas:** Guarde todos os seus desenhos antigos em uma pasta datada! Daqui a alguns meses, você poderá comparar e ver a evolução fantástica que conquistou!\n\n⚠️ **Erros comuns:** Desistir logo no primeiro rascunho torto. Lembre-se: até os maiores pintores da história começaram fazendo bonequinhos de palito simples!\n\n🏆 **Desafio:** Tente fazer o desenho de um objeto sem tirar o lápis do papel nenhuma vez! É um exercício super engraçado que melhora a coordenação motora!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer que eu dê uma lista de três exercícios práticos e rápidos para soltar a mão? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+      matchedKey: "como_melhorar_desenho"
+    };
+  }
+
+  // 10. EXERCÍCIOS ARTÍSTICOS (Categoria 10)
+  if (normalizedMsg.includes("aprender a desenhar") || normalizedMsg.includes("treinar") || normalizedMsg.includes("perspectiva") || normalizedMsg.includes("sombras") || normalizedMsg.includes("anatomia")) {
+    return {
+      reply: `💪 **EXERCÍCIOS DIVERTIDOS PARA TREINAR PERSPECTIVA, SOMBRAS E ANATOMIA** 🧠\n\nPraticar técnicas de arte é como fazer musculação para a imaginação! Vamos treinar de um jeito super divertido e descomplicado:\n\n✏️ **Passo a Passo para Exercitar:**\n1. **PASSO 1 (Treino de Sombras - A Esfera):** Desenhe um círculo simples. Escolha uma ponta para ser o Sol (Luz). No lado oposto ao Sol, pinte com o lápis bem escuro e vá esfumando suavemente com o seu dedo indicador para o centro do círculo. Veja o círculo se transformar em uma esfera redondinha em 3D!\n2. **PASSO 2 (Treino de Perspectiva - O Cubo 3D):** Desenhe um quadrado comum. Agora desenhe outro quadrado idêntico cruzando o primeiro um pouco acima e para a direita. Ligue os quatro cantos correspondentes dos dois quadrados com linhas retas. Parabéns! Você acaba de criar um cubo transparente tridimensional perfeito!\n3. **PASSO 3 (Treino de Anatomia - O Boneco de Palito):** Para desenhar pessoas in poses dinâmicas, desenhe círculos para a cabeça, peito e quadril. Ligue-os com linhas de palito para os braços e pernas. Faça bolinhas menores nas dobras (ombros, cotovelos, joelhos) para marcar as articulações. Fica super fácil cobrir com músculos depois!\n4. **PASSO 4 (O Desenho Cego):** Olhe fixamente para a sua mão fechada e desenhe-a na folha de papel sem olhar para o seu próprio lápis em nenhum momento! Fica super engraçado e ensina seu cérebro a desenhar o que vê de verdade, não o que acha que está vendo!\n\n💡 **Dicas:** Use um lápis macio (como o tipo 2B ou 6B), pois eles soltam grafite bem escuro de forma muito suave, facilitando esfumar sombras com os dedos!\n\n⚠️ **Erros comuns:** Tentar sombrear usando canetinha hidrográfica preta comum. Canetinhas não esfumam bem! Use sempre o lápis grafite para sombras suaves e graduais.\n\n🏆 **Desafio:** Crie um pequeno desenho do seu quarto usando a técnica do cubo 3D para fazer a sua cama em perspectiva real!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Quer que eu dê um desafio prático de sombras fáceis para começarmos agora? (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+      matchedKey: "como_treinar_geral"
+    };
+  }
+
+  // General Como... question fallback
+  return {
+    reply: `🤔 **COMO APRENDER UMA NOVA HABILIDADE** ✨\n\nQue pergunta incrível! Querer saber "como" é o primeiro passo para se tornar um grande mestre ou cientista! Vamos descobrir como aprender esse assunto passo a passo:\n\n🎒 **Materiais recomendados:** Um caderno para anotações, caneta ou lápis coloridos e muita curiosidade!\n\n✏️ **Passo a Passo Geral:**\n1. **PASSO 1 (Descobrir):** Pesquise e divida o assunto em partes bem pequenininhas para não parecer difícil.\n2. **PASSO 2 (Praticar o básico):** Comece fazendo as partes mais fáceis todos os dias (ex: se quer andar de skate, treine primeiro o equilíbrio parado!).\n3. **PASSO 3 (Organizar as etapas):** Faça uma lista numerada de tarefas fáceis e vá riscando as que já aprendeu.\n4. **PASSO 4 (Aprender com Erros):** Quando algo der errado, sorria e tente novamente de um jeito diferente. O erro é o melhor professor!\n5. **PASSO 5 (Pedir Ajuda):** Converse com amigos, professores ou familiares e mostre o que você está tentando criar.\n6. **PASSO 6 (Divertir-se):** A jornada de aprender deve ser cheia de diversão, cores e alegria!\n\n💡 **Dicas:** Dedique apenas de 10 a 15 minutinhos focados por dia. A constância vale muito mais do que passar horas cansativas treinando!\n\n⚠️ **Erros comuns:** Querer aprender tudo perfeitamente logo no primeiro dia. Tenha paciência com você e comemore cada pequena vitória!\n\n🏆 **Desafio:** Tente explicar para alguém da sua casa o que você acabou de aprender sobre esse assunto em menos de um minuto!\n\n---\n**Quer que eu te ajude a dar o próximo passo?** Escolha o que você gostaria agora:\n- 🌟 Um exemplo pronto (digite "exemplo");\n- 🎯 Uma atividade para praticar (digite "praticar");\n- 🌱 Uma versão super fácil (digite "versão fácil");\n- 🚀 Uma versão mais avançada (digite "versão avançada").`,
+    matchedKey: "como_geral_como"
+  };
+}
+
+function resolverFollowUpMessage(normalizedMsg: string): { reply: string, matchedKey?: string } | null {
+  // Check exact follow-up keys or direct matches
+  if (normalizedMsg === "exemplo" || normalizedMsg === "exemplo pronto" || normalizedMsg === "quer que eu escreva um exemplo" || normalizedMsg === "quero exemplo" || normalizedMsg === "me da um exemplo") {
+    return {
+      reply: `🌟 **AQUI ESTÁ UM EXEMPLO SUPER CAPRICHADO PARA SEU APRENDIZADO!** 🎁\n\nComo prometido, fiz um exemplo bem fofinho e cheio de cores para inspirar você! Imagine um gatinho amarelo usando um capacete de astronauta azul-brilhante, flutuando no espaço e tentando pescar estrelas brilhantes com uma varinha mágica feita de um pincel! 🐈‍⬛🚀✨\n\nVeja que estrutura divertida:\n1. **O Cenário:** Fundo azul escuro cheio de pontinhos de glitter (estrelas).\n2. **O Personagem:** Gatinho "Pipoca", listrado, sorridente e com olhos enormes.\n3. **A Ação:** Ele está flutuando e rindo, super feliz com a sua varinha mágica!\n\nNão ficou fofo? Agora tente fazer a sua própria versão no papel colocando as suas cores preferidas! Se quiser mais desafios ou outra dica, é só falar! 🎨`,
+      matchedKey: "como_followup_exemplo"
+    };
+  }
+  
+  if (normalizedMsg === "praticar" || normalizedMsg === "atividade para praticar" || normalizedMsg === "quero praticar" || normalizedMsg === "me da uma atividade") {
+    return {
+      reply: `🎯 **HORA DO DESAFIO! VAMOS PRATICAR JUNTOS!** 💪🎨\n\nPreparei um exercício super divertido para soltar a sua imaginação de artista! Que tal fazermos o **"Desafio do Desenho de Cabeça para Baixo"**?\n\n1. Pegue uma folha de papel branca.\n2. Escolha um brinquedo ou objeto bem simples da sua casa (como um copo ou chaveiro).\n3. Coloque esse objeto de cabeça para baixo na sua frente.\n4. Tente desenhá-lo exatamente como está vendo, de cabeça para baixo! Isso força o seu cérebro a enxergar as formas e linhas reais em vez de desenhar regras de cabeça!\n\nQuando terminar, pinte com canetinhas de cores mágicas! Me conte como ficou o seu desenho! 🤩`,
+      matchedKey: "como_followup_praticar"
+    };
+  }
+  
+  if (normalizedMsg === "facil" || normalizedMsg === "versao facil" || normalizedMsg === "versão fácil" || normalizedMsg === "quero versao facil" || normalizedMsg === "modo facil") {
+    return {
+      reply: `🌱 **VERSÃO SUPER FÁCIL PARA COMEÇAR SEM MEDO!** 🥰\n\nSe você está começando agora, não se preocupe! Vamos fazer a versão simplificada de apenas **3 passos fáceis**:\n\n1. **Passo 1:** Faça apenas uma forma grande e simples na folha (um círculo para bichos, ou um quadrado para prédios e casas).\n2. **Passo 2:** Coloque apenas os detalhes mais importantes (olhos e boca felizes para personagens, telhado e porta para casas).\n3. **Passo 3:** Escolha apenas duas cores que você mais gosta e pinte bem bonito, sem se preocupar em sair das bordas!\n\nProntinho! Viu como desenhar e criar é fácil e relaxante? Se quiser tentar o passo completo depois, me avise! 🌸`,
+      matchedKey: "como_followup_facil"
+    };
+  }
+  
+  if (normalizedMsg === "avancada" || normalizedMsg === "versao avancada" || normalizedMsg === "versão avançada" || normalizedMsg === "quero versao avancada" || normalizedMsg === "modo avancado") {
+    return {
+      reply: `🚀 **MODO ARTISTA AVANÇADO ATIVADO!** 👑✨\n\nUau! Você está pronto para decolar no universo artístico! Vamos colocar técnicas profissionais na sua criação:\n\n1. **Adicione Perspectiva de 3 Pontos:** Crie profundidade extrema fazendo as linhas convergirem para pontos de fuga distantes no horizonte!\n2. **Jogo de Luz e Contraluz:** Escolha uma fonte de luz super forte de um lado e crie sombras projetadas bem marcadas do lado oposto. Use grafite 6B ou tons escuros de tinta para esfumar!\n3. **Mistura de Cores Complementares:** Use o círculo cromático! Coloque cores opostas lado a lado (como azul e laranja, ou roxo e amarelo) para criar um contraste que faz a sua arte saltar aos olhos de quem vê!\n\nTenho certeza de que sua obra vai parecer de museu! Depois me conte o que você criou! 🎨`,
+      matchedKey: "como_followup_avancada"
+    };
+  }
+  
+  return null;
+}
+
 function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any>): { reply: string, matchedKey?: string } | null {
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
+
+  // Intercept "Por que..." questions for Banco de Conhecimentos
+  const porqueRes = resolverPorqueMessage(normalizedMsg);
+  if (porqueRes) return porqueRes;
+
+  // Intercept "Como..." questions for Modo Professor
+  const comoRes = resolverComoMessage(normalizedMsg);
+  if (comoRes) return comoRes;
+
+  // Intercept follow-up selections
+  const followUpRes = resolverFollowUpMessage(normalizedMsg);
+  if (followUpRes) return followUpRes;
 
   // Step A.00: Prioritized Art Periods Check to prevent shadowing or outdated definitions from remote libraries
   const PERIODS_TO_PRIORITIZE = [
