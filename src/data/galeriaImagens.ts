@@ -209,6 +209,16 @@ export const GALERIA_IMAGENS: Record<string, GaleriaItem | GaleriaItem[]> = {
     titulo: "Madalena dos Santos Reinbolt",
     credito: "Madalena dos Santos Reinbolt"
   },
+  di_cavalcanti: {
+    imagemUrl: "https://i.imgur.com/y2bIl3C.jpg",
+    titulo: "Samba",
+    credito: "Di Cavalcanti"
+  },
+  dicavalcanti: {
+    imagemUrl: "https://i.imgur.com/y2bIl3C.jpg",
+    titulo: "Samba",
+    credito: "Di Cavalcanti"
+  },
   cor: {
     imagemUrl: "https://i.imgur.com/eOgA02Z.jpeg",
     titulo: "Definição de Cor",

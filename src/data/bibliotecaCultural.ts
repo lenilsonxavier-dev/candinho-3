@@ -79,6 +79,61 @@ Portinari produziu mais de 5 mil obras ao longo da vida. Seu trabalho é reconhe
     ano_falecimento: "1973",
     categoria: "Modernismo"
   },
+  di_cavalcanti: {
+    palavras_chave: ["di cavalcanti", "dicavalcanti", "emiliano augusto cavalcanti", "cavalcanti", "quem foi di cavalcanti"],
+    inicio: [
+      "🎨 Di Cavalcanti foi um dos artistas mais importantes do Brasil! Ele gostava de pintar pessoas, festas, músicas, trabalhadores e cenas do dia a dia do povo brasileiro."
+    ],
+    explicacao_curta: [
+      "Suas obras são conhecidas pelas cores vivas, pelas formas marcantes e por mostrarem a cultura e a alegria do Brasil. Além de pintor, também foi desenhista, ilustrador e caricaturista."
+    ],
+    ano_nascimento: "1897",
+    ano_falecimento: "1976",
+    categoria: "Modernismo",
+    resposta_direta: `🎨 **Quem foi Di Cavalcanti?**
+
+Di Cavalcanti foi um dos artistas mais importantes do Brasil. Ele gostava de pintar pessoas, festas, músicas, trabalhadores e cenas do dia a dia do povo brasileiro.
+
+Suas obras são conhecidas pelas cores vivas, pelas formas marcantes e por mostrarem a cultura e a alegria do Brasil.
+
+Além de pintor, também foi desenhista, ilustrador e caricaturista.
+
+⚡ **A Semana de Arte Moderna**
+
+Di Cavalcanti ajudou a organizar a Semana de Arte Moderna de 1922, um evento que mudou a história da arte brasileira. Os artistas queriam criar uma arte com mais liberdade e inspirada na cultura do Brasil.
+
+🎨 **Características de suas obras**
+• 🎨 Cores fortes e alegres.
+• 👩 Muitas figuras humanas, principalmente mulheres.
+• 🎶 Cenas de samba, música e festas populares.
+• 🇧🇷 Valorização da cultura brasileira.
+• 😊 Retratos do cotidiano das pessoas.
+
+🖼️ **Algumas obras famosas**
+• Samba (1925)
+• Cinco Moças de Guaratinguetá (1930)
+• Mulheres Protestando (1941)
+• Mulatas
+• Pescadores
+
+💡 **Curiosidade**
+Di Cavalcanti acreditava que a arte brasileira deveria mostrar as pessoas, os costumes e a beleza do nosso país. Por isso, muitas de suas pinturas retratam festas populares, músicos, trabalhadores e cenas do cotidiano.
+
+🏆 **Desafio do Candinho**
+Observe uma pintura de Di Cavalcanti e responda:
+1. Quais cores aparecem mais?
+2. O que as pessoas estão fazendo?
+3. Como você imagina que elas estão se sentindo?
+4. Que sons você acha que existiriam nessa cena?
+
+🌟 **O Candinho diz:**
+"Di Cavalcanti pintava o Brasil com cores, música e alegria. Que cena do seu dia você gostaria de transformar em uma pintura?"
+
+📋 **Ficha Técnica: Di Cavalcanti**
+• **Nome completo:** Emiliano Augusto Cavalcanti de Albuquerque e Melo
+• **Nascimento:** 6 de setembro de 1897, no Rio de Janeiro (RJ), Brasil
+• **Falecimento:** 26 de outubro de 1976, no Rio de Janeiro (RJ), Brasil`
+  },
   silvana_mendes: {
     palavras_chave: ["silvana mendes", "silvia mendes", "silvana", "silvia"],
     inicio: [
