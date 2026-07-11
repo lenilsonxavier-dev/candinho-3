@@ -101,6 +101,61 @@ Portinari produziu mais de 5 mil obras ao longo da vida. Seu trabalho \xE9 recon
     ano_falecimento: "1973",
     categoria: "Modernismo"
   },
+  di_cavalcanti: {
+    palavras_chave: ["di cavalcanti", "dicavalcanti", "emiliano augusto cavalcanti", "cavalcanti", "quem foi di cavalcanti"],
+    inicio: [
+      "\u{1F3A8} Di Cavalcanti foi um dos artistas mais importantes do Brasil! Ele gostava de pintar pessoas, festas, m\xFAsicas, trabalhadores e cenas do dia a dia do povo brasileiro."
+    ],
+    explicacao_curta: [
+      "Suas obras s\xE3o conhecidas pelas cores vivas, pelas formas marcantes e por mostrarem a cultura e a alegria do Brasil. Al\xE9m de pintor, tamb\xE9m foi desenhista, ilustrador e caricaturista."
+    ],
+    ano_nascimento: "1897",
+    ano_falecimento: "1976",
+    categoria: "Modernismo",
+    resposta_direta: `\u{1F3A8} **Quem foi Di Cavalcanti?**
+
+Di Cavalcanti foi um dos artistas mais importantes do Brasil. Ele gostava de pintar pessoas, festas, m\xFAsicas, trabalhadores e cenas do dia a dia do povo brasileiro.
+
+Suas obras s\xE3o conhecidas pelas cores vivas, pelas formas marcantes e por mostrarem a cultura e a alegria do Brasil.
+
+Al\xE9m de pintor, tamb\xE9m foi desenhista, ilustrador e caricaturista.
+
+\u26A1 **A Semana de Arte Moderna**
+
+Di Cavalcanti ajudou a organizar a Semana de Arte Moderna de 1922, um evento que mudou a hist\xF3ria da arte brasileira. Os artistas queriam criar uma arte com mais liberdade e inspirada na cultura do Brasil.
+
+\u{1F3A8} **Caracter\xEDsticas de suas obras**
+\u2022 \u{1F3A8} Cores fortes e alegres.
+\u2022 \u{1F469} Muitas figuras humanas, principalmente mulheres.
+\u2022 \u{1F3B6} Cenas de samba, m\xFAsica e festas populares.
+\u2022 \u{1F1E7}\u{1F1F7} Valoriza\xE7\xE3o da cultura brasileira.
+\u2022 \u{1F60A} Retratos do cotidiano das pessoas.
+
+\u{1F5BC}\uFE0F **Algumas obras famosas**
+\u2022 Samba (1925)
+\u2022 Cinco Mo\xE7as de Guaratinguet\xE1 (1930)
+\u2022 Mulheres Protestando (1941)
+\u2022 Mulatas
+\u2022 Pescadores
+
+\u{1F4A1} **Curiosidade**
+Di Cavalcanti acreditava que a arte brasileira deveria mostrar as pessoas, os costumes e a beleza do nosso pa\xEDs. Por isso, muitas de suas pinturas retratam festas populares, m\xFAsicos, trabalhadores e cenas do cotidiano.
+
+\u{1F3C6} **Desafio do Candinho**
+Observe uma pintura de Di Cavalcanti e responda:
+1. Quais cores aparecem mais?
+2. O que as pessoas est\xE3o fazendo?
+3. Como voc\xEA imagina que elas est\xE3o se sentindo?
+4. Que sons voc\xEA acha que existiriam nessa cena?
+
+\u{1F31F} **O Candinho diz:**
+"Di Cavalcanti pintava o Brasil com cores, m\xFAsica e alegria. Que cena do seu dia voc\xEA gostaria de transformar em uma pintura?"
+
+\u{1F4CB} **Ficha T\xE9cnica: Di Cavalcanti**
+\u2022 **Nome completo:** Emiliano Augusto Cavalcanti de Albuquerque e Melo
+\u2022 **Nascimento:** 6 de setembro de 1897, no Rio de Janeiro (RJ), Brasil
+\u2022 **Falecimento:** 26 de outubro de 1976, no Rio de Janeiro (RJ), Brasil`
+  },
   silvana_mendes: {
     palavras_chave: ["silvana mendes", "silvia mendes", "silvana", "silvia"],
     inicio: [
@@ -7700,6 +7755,16 @@ var GALERIA_IMAGENS = {
     titulo: "Madalena dos Santos Reinbolt",
     credito: "Madalena dos Santos Reinbolt"
   },
+  di_cavalcanti: {
+    imagemUrl: "https://i.imgur.com/y2bIl3C.jpg",
+    titulo: "Samba",
+    credito: "Di Cavalcanti"
+  },
+  dicavalcanti: {
+    imagemUrl: "https://i.imgur.com/y2bIl3C.jpg",
+    titulo: "Samba",
+    credito: "Di Cavalcanti"
+  },
   cor: {
     imagemUrl: "https://i.imgur.com/eOgA02Z.jpeg",
     titulo: "Defini\xE7\xE3o de Cor",
@@ -8895,6 +8960,7 @@ var CONHECIMENTO_CANDINHO = [
   { palavras: ["salvador dal\xED", "dal\xED", "quem foi salvador dal\xED"], resposta: "Salvador Dal\xED (1904\u20131989) foi o principal nome do Surrealismo espanhol. Criou imagens on\xEDricas e provocativas, como os rel\xF3gios derretendo em \u201CA Persist\xEAncia da Mem\xF3ria\u201D. \u23F0" },
   { palavras: ["caravaggio", "quem foi caravaggio"], resposta: "Caravaggio (1571\u20131610) foi um pintor italiano do Barroco. Revolucionou a arte com o uso dram\xE1tico de luz e sombra, t\xE9cnica conhecida como claro-escuro. \u{1F526}" },
   { palavras: ["tarsila do amaral", "tarsila", "quem foi tarsila"], resposta: "Tarsila do Amaral (1886\u20131973) foi uma das principais artistas do Modernismo brasileiro. Criadora de \u201CAbaporu\u201D, contribuiu para o movimento antropof\xE1gico. \u{1F3A8}" },
+  { palavras: ["di cavalcanti", "dicavalcanti", "quem foi di cavalcanti", "emiliano augusto cavalcanti"], resposta: "Di Cavalcanti (1897\u20131976) foi um dos maiores pintores modernistas do Brasil! \u{1F3A8} Ele adorava retratar a cultura nacional, o samba, festas populares e o cotidiano do nosso povo com cores alegres e vibrantes. Ele ajudou a organizar a famosa Semana de Arte Moderna de 1922!", matchedKey: "di_cavalcanti" },
   { palavras: ["ivan cruz", "quem foi ivan cruz"], resposta: "Ivan Cruz (1947\u20132023) foi um artista brasileiro conhecido por retratar brincadeiras infantis tradicionais, valorizando a cultura popular. \u{1FA81}", matchedKey: "ivan_cruz" },
   { palavras: ["candido portinari", "portinari", "quem foi portinari"], resposta: "Candido Portinari (1903\u20131962) foi um pintor brasileiro que retratou temas sociais e o povo trabalhador. Destacam-se os pain\xE9is \u201CGuerra e Paz\u201D. \u{1F468}\u200D\u{1F33E}" },
   { palavras: ["henri matisse", "matisse", "quem foi matisse"], resposta: "Henri Matisse (1869\u20131954) foi um artista franc\xEAs do Fauvismo. Explorou cores vibrantes e formas simplificadas, criando composi\xE7\xF5es alegres e decorativas. \u2702\uFE0F" },
