@@ -191,8 +191,15 @@ export default function App() {
         queryText.toLowerCase().includes("curiosidade") ||
         queryText.toLowerCase().includes("sabia que");
 
+      const lowerQuery = queryText.toLowerCase().trim();
+      const isComoOrPorqueQuery = 
+        lowerQuery.startsWith("como") || 
+        lowerQuery.startsWith("por que") || 
+        lowerQuery.startsWith("porque") || 
+        lowerQuery.startsWith("porquê");
+
       // Auto-display image if the message is for a structured artist (local or backend)
-      const shouldAutoShowImage = containsImageKeywords || isArtistMatched || !!data.matchedKey;
+      const shouldAutoShowImage = containsImageKeywords || isArtistMatched || !!data.matchedKey || isComoOrPorqueQuery;
 
       // Clean local result custom text if child's name was extracted client-side but not server-side
       let replyToShow = data.reply || localResult?.reply || "Ops! Minhas tintas secaram. Pode repetir? 🎨";
@@ -256,7 +263,13 @@ export default function App() {
         queryText.toLowerCase().includes("curiosidade") ||
         queryText.toLowerCase().includes("sabia que");
 
-      const shouldAutoShowImage = containsImageKeywords || isArtistMatched || !!localResult?.matchedKey;
+      const isComoOrPorqueQueryCatch = 
+        queryText.toLowerCase().trim().startsWith("como") || 
+        queryText.toLowerCase().trim().startsWith("por que") || 
+        queryText.toLowerCase().trim().startsWith("porque") || 
+        queryText.toLowerCase().trim().startsWith("porquê");
+
+      const shouldAutoShowImage = containsImageKeywords || isArtistMatched || !!localResult?.matchedKey || isComoOrPorqueQueryCatch;
 
       const errorMessage: Message = {
         id: `error-${Date.now()}`,

@@ -3,7 +3,7 @@ import path from "path";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import { bibliotecaCultural } from "./src/data/bibliotecaCultural.js";
-import { resolverMensagemLocalmente, sugerirTemasAlternativos, extrairNome } from "./src/utils/conversationalEngine.js";
+import { resolverMensagemLocalmente, sugerirTemasAlternativos, extrairNome, normalizarTexto } from "./src/utils/conversationalEngine.js";
 
 const app = express();
 const PORT = 3000;
@@ -1696,9 +1696,29 @@ app.post("/api/groq", async (req: Request, res: Response) => {
       }
     }
 
-    // 3. Busca Imagem Unificada (Se acabou de se apresentar, retorna uma das 5 imagens fofas do Candinho fornecidas pela criança)
+    // 3. Busca Imagem Unificada
     let imagemResult = null;
-    if (acabouDeSeApresentar) {
+    const nMsg = normalizarTexto(mensagem);
+    const isComoQuestion = nMsg.startsWith("como") || (localResult && localResult.matchedKey && localResult.matchedKey.startsWith("como_"));
+    const isPorqueQuestion = nMsg.startsWith("por que") || nMsg.startsWith("porque") || nMsg.startsWith("porquê") || (localResult && localResult.matchedKey && localResult.matchedKey.startsWith("porque_arte_banco"));
+
+    if (isComoQuestion || isPorqueQuestion) {
+      const COMO_PORQUE_IMAGES = [
+        "https://i.imgur.com/TBtYr8Q.jpeg",
+        "https://i.imgur.com/TBtYr8Q.jpeg",
+        "https://i.imgur.com/rWvBZj5.jpeg",
+        "https://i.imgur.com/Lmr8RJT.jpeg",
+        "https://i.imgur.com/BqPOUHm.jpeg",
+        "https://i.imgur.com/7BU6khE.jpeg",
+        "https://i.imgur.com/WjeStw7.jpeg"
+      ];
+      const randomImg = COMO_PORQUE_IMAGES[Math.floor(Math.random() * COMO_PORQUE_IMAGES.length)];
+      imagemResult = {
+        imagemUrl: randomImg,
+        titulo: isComoQuestion ? "Aprenda com o Candinho! 🎨" : "Porquês da Arte com o Candinho! 💡",
+        credito: "Ilustração Educacional"
+      };
+    } else if (acabouDeSeApresentar) {
       const CANDINHO_GREETINGS_IMAGES = [
         "https://i.imgur.com/PYAYlUY.jpg",
         "https://i.imgur.com/UDl1c5j.png",
