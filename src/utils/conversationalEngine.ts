@@ -1427,8 +1427,12 @@ export interface PorqueItem {
   pergunta: string;
   resposta: string;
   voceSabia?: string;
+  voceSabiaEmoji?: string;
   experimente?: string;
+  experimenteEmoji?: string;
   pergunteTambem?: string[];
+  comoFazerEsboco?: string;
+  dicaCandinho?: string;
 }
 
 export const PORQUES_ARTE: PorqueItem[] = [
@@ -1837,15 +1841,27 @@ export const PORQUES_ARTE: PorqueItem[] = [
     keywords: ["aprender a desenhar", "aprender desenhar", "por que aprender a desenhar"],
     pergunta: "Por que aprender a desenhar?",
     resposta: "Aprender a desenhar ajuda a observar melhor o mundo, desenvolver a coordenação das mãos, organizar ideias e comunicar pensamentos por meio de imagens. Desenhar é uma habilidade que melhora com a prática."
+  },
+  {
+    keywords: ["esboco", "esboço", "o que e um esboco", "o que é um esboço", "como fazer um esboco", "como fazer um esboço", "fazer rascunho", "fazer um rascunho", "o que e esboco", "o que é esboço", "rascunho"],
+    pergunta: "O que é um esboço?",
+    resposta: "Um esboço é o primeiro desenho de uma ideia. Ele é feito com linhas leves e simples para ajudar a planejar o desenho antes da versão final.\n\nPense no esboço como um rascunho. Ele serve para experimentar formas, tamanhos e posições sem se preocupar em deixar tudo perfeito.\n\nOs artistas fazem esboços porque é mais fácil corrigir um desenho no começo do que depois de pronto.",
+    voceSabia: "Leonardo da Vinci enchia seus cadernos com esboços antes de criar suas pinturas e invenções. Muitos artistas famosos faziam dezenas de esboços antes de terminar uma obra.",
+    voceSabiaEmoji: "🌟",
+    experimente: "Pegue um lápis e desenhe uma maçã usando apenas um círculo e algumas linhas leves. Não apague nada no começo. Depois, acrescente os detalhes e, por último, faça o contorno mais forte.",
+    experimenteEmoji: "🎨",
+    comoFazerEsboco: "Passo 1: Observe bem o que você quer desenhar.\n\nOlhe para as formas principais. Um gato pode começar com círculos. Uma casa pode começar com um quadrado e um triângulo.\n\nPasso 2: Faça linhas bem leves.\n\nNão aperte o lápis. Assim, será fácil apagar ou mudar o desenho.\n\nPasso 3: Desenhe as formas básicas.\n\nUse círculos, ovais, quadrados, retângulos e triângulos para montar a estrutura.\n\nPasso 4: Acrescente os detalhes.\n\nDepois que as formas estiverem no lugar certo, desenhe olhos, janelas, folhas, roupas ou outros detalhes.\n\nPasso 5: Faça o contorno.\n\nPasse o lápis com um traço mais firme nas linhas que farão parte do desenho final.\n\nPasso 6: Apague as linhas de construção.\n\nRetire apenas as linhas que serviram como guia.",
+    dicaCandinho: "Não tenha medo de fazer um esboço \"torto\". Quase todo desenho bonito começou com linhas simples e algumas correções. O esboço é um espaço para experimentar e aprender."
   }
 ];
 
 function resolverPorqueMessage(normalizedMsg: string): { reply: string, matchedKey?: string } | null {
   const isPorqueQuestion = normalizedMsg.includes("por que") || 
                            normalizedMsg.includes("porque") || 
-                           normalizedMsg.includes("por que") || 
                            normalizedMsg.includes("porquê") || 
-                           normalizedMsg.includes("por que ");
+                           normalizedMsg.includes("esboc") ||
+                           normalizedMsg.includes("esboço") ||
+                           normalizedMsg.includes("rascunh");
 
   if (!isPorqueQuestion) return null;
 
@@ -1868,10 +1884,18 @@ function resolverPorqueMessage(normalizedMsg: string): { reply: string, matchedK
   if (bestMatch) {
     let reply = `🎨 **${bestMatch.pergunta}**\n\n${bestMatch.resposta}`;
     if (bestMatch.voceSabia) {
-      reply += `\n\n💡 **Você sabia?**\n${bestMatch.voceSabia}`;
+      const emoji = bestMatch.voceSabiaEmoji || "💡";
+      reply += `\n\n${emoji} **Você sabia?**\n${bestMatch.voceSabia}`;
     }
     if (bestMatch.experimente) {
-      reply += `\n\n🧪 **Experimente!**\n${bestMatch.experimente}`;
+      const emoji = bestMatch.experimenteEmoji || "🧪";
+      reply += `\n\n${emoji} **Experimente!**\n${bestMatch.experimente}`;
+    }
+    if (bestMatch.comoFazerEsboco) {
+      reply += `\n\n✏️ **Como fazer um esboço?**\n${bestMatch.comoFazerEsboco}`;
+    }
+    if (bestMatch.dicaCandinho) {
+      reply += `\n\n💡 **Dica do Candinho**\n${bestMatch.dicaCandinho}`;
     }
     if (bestMatch.pergunteTambem && bestMatch.pergunteTambem.length > 0) {
       reply += `\n\n❓ **Pergunte também:**\n` + bestMatch.pergunteTambem.map(p => `- ${p}`).join("\n");
