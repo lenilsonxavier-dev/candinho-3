@@ -9707,10 +9707,21 @@ var PORQUES_ARTE = [
     keywords: ["aprender a desenhar", "aprender desenhar", "por que aprender a desenhar"],
     pergunta: "Por que aprender a desenhar?",
     resposta: "Aprender a desenhar ajuda a observar melhor o mundo, desenvolver a coordena\xE7\xE3o das m\xE3os, organizar ideias e comunicar pensamentos por meio de imagens. Desenhar \xE9 uma habilidade que melhora com a pr\xE1tica."
+  },
+  {
+    keywords: ["esboco", "esbo\xE7o", "o que e um esboco", "o que \xE9 um esbo\xE7o", "como fazer um esboco", "como fazer um esbo\xE7o", "fazer rascunho", "fazer um rascunho", "o que e esboco", "o que \xE9 esbo\xE7o", "rascunho"],
+    pergunta: "O que \xE9 um esbo\xE7o?",
+    resposta: "Um esbo\xE7o \xE9 o primeiro desenho de uma ideia. Ele \xE9 feito com linhas leves e simples para ajudar a planejar o desenho antes da vers\xE3o final.\n\nPense no esbo\xE7o como um rascunho. Ele serve para experimentar formas, tamanhos e posi\xE7\xF5es sem se preocupar em deixar tudo perfeito.\n\nOs artistas fazem esbo\xE7os porque \xE9 mais f\xE1cil corrigir um desenho no come\xE7o do que depois de pronto.",
+    voceSabia: "Leonardo da Vinci enchia seus cadernos com esbo\xE7os antes de criar suas pinturas e inven\xE7\xF5es. Muitos artistas famosos faziam dezenas de esbo\xE7os antes de terminar uma obra.",
+    voceSabiaEmoji: "\u{1F31F}",
+    experimente: "Pegue um l\xE1pis e desenhe uma ma\xE7\xE3 usando apenas um c\xEDrculo e algumas linhas leves. N\xE3o apague nada no come\xE7o. Depois, acrescente os detalhes e, por \xFAltimo, fa\xE7a o contorno mais forte.",
+    experimenteEmoji: "\u{1F3A8}",
+    comoFazerEsboco: "Passo 1: Observe bem o que voc\xEA quer desenhar.\n\nOlhe para as formas principais. Um gato pode come\xE7ar com c\xEDrculos. Uma casa pode come\xE7ar com um quadrado e um tri\xE2ngulo.\n\nPasso 2: Fa\xE7a linhas bem leves.\n\nN\xE3o aperte o l\xE1pis. Assim, ser\xE1 f\xE1cil apagar ou mudar o desenho.\n\nPasso 3: Desenhe as formas b\xE1sicas.\n\nUse c\xEDrculos, ovais, quadrados, ret\xE2ngulos e tri\xE2ngulos para montar a estrutura.\n\nPasso 4: Acrescente os detalhes.\n\nDepois que as formas estiverem no lugar certo, desenhe olhos, janelas, folhas, roupas ou outros detalhes.\n\nPasso 5: Fa\xE7a o contorno.\n\nPasse o l\xE1pis com um tra\xE7o mais firme nas linhas que far\xE3o parte do desenho final.\n\nPasso 6: Apague as linhas de constru\xE7\xE3o.\n\nRetire apenas as linhas que serviram como guia.",
+    dicaCandinho: 'N\xE3o tenha medo de fazer um esbo\xE7o "torto". Quase todo desenho bonito come\xE7ou com linhas simples e algumas corre\xE7\xF5es. O esbo\xE7o \xE9 um espa\xE7o para experimentar e aprender.'
   }
 ];
 function resolverPorqueMessage(normalizedMsg) {
-  const isPorqueQuestion = normalizedMsg.includes("por que") || normalizedMsg.includes("porque") || normalizedMsg.includes("por que") || normalizedMsg.includes("porqu\xEA") || normalizedMsg.includes("por que ");
+  const isPorqueQuestion = normalizedMsg.includes("por que") || normalizedMsg.includes("porque") || normalizedMsg.includes("porqu\xEA") || normalizedMsg.includes("esboc") || normalizedMsg.includes("esbo\xE7o") || normalizedMsg.includes("rascunh");
   if (!isPorqueQuestion) return null;
   let bestMatch = null;
   let bestScore = 0;
@@ -9731,16 +9742,30 @@ function resolverPorqueMessage(normalizedMsg) {
 
 ${bestMatch.resposta}`;
     if (bestMatch.voceSabia) {
+      const emoji = bestMatch.voceSabiaEmoji || "\u{1F4A1}";
       reply += `
 
-\u{1F4A1} **Voc\xEA sabia?**
+${emoji} **Voc\xEA sabia?**
 ${bestMatch.voceSabia}`;
     }
     if (bestMatch.experimente) {
+      const emoji = bestMatch.experimenteEmoji || "\u{1F9EA}";
       reply += `
 
-\u{1F9EA} **Experimente!**
+${emoji} **Experimente!**
 ${bestMatch.experimente}`;
+    }
+    if (bestMatch.comoFazerEsboco) {
+      reply += `
+
+\u270F\uFE0F **Como fazer um esbo\xE7o?**
+${bestMatch.comoFazerEsboco}`;
+    }
+    if (bestMatch.dicaCandinho) {
+      reply += `
+
+\u{1F4A1} **Dica do Candinho**
+${bestMatch.dicaCandinho}`;
     }
     if (bestMatch.pergunteTambem && bestMatch.pergunteTambem.length > 0) {
       reply += `
