@@ -12559,7 +12559,26 @@ app.post("/api/groq", async (req, res) => {
       }
     }
     let imagemResult = null;
-    if (acabouDeSeApresentar) {
+    const nMsg = normalizarTexto(mensagem);
+    const isComoQuestion = nMsg.startsWith("como") || localResult && localResult.matchedKey && localResult.matchedKey.startsWith("como_");
+    const isPorqueQuestion = nMsg.startsWith("por que") || nMsg.startsWith("porque") || nMsg.startsWith("porqu\xEA") || localResult && localResult.matchedKey && localResult.matchedKey.startsWith("porque_arte_banco");
+    if (isComoQuestion || isPorqueQuestion) {
+      const COMO_PORQUE_IMAGES = [
+        "https://i.imgur.com/TBtYr8Q.jpeg",
+        "https://i.imgur.com/TBtYr8Q.jpeg",
+        "https://i.imgur.com/rWvBZj5.jpeg",
+        "https://i.imgur.com/Lmr8RJT.jpeg",
+        "https://i.imgur.com/BqPOUHm.jpeg",
+        "https://i.imgur.com/7BU6khE.jpeg",
+        "https://i.imgur.com/WjeStw7.jpeg"
+      ];
+      const randomImg = COMO_PORQUE_IMAGES[Math.floor(Math.random() * COMO_PORQUE_IMAGES.length)];
+      imagemResult = {
+        imagemUrl: randomImg,
+        titulo: isComoQuestion ? "Aprenda com o Candinho! \u{1F3A8}" : "Porqu\xEAs da Arte com o Candinho! \u{1F4A1}",
+        credito: "Ilustra\xE7\xE3o Educacional"
+      };
+    } else if (acabouDeSeApresentar) {
       const CANDINHO_GREETINGS_IMAGES = [
         "https://i.imgur.com/PYAYlUY.jpg",
         "https://i.imgur.com/UDl1c5j.png",
