@@ -9308,9 +9308,1379 @@ O desenho \xE9 uma das formas mais antigas de comunica\xE7\xE3o da humanidade e 
     matchedKey: "desenho_brasil"
   }
 ];
+var PORQUES_ARTE = [
+  // 🎨 PORQUÊS DOS MATERIAIS
+  {
+    keywords: ["guache", "tinta guache"],
+    pergunta: "Por que usamos tinta guache?",
+    resposta: "Porque o guache tem cores fortes, cobre bem o papel e seca rapidamente. Ele tamb\xE9m permite corrigir partes da pintura e fazer novas camadas de tinta."
+  },
+  {
+    keywords: ["aquarela", "usamos aquarela"],
+    pergunta: "Por que usamos aquarela?",
+    resposta: "Porque a aquarela cria pinturas leves e transparentes. A \xE1gua faz parte da pintura e produz efeitos delicados."
+  },
+  {
+    keywords: ["tinta acrilica", "acrilica"],
+    pergunta: "Por que usamos tinta acr\xEDlica?",
+    resposta: "Porque seca r\xE1pido, tem cores vivas e pode ser usada em tela, madeira, papel e outros materiais."
+  },
+  {
+    keywords: ["tinta a oleo", "tinta oleo", "oleo sobre tela"],
+    pergunta: "Por que usamos tinta a \xF3leo?",
+    resposta: "Porque seca lentamente, permitindo misturar cores por mais tempo e criar muitos detalhes."
+  },
+  {
+    keywords: ["lapis de cor", "lapis colorido"],
+    pergunta: "Por que usamos l\xE1pis de cor?",
+    resposta: "Porque ele permite controlar melhor os detalhes e fazer diferentes intensidades de cor."
+  },
+  {
+    keywords: ["giz de cera", "giz cera"],
+    pergunta: "Por que usamos giz de cera?",
+    resposta: "Porque desliza facilmente no papel, possui cores vibrantes e \xE9 f\xE1cil de usar pelas crian\xE7as."
+  },
+  {
+    keywords: ["carvao", "carv\xE3o"],
+    pergunta: "Por que usamos carv\xE3o?",
+    resposta: "Porque cria sombras fortes e facilita o estudo da luz e do volume."
+  },
+  {
+    keywords: ["nanquim", "tinta nanquim"],
+    pergunta: "Por que usamos nanquim?",
+    resposta: "Porque produz linhas muito pretas, precisas e permanentes."
+  },
+  {
+    keywords: ["pinceis diferentes", "pinceis", "pincel diferente", "pincel"],
+    pergunta: "Por que usamos pinc\xE9is diferentes?",
+    resposta: "Porque cada pincel cria um tipo diferente de tra\xE7o, textura e acabamento."
+  },
+  {
+    keywords: ["espatula", "espatulas"],
+    pergunta: "Por que usamos esp\xE1tula?",
+    resposta: "Porque cria texturas grossas e efeitos que o pincel n\xE3o consegue fazer."
+  },
+  // ✏️ PORQUÊS DO DESENHO
+  {
+    keywords: ["rascunho", "fazer rascunho", "fazemos rascunho"],
+    pergunta: "Por que fazemos um rascunho?",
+    resposta: "Porque ele ajuda a planejar o desenho antes da vers\xE3o final."
+  },
+  {
+    keywords: ["formas simples", "desenhamos formas simples", "formas simples primeiro"],
+    pergunta: "Por que desenhamos formas simples primeiro?",
+    resposta: "Porque c\xEDrculos, quadrados e tri\xE2ngulos ajudam a construir figuras mais complexas."
+  },
+  {
+    keywords: ["apagamos algumas linhas", "apagar algumas linhas", "apagamos linhas", "apagar linhas"],
+    pergunta: "Por que apagamos algumas linhas?",
+    resposta: "Porque elas serviram apenas como guia durante o desenho."
+  },
+  {
+    keywords: ["olhando para o objeto", "olhando objeto", "desenhar olhando"],
+    pergunta: "Por que desenhar olhando para o objeto?",
+    resposta: "Porque observar melhora a percep\xE7\xE3o das formas, propor\xE7\xF5es e detalhes."
+  },
+  {
+    keywords: ["todos os dias", "desenhar todos os dias", "desenhar todo dia"],
+    pergunta: "Por que desenhar todos os dias?",
+    resposta: "Porque a pr\xE1tica melhora a coordena\xE7\xE3o motora, a observa\xE7\xE3o e a criatividade."
+  },
+  {
+    keywords: ["anatomia", "estudar anatomia"],
+    pergunta: "Por que estudar anatomia?",
+    resposta: "Porque conhecer o corpo ajuda a desenhar pessoas e animais de forma mais convincente."
+  },
+  {
+    keywords: ["perspectiva", "estudar perspectiva"],
+    pergunta: "Por que estudar perspectiva?",
+    resposta: "Porque ela cria a sensa\xE7\xE3o de profundidade em uma superf\xEDcie plana."
+  },
+  {
+    keywords: ["esbocos rapidos", "esbo\xE7os r\xE1pidos", "esboco rapido", "esbo\xE7o r\xE1pido"],
+    pergunta: "Por que fazer esbo\xE7os r\xE1pidos?",
+    resposta: "Porque eles treinam o olhar e ajudam a capturar movimentos."
+  },
+  // 🌈 PORQUÊS DAS CORES
+  {
+    keywords: ["cores quentes", "existem cores quentes"],
+    pergunta: "Por que existem cores quentes?",
+    resposta: "Porque lembram elementos como fogo e sol e costumam transmitir energia."
+  },
+  {
+    keywords: ["cores frias", "existem cores frias"],
+    pergunta: "Por que existem cores frias?",
+    resposta: "Porque lembram \xE1gua, c\xE9u e natureza, transmitindo calma."
+  },
+  {
+    keywords: ["misturamos cores", "misturar cores"],
+    pergunta: "Por que misturamos cores?",
+    resposta: "Porque novas cores podem ser criadas a partir das cores prim\xE1rias."
+  },
+  {
+    keywords: ["cores parecem mais fortes", "cores mais fortes", "parecem mais fortes"],
+    pergunta: "Por que algumas cores parecem mais fortes?",
+    resposta: "Porque possuem maior intensidade e contraste."
+  },
+  {
+    keywords: ["poucas cores", "pinturas usam poucas cores", "usar poucas cores"],
+    pergunta: "Por que algumas pinturas usam poucas cores?",
+    resposta: "Porque isso cria unidade e destaca determinados elementos."
+  },
+  // 🖌️ PORQUÊS DAS TÉCNICAS
+  {
+    keywords: ["fazemos sombras", "sombras", "fazer sombras"],
+    pergunta: "Por que fazemos sombras?",
+    resposta: "Porque elas mostram onde a luz n\xE3o chega e ajudam a criar volume."
+  },
+  {
+    keywords: ["usamos luz", "usar luz"],
+    pergunta: "Por que usamos luz?",
+    resposta: "Porque a luz revela formas, profundidade e atmosfera."
+  },
+  {
+    keywords: ["textura", "usamos textura"],
+    pergunta: "Por que usamos textura?",
+    resposta: "Porque ela faz a superf\xEDcie parecer lisa, \xE1spera, macia ou rugosa."
+  },
+  {
+    keywords: ["linhas", "usamos linhas"],
+    pergunta: "Por que usamos linhas?",
+    resposta: "Porque elas delimitam formas, mostram movimento e organizam a composi\xE7\xE3o."
+  },
+  {
+    keywords: ["pontos", "usamos pontos"],
+    pergunta: "Por que usamos pontos?",
+    resposta: "Porque muitos pontos juntos podem formar imagens, texturas e sombras."
+  },
+  {
+    keywords: ["contraste", "usamos contraste"],
+    pergunta: "Por que usamos contraste?",
+    resposta: "Porque ele destaca partes importantes da obra."
+  },
+  {
+    keywords: ["equilibrio", "equil\xEDbrio", "usamos equilibrio", "usamos equil\xEDbrio"],
+    pergunta: "Por que usamos equil\xEDbrio?",
+    resposta: "Porque distribui os elementos da composi\xE7\xE3o de maneira agrad\xE1vel."
+  },
+  {
+    keywords: ["repeticao", "repeti\xE7\xE3o", "usamos repeticao", "usamos repeti\xE7\xE3o"],
+    pergunta: "Por que usamos repeti\xE7\xE3o?",
+    resposta: "Porque ela cria ritmo visual."
+  },
+  {
+    keywords: ["simetria", "usamos simetria"],
+    pergunta: "Por que usamos simetria?",
+    resposta: "Porque transmite organiza\xE7\xE3o e estabilidade."
+  },
+  {
+    keywords: ["assimetria", "usamos assimetria"],
+    pergunta: "Por que usamos assimetria?",
+    resposta: "Porque pode tornar a composi\xE7\xE3o mais din\xE2mica."
+  },
+  // 🏛️ HISTÓRIA DA ARTE
+  {
+    keywords: ["homens das cavernas", "homem das cavernas", "cavernas desenhavam", "caverna desenhavam"],
+    pergunta: "Por que os homens das cavernas desenhavam?",
+    resposta: "Porque registravam animais, ca\xE7adas e acontecimentos importantes de seu cotidiano."
+  },
+  {
+    keywords: ["egipcios desenhavam", "eg\xEDpcios desenhavam", "egipcios", "eg\xEDpcios", "pessoas de lado", "desenhavam de lado"],
+    pergunta: "Por que os eg\xEDpcios desenhavam pessoas de lado?",
+    resposta: "Porque queriam mostrar cada parte do corpo pelo \xE2ngulo considerado mais reconhec\xEDvel."
+  },
+  {
+    keywords: ["gregos faziam", "esculturas detalhadas", "gregos", "gregas"],
+    pergunta: "Por que os gregos faziam esculturas t\xE3o detalhadas?",
+    resposta: "Porque valorizavam a observa\xE7\xE3o da natureza e do corpo humano."
+  },
+  {
+    keywords: ["romanos copiavam", "romanos", "copiavam esculturas"],
+    pergunta: "Por que os romanos copiavam esculturas gregas?",
+    resposta: "Porque admiravam a arte grega e desejavam preservar esse estilo."
+  },
+  {
+    keywords: ["arte medieval", "medieval era muito religiosa", "religiosa medieval"],
+    pergunta: "Por que a arte medieval era muito religiosa?",
+    resposta: "Porque a religi\xE3o ocupava um papel central na sociedade europeia da \xE9poca."
+  },
+  {
+    keywords: ["surgiu o renascimento", "surgiu renascimento", "renascimento"],
+    pergunta: "Por que surgiu o Renascimento?",
+    resposta: "Porque artistas passaram a estudar a natureza, a ci\xEAncia e o ser humano de maneira mais intensa."
+  },
+  {
+    keywords: ["da vinci estudava anatomia", "leonardo da vinci anatomia", "da vinci anatomia"],
+    pergunta: "Por que Leonardo da Vinci estudava anatomia?",
+    resposta: "Porque queria compreender o corpo para represent\xE1-lo com maior precis\xE3o."
+  },
+  {
+    keywords: ["michelangelo esculpia", "esculpia marmore", "esculpia m\xE1rmore"],
+    pergunta: "Por que Michelangelo esculpia m\xE1rmore?",
+    resposta: "Porque o m\xE1rmore \xE9 resistente, belo e permite criar muitos detalhes."
+  },
+  {
+    keywords: ["van gogh pinceladas", "van gogh", "pinceladas grossas", "gogh pinceladas"],
+    pergunta: "Por que Van Gogh usava pinceladas grossas?",
+    resposta: "Porque queria transmitir emo\xE7\xE3o e movimento atrav\xE9s da pintura."
+  },
+  {
+    keywords: ["monet pintava a mesma", "monet mesma paisagem", "monet"],
+    pergunta: "Por que Monet pintava a mesma paisagem v\xE1rias vezes?",
+    resposta: "Porque desejava mostrar como a luz mudava ao longo do dia."
+  },
+  {
+    keywords: ["picasso mudou", "picasso", "picasso mudou seu jeito"],
+    pergunta: "Por que Picasso mudou seu jeito de pintar?",
+    resposta: "Porque gostava de experimentar novas formas de representar a realidade."
+  },
+  {
+    keywords: ["surgiu a arte abstrata", "surgiu arte abstrata", "arte abstrata", "abstrata"],
+    pergunta: "Por que surgiu a arte abstrata?",
+    resposta: "Porque alguns artistas queriam expressar ideias, sentimentos e formas sem representar objetos reconhec\xEDveis."
+  },
+  {
+    keywords: ["portinari pintava trabalhadores", "portinari", "trabalhadores"],
+    pergunta: "Por que Portinari pintava trabalhadores?",
+    resposta: "Porque desejava retratar o povo brasileiro, seu trabalho e suas dificuldades."
+  },
+  {
+    keywords: ["tarsila do amaral pintava figuras", "tarsila figuras diferentes", "tarsila figuras", "tarsila do amaral figuras"],
+    pergunta: "Por que Tarsila do Amaral pintava figuras diferentes?",
+    resposta: "Porque buscava criar uma arte com identidade brasileira, inspirada em nossa cultura e paisagens."
+  },
+  // 🎭 EXPRESSÃO
+  {
+    keywords: ["arte transmite emocoes", "arte transmite emo\xE7\xF5es", "transmite emocoes", "transmite emo\xE7\xF5es"],
+    pergunta: "Por que a arte transmite emo\xE7\xF5es?",
+    resposta: "Porque artistas usam cores, formas, linhas e temas para comunicar sentimentos e ideias."
+  },
+  {
+    keywords: ["pintura pode parecer triste", "pintura parecer triste", "pintura triste", "obra triste"],
+    pergunta: "Por que uma pintura pode parecer triste?",
+    resposta: "Porque elementos como cores escuras, express\xF5es e composi\xE7\xE3o podem sugerir tristeza."
+  },
+  {
+    keywords: ["obra pode causar medo", "causar medo", "obra causar medo", "obra medo"],
+    pergunta: "Por que uma obra pode causar medo?",
+    resposta: "Porque certas formas, cores e contrastes despertam sensa\xE7\xF5es intensas."
+  },
+  {
+    keywords: ["cada pessoa entende", "pessoa entende de um jeito", "observador diferente"],
+    pergunta: "Por que cada pessoa entende uma obra de um jeito?",
+    resposta: "Porque cada observador possui experi\xEAncias, conhecimentos e emo\xE7\xF5es diferentes."
+  },
+  // 🎨 CRIATIVIDADE
+  {
+    keywords: ["copiar desenhos ajuda", "copiar desenhos", "copiar ajuda"],
+    pergunta: "Por que copiar desenhos ajuda?",
+    resposta: "Porque copiar pode ensinar t\xE9cnicas e desenvolver a coordena\xE7\xE3o, desde que tamb\xE9m haja espa\xE7o para criar obras pr\xF3prias."
+  },
+  {
+    keywords: ["errar faz parte", "erros ajudam", "errar faz parte da arte"],
+    pergunta: "Por que errar faz parte da arte?",
+    resposta: "Porque os erros ajudam a descobrir novas solu\xE7\xF5es e aprimorar as habilidades."
+  },
+  {
+    keywords: ["imaginar e importante", "imaginar \xE9 importante", "imaginar importante"],
+    pergunta: "Por que imaginar \xE9 importante?",
+    resposta: "Porque muitas obras de arte nascem da imagina\xE7\xE3o."
+  },
+  {
+    keywords: ["existem estilos diferentes", "estilos diferentes", "estilos de cada artista"],
+    pergunta: "Por que existem estilos diferentes?",
+    resposta: "Porque cada artista desenvolve sua pr\xF3pria maneira de criar."
+  },
+  // 🤔 CURIOSIDADES
+  {
+    keywords: ["mona lisa parece olhar", "mona lisa olhar para nos", "mona lisa olhar", "olhar mona lisa"],
+    pergunta: "Por que a Mona Lisa parece olhar para n\xF3s?",
+    resposta: "Porque Leonardo da Vinci pintou os olhos de forma que eles parecem acompanhar o observador de diferentes \xE2ngulos."
+  },
+  {
+    keywords: ["esculturas antigas nao tem bracos", "esculturas antigas sem bracos", "sem bracos", "sem bra\xE7os", "esculturas sem bra\xE7os"],
+    pergunta: "Por que algumas esculturas antigas n\xE3o t\xEAm bra\xE7os?",
+    resposta: "Porque muitas foram danificadas pelo tempo, guerras ou acidentes."
+  },
+  {
+    keywords: ["pinturas em tetos", "pintura no teto", "tetos decorados"],
+    pergunta: "Por que existem pinturas em tetos?",
+    resposta: "Porque artistas e arquitetos queriam decorar igrejas, pal\xE1cios e edif\xEDcios, criando a sensa\xE7\xE3o de um espa\xE7o mais grandioso."
+  },
+  {
+    keywords: ["obras valem milhoes", "obras valem milh\xF5es", "valem milhoes", "valem milh\xF5es"],
+    pergunta: "Por que algumas obras valem milh\xF5es?",
+    resposta: "Porque podem ser \xFAnicas, hist\xF3ricas, raras e muito importantes para a cultura."
+  },
+  {
+    keywords: ["artistas assinam", "assinatura do artista", "assinar as obras"],
+    pergunta: "Por que artistas assinam suas obras?",
+    resposta: "Porque a assinatura identifica a autoria e ajuda a registrar quem criou a obra."
+  },
+  {
+    keywords: ["museus nao deixam tocar", "nao pode tocar", "n\xE3o pode tocar", "nao deixam tocar", "n\xE3o deixam tocar"],
+    pergunta: "Por que museus n\xE3o deixam tocar nas obras?",
+    resposta: "Porque o toque pode desgastar, sujar ou danificar materiais delicados."
+  },
+  {
+    keywords: ["pinturas racham", "pintura racha", "tela racha"],
+    pergunta: "Por que algumas pinturas racham?",
+    resposta: "Porque tinta, madeira e tela envelhecem e sofrem altera\xE7\xF5es com o tempo."
+  },
+  {
+    keywords: ["existem restauradores", "restauradores", "restaurador"],
+    pergunta: "Por que existem restauradores?",
+    resposta: "Porque eles estudam t\xE9cnicas para conservar e recuperar obras de arte danificadas."
+  },
+  // 🎨 PORQUÊS SUBJETIVOS E CURIOSIDADES DO CANDINHO
+  {
+    keywords: ["fazemos arte", "fazer arte", "por que fazemos arte"],
+    pergunta: "Por que fazemos arte?",
+    resposta: "Fazemos arte para expressar ideias, sentimentos, sonhos e hist\xF3rias. A arte tamb\xE9m ajuda as pessoas a observar o mundo, imaginar coisas novas e compartilhar o que pensam com outras pessoas.",
+    voceSabia: "As pessoas fazem arte h\xE1 mais de 40 mil anos. Existem pinturas feitas em cavernas muito antes da inven\xE7\xE3o da escrita.",
+    experimente: "Desenhe algo que aconteceu hoje com voc\xEA. Depois mostre para algu\xE9m sem explicar. Veja o que essa pessoa consegue entender apenas olhando o desenho.",
+    pergunteTambem: ["O que \xE9 arte?", "Por que existem artistas?", "Como surgiu a arte?"]
+  },
+  {
+    keywords: ["desenhamos", "desenhar", "por que desenhamos"],
+    pergunta: "Por que desenhamos?",
+    resposta: "Desenhamos para registrar ideias, observar melhor o mundo, criar personagens, planejar objetos e mostrar nossa imagina\xE7\xE3o. Um desenho pode contar uma hist\xF3ria mesmo sem usar palavras.",
+    voceSabia: "Antes de construir pr\xE9dios, criar roupas ou fabricar carros, muitas pessoas fazem desenhos para planejar suas ideias.",
+    experimente: "Olhe para um objeto da sua casa e tente desenh\xE1-lo durante cinco minutos.",
+    pergunteTambem: ["Como desenhar melhor?", "Por que fazer um rascunho?", "O que \xE9 um esbo\xE7o?"]
+  },
+  {
+    keywords: ["pintamos", "pintar", "por que pintamos"],
+    pergunta: "Por que pintamos?",
+    resposta: "Pintamos para dar cor \xE0s nossas ideias. As cores ajudam a mostrar emo\xE7\xF5es, criar ambientes e destacar partes importantes de uma imagem.",
+    voceSabia: "Alguns artistas usam poucas cores, enquanto outros criam pinturas com centenas de tonalidades diferentes.",
+    experimente: "Fa\xE7a a mesma pintura usando apenas cores quentes. Depois tente novamente usando apenas cores frias."
+  },
+  {
+    keywords: ["dancamos", "dan\xE7amos", "dancar", "dan\xE7ar", "por que dan\xE7amos"],
+    pergunta: "Por que dan\xE7amos?",
+    resposta: "Dan\xE7amos para nos expressar com o corpo, acompanhar m\xFAsicas, celebrar momentos especiais e nos comunicar sem falar. A dan\xE7a tamb\xE9m desenvolve equil\xEDbrio, coordena\xE7\xE3o e criatividade.",
+    voceSabia: "Existem dan\xE7as em praticamente todas as culturas do mundo, cada uma com movimentos e significados pr\xF3prios.",
+    experimente: "Escolha uma m\xFAsica alegre e outra calma. Observe como seu corpo cria movimentos diferentes para cada uma."
+  },
+  {
+    keywords: ["cantamos", "cantar", "por que cantamos"],
+    pergunta: "Por que cantamos?",
+    resposta: "Cantamos para expressar emo\xE7\xF5es, contar hist\xF3rias, celebrar acontecimentos e nos divertir. O canto tamb\xE9m ajuda a desenvolver a mem\xF3ria e a respira\xE7\xE3o.",
+    voceSabia: "Antes mesmo de aprender a escrever, muitas culturas ensinavam hist\xF3rias importantes por meio das can\xE7\xF5es."
+  },
+  {
+    keywords: ["teatro", "fazemos teatro", "fazer teatro", "por que fazemos teatro"],
+    pergunta: "Por que fazemos teatro?",
+    resposta: "Fazemos teatro para representar personagens, contar hist\xF3rias e compreender diferentes pontos de vista. No teatro usamos o corpo, a voz e a imagina\xE7\xE3o.",
+    voceSabia: "No teatro, uma mesma hist\xF3ria pode ser apresentada de muitas maneiras diferentes."
+  },
+  {
+    keywords: ["musica", "m\xFAsica", "fazemos musica", "fazemos m\xFAsica", "por que fazemos musica", "por que fazemos m\xFAsica"],
+    pergunta: "Por que fazemos m\xFAsica?",
+    resposta: "Fazemos m\xFAsica para criar sons organizados que despertam emo\xE7\xF5es, acompanham festas, contam hist\xF3rias e fazem parte da cultura das pessoas.",
+    voceSabia: "Alguns instrumentos musicais t\xEAm milhares de anos de hist\xF3ria."
+  },
+  {
+    keywords: ["aprendemos arte", "aprender arte", "por que aprendemos arte"],
+    pergunta: "Por que aprendemos arte?",
+    resposta: "Aprendemos arte porque ela desenvolve a criatividade, a observa\xE7\xE3o, a imagina\xE7\xE3o e a capacidade de resolver problemas. A arte tamb\xE9m ajuda a compreender diferentes culturas e formas de pensar.",
+    voceSabia: "M\xE9dicos, engenheiros, arquitetos, cientistas e inventores tamb\xE9m usam habilidades desenvolvidas pela arte, como observar detalhes, imaginar solu\xE7\xF5es e criar novas ideias.",
+    experimente: "Observe um objeto comum durante um minuto. Depois tente desenh\xE1-lo sem olhar novamente. Compare os dois momentos e descubra quantos detalhes voc\xEA percebeu."
+  },
+  {
+    keywords: ["estudamos artistas", "estudar artistas", "por que estudamos artistas"],
+    pergunta: "Por que estudamos artistas?",
+    resposta: "Estudamos artistas para conhecer diferentes maneiras de criar, descobrir t\xE9cnicas, entender outras \xE9pocas da hist\xF3ria e encontrar inspira\xE7\xE3o para desenvolver nosso pr\xF3prio estilo."
+  },
+  {
+    keywords: ["criatividade", "existe criatividade", "por que existe criatividade"],
+    pergunta: "Por que existe criatividade?",
+    resposta: "A criatividade existe porque o ser humano consegue imaginar possibilidades, combinar ideias e criar solu\xE7\xF5es para desafios. Ela est\xE1 presente na arte, na ci\xEAncia, na tecnologia e em muitas atividades do dia a dia."
+  },
+  {
+    keywords: ["imaginamos", "imaginar", "imagina", "por que imaginamos"],
+    pergunta: "Por que imaginamos?",
+    resposta: "Imaginamos para criar hist\xF3rias, resolver problemas, inventar coisas novas e pensar em possibilidades que ainda n\xE3o existem. A imagina\xE7\xE3o \xE9 uma das ferramentas mais importantes da arte."
+  },
+  {
+    keywords: ["aprender a desenhar", "aprender desenhar", "por que aprender a desenhar"],
+    pergunta: "Por que aprender a desenhar?",
+    resposta: "Aprender a desenhar ajuda a observar melhor o mundo, desenvolver a coordena\xE7\xE3o das m\xE3os, organizar ideias e comunicar pensamentos por meio de imagens. Desenhar \xE9 uma habilidade que melhora com a pr\xE1tica."
+  }
+];
+function resolverPorqueMessage(normalizedMsg) {
+  const isPorqueQuestion = normalizedMsg.includes("por que") || normalizedMsg.includes("porque") || normalizedMsg.includes("por que") || normalizedMsg.includes("porqu\xEA") || normalizedMsg.includes("por que ");
+  if (!isPorqueQuestion) return null;
+  let bestMatch = null;
+  let bestScore = 0;
+  for (const item of PORQUES_ARTE) {
+    for (const kw of item.keywords) {
+      const normalizedKw = normalizarTexto(kw);
+      if (testarPalavraChave(normalizedMsg, normalizedKw)) {
+        const score = normalizedKw.length;
+        if (score > bestScore) {
+          bestScore = score;
+          bestMatch = item;
+        }
+      }
+    }
+  }
+  if (bestMatch) {
+    let reply = `\u{1F3A8} **${bestMatch.pergunta}**
+
+${bestMatch.resposta}`;
+    if (bestMatch.voceSabia) {
+      reply += `
+
+\u{1F4A1} **Voc\xEA sabia?**
+${bestMatch.voceSabia}`;
+    }
+    if (bestMatch.experimente) {
+      reply += `
+
+\u{1F9EA} **Experimente!**
+${bestMatch.experimente}`;
+    }
+    if (bestMatch.pergunteTambem && bestMatch.pergunteTambem.length > 0) {
+      reply += `
+
+\u2753 **Pergunte tamb\xE9m:**
+` + bestMatch.pergunteTambem.map((p) => `- ${p}`).join("\n");
+    }
+    reply += `
+
+\u2728 Como seu professor de arte, adoro ver sua curiosidade colorida brilhando! Quer fazer outra pergunta ou praticar um desenho hoje?`;
+    return {
+      reply,
+      matchedKey: "porque_arte_banco"
+    };
+  }
+  return null;
+}
+function resolverComoMessage(normalizedMsg) {
+  const startsWithComo = normalizedMsg.startsWith("como ") || normalizedMsg.includes(" como ") || normalizedMsg.startsWith("me ensina a ");
+  if (!startsWithComo) return null;
+  if (normalizedMsg.includes("desenhar") || normalizedMsg.includes("desenho") || normalizedMsg.includes("desenha")) {
+    if (normalizedMsg.includes("cachorro") || normalizedMsg.includes("cao") || normalizedMsg.includes("dog")) {
+      return {
+        reply: `\u{1F43E} **COMO DESENHAR UM CACHORRO** \u{1F436}
+
+Vamos desenhar juntos! Fa\xE7a formas bem simples, depois una essas formas, acrescente os detalhes, passe o l\xE1pis mais forte, apague as linhas de ajuda e pinte se desejar! \u{1F970}
+
+\u{1F392} **Materiais:** Papel, l\xE1pis grafite, borracha e l\xE1pis de cor.
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1:** Desenhe um c\xEDrculo para ser a cabe\xE7a.
+2. **PASSO 2:** Fa\xE7a uma forma oval deitada logo abaixo para ser o corpo.
+3. **PASSO 3:** Desenhe quatro perninhas fofas embaixo da forma oval.
+4. **PASSO 4:** Fa\xE7a duas orelhas ca\xEDdas ou pontudas nas laterais da cabe\xE7a.
+5. **PASSO 5:** Acrescente dois olhinhos brilhantes e cheios de alegria.
+6. **PASSO 6:** Desenhe o focinho redondinho com um belo sorriso.
+7. **PASSO 7:** Fa\xE7a o rabinho abanando no final do corpo.
+8. **PASSO 8:** Pinte seu novo amiguinho de quatro patas!
+
+\u{1F4A1} **Dicas:** N\xE3o aperte muito o l\xE1pis no come\xE7o para ficar bem f\xE1cil de apagar se errar!
+
+\u26A0\uFE0F **Erros comuns:** Desenhar o corpo muito longe ou separado da cabe\xE7a. Una-os bem para que ele fique gordinho!
+
+\u{1F3C6} **Desafio:** Desenhe o seu cachorrinho correndo atr\xE1s de uma bola colorida em um lindo parque verde!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_desenhar_cachorro"
+      };
+    }
+    if (normalizedMsg.includes("dragao")) {
+      return {
+        reply: `\u{1F409} **COMO DESENHAR UM DRAG\xC3O** \u{1F30B}
+
+Vamos desenhar juntos! Fa\xE7a formas bem simples, depois una essas formas, acrescente os detalhes, passe o l\xE1pis mais forte, apague as linhas de ajuda e pinte se desejar! \u{1F970}
+
+\u{1F392} **Materiais:** Papel, l\xE1pis grafite, borracha e canetinhas coloridas.
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1:** Desenhe uma forma oval deitada para o corpo e uma menor para a cabe\xE7a.
+2. **PASSO 2:** Conecte as duas formas com uma linha ondulada para ser o pesco\xE7o comprido.
+3. **PASSO 3:** Desenhe pernas fortes com dedinhos arredondados nas pontas.
+4. **PASSO 4:** Fa\xE7a asas grandes de morcego nas costas do drag\xE3o.
+5. **PASSO 5:** Desenhe pequenos tri\xE2ngulos (espinhos) ao longo do pesco\xE7o, costas e rabo.
+6. **PASSO 6:** Acrescente olhos grandes e um sorriso simp\xE1tico soltando fuma\xE7a ou foguinho.
+7. **PASSO 7:** Desenhe um rabo bem comprido que termina em formato de seta.
+8. **PASSO 8:** Pinte com suas cores favoritas (verde, vermelho, dourado ou roxo!).
+
+\u{1F4A1} **Dicas:** Desenhe as asas bem clarinhas no come\xE7o para ter certeza de que cabem na folha!
+
+\u26A0\uFE0F **Erros comuns:** Deixar o pesco\xE7o e o rabo curtos demais. Drag\xF5es adoram curvas longas e imponentes!
+
+\u{1F3C6} **Desafio:** Desenhe o seu drag\xE3o beb\xEA saindo de dentro de um ovo misterioso decorado com joias!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_desenhar_dragao"
+      };
+    }
+    if (normalizedMsg.includes("casa")) {
+      return {
+        reply: `\u{1F3E0} **COMO DESENHAR UMA CASA** \u{1F3E1}
+
+Vamos desenhar juntos! Fa\xE7a formas bem simples, depois una essas formas, acrescente os detalhes, passe o l\xE1pis mais forte, apague as linhas de ajuda e pinte se desejar! \u{1F970}
+
+\u{1F392} **Materiais:** Papel, l\xE1pis, r\xE9gua para ajudar nas retas e l\xE1pis de cor.
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1:** Desenhe um quadrado grande no centro da folha para ser a parede da casa.
+2. **PASSO 2:** Fa\xE7a um tri\xE2ngulo grande logo em cima do quadrado para ser o telhado.
+3. **PASSO 3:** Desenhe um ret\xE2ngulo em p\xE9 dentro do quadrado para fazer a porta.
+4. **PASSO 4:** Fa\xE7a dois pequenos quadrados nas laterais para serem as janelas.
+5. **PASSO 5:** Adicione uma cruz dentro das janelas para parecer os vidros separados.
+6. **PASSO 6:** Desenhe uma chamin\xE9 retangular no telhado com fuma\xE7a subindo em caracol.
+7. **PASSO 7:** Coloque uma ma\xE7aneta redondinha na porta.
+8. **PASSO 8:** Pinte tudo com cores alegres!
+
+\u{1F4A1} **Dicas:** Desenhe flores na base das paredes e um caminho de pedrinhas saindo da porta!
+
+\u26A0\uFE0F **Erros comuns:** Fazer a porta flutuando no meio da parede. Lembre-se de encost\xE1-la na linha do ch\xE3o!
+
+\u{1F3C6} **Desafio:** Desenhe uma incr\xEDvel casa na \xE1rvore secreta com uma escada de cordas pendurada!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_desenhar_casa"
+      };
+    }
+    if (normalizedMsg.includes("castelo")) {
+      return {
+        reply: `\u{1F3F0} **COMO DESENHAR UM CASTELO** \u{1F6E1}\uFE0F
+
+Vamos desenhar juntos! Fa\xE7a formas bem simples, depois una essas formas, acrescente os detalhes, passe o l\xE1pis mais forte, apague as linhas de ajuda e pinte se desejar! \u{1F970}
+
+\u{1F392} **Materiais:** Papel, l\xE1pis grafite, borracha e canetinhas de colorir.
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1:** Desenhe um ret\xE2ngulo grande deitado para ser a muralha principal.
+2. **PASSO 2:** Fa\xE7a duas torres altas nas pontas usando ret\xE2ngulos verticais compridos.
+3. **PASSO 3:** No topo da muralha, desenhe pequenos quadradinhos subindo e descendo (muralhas denteadas).
+4. **PASSO 4:** Coloque telhados em formato de cone (tri\xE2ngulos altos) em cima de cada torre.
+5. **PASSO 5:** Fa\xE7a um port\xE3o bem grande e arredondado bem no meio.
+6. **PASSO 6:** Desenhe bandeirinhas triangulares flutuando no topo de cada telhado c\xF4nico.
+7. **PASSO 7:** Adicione janelinhas em formato de arco de cabe\xE7a para baixo nas torres.
+8. **PASSO 8:** Pinte as paredes de cinza e azul, e use cores brilhantes e divertivas nas bandeiras!
+
+\u{1F4A1} **Dicas:** Fa\xE7a pequenos risquinhos de "tijolos" espalhados pelas paredes para dar um toque antigo!
+
+\u26A0\uFE0F **Erros comuns:** Esquecer as janelas das torres! Os guardas do castelo precisam de janelinhas para vigiar!
+
+\u{1F3C6} **Desafio:** Desenhe um fosso ao redor do seu castelo com uma ponte levadi\xE7a e um jacar\xE9 camarada!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_desenhar_castelo"
+      };
+    }
+    if (normalizedMsg.includes("cavalo")) {
+      return {
+        reply: `\u{1F434} **COMO DESENHAR UM CAVALINHO** \u{1F33E}
+
+Vamos desenhar juntos! Fa\xE7a formas bem simples, depois una essas formas, acrescente os detalhes, passe o l\xE1pis mais forte, apague as linhas de ajuda e pinte se desejar! \u{1F970}
+
+\u{1F392} **Materiais:** Papel, l\xE1pis, borracha e giz de cera ou l\xE1pis colorido.
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1:** Desenhe uma forma oval grande e deitada para o corpo do cavalo.
+2. **PASSO 2:** Fa\xE7a uma forma oval menor inclinada um pouco mais acima para ser a cabe\xE7a.
+3. **PASSO 3:** Trace duas linhas fortes para ligar a cabe\xE7a ao corpo, formando o pesco\xE7o.
+4. **PASSO 4:** Desenhe quatro pernas compridas e firmes embaixo do corpo com cascos quadrados.
+5. **PASSO 5:** Fa\xE7a duas orelhas pontudinhas voltadas para cima na cabe\xE7a.
+6. **PASSO 6:** Desenhe uma crina longa no pesco\xE7o e um rabo cheio de pelos fofos voando com o vento.
+7. **PASSO 7:** Fa\xE7a o olho expressivo e o focinho na ponta da cabe\xE7a.
+8. **PASSO 8:** Pinte seu cavalo de marrom, preto, branco ou cinza com manchinhas!
+
+\u{1F4A1} **Dicas:** Desenhar o pesco\xE7o ligeiramente grosso ajuda o cavalo a parecer forte e elegante!
+
+\u26A0\uFE0F **Erros comuns:** Fazer as pernas muito curtinhas ou o rabo murcho. Cavalos adoram galopar com rabos esvoa\xE7antes!
+
+\u{1F3C6} **Desafio:** Desenhe o seu cavalo saltando por cima de um tronco de \xE1rvore ca\xEDda em um campo florido!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_desenhar_cavalo"
+      };
+    }
+    if (normalizedMsg.includes("paisagem")) {
+      return {
+        reply: `\u{1F3DE}\uFE0F **COMO DESENHAR UMA PAISAGEM LINDA** \u{1F3D4}\uFE0F
+
+Vamos desenhar juntos! Fa\xE7a formas bem simples, depois una essas formas, acrescente os detalhes, passe o l\xE1pis mais forte, apague as linhas de ajuda e pinte se desejar! \u{1F970}
+
+\u{1F392} **Materiais:** Papel sulfite, l\xE1pis de desenho macio, borracha e uma paleta cheia de cores.
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1:** Desenhe uma linha reta horizontal no meio da folha para ser a linha do horizonte (terra e c\xE9u).
+2. **PASSO 2:** Fa\xE7a montanhas em ziguezague acima da linha do horizonte ao fundo.
+3. **PASSO 3:** Desenhe um grande sol redondo surgindo ou se pondo atr\xE1s das montanhas.
+4. **PASSO 4:** Crie um rio fazendo curvas, come\xE7ando bem fininho perto das montanhas e ficando bem largo perto de voc\xEA.
+5. **PASSO 5:** Fa\xE7a algumas nuvens fofas de algod\xE3o no c\xE9u e p\xE1ssaros voando em forma de "V".
+6. **PASSO 6:** Adicione grama macia e algumas \xE1rvores nas margens do seu rio.
+7. **PASSO 7:** Desenhe florzinhas coloridas espalhadas pelo ch\xE3o em primeiro plano.
+8. **PASSO 8:** Pinte tudo com cores bem alegres e use degrad\xEA no c\xE9u!
+
+\u{1F4A1} **Dicas:** Coisas que est\xE3o longe s\xE3o menores e clarinhas. Coisas perto de n\xF3s s\xE3o maiores e bem n\xEDtidas!
+
+\u26A0\uFE0F **Erros comuns:** Desenhar o rio da mesma largura o caminho todo. Come\xE7ar fino e terminar largo d\xE1 efeito de profundidade!
+
+\u{1F3C6} **Desafio:** Mude o clima da paisagem! Que tal transform\xE1-la em uma paisagem noturna com uma lua brilhante?
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_desenhar_paisagem"
+      };
+    }
+    if (normalizedMsg.includes("arvore")) {
+      return {
+        reply: `\u{1F333} **COMO DESENHAR UMA \xC1RVORE FORTE** \u{1F34E}
+
+Vamos desenhar juntos! Fa\xE7a formas bem simples, depois una essas formas, acrescente os detalhes, passe o l\xE1pis mais forte, apague as linhas de ajuda e pinte se desejar! \u{1F970}
+
+\u{1F392} **Materiais:** Papel, l\xE1pis macio, borracha e giz de cera ou l\xE1pis de cor.
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1:** Desenhe duas linhas verticais paralelas ligeiramente curvadas para fora para fazer o tronco.
+2. **PASSO 2:** No topo do tronco, divida as linhas abrindo em dois galhos que parecem a letra "Y".
+3. **PASSO 3:** Desenhe uma grande copa fofa de folhas contornando os galhos, parecendo uma nuvem gigante.
+4. **PASSO 4:** Adicione pequenas ra\xEDzes na parte de baixo do tronco, sumindo na grama macia.
+5. **PASSO 5:** Desenhe pequenos c\xEDrculos vermelhos na copa para serem ma\xE7\xE3s deliciosas ou flores coloridas.
+6. **PASSO 6:** Fa\xE7a tra\xE7os curtos e ondulados dentro do tronco para imitar a textura \xE1spera da casca da madeira.
+7. **PASSO 7:** Desenhe um arbusto pequeno ou graminha ao p\xE9 da \xE1rvore.
+8. **PASSO 8:** Pinte o tronco de marrom terra e as folhas com v\xE1rios tons de verde vivo!
+
+\u{1F4A1} **Dicas:** Use pequenas nuvens arredondadas encavaladas para fazer a copa, isso d\xE1 muito volume real!
+
+\u26A0\uFE0F **Erros comuns:** Fazer o tronco reto como uma r\xE9gua de parede. \xC1rvores t\xEAm curvas e irregularidades lindas!
+
+\u{1F3C6} **Desafio:** Desenhe uma simp\xE1tica corujinha morando dentro de uma toca redonda no tronco da sua \xE1rvore!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_desenhar_arvore"
+      };
+    }
+    if (normalizedMsg.includes("robo")) {
+      return {
+        reply: `\u{1F916} **COMO DESENHAR UM ROB\xD4 AMIGO** \u26A1
+
+Vamos desenhar juntos! Fa\xE7a formas bem simples, depois una essas formas, acrescente os detalhes, passe o l\xE1pis mais forte, apague as linhas de ajuda e pinte se desejar! \u{1F970}
+
+\u{1F392} **Materiais:** Papel, l\xE1pis, borracha, caneta esferogr\xE1fica preta para o contorno final e giz de cera.
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1:** Desenhe um quadrado m\xE9dio para a cabe\xE7a e um ret\xE2ngulo grande abaixo para o corpo de metal.
+2. **PASSO 2:** Conecte a cabe\xE7a ao corpo com duas pequenas linhas verticais formando um pesco\xE7o de ferro.
+3. **PASSO 3:** Fa\xE7a os bra\xE7os e pernas usando ret\xE2ngulos compridos divididos em listras (tubos sanfonados).
+4. **PASSO 4:** Desenhe garras de metal no final dos bra\xE7os, parecendo a letra "C".
+5. **PASSO 5:** Coloque duas antenas engra\xE7adas na cabe\xE7a com bolinhas nas pontas.
+6. **PASSO 6:** Desenhe bot\xF5es redondos, telas quadradas e l\xE2mpadas piscantes no painel do peito do seu rob\xF4.
+7. **PASSO 7:** Fa\xE7a olhos grandes em formato de c\xEDrculos brilhantes e parafusos nas juntas do corpo.
+8. **PASSO 8:** Pinte com tons met\xE1licos de cinza, prata e acenda os bot\xF5es com vermelho, azul e verde brilhantes!
+
+\u{1F4A1} **Dicas:** Use objetos redondos, como moedas, para tra\xE7ar os c\xEDrculos e bot\xF5es perfeitamente!
+
+\u26A0\uFE0F **Erros comuns:** Fazer as pernas e bra\xE7os duros demais sem dobras. Linhas sanfonadas d\xE3o movimento ao rob\xF4!
+
+\u{1F3C6} **Desafio:** Crie o seu rob\xF4 fazendo uma tarefa super divertida, como preparando um bolo espacial gigante!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_desenhar_robo"
+      };
+    }
+    return {
+      reply: `\u{1F3A8} **COMO DESENHAR QUALQUER COISA** \u2728
+
+Vamos desenhar juntos! Fazer desenhos incr\xEDveis \xE9 super divertido quando seguimos passos simples! \u{1F970}
+
+\u{1F392} **Materiais:** Papel em branco, l\xE1pis grafite macio, borracha macia e l\xE1pis coloridos.
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1 (Rascunhar):** Esboce a forma principal usando figuras geom\xE9tricas bem f\xE1ceis (c\xEDrculos para a cabe\xE7a ou flores, ovais para corpos de animais, ret\xE2ngulos para pr\xE9dios e pernas).
+2. **PASSO 2 (Ligar as Formas):** Una as formas desenhadas com linhas suaves e delicadas para dar forma ao esqueleto do desenho.
+3. **PASSO 3 (Acrescentar Detalhes):** Desenhe as partes menores e mais detalhadas (como olhos, folhagens, janelas, dedinhos ou texturas).
+4. **PASSO 4 (Contornar):** Passe o l\xE1pis mais forte (ou uma canetinha preta fina) nas linhas definitivas que voc\xEA mais gostou.
+5. **PASSO 5 (Apagar):** Apague as linhas geom\xE9tricas de ajuda que voc\xEA desenhou clarinho no in\xEDcio.
+6. **PASSO 6 (Pintar):** D\xEA asas \xE0 imagina\xE7\xE3o pintando seu desenho com as cores que seu cora\xE7\xE3o mandar!
+
+\u{1F4A1} **Dicas:** Nunca aperte o l\xE1pis na folha no come\xE7o! Manter a m\xE3o bem leve \xE9 o maior segredo de todo grande artista.
+
+\u26A0\uFE0F **Erros comuns:** Tentar fazer os detalhes pequenininhos logo no primeiro passo. Comece sempre do maior para o menor!
+
+\u{1F3C6} **Desafio:** Tente fazer o desenho do seu tema favorito em uma vers\xE3o gigante ou em uma vers\xE3o beb\xEA bem fofinha!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+      matchedKey: "como_desenhar_geral"
+    };
+  }
+  if (normalizedMsg.includes("pintar") || normalizedMsg.includes("pintura") || normalizedMsg.includes("pinta")) {
+    if (normalizedMsg.includes("por do sol")) {
+      return {
+        reply: `\u{1F305} **COMO PINTAR UM P\xD4R DO SOL M\xC1GICO** \u{1F3A8}
+
+Pintar o entardecer \xE9 como espalhar calor e sentimentos na folha! Vamos fazer isso de forma linda e divertida!
+
+\u{1F392} **Materiais:** Papel grosso (para suportar a tinta), pinc\xE9is (um largo e um bem fino), tinta guache (amarela, vermelha, azul-escura e preta), potinho com \xE1gua e paninho.
+
+\u{1F3A8} **Passo a Passo:**
+1. **PASSO 1:** Escolha tr\xEAs cores principais: amarelo, vermelho e azul-escuro.
+2. **PASSO 2:** Comece pintando de amarelo brilhante a parte mais baixa do seu c\xE9u (linha do horizonte).
+3. **PASSO 3:** V\xE1 subindo na folha misturando um pouco de vermelho para criar um laranja quente e vibrante.
+4. **PASSO 4:** No topo da p\xE1gina, adicione a tinta azul-escura pura, criando um degrad\xEA suave (misture bem de leve com o vermelho para formar um roxo lindo!).
+5. **PASSO 5:** Deixe o seu c\xE9u colorido secar por cerca de 3 minutinhos.
+6. **PASSO 6:** Com o c\xE9u seco, use tinta preta pura e o pincel fino para pintar silhuetas na base (como coqueiros, montanhas ou passarinhos voando).
+7. **PASSO 7:** Finalize colocando um semic\xEDrculo amarelo-claro na linha do horizonte para representar o sol se deitando!
+
+\u{1F4A1} **Dicas:** Misture as tintas no papel com o pincel levemente \xFAmido, passando-o de forma horizontal de um lado para o outro!
+
+\u26A0\uFE0F **Erros comuns:** Misturar preto diretamente nas cores quentes enquanto est\xE3o molhadas. O preto deve ser usado por \xFAltimo para silhuetas pretas perfeitas!
+
+\u{1F3C6} **Desafio:** Tente pintar esse p\xF4r do sol refletindo sobre um rio ou lago azul e dourado na parte inferior!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_pintar_por_do_sol"
+      };
+    }
+    if (normalizedMsg.includes("floresta") || normalizedMsg.includes("arvores") || normalizedMsg.includes("arvore")) {
+      return {
+        reply: `\u{1F333} **COMO PINTAR UMA FLORESTA ENCANTADA** \u{1F332}
+
+Pintar uma floresta \xE9 dar vida a um lar cheio de mist\xE9rios e natureza! Vamos criar esse bosque maravilhoso juntos!
+
+\u{1F392} **Materiais:** Tela de pintura ou papel grosso, tintas guache verde-claro, verde-escuro, marrom, amarelo e branco, pinc\xE9is e uma esponja de lou\xE7a limpa.
+
+\u{1F3A8} **Passo a Passo:**
+1. **PASSO 1:** Pinte um fundo suave misturando azul-celeste e branco para fazer o c\xE9u que aparece por tr\xE1s das \xE1rvores.
+2. **PASSO 2:** Use tinta marrom dilu\xEDda e um pincel plano para desenhar os troncos das \xE1rvores. Fa\xE7a troncos fininhos ao fundo e mais grossos perto de voc\xEA.
+3. **PASSO 3:** Umede\xE7a a ponta da sua esponja na tinta verde-escura e d\xEA batidinhas leves para criar as folhas densas da floresta.
+4. **PASSO 4:** Repita as batidinhas com verde-claro por cima para criar camadas de folhas iluminadas.
+5. **PASSO 5:** Adicione toques de tinta amarela no topo de algumas \xE1rvores para simular os raios de sol batendo.
+6. **PASSO 6:** Pinte o ch\xE3o com batidinhas marrons e verdes para simular terra \xFAmida e grama fofa.
+7. **PASSO 7:** Pinte pequenas flores batendo a ponta do cabo do pincel sujo de tinta vermelha ou amarela no ch\xE3o!
+
+\u{1F4A1} **Dicas:** Deixar pequenas frestas brancas do fundo sem cobrir d\xE1 a impress\xE3o fant\xE1stica de luz real vazando entre os galhos!
+
+\u26A0\uFE0F **Erros comuns:** Usar apenas um tipo de verde. Misturar amarelo ao verde cria tons cheios de luz natural e riqueza!
+
+\u{1F3C6} **Desafio:** Desenhe um pequeno cervo ou coelho marrom espreitando silenciosamente entre as folhagens do seu bosque!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_pintar_floresta"
+      };
+    }
+    if (normalizedMsg.includes("flor")) {
+      return {
+        reply: `\u{1F338} **COMO PINTAR UMA LINDA FLOR** \u{1F33A}
+
+Pintar flores \xE9 espalhar perfume e cores alegres pela nossa imagina\xE7\xE3o! Vamos criar uma obra de arte floral!
+
+\u{1F392} **Materiais:** Papel, tintas de cores vivas (rosa, vermelho, violeta ou azul), tinta verde e amarela, pincel macio arredondado.
+
+\u{1F3A8} **Passo a Passo:**
+1. **PASSO 1:** Pinte o fundo da folha com uma cor clarinha neutra (como azul-beb\xEA ou verde-claro) e espere secar.
+2. **PASSO 2:** Use tinta amarela ou laranja pura para pintar um c\xEDrculo gordinho bem no centro da folha (o miolo).
+3. **PASSO 3:** Carregue seu pincel com a cor escolhida para as p\xE9talas e posicione a ponta perto do miolo, aperte um pouco e puxe para fora para pintar as p\xE9talas redondinhas.
+4. **PASSO 4:** Repita o movimento fazendo p\xE9talas unidas por toda a volta do c\xEDrculo central.
+5. **PASSO 5:** Use tinta verde e trace um caule comprido descendo do miolo at\xE9 a base da folha, com duas folhas pontudinhas nas laterais.
+6. **PASSO 6:** Molhe a pontinha do cabo do pincel na tinta branca e fa\xE7a pequenos pontinhos delicados no miolo amarelo para imitar o p\xF3len.
+7. **PASSO 7:** Adicione pequenos riscos finos de cor vermelha ou rosa-escura na base de cada p\xE9tala para dar profundidade e sombra real!
+
+\u{1F4A1} **Dicas:** Gire a folha de papel enquanto pinta as p\xE9talas, isso ajuda a manter o mesmo \xE2ngulo e conforto para as suas m\xE3os!
+
+\u26A0\uFE0F **Erros comuns:** Pintar as p\xE9talas afastadas demais do miolo. Elas devem nascer e encostar diretamente no centro da flor!
+
+\u{1F3C6} **Desafio:** Desenhe uma abelhinha gordinha listrada de amarelo e preto voando pertinho da sua flor rec\xE9m-pintada!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_pintar_flor"
+      };
+    }
+    return {
+      reply: `\u{1F3A8} **COMO INICIAR SUA PINTURA COM SUCESSO** \u{1F58C}\uFE0F
+
+Pintar \xE9 uma das formas mais gostosas de expressar quem somos no mundo! Vamos aprender a pintar de forma profissional!
+
+\u{1F392} **Materiais:** Guache ou tinta acr\xEDlica escolar, pinc\xE9is de diferentes pontas, papel encorpado, potinho com \xE1gua e paninho macio.
+
+\u{1F3A8} **Passo a Passo:**
+1. **PASSO 1:** Escolha sempre de tr\xEAs a cinco cores principais antes de come\xE7ar, criando uma paleta de cores harmoniosa.
+2. **PASSO 2:** Comece pintando as \xE1reas maiores ao fundo (como o c\xE9u ou o ch\xE3o) e espere secar um pouquinho.
+3. **PASSO 3:** Pinte as formas principais por cima do fundo seco, usando pinceladas firmes e sem pressa.
+4. **PASSO 4:** Aplique camadas de cores: d\xEA uma primeira dem\xE3o e, se o papel aparecer, passe mais uma dem\xE3o fina ap\xF3s secar.
+5. **PASSO 5:** Crie luz e sombras usando um pouco de tinta branca para destacar pontos claros e cores escuras para as sombras.
+6. **PASSO 6:** Fa\xE7a os contornos e pequenos detalhes (olhos, galhos, tra\xE7os finos) por \xFAltimo, usando o pincel mais fino que tiver.
+7. **PASSO 7:** Deixe secar bem e assine sua obra de arte no cantinho inferior!
+
+\u{1F4A1} **Dicas:** Lave muito bem o seu pincel na \xE1gua e seque-o no paninho toda vez que for mudar de cor, isso mant\xE9m as cores brilhantes e puras!
+
+\u26A0\uFE0F **Erros comuns:** Usar \xE1gua em excesso na tinta guache, deixando-a transparente e enrugando o papel. A tinta deve ter consist\xEAncia cremosa!
+
+\u{1F3C6} **Desafio:** Experimente pintar usando apenas seus dedos (dedografia) ou cotonetes para criar um efeito pontilhista incr\xEDvel!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+      matchedKey: "como_pintar_geral"
+    };
+  }
+  if (normalizedMsg.includes("escrever") || normalizedMsg.includes("escrita") || normalizedMsg.includes("escreve")) {
+    if (normalizedMsg.includes("poema")) {
+      return {
+        reply: `\u270D\uFE0F **COMO ESCREVER UM POEMA LINDO** \u{1F338}
+
+Poemas s\xE3o como fotografias de sentimentos tiradas com palavras do cora\xE7\xE3o! Vamos escrever um juntos!
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1:** Escolha um tema simples e m\xE1gico (ex: seu gatinho, uma estrela cadente, a chuva batendo na janela ou a amizade).
+2. **PASSO 2:** Escreva palavras soltas que descrevem as sensa\xE7\xF5es desse tema (ex: fofura, brilho, calmaria, risadas, cores).
+3. **PASSO 3:** Escreva frases curtas em cada linha. Cada linha do seu poema se chama **verso**!
+4. **PASSO 4:** Brinque com rimas engra\xE7adas ou doces no final das frases (ex: *desenhar* combina com *brincar*, *sol* rima com *caracol*).
+5. **PASSO 5:** Use compara\xE7\xF5es divertidas e m\xE1gicas (ex: "o sol \xE9 um prato de ouro brilhando no c\xE9u" ou "o mar \xE9 um cobertor azul de sereias").
+6. **PASSO 6:** Agrupe as frases de quatro em quatro linhas, separando-as com um espa\xE7o. Esses grupos de versos se chamam **estrofes**!
+7. **PASSO 7:** Leia em voz alta e escute a m\xFAsica secreta que as palavras fazem! Fa\xE7a pequenos ajustes se achar necess\xE1rio.
+8. **PASSO 8:** Escolha um t\xEDtulo super criativo e assine como o grande autor que voc\xEA \xE9!
+
+\u{1F4A1} **Dicas:** Poemas n\xE3o precisam ter rimas obrigatoriamente! O mais importante \xE9 colocar sentimentos puros e sinceros no texto.
+
+\u26A0\uFE0F **Erros comuns:** Tentar usar palavras dif\xEDceis demais que voc\xEA n\xE3o usa no dia a dia. A beleza do poema mora na sua simplicidade e afeto!
+
+\u{1F3C6} **Desafio:** Escreva um acr\xF3stico, onde as primeiras letras de cada linha de cima a baixo soletram o seu pr\xF3prio nome!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer que eu escreva um exemplo de poema pronto para inspirar voc\xEA? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_escrever_poema"
+      };
+    }
+    if (normalizedMsg.includes("carta")) {
+      if (normalizedMsg.includes("romantica") || normalizedMsg.includes("carinhoso") || normalizedMsg.includes("bilhete")) {
+        return {
+          reply: `\u2764\uFE0F **COMO ESCREVER UMA CARTA ROM\xC2NTICA OU BILHETE CARINHOSO** \u{1F48C}
+
+Escrever uma carta carinhosa \xE9 uma forma m\xE1gica de enviar um abra\xE7o em forma de papel para quem amamos! Vamos aprender a estrutura ideal:
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1 (Cidade e Data):** Escreva no canto superior esquerdo o nome da sua cidade e o dia de hoje (ex: *Brodowski, 11 de Julho de 2026*).
+2. **PASSO 2 (Sauda\xE7\xE3o de Carinho):** Comece com uma abertura doce e calorosa (ex: *Para minha pessoa mais especial do mundo,*).
+3. **PASSO 3 (O Motivo da Carta):** Diga por que voc\xEA est\xE1 escrevendo (ex: *Resolvi colocar em palavras todo o carinho que sinto por voc\xEA e como voc\xEA faz meus dias coloridos...*).
+4. **PASSO 4 (Qualidades Sinceras):** Escreva tr\xEAs qualidades fofas que voc\xEA ama na pessoa (ex: *Eu adoro seu sorriso brilhante, seu abra\xE7o bem quentinho e como voc\xEA sempre me faz rir de piadas bobas*).
+5. **PASSO 5 (Uma Mem\xF3ria Feliz):** Relembre um momento gostoso que voc\xEAs passaram juntos brincando ou conversando.
+6. **PASSO 6 (Uma Despedida Doce):** Escolha um tchau cheio de amor (ex: *Com todo o carinho e pinceladas de amor do meu cora\xE7\xE3o,*).
+7. **PASSO 7 (Sua Assinatura):** Assine seu nome bem bonito e decore a folha com cora\xE7\xF5es desenhados!
+
+\u{1F4A1} **Dicas:** Escrever com sua pr\xF3pria letra (em vez de digitar no celular) torna a carta cem vezes mais especial e emocionante!
+
+\u26A0\uFE0F **Erros comuns:** Escrever correndo e deixar a letra ileg\xEDvel. Escreva devagarzinho, desenhando as letras com muito carinho!
+
+\u{1F3C6} **Desafio:** Crie um pequeno envelope decorado dobrando papel e cole cora\xE7\xF5es coloridos ou estrelas de glitter para selar o bilhete!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer que eu escreva um exemplo de bilhete rom\xE2ntico/carinhoso para inspirar voc\xEA? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+          matchedKey: "como_escrever_carta_romantica"
+        };
+      }
+      return {
+        reply: `\u2709\uFE0F **COMO ESCREVER UMA CARTA PERFEITA** \u{1F4EE}
+
+Enviar uma carta \xE9 um dos costumes mais lindos da humanidade! Vamos organizar sua carta de forma perfeita e clara:
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1 (Cabe\xE7alho):** Escreva no topo esquerdo onde voc\xEA est\xE1 e a data de hoje (ex: *Brodowski, 11 de Julho de 2026*).
+2. **PASSO 2 (Cumprimento):** Comece cumprimentando a pessoa com carinho (ex: *Querido amigo,* ou *Querida vov\xF3,*).
+3. **PASSO 3 (Assunto Principal):** Conte as suas novidades, fale sobre os seus desenhos novos, suas aventuras na escola ou suas brincadeiras.
+4. **PASSO 4 (Interesse Real):** Fa\xE7a perguntas sobre como a pessoa est\xE1 e o que ela tem feito (ex: *Como est\xE3o as coisas por a\xED? Voc\xEA tem desenhado bastante?*).
+5. **PASSO 5 (Carinho e Sentimento):** Diga que sente saudades e que espera receber not\xEDcias em breve.
+6. **PASSO 6 (Despedida Amig\xE1vel):** Escolha um final fofo (ex: *Com muitas saudades e um grande abra\xE7o,*).
+7. **PASSO 7 (Assinatura):** Escreva seu nome no final de forma bem caprichada.
+
+\u{1F4A1} **Dicas:** Voc\xEA pode desenhar pequenas ilustra\xE7\xF5es nas bordas do papel para deixar a carta super personalizada e linda!
+
+\u26A0\uFE0F **Erros comuns:** Esquecer de colocar a data. As datas ajudam a pessoa a lembrar exatamente de quando aquela conversa aconteceu no futuro!
+
+\u{1F3C6} **Desafio:** Finja que voc\xEA \xE9 um explorador espacial mandando not\xEDcias de Marte e escreva uma carta super divertida para a Terra!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer que eu escreva um exemplo de carta pronta para voc\xEA usar como modelo? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_escrever_carta"
+      };
+    }
+    if (normalizedMsg.includes("historia") || normalizedMsg.includes("conto") || normalizedMsg.includes("redacao")) {
+      return {
+        reply: `\u{1F4DA} **COMO ESCREVER UMA HIST\xD3RIA OU REDA\xC7\xC3O FANT\xC1STICA** \u{1F981}
+
+Contar hist\xF3rias \xE9 criar mundos m\xE1gicos onde tudo \xE9 poss\xEDvel! Vamos aprender a receita para uma aventura perfeita:
+
+\u270F\uFE0F **Passo a Passo:**
+1. **PASSO 1 (O Her\xF3i):** Escolha quem ser\xE1 o protagonista (um gatinho astronauta ou uma menina com l\xE1pis m\xE1gico falante).
+2. **PASSO 2 (O Cen\xE1rio):** Onde a aventura acontece? Em uma floresta flutuante ou no fundo de um pote de geleia?
+3. **PASSO 3 (A Rotina inicial):** Comece apresentando o personagem em seu dia a dia comum (ex: *Era uma vez o gatinho Pipoca...*).
+4. **PASSO 4 (O Problema):** De repente, um mist\xE9rio ou desafio acontece! (ex: *Numa noite, todas as estrelas perderam o brilho!*).
+5. **PASSO 5 (A Jornada):** Mostre como o her\xF3i usa a intelig\xEAncia, amizade e criatividade para tentar resolver o problema.
+6. **PASSO 6 (O Cl\xEDmax):** \xC9 a parte mais emocionante, onde o problema quase vence, mas o her\xF3i encontra uma sa\xEDda genial!
+7. **PASSO 7 (Final Feliz):** Mostre o que mudou no mundo e o que o her\xF3i aprendeu de importante.
+8. **PASSO 8 (T\xEDtulo Atraente):** Crie um t\xEDtulo bem curioso para deixar os leitores ansiosos para ler!
+
+\u{1F4A1} **Dicas:** Use adjetivos muito coloridos para descrever as coisas (ex: *\xE1rvore de algod\xE3o doce cor-de-rosa*)!
+
+\u26A0\uFE0F **Erros comuns:** Resolver o mist\xE9rio r\xE1pido demais sem dar tempo para o leitor ficar curioso. Valorize o mist\xE9rio!
+
+\u{1F3C6} **Desafio:** Escreva uma micro-hist\xF3ria incr\xEDvel contendo apenas cinco frases do come\xE7o ao fim!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer que eu escreva um exemplo de hist\xF3ria m\xE1gica curta para voc\xEA? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_escrever_historia"
+      };
+    }
+    if (normalizedMsg.includes("bilhete") || normalizedMsg.includes("mensagem") || normalizedMsg.includes("aniversario") || normalizedMsg.includes("convite")) {
+      return {
+        reply: `\u{1F48C} **COMO ESCREVER BILHETES, MENSAGENS E CONVITES INCR\xCDVEIS** \u2728
+
+Escrever mensagens r\xE1pidas de carinho ou convites festivos \xE9 uma del\xEDcia! Vamos aprender a estrutura para cada um:
+
+\u270F\uFE0F **Passo a Passo para Bilhete Carinhoso:**
+1. **PASSO 1:** Escolha um cumprimento fofo (ex: *Oi, meu amigo favorito!*).
+2. **PASSO 2:** Escreva algo curto, sincero e bonito (ex: *Vi essa flor no jardim e lembrei da sua alegria! Obrigado por ser um amigo t\xE3o legal.*).
+3. **PASSO 3:** Deixe uma frase de carinho (ex: *Tenha um dia super colorido e cheio de brincadeiras!*).
+4. **PASSO 4:** Despe\xE7a-se com fofura (ex: *Abra\xE7o quentinho do seu amigo, Candinho.*).
+
+\u270F\uFE0F **Passo a Passo para Convites:**
+1. **PASSO 1 (O Chamado):** Fa\xE7a uma chamada animada (ex: *Voc\xEA est\xE1 convidado para a minha festa de anivers\xE1rio gal\xE1ctica!*).
+2. **PASSO 2 (As Informa\xE7\xF5es de Ouro):** Coloque bem claro:
+   - \u{1F4C5} **Data:** Dia 15 de Outubro
+   - \u23F0 **Hor\xE1rio:** \xC0s 15 horas
+   - \u{1F3E1} **Local:** Rua da Paleta M\xE1gica, n\xBA 100
+3. **PASSO 3 (Confirma\xE7\xE3o):** Pe\xE7a para a pessoa avisar se vai conseguir ir at\xE9 o dia anterior.
+
+\u{1F4A1} **Dicas:** Coloque uma gotinha de perfume no papel ou use canetinhas com cheiro para dar um toque m\xE1gico sensorial!
+
+\u26A0\uFE0F **Erros comuns:** Esquecer de colocar o hor\xE1rio ou local no convite. Sem as informa\xE7\xF5es b\xE1sicas, os convidados n\xE3o conseguir\xE3o chegar!
+
+\u{1F3C6} **Desafio:** Crie um convite secreto em forma de mapa do tesouro, onde o local da festa \xE9 a ilha secreta de doces!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer que eu escreva um exemplo pronto de bilhete carinhoso ou convite festivo para voc\xEA? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_escrever_bilhete"
+      };
+    }
+  }
+  if (normalizedMsg.includes("criar") || normalizedMsg.includes("cria ")) {
+    return {
+      reply: `\u{1F31F} **COMO CRIAR PERSONAGENS, MONSTROS E HER\xD3IS FANT\xC1STICOS** \u{1F9B8}\u200D\u2642\uFE0F
+
+Criar um personagem \xE9 como plantar uma sementinha de vida na sua imagina\xE7\xE3o! Vamos montar a ficha completa dele juntos!
+
+\u270F\uFE0F **Passo a Passo da Cria\xE7\xE3o:**
+1. **PASSO 1 (Identidade):** Escolha o Nome dele, a Idade e se ele \xE9 humano, rob\xF4, animal m\xEDstico ou ser extraterrestre.
+2. **PASSO 2 (Superpoderes):** O que ele sabe fazer de mais incr\xEDvel? (ex: voar em nuvens de algod\xE3o doce, disparar raios de cores de guache com as m\xE3os, ou falar com animais m\xE1gicos).
+3. **PASSO 3 (O Ponto Fraco):** Todo grande her\xF3i ou monstro precisa de um ponto fraco divertido! Isso o torna amig\xE1vel! (ex: derrete se comer chocolate, tem c\xF3cegas nos p\xE9s, ou perde as for\xE7as se ver \xE1gua com sab\xE3o).
+4. **PASSO 4 (A Personalidade):** Ele \xE9 tagarela e brincalh\xE3o? T\xEDmido e super inteligente? Ou dorminhoco e comil\xE3o? Escreva duas caracter\xEDsticas dele.
+5. **PASSO 5 (Origem de Ouro):** De onde ele veio? (ex: nasceu dentro de um potinho de glitter brilhante ou caiu de uma estrela cadente colorida).
+6. **PASSO 6 (O Visual):** Desenhe a roupinha dele com capa, \xF3culos misteriosos, cinto de utilidades art\xEDstico ou espinhos coloridos nas costas!
+
+\u{1F4A1} **Dicas:** D\xEA a ele um acess\xF3rio muito marcante, como um bon\xE9 de cabe\xE7a para baixo, uma gravata borboleta n\xE9on ou um bichinho de estima\xE7\xE3o em miniatura!
+
+\u26A0\uFE0F **Erros comuns:** Fazer o seu her\xF3i perfeito e sem nenhuma fraqueza. Personagens com pequenos medos ou manias engra\xE7adas s\xE3o muito mais queridos e divertidos!
+
+\u{1F3C6} **Desafio:** Desenhe o seu personagem apertando as m\xE3os e fazendo amizade com o seu pior e mais engra\xE7ado rival!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer que eu crie a ficha de um personagem in\xE9dito e divertido para voc\xEA? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+      matchedKey: "como_criar_personagem"
+    };
+  }
+  if (normalizedMsg.includes("fazer arte") || normalizedMsg.includes("fazer uma") || normalizedMsg.includes("como fazer") || normalizedMsg.includes("fazer origami") || normalizedMsg.includes("dobradura") || normalizedMsg.includes("fantoche") || normalizedMsg.includes("tinta")) {
+    if (normalizedMsg.includes("origami") || normalizedMsg.includes("dobradura")) {
+      return {
+        reply: `\u{1F436} **COMO FAZER UM ORIGAMI/DOBRADURA DE CACHORRINHO** \u{1F4C4}
+
+Origami \xE9 a arte m\xE1gica de transformar uma folha de papel comum em animais e objetos incr\xEDveis dobrando!
+
+\u{1F392} **Materiais:** Uma folha de papel cortada em formato de quadrado perfeito (todas as quatro laterais com o mesmo tamanho) e caneta preta.
+
+\u2702\uFE0F **Passo a Passo:**
+1. **PASSO 1:** Dobre o seu quadrado de papel ao meio juntando as pontas opostas para formar um grande tri\xE2ngulo perfeito. Passe bem a unha na dobra!
+2. **PASSO 2:** Coloque o tri\xE2ngulo na mesa com a ponta maior virada para baixo.
+3. **PASSO 3 (As Orelhas):** Dobre a ponta esquerda e a ponta direita do tri\xE2ngulo para baixo, criando duas lindas orelhinhas ca\xEDdas de cachorrinho.
+4. **PASSO 4 (O Focinho):** Pegue a pontinha de baixo do tri\xE2ngulo e dobre um pouquinho para cima, formando o focinho do c\xE3ozinho.
+5. **PASSO 5 (O Rosto):** Com a caneta preta, desenhe dois olhinhos redondos brilhantes, algumas sardas na bochecha e pinte a pontinha do focinho de preto.
+6. **PASSO 6:** Desenhe manchinhas marrons ou pretas pela dobradura se quiser um cachorrinho malhado!
+
+\u{1F4A1} **Dicas:** O segredo do origami \xE9 apertar muito bem cada dobra usando as costas da unha ou uma colher de metal para ficar firme!
+
+\u26A0\uFE0F **Erros comuns:** Usar papel retangular comum. Se o papel n\xE3o for um quadrado perfeito, as dobras n\xE3o v\xE3o se encaixar perfeitamente!
+
+\u{1F3C6} **Desafio:** Tente dobrar um barquinho de papel cl\xE1ssico e teste coloc\xE1-lo para navegar em um prato fundo com \xE1gua azul!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer que eu ensine outra dobradura divertida passo a passo? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_fazer_origami"
+      };
+    }
+    if (normalizedMsg.includes("fantoche")) {
+      return {
+        reply: `\u{1F3AD} **COMO FAZER UM FANTOCHE DE MEIA SUPER ENGRA\xC7ADO** \u{1F9E6}
+
+Criar um fantoche \xE9 dar vida a um novo amigo tagarela para contar hist\xF3rias teatrais em casa!
+
+\u{1F392} **Materiais:** Uma meia limpa e velha, peda\xE7os de feltro ou papel colorido, dois bot\xF5es grandes para os olhos, cola forte ou fita adesiva de dupla face, l\xE3 colorida.
+
+\u{1F3A8} **Passo a Passo:**
+1. **PASSO 1:** Vista a meia na sua m\xE3o, posicionando seus dedos na ponta da meia e seu ded\xE3o na parte do calcanhar para fazer o movimento da boca abrindo.
+2. **PASSO 2:** Com os dedos dobrados, marque onde fica a jun\xE7\xE3o da boca e cole um peda\xE7o oval de feltro vermelho por dentro para ser a boca e a l\xEDngua.
+3. **PASSO 3:** Com a meia na m\xE3o, marque os pontos acima dos dedos e cole os dois bot\xF5es grandes para serem os olhinhos expressivos.
+4. **PASSO 4:** Pegue alguns fios de l\xE3 colorida, amarre-os no meio com um nozinho e cole no topo da cabe\xE7a para fazer um cabelo super descabelado e divertido!
+5. **PASSO 5:** Desenhe adere\xE7os com papel colorido: \xF3culos redondos, c\xEDlios gigantes, gravatinha borboleta ou dentes afiados de monstrinho comil\xE3o!
+6. **PASSO 6:** D\xEA um nome super engra\xE7ado ao seu novo companheiro e invente uma voz bem maluca para ele!
+
+\u{1F4A1} **Dicas:** Use fita adesiva forte ou cola quente (com ajuda de um adulto) para fixar as pe\xE7as no tecido da meia, pois cola comum pode descolar facilmente durante a brincadeira!
+
+\u26A0\uFE0F **Erros comuns:** Colar os olhos com a meia fora da m\xE3o e as pe\xE7as ficarem tortas ao vestir. Sempre planeje o visual com o fantoche cal\xE7ado na m\xE3o!
+
+\u{1F3C6} **Desafio:** Re\xFAna sua fam\xEDlia por tr\xE1s do encosto do sof\xE1 e apresente uma pequena pe\xE7a de teatro cantada com o seu fantoche!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer que eu escreva um roteirinho de teatro infantil curto e engra\xE7ado para seu fantoche? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_fazer_fantoche"
+      };
+    }
+    if (normalizedMsg.includes("tinta")) {
+      return {
+        reply: `\u{1F3A8} **COMO FAZER TINTA CASEIRA M\xC1GICA E SEGURA** \u{1F9EA}
+
+Fazer sua pr\xF3pria tinta \xE9 como se transformar em um cientista das cores em seu pr\xF3prio laborat\xF3rio de artes!
+
+\u{1F392} **Materiais:** 1 copo de farinha de trigo, 1 copo de sal de cozinha refinado, 1 copo de \xE1gua morna, corantes aliment\xEDcios coloridos, potinhos pl\xE1sticos limpos e colheres.
+
+\u{1F3A8} **Passo a Passo:**
+1. **PASSO 1:** Em um recipiente grande, misture bem o copo de farinha de trigo e o copo de sal refinado usando uma colher.
+2. **PASSO 2:** V\xE1 adicionando a \xE1gua morna bem devagarinho, mexendo sem parar, at\xE9 que vire uma massa bem cremosa e lisa (com consist\xEAncia de iogurte).
+3. **PASSO 3:** Distribua essa base cremosa em v\xE1rios potinhos pl\xE1sticos menores vazios.
+4. **PASSO 4:** Em cada potinho, pingue de 4 a 6 gotas de um corante aliment\xEDcio diferente e misture vigorosamente at\xE9 a cor ficar linda e brilhante!
+5. **PASSO 5:** Pegue pap\xE9is grossos ou peda\xE7os de caixas de papel\xE3o e pinte usando pinc\xE9is, cotonetes ou os seus pr\xF3prios dedinhos!
+6. **PASSO 6:** Coloque seu desenho para secar ao sol. Ao secar, o sal vai criar um efeito brilhante e saliente sensacional nas pinceladas!
+
+\u{1F4A1} **Dicas:** Se a tinta ficar grossa demais, adicione uma colherzinha de \xE1gua. Se ficar muito l\xEDquida, acrescente uma pitadinha de farinha!
+
+\u26A0\uFE0F **Erros comuns:** Guardar a tinta fora da geladeira por muitos dias. Como \xE9 feita com ingredientes naturais, ela pode estragar. Guarde em potes tampados na geladeira por at\xE9 3 dias!
+
+\u{1F3C6} **Desafio:** Pinte um lindo jardim espacial usando apenas sua tinta caseira e d\xEA batidinhas de purpurina por cima enquanto a tinta estiver \xFAmida!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer que eu d\xEA uma receita secreta de tinta de terra ou tinta 3D que cresce no micro-ondas? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+        matchedKey: "como_fazer_tinta"
+      };
+    }
+    return {
+      reply: `\u{1F3A8} **COMO FAZER ARTE ABSTRATA E OUTRAS CRIA\xC7\xD5ES** \u2702\uFE0F
+
+Fazer arte \xE9 soltar a imagina\xE7\xE3o e transformar materiais simples em decora\xE7\xF5es espetaculares! Vamos aprender a fazer uma linda Arte Abstrata:
+
+\u{1F392} **Materiais:** Folha de papel branco grande, pinc\xE9is, tintas guache coloridas e fita crepe.
+
+\u{1F3A8} **Passo a Passo:**
+1. **PASSO 1 (Cole as fita):** Cole algumas tiras de fita crepe cruzando a folha de papel em v\xE1rias dire\xE7\xF5es, criando espa\xE7os geom\xE9tricos fechados.
+2. **PASSO 2 (Escolha as Emo\xE7\xF5es):** Pense em um sentimento! Se for alegria, separe tintas quentes (amarelo, vermelho, rosa). Se for paz, separe azuis e verdes.
+3. **PASSO 3 (Pinte os Espa\xE7os):** Pinte cada espa\xE7o delimitado pelas fitas com uma cor s\xF3lida e bem vibrante diferente.
+4. **PASSO 4 (Salpicos Divertidos):** Molhe bem o pincel na tinta e na \xE1gua, segure-o acima do papel e d\xEA batidinhas no cabo com o dedo para salpicar gotinhas coloridas por toda a folha!
+5. **PASSO 5 (A Revela\xE7\xE3o):** Espere a tinta secar completamente por alguns minutos.
+6. **PASSO 6 (Retire a Fita):** Retire as fitas crepe devagarzinho e com muito cuidado para revelar linhas brancas perfeitamente limpas cruzando seu quadro!
+
+\u{1F4A1} **Dicas:** Arte Abstrata n\xE3o precisa parecer com coisas reais do mundo (como carros ou \xE1rvores). O foco total s\xE3o o ritmo das cores, as linhas e os sentimentos!
+
+\u26A0\uFE0F **Erros comuns:** Retirar a fita crepe com a tinta ainda muito molhada, o que pode borrar as linhas brancas perfeitas. Tenha paci\xEAncia e deixe secar bem!
+
+\u{1F3C6} **Desafio:** Coloque uma m\xFAsica bem alegre para tocar e pinte um desenho abstrato seguindo exatamente as batidas r\xE1pidas ou lentas da melodia!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer que eu ensine a fazer um lindo Autorretrato ou uma Colagem de jornais? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+      matchedKey: "como_fazer_arte_geral"
+    };
+  }
+  if (normalizedMsg.includes("observar") || normalizedMsg.includes("entender uma") || normalizedMsg.includes("analisar") || normalizedMsg.includes("olhar")) {
+    return {
+      reply: `\u{1F50D} **COMO OBSERVAR E COMPREENDER OBRAS DE ARTE** \u{1F5BC}\uFE0F
+
+Olhar para uma pintura \xE9 como abrir uma janela para os segredos e sonhos de um artista! Vamos aprender a ser detetives da arte:
+
+\u270F\uFE0F **Passo a Passo da Observa\xE7\xE3o:**
+1. **PASSO 1 (Os 30 segundos):** Olhe para o desenho ou pintura inteira em sil\xEAncio absoluto por 30 segundos. Deixe seus olhos passearem livremente.
+2. **PASSO 2 (O Ponto de Destaque):** O que chamou a sua aten\xE7\xE3o primeiro? Foi uma cor bem forte? Um personagem engra\xE7ado? Ou uma forma gigantesca?
+3. **PASSO 3 (As Cores Emocionais):** Repare nas cores dominantes. S\xE3o quentes (amarelos, vermelhos) que d\xE3o agita\xE7\xE3o e calor? Ou frias (azuis, verdes) que trazem calmaria e mist\xE9rio?
+4. **PASSO 4 (As Linhas Secretas):** Olhe os tra\xE7os. Eles s\xE3o retos e geom\xE9tricos como constru\xE7\xF5es ou s\xE3o cheios de ondas e curvas que parecem flutuar no ar?
+5. **PASSO 5 (O Jogo de Detetive):** Quem s\xE3o os personagens e o que eles est\xE3o fazendo? Onde eles est\xE3o? Tente inventar uma historinha curta do que aconteceu um minuto antes dessa cena ser pintada!
+6. **PASSO 6 (Sinta o Cora\xE7\xE3o):** Feche os olhos e pense: que emo\xE7\xE3o essa obra traz para dentro de voc\xEA? Alegria, calmaria, curiosidade ou agita\xE7\xE3o?
+
+\u{1F4A1} **Dicas:** Na arte, n\xE3o existem respostas erradas! Cada pessoa enxerga o mundo de uma forma \xFAnica e todas as opini\xF5es s\xE3o pinceladas de genialidade.
+
+\u26A0\uFE0F **Erros comuns:** Olhar para a obra por apenas um segundo e achar que j\xE1 viu tudo. Pinturas famosas escondem detalhes escondidos e truques que s\xF3 aparecem com paci\xEAncia!
+
+\u{1F3C6} **Desafio:** Escolha um desenho na sua casa e tente imit\xE1-lo fazendo uma pose viva est\xE1tua igualzinha ao personagem do quadro!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer ver uma an\xE1lise divertida e detalhada da famosa "Mona Lisa" ou do "Abaporu"? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+      matchedKey: "como_observar_arte"
+    };
+  }
+  if (normalizedMsg.includes("melhorar") || normalizedMsg.includes("desenhar melhor") || normalizedMsg.includes("pintar melhor")) {
+    return {
+      reply: `\u{1F680} **COMO MELHORAR SEUS DESENHOS E PINTURAS TODOS OS DIAS** \u2B50
+
+Desenhar e pintar s\xE3o habilidades m\xE1gicas que crescem e ficam cada vez mais lindas com treino e carinho! Vamos aprender os segredos para evoluir:
+
+\u270F\uFE0F **Passo a Passo para Melhorar:**
+1. **PASSO 1 (Praticar Diariamente):** Tenha sempre por perto um pequeno caderno de esbo\xE7os (sketchbook). Desenhar apenas 10 minutinhos todos os dias solta os m\xFAsculos da m\xE3o!
+2. **PASSO 2 (Copiar com Respeito):** Olhe desenhos de artistas que voc\xEA adora e tente copiar os tra\xE7os deles. Isso ensina novos caminhos e formas ao seu c\xE9rebro!
+3. **PASSO 3 (Desenhar o Mundo Real):** Coloque um objeto simples sobre a mesa (uma caneca, uma ma\xE7\xE3 ou o seu brinquedo preferido) e tente desenh\xE1-los exatamente como o v\xEA.
+4. **PASSO 4 (Esbo\xE7ar Clarito):** Comece sempre desenhando c\xEDrculos e ret\xE2ngulos bem fraquinhos para planejar o espa\xE7o antes de colocar os detalhes definitivos.
+5. **PASSO 5 (A Borracha \xE9 Amiga):** N\xE3o tenha medo de errar e apagar! Errar faz parte do caminho e nos mostra como aperfei\xE7oar nossos tra\xE7os.
+6. **PASSO 6 (Mudar de Materiais):** Se voc\xEA s\xF3 usa canetinhas, experimente giz de cera, guache, carv\xE3o ou l\xE1pis aquarela. Descubra texturas novas!
+
+\u{1F4A1} **Dicas:** Guarde todos os seus desenhos antigos em uma pasta datada! Daqui a alguns meses, voc\xEA poder\xE1 comparar e ver a evolu\xE7\xE3o fant\xE1stica que conquistou!
+
+\u26A0\uFE0F **Erros comuns:** Desistir logo no primeiro rascunho torto. Lembre-se: at\xE9 os maiores pintores da hist\xF3ria come\xE7aram fazendo bonequinhos de palito simples!
+
+\u{1F3C6} **Desafio:** Tente fazer o desenho de um objeto sem tirar o l\xE1pis do papel nenhuma vez! \xC9 um exerc\xEDcio super engra\xE7ado que melhora a coordena\xE7\xE3o motora!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer que eu d\xEA uma lista de tr\xEAs exerc\xEDcios pr\xE1ticos e r\xE1pidos para soltar a m\xE3o? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+      matchedKey: "como_melhorar_desenho"
+    };
+  }
+  if (normalizedMsg.includes("aprender a desenhar") || normalizedMsg.includes("treinar") || normalizedMsg.includes("perspectiva") || normalizedMsg.includes("sombras") || normalizedMsg.includes("anatomia")) {
+    return {
+      reply: `\u{1F4AA} **EXERC\xCDCIOS DIVERTIDOS PARA TREINAR PERSPECTIVA, SOMBRAS E ANATOMIA** \u{1F9E0}
+
+Praticar t\xE9cnicas de arte \xE9 como fazer muscula\xE7\xE3o para a imagina\xE7\xE3o! Vamos treinar de um jeito super divertido e descomplicado:
+
+\u270F\uFE0F **Passo a Passo para Exercitar:**
+1. **PASSO 1 (Treino de Sombras - A Esfera):** Desenhe um c\xEDrculo simples. Escolha uma ponta para ser o Sol (Luz). No lado oposto ao Sol, pinte com o l\xE1pis bem escuro e v\xE1 esfumando suavemente com o seu dedo indicador para o centro do c\xEDrculo. Veja o c\xEDrculo se transformar em uma esfera redondinha em 3D!
+2. **PASSO 2 (Treino de Perspectiva - O Cubo 3D):** Desenhe um quadrado comum. Agora desenhe outro quadrado id\xEAntico cruzando o primeiro um pouco acima e para a direita. Ligue os quatro cantos correspondentes dos dois quadrados com linhas retas. Parab\xE9ns! Voc\xEA acaba de criar um cubo transparente tridimensional perfeito!
+3. **PASSO 3 (Treino de Anatomia - O Boneco de Palito):** Para desenhar pessoas in poses din\xE2micas, desenhe c\xEDrculos para a cabe\xE7a, peito e quadril. Ligue-os com linhas de palito para os bra\xE7os e pernas. Fa\xE7a bolinhas menores nas dobras (ombros, cotovelos, joelhos) para marcar as articula\xE7\xF5es. Fica super f\xE1cil cobrir com m\xFAsculos depois!
+4. **PASSO 4 (O Desenho Cego):** Olhe fixamente para a sua m\xE3o fechada e desenhe-a na folha de papel sem olhar para o seu pr\xF3prio l\xE1pis em nenhum momento! Fica super engra\xE7ado e ensina seu c\xE9rebro a desenhar o que v\xEA de verdade, n\xE3o o que acha que est\xE1 vendo!
+
+\u{1F4A1} **Dicas:** Use um l\xE1pis macio (como o tipo 2B ou 6B), pois eles soltam grafite bem escuro de forma muito suave, facilitando esfumar sombras com os dedos!
+
+\u26A0\uFE0F **Erros comuns:** Tentar sombrear usando canetinha hidrogr\xE1fica preta comum. Canetinhas n\xE3o esfumam bem! Use sempre o l\xE1pis grafite para sombras suaves e graduais.
+
+\u{1F3C6} **Desafio:** Crie um pequeno desenho do seu quarto usando a t\xE9cnica do cubo 3D para fazer a sua cama em perspectiva real!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Quer que eu d\xEA um desafio pr\xE1tico de sombras f\xE1ceis para come\xE7armos agora? (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+      matchedKey: "como_treinar_geral"
+    };
+  }
+  return {
+    reply: `\u{1F914} **COMO APRENDER UMA NOVA HABILIDADE** \u2728
+
+Que pergunta incr\xEDvel! Querer saber "como" \xE9 o primeiro passo para se tornar um grande mestre ou cientista! Vamos descobrir como aprender esse assunto passo a passo:
+
+\u{1F392} **Materiais recomendados:** Um caderno para anota\xE7\xF5es, caneta ou l\xE1pis coloridos e muita curiosidade!
+
+\u270F\uFE0F **Passo a Passo Geral:**
+1. **PASSO 1 (Descobrir):** Pesquise e divida o assunto em partes bem pequenininhas para n\xE3o parecer dif\xEDcil.
+2. **PASSO 2 (Praticar o b\xE1sico):** Comece fazendo as partes mais f\xE1ceis todos os dias (ex: se quer andar de skate, treine primeiro o equil\xEDbrio parado!).
+3. **PASSO 3 (Organizar as etapas):** Fa\xE7a uma lista numerada de tarefas f\xE1ceis e v\xE1 riscando as que j\xE1 aprendeu.
+4. **PASSO 4 (Aprender com Erros):** Quando algo der errado, sorria e tente novamente de um jeito diferente. O erro \xE9 o melhor professor!
+5. **PASSO 5 (Pedir Ajuda):** Converse com amigos, professores ou familiares e mostre o que voc\xEA est\xE1 tentando criar.
+6. **PASSO 6 (Divertir-se):** A jornada de aprender deve ser cheia de divers\xE3o, cores e alegria!
+
+\u{1F4A1} **Dicas:** Dedique apenas de 10 a 15 minutinhos focados por dia. A const\xE2ncia vale muito mais do que passar horas cansativas treinando!
+
+\u26A0\uFE0F **Erros comuns:** Querer aprender tudo perfeitamente logo no primeiro dia. Tenha paci\xEAncia com voc\xEA e comemore cada pequena vit\xF3ria!
+
+\u{1F3C6} **Desafio:** Tente explicar para algu\xE9m da sua casa o que voc\xEA acabou de aprender sobre esse assunto em menos de um minuto!
+
+---
+**Quer que eu te ajude a dar o pr\xF3ximo passo?** Escolha o que voc\xEA gostaria agora:
+- \u{1F31F} Um exemplo pronto (digite "exemplo");
+- \u{1F3AF} Uma atividade para praticar (digite "praticar");
+- \u{1F331} Uma vers\xE3o super f\xE1cil (digite "vers\xE3o f\xE1cil");
+- \u{1F680} Uma vers\xE3o mais avan\xE7ada (digite "vers\xE3o avan\xE7ada").`,
+    matchedKey: "como_geral_como"
+  };
+}
+function resolverFollowUpMessage(normalizedMsg) {
+  if (normalizedMsg === "exemplo" || normalizedMsg === "exemplo pronto" || normalizedMsg === "quer que eu escreva um exemplo" || normalizedMsg === "quero exemplo" || normalizedMsg === "me da um exemplo") {
+    return {
+      reply: `\u{1F31F} **AQUI EST\xC1 UM EXEMPLO SUPER CAPRICHADO PARA SEU APRENDIZADO!** \u{1F381}
+
+Como prometido, fiz um exemplo bem fofinho e cheio de cores para inspirar voc\xEA! Imagine um gatinho amarelo usando um capacete de astronauta azul-brilhante, flutuando no espa\xE7o e tentando pescar estrelas brilhantes com uma varinha m\xE1gica feita de um pincel! \u{1F408}\u200D\u2B1B\u{1F680}\u2728
+
+Veja que estrutura divertida:
+1. **O Cen\xE1rio:** Fundo azul escuro cheio de pontinhos de glitter (estrelas).
+2. **O Personagem:** Gatinho "Pipoca", listrado, sorridente e com olhos enormes.
+3. **A A\xE7\xE3o:** Ele est\xE1 flutuando e rindo, super feliz com a sua varinha m\xE1gica!
+
+N\xE3o ficou fofo? Agora tente fazer a sua pr\xF3pria vers\xE3o no papel colocando as suas cores preferidas! Se quiser mais desafios ou outra dica, \xE9 s\xF3 falar! \u{1F3A8}`,
+      matchedKey: "como_followup_exemplo"
+    };
+  }
+  if (normalizedMsg === "praticar" || normalizedMsg === "atividade para praticar" || normalizedMsg === "quero praticar" || normalizedMsg === "me da uma atividade") {
+    return {
+      reply: `\u{1F3AF} **HORA DO DESAFIO! VAMOS PRATICAR JUNTOS!** \u{1F4AA}\u{1F3A8}
+
+Preparei um exerc\xEDcio super divertido para soltar a sua imagina\xE7\xE3o de artista! Que tal fazermos o **"Desafio do Desenho de Cabe\xE7a para Baixo"**?
+
+1. Pegue uma folha de papel branca.
+2. Escolha um brinquedo ou objeto bem simples da sua casa (como um copo ou chaveiro).
+3. Coloque esse objeto de cabe\xE7a para baixo na sua frente.
+4. Tente desenh\xE1-lo exatamente como est\xE1 vendo, de cabe\xE7a para baixo! Isso for\xE7a o seu c\xE9rebro a enxergar as formas e linhas reais em vez de desenhar regras de cabe\xE7a!
+
+Quando terminar, pinte com canetinhas de cores m\xE1gicas! Me conte como ficou o seu desenho! \u{1F929}`,
+      matchedKey: "como_followup_praticar"
+    };
+  }
+  if (normalizedMsg === "facil" || normalizedMsg === "versao facil" || normalizedMsg === "vers\xE3o f\xE1cil" || normalizedMsg === "quero versao facil" || normalizedMsg === "modo facil") {
+    return {
+      reply: `\u{1F331} **VERS\xC3O SUPER F\xC1CIL PARA COME\xC7AR SEM MEDO!** \u{1F970}
+
+Se voc\xEA est\xE1 come\xE7ando agora, n\xE3o se preocupe! Vamos fazer a vers\xE3o simplificada de apenas **3 passos f\xE1ceis**:
+
+1. **Passo 1:** Fa\xE7a apenas uma forma grande e simples na folha (um c\xEDrculo para bichos, ou um quadrado para pr\xE9dios e casas).
+2. **Passo 2:** Coloque apenas os detalhes mais importantes (olhos e boca felizes para personagens, telhado e porta para casas).
+3. **Passo 3:** Escolha apenas duas cores que voc\xEA mais gosta e pinte bem bonito, sem se preocupar em sair das bordas!
+
+Prontinho! Viu como desenhar e criar \xE9 f\xE1cil e relaxante? Se quiser tentar o passo completo depois, me avise! \u{1F338}`,
+      matchedKey: "como_followup_facil"
+    };
+  }
+  if (normalizedMsg === "avancada" || normalizedMsg === "versao avancada" || normalizedMsg === "vers\xE3o avan\xE7ada" || normalizedMsg === "quero versao avancada" || normalizedMsg === "modo avancado") {
+    return {
+      reply: `\u{1F680} **MODO ARTISTA AVAN\xC7ADO ATIVADO!** \u{1F451}\u2728
+
+Uau! Voc\xEA est\xE1 pronto para decolar no universo art\xEDstico! Vamos colocar t\xE9cnicas profissionais na sua cria\xE7\xE3o:
+
+1. **Adicione Perspectiva de 3 Pontos:** Crie profundidade extrema fazendo as linhas convergirem para pontos de fuga distantes no horizonte!
+2. **Jogo de Luz e Contraluz:** Escolha uma fonte de luz super forte de um lado e crie sombras projetadas bem marcadas do lado oposto. Use grafite 6B ou tons escuros de tinta para esfumar!
+3. **Mistura de Cores Complementares:** Use o c\xEDrculo crom\xE1tico! Coloque cores opostas lado a lado (como azul e laranja, ou roxo e amarelo) para criar um contraste que faz a sua arte saltar aos olhos de quem v\xEA!
+
+Tenho certeza de que sua obra vai parecer de museu! Depois me conte o que voc\xEA criou! \u{1F3A8}`,
+      matchedKey: "como_followup_avancada"
+    };
+  }
+  return null;
+}
 function resolverMensagemLocalmenteRaw(mensagem, lib) {
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
+  const porqueRes = resolverPorqueMessage(normalizedMsg);
+  if (porqueRes) return porqueRes;
+  const comoRes = resolverComoMessage(normalizedMsg);
+  if (comoRes) return comoRes;
+  const followUpRes = resolverFollowUpMessage(normalizedMsg);
+  if (followUpRes) return followUpRes;
   const PERIODS_TO_PRIORITIZE = [
     "arte_antiga",
     "arte_egipcia",
@@ -11154,7 +12524,7 @@ app.post("/api/groq", async (req, res) => {
       if (!textoFinal) {
         if (ai) {
           try {
-            let systemInstruction = "Voc\xEA \xE9 o Candinho, um professor de arte e pintor muito simp\xE1tico e acolhedor para crian\xE7as de 10 anos. Responda sempre em portugu\xEAs de forma simples, alegre e muito breve (m\xE1ximo 3 frases). Sempre use uma linguagem positiva e entusiasmada, usando analogias de pintura e pinceladas. NUNCA repita o nome do artista mais de duas vezes. Se n\xE3o descobrir sobre quem \xE9 o artista, responda gentilmente: 'N\xE3o conhe\xE7o esse artista ainda, mas vou pesquisar na minha paleta! \u{1F3A8}'. Diga se o artista nasceu ou faleceu em tal \xE9poca de forma amig\xE1vel no corpo do texto, sem criar listas ou cabe\xE7alhos.";
+            let systemInstruction = "Voc\xEA \xE9 o Candinho, um professor de arte e pintor muito simp\xE1tico e acolhedor para crian\xE7as de 10 anos. Responda sempre em portugu\xEAs de forma simples, alegre. Sempre use uma linguagem positiva e entusiasmada, usando analogias de pintura e pinceladas. NUNCA repita o nome do artista mais de duas vezes. Se n\xE3o descobrir sobre quem \xE9 o artista, responda gentilmente: 'N\xE3o conhe\xE7o esse artista ainda, mas vou pesquisar na minha paleta! \u{1F3A8}'. Diga se o artista nasceu ou faleceu em tal \xE9poca de forma amig\xE1vel no corpo do texto, sem criar listas ou cabe\xE7alhos. REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crian\xE7as.\n- Sempre organize a resposta em etapas numeradas.\n- Se a tarefa for art\xEDstica ou pr\xE1tica, utilize uma estrutura amig\xE1vel com: Materiais (quando necess\xE1rio), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n- N\xE3o inclua imagens ou links de imagens de nenhum tipo.\n- No final, pergunte de forma interativa se a crian\xE7a deseja: um exemplo pronto; uma atividade para praticar; uma vers\xE3o f\xE1cil; ou uma vers\xE3o mais avan\xE7ada.";
             if (nomeCrianca) {
               systemInstruction += ` O nome da crian\xE7a que est\xE1 conversando com voc\xEA \xE9 ${nomeCrianca}. Trate-a com muito carinho e use o nome dela em suas respostas de forma natural e fofa para manter uma conversa acolhedora e focar na arte (por exemplo, chamando-a de 'meu amigo ${nomeCrianca}' ou '${nomeCrianca}').`;
             }
