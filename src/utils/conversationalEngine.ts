@@ -547,6 +547,26 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
   },
   {
     palavras: [
+      'ia faz fake news', 'ia produz fake news', 'ia gera fake news', 'inteligencia artificial faz fake news',
+      'inteligencia artificial gera fake news', 'inteligencia artificial produz fake news', 'como ia cria fake news',
+      'ia cria fake news', 'ia e fake news', 'deepfakes', 'deepfake', 'como a ia gera fake news',
+      'como a ia faz fake news', 'ia faz fakenews', 'ia cria fakenews'
+    ],
+    resposta: '🤖 **A Inteligência Artificial (IA) faz Fake News?**\n\n' +
+      'Sim, a Inteligência Artificial pode criar Fake News incríveis, mas com uma ajuda humana! 🧑‍💻✨ Deixe-me explicar como funciona esse mistério:\n\n' +
+      '🎨 **O que a IA faz?**\n' +
+      'A IA é como um desenhista ou escritor super-rápido do computador. Ela estuda milhões de fotos, textos e sons reais. Com isso, ela consegue imitar a realidade perfeitamente!\n\n' +
+      '🧠 **Como ela gera mentiras?**\n' +
+      'Se alguém pedir para a IA: *"Desenhe o presidente jogando futebol em Marte"*, ela vai juntar pedaços de fotos e criar uma imagem novinha que parece 100% real! Quando criam vídeos e vozes falsas perfeitas assim, chamamos de **Deepfake**.\n\n' +
+      '⚙️ **Por que a IA faz isso?**\n' +
+      'A IA não faz isso por maldade. Ela não tem sentimentos e não sabe o que é verdade ou mentira. Ela apenas faz o que os humanos pedem! O problema é quando pessoas usam essa tecnologia mágica para criar boatos e enganar os outros.\n\n' +
+      '🕵️ **Quando desconfiar e como se proteger?**\n' +
+      'Sempre que vir um vídeo super espantoso ou uma imagem inacreditável (como um jacaré gigante de gravata pintando um quadro no MASP), use o seu superpoder de detetive! Procure pequenos defeitos (como dedos extras ou letras borradas) e pesquise se jornais confiáveis também estão falando sobre isso.\n\n' +
+      '💡 **Quer ver exemplos disso no mundo da arte?** Pergunte-me sobre *Fake News na Arte usando IA*! 🎨',
+    matchedKey: 'ia_gera_fake_news'
+  },
+  {
+    palavras: [
       'como se proteger', 'como me protejo', 'me proteger de fake news', 'evitar fake news', 
       'proteger de noticias falsas', 'como saber se e fake news', 'como me proteger das fake news',
       'como evito', 'como checo', 'como sei se e fake news', 'como evito fake news', 
