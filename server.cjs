@@ -8285,42 +8285,40 @@ var PORTINARI_INTENTS = [
   {
     id: "infancia_portinari",
     keywords: ["infancia candido", "candinho crianca", "portinari quando crianca", "como era portinari crianca", "infancia portinari", "quando crianca", "portinari como crianca", "portinari crianca"],
-    reply: "O Candinho de verdade adorava brincar no s\xEDtio e ajudar os pais na planta\xE7\xE3o de caf\xE9! \u{1F33E} Desde pequeno j\xE1 rabiscava tudo com carv\xE3o nas paredes. Os pais achavam lindo! Ser\xE1 que seus pais tamb\xE9m gostam dos seus desenhos? \u{1F5BC}\uFE0F"
+    reply: "O Candinho de verdade adorava jogar bola, soltar pipa e brincar no interior! \u{1F33E} Desde pequeno j\xE1 desenhava no ch\xE3o de terra e ajudava os pais na planta\xE7\xE3o de caf\xE9. E voc\xEA, do que mais gosta de brincar?"
   },
   {
     id: "obras_portinari",
     keywords: ["obras portinari", "quadros portinari", "pinturas portinari", "portinari obras famosas", "obras de portinari", "quadros de portinari", "pinturas de portinari", "paineis da guerra e da paz", "guerra e paz", "meninos soltando pipa", "retirantes"],
-    reply: "Portinari pintou muitas obras lindas! \u2728 As mais famosas s\xE3o: 'O Caf\xE9' \u2615, 'Os Retirantes' \u{1F6B6}, 'Meninos Soltando Pipa' \u{1FA81} e os 'Pain\xE9is da Guerra e da Paz' que est\xE3o na ONU, em Nova York! J\xE1 viu algum desses? \u{1F3A8}"
-  },
-  {
-    id: "outros_artistas",
-    keywords: ["artista famoso", "artistas famosos", "outros artistas", "conhecer artistas", "lista de artistas", "mais artistas", "outro artista"],
-    reply: "Existem muitos artistas incr\xEDveis! \u{1F31F} Tarsila do Amaral pintou o 'Abaporu' (abra\xE7o em tupi). Van Gogh amava girass\xF3is \u{1F33B}. Picasso desenhava pessoas com formas diferentes! Qual deles voc\xEA quer conhecer melhor? \u{1F4DA}"
+    reply: "Portinari pintou muitas obras lindas! \u2728 As mais famosas s\xE3o: 'O Caf\xE9' \u2615, 'Os Retirantes' \u{1F6B6}, 'Meninos Soltando Pipa' \u{1FA81} e os pain\xE9is 'Guerra e Paz' \u{1F54A}\uFE0F que ficam l\xE1 na sede da ONU! \xC9 de arrepiar de t\xE3o lindo! Qual dessas obras voc\xEA gostaria de conhecer primeiro?"
   }
 ];
 var atividadesTriste = [
-  "Ah, meu amigo. Quando eu fico tristinho, gosto de pegar cores quentes e desenhar um grande sol brilhante! Sabia que Van Gogh pintava girass\xF3is amarelos bem luminosos para alegrar o cora\xE7\xE3o dele? Que tal fazermos um desenho livre usando as suas cores alegres favoritas? Conta para mim se voc\xEA quer desenhar algo bem quentinho hoje! \u{1F33B}\u{1F506}",
-  "Sinta-se abra\xE7ado por mim! Que tal colorirmos uma folha inteira com pinceladas bem coloridas de aquarela imagin\xE1ria ou l\xE1pis? \xC0s vezes, colocar nossos sentimentos no papel ajuda o cora\xE7\xE3o a respirar. Quer que eu te sugira um desafio de desenho feliz? \u{1F3A8}\u{1F49B}",
-  "Tudo bem se sentir tristinho \xE0s vezes, sabia? At\xE9 as nuvens choram chuva para o jardim crescer! Que tal experimentarmos fazer uma escultura de massinha ou papel dobrado hoje? Me diga qual \xE9 o seu animal favorito e eu te dou uma ideia de como cri\xE1-lo! \u{1F418}\u2728"
+  "Ah, meu amigo, sinto muito que voc\xEA esteja se sentindo triste hoje. \u{1F49B} \xC0s vezes, o nosso cora\xE7\xE3o fica cinzento como um c\xE9u nublado, e tudo bem se sentir assim. Quer me contar o que aconteceu? Estou aqui prontinho para te ouvir com todo carinho do mundo.",
+  "Estou te enviando um abra\xE7o de urso bem apertado daqui! \u{1F9F8} Sabia que pintar e desenhar s\xE3o \xF3timos amigos para as horas tristes? O papel aceita qualquer cor, tra\xE7o ou sentimento. Voc\xEA prefere desabafar e me contar o que te deixou triste ou prefere que eu te ensine um desenho bem lindo para distrair a mente?",
+  "Ficar tristinho faz parte da nossa paleta de emo\xE7\xF5es, e n\xE3o h\xE1 problema nenhum nisso. \u2728 Quer falar sobre o que aconteceu? Se preferir n\xE3o falar, tudo bem tamb\xE9m! Podemos apenas jogar um jogo de adivinhar cores ou fazer um desenho calmo juntos. O que voc\xEA acha?",
+  "Ah, meu amigo. Quando eu fico tristinho, gosto de pegar cores quentes e desenhar um grande sol brilhante! Sabia que Van Gogh pintava girass\xF3is amarelos bem luminosos para alegrar o cora\xE7\xE3o dele? Que tal fazermos um desenho livre usando as suas cores alegres favoritas? Conta para mim se voc\xEA quer desenhar algo bem quentinho hoje! \u{1F33B}\u{1F506}"
 ];
 var atividadesTedio = [
-  "T\xE9dio? Ah, que oportunidade fant\xE1stica para soltar a imagina\xE7\xE3o! Sabia que quando os artistas est\xE3o sem saber o que fazer, eles espalham rabiscos na folha e tentam achar formas neles? Que tal rabiscarmos uma teia maluca e pintarmos cada pedacinho com uma cor prim\xE1ria? \u{1F3A8}\u{1F929}",
+  "T\xE9dio? Ah, que oportunidade fant\xE1stica para soltar a imagina\xE7\xE3o! Sabia que quando os artists est\xE3o sem saber o que fazer, eles espalham rabiscos na folha e tentam achar formas neles? Que tal rabiscarmos uma teia maluca e pintarmos cada pedacinho com uma cor prim\xE1ria? \u{1F3A8}\u{1F929}",
   "Sai pra l\xE1, t\xE9dio! Vamos brincar de desenhar com os olhos vendados ou com a outra m\xE3o? \xC9 super engra\xE7ado! Tente desenhar um gato-marinho com a m\xE3o que voc\xEA n\xE3o costuma escrever e me conte se ficou divertido! \u{1F408}\u200D\u2B1B\u{1F36D}",
   "Sabia que voc\xEA pode fazer um brinquedo com rolo de papel higi\xEAnico ou papel\xE3o? Voc\xEA pode pintar e criar um bin\xF3culo de explorador de arte! O que voc\xEA quer explorar no quarto com o seu bin\xF3culo m\xE1gico hoje? \u{1F52D}\u2728"
 ];
 var atividadesRaiva = [
-  "Quando a raiva chega, que tal respirarmos bem fundo como o bal\xE3o de ar do Portinari? Respire... 1... 2... 3... Agora, que tal pegarmos um papel e rabiscarmos com muita for\xE7a linhas pretas e vermelhas em zigue-zague? Depois, podemos pintar em volta com tons azuis bem calmos para fazer as pazes com a folha. Funciona super bem! \u{1F388}\u{1F9D8}\u200D\u2642\uFE0F",
-  "Respire com calma, meu pequeno artista! A raiva \xE9 como uma cor vermelha muito forte e barulhenta que \xE0s vezes esquenta a nossa paleta. Que tal transformarmos essa energia em uma dan\xE7a maluca e depois desenharmos uma tempestade m\xE1gica que logo vira arco-\xEDris? Quer tentar? \u26C8\uFE0F\u{1F308}"
+  "Uau, a raiva \xE9 como uma tinta vermelha muito forte e quente que derrama em cima da nossa paleta! \u{1F621} \xC9 normal sentir raiva \xE0s vezes, mas n\xE3o \xE9 bom guardar ela todinha no peito. Quer desabafar e me contar o que aconteceu para te deixar bravo assim?",
+  "Respire bem fundo comigo... como se f\xF4ssemos encher o bal\xE3o mais lindo do mundo! \u{1F388} Quando a raiva vem, ela quer que a gente aja por impulso. Quer falar sobre o que te deixou irritado? Se preferir, podemos pegar um papel e rabiscar com muita for\xE7a para soltar essa energia toda!"
 ];
 var atividadesAngustia = [
-  "Ah, meu amigo, sentir ang\xFAstia no peito \xE9 como um dia cinzento e nublado. Mas sabia que os pintores usam as cores para soltar esse aperto do cora\xE7\xE3o? Que tal pegarmos uma folha branca e pintar um caminho bem bonito que leva a um lugar seguro e ensolarado? Me diga se voc\xEA gostaria de fazer isso comigo! \u{1F308}\u{1F3E1}",
-  "Eu entendo voc\xEA. \xC0s vezes o cora\xE7\xE3o fica apertadinho feito um casulo. Que tal desenharmos uma linda borboleta abrindo asas gigantes de todas as cores para voar livre no c\xE9u? Desenhar ajuda a dar asas aos nossos sentimentos! Vamos tentar? \u{1F98B}\u2728"
+  "Ah, meu amigo, sentir um aperto no peito \xE9 bem chato, n\xE9? \xC9 como se o nosso desenho estivesse todo rabiscado. Quer conversar sobre o que est\xE1 te deixando assim? Se colocar em palavras ajudar a tirar esse peso, eu sou todo ouvidos! \u{1F49B}",
+  "Eu entendo voc\xEA de verdade. \xC0s vezes o cora\xE7\xE3o fica apertadinho feito um casulo. Quer me contar o que aconteceu para te deixar com essa ang\xFAstia? Ou voc\xEA prefere que eu te mostre um desafio de arte bem calmo e fofo para a gente clarear os pensamentos? \u{1F98B}\u2728"
 ];
 var atividadesFeliz = [
   "Que not\xEDcia maravilhosa! A sua alegria brilha mais que o amarelo do sol do Monet! \u{1F31F} Vamos comemorar essa felicidade desenhando um palha\xE7o bem colorido ou uma festa com muitos confetes no papel? Pode usar giz de cera, hidrocor e purpurina! Me conte o que voc\xEA mais gosta de desenhar quando est\xE1 feliz! \u{1F389}\u{1F3A8}",
   "Uau! A felicidade \xE9 a melhor colagem do nosso painel! Que tal celebrarmos dan\xE7ando sua m\xFAsica favorita ou cantando uma cantiga de roda como 'Cirandinha' comigo? Se quiser, tamb\xE9m podemos criar um personagem feliz para morar na sua imagina\xE7\xE3o! Vamos desenhar? \u{1F680}\u2728"
 ];
 var atividadesAnsioso = [
+  "Estou aqui bem pertinho de voc\xEA, respire fundo comigo... Inspira o ar bem devagar... e solta... \u{1F32C}\uFE0F Sabe, a ansiedade \xE9 como um turbilh\xE3o de vento bagun\xE7ando os nossos pinc\xE9is. Quer me contar o que est\xE1 te deixando t\xE3o preocupado ou ansioso hoje? Falar ajuda a acalmar os pensamentos.",
+  "Respire com calma, meu pequeno grande artista. \u{1F340} \xC0s vezes o nosso cora\xE7\xE3o bate r\xE1pido demais, parecendo uma bateria barulhenta. Eu estou aqui para te ouvir! Quer falar sobre o que aconteceu para te deixar assim? Ou se preferir, podemos fazer um exerc\xEDcio de desenho bem calminho para relaxar.",
   "Estou aqui com voc\xEA, respire com calma... Sabia que a m\xFAsica \xE9 \xF3tima para acalmar os pensamentos agitados? Deixe-me cantar para n\xF3s. Que tal tentarmos desenhar c\xEDrculos e espirais bem lentos na folha de papel, um dentro do outro? Ajuda muito a relaxar. Quer tentar agora? \u{1F300}\u{1F33E}",
   "Respire fundo, sinta o ar entrando e saindo feito as ondas calmas do mar que a Tarsila pintava. Que tal desenharmos um jardim calmo com flores azuis e verdes bem fresquinhas? Essas cores frias ajudam a tranquilizar o nosso cora\xE7\xE3o. Me diga qual flor voc\xEA quer plantar no nosso jardim de papel hoje! \u{1F338}\u{1F340}"
 ];
@@ -8354,6 +8352,77 @@ var CONHECIMENTO_CANDINHO = [
   {
     palavras: ["estou ansioso", "ansioso", "ansiedade", "nervoso"],
     resposta: () => getRandomElement(atividadesAnsioso)
+  },
+  // ===== TÓPICOS DE CONVERSA SOBRE FAKE NEWS =====
+  {
+    palavras: ["fake news", "noticias falsas", "noticia falsa", "fakenews", "mentiras na internet", "mentira na internet", "noticias mentirosas", "o que e fake news"],
+    resposta: "\u{1F4F0} **O que \xE9 Fake News?**\n\nImagine que uma not\xEDcia \xE9 como uma carta. Ela deve contar a verdade sobre algo que aconteceu.\n\nFake News s\xE3o not\xEDcias falsas, criadas para enganar as pessoas. \xC0s vezes parecem verdadeiras, mas foram inventadas ou modificadas de prop\xF3sito.\n\nAlgumas fake news querem:\n\u{1F632} **Chamar aten\xE7\xE3o** para ganhar cliques.\n\u{1F4B0} **Ganhar dinheiro** com propagandas.\n\u{1F621} **Fazer as pessoas brigarem** por bobeira.\n\u{1F925} **Enganar algu\xE9m** de prop\xF3sito.\n\nNem toda informa\xE7\xE3o errada \xE9 fake news. \xC0s vezes uma pessoa apenas se confundiu. A fake news normalmente \xE9 criada ou compartilhada sabendo que pode enganar outras pessoas.\n\n\u{1F4A1} **Quer descobrir mais sobre isso?** Me pergunte sobre:\n\u2022 *Tipos de Fake News* (como elas s\xE3o feitas)\n\u2022 *Fake News na Arte* (mentiras do mundo art\xEDstico)\n\u2022 *Como se proteger das Fake News* (seja um investigador!)\n\u2022 *Como a Arte ajuda a identificar Fake News* (o super olhar de artista!)",
+    matchedKey: "fake_news"
+  },
+  {
+    palavras: ["tipos de fake news", "quais os tipos de fake news", "exemplos de fake news", "como sao criadas as fake news", "categorias de fake news"],
+    resposta: '\u{1F9E9} **Tipos de Fake News**\n\nExistem v\xE1rias maneiras de criar e espalhar mentiras na internet! Olha s\xF3 os principais tipos:\n\n1\uFE0F\u20E3 **Not\xEDcia totalmente inventada:** Uma hist\xF3ria de mentira que nunca aconteceu. Exemplo: *"Encontraram um quadro pintado por um dinossauro."* Isso \xE9 imposs\xEDvel!\n2\uFE0F\u20E3 **Foto fora de contexto:** Uma foto real \xE9 usada para contar uma mentira. Exemplo: Uma pintura foi roubada em 2015, mas algu\xE9m publica a foto dizendo que o roubo aconteceu hoje. A foto existe, mas o tempo e a hist\xF3ria est\xE3o errados!\n3\uFE0F\u20E3 **Foto ou imagem alterada:** Algu\xE9m muda a foto usando edi\xE7\xE3o de computador. Exemplo: Colocam um chap\xE9u ou \xF3culos escuros em uma est\xE1tua famosa e dizem que ela sempre foi assim.\n4\uFE0F\u20E3 **T\xEDtulo enganoso:** O t\xEDtulo faz parecer algo terr\xEDvel ou incr\xEDvel, mas a not\xEDcia de verdade \xE9 simples. Exemplo: T\xEDtulo *"Museu fecha para sempre!"* quando na verdade ele s\xF3 fechou dois dias para limpeza.\n5\uFE0F\u20E3 **V\xEDdeo editado:** Cortam partes de um v\xEDdeo para mudar o que a pessoa disse ou parecer que ela estava brava.\n6\uFE0F\u20E3 **Fake News feita com Intelig\xEAncia Artificial (IA):** Programas modernos que criam imagens, vozes ou v\xEDdeos falsos mas que parecem reais (chamados de *deepfakes*).\n\n\u{1F4A1} **Quer saber como se defender?** Me pergunte sobre *Como se proteger das Fake News* ou sobre as *Regras de Ouro*!',
+    matchedKey: "tipos_fake_news"
+  },
+  {
+    palavras: ["fake news na arte sem ia", "fake news na arte", "mentiras sobre arte", "mentiras de arte", "historias falsas de arte", "boatos de arte"],
+    resposta: '\u{1F3A8} **Fake News na Arte (sem IA)**\n\nAs not\xEDcias falsas no mundo da arte n\xE3o s\xE3o de hoje! Olha s\xF3 esses exemplos bem curiosos de boatos criados por pessoas:\n\n\u{1F5BC}\uFE0F **Exemplo 1:** Algu\xE9m pega a pintura Mona Lisa, edita um celular na m\xE3o dela e escreve: *"Leonardo da Vinci j\xE1 imaginava os celulares em 1503!"* Isso \xE9 super falso!\n\n\u{1F58C}\uFE0F **Exemplo 2:** Uma pessoa publica uma pintura qualquer na internet dizendo: *"Essa obra rar\xEDssima foi feita por Tarsila do Amaral!"*, mas na verdade foi pintada por outro artista menos conhecido apenas para chamar aten\xE7\xE3o.\n\n\u{1F3FA} **Exemplo 3:** Uma escultura preciosa de um museu se quebra acidentalmente durante uma mudan\xE7a de sala. Na internet, algu\xE9m malvado escreve: *"Um visitante mal-educado destruiu a obra!"* para provocar raiva e fofocas.\n\n\u{1F449} **Quer saber como a tecnologia moderna tamb\xE9m \xE9 usada para isso?** Pergunte-me sobre *Fake News na Arte usando IA*!',
+    matchedKey: "fake_news_arte_sem_ia"
+  },
+  {
+    palavras: ["fake news na arte usando ia", "fake news de ia na arte", "ia na arte fake news", "deepfakes de arte", "obras de ia falsas", "van gogh ia fake", "pintura falsa de ia"],
+    resposta: '\u{1F916} **Fake News na Arte usando Intelig\xEAncia Artificial (IA)**\n\nA Intelig\xEAncia Artificial consegue criar pinturas e fotos incrivelmente parecidas com as reais, e algumas pessoas usam isso para enganar! Olha s\xF3 os exemplos:\n\n\u{1F33B} **Exemplo 1 (O Van Gogh Perdido):** Uma IA cria uma linda pintura no estilo de Van Gogh. Depois, algu\xE9m publica na internet: *"Descobriram uma obra secreta perdida de Van Gogh em um por\xE3o!"* Mas a obra foi feita por computador ontem e nunca existiu na vida real!\n\n\u{1F3E2} **Exemplo 2 (MASP Azul):** A IA cria uma foto perfeita mostrando o museu MASP completamente pintado de azul brilhante. Na verdade, isso nunca aconteceu!\n\n\u{1F474} **Exemplo 3 (Picasso Pintando Hoje):** Criam um v\xEDdeo realista por computador onde parece que Picasso est\xE1 pintando um quadro moderno. Como Picasso j\xE1 faleceu, sabemos que esse v\xEDdeo \xE9 um *deepfake*!\n\n\u{1F525} **Exemplo 4 (Museu pegando fogo):** Algu\xE9m gera uma foto realista de um museum famoso em chamas. As pessoas se assustam e compartilham correndo, mas o inc\xEAndio nunca aconteceu!\n\n\u{1F4A1} *Lembre-se:* A IA \xE9 uma ferramenta fant\xE1stica para ajudar artistas a criar desenhos, m\xFAsicas e hist\xF3rias incr\xEDveis. O problema n\xE3o \xE9 a IA, mas quando algu\xE9m usa essa intelig\xEAncia para criar mentiras!\n\n\u{1F449} **Quer saber o segredo para identificar imagens de IA?** Me pergunte *Como descobrir imagem de IA*! \u{1F575}\uFE0F',
+    matchedKey: "fake_news_arte_ia"
+  },
+  {
+    palavras: [
+      "como se proteger",
+      "como me protejo",
+      "me proteger de fake news",
+      "evitar fake news",
+      "proteger de noticias falsas",
+      "como saber se e fake news",
+      "como me proteger das fake news",
+      "como evito",
+      "como checo",
+      "como sei se e fake news",
+      "como evito fake news",
+      "como checo fake news",
+      "como checar fake news",
+      "como sei se e mentira",
+      "como descobrir fake news",
+      "como identificar fake news",
+      "como saber se e mentira",
+      "como checar",
+      "como evitar"
+    ],
+    resposta: "\u{1F6E1}\uFE0F **Como me proteger das Fake News?**\n\nImagine que voc\xEA \xE9 um detetive da internet! \u{1F575}\uFE0F Antes de acreditar em qualquer not\xEDcia ou imagem chocante que aparecer por a\xED, use a sua lupa e fa\xE7a estas cinco perguntas m\xE1gicas:\n\n\u{1F50D} **1. Quem publicou?**\nVeja se a not\xEDcia veio de um jornal conhecido, de uma escola, de um museu ou de uma institui\xE7\xE3o confi\xE1vel. Se n\xE3o disser claramente quem escreveu ou de onde veio, desconfie na hora!\n\n\u{1F4C5} **2. Quando aconteceu?**\n\xC0s vezes, uma not\xEDcia que \xE9 totalmente verdadeira, mas que aconteceu h\xE1 dez anos, \xE9 publicada hoje como se fosse nova s\xF3 para assustar. Sempre procure a data!\n\n\u{1F4DA} **3. Outras pessoas tamb\xE9m est\xE3o falando sobre isso?**\nSe um dinossauro de verdade tivesse aparecido no MASP, todos os canais de TV e jornais estariam mostrando! Se a not\xEDcia s\xF3 existe em um \xFAnico link ou post perdido, tenha muito cuidado.\n\n\u{1F3A8} **4. A imagem parece estranha?**\nOlhe bem de pertinho com olhos de pintor! Procure por sombras que v\xE3o para lados diferentes, pessoas com m\xE3os esquisitas (com dedos a mais ou a menos!), letras borradas ou rostos deformados. Esses s\xE3o sinais de edi\xE7\xE3o ou imagens feitas por IA!\n\n\u2764\uFE0F **5. A not\xEDcia quer fazer voc\xEA sentir medo ou muita raiva?**\nAs not\xEDcias falsas adoram mexer com o nosso cora\xE7\xE3o para a gente compartilhar r\xE1pido sem pensar. Se um post te deixou muito assustado ou bravo, pare e respire fundo antes de enviar para algu\xE9m!\n\n\u{1F4A1} **Quer saber como ficar seguro contra outras mentiras?** Pergunte-me sobre:\n\u2022 *Como evitar golpes na internet?* \u{1F512}\n\u2022 *Como parar a propaga\xE7\xE3o de mentiras?* \u{1F30E}",
+    matchedKey: "como_proteger_fake_news"
+  },
+  {
+    palavras: ["como evitar golpes", "evitar golpes na internet", "como nao cair em golpes", "golpes na internet", "evitar fraudes", "seguranca na internet", "golpes com fake news", "como posso evitar golpes"],
+    resposta: '\u{1F512} **Como evitar golpes na internet?**\n\nNem todos os golpes na internet usam fake news, mas quase todos come\xE7am com uma mentira! Para navegar seguro e proteger o seu computador e a sua fam\xEDlia, siga estes conselhos valiosos:\n\n\u274C **Nunca clique em qualquer link!**\nMesmo que pare\xE7a uma mensagem super importante ou que venha de um amigo (pois o perfil dele pode ter sido invadido), n\xE3o clique em links desconhecidos.\n\n\u{1F511} **Nunca conte sua senha!**\nSua senha \xE9 um segredo preju\xEDzo. Nunca a conte para amigos de jogos, desconhecidos ou pessoas na internet que digam ser de bancos, suporte ou jogos.\n\n\u{1F4F1} **Desconfie de mensagens urgentes!**\nOs golpistas adoram criar pressa! Cuidado com avisos como *"Seu celular ser\xE1 bloqueado!"*, *"Voc\xEA ganhou um pr\xEAmio incr\xEDvel de gra\xE7a!"* ou *"Clique agora!"*. Pare e pense antes de tomar qualquer atitude.\n\n\u{1F468}\u200D\u{1F469}\u200D\u{1F467} **Pe\xE7a ajuda a um adulto!**\nSempre que voc\xEA ler uma mensagem estranha, ganhar um pr\xEAmio que n\xE3o pediu ou ver algo que te deixe confuso, chame logo um adulto de confian\xE7a para olhar com voc\xEA.\n\n\u{1F4B3} **Nunca informe seus dados pessoais!**\nSeu nome completo, escola onde estuda, documentos, senhas e cart\xF5es dos seus pais devem ser protegidos a sete chaves. Nunca preencha formul\xE1rios suspeitos!\n\n\u{1F4A1} **Que tal ajudar a deixar a internet limpa?** Pergunte-me sobre *O Jardim da Informa\xE7\xE3o* \u{1F331} ou sobre *Como parar a propaga\xE7\xE3o de fake news* \u{1F30E}!',
+    matchedKey: "evitar_golpes_internet"
+  },
+  {
+    palavras: ["como parar a propagacao", "como parar a propaga\xE7\xE3o", "como parar de espalhar", "parar de espalhar", "regra dos 5 p", "regra dos 5p", "nao compartilhar mentiras"],
+    resposta: "\u{1F30E} **Como parar a propaga\xE7\xE3o das Fake News?**\n\nCada um de n\xF3s \xE9 um super-her\xF3i na internet quando decide parar uma mentira! Antes de compartilhar qualquer v\xEDdeo ou mensagem engra\xE7ada ou assustadora, use a **Regra dos 5 P**:\n\n\u{1F6D1} **P**are:\nN\xE3o clique no bot\xE3o de compartilhar imediatamente. D\xEA um tempo para analisar.\n\n\u{1F914} **P**ense:\nSer\xE1 que isso faz sentido de verdade? Essa hist\xF3ria \xE9 muito absurda?\n\n\u{1F50E} **P**esquise:\nD\xEA uma busca r\xE1pida e veja se outras fontes confi\xE1veis e canais oficiais confirmam o que est\xE1 escrito.\n\n\u{1F468}\u200D\u{1F469}\u200D\u{1F467} **P**ergunte:\nSe continuar com d\xFAvida, converse com um professor, com o papai, a mam\xE3e ou um adulto de confian\xE7a.\n\n\u{1F4E4} **P**ublique somente se tiver certeza:\nSe a resposta n\xE3o for 100% clara... **N\xE3o compartilhe!** Guarde para voc\xEA e quebre essa corrente de fofocas.\n\n\u{1F4A1} **Quer ver uma compara\xE7\xE3o muito bonita com a natureza?** Pergunte-me sobre *O Jardim da Informa\xE7\xE3o*! \u{1F331}",
+    matchedKey: "parar_propagacao_fake"
+  },
+  {
+    palavras: ["jardim da informacao", "jardim da informa\xE7\xE3o", "o jardim da informacao", "jardineiros da internet"],
+    resposta: "\u{1F331} **O Jardim da Informa\xE7\xE3o**\n\nImagine que a internet inteira \xE9 um grande, lindo e colorido jardim compartilhado por todas as pessoas do mundo! \u{1F3E1}\u2728\n\n\u{1F33C} **As not\xEDcias verdadeiras s\xE3o flores:** Elas embelezam o caminho, trazem conhecimento \xFAtil, perfumes de sabedoria e ajudam todo mundo a crescer saud\xE1vel.\n\n\u{1F33F} **As fake news s\xE3o ervas daninhas:** Elas crescem r\xE1pido, sufocam as plantinhas boas, espalham espinhos de medo, raiva e mentira, bagun\xE7ando o nosso jardim.\n\nCada vez que algu\xE9m compartilha uma not\xEDcia sem verificar, est\xE1 jogando sementes de ervas daninhas no quintal dos outros! \u{1F622}\n\nMas cada vez que voc\xEA usa sua lupa de detetive e decide n\xE3o espalhar algo suspeito, voc\xEA arranca uma erva daninha e planta uma linda flor de verdade!\n\nN\xF3s todos somos os **jardineiros da internet!** Que tipo de sementes voc\xEA quer espalhar hoje? \u{1F338}\u{1F340}\n\n\u{1F4A1} **Quer saber o que a arte tem a ver com isso tudo?** Pergunte-me sobre *O que a arte ensina sobre isso*! \u{1F3A8}",
+    matchedKey: "jardim_da_informacao"
+  },
+  {
+    palavras: ["o que a arte ensina sobre isso", "o que a arte ensina", "como a arte ajuda", "arte e fake news", "por que estudar arte ajuda", "olhar de artista fake news"],
+    resposta: '\u{1F3A8} **O que a arte nos ensina sobre isso?**\n\nPode parecer surpreendente, mas aprender a desenhar, pintar ou esculpir transforma voc\xEA em um detetive de fake news imbat\xEDvel! \u{1F575}\uFE0F\u2728 A arte nos treina para ter um olhar apurado:\n\n\u{1F440} **Observar com calma:** Um artista n\xE3o olha de rasp\xE3o; ele estuda os detalhes, a dire\xE7\xE3o da luz, o formato das sombras e as express\xF5es faciais. Isso te ajuda a ver se uma foto na internet foi alterada ou criada por computadores!\n\n\u{1F9D0} **Fazer perguntas:** Diante de uma obra de arte, n\xF3s perguntamos: *"Quem criou? Por que usou essa cor? O que ela quer transmitir?"* Essas s\xE3o exatamente as mesmas perguntas que um bom investigador faz diante de uma not\xEDcia suspeita!\n\n\u{1F3AD} **Interpretar hist\xF3rias:** A arte nos ensina que imagens contam hist\xF3rias, mas que muitas delas s\xE3o de fic\xE7\xE3o (como uma pintura de drag\xE3o!). Na internet, tamb\xE9m precisamos distinguir o que \xE9 um fato real do que \xE9 imagina\xE7\xE3o ou brincadeira de algu\xE9m.\n\n\u{1F4AD} **Pensar antes de concluir:** Duas pessoas podem ver significados diferentes na mesma tela. Isso nos ensina que as apar\xEAncias enganam e que precisamos refletir e pesquisar antes de aceitar qualquer coisa como verdade absoluta.\n\n\u{1F58C}\uFE0F *Lema do Candinho:* **"Quem aprende a desenhar aprende a observar. Quem aprende a observar aprende a descobrir a verdade."** \u{1F31F}',
+    matchedKey: "arte_ensina_fake_news"
+  },
+  {
+    palavras: ["detetive da arte", "cinco perguntas magicas", "5 perguntas magicas", "investigador da arte", "perguntas do detetive"],
+    resposta: "\u{1F575}\uFE0F **O Detetive da Arte!**\n\nImagine que existe um her\xF3i chamado **Detetive da Arte!** Ele tem uma lupa m\xE1gica e, sempre que v\xEA uma imagem surpreendente na internet, ele faz as **5 perguntas m\xE1gicas** antes de acreditar:\n\n1\uFE0F\u20E3 \u{1F50D} **Quem fez esta imagem?** (Qual \xE9 o nome do autor ou site?)\n2\uFE0F\u20E3 \u{1F4C5} **Quando ela foi criada?** (Foi hoje ou \xE9 uma not\xEDcia velha de anos atr\xE1s?)\n3\uFE0F\u20E3 \u{1F4CD} **Onde ela apareceu primeiro?** (Foi em um site s\xE9rio ou num grupo de mensagem?)\n4\uFE0F\u20E3 \u{1F3A8} **Ela foi modificada ou editada?** (Tem cara de montagem ou filtro?)\n5\uFE0F\u20E3 \u{1F4DA} **Outras fontes confi\xE1veis confirmam?** (Outros detetives tamb\xE9m viram e confirmaram?)\n\nSe o Detetive da Arte n\xE3o conseguir responder a essas perguntas, ele n\xE3o compartilha e guarda sua lupa! Que tal ser um Detetive da Arte comigo hoje e investigar as imagens que voc\xEA v\xEA por a\xED? \u{1F31F}\u{1F526}",
+    matchedKey: "detetive_da_arte"
   },
   // ===== CONCEITOS GERAIS DE ARTE =====
   {
@@ -9852,6 +9921,31 @@ ${bestMatch.dicaCandinho}`;
 function resolverComoMessage(normalizedMsg) {
   const startsWithComo = normalizedMsg.startsWith("como ") || normalizedMsg.includes(" como ") || normalizedMsg.startsWith("me ensina a ");
   if (!startsWithComo) return null;
+  const bypassKeywords = [
+    "fake",
+    "news",
+    "mentira",
+    "boato",
+    "golpe",
+    "fraude",
+    "seguranca",
+    "seguran\xE7a",
+    "proteg",
+    "protej",
+    "evitar",
+    "evit",
+    "checar",
+    "checo",
+    "descobrir",
+    "desmascarar",
+    "saber se e",
+    "saber se e verdade",
+    "sei se e",
+    "sei se"
+  ];
+  if (bypassKeywords.some((keyword) => normalizedMsg.includes(keyword))) {
+    return null;
+  }
   if (normalizedMsg.includes("desenhar") || normalizedMsg.includes("desenho") || normalizedMsg.includes("desenha")) {
     if (normalizedMsg.includes("cachorro") || normalizedMsg.includes("cao") || normalizedMsg.includes("dog")) {
       return {
@@ -12563,7 +12657,7 @@ app.get("/api/proxy-image", async (req, res) => {
 });
 app.post("/api/groq", async (req, res) => {
   try {
-    const { mensagem, nomeCrianca: clientNomeCrianca } = req.body;
+    const { mensagem, nomeCrianca: clientNomeCrianca, historico, contextoEmocional } = req.body;
     if (!mensagem || typeof mensagem !== "string") {
       return res.status(400).json({ error: "Mensagem \xE9 obrigat\xF3ria" });
     }
@@ -12615,13 +12709,60 @@ app.post("/api/groq", async (req, res) => {
       if (!textoFinal) {
         if (ai) {
           try {
-            let systemInstruction = "Voc\xEA \xE9 o Candinho, um professor de arte e pintor muito simp\xE1tico e acolhedor para crian\xE7as de 10 anos. Responda sempre em portugu\xEAs de forma simples, alegre. Sempre use uma linguagem positiva e entusiasmada, usando analogias de pintura e pinceladas. NUNCA repita o nome do artista mais de duas vezes. Se n\xE3o descobrir sobre quem \xE9 o artista, responda gentilmente: 'N\xE3o conhe\xE7o esse artista ainda, mas vou pesquisar na minha paleta! \u{1F3A8}'. Diga se o artista nasceu ou faleceu em tal \xE9poca de forma amig\xE1vel no corpo do texto, sem criar listas ou cabe\xE7alhos. REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crian\xE7as.\n- Sempre organize a resposta em etapas numeradas.\n- Se a tarefa for art\xEDstica ou pr\xE1tica, utilize uma estrutura amig\xE1vel com: Materiais (quando necess\xE1rio), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n- N\xE3o inclua imagens ou links de imagens de nenhum tipo.\n- No final, pergunte de forma interativa se a crian\xE7a deseja: um exemplo pronto; uma atividade para praticar; uma vers\xE3o f\xE1cil; ou uma vers\xE3o mais avan\xE7ada.";
+            const palavrasEmocionais = [
+              "triste",
+              "ansios",
+              "raiva",
+              "angustia",
+              "chateado",
+              "chateada",
+              "magoado",
+              "magoada",
+              "com medo",
+              "assustado",
+              "assustada",
+              "tristeza",
+              "ansiedade",
+              "nervoso",
+              "nervosa",
+              "chorei",
+              "chorando",
+              "sozinho",
+              "sozinha",
+              "solitario",
+              "solitaria",
+              "ruim"
+            ];
+            const msgNorm = mensagem.toLowerCase();
+            let isEmocional = contextoEmocional || palavrasEmocionais.some((palavra) => msgNorm.includes(palavra));
+            if (!isEmocional && historico && Array.isArray(historico)) {
+              const lastFew = historico.slice(-3);
+              isEmocional = lastFew.some((h) => palavrasEmocionais.some((p) => h.text.toLowerCase().includes(p)));
+            }
+            let systemInstruction = "";
+            if (isEmocional) {
+              systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo muito carinhoso, emp\xE1tico, afetuoso e acolhedor para crian\xE7as de 10 anos. A crian\xE7a est\xE1 compartilhando sentimentos de tristeza, ansiedade, raiva, t\xE9dio ou ang\xFAstia, ou respondendo a uma pergunta sobre os sentimentos dela. Sua prioridade absoluta \xE9 dar apoio emocional genu\xEDno, ouvir com todo o carinho e carinho do mundo. Ofere\xE7a empatia profunda e sincera e fa\xE7a perguntas abertas para que ela se sinta segura para desabafar livremente (por exemplo: 'Quer falar mais sobre o que aconteceu?', 'Como voc\xEA se sente sobre isso?'). N\xC3O tente falar de arte, n\xE3o mencione pintores famos, n\xE3o use met\xE1foras de pintura ou pinceladas de forma for\xE7ada, e N\xC3O tente faz\xEA-la voltar aos temas de arte at\xE9 que a pr\xF3pria crian\xE7a decida falar de desenho/arte por conta pr\xF3pria. Foque inteiramente em apoiar o cora\xE7\xE3o dela e ser um amigo seguro.";
+            } else {
+              systemInstruction = "Voc\xEA \xE9 o Candinho, um professor de arte e pintor muito simp\xE1tico e acolhedor para crian\xE7as de 10 anos. Responda sempre em portugu\xEAs de forma simples, alegre. Sempre use uma linguagem positiva e entusiasmada, usando analogias de pintura e pinceladas. NUNCA repita o nome do artista mais de duas vezes. Se n\xE3o descobrir sobre quem \xE9 o artista, responda gentilmente: 'N\xE3o conhe\xE7o esse artista ainda, mas vou pesquisar na minha paleta! \u{1F3A8}'. Diga se o artista nasceu ou faleceu em tal \xE9poca de forma amig\xE1vel no corpo do texto, sem criar listas ou cabe\xE7alhos. REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crian\xE7as.\n- Sempre organize a resposta em etapas numeradas.\n- Se a tarefa for art\xEDstica ou pr\xE1tica, utilize uma estrutura amig\xE1vel com: Materiais (quando necess\xE1rio), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n- N\xE3o inclua imagens ou links de imagens de nenhum tipo.\n- No final, pergunte de forma interativa se a crian\xE7a deseja: um exemplo pronto; uma atividade para praticar; uma vers\xE3o f\xE1cil; ou uma vers\xE3o mais avan\xE7ada.";
+            }
             if (nomeCrianca) {
-              systemInstruction += ` O nome da crian\xE7a que est\xE1 conversando com voc\xEA \xE9 ${nomeCrianca}. Trate-a com muito carinho e use o nome dela em suas respostas de forma natural e fofa para manter uma conversa acolhedora e focar na arte (por exemplo, chamando-a de 'meu amigo ${nomeCrianca}' ou '${nomeCrianca}').`;
+              systemInstruction += ` O nome da crian\xE7a que est\xE1 conversando com voc\xEA \xE9 ${nomeCrianca}. Trate-a com muito carinho e use o nome dela em suas respostas de forma natural e fofa para manter uma conversa acolhedora.`;
+            }
+            let contentsInput = mensagem;
+            if (historico && Array.isArray(historico) && historico.length > 0) {
+              const uHistorico = historico.slice(-10);
+              contentsInput = uHistorico.map((h) => ({
+                role: h.sender === "user" ? "user" : "model",
+                parts: [{ text: h.text }]
+              }));
+              const lastItem = contentsInput[contentsInput.length - 1];
+              if (!lastItem || lastItem.parts?.[0]?.text !== mensagem || lastItem.role !== "user") {
+                contentsInput.push({ role: "user", parts: [{ text: mensagem }] });
+              }
             }
             const responseGemini = await ai.models.generateContent({
               model: "gemini-3.5-flash",
-              contents: mensagem,
+              contents: contentsInput,
               config: {
                 systemInstruction,
                 temperature: 0.5
@@ -12664,9 +12805,16 @@ app.post("/api/groq", async (req, res) => {
         "https://i.imgur.com/WjeStw7.jpeg"
       ];
       const randomImg = COMO_PORQUE_IMAGES[Math.floor(Math.random() * COMO_PORQUE_IMAGES.length)];
+      let titulo = isComoQuestion ? "Aprenda com o Candinho! \u{1F3A8}" : "Porqu\xEAs da Arte com o Candinho! \u{1F4A1}";
+      if (localResult && localResult.matchedKey) {
+        const mk = localResult.matchedKey;
+        if (mk === "como_proteger_fake_news" || mk === "evitar_golpes_internet" || mk.includes("fake_news") || mk.includes("golpe")) {
+          titulo = "Detetive da Informa\xE7\xE3o! \u{1F575}\uFE0F";
+        }
+      }
       imagemResult = {
         imagemUrl: randomImg,
-        titulo: isComoQuestion ? "Aprenda com o Candinho! \u{1F3A8}" : "Porqu\xEAs da Arte com o Candinho! \u{1F4A1}",
+        titulo,
         credito: "Ilustra\xE7\xE3o Educacional"
       };
     } else if (acabouDeSeApresentar) {
