@@ -8376,6 +8376,27 @@ var CONHECIMENTO_CANDINHO = [
   },
   {
     palavras: [
+      "ia faz fake news",
+      "ia produz fake news",
+      "ia gera fake news",
+      "inteligencia artificial faz fake news",
+      "inteligencia artificial gera fake news",
+      "inteligencia artificial produz fake news",
+      "como ia cria fake news",
+      "ia cria fake news",
+      "ia e fake news",
+      "deepfakes",
+      "deepfake",
+      "como a ia gera fake news",
+      "como a ia faz fake news",
+      "ia faz fakenews",
+      "ia cria fakenews"
+    ],
+    resposta: '\u{1F916} **A Intelig\xEAncia Artificial (IA) faz Fake News?**\n\nSim, a Intelig\xEAncia Artificial pode criar Fake News incr\xEDveis, mas com uma ajuda humana! \u{1F9D1}\u200D\u{1F4BB}\u2728 Deixe-me explicar como funciona esse mist\xE9rio:\n\n\u{1F3A8} **O que a IA faz?**\nA IA \xE9 como um desenhista ou escritor super-r\xE1pido do computador. Ela estuda milh\xF5es de fotos, textos e sons reais. Com isso, ela consegue imitar a realidade perfeitamente!\n\n\u{1F9E0} **Como ela gera mentiras?**\nSe algu\xE9m pedir para a IA: *"Desenhe o presidente jogando futebol em Marte"*, ela vai juntar peda\xE7os de fotos e criar uma imagem novinha que parece 100% real! Quando criam v\xEDdeos e vozes falsas perfeitas assim, chamamos de **Deepfake**.\n\n\u2699\uFE0F **Por que a IA faz isso?**\nA IA n\xE3o faz isso por maldade. Ela n\xE3o tem sentimentos e n\xE3o sabe o que \xE9 verdade ou mentira. Ela apenas faz o que os humanos pedem! O problema \xE9 quando pessoas usam essa tecnologia m\xE1gica para criar boatos e enganar os outros.\n\n\u{1F575}\uFE0F **Quando desconfiar e como se proteger?**\nSempre que vir um v\xEDdeo super espantoso ou uma imagem inacredit\xE1vel (como um jacar\xE9 gigante de gravata pintando um quadro no MASP), use o seu superpoder de detetive! Procure pequenos defeitos (como dedos extras ou letras borradas) e pesquise se jornais confi\xE1veis tamb\xE9m est\xE3o falando sobre isso.\n\n\u{1F4A1} **Quer ver exemplos disso no mundo da arte?** Pergunte-me sobre *Fake News na Arte usando IA*! \u{1F3A8}',
+    matchedKey: "ia_gera_fake_news"
+  },
+  {
+    palavras: [
       "como se proteger",
       "como me protejo",
       "me proteger de fake news",
