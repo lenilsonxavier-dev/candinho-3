@@ -6,6 +6,12 @@ export interface DialogIntent {
   reply: string;
 }
 
+export interface ConhecimentoItem {
+  palavras: string[];
+  resposta: string | (() => string);
+  matchedKey?: string;
+}
+
 // 1. Helper to remove accents, punctuation, and convert to lowercase for robust matching
 export function normalizarTexto(txt: string): string {
   if (!txt) return "";
@@ -409,54 +415,46 @@ export const PORTINARI_INTENTS = [
   {
     id: "infancia_portinari",
     keywords: ["infancia candido", "candinho crianca", "portinari quando crianca", "como era portinari crianca", "infancia portinari", "quando crianca", "portinari como crianca", "portinari crianca"],
-    reply: "O Candinho de verdade adorava brincar no sítio e ajudar os pais na plantação de café! 🌾 Desde pequeno já rabiscava tudo com carvão nas paredes. Os pais achavam lindo! Será que seus pais também gostam dos seus desenhos? 🖼️"
+    reply: "O Candinho de verdade adorava jogar bola, soltar pipa e brincar no interior! 🌾 Desde pequeno já desenhava no chão de terra e ajudava os pais na plantação de café. E você, do que mais gosta de brincar?"
   },
   {
     id: "obras_portinari",
     keywords: ["obras portinari", "quadros portinari", "pinturas portinari", "portinari obras famosas", "obras de portinari", "quadros de portinari", "pinturas de portinari", "paineis da guerra e da paz", "guerra e paz", "meninos soltando pipa", "retirantes"],
-    reply: "Portinari pintou muitas obras lindas! ✨ As mais famosas são: 'O Café' ☕, 'Os Retirantes' 🚶, 'Meninos Soltando Pipa' 🪁 e os 'Painéis da Guerra e da Paz' que estão na ONU, em Nova York! Já viu algum desses? 🎨"
-  },
-  {
-    id: "outros_artistas",
-    keywords: ["artista famoso", "artistas famosos", "outros artistas", "conhecer artistas", "lista de artistas", "mais artistas", "outro artista"],
-    reply: "Existem muitos artistas incríveis! 🌟 Tarsila do Amaral pintou o 'Abaporu' (abraço em tupi). Van Gogh amava girassóis 🌻. Picasso desenhava pessoas com formas diferentes! Qual deles você quer conhecer melhor? 📚"
+    reply: "Portinari pintou muitas obras lindas! ✨ As mais famosas são: 'O Café' ☕, 'Os Retirantes' 🚶, 'Meninos Soltando Pipa' 🪁 e os painéis 'Guerra e Paz' 🕊️ que ficam lá na sede da ONU! É de arrepiar de tão lindo! Qual dessas obras você gostaria de conhecer primeiro?"
   }
 ];
 
-interface ConhecimentoItem {
-  palavras: string[];
-  resposta: string | (() => string);
-  matchedKey?: string;
-}
-
-const atividadesTriste = [
-  "Ah, meu amigo. Quando eu fico tristinho, gosto de pegar cores quentes e desenhar um grande sol brilhante! Sabia que Van Gogh pintava girassóis amarelos bem luminosos para alegrar o coração dele? Que tal fazermos um desenho livre usando as suas cores alegres favoritas? Conta para mim se você quer desenhar algo bem quentinho hoje! 🌻🔆",
-  "Sinta-se abraçado por mim! Que tal colorirmos uma folha inteira com pinceladas bem coloridas de aquarela imaginária ou lápis? Às vezes, colocar nossos sentimentos no papel ajuda o coração a respirar. Quer que eu te sugira um desafio de desenho feliz? 🎨💛",
-  "Tudo bem se sentir tristinho às vezes, sabia? Até as nuvens choram chuva para o jardim crescer! Que tal experimentarmos fazer uma escultura de massinha ou papel dobrado hoje? Me diga qual é o seu animal favorito e eu te dou uma ideia de como criá-lo! 🐘✨"
+export const atividadesTriste = [
+  "Ah, meu amigo, sinto muito que você esteja se sentindo triste hoje. 💛 Às vezes, o nosso coração fica cinzento como um céu nublado, e tudo bem se sentir assim. Quer me contar o que aconteceu? Estou aqui prontinho para te ouvir com todo carinho do mundo.",
+  "Estou te enviando um abraço de urso bem apertado daqui! 🧸 Sabia que pintar e desenhar são ótimos amigos para as horas tristes? O papel aceita qualquer cor, traço ou sentimento. Você prefere desabafar e me contar o que te deixou triste ou prefere que eu te ensine um desenho bem lindo para distrair a mente?",
+  "Ficar tristinho faz parte da nossa paleta de emoções, e não há problema nenhum nisso. ✨ Quer falar sobre o que aconteceu? Se preferir não falar, tudo bem também! Podemos apenas jogar um jogo de adivinhar cores ou fazer um desenho calmo juntos. O que você acha?",
+  "Ah, meu amigo. Quando eu fico tristinho, gosto de pegar cores quentes e desenhar um grande sol brilhante! Sabia que Van Gogh pintava girassóis amarelos bem luminosos para alegrar o coração dele? Que tal fazermos um desenho livre usando as suas cores alegres favoritas? Conta para mim se você quer desenhar algo bem quentinho hoje! 🌻🔆"
 ];
 
-const atividadesTedio = [
-  "Tédio? Ah, que oportunidade fantástica para soltar a imaginação! Sabia que quando os artistas estão sem saber o que fazer, eles espalham rabiscos na folha e tentam achar formas neles? Que tal rabiscarmos uma teia maluca e pintarmos cada pedacinho com uma cor primária? 🎨🤩",
+export const atividadesTedio = [
+  "Tédio? Ah, que oportunidade fantástica para soltar a imaginação! Sabia que quando os artists estão sem saber o que fazer, eles espalham rabiscos na folha e tentam achar formas neles? Que tal rabiscarmos uma teia maluca e pintarmos cada pedacinho com uma cor primária? 🎨🤩",
   "Sai pra lá, tédio! Vamos brincar de desenhar com os olhos vendados ou com a outra mão? É super engraçado! Tente desenhar um gato-marinho com a mão que você não costuma escrever e me conte se ficou divertido! 🐈‍⬛🍭",
   "Sabia que você pode fazer um brinquedo com rolo de papel higiênico ou papelão? Você pode pintar e criar um binóculo de explorador de arte! O que você quer explorar no quarto com o seu binóculo mágico hoje? 🔭✨"
 ];
 
-const atividadesRaiva = [
-  "Quando a raiva chega, que tal respirarmos bem fundo como o balão de ar do Portinari? Respire... 1... 2... 3... Agora, que tal pegarmos um papel e rabiscarmos com muita força linhas pretas e vermelhas em zigue-zague? Depois, podemos pintar em volta com tons azuis bem calmos para fazer as pazes com a folha. Funciona super bem! 🎈🧘‍♂️",
-  "Respire com calma, meu pequeno artista! A raiva é como uma cor vermelha muito forte e barulhenta que às vezes esquenta a nossa paleta. Que tal transformarmos essa energia em uma dança maluca e depois desenharmos uma tempestade mágica que logo vira arco-íris? Quer tentar? ⛈️🌈"
+export const atividadesRaiva = [
+  "Uau, a raiva é como uma tinta vermelha muito forte e quente que derrama em cima da nossa paleta! 😡 É normal sentir raiva às vezes, mas não é bom guardar ela todinha no peito. Quer desabafar e me contar o que aconteceu para te deixar bravo assim?",
+  "Respire bem fundo comigo... como se fôssemos encher o balão mais lindo do mundo! 🎈 Quando a raiva vem, ela quer que a gente aja por impulso. Quer falar sobre o que te deixou irritado? Se preferir, podemos pegar um papel e rabiscar com muita força para soltar essa energia toda!"
 ];
 
-const atividadesAngustia = [
-  "Ah, meu amigo, sentir angústia no peito é como um dia cinzento e nublado. Mas sabia que os pintores usam as cores para soltar esse aperto do coração? Que tal pegarmos uma folha branca e pintar um caminho bem bonito que leva a um lugar seguro e ensolarado? Me diga se você gostaria de fazer isso comigo! 🌈🏡",
-  "Eu entendo você. Às vezes o coração fica apertadinho feito um casulo. Que tal desenharmos uma linda borboleta abrindo asas gigantes de todas as cores para voar livre no céu? Desenhar ajuda a dar asas aos nossos sentimentos! Vamos tentar? 🦋✨"
+export const atividadesAngustia = [
+  "Ah, meu amigo, sentir um aperto no peito é bem chato, né? É como se o nosso desenho estivesse todo rabiscado. Quer conversar sobre o que está te deixando assim? Se colocar em palavras ajudar a tirar esse peso, eu sou todo ouvidos! 💛",
+  "Eu entendo você de verdade. Às vezes o coração fica apertadinho feito um casulo. Quer me contar o que aconteceu para te deixar com essa angústia? Ou você prefere que eu te mostre um desafio de arte bem calmo e fofo para a gente clarear os pensamentos? 🦋✨"
 ];
 
-const atividadesFeliz = [
+export const atividadesFeliz = [
   "Que notícia maravilhosa! A sua alegria brilha mais que o amarelo do sol do Monet! 🌟 Vamos comemorar essa felicidade desenhando um palhaço bem colorido ou uma festa com muitos confetes no papel? Pode usar giz de cera, hidrocor e purpurina! Me conte o que você mais gosta de desenhar quando está feliz! 🎉🎨",
   "Uau! A felicidade é a melhor colagem do nosso painel! Que tal celebrarmos dançando sua música favorita ou cantando uma cantiga de roda como 'Cirandinha' comigo? Se quiser, também podemos criar um personagem feliz para morar na sua imaginação! Vamos desenhar? 🚀✨"
 ];
 
-const atividadesAnsioso = [
+export const atividadesAnsioso = [
+  "Estou aqui bem pertinho de você, respire fundo comigo... Inspira o ar bem devagar... e solta... 🌬️ Sabe, a ansiedade é como um turbilhão de vento bagunçando os nossos pincéis. Quer me contar o que está te deixando tão preocupado ou ansioso hoje? Falar ajuda a acalmar os pensamentos.",
+  "Respire com calma, meu pequeno grande artista. 🍀 Às vezes o nosso coração bate rápido demais, parecendo uma bateria barulhenta. Eu estou aqui para te ouvir! Quer falar sobre o que aconteceu para te deixar assim? Ou se preferir, podemos fazer um exercício de desenho bem calminho para relaxar.",
   "Estou aqui com você, respire com calma... Sabia que a música é ótima para acalmar os pensamentos agitados? Deixe-me cantar para nós. Que tal tentarmos desenhar círculos e espirais bem lentos na folha de papel, um dentro do outro? Ajuda muito a relaxar. Quer tentar agora? 🌀🌾",
   "Respire fundo, sinta o ar entrando e saindo feito as ondas calmas do mar que a Tarsila pintava. Que tal desenharmos um jardim calmo com flores azuis e verdes bem fresquinhas? Essas cores frias ajudam a tranquilizar o nosso coração. Me diga qual flor você quer plantar no nosso jardim de papel hoje! 🌸🍀"
 ];
@@ -491,6 +489,155 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
   { 
     palavras: ['estou ansioso', 'ansioso', 'ansiedade', 'nervoso'], 
     resposta: () => getRandomElement(atividadesAnsioso)
+  },
+
+  // ===== TÓPICOS DE CONVERSA SOBRE FAKE NEWS =====
+  {
+    palavras: ['fake news', 'noticias falsas', 'noticia falsa', 'fakenews', 'mentiras na internet', 'mentira na internet', 'noticias mentirosas', 'o que e fake news'],
+    resposta: '📰 **O que é Fake News?**\n\n' +
+      'Imagine que uma notícia é como uma carta. Ela deve contar a verdade sobre algo que aconteceu.\n\n' +
+      'Fake News são notícias falsas, criadas para enganar as pessoas. Às vezes parecem verdadeiras, mas foram inventadas ou modificadas de propósito.\n\n' +
+      'Algumas fake news querem:\n' +
+      '😲 **Chamar atenção** para ganhar cliques.\n' +
+      '💰 **Ganhar dinheiro** com propagandas.\n' +
+      '😡 **Fazer as pessoas brigarem** por bobeira.\n' +
+      '🤥 **Enganar alguém** de propósito.\n\n' +
+      'Nem toda informação errada é fake news. Às vezes uma pessoa apenas se confundiu. A fake news normalmente é criada ou compartilhada sabendo que pode enganar outras pessoas.\n\n' +
+      '💡 **Quer descobrir mais sobre isso?** Me pergunte sobre:\n' +
+      '• *Tipos de Fake News* (como elas são feitas)\n' +
+      '• *Fake News na Arte* (mentiras do mundo artístico)\n' +
+      '• *Como se proteger das Fake News* (seja um investigador!)\n' +
+      '• *Como a Arte ajuda a identificar Fake News* (o super olhar de artista!)',
+    matchedKey: 'fake_news'
+  },
+  {
+    palavras: ['tipos de fake news', 'quais os tipos de fake news', 'exemplos de fake news', 'como sao criadas as fake news', 'categorias de fake news'],
+    resposta: '🧩 **Tipos de Fake News**\n\n' +
+      'Existem várias maneiras de criar e espalhar mentiras na internet! Olha só os principais tipos:\n\n' +
+      '1️⃣ **Notícia totalmente inventada:** Uma história de mentira que nunca aconteceu. Exemplo: *"Encontraram um quadro pintado por um dinossauro."* Isso é impossível!\n' +
+      '2️⃣ **Foto fora de contexto:** Uma foto real é usada para contar uma mentira. Exemplo: Uma pintura foi roubada em 2015, mas alguém publica a foto dizendo que o roubo aconteceu hoje. A foto existe, mas o tempo e a história estão errados!\n' +
+      '3️⃣ **Foto ou imagem alterada:** Alguém muda a foto usando edição de computador. Exemplo: Colocam um chapéu ou óculos escuros em uma estátua famosa e dizem que ela sempre foi assim.\n' +
+      '4️⃣ **Título enganoso:** O título faz parecer algo terrível ou incrível, mas a notícia de verdade é simples. Exemplo: Título *"Museu fecha para sempre!"* quando na verdade ele só fechou dois dias para limpeza.\n' +
+      '5️⃣ **Vídeo editado:** Cortam partes de um vídeo para mudar o que a pessoa disse ou parecer que ela estava brava.\n' +
+      '6️⃣ **Fake News feita com Inteligência Artificial (IA):** Programas modernos que criam imagens, vozes ou vídeos falsos mas que parecem reais (chamados de *deepfakes*).\n\n' +
+      '💡 **Quer saber como se defender?** Me pergunte sobre *Como se proteger das Fake News* ou sobre as *Regras de Ouro*!',
+    matchedKey: 'tipos_fake_news'
+  },
+  {
+    palavras: ['fake news na arte sem ia', 'fake news na arte', 'mentiras sobre arte', 'mentiras de arte', 'historias falsas de arte', 'boatos de arte'],
+    resposta: '🎨 **Fake News na Arte (sem IA)**\n\n' +
+      'As notícias falsas no mundo da arte não são de hoje! Olha só esses exemplos bem curiosos de boatos criados por pessoas:\n\n' +
+      '🖼️ **Exemplo 1:** Alguém pega a pintura Mona Lisa, edita um celular na mão dela e escreve: *"Leonardo da Vinci já imaginava os celulares em 1503!"* Isso é super falso!\n\n' +
+      '🖌️ **Exemplo 2:** Uma pessoa publica uma pintura qualquer na internet dizendo: *"Essa obra raríssima foi feita por Tarsila do Amaral!"*, mas na verdade foi pintada por outro artista menos conhecido apenas para chamar atenção.\n\n' +
+      '🏺 **Exemplo 3:** Uma escultura preciosa de um museu se quebra acidentalmente durante uma mudança de sala. Na internet, alguém malvado escreve: *"Um visitante mal-educado destruiu a obra!"* para provocar raiva e fofocas.\n\n' +
+      '👉 **Quer saber como a tecnologia moderna também é usada para isso?** Pergunte-me sobre *Fake News na Arte usando IA*!',
+    matchedKey: 'fake_news_arte_sem_ia'
+  },
+  {
+    palavras: ['fake news na arte usando ia', 'fake news de ia na arte', 'ia na arte fake news', 'deepfakes de arte', 'obras de ia falsas', 'van gogh ia fake', 'pintura falsa de ia'],
+    resposta: '🤖 **Fake News na Arte usando Inteligência Artificial (IA)**\n\n' +
+      'A Inteligência Artificial consegue criar pinturas e fotos incrivelmente parecidas com as reais, e algumas pessoas usam isso para enganar! Olha só os exemplos:\n\n' +
+      '🌻 **Exemplo 1 (O Van Gogh Perdido):** Uma IA cria uma linda pintura no estilo de Van Gogh. Depois, alguém publica na internet: *"Descobriram uma obra secreta perdida de Van Gogh em um porão!"* Mas a obra foi feita por computador ontem e nunca existiu na vida real!\n\n' +
+      '🏢 **Exemplo 2 (MASP Azul):** A IA cria uma foto perfeita mostrando o museu MASP completamente pintado de azul brilhante. Na verdade, isso nunca aconteceu!\n\n' +
+      '👴 **Exemplo 3 (Picasso Pintando Hoje):** Criam um vídeo realista por computador onde parece que Picasso está pintando um quadro moderno. Como Picasso já faleceu, sabemos que esse vídeo é um *deepfake*!\n\n' +
+      '🔥 **Exemplo 4 (Museu pegando fogo):** Alguém gera uma foto realista de um museum famoso em chamas. As pessoas se assustam e compartilham correndo, mas o incêndio nunca aconteceu!\n\n' +
+      '💡 *Lembre-se:* A IA é uma ferramenta fantástica para ajudar artistas a criar desenhos, músicas e histórias incríveis. O problema não é a IA, mas quando alguém usa essa inteligência para criar mentiras!\n\n' +
+      '👉 **Quer saber o segredo para identificar imagens de IA?** Me pergunte *Como descobrir imagem de IA*! 🕵️',
+    matchedKey: 'fake_news_arte_ia'
+  },
+  {
+    palavras: [
+      'como se proteger', 'como me protejo', 'me proteger de fake news', 'evitar fake news', 
+      'proteger de noticias falsas', 'como saber se e fake news', 'como me proteger das fake news',
+      'como evito', 'como checo', 'como sei se e fake news', 'como evito fake news', 
+      'como checo fake news', 'como checar fake news', 'como sei se e mentira', 'como descobrir fake news', 
+      'como identificar fake news', 'como saber se e mentira', 'como checar', 'como evitar'
+    ],
+    resposta: '🛡️ **Como me proteger das Fake News?**\n\n' +
+      'Imagine que você é um detetive da internet! 🕵️ Antes de acreditar em qualquer notícia ou imagem chocante que aparecer por aí, use a sua lupa e faça estas cinco perguntas mágicas:\n\n' +
+      '🔍 **1. Quem publicou?**\n' +
+      'Veja se a notícia veio de um jornal conhecido, de uma escola, de um museu ou de uma instituição confiável. Se não disser claramente quem escreveu ou de onde veio, desconfie na hora!\n\n' +
+      '📅 **2. Quando aconteceu?**\n' +
+      'Às vezes, uma notícia que é totalmente verdadeira, mas que aconteceu há dez anos, é publicada hoje como se fosse nova só para assustar. Sempre procure a data!\n\n' +
+      '📚 **3. Outras pessoas também estão falando sobre isso?**\n' +
+      'Se um dinossauro de verdade tivesse aparecido no MASP, todos os canais de TV e jornais estariam mostrando! Se a notícia só existe em um único link ou post perdido, tenha muito cuidado.\n\n' +
+      '🎨 **4. A imagem parece estranha?**\n' +
+      'Olhe bem de pertinho com olhos de pintor! Procure por sombras que vão para lados diferentes, pessoas com mãos esquisitas (com dedos a mais ou a menos!), letras borradas ou rostos deformados. Esses são sinais de edição ou imagens feitas por IA!\n\n' +
+      '❤️ **5. A notícia quer fazer você sentir medo ou muita raiva?**\n' +
+      'As notícias falsas adoram mexer com o nosso coração para a gente compartilhar rápido sem pensar. Se um post te deixou muito assustado ou bravo, pare e respire fundo antes de enviar para alguém!\n\n' +
+      '💡 **Quer saber como ficar seguro contra outras mentiras?** Pergunte-me sobre:\n' +
+      '• *Como evitar golpes na internet?* 🔒\n' +
+      '• *Como parar a propagação de mentiras?* 🌎',
+    matchedKey: 'como_proteger_fake_news'
+  },
+  {
+    palavras: ['como evitar golpes', 'evitar golpes na internet', 'como nao cair em golpes', 'golpes na internet', 'evitar fraudes', 'seguranca na internet', 'golpes com fake news', 'como posso evitar golpes'],
+    resposta: '🔒 **Como evitar golpes na internet?**\n\n' +
+      'Nem todos os golpes na internet usam fake news, mas quase todos começam com uma mentira! Para navegar seguro e proteger o seu computador e a sua família, siga estes conselhos valiosos:\n\n' +
+      '❌ **Nunca clique em qualquer link!**\n' +
+      'Mesmo que pareça uma mensagem super importante ou que venha de um amigo (pois o perfil dele pode ter sido invadido), não clique em links desconhecidos.\n\n' +
+      '🔑 **Nunca conte sua senha!**\n' +
+      'Sua senha é um segredo prejuízo. Nunca a conte para amigos de jogos, desconhecidos ou pessoas na internet que digam ser de bancos, suporte ou jogos.\n\n' +
+      '📱 **Desconfie de mensagens urgentes!**\n' +
+      'Os golpistas adoram criar pressa! Cuidado com avisos como *"Seu celular será bloqueado!"*, *"Você ganhou um prêmio incrível de graça!"* ou *"Clique agora!"*. Pare e pense antes de tomar qualquer atitude.\n\n' +
+      '👨‍👩‍👧 **Peça ajuda a um adulto!**\n' +
+      'Sempre que você ler uma mensagem estranha, ganhar um prêmio que não pediu ou ver algo que te deixe confuso, chame logo um adulto de confiança para olhar com você.\n\n' +
+      '💳 **Nunca informe seus dados pessoais!**\n' +
+      'Seu nome completo, escola onde estuda, documentos, senhas e cartões dos seus pais devem ser protegidos a sete chaves. Nunca preencha formulários suspeitos!\n\n' +
+      '💡 **Que tal ajudar a deixar a internet limpa?** Pergunte-me sobre *O Jardim da Informação* 🌱 ou sobre *Como parar a propagação de fake news* 🌎!',
+    matchedKey: 'evitar_golpes_internet'
+  },
+  {
+    palavras: ['como parar a propagacao', 'como parar a propagação', 'como parar de espalhar', 'parar de espalhar', 'regra dos 5 p', 'regra dos 5p', 'nao compartilhar mentiras'],
+    resposta: '🌎 **Como parar a propagação das Fake News?**\n\n' +
+      'Cada um de nós é um super-herói na internet quando decide parar uma mentira! Antes de compartilhar qualquer vídeo ou mensagem engraçada ou assustadora, use a **Regra dos 5 P**:\n\n' +
+      '🛑 **P**are:\n' +
+      'Não clique no botão de compartilhar imediatamente. Dê um tempo para analisar.\n\n' +
+      '🤔 **P**ense:\n' +
+      'Será que isso faz sentido de verdade? Essa história é muito absurda?\n\n' +
+      '🔎 **P**esquise:\n' +
+      'Dê uma busca rápida e veja se outras fontes confiáveis e canais oficiais confirmam o que está escrito.\n\n' +
+      '👨‍👩‍👧 **P**ergunte:\n' +
+      'Se continuar com dúvida, converse com um professor, com o papai, a mamãe ou um adulto de confiança.\n\n' +
+      '📤 **P**ublique somente se tiver certeza:\n' +
+      'Se a resposta não for 100% clara... **Não compartilhe!** Guarde para você e quebre essa corrente de fofocas.\n\n' +
+      '💡 **Quer ver uma comparação muito bonita com a natureza?** Pergunte-me sobre *O Jardim da Informação*! 🌱',
+    matchedKey: 'parar_propagacao_fake'
+  },
+  {
+    palavras: ['jardim da informacao', 'jardim da informação', 'o jardim da informacao', 'jardineiros da internet'],
+    resposta: '🌱 **O Jardim da Informação**\n\n' +
+      'Imagine que a internet inteira é um grande, lindo e colorido jardim compartilhado por todas as pessoas do mundo! 🏡✨\n\n' +
+      '🌼 **As notícias verdadeiras são flores:** Elas embelezam o caminho, trazem conhecimento útil, perfumes de sabedoria e ajudam todo mundo a crescer saudável.\n\n' +
+      '🌿 **As fake news são ervas daninhas:** Elas crescem rápido, sufocam as plantinhas boas, espalham espinhos de medo, raiva e mentira, bagunçando o nosso jardim.\n\n' +
+      'Cada vez que alguém compartilha uma notícia sem verificar, está jogando sementes de ervas daninhas no quintal dos outros! 😢\n\n' +
+      'Mas cada vez que você usa sua lupa de detetive e decide não espalhar algo suspeito, você arranca uma erva daninha e planta uma linda flor de verdade!\n\n' +
+      'Nós todos somos os **jardineiros da internet!** Que tipo de sementes você quer espalhar hoje? 🌸🍀\n\n' +
+      '💡 **Quer saber o que a arte tem a ver com isso tudo?** Pergunte-me sobre *O que a arte ensina sobre isso*! 🎨',
+    matchedKey: 'jardim_da_informacao'
+  },
+  {
+    palavras: ['o que a arte ensina sobre isso', 'o que a arte ensina', 'como a arte ajuda', 'arte e fake news', 'por que estudar arte ajuda', 'olhar de artista fake news'],
+    resposta: '🎨 **O que a arte nos ensina sobre isso?**\n\n' +
+      'Pode parecer surpreendente, mas aprender a desenhar, pintar ou esculpir transforma você em um detetive de fake news imbatível! 🕵️✨ A arte nos treina para ter um olhar apurado:\n\n' +
+      '👀 **Observar com calma:** Um artista não olha de raspão; ele estuda os detalhes, a direção da luz, o formato das sombras e as expressões faciais. Isso te ajuda a ver se uma foto na internet foi alterada ou criada por computadores!\n\n' +
+      '🧐 **Fazer perguntas:** Diante de uma obra de arte, nós perguntamos: *"Quem criou? Por que usou essa cor? O que ela quer transmitir?"* Essas são exatamente as mesmas perguntas que um bom investigador faz diante de uma notícia suspeita!\n\n' +
+      '🎭 **Interpretar histórias:** A arte nos ensina que imagens contam histórias, mas que muitas delas são de ficção (como uma pintura de dragão!). Na internet, também precisamos distinguir o que é um fato real do que é imaginação ou brincadeira de alguém.\n\n' +
+      '💭 **Pensar antes de concluir:** Duas pessoas podem ver significados diferentes na mesma tela. Isso nos ensina que as aparências enganam e que precisamos refletir e pesquisar antes de aceitar qualquer coisa como verdade absoluta.\n\n' +
+      '🖌️ *Lema do Candinho:* **"Quem aprende a desenhar aprende a observar. Quem aprende a observar aprende a descobrir a verdade."** 🌟',
+    matchedKey: 'arte_ensina_fake_news'
+  },
+  {
+    palavras: ['detetive da arte', 'cinco perguntas magicas', '5 perguntas magicas', 'investigador da arte', 'perguntas do detetive'],
+    resposta: '🕵️ **O Detetive da Arte!**\n\n' +
+      'Imagine que existe um herói chamado **Detetive da Arte!** Ele tem uma lupa mágica e, sempre que vê uma imagem surpreendente na internet, ele faz as **5 perguntas mágicas** antes de acreditar:\n\n' +
+      '1️⃣ 🔍 **Quem fez esta imagem?** (Qual é o nome do autor ou site?)\n' +
+      '2️⃣ 📅 **Quando ela foi criada?** (Foi hoje ou é uma notícia velha de anos atrás?)\n' +
+      '3️⃣ 📍 **Onde ela apareceu primeiro?** (Foi em um site sério ou num grupo de mensagem?)\n' +
+      '4️⃣ 🎨 **Ela foi modificada ou editada?** (Tem cara de montagem ou filtro?)\n' +
+      '5️⃣ 📚 **Outras fontes confiáveis confirmam?** (Outros detetives também viram e confirmaram?)\n\n' +
+      'Se o Detetive da Arte não conseguir responder a essas perguntas, ele não compartilha e guarda sua lupa! Que tal ser um Detetive da Arte comigo hoje e investigar as imagens que você vê por aí? 🌟🔦',
+    matchedKey: 'detetive_da_arte'
   },
 
   // ===== CONCEITOS GERAIS DE ARTE =====
@@ -1917,6 +2064,16 @@ function resolverComoMessage(normalizedMsg: string): { reply: string, matchedKey
                          normalizedMsg.startsWith("me ensina a ");
                          
   if (!startsWithComo) return null;
+  
+  // Evitar interceptar perguntas sobre fake news, mentiras, segurança e golpes do banco de conhecimentos
+  const bypassKeywords = [
+    "fake", "news", "mentira", "boato", "golpe", "fraude", "seguranca", "segurança", 
+    "proteg", "protej", "evitar", "evit", "checar", "checo", "descobrir", 
+    "desmascarar", "saber se e", "saber se e verdade", "sei se e", "sei se"
+  ];
+  if (bypassKeywords.some(keyword => normalizedMsg.includes(keyword))) {
+    return null;
+  }
   
   // 1. COMO DESENHAR (Categoria 1)
   if (normalizedMsg.includes("desenhar") || normalizedMsg.includes("desenho") || normalizedMsg.includes("desenha")) {

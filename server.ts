@@ -1563,7 +1563,7 @@ app.get("/api/proxy-image", async (req: Request, res: Response) => {
 // --- API CHAT HANDLER (ALIASES AS /api/groq FOR BACKWARDS COMPATIBILITY) ---
 app.post("/api/groq", async (req: Request, res: Response) => {
   try {
-    const { mensagem, nomeCrianca: clientNomeCrianca } = req.body;
+    const { mensagem, nomeCrianca: clientNomeCrianca, historico, contextoEmocional } = req.body;
     if (!mensagem || typeof mensagem !== "string") {
       return res.status(400).json({ error: "Mensagem é obrigatória" });
     }
@@ -1642,27 +1642,64 @@ app.post("/api/groq", async (req: Request, res: Response) => {
       if (!textoFinal) {
         if (ai) {
           try {
-            let systemInstruction = 
-              "Você é o Candinho, um professor de arte e pintor muito simpático e acolhedor para crianças de 10 anos. " +
-              "Responda sempre em português de forma simples, alegre. " +
-              "Sempre use uma linguagem positiva e entusiasmada, usando analogias de pintura e pinceladas. " +
-              "NUNCA repita o nome do artista mais de duas vezes. " +
-              "Se não descobrir sobre quem é o artista, responda gentilmente: 'Não conheço esse artista ainda, mas vou pesquisar na minha paleta! 🎨'. " +
-              "Diga se o artista nasceu ou faleceu em tal época de forma amigável no corpo do texto, sem criar listas ou cabeçalhos. " +
-              "REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n" +
-              "- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crianças.\n" +
-              "- Sempre organize a resposta em etapas numeradas.\n" +
-              "- Se a tarefa for artística ou prática, utilize uma estrutura amigável com: Materiais (quando necessário), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n" +
-              "- Não inclua imagens ou links de imagens de nenhum tipo.\n" +
-              "- No final, pergunte de forma interativa se a criança deseja: um exemplo pronto; uma atividade para praticar; uma versão fácil; ou uma versão mais avançada.";
+            const palavrasEmocionais = [
+              'triste', 'ansios', 'raiva', 'angustia', 'chateado', 'chateada', 'magoado', 'magoada',
+              'com medo', 'assustado', 'assustada', 'tristeza', 'ansiedade', 'nervoso', 'nervosa',
+              'chorei', 'chorando', 'sozinho', 'sozinha', 'solitario', 'solitaria', 'ruim'
+            ];
+            const msgNorm = mensagem.toLowerCase();
+            let isEmocional = contextoEmocional || palavrasEmocionais.some(palavra => msgNorm.includes(palavra));
+            
+            if (!isEmocional && historico && Array.isArray(historico)) {
+              const lastFew = historico.slice(-3);
+              isEmocional = lastFew.some((h: any) => palavrasEmocionais.some(p => h.text.toLowerCase().includes(p)));
+            }
+
+            let systemInstruction = "";
+            if (isEmocional) {
+              systemInstruction = 
+                "Você é o Candinho, um amigo muito carinhoso, empático, afetuoso e acolhedor para crianças de 10 anos. " +
+                "A criança está compartilhando sentimentos de tristeza, ansiedade, raiva, tédio ou angústia, ou respondendo a uma pergunta sobre os sentimentos dela. " +
+                "Sua prioridade absoluta é dar apoio emocional genuíno, ouvir com todo o carinho e carinho do mundo. " +
+                "Ofereça empatia profunda e sincera e faça perguntas abertas para que ela se sinta segura para desabafar livremente (por exemplo: 'Quer falar mais sobre o que aconteceu?', 'Como você se sente sobre isso?'). " +
+                "NÃO tente falar de arte, não mencione pintores famos, não use metáforas de pintura ou pinceladas de forma forçada, e NÃO tente fazê-la voltar aos temas de arte até que a própria criança decida falar de desenho/arte por conta própria. " +
+                "Foque inteiramente em apoiar o coração dela e ser um amigo seguro.";
+            } else {
+              systemInstruction = 
+                "Você é o Candinho, um professor de arte e pintor muito simpático e acolhedor para crianças de 10 anos. " +
+                "Responda sempre em português de forma simples, alegre. " +
+                "Sempre use uma linguagem positiva e entusiasmada, usando analogias de pintura e pinceladas. " +
+                "NUNCA repita o nome do artista mais de duas vezes. " +
+                "Se não descobrir sobre quem é o artista, responda gentilmente: 'Não conheço esse artista ainda, mas vou pesquisar na minha paleta! 🎨'. " +
+                "Diga se o artista nasceu ou faleceu em tal época de forma amigável no corpo do texto, sem criar listas ou cabeçalhos. " +
+                "REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n" +
+                "- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crianças.\n" +
+                "- Sempre organize a resposta em etapas numeradas.\n" +
+                "- Se a tarefa for artística ou prática, utilize uma estrutura amigável com: Materiais (quando necessário), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n" +
+                "- Não inclua imagens ou links de imagens de nenhum tipo.\n" +
+                "- No final, pergunte de forma interativa se a criança deseja: um exemplo pronto; uma atividade para praticar; uma versão fácil; ou uma versão mais avançada.";
+            }
 
             if (nomeCrianca) {
-              systemInstruction += ` O nome da criança que está conversando com você é ${nomeCrianca}. Trate-a com muito carinho e use o nome dela em suas respostas de forma natural e fofa para manter uma conversa acolhedora e focar na arte (por exemplo, chamando-a de 'meu amigo ${nomeCrianca}' ou '${nomeCrianca}').`;
+              systemInstruction += ` O nome da criança que está conversando com você é ${nomeCrianca}. Trate-a com muito carinho e use o nome dela em suas respostas de forma natural e fofa para manter uma conversa acolhedora.`;
+            }
+
+            let contentsInput: any = mensagem;
+            if (historico && Array.isArray(historico) && historico.length > 0) {
+              const uHistorico = historico.slice(-10); // Keep last 10 messages for context
+              contentsInput = uHistorico.map((h: any) => ({
+                role: h.sender === "user" ? "user" : "model",
+                parts: [{ text: h.text }]
+              }));
+              const lastItem = contentsInput[contentsInput.length - 1];
+              if (!lastItem || lastItem.parts?.[0]?.text !== mensagem || lastItem.role !== "user") {
+                contentsInput.push({ role: "user", parts: [{ text: mensagem }] });
+              }
             }
 
             const responseGemini = await ai.models.generateContent({
               model: "gemini-3.5-flash",
-              contents: mensagem,
+              contents: contentsInput,
               config: {
                 systemInstruction: systemInstruction,
                 temperature: 0.5,
@@ -1713,9 +1750,20 @@ app.post("/api/groq", async (req: Request, res: Response) => {
         "https://i.imgur.com/WjeStw7.jpeg"
       ];
       const randomImg = COMO_PORQUE_IMAGES[Math.floor(Math.random() * COMO_PORQUE_IMAGES.length)];
+      
+      let titulo = isComoQuestion ? "Aprenda com o Candinho! 🎨" : "Porquês da Arte com o Candinho! 💡";
+      
+      // Ajuste de título para tópicos de fake news e proteção na internet
+      if (localResult && localResult.matchedKey) {
+        const mk = localResult.matchedKey;
+        if (mk === "como_proteger_fake_news" || mk === "evitar_golpes_internet" || mk.includes("fake_news") || mk.includes("golpe")) {
+          titulo = "Detetive da Informação! 🕵️";
+        }
+      }
+
       imagemResult = {
         imagemUrl: randomImg,
-        titulo: isComoQuestion ? "Aprenda com o Candinho! 🎨" : "Porquês da Arte com o Candinho! 💡",
+        titulo: titulo,
         credito: "Ilustração Educacional"
       };
     } else if (acabouDeSeApresentar) {

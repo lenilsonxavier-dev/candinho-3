@@ -63,6 +63,7 @@ export default function App() {
   const [nomeCrianca, setNomeCrianca] = useState<string>(() => {
     return localStorage.getItem("candinho_nome_crianca") || "";
   });
+  const [contextoEmocional, setContextoEmocional] = useState<string | null>(null);
 
   const chatEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -137,8 +138,43 @@ export default function App() {
     setIsProcessing(true);
 
     // Verify local structured dictionary immediately (client-side matching guarantee)
+    const lowerQuery = queryText.toLowerCase().trim();
+    const palavrasEmocionais = [
+      'triste', 'ansios', 'raiva', 'angustia', 'chateado', 'chateada', 'magoado', 'magoada',
+      'com medo', 'assustado', 'assustada', 'tristeza', 'ansiedade', 'nervoso', 'nervosa',
+      'chorei', 'chorando', 'sozinho', 'sozinha', 'solitario', 'solitaria', 'ruim'
+    ];
+    const isEmotionalQuery = palavrasEmocionais.some(palavra => lowerQuery.includes(palavra));
+    const containsArtKeywords = 
+      lowerQuery.includes("desenho") ||
+      lowerQuery.includes("pintura") ||
+      lowerQuery.includes("esboço") ||
+      lowerQuery.includes("esboco") ||
+      lowerQuery.includes("arte") ||
+      lowerQuery.includes("danca") ||
+      lowerQuery.includes("dança") ||
+      lowerQuery.includes("música") ||
+      lowerQuery.includes("musica") ||
+      lowerQuery.includes("poema") ||
+      lowerQuery.includes("poesia") ||
+      lowerQuery.includes("quem foi") ||
+      lowerQuery.includes("mostre") ||
+      lowerQuery.includes("mostra");
+
+    let novoContexto = contextoEmocional;
+    if (isEmotionalQuery) {
+      novoContexto = "true";
+    } else if (containsArtKeywords) {
+      novoContexto = null;
+    }
+
     const localResult = resolverMensagemLocalmente(queryText, bibliotecaCultural);
     const isArtistMatched = !!localResult?.matchedKey;
+
+    if (localResult?.matchedKey === "tristeza" || localResult?.matchedKey === "angustia" || localResult?.matchedKey === "raiva" || localResult?.matchedKey === "ansiedade") {
+      novoContexto = "true";
+    }
+    setContextoEmocional(novoContexto);
 
     try {
       const response = await fetch("/api/groq", {
@@ -146,7 +182,9 @@ export default function App() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ 
           mensagem: queryText,
-          nomeCrianca: updatedNome
+          nomeCrianca: updatedNome,
+          historico: [...messages, userMessage].map(m => ({ sender: m.sender, text: m.text })),
+          contextoEmocional: novoContexto
         })
       });
 
