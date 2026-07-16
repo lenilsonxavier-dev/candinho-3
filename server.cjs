@@ -7944,6 +7944,51 @@ var GALERIA_IMAGENS = {
     imagemUrl: "https://i.imgur.com/qbUzNQb.jpeg",
     titulo: "O Sonho",
     credito: "Henri Rousseau"
+  },
+  como_esboco: {
+    imagemUrl: "https://i.imgur.com/qKt1FWr.jpeg",
+    titulo: "Esbo\xE7o de Estudos (Sketch Study)",
+    credito: "Leonardo da Vinci"
+  },
+  como_giz_de_cera: {
+    imagemUrl: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=600&auto=format&fit=crop",
+    titulo: "Cores e Texturas Vibrantes",
+    credito: "Unsplash"
+  },
+  como_guache: {
+    imagemUrl: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=600&auto=format&fit=crop",
+    titulo: "Pintando com Guache Art\xEDstico",
+    credito: "Unsplash"
+  },
+  como_pinceis: {
+    imagemUrl: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=600&auto=format&fit=crop",
+    titulo: "Os Diversos Pinc\xE9is e Seus Superpoderes",
+    credito: "Unsplash"
+  },
+  como_tintas_caseiras: {
+    imagemUrl: "https://images.unsplash.com/photo-1525909002-1b057f39dd81?q=80&w=600&auto=format&fit=crop",
+    titulo: "Criando Tintas Naturais e Ecol\xF3gicas",
+    credito: "Unsplash"
+  },
+  como_tinta_acrilica: {
+    imagemUrl: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=600&auto=format&fit=crop",
+    titulo: "Pintura com Tinta Acr\xEDlica Vibrante",
+    credito: "Unsplash"
+  },
+  como_papel_desenhar: {
+    imagemUrl: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?q=80&w=600&auto=format&fit=crop",
+    titulo: "Escolhendo o Papel Ideal",
+    credito: "Unsplash"
+  },
+  como_aquarela: {
+    imagemUrl: "https://images.unsplash.com/photo-1525909002-1b057f39dd81?q=80&w=600&auto=format&fit=crop",
+    titulo: "A Magia das Transpar\xEAncias na Aquarela",
+    credito: "Unsplash"
+  },
+  como_lapis_de_cor: {
+    imagemUrl: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=600&auto=format&fit=crop",
+    titulo: "Domando as Camadas e Blending dos L\xE1pis de Cor",
+    credito: "Unsplash"
   }
 };
 
@@ -7969,6 +8014,470 @@ function testarPalavraChave(msgNormalizada, kwNormalizada) {
     }
   }
   return false;
+}
+var TUTORIAIS_ARTE_CANDINHO = [
+  {
+    keywords: [
+      "como faco um esboco",
+      "como fazer esboco",
+      "como faco um esbo\xE7o",
+      "como fazer esbo\xE7o",
+      "esboco",
+      "esbo\xE7o",
+      "rascunho",
+      "como fazer rascunho",
+      "desenho esboco",
+      "desenho esbo\xE7o",
+      "fazer esboco",
+      "fazer esbo\xE7o",
+      "esbocar",
+      "esbo\xE7ar"
+    ],
+    matchedKey: "como_esboco",
+    reply: `\u270F\uFE0F **ESBO\xC7O: Como fa\xE7o um esbo\xE7o de desenho?** \u{1F3A8}
+
+Fazer um esbo\xE7o \xE9 a parte mais libertadora do desenho, pois \xE9 o momento de errar, testar e encontrar as formas sem a press\xE3o de um resultado perfeito.
+
+Aqui est\xE1 um passo a passo simples e pr\xE1tico para voc\xEA come\xE7ar o seu esbo\xE7o:
+
+1. **Comece pelas Formas Geom\xE9tricas Simples**
+N\xE3o tente desenhar os detalhes logo de cara. Olhe para o seu objeto ou refer\xEAncia e tente enxerg\xE1-lo como uma combina\xE7\xE3o de formas b\xE1sicas:
+\u2022 **C\xEDrculos e ovais:** \xD3timos para cabe\xE7as, articula\xE7\xF5es ou frutas.
+\u2022 **Ret\xE2ngulos e quadrados:** Bons para corpos, pr\xE9dios ou caixas.
+\u2022 **Tri\xE2ngulos:** \xDAteis para narizes, \xE1rvores ou a perspectiva de p\xE9s.
+
+2. **Controle a M\xE3o (Mantenha o Tra\xE7o Leve)**
+Essa \xE9 a regra de ouro do esbo\xE7o.
+N\xE3o aperte o l\xE1pis contra o papel. Segure o l\xE1pis um pouco mais longe da ponta; isso ajuda a tirar a press\xE3o dos dedos e d\xE1 mais leveza aos movimentos.
+Tra\xE7os leves s\xE3o f\xE1ceis de apagar e n\xE3o marcam o papel definitivamente.
+
+3. **Use Linhas de Guia (As "Linhas de Constru\xE7\xE3o")**
+Se estiver desenhando um rosto ou um personagem, use linhas de guia para manter a simetria:
+\u2022 Uma linha vertical no meio ajuda a centralizar os elementos.
+\u2022 Uma linha horizontal ajuda a alinhar os olhos ou a altura das janelas de uma casa.
+
+4. **Desenhe de Dentro para Fora**
+\u2022 **Primeiro a estrutura:** Monte o "esqueleto" ou o volume geral do desenho.
+\u2022 **Depois o contorno:** Quando as propor\xE7\xF5es parecerem certas, comece a ligar as formas geom\xE9tricas para criar o contorno real do objeto.
+
+5. **N\xE3o se Apegue \xE0 Borracha (Ainda)**
+No come\xE7o, evite apagar cada linha que sair "errada". Deixe as linhas extras acontecerem. Muitas vezes, ver onde voc\xEA errou ajuda o seu c\xE9rebro a encontrar o lugar certo para o tra\xE7o seguinte. S\xF3 comece a limpar o desenho quando a estrutura geral estiver pronta.
+
+\u{1F4A1} **Dica de ouro:** O esbo\xE7o serve para definir a propor\xE7\xE3o e o espa\xE7o que o desenho vai ocupar na folha. Detalhes como sombras, texturas, fios de cabelo ou dobras de roupa s\xF3 entram na fase final, depois que o esbo\xE7o j\xE1 foi aprovado por voc\xEA mesmo.`
+  },
+  {
+    keywords: [
+      "giz de cera",
+      "giz cera",
+      "como uso giz de cera",
+      "como usar giz de cera",
+      "como pintar com giz de cera",
+      "pintar com giz de cera",
+      "pintar com giz",
+      "tecnica do giz de cera",
+      "tecnicas do giz de cera",
+      "tecnicas de giz de cera"
+    ],
+    matchedKey: "como_giz_de_cera",
+    reply: `\u{1F58D}\uFE0F **GIZ DE CERA: Como uso giz de cera?** \u{1F3A8}
+
+O giz de cera \xE9 um material incr\xEDvel e super vers\xE1til! Muitas vezes ele \xE9 associado apenas a desenhos infantis, mas, sabendo us\xE1-lo, voc\xEA pode criar texturas incr\xEDveis, misturas de cores ricas e efeitos quase pict\xF3ricos (que parecem pintura a \xF3leo).
+
+Aqui est\xE3o as melhores t\xE9cnicas e dicas para voc\xEA dominar o uso do giz de cera:
+
+1. **Controle a Press\xE3o**
+A intensidade da cor e a textura do desenho mudam completamente de acordo com a for\xE7a que voc\xEA aplica:
+\u2022 **Press\xE3o leve:** Cria uma textura suave, onde o gr\xE3o do papel aparece (\xF3timo para fundos, c\xE9us ou superf\xEDcies \xE1speras).
+\u2022 **Press\xE3o forte (Satura\xE7\xE3o):** Preenche completamente os poros do papel, deixando a cor extremamente viva, brilhante e com uma camada espessa de cera.
+
+2. **T\xE9cnicas de Mistura e Degrad\xEA**
+Diferente dos l\xE1pis de cor, o giz de cera se mistura muito por fric\xE7\xE3o e calor:
+\u2022 **Sobreposi\xE7\xE3o de camadas:** Pinte uma cor levemente por cima da outra para criar novos tons. Se quiser misturar bem, passe um tom mais claro (como o branco ou amarelo) por cima de uma cor mais escura pressionando com firmeza.
+\u2022 **Mistura com os dedos ou pano:** Esfregar o desenho com um peda\xE7o de papel toalha, um pano macio ou at\xE9 com o pr\xF3prio dedo ajuda a espalhar a cera e criar transi\xE7\xF5es suaves de degrad\xEA.
+
+3. **A T\xE9cnica do Esfuminho ou Solvente (Efeito Pintura)**
+Como a base do giz \xE9 cera, ela reage ao calor e a solventes:
+Voc\xEA pode usar um cotonete levemente umedecido em \xF3leo de beb\xEA ou \xF3leo mineral para esfumar o giz de cera no papel. O resultado fica muito parecido com uma pintura a \xF3leo acad\xEAmica!
+
+4. **Texturiza\xE7\xE3o (Frottage)**
+Esta \xE9 uma t\xE9cnica super divertida e cheia de possibilidades:
+Coloque um objeto plano com textura por baixo da folha de papel (como uma folha de \xE1rvore, uma moeda, uma lixa ou um peda\xE7o de renda).
+Passe o giz deitado e de forma leve por cima do papel. A textura do objeto vai se revelar perfeitamente no seu desenho!
+
+5. **Raspagem (Esgrafito)**
+Uma t\xE9cnica cl\xE1ssica que gera contrastes incr\xEDveis:
+Pinte a folha inteira com cores bem coloridas e vibrantes de giz de crayon (amarelo, vermelho, azul, etc.), apertando bem contra o papel.
+Cubra toda essa pintura colorida com uma camada grossa de giz de cera preto (ou tinta guache preta).
+Use um objeto de ponta seca (como um palito de dente, a tampa de uma caneta ou uma esp\xE1tula pl\xE1stica) para raspar o preto e "desenhar". As cores vibrantes de baixo v\xE3o surgir como m\xE1gica!
+
+\u{1F6E0}\uFE0F **Dicas de Ouro para N\xE3o Errar:**
+\u2022 **Escolha o papel certo:** Pap\xE9is com um pouco mais de textura (como papel de desenho de gramatura 120g ou superior) seguram melhor a cera do que folhas sulfite comuns de impressora.
+\u2022 **Mantenha a ponta limpa:** O giz de cera acumula res\xEDduos de outras cores facilmente. Tenha sempre um peda\xE7o de papel toalha ao lado para limpar a ponta do giz antes de usar.
+\u2022 **Como apontar:** Para fazer detalhes finos, voc\xEA n\xE3o precisa de um apontador comum (que pode quebrar o giz). Use um estilete com cuidado ou simplesmente use as bordas desgastadas do pr\xF3prio giz para conseguir linhas finas.
+
+Qual dessas t\xE9cnicas voc\xEA quer testar primeiro no seu desenho?`
+  },
+  {
+    keywords: [
+      "como pinto com guache",
+      "como pinto de guache",
+      "como usar guache",
+      "como pintar com guache",
+      "pinto com guache",
+      "pintar com guache",
+      "guache",
+      "tinta guache"
+    ],
+    matchedKey: "como_guache",
+    reply: `\u{1F3A8} **GUACHE: Como pinto com guache?** \u{1F31F}
+
+O guache \xE9 uma das tintas mais divertidas, vers\xE1teis e incompreendidas do mundo da arte! Muitas vezes ele \xE9 associado a projetos escolares de qualidade simples, mas o guache art\xEDstico \xE9 um material profissional incr\xEDvel, muito amado por ilustradores, designers e artistas conceituais (como os criadores de cen\xE1rios do Studio Ghibli).
+
+A melhor forma de entender o guache \xE9 pensar nele como um meio-termo perfeito entre a aquarela e a tinta acr\xEDlica: ele \xE9 sol\xFAvel em \xE1gua (como a aquarela), mas \xE9 opaco, encorpado e permite cobrir cores escuras com cores claras (como a acr\xEDlica).
+
+Aqui est\xE1 o guia definitivo para voc\xEA dominar o guache:
+
+1. **O Material Necess\xE1rio**
+\u2022 **O Guache:** Para uma boa experi\xEAncia, procure guaches descritos como "Art\xEDstico" ou "Profissional" (marcas como Talens, Winsor & Newton, Pentel ou Caran d'Ache). Eles t\xEAm muito mais pigmento e menos carga de giz, o que evita que a pintura rache ou fique com apar\xEAncia de poeira depois de seca.
+\u2022 **O Papel:** Como o guache usa \xE1gua, voc\xEA precisa de um papel resistente. Use papel para aquarela ou t\xE9cnica mista (mixed media) com gramatura m\xEDnima de 200g/m\xB2 (o ideal \xE9 300g/m\xB2).
+\u2022 **Os Pinc\xE9is:** Pinc\xE9is sint\xE9ticos macios (os mesmos da aquarela ou acr\xEDlica) funcionam perfeitamente. Um pincel chato para fundos e um redondo m\xE9dio/fino para detalhes s\xE3o o suficiente.
+\u2022 **Paleta e \xC1gua:** Um god\xEA de pl\xE1stico ou cer\xE2mica para misturar as cores e um pote com \xE1gua limpa.
+
+2. **A Consist\xEAncia Perfeita: O Segredo do Guache**
+O maior desafio de quem come\xE7a no guache \xE9 acertar a quantidade de \xE1gua.
+\u2022 Se usar \xE1gua demais: Ele vai se comportar como uma aquarela fraca e manchada.
+\u2022 Se usar \xE1gua de menos: A tinta vai ficar muito grossa, dif\xEDcil de espalhar e pode rachar ou descascar do papel depois de seca.
+\u2022 **A consist\xEAncia ideal:** \xC9 descrita pelos artistas como a de creme de leite fresco ou iogurte cremoso. A tinta deve ser fluida o suficiente para deslizar no papel, mas opaca o suficiente para cobrir o que est\xE1 por baixo.
+
+3. **T\xE9cnicas Essenciais de Guache**
+\u2022 **Opacidade e Camadas (Layering):** Como o guache \xE9 opaco, voc\xEA pode pintar cores claras por cima de cores escuras.
+Exemplo: Voc\xEA pode pintar um fundo azul-escuro e, depois de seco, pintar estrelas amarelas brilhantes por cima.
+*Aten\xE7\xE3o:* Como o guache \xE9 reativado com a \xE1gua (mesmo depois de seco), se voc\xEA esfregar muito o pincel molhado na segunda camada, a cor de baixo vai se misturar com a de cima. Passe a camada superior com o pincel carregado de tinta e de forma r\xE1pida, com a m\xE3o leve.
+\u2022 **Degrad\xEA Suave (Blending):** Diferente da acr\xEDlica, voc\xEA pode misturar as cores diretamente no papel mesmo se elas j\xE1 tiverem secado h\xE1 dias. Basta passar um pincel limpo e levemente \xFAmido sobre a transi\xE7\xE3o das duas cores para reativ\xE1-las e suavizar a borda.
+
+4. **Passo a Passo para Pintar**
+\u2022 **Fa\xE7a o esbo\xE7o:** Desenhe levemente com o l\xE1pis. O guache cobre o grafite facilmente, mas se o tra\xE7o for muito forte, o grafite pode se misturar e "sujar" as cores claras.
+\u2022 **Pinte grandes \xE1reas de fundo primeiro:** Use a tinta em uma consist\xEAncia ligeiramente mais fluida para cobrir o fundo de forma homog\xEAnea.
+\u2022 **Construa os m\xE9dios e detalhes:** V\xE1 adicionando os elementos principais usando a consist\xEAncia ideal ("iogurte").
+\u2022 **Adicione os realces e luzes por \xFAltimo:** O guache branco puro \xE9 excelente para dar os toques finais de brilho, reflexos e pontos de luz por cima de tudo.
+
+\u26A0\uFE0F **A Regra das Cores que Mudam (Fique de Olho!):**
+O guache tem uma caracter\xEDstica f\xEDsica curiosa que confunde muitos iniciantes durante a secagem:
+\u2022 As cores claras tendem a secar um pouco mais escuras.
+\u2022 As cores escuras tendem a secar um pouco mais claras.
+
+\u{1F4A1} **Dica pr\xE1tica:** Fa\xE7a pequenos testes de cor em um peda\xE7o de papel rascunho e espere um minuto para secar antes de aplicar a mistura definitivamente no seu desenho! Isso evita surpresas com os tons finais.
+
+O guache \xE9 extremamente permissivo e f\xE1cil de corrigir: se n\xE3o gostou de uma parte, basta esperar secar e pintar por cima!`
+  },
+  {
+    keywords: [
+      "pinceis",
+      "pincel",
+      "pinceis diferentes",
+      "tipos de pincel",
+      "tipos de pinceis",
+      "como usar pincel",
+      "como usar pinceis",
+      "formato de pincel",
+      "formatos de pincel",
+      "formatos de pinceis",
+      "pincel redondo",
+      "pincel chato",
+      "pincel lingua de gato",
+      "pincel leque",
+      "pincel filete",
+      "como limpar pinceis"
+    ],
+    matchedKey: "como_pinceis",
+    reply: `\u{1F58C}\uFE0F **PINC\xC9IS: Conhe\xE7a os formatos e seus superpoderes!** \u{1F3A8}
+
+Que legal que voc\xEA quer saber mais sobre pinc\xE9is! \u{1F3A8} Pensar nos pinc\xE9is \xE9 como pensar nas ferramentas de um super-her\xF3i: cada um tem um "superpoder" diferente para ajudar voc\xEA a criar o desenho que est\xE1 na sua imagina\xE7\xE3o.
+
+Aqui est\xE3o os 5 pinc\xE9is mais comuns que voc\xEA vai encontrar e como usar cada um deles:
+
+1. **O Pincel Redondo (Round) \u{1F7E2}**
+\u2022 **Como ele \xE9:** Ele tem a pontinha arredondada e, quando est\xE1 molhado, fica bem fininho na ponta.
+\u2022 **O superpoder dele:** Ele \xE9 o mais vers\xE1til de todos! Se voc\xEA apertar de leve no papel, ele faz linhas bem fininhas. Se voc\xEA apertar com mais for\xE7a, ele faz tra\xE7os grossos.
+\u2022 **Para que usar:** \xD3timo para desenhar detalhes, contornos, escrever letras e pintar \xE1reas pequenas.
+
+2. **O Pincel Chato (Flat) \u{1F7E6}**
+\u2022 **Como ele \xE9:** Ele parece uma "vassourinha" quadrada e achatada.
+\u2022 **O superpoder dele:** Ele consegue carregar muita tinta e espalhar super bem.
+\u2022 **Para que usar:** \xC9 o melhor amigo para pintar coisas grandes bem r\xE1pido, como o c\xE9u, a grama ou o fundo da sua tela. Se voc\xEA usar ele "em p\xE9", de ladinho, tamb\xE9m consegue fazer linhas retas perfeitas.
+
+3. **O Pincel L\xEDngua de Gato (Filbert) \u{1F431}**
+\u2022 **Como ele \xE9:** Ele \xE9 achatado como o pincel chato, mas tem as pontas arredondadas (parece mesmo a l\xEDngua de um gatinho!).
+\u2022 **O superpoder dele:** Ele faz tra\xE7os macios e curvas suaves sem deixar aquelas marcas quadradas nas pontas.
+\u2022 **Para que usar:** Perfeito para pintar p\xE9talas de flores, folhas de \xE1rvores, nuvens e para misturar as cores na tela de um jeito bem suave.
+
+4. **O Pincel Leque (Fan) \u{1FAAD}**
+\u2022 **Como ele \xE9:** Ele \xE9 todo aberto e espalhado, parecendo um leque de verdade ou uma vassoura estilosa.
+\u2022 **O superpoder dele:** Ele n\xE3o serve para pintar \xE1reas lisas, mas sim para criar texturas!
+\u2022 **Para que usar:** Se voc\xEA melar as pontinhas dele na tinta verde e der batidinhas no papel, ele faz folhas de \xE1rvores e arbustos num piscar de olhos. Tamb\xE9m \xE9 \xF3timo para fazer efeitos de cabelos, pelos de animais e texturas de nuvens.
+
+5. **O Pincel de Detalhe ou Filete (Liner) \u270F\uFE0F**
+\u2022 **Como ele \xE9:** \xC9 um pincel redondo, mas bem magrinho e com pelos bem compridos.
+\u2022 **O superpoder dele:** Ele guarda \xE1gua e tinta na base e deixa voc\xEA desenhar linhas gigantes e fininhas sem precisar parar para pegar mais tinta toda hora.
+\u2022 **Para que usar:** \xD3timo para assinar seu nome no quadro, desenhar fios de bigode de gatinho, galhos fininhos de \xE1rvores ou contornar seus desenhos.
+
+\u{1F9F8} **Dica de Ouro: Como cuidar dos seus pinc\xE9is:**
+Sabe qual \xE9 o maior inimigo do pincel? A tinta seca!
+\u2022 Se voc\xEA esquecer o pincel com tinta, os pelos dele v\xE3o ficar duros como pedra e ele vai estragar.
+\u2022 Sempre limpe seus pinc\xE9is em um potinho com \xE1gua enquanto estiver pintando.
+\u2022 Quando terminar, lave com \xE1gua e um pouquinho de sab\xE3o neutro na palma da m\xE3o (sem esfregar com muita for\xE7a para n\xE3o descabelar o pincel!).
+\u2022 Guarde eles em p\xE9, com os pelos virados para cima (como se fossem flores num vaso), para que as pontas n\xE3o amassem.`
+  },
+  {
+    keywords: [
+      "tintas caseiras",
+      "tinta caseira",
+      "como fazer tintas caseiras",
+      "como fazer tinta caseira",
+      "tintas da natureza",
+      "como posso fazer tintas caseiras",
+      "fazer tinta caseira",
+      "fazer tintas caseiras",
+      "tinta de terra",
+      "tinta natural",
+      "tintas naturais"
+    ],
+    matchedKey: "como_tintas_caseiras",
+    reply: `\u{1F3A8} **TINTAS CASEIRAS: Como posso fazer tintas caseiras usando a natureza e outros produtos?** \u{1F343}\u{1F36F}
+
+Fazer tintas caseiras usando elements da natureza e da cozinha \xE9 uma atividade incr\xEDvel, divertida e cient\xEDfica! Al\xE9m de ser uma pr\xE1tica totalmente ecol\xF3gica e segura, ajuda a entender como os artistas do passado (e os povos ind\xEDgenas) criavam suas pr\xF3prias cores antes de existirem as tintas industriais.
+
+Para fazer qualquer tinta, precisamos de duas coisas b\xE1sicas:
+\u2022 **O Pigmento:** O ingrediente que d\xE1 a cor (frutas, temperos, terra).
+\u2022 **O Aglutinante:** O ingrediente que "cola" o pigmento no papel e d\xE1 a textura da tinta (cola, ovo, goma, \xE1gua).
+
+Aqui est\xE3o as 3 melhores receitas de tintas caseiras para fazer com ingredientes f\xE1ceis:
+
+1. **Tinta de Temperos e Alimentos (Super Vibrante)**
+Esta receita usa o que temos na despensa. As cores ficam incrivelmente brilhantes e o processo de mistura \xE9 muito satisfat\xF3rio.
+\u2022 **Ingredientes:** Para a base: 1 colher de sopa de cola branca (ou goma de amido de milho) + 1 colher de sopa de \xE1gua morna para cada cor.
+\u2022 **Para as cores (Pigmentos):**
+  - **Amarelo:** C\xFArcuma (a\xE7afr\xE3o-da-terra) em p\xF3.
+  - **Laranja:** Colorau (urucum) em p\xF3.
+  - **Marrom:** Caf\xE9 sol\xFAvel ou chocolate em p\xF3.
+  - **Verde:** Match\xE1 em p\xF3 ou espinafre macerado (espremido em um pano para extrair o suco bem concentrado).
+\u2022 **Como fazer:**
+  1. Em um potinho, misture a \xE1gua morna e a cola branca at\xE9 virar um l\xEDquido homog\xEAneo.
+  2. Adicione o tempero em p\xF3 aos poucos (cerca de 1 colher de ch\xE1) e mexa bem at\xE9 dissolver.
+  3. Se achar muito grossa, adicione gotas de \xE1gua; se achar muito rala, coloque um pouco mais de p\xF3 ou cola.
+
+2. **Aquarela de Frutas e Legumes (Cores Naturais)**
+As plantas cont\xEAm pigmentos naturais maravilhosos. O processo de extra\xE7\xE3o \xE9 pura qu\xEDmica!
+\u2022 **Ingredientes:**
+  - **Roxo/Azul:** Repolho roxo.
+  - **Rosa/Vermelho:** Beterraba ralada ou amoras/framboesas amassadas.
+  - **Aglutinante:** 1 colher de ch\xE1 de goma ar\xE1bica (encontrada em papelarias) ou mel (para dar brilho e ajudar a fixar no papel).
+\u2022 **Como fazer:**
+  1. **Extraindo a cor:**
+     - Para a beterraba ou repolho roxo: Pique em peda\xE7os pequenos, coloque em uma panela com bem pouca \xE1gua (apenas o suficiente para cobrir) e ferva por 10 a 15 minutos at\xE9 a \xE1gua ficar com uma cor muito escura e concentrada. Coe o l\xEDquido.
+     - Para as frutas vermelhas: Amasse-as muito bem dentro de uma peneira fina para extrair apenas o suco puro.
+  2. **Finalizando a tinta:** Adicione algumas gotas de mel ou goma ar\xE1bica ao l\xEDquido concentrado. Prontinho!
+\u{1F9EA} **Truque Cient\xEDfico com Repolho Roxo:** O caldo do repolho roxo \xE9 um indicador de pH. Se voc\xEA separar o l\xEDquido roxo em dois copinhos e adicionar gotas de lim\xE3o em um, ele vira um rosa brilhante. Se adicionar uma pitada de bicarbonato de s\xF3dio no outro, ele vira um azul ou verde-\xE1gua!
+
+3. **Tinta de Terra (A Tinta Pr\xE9-Hist\xF3rica)**
+Esta receita reconecta a gente com a terra e com as pinturas rupestres. Dependendo do solo da sua regi\xE3o, voc\xEA pode conseguir tons de marrom, amarelo-argila, cinza ou avermelhado.
+\u2022 **Ingredientes:**
+  - 1 parte de terra limpa e seca (recolha um pouco do jardim ou de um barranco).
+  - 1 parte de cola branca.
+  - 1 parte de \xE1gua.
+  - Peneira fina (ou um peda\xE7o de tecido de meia-cal\xE7a).
+\u2022 **Como fazer:**
+  1. Peneire muito bem a terra seca para remover pedrinhas, folhas e galhos, deixando apenas um p\xF3 bem fino.
+  2. Em um pote, misture a terra peneirada com a cola branca e a \xE1gua em partes iguais.
+  3. Mexa bem at\xE9 virar uma pasta lisa. Essa tinta tem uma textura incr\xEDvel e, depois de seca, fica com um relevo fosco lindo no papel.
+
+\u{1F4A1} **Dicas de Pintura e Conserva\xE7\xE3o:**
+\u2022 **Use pap\xE9is grossos:** Como essas tintas s\xE3o mais \xFAmidas que as industriais, use pap\xE9is de maior gramatura (como papel para aquarela ou papel cart\xE3o) para que a folha n\xE3o rasgue ou enrugue demais.
+\u2022 **Conserva\xE7\xE3o:** Como s\xE3o feitas com ingredientes org\xE2nicos, essas tintas podem estragar com o tempo. Use-as no mesmo dia ou guarde em potinhos fechados na geladeira por, no m\xE1ximo, 2 ou 3 dias.`
+  },
+  {
+    keywords: [
+      "tinta acrilica",
+      "tinta acr\xEDlica",
+      "como pinto com tinta acrilica",
+      "como pinto com tinta acr\xEDlica",
+      "como pintar com tinta acrilica",
+      "como pintar com tinta acr\xEDlica",
+      "como usar tinta acrilica",
+      "como usar tinta acr\xEDlica",
+      "pintar com acrilica",
+      "pintar com acr\xEDlica",
+      "como pintar com acrilica",
+      "como pintar com acr\xEDlica"
+    ],
+    matchedKey: "como_tinta_acrilica",
+    reply: `\u{1F3A8} **PINTAR COM TINTA ACR\xCDLICA: Como pinto com tinta acr\xEDlica?** \u{1F31F}
+
+A tinta acr\xEDlica \xE9 uma das mais amadas por artistas de todos os n\xEDveis \u2014 e n\xE3o \xE9 por acaso! Ela seca super r\xE1pido, \xE9 sol\xFAvel em \xE1gua (f\xE1cil de limpar) e, depois de seca, torna-se resistente \xE0 \xE1gua e extremamente dur\xE1vel. Al\xE9m disso, ela \xE9 super vers\xE1til: voc\xEA pode us\xE1-la de forma bem fluida (parecida com aquarela) ou bem espessa e texturizada (como tinta a \xF3leo).
+
+Se voc\xEA quer come\xE7ar a pintar com acr\xEDlica, aqui est\xE1 o guia essencial para dominar a t\xE9cnica:
+
+1. **O que voc\xEA precisa para come\xE7ar**
+\u2022 **As Tintas:** Para come\xE7ar, voc\xEA n\xE3o precisa de estojos gigantescos. Um kit b\xE1sico com as cores prim\xE1rias (Azul Ultramar ou Ftalocianina, Amarelo M\xE9dio, Magenta ou Vermelho Prim\xE1rio), mais Branco de Tit\xE2nio e Preto \xE9 o suficiente para misturar e criar qualquer colagem de cor.
+\u2022 **Os Pinc\xE9is:** Pinc\xE9is de cerdas sint\xE9ticas s\xE3o os melhores para acr\xEDlica, pois as cerdas naturais podem estragar com a qu\xEDmica da tinta. Tenha em m\xE3os:
+  - Um pincel chato grande (para cobrir grandes \xE1reas de fundo).
+  - Um pincel redondo m\xE9dio (para formas e linhas gerais).
+  - Um pincel de detalhe fino.
+\u2022 **O Suporte (Onde pintar):** A acr\xEDlica aceita quase tudo! Telas de pintura esticadas, placas de MDF seladas, papel\xE3o ou papel de alta gramatura (m\xEDnimo 300g/m\xB2, de prefer\xEAncia com primer/gesso).
+\u2022 **\xC1gua e Toalha de Papel:** Um pote com \xE1gua para limpar os pinc\xE9is e um pano ou papel toalha para sec\xE1-los (controlar a umidade do pincel \xE9 fundamental).
+\u2022 **Paleta:** Pode ser um prato de lou\xE7a, uma bandeja de pl\xE1stico ou um peda\xE7o de vidro.
+
+2. **T\xE9cnicas B\xE1sicas de Aplica\xE7\xE3o**
+A tinta acr\xEDlica seca por evapora\xE7\xE3o da \xE1gua. Isso significa que, uma vez seca, voc\xEA pode pintar por cima sem medo de borrar a camada de baixo.
+\u2022 **Pintura Plana (Flat Color):** Use a tinta pura ou com uma gotinha m\xEDnima de \xE1gua (apenas para ajudar o pincel a deslizar). Aplique pinceladas uniformes para criar blocos s\xF3lidos de cor. \xC9 excelente para estilos mais ilustrativos ou pop art.
+\u2022 **Degrad\xEA / Esfuma\xE7ado (Blending):** Como a acr\xEDlica seca muito r\xE1pido, para fazer um degrad\xEA suave (como um c\xE9u), voc\xEA precisa trabalhar enquanto a tinta ainda est\xE1 \xFAmida (wet-on-wet). Aplique as duas cores na tela e, com um pincel limpo e levemente \xFAmido, fa\xE7a movimentos r\xE1pidos de vaiv\xE9m na fronteira entre elas para mistur\xE1-las antes que sequem.
+\u2022 **Lavagem (Wash):** Misture bastante \xE1gua \xE0 tinta acr\xEDlica at\xE9 que ela fique bem transparente, quase como uma aquarela. Use essa t\xE9cnica para criar fundos suaves ou para fazer o esbo\xE7o inicial na tela.
+
+3. **O Passo a Passo do Seu Primeiro Quadro**
+\u2022 **Prepare o fundo (Opcional, mas recomendado):** Pintar sobre uma tela branca pura pode ser intimidador. Muitos artistas aplicam uma camada fina e bem aguada de uma cor neutra (como um tom ocre ou cinza claro) e deixam secar antes de come\xE7ar. Isso ajuda a julgar melhor os valores das outras cores.
+\u2022 **Fa\xE7a o esbo\xE7o:** Use um l\xE1pis macio (como 2B) bem de leve, ou esboce diretamente com um pincel fino usando tinta bem dilu\xEDda em \xE1gua.
+\u2022 **Trabalhe do plano de fundo para o primeiro plano:** Pinte primeiro o c\xE9u ou as paredes ao fundo, depois os elementos do meio e, por fim, o objeto principal que est\xE1 na frente de tudo.
+\u2022 **Trabalhe do escuro para o claro:** Ao contr\xE1rio da aquarela, na acr\xEDlica voc\xEA geralmente come\xE7a aplicando os tons mais escuros e as sombras. Depois, vai construindo as cores m\xE9dias e, por \xFAltimo, adiciona os brilhos e luzes intensas com tinta branca pura ou tons bem claros.
+
+\u26A0\uFE0F **Cuidados Importantes (Para n\xE3o estragar seus materiais):**
+\u{1F6A8} **Regra de ouro dos pinc\xE9is:** Nunca, em hip\xF3tese alguma, deixe a tinta acr\xEDlica secar no seu pincel. Se a tinta secar nas cerdas, ela vira um pl\xE1stico insol\xFAvel e o pincel estar\xE1 perdido. Enquanto estiver pintando, mantenha os pinc\xE9is que n\xE3o est\xE1 usando mergulhados na \xE1gua e lave-os muito bem com sab\xE3o neutro assim que terminar.
+\u{1F4A1} **Mantenha a tinta \xFAmida:** Como ela seca r\xE1pido na paleta, coloque apenas pequenas por\xE7\xF5es de tinta por vez. Se o dia estiver muito seco, voc\xEA pode borrifar uma n\xE9voa fina de \xE1gua sobre a paleta de vez em quando com um borrifador comum.`
+  },
+  {
+    keywords: [
+      "qual papel",
+      "papel para desenhar",
+      "tipos de papel",
+      "que papel usar",
+      "canson",
+      "papel canson",
+      "papel de desenho",
+      "papel de desenhar"
+    ],
+    matchedKey: "como_papel_desenhar",
+    reply: `\u{1F4C4} **TIPOS DE PAPEL PARA DESENHAR: Qual papel uso para desenhar?** \u{1F3A8}
+
+A escolha do papel \xE9 o passo mais importante \u2014 e mais negligenciado \u2014 para quem quer desenhar. O papel errado pode fazer o melhor l\xE1pis do mundo parecer ruim, enquanto o papel certo facilita o sombreamento, a mistura de cores e a precis\xE3o do tra\xE7o.
+
+Para escolher o papel ideal, voc\xEA deve olhar principalmente para tr\xEAs caracter\xEDsticas: Gramatura (espessura), Textura (rugosidade) e Composi\xE7\xE3o (de que ele \xE9 feito).
+
+1. **De Acordo com a T\xE9cnica que Voc\xEA Vai Usar**
+\u2022 **Para L\xE1pis de Cor (T\xE9cnica Seca):** Aqui, voc\xEA precisa de um papel que aguente v\xE1rias camadas sem rasgar, mas que n\xE3o seja \xE1spero demais a ponto de gastar seu l\xE1pis em segundos.
+  - *Gramatura ideal:* Entre 120g/m\xB2 e 200g/m\xB2.
+  - *Textura:* Satinada (lisa) ou de textura leve (fina). Pap\xE9is muito lisos (como o Bristol) s\xE3o excelentes para detalhes realistas. Pap\xE9is com textura leve (como o Canson Mi-Teintes ou pap\xE9is para desenho comuns de boa gramatura) ajudam a segurar o pigmento.
+  - *Exemplos de marcas comuns:* Canson Desenho (S\xE9rie 200), Hahnem\xFChle Nostalgie, Bristol.
+\u2022 **Para Aquarela e T\xE9cnicas \xDAmidas:** Se voc\xEA usar \xE1gua em um papel comum, ele vai enrugar, rasgar e criar "bolinhas" de celulose.
+  - *Gramatura ideal:* No m\xEDnimo 300g/m\xB2.
+  - *Composi\xE7\xE3o:* D\xEA prefer\xEAncia para pap\xE9is 100% algod\xE3o (absorvem a \xE1gua de forma uniforme e n\xE3o deformam) ou mistos (celulose + algod\xE3o).
+  - *Textura:* Textura Fina (Cold Pressed) \xE9 a mais vers\xE1til para come\xE7ar. Se quiser algo super liso, use Satinado (Hot Pressed).
+  - *Exemplos de marcas comuns:* Canson Montval (celulose), Arches (100% algod\xE3o), Hahnem\xFChle Expression.
+\u2022 **Para Grafite e Carv\xE3o (Esbo\xE7os e Sombreamento):** O grafite precisa de um pouco de "dente" (textura) no papel para se fixar, mas se for \xE1spero demais, o sombreamento fica granulado.
+  - *Gramatura ideal:* Entre 120g/m\xB2 e 180g/m\xB2.
+  - *Textura:* M\xE9dia ou leve. Evite pap\xE9is extremamente lisos para sombreamentos pesados (o grafite come\xE7a a escorregar e "brilhar" sem fixar) e evite pap\xE9is muito rugosos se quiser fazer tra\xE7os finos e precisos.
+
+2. **O que significam esses termos na embalagem?**
+Na hora de comprar, voc\xEA vai se deparar com alguns termos t\xE9cnicos. Veja o que eles significam na pr\xE1tica:
+\u2022 **Gramatura (g/m\xB2):** Indica o peso do papel por metro quadrado. Quanto maior o n\xFAmero, mais grosso e resistente \xE9 o papel. O papel sulfite comum de escrit\xF3rio tem apenas 75g/m\xB2 (muito fino para qualquer t\xE9cnica art\xEDstica).
+\u2022 **Acid-Free (Livre de \xC1cido):** Essencial se voc\xEA quer que seu desenho dure anos sem amarelar ou se deteriorar com o tempo. Sempre procure por essa especifica\xE7\xE3o.
+\u2022 **Hot Pressed (Prensado a Quente):** Papel liso. \xD3timo para canetas nanquim, marcadores e detalhes ultra-precisos com l\xE1pis de cor.
+\u2022 **Cold Pressed (Prensado a Frio):** Papel com textura m\xE9dia/rugosa. \xC9 o padr\xE3o cl\xE1ssico para aquarela e t\xE9cnicas mistas.
+
+\u{1F4A1} **Recomenda\xE7\xE3o para come\xE7ar sem errar:** Se voc\xEA quer um papel coringa para treinar l\xE1pis de cor, grafite, canetinha e at\xE9 guache leve, procure por blocos de papel "Mix Media" com gramatura de 200g/m\xB2 ou mais. Eles s\xE3o o meio-termo perfeito para testar de tudo um pouco!`
+  },
+  {
+    keywords: [
+      "como faco uma aquarela",
+      "como faco aquarela",
+      "como fazer aquarela",
+      "como pintar com aquarela",
+      "como usar aquarela",
+      "pintar com aquarela",
+      "aquarela"
+    ],
+    matchedKey: "como_aquarela",
+    reply: `\u{1F4A7} **PARA FAZER AQUARELA: Como fa\xE7o uma aquarela?** \u{1F3A8}
+
+Fazer uma pintura em aquarela \xE9 uma experi\xEAncia deliciosa e muito relaxante! A grande magia dessa t\xE9cnica \xE9 saber trabalhar com a transpar\xEAncia e com a \xE1gua.
+
+Se voc\xEA est\xE1 dando os primeiros passos, aqui est\xE1 um guia pr\xE1tico para come\xE7ar a se aventurar:
+
+1. **O Material B\xE1sico**
+Para n\xE3o passar sufoco, o segredo da aquarela est\xE1 na escolha dos materiais certos:
+\u2022 **Papel apropriado:** Este \xE9 o item mais importante. Pap\xE9is comuns (como o sulfite) enrugam e rasgam. Use papel pr\xF3prio para aquarela com gramatura de 300g/m\xB2 (de prefer\xEAncia com alguma porcentagem de algod\xE3o).
+\u2022 **Tintas:** Podem ser em pastilha (mais pr\xE1ticas para come\xE7ar e transportar) ou em bisnaga (que rendem bastante).
+\u2022 **Pinc\xE9is:** Pinc\xE9is de cerdas macias (artificiais ou naturais) que retenham bem a \xE1gua. Um redondo m\xE9dio (n\xBA 6 ou 8) e um chato s\xE3o \xF3timos para come\xE7ar.
+\u2022 **\xC1gua e god\xEA:** Dois potinhos com \xE1gua (um para limpar o pincel sujo e outro para pegar \xE1gua limpa) e um pratinho/god\xEA para misturar as cores.
+
+2. **T\xE9cnicas Fundamentais para Treinar**
+Antes de partir para um desenho complexo, experimente estas duas t\xE9cnicas b\xE1sicas em um papel de rascunho:
+\u2022 **\xDAmido sobre Seco (Wet on Dry):** Molhe o pincel na tinta e pinte diretamente sobre o papel seco.
+  - *Resultado:* D\xE1 mais controle sobre os tra\xE7os, ideal para detalhes, bordas bem definidas e formas precisas.
+\u2022 **\xDAmido sobre \xDAmido (Wet on Wet):** Passe primeiro um pincel molhado apenas com \xE1gua limpa sobre o papel. Em seguida, pegue a tinta e toque nessa \xE1rea molhada.
+  - *Resultado:* A tinta vai se espalhar sozinha de forma m\xE1gica e fluida, criando degrad\xEAs suaves. Perfeito para fundos, c\xE9us e efeitos abstratos.
+
+3. **Passo a Passo do Seu Primeiro Projeto**
+\u2022 **Fa\xE7a o esbo\xE7o:** Desenhe levemente com um l\xE1pis (grafite H ou HB) para n\xE3o marcar muito o papel. Se errar, apague com cuidado para n\xE3o danificar as fibras do papel.
+\u2022 **Planeje do claro para o escuro:** Diferente de outras tintas (como acr\xEDlica ou guache), na aquarela n\xF3s come\xE7amos aplicando as cores mais claras e dilu\xEDdas. O "branco" da pintura \xE9 o pr\xF3prio branco do papel que voc\xEA deixa sem pintar.
+\u2022 **Construa em camadas:** Aplique a primeira camada de cor bem aguada e deixe secar completamente antes de vir com a pr\xF3xima cor por cima. Se voc\xEA passar tinta \xFAmida sobre tinta \xFAmida, elas v\xE3o se misturar (o que \xE9 \xF3timo se for intencional, mas ruim se voc\xEA quiser definir formas).
+\u2022 **Adicione os detalhes:** Deixe para usar tintas mais pigmentadas (com menos \xE1gua no pincel) e pinc\xE9is finos apenas no final, para fazer os contornos e sombras mais fortes.
+
+\u{1F4A1} **Dica de ouro:** N\xE3o tente controlar a \xE1gua perfeitamente. A beleza da aquarela est\xE1 justamente nos efeitos inesperados que a \xE1gua cria quando seca! Experimente sem medo de errar.`
+  },
+  {
+    keywords: [
+      "lapis de cor",
+      "l\xE1pis de cor",
+      "como usar lapis de cor",
+      "como usar o lapis de cor",
+      "como usar l\xE1pis de cor",
+      "lapis colorido",
+      "l\xE1pis colorido",
+      "como pintar com lapis de cor",
+      "como pintar com lapis colorido",
+      "como pintar com l\xE1pis de cor",
+      "tecnica do lapis de cor",
+      "tecnicas do lapis de cor",
+      "tecnicas de lapis de cor"
+    ],
+    matchedKey: "como_lapis_de_cor",
+    reply: `\u270F\uFE0F **USANDO O L\xC1PIS DE COR: Como colorir como um profissional?** \u{1F3A8}
+
+O l\xE1pis de cor \xE9 uma das ferramentas mais vers\xE1teis e ricas que existem, mas muita gente associa o material apenas aos desenhos de inf\xE2ncia. Na verdade, com algumas t\xE9cnicas simples, voc\xEA consegue transformar uma pintura simples em um desenho com volume, profundidade e texturas incr\xEDveis!
+
+O grande segredo do l\xE1pis de cor \xE9 a paci\xEAncia e a constru\xE7\xE3o de camadas.
+
+1. **O Controle da Press\xE3o (Gradiente)**
+Antes de come\xE7ar a colorir, o treino mais importante \xE9 controlar a for\xE7a da sua m\xE3o.
+Exercitar diferentes n\xEDveis de press\xE3o ajuda a criar degrad\xEAs suaves (essenciais para dar volume a esferas, rostos e objetos curvos) sem deixar marcas pesadas no papel.
+
+2. **T\xE9cnicas de Pintura e Preenchimento**
+Para evitar que o desenho fique com aquela apar\xEAncia "riscada" e cheia de falhas brancas, experimente estas abordagens:
+\u2022 **Movimentos Circulares:** Em vez de riscar de um lado para o outro, fa\xE7a movimentos em c\xEDrculos bem pequenos e com a m\xE3o leve. Isso preenche os poros do papel de maneira muito mais uniforme.
+\u2022 **Hachuras Cruzadas (Cross-hatching):** Pinte em uma dire\xE7\xE3o (ex: diagonal) e depois fa\xE7a outra camada na dire\xE7\xE3o oposta. Isso cria uma trama de cores rica e uniforme.
+\u2022 **Camadas Sobrepostas (Mesclagem):** N\xE3o tente chegar na cor final logo de cara. Comece aplicando cores claras suavemente e v\xE1 escurecendo aos poucos. Voc\xEA pode misturar cores diferentes (como passar amarelo por baixo e azul por cima para criar um verde vivo e din\xE2mico).
+
+3. **T\xE9cnicas de Acabamento (Blending)**
+Quando voc\xEA quiser que as cores fiquem perfeitamente misturadas, sumindo com os pontinhos brancos do papel, voc\xEA pode usar t\xE9cnicas de mesclagem para suavizar os tra\xE7os do l\xE1pis:
+\u2022 **L\xE1pis Branco ou Blender:** Passar um l\xE1pis de cor branco (ou um l\xE1pis blender sem pigmento) fazendo bastante press\xE3o por cima das cores j\xE1 aplicadas ajuda a "derreter" a cera do l\xE1pis, misturando os tons de forma linda.
+\u2022 **Solventes (para l\xE1pis \xE0 base de cera ou \xF3leo):** O uso de um pouquinho de \xF3leo mineral ou solvente sem odor aplicado com um pincel ou esfuminho dissolve o pigmento no papel, criando um efeito quase de pintura.
+\u2022 **\xC1gua (Apenas para l\xE1pis aquarel\xE1veis):** Se o seu l\xE1pis for aquarel\xE1vel, basta passar um pincel levemente \xFAmido para transformar os riscos em tinta fluida.
+
+\u{1F4A1} **Dica de ouro:** Mantenha a ponta do l\xE1pis sempre bem apontada! Pontas rombudas (arredondadas) n\xE3o conseguem entrar nos poros menores do papel, o que deixa o desenho cheio de pontinhos brancos indesejados.`
+  }
+];
+function resolverTutoriaisArteCandinho(normalizedMsg) {
+  for (const item of TUTORIAIS_ARTE_CANDINHO) {
+    for (const kw of item.keywords) {
+      const normalizedKw = normalizarTexto(kw);
+      if (testarPalavraChave(normalizedMsg, normalizedKw)) {
+        return {
+          reply: item.reply,
+          matchedKey: item.matchedKey
+        };
+      }
+    }
+  }
+  return null;
 }
 var CONVERSATIONAL_INTENTS = [
   {
@@ -10881,6 +11390,8 @@ Tenho certeza de que sua obra vai parecer de museu! Depois me conte o que voc\xE
 function resolverMensagemLocalmenteRaw(mensagem, lib) {
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
+  const tutorialRes = resolverTutoriaisArteCandinho(normalizedMsg);
+  if (tutorialRes) return tutorialRes;
   const porqueRes = resolverPorqueMessage(normalizedMsg);
   if (porqueRes) return porqueRes;
   const comoRes = resolverComoMessage(normalizedMsg);
