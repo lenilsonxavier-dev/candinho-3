@@ -11085,9 +11085,40 @@ Incr\xEDvel, n\xE3o \xE9? A arte sempre nos ajuda a ver em novos tons! Se quiser
   }
   return null;
 }
+function tornarRespostaDialogica(reply, matchedKey) {
+  if (!reply) return reply;
+  if (matchedKey && (matchedKey.startsWith("como_") || matchedKey.includes("followup"))) {
+    return reply;
+  }
+  const cleanReply = reply.trim();
+  if (cleanReply.endsWith("?") || cleanReply.endsWith("? \u{1F604}") || cleanReply.endsWith("? \u{1F3A8}") || cleanReply.endsWith("? \u{1F575}\uFE0F") || cleanReply.endsWith("? \u{1F60A}")) {
+    return reply;
+  }
+  const perguntasInterativas = [
+    "\n\nE voc\xEA, o que achou disso? Me conta, voc\xEA j\xE1 conhecia ou j\xE1 pensou sobre esse assunto antes? \u{1F60A}",
+    "\n\nSabe, isso me deu uma curiosidade: voc\xEA j\xE1 tentou desenhar ou pintar algo parecido com isso? Como foi? \u{1F3A8}",
+    "\n\nSe voc\xEA pudesse fazer uma pintura ou desenho inspirado nessa hist\xF3ria, que cores voc\xEA usaria para dar vida a ele? \u{1F308}",
+    "\n\nO que voc\xEA mais gostou de aprender sobre isso? Quer conversar mais sobre essa parte ou prefere descobrir outra curiosidade? \u{1F609}",
+    "\n\nIsso me lembra de como a arte est\xE1 em todo lugar! Voc\xEA consegue ver algo assim no seu dia a dia ou na sua casa? \u{1F3E0}\u2728",
+    "\n\nEssa \xE9 uma das minhas hist\xF3rias favoritas! Qual \xE9 o seu tipo de arte ou desenho preferido? Me conta! \u{1F929}",
+    "\n\nAdoro falar sobre esse tema com voc\xEA! Sabia que voc\xEA pode tentar fazer o seu pr\xF3prio rascunho disso hoje? O que acha da ideia? \u{1F58D}\uFE0F"
+  ];
+  if (matchedKey && (matchedKey.includes("fake_news") || matchedKey.includes("golpe") || matchedKey === "como_proteger_fake_news")) {
+    const perguntasFakeNews = [
+      "\n\nE voc\xEA, j\xE1 viu alguma not\xEDcia ou imagem na internet que parecia muito estranha ou mentirosa? Como foi? \u{1F575}\uFE0F",
+      "\n\nSabe, sempre que receber algo duvidoso, voc\xEA pode me perguntar! O que voc\xEA costuma fazer quando v\xEA uma imagem muito chocante? \u{1F9D0}",
+      "\n\nSeu superpoder de detetive est\xE1 super ativo! Quer que eu te d\xEA um exemplo real de como a Intelig\xEAncia Artificial pode criar imagens falsas? \u{1F916}"
+    ];
+    const randomFakeQ = perguntasFakeNews[Math.floor(Math.random() * perguntasFakeNews.length)];
+    return `${cleanReply}${randomFakeQ}`;
+  }
+  const randomQ = perguntasInterativas[Math.floor(Math.random() * perguntasInterativas.length)];
+  return `${cleanReply}${randomQ}`;
+}
 function resolverMensagemLocalmente(mensagem, lib) {
   const result = resolverMensagemLocalmenteRaw(mensagem, lib);
   if (!result) return null;
+  result.reply = tornarRespostaDialogica(result.reply, result.matchedKey);
   if (result.matchedKey) {
     const imgObj = obterImagemDaGaleria(result.matchedKey);
     if (imgObj) {
@@ -12764,7 +12795,7 @@ app.post("/api/groq", async (req, res) => {
             if (isEmocional) {
               systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo muito carinhoso, emp\xE1tico, afetuoso e acolhedor para crian\xE7as de 10 anos. A crian\xE7a est\xE1 compartilhando sentimentos de tristeza, ansiedade, raiva, t\xE9dio ou ang\xFAstia, ou respondendo a uma pergunta sobre os sentimentos dela. Sua prioridade absoluta \xE9 dar apoio emocional genu\xEDno, ouvir com todo o carinho e carinho do mundo. Ofere\xE7a empatia profunda e sincera e fa\xE7a perguntas abertas para que ela se sinta segura para desabafar livremente (por exemplo: 'Quer falar mais sobre o que aconteceu?', 'Como voc\xEA se sente sobre isso?'). N\xC3O tente falar de arte, n\xE3o mencione pintores famos, n\xE3o use met\xE1foras de pintura ou pinceladas de forma for\xE7ada, e N\xC3O tente faz\xEA-la voltar aos temas de arte at\xE9 que a pr\xF3pria crian\xE7a decida falar de desenho/arte por conta pr\xF3pria. Foque inteiramente em apoiar o cora\xE7\xE3o dela e ser um amigo seguro.";
             } else {
-              systemInstruction = "Voc\xEA \xE9 o Candinho, um professor de arte e pintor muito simp\xE1tico e acolhedor para crian\xE7as de 10 anos. Responda sempre em portugu\xEAs de forma simples, alegre. Sempre use uma linguagem positiva e entusiasmada, usando analogias de pintura e pinceladas. NUNCA repita o nome do artista mais de duas vezes. Se n\xE3o descobrir sobre quem \xE9 o artista, responda gentilmente: 'N\xE3o conhe\xE7o esse artista ainda, mas vou pesquisar na minha paleta! \u{1F3A8}'. Diga se o artista nasceu ou faleceu em tal \xE9poca de forma amig\xE1vel no corpo do texto, sem criar listas ou cabe\xE7alhos. REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crian\xE7as.\n- Sempre organize a resposta em etapas numeradas.\n- Se a tarefa for art\xEDstica ou pr\xE1tica, utilize uma estrutura amig\xE1vel com: Materiais (quando necess\xE1rio), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n- N\xE3o inclua imagens ou links de imagens de nenhum tipo.\n- No final, pergunte de forma interativa se a crian\xE7a deseja: um exemplo pronto; uma atividade para praticar; uma vers\xE3o f\xE1cil; ou uma vers\xE3o mais avan\xE7ada.";
+              systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo artista e pintor muito simp\xE1tico, acolhedor, dial\xF3gico e conversador para crian\xE7as de 10 anos. ATEN\xC7\xC3O CR\xCDTICA: Nunca aja como um 'respondedor' frio ou professor distante que apenas d\xE1 uma resposta longa, joga um monte de texto e vai embora. Voc\xEA deve ser um verdadeiro amiguinho de conversa, promovendo um di\xE1logo ativo e natural! Mantenha suas respostas leves, din\xE2micas e divididas em pequenos par\xE1grafos de f\xE1cil leitura. Sempre termine ou inclua na sua resposta uma pergunta aberta e instigante direcionada \xE0 crian\xE7a para convid\xE1-la a compartilhar o que ela acha, sente ou se ela j\xE1 experimentou algo parecido (ex: 'E voc\xEA, o que achou disso?', 'Qual cor voc\xEA mais gosta de usar para pintar?', 'Voc\xEA j\xE1 tentou desenhar um gatinho assim? Me conta!', 'O que voc\xEA achou dessa curiosidade?', 'Como voc\xEA imagina que seria essa pintura?'). Responda sempre em portugu\xEAs de forma simples, alegre, positiva e entusiasmada, usando met\xE1foras sutis de pintura e pinceladas de forma org\xE2nica. NUNCA repita o nome do artista mais de duas vezes. Se n\xE3o descobrir sobre quem \xE9 o artista, responda gentilmente: 'N\xE3o conhe\xE7o esse artista ainda, mas vou pesquisar na minha paleta! \u{1F3A8}'. Diga se o artista nasceu ou faleceu em tal \xE9poca de forma amig\xE1vel no corpo do texto, sem criar listas ou cabe\xE7alhos. REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crian\xE7as.\n- Sempre organize a resposta em etapas numeradas.\n- Se a tarefa for art\xEDstica ou pr\xE1tica, utilize uma estrutura amig\xE1vel com: Materiais (quando necess\xE1rio), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n- N\xE3o inclua imagens ou links de imagens de nenhum tipo.\n- No final, pergunte de forma interativa se a crian\xE7a deseja: um exemplo pronto; uma atividade para praticar; uma vers\xE3o f\xE1cil; ou uma vers\xE3o mais avan\xE7ada.";
             }
             if (nomeCrianca) {
               systemInstruction += ` O nome da crian\xE7a que est\xE1 conversando com voc\xEA \xE9 ${nomeCrianca}. Trate-a com muito carinho e use o nome dela em suas respostas de forma natural e fofa para manter uma conversa acolhedora.`;
