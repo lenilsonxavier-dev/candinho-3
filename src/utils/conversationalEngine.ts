@@ -2548,9 +2548,56 @@ function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any
   return null;
 }
 
+/**
+ * Adiciona uma pergunta aberta e amigável no final das respostas estáticas para torná-las
+ * mais dialógicas, naturais e interativas para a criança (evitando que pareça apenas um professor que dá a resposta e vai embora).
+ */
+export function tornarRespostaDialogica(reply: string, matchedKey?: string): string {
+  if (!reply) return reply;
+  
+  // Se for uma resposta estruturada de "como_" ou "followup", ela já tem guias e opções de interação
+  if (matchedKey && (matchedKey.startsWith("como_") || matchedKey.includes("followup"))) {
+    return reply;
+  }
+  
+  const cleanReply = reply.trim();
+  
+  // Não duplicar se a resposta já terminar com uma pergunta aberta
+  if (cleanReply.endsWith("?") || cleanReply.endsWith("? 😄") || cleanReply.endsWith("? 🎨") || cleanReply.endsWith("? 🕵️") || cleanReply.endsWith("? 😊")) {
+    return reply;
+  }
+
+  const perguntasInterativas = [
+    "\n\nE você, o que achou disso? Me conta, você já conhecia ou já pensou sobre esse assunto antes? 😊",
+    "\n\nSabe, isso me deu uma curiosidade: você já tentou desenhar ou pintar algo parecido com isso? Como foi? 🎨",
+    "\n\nSe você pudesse fazer uma pintura ou desenho inspirado nessa história, que cores você usaria para dar vida a ele? 🌈",
+    "\n\nO que você mais gostou de aprender sobre isso? Quer conversar mais sobre essa parte ou prefere descobrir outra curiosidade? 😉",
+    "\n\nIsso me lembra de como a arte está em todo lugar! Você consegue ver algo assim no seu dia a dia ou na sua casa? 🏠✨",
+    "\n\nEssa é uma das minhas histórias favoritas! Qual é o seu tipo de arte ou desenho preferido? Me conta! 🤩",
+    "\n\nAdoro falar sobre esse tema com você! Sabia que você pode tentar fazer o seu próprio rascunho disso hoje? O que acha da ideia? 🖍️"
+  ];
+
+  // Se a resposta for relacionada a fake news ou segurança na internet
+  if (matchedKey && (matchedKey.includes("fake_news") || matchedKey.includes("golpe") || matchedKey === "como_proteger_fake_news")) {
+    const perguntasFakeNews = [
+      "\n\nE você, já viu alguma notícia ou imagem na internet que parecia muito estranha ou mentirosa? Como foi? 🕵️",
+      "\n\nSabe, sempre que receber algo duvidoso, você pode me perguntar! O que você costuma fazer quando vê uma imagem muito chocante? 🧐",
+      "\n\nSeu superpoder de detetive está super ativo! Quer que eu te dê um exemplo real de como a Inteligência Artificial pode criar imagens falsas? 🤖"
+    ];
+    const randomFakeQ = perguntasFakeNews[Math.floor(Math.random() * perguntasFakeNews.length)];
+    return `${cleanReply}${randomFakeQ}`;
+  }
+
+  const randomQ = perguntasInterativas[Math.floor(Math.random() * perguntasInterativas.length)];
+  return `${cleanReply}${randomQ}`;
+}
+
 export function resolverMensagemLocalmente(mensagem: string, lib: Record<string, any>): BotLocalResponse | null {
   const result = resolverMensagemLocalmenteRaw(mensagem, lib);
   if (!result) return null;
+
+  // Torna a resposta local mais dialógica e amigável para conversar com a criança
+  result.reply = tornarRespostaDialogica(result.reply, result.matchedKey);
 
   // Se houver matchedKey, vamos verificar se existe imagem correspondente na nossa Galeria
   if (result.matchedKey) {
