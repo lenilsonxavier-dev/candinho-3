@@ -8022,16 +8022,20 @@ var TUTORIAIS_ARTE_CANDINHO = [
       "como fazer esboco",
       "como faco um esbo\xE7o",
       "como fazer esbo\xE7o",
-      "esboco",
-      "esbo\xE7o",
-      "rascunho",
       "como fazer rascunho",
-      "desenho esboco",
-      "desenho esbo\xE7o",
+      "como faco rascunho",
+      "como faco um rascunho",
       "fazer esboco",
       "fazer esbo\xE7o",
-      "esbocar",
-      "esbo\xE7ar"
+      "como esbocar",
+      "como esbo\xE7ar",
+      "como rascunhar",
+      "tecnica do esboco",
+      "tecnica do esbo\xE7o",
+      "como se faz um esboco",
+      "como se faz um esbo\xE7o",
+      "como se faz esboco",
+      "como se faz esbo\xE7o"
     ],
     matchedKey: "como_esboco",
     reply: `\u270F\uFE0F **ESBO\xC7O: Como fa\xE7o um esbo\xE7o de desenho?** \u{1F3A8}
@@ -8067,16 +8071,18 @@ No come\xE7o, evite apagar cada linha que sair "errada". Deixe as linhas extras 
   },
   {
     keywords: [
-      "giz de cera",
-      "giz cera",
       "como uso giz de cera",
       "como usar giz de cera",
       "como pintar com giz de cera",
       "pintar com giz de cera",
       "pintar com giz",
+      "como pintar com giz",
       "tecnica do giz de cera",
       "tecnicas do giz de cera",
-      "tecnicas de giz de cera"
+      "tecnicas de giz de cera",
+      "como se faz com giz de cera",
+      "como desenhar com giz de cera",
+      "como colorir com giz de cera"
     ],
     matchedKey: "como_giz_de_cera",
     reply: `\u{1F58D}\uFE0F **GIZ DE CERA: Como uso giz de cera?** \u{1F3A8}
@@ -8091,7 +8097,7 @@ A intensidade da cor e a textura do desenho mudam completamente de acordo com a 
 \u2022 **Press\xE3o forte (Satura\xE7\xE3o):** Preenche completamente os poros do papel, deixando a cor extremamente viva, brilhante e com uma camada espessa de cera.
 
 2. **T\xE9cnicas de Mistura e Degrad\xEA**
-Diferente dos l\xE1pis de cor, o giz de cera se mistura muito por fric\xE7\xE3o e calor:
+Diferente dos l\xE1pis de colares, o giz de cera se mistura muito por fric\xE7\xE3o e calor:
 \u2022 **Sobreposi\xE7\xE3o de camadas:** Pinte uma cor levemente por cima da outra para criar novos tons. Se quiser misturar bem, passe um tom mais claro (como o branco ou amarelo) por cima de uma cor mais escura pressionando com firmeza.
 \u2022 **Mistura com os dedos ou pano:** Esfregar o desenho com um peda\xE7o de papel toalha, um pano macio ou at\xE9 com o pr\xF3prio dedo ajuda a espalhar a cera e criar transi\xE7\xF5es suaves de degrad\xEA.
 
@@ -8113,7 +8119,7 @@ Use um objeto de ponta seca (como um palito de dente, a tampa de uma caneta ou u
 \u{1F6E0}\uFE0F **Dicas de Ouro para N\xE3o Errar:**
 \u2022 **Escolha o papel certo:** Pap\xE9is com um pouco mais de textura (como papel de desenho de gramatura 120g ou superior) seguram melhor a cera do que folhas sulfite comuns de impressora.
 \u2022 **Mantenha a ponta limpa:** O giz de cera acumula res\xEDduos de outras cores facilmente. Tenha sempre um peda\xE7o de papel toalha ao lado para limpar a ponta do giz antes de usar.
-\u2022 **Como apontar:** Para fazer detalhes finos, voc\xEA n\xE3o precisa de um apontador comum (que pode quebrar o giz). Use um estilete com cuidado ou simplesmente use as bordas desgastadas do pr\xF3prio giz para conseguir linhas finas.
+\u2022 **Como apontar:** Para fazer detalhes finos, voc\xEA n\xE3o precisa de um apontador comum (que pode quebrar o giz). Use um estilete com cuidado ou simplesmente use as bordas desgastadas do pr\xF3prio giz para conseguir lines finas.
 
 Qual dessas t\xE9cnicas voc\xEA quer testar primeiro no seu desenho?`
   },
@@ -8125,8 +8131,10 @@ Qual dessas t\xE9cnicas voc\xEA quer testar primeiro no seu desenho?`
       "como pintar com guache",
       "pinto com guache",
       "pintar com guache",
-      "guache",
-      "tinta guache"
+      "tecnica do guache",
+      "tecnicas de guache",
+      "como se pinta com guache",
+      "como se faz com guache"
     ],
     matchedKey: "como_guache",
     reply: `\u{1F3A8} **GUACHE: Como pinto com guache?** \u{1F31F}
@@ -8172,13 +8180,13 @@ O guache \xE9 extremamente permissivo e f\xE1cil de corrigir: se n\xE3o gostou d
   },
   {
     keywords: [
-      "pinceis",
-      "pincel",
       "pinceis diferentes",
       "tipos de pincel",
       "tipos de pinceis",
       "como usar pincel",
       "como usar pinceis",
+      "como usar o pincel",
+      "como usar os pinceis",
       "formato de pincel",
       "formatos de pincel",
       "formatos de pinceis",
@@ -8187,7 +8195,12 @@ O guache \xE9 extremamente permissivo e f\xE1cil de corrigir: se n\xE3o gostou d
       "pincel lingua de gato",
       "pincel leque",
       "pincel filete",
-      "como limpar pinceis"
+      "como limpar pinceis",
+      "como limpar o pincel",
+      "como limpar os pinceis",
+      "tecnica do pincel",
+      "tecnicas do pincel",
+      "tecnicas com pincel"
     ],
     matchedKey: "como_pinceis",
     reply: `\u{1F58C}\uFE0F **PINC\xC9IS: Conhe\xE7a os formatos e seus superpoderes!** \u{1F3A8}
@@ -8230,17 +8243,13 @@ Sabe qual \xE9 o maior inimigo do pincel? A tinta seca!
   },
   {
     keywords: [
-      "tintas caseiras",
-      "tinta caseira",
       "como fazer tintas caseiras",
       "como fazer tinta caseira",
-      "tintas da natureza",
       "como posso fazer tintas caseiras",
       "fazer tinta caseira",
       "fazer tintas caseiras",
-      "tinta de terra",
-      "tinta natural",
-      "tintas naturais"
+      "como criar tinta caseira",
+      "como se faz tinta caseira"
     ],
     matchedKey: "como_tintas_caseiras",
     reply: `\u{1F3A8} **TINTAS CASEIRAS: Como posso fazer tintas caseiras usando a natureza e outros produtos?** \u{1F343}\u{1F36F}
@@ -8285,7 +8294,7 @@ Esta receita reconecta a gente com a terra e com as pinturas rupestres. Dependen
   - 1 parte de terra limpa e seca (recolha um pouco do jardim ou de um barranco).
   - 1 parte de cola branca.
   - 1 parte de \xE1gua.
-  - Peneira fina (ou um peda\xE7o de tecido de meia-cal\xE7a).
+  - Peneira fina (or um peda\xE7o de tecido de meia-cal\xE7a).
 \u2022 **Como fazer:**
   1. Peneire muito bem a terra seca para remover pedrinhas, folhas e galhos, deixando apenas um p\xF3 bem fino.
   2. Em um pote, misture a terra peneirada com a cola branca e a \xE1gua em partes iguais.
@@ -8297,8 +8306,6 @@ Esta receita reconecta a gente com a terra e com as pinturas rupestres. Dependen
   },
   {
     keywords: [
-      "tinta acrilica",
-      "tinta acr\xEDlica",
       "como pinto com tinta acrilica",
       "como pinto com tinta acr\xEDlica",
       "como pintar com tinta acrilica",
@@ -8308,7 +8315,9 @@ Esta receita reconecta a gente com a terra e com as pinturas rupestres. Dependen
       "pintar com acrilica",
       "pintar com acr\xEDlica",
       "como pintar com acrilica",
-      "como pintar com acr\xEDlica"
+      "como pintar com acr\xEDlica",
+      "tecnica da tinta acrilica",
+      "tecnica da tinta acr\xEDlica"
     ],
     matchedKey: "como_tinta_acrilica",
     reply: `\u{1F3A8} **PINTAR COM TINTA ACR\xCDLICA: Como pinto com tinta acr\xEDlica?** \u{1F31F}
@@ -8329,7 +8338,7 @@ Se voc\xEA quer come\xE7ar a pintar com acr\xEDlica, aqui est\xE1 o guia essenci
 
 2. **T\xE9cnicas B\xE1sicas de Aplica\xE7\xE3o**
 A tinta acr\xEDlica seca por evapora\xE7\xE3o da \xE1gua. Isso significa que, uma vez seca, voc\xEA pode pintar por cima sem medo de borrar a camada de baixo.
-\u2022 **Pintura Plana (Flat Color):** Use a tinta pura ou com uma gotinha m\xEDnima de \xE1gua (apenas para ajudar o pincel a deslizar). Aplique pinceladas uniformes para criar blocos s\xF3lidos de cor. \xC9 excelente para estilos mais ilustrativos ou pop art.
+\u2022 **Pintura Plana (Flat Color):** Use a tinta pura ou com uma gotinha m\xEDnima de \xE1gua (apenas para ajudar o pincel a deslizar). Aplique pinceladas uniformes para criar blocos s\xF3lidos de cor. \xC9 excelente para styles mais ilustrativos ou pop art.
 \u2022 **Degrad\xEA / Esfuma\xE7ado (Blending):** Como a acr\xEDlica seca muito r\xE1pido, para fazer um degrad\xEA suave (como um c\xE9u), voc\xEA precisa trabalhar enquanto a tinta ainda est\xE1 \xFAmida (wet-on-wet). Aplique as duas cores na tela e, com um pincel limpo e levemente \xFAmido, fa\xE7a movimentos r\xE1pidos de vaiv\xE9m na fronteira entre elas para mistur\xE1-las antes que sequem.
 \u2022 **Lavagem (Wash):** Misture bastante \xE1gua \xE0 tinta acr\xEDlica at\xE9 que ela fique bem transparente, quase como uma aquarela. Use essa t\xE9cnica para criar fundos suaves ou para fazer o esbo\xE7o inicial na tela.
 
@@ -8349,8 +8358,6 @@ A tinta acr\xEDlica seca por evapora\xE7\xE3o da \xE1gua. Isso significa que, um
       "papel para desenhar",
       "tipos de papel",
       "que papel usar",
-      "canson",
-      "papel canson",
       "papel de desenho",
       "papel de desenhar"
     ],
@@ -8389,10 +8396,15 @@ Na hora de comprar, voc\xEA vai se deparar com alguns termos t\xE9cnicos. Veja o
       "como faco uma aquarela",
       "como faco aquarela",
       "como fazer aquarela",
+      "como se faz aquarela",
+      "como e a tecnica da aquarela",
+      "como e a tecnica de aquarela",
+      "tecnica da aquarela",
+      "tecnica de aquarela",
       "como pintar com aquarela",
       "como usar aquarela",
       "pintar com aquarela",
-      "aquarela"
+      "como se pinta com aquarela"
     ],
     matchedKey: "como_aquarela",
     reply: `\u{1F4A7} **PARA FAZER AQUARELA: Como fa\xE7o uma aquarela?** \u{1F3A8}
@@ -8425,19 +8437,17 @@ Antes de partir para um desenho complexo, experimente estas duas t\xE9cnicas b\x
   },
   {
     keywords: [
-      "lapis de cor",
-      "l\xE1pis de cor",
       "como usar lapis de cor",
       "como usar o lapis de cor",
       "como usar l\xE1pis de cor",
-      "lapis colorido",
-      "l\xE1pis colorido",
       "como pintar com lapis de cor",
       "como pintar com lapis colorido",
       "como pintar com l\xE1pis de cor",
       "tecnica do lapis de cor",
       "tecnicas do lapis de cor",
-      "tecnicas de lapis de cor"
+      "tecnicas de lapis de cor",
+      "como colorir com lapis de cor",
+      "como colorir com l\xE1pis de cor"
     ],
     matchedKey: "como_lapis_de_cor",
     reply: `\u270F\uFE0F **USANDO O L\xC1PIS DE COR: Como colorir como um profissional?** \u{1F3A8}
@@ -8458,7 +8468,7 @@ Para evitar que o desenho fique com aquela apar\xEAncia "riscada" e cheia de fal
 
 3. **T\xE9cnicas de Acabamento (Blending)**
 Quando voc\xEA quiser que as cores fiquem perfeitamente misturadas, sumindo com os pontinhos brancos do papel, voc\xEA pode usar t\xE9cnicas de mesclagem para suavizar os tra\xE7os do l\xE1pis:
-\u2022 **L\xE1pis Branco ou Blender:** Passar um l\xE1pis de cor branco (ou um l\xE1pis blender sem pigmento) fazendo bastante press\xE3o por cima das cores j\xE1 aplicadas ajuda a "derreter" a cera do l\xE1pis, misturando os tons de forma linda.
+\u2022 **L\xE1pis Branco ou Blender:** Passar um l\xE1pis de cor branco (or um l\xE1pis blender sem pigmento) fazendo bastante press\xE3o por cima das cores j\xE1 aplicadas ajuda a "derreter" a cera do l\xE1pis, misturando os tons de forma linda.
 \u2022 **Solventes (para l\xE1pis \xE0 base de cera ou \xF3leo):** O uso de um pouquinho de \xF3leo mineral ou solvente sem odor aplicado com um pincel ou esfuminho dissolve o pigmento no papel, criando um efeito quase de pintura.
 \u2022 **\xC1gua (Apenas para l\xE1pis aquarel\xE1veis):** Se o seu l\xE1pis for aquarel\xE1vel, basta passar um pincel levemente \xFAmido para transformar os riscos em tinta fluida.
 
