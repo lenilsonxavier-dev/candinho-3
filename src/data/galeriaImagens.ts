@@ -398,5 +398,50 @@ export const GALERIA_IMAGENS: Record<string, GaleriaItem | GaleriaItem[]> = {
     imagemUrl: "https://i.imgur.com/qbUzNQb.jpeg",
     titulo: "O Sonho",
     credito: "Henri Rousseau"
+  },
+  como_esboco: {
+    imagemUrl: "https://i.imgur.com/qKt1FWr.jpeg",
+    titulo: "Esboço de Estudos (Sketch Study)",
+    credito: "Leonardo da Vinci"
+  },
+  como_giz_de_cera: {
+    imagemUrl: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=600&auto=format&fit=crop",
+    titulo: "Cores e Texturas Vibrantes",
+    credito: "Unsplash"
+  },
+  como_guache: {
+    imagemUrl: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=600&auto=format&fit=crop",
+    titulo: "Pintando com Guache Artístico",
+    credito: "Unsplash"
+  },
+  como_pinceis: {
+    imagemUrl: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=600&auto=format&fit=crop",
+    titulo: "Os Diversos Pincéis e Seus Superpoderes",
+    credito: "Unsplash"
+  },
+  como_tintas_caseiras: {
+    imagemUrl: "https://images.unsplash.com/photo-1525909002-1b057f39dd81?q=80&w=600&auto=format&fit=crop",
+    titulo: "Criando Tintas Naturais e Ecológicas",
+    credito: "Unsplash"
+  },
+  como_tinta_acrilica: {
+    imagemUrl: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=600&auto=format&fit=crop",
+    titulo: "Pintura com Tinta Acrílica Vibrante",
+    credito: "Unsplash"
+  },
+  como_papel_desenhar: {
+    imagemUrl: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?q=80&w=600&auto=format&fit=crop",
+    titulo: "Escolhendo o Papel Ideal",
+    credito: "Unsplash"
+  },
+  como_aquarela: {
+    imagemUrl: "https://images.unsplash.com/photo-1525909002-1b057f39dd81?q=80&w=600&auto=format&fit=crop",
+    titulo: "A Magia das Transparências na Aquarela",
+    credito: "Unsplash"
+  },
+  como_lapis_de_cor: {
+    imagemUrl: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=600&auto=format&fit=crop",
+    titulo: "Domando as Camadas e Blending dos Lápis de Cor",
+    credito: "Unsplash"
   }
 };
