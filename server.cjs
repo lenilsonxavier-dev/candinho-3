@@ -11400,6 +11400,24 @@ Tenho certeza de que sua obra vai parecer de museu! Depois me conte o que voc\xE
 function resolverMensagemLocalmenteRaw(mensagem, lib) {
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
+  const nomeExtraido = extrairNome(mensagem);
+  if (nomeExtraido) {
+    const saudacoes = [
+      `\xC9 um prazer estar aqui para falarmos de Arte! Bem-vindo, Artista **${nomeExtraido}**! \u{1F3A8}
+
+O que voc\xEA gostaria de criar, desenhar ou descobrir hoje? Posso te ensinar t\xE9cnicas incr\xEDveis de desenho ou te contar hist\xF3rias sobre pintores maravilhosos!`,
+      `Ol\xE1, **${nomeExtraido}**! \xC9 um prazer gigante te conhecer e conversarmos sobre Arte! \u{1F31F}
+
+Qual assunto de pintura, desenho ou artista voc\xEA quer explorar comigo hoje?`,
+      `Oi, **${nomeExtraido}**! Que alegria ter voc\xEA aqui para conversarmos! \u{1F929}
+
+Me conta: o que voc\xEA mais gosta de desenhar ou qual curiosidade de arte voc\xEA quer descobrir hoje?`
+    ];
+    return {
+      reply: saudacoes[Math.floor(Math.random() * saudacoes.length)],
+      matchedKey: "saudacao_nome"
+    };
+  }
   const tutorialRes = resolverTutoriaisArteCandinho(normalizedMsg);
   if (tutorialRes) return tutorialRes;
   const porqueRes = resolverPorqueMessage(normalizedMsg);
@@ -11652,49 +11670,255 @@ function resolverMensagemLocalmente(mensagem, lib) {
   return result;
 }
 function extrairNome(mensagem) {
-  const normalized = mensagem.trim();
-  const patterns = [
-    /(?:meu nome é|meu nome e)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:me chamo)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:sou o|sou a|sou)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:me chamam de|chamam de)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:pode me chamar de|me chama de)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:aqui é o|aqui é a|aqui e o|aqui e a)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:oi,?\s+sou\s+o|oi,?\s+sou\s+a|oi,?\s+sou)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:oi,?\s+me\s+chamo)\s+([A-ZÀ-ÿa-z\s]+)/i
-  ];
-  const ignoreWords = [
+  if (!mensagem) return null;
+  let cleaned = mensagem.replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F700}-\u{1F77F}\u{1F780}-\u{1F7FF}\u{1F800}-\u{1F8FF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, "").trim().replace(/^[!?,.:;–—"'\s]+|[!?,.:;–—"'\s]+$/g, "");
+  if (!cleaned) return null;
+  const ignoreWords = /* @__PURE__ */ new Set([
+    // Basic Portuguese stop words & pronouns
     "um",
     "uma",
+    "uns",
+    "umas",
     "o",
     "a",
+    "os",
+    "as",
     "ele",
     "ela",
-    "artista",
-    "pintor",
-    "desenho",
-    "quadro",
-    "arte",
-    "amigo",
-    "candinho",
-    "professor",
-    "aluno",
-    "curioso",
+    "eles",
+    "elas",
+    "meu",
+    "minha",
+    "seu",
+    "sua",
+    "nosso",
+    "nossa",
+    "isso",
+    "isto",
+    "aquilo",
+    "este",
+    "esta",
+    "esse",
+    "essa",
+    "com",
+    "sem",
+    "para",
+    "pra",
+    "por",
+    "que",
+    "de",
+    "do",
+    "da",
+    "dos",
+    "das",
+    "em",
+    "no",
+    "na",
+    "nos",
+    "nas",
+    "e",
+    "ou",
+    "mas",
+    "anos",
+    "ano",
+    "idade",
+    // Greetings & affirmations & conversational responses
+    "oi",
+    "oii",
+    "oiii",
+    "ol\xE1",
+    "ola",
+    "bom",
+    "boa",
+    "dia",
+    "tarde",
+    "noite",
+    "tudo",
+    "bem",
+    "sim",
+    "nao",
+    "n\xE3o",
+    "ok",
+    "okay",
+    "legal",
+    "show",
+    "massa",
+    "bacana",
+    "obrigado",
+    "obrigada",
+    "valeu",
+    "porfavor",
+    "favor",
+    "deboa",
+    "top",
+    "beleza",
+    "blz",
+    "joia",
+    "j\xF3ia",
+    "certinho",
+    "certo",
+    "errado",
+    // Questions & verbs
+    "como",
+    "vai",
+    "voc\xEA",
+    "voce",
+    "vc",
+    "quais",
+    "quem",
+    "qual",
+    "onde",
+    "quando",
+    "porque",
+    "porqu\xEA",
+    "por",
+    "ajuda",
+    "socorro",
+    "duvida",
+    "d\xFAvida",
+    "pergunta",
+    "quero",
+    "saber",
+    "ver",
+    "pode",
     "fazer",
     "desenhar",
-    "colorir"
+    "pintar",
+    "colorir",
+    "sabe",
+    "me",
+    "diz",
+    "fala",
+    "conte",
+    "mostra",
+    "mostre",
+    "achou",
+    "acha",
+    // Domain terms & art keywords
+    "esbo\xE7o",
+    "esboco",
+    "arte",
+    "artista",
+    "pintor",
+    "pintora",
+    "desenho",
+    "quadro",
+    "tela",
+    "tinta",
+    "pincel",
+    "pinc\xE9is",
+    "pinceis",
+    "lapis",
+    "l\xE1pis",
+    "papel",
+    "aquarela",
+    "guache",
+    "giz",
+    "cera",
+    "acrilica",
+    "acr\xEDlica",
+    "m\xFAsica",
+    "musica",
+    "danca",
+    "dan\xE7a",
+    "teatro",
+    "poema",
+    "poesia",
+    "historia",
+    "hist\xF3ria",
+    "candinho",
+    "professor",
+    "professora",
+    "aluno",
+    "aluna",
+    "curioso",
+    "curiosa",
+    "amigo",
+    "amiga",
+    "crianca",
+    "crian\xE7a",
+    "menino",
+    "menina",
+    "garoto",
+    "garota",
+    "pessoal",
+    "turma",
+    "gente",
+    "galera",
+    "facil",
+    "f\xE1cil",
+    "avancado",
+    "avan\xE7ado",
+    "versao",
+    "vers\xE3o",
+    "modo",
+    "exemplo",
+    "praticar",
+    "desafio",
+    "atividade",
+    "triste",
+    "tristeza",
+    "alegre",
+    "alegria",
+    "raiva",
+    "medo",
+    "ansioso",
+    "ansiosa",
+    // Artists
+    "tarsila",
+    "portinari",
+    "candido",
+    "c\xE2ndido",
+    "monet",
+    "picasso",
+    "vinci",
+    "gogh",
+    "romero",
+    "britto",
+    "frida",
+    "kahlo",
+    "kandinsky",
+    "dali",
+    "dal\xED",
+    "miro",
+    "mir\xF3",
+    "carolina",
+    "jesus",
+    "debret",
+    "debas",
+    "cezanne",
+    "renoir",
+    "degas",
+    "matisse",
+    "amaral"
+  ]);
+  const patterns = [
+    /(?:meu nome [ée]|\bmeu nome\b)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:me chamo|\bchamo\b)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:eu sou [oa]?|sou [oa]?)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:pode me chamar de|me chama de|me chamam de|chamam de)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:aqui [ée] [oa]?|aqui e [oa]?)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:oi,?\s+sou\s+[oa]?|oi,?\s+me\s+chamo)\s+([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:[ée] [oa]?)\s+([A-ZÀ-ÿa-z\s]+)/i
   ];
   for (const pattern of patterns) {
-    const match = normalized.match(pattern);
+    const match = cleaned.match(pattern);
     if (match && match[1]) {
       const rawName = match[1].trim().split(/\s+/)[0];
-      if (rawName.length >= 2 && rawName.length < 20) {
-        const lowerName = rawName.toLowerCase();
-        if (!ignoreWords.includes(lowerName)) {
-          return rawName.charAt(0).toUpperCase() + rawName.slice(1).toLowerCase();
-        }
+      const lower = rawName.toLowerCase();
+      if (rawName.length >= 2 && rawName.length <= 20 && !ignoreWords.has(lower) && !/^\d+$/.test(rawName)) {
+        return rawName.charAt(0).toUpperCase() + rawName.slice(1).toLowerCase();
       }
     }
+  }
+  const rawWords = cleaned.split(/[\s,.:;!?-]+/).filter(Boolean);
+  const nameCandidateWords = rawWords.filter((w) => {
+    const lw = w.toLowerCase();
+    return /^[A-ZÀ-ÿa-z]+$/.test(w) && w.length >= 2 && w.length <= 20 && !ignoreWords.has(lw);
+  });
+  if (nameCandidateWords.length >= 1 && rawWords.length <= 5) {
+    const firstCandidate = nameCandidateWords[0];
+    return firstCandidate.charAt(0).toUpperCase() + firstCandidate.slice(1).toLowerCase();
   }
   return null;
 }
