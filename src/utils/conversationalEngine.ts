@@ -2500,6 +2500,20 @@ function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
 
+  // Intercept child name presentation if extracted
+  const nomeExtraido = extrairNome(mensagem);
+  if (nomeExtraido) {
+    const saudacoes = [
+      `É um prazer estar aqui para falarmos de Arte! Bem-vindo, Artista **${nomeExtraido}**! 🎨\n\nO que você gostaria de criar, desenhar ou descobrir hoje? Posso te ensinar técnicas incríveis de desenho ou te contar histórias sobre pintores maravilhosos!`,
+      `Olá, **${nomeExtraido}**! É um prazer gigante te conhecer e conversarmos sobre Arte! 🌟\n\nQual assunto de pintura, desenho ou artista você quer explorar comigo hoje?`,
+      `Oi, **${nomeExtraido}**! Que alegria ter você aqui para conversarmos! 🤩\n\nMe conta: o que você mais gosta de desenhar ou qual curiosidade de arte você quer descobrir hoje?`
+    ];
+    return {
+      reply: saudacoes[Math.floor(Math.random() * saudacoes.length)],
+      matchedKey: "saudacao_nome"
+    };
+  }
+
   // Intercept specific art tutorials
   const tutorialRes = resolverTutoriaisArteCandinho(normalizedMsg);
   if (tutorialRes) return tutorialRes;
@@ -2806,41 +2820,83 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
 
 // 6. Name extraction helper for kids
 export function extrairNome(mensagem: string): string | null {
-  const normalized = mensagem.trim();
-  
-  // Patterns for name extraction in Portuguese
-  const patterns = [
-    /(?:meu nome é|meu nome e)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:me chamo)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:sou o|sou a|sou)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:me chamam de|chamam de)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:pode me chamar de|me chama de)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:aqui é o|aqui é a|aqui e o|aqui e a)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:oi,?\s+sou\s+o|oi,?\s+sou\s+a|oi,?\s+sou)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:oi,?\s+me\s+chamo)\s+([A-ZÀ-ÿa-z\s]+)/i
-  ];
+  if (!mensagem) return null;
 
-  // Stopwords list of common words we shouldn't confuse as names
-  const ignoreWords = [
-    "um", "uma", "o", "a", "ele", "ela", "artista", "pintor", "desenho", 
-    "quadro", "arte", "amigo", "candinho", "professor", "aluno", "curioso",
-    "fazer", "desenhar", "colorir"
+  // Clean emojis, surrounding punctuation like !, ?, ., :, ;, quotes, etc.
+  let cleaned = mensagem
+    .replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F700}-\u{1F77F}\u{1F780}-\u{1F7FF}\u{1F800}-\u{1F8FF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '')
+    .trim()
+    .replace(/^[!?,.:;–—"'\s]+|[!?,.:;–—"'\s]+$/g, '');
+
+  if (!cleaned) return null;
+
+  // Stopwords / common vocabulary / keywords that should NOT be treated as child names
+  const ignoreWords = new Set([
+    // Basic Portuguese stop words & pronouns
+    "um", "uma", "uns", "umas", "o", "a", "os", "as", "ele", "ela", "eles", "elas",
+    "meu", "minha", "seu", "sua", "nosso", "nossa", "isso", "isto", "aquilo", "este", "esta", "esse", "essa",
+    "com", "sem", "para", "pra", "por", "que", "de", "do", "da", "dos", "das", "em", "no", "na", "nos", "nas",
+    "e", "ou", "mas", "anos", "ano", "idade",
+    // Greetings & affirmations & conversational responses
+    "oi", "oii", "oiii", "olá", "ola", "bom", "boa", "dia", "tarde", "noite",
+    "tudo", "bem", "sim", "nao", "não", "ok", "okay", "legal", "show", "massa",
+    "bacana", "obrigado", "obrigada", "valeu", "porfavor", "favor", "deboa",
+    "top", "beleza", "blz", "joia", "jóia", "certinho", "certo", "errado",
+    // Questions & verbs
+    "como", "vai", "você", "voce", "vc", "quais", "quem", "qual", "onde", "quando",
+    "porque", "porquê", "por", "ajuda", "socorro", "duvida", "dúvida", "pergunta",
+    "quero", "saber", "ver", "pode", "fazer", "desenhar", "pintar", "colorir",
+    "sabe", "me", "diz", "fala", "conte", "mostra", "mostre", "achou", "acha",
+    // Domain terms & art keywords
+    "esboço", "esboco", "arte", "artista", "pintor", "pintora", "desenho", "quadro",
+    "tela", "tinta", "pincel", "pincéis", "pinceis", "lapis", "lápis", "papel",
+    "aquarela", "guache", "giz", "cera", "acrilica", "acrílica", "música", "musica",
+    "danca", "dança", "teatro", "poema", "poesia", "historia", "história",
+    "candinho", "professor", "professora", "aluno", "aluna", "curioso", "curiosa",
+    "amigo", "amiga", "crianca", "criança", "menino", "menina", "garoto", "garota",
+    "pessoal", "turma", "gente", "galera", "facil", "fácil", "avancado", "avançado",
+    "versao", "versão", "modo", "exemplo", "praticar", "desafio", "atividade",
+    "triste", "tristeza", "alegre", "alegria", "raiva", "medo", "ansioso", "ansiosa",
+    // Artists
+    "tarsila", "portinari", "candido", "cândido", "monet", "picasso", "vinci", "gogh",
+    "romero", "britto", "frida", "kahlo", "kandinsky", "dali", "dalí", "miro", "miró",
+    "carolina", "jesus", "debret", "debas", "cezanne", "renoir", "degas", "matisse", "amaral"
+  ]);
+
+  // Explicit Portuguese greeting / name patterns
+  const patterns = [
+    /(?:meu nome [ée]|\bmeu nome\b)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:me chamo|\bchamo\b)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:eu sou [oa]?|sou [oa]?)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:pode me chamar de|me chama de|me chamam de|chamam de)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:aqui [ée] [oa]?|aqui e [oa]?)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:oi,?\s+sou\s+[oa]?|oi,?\s+me\s+chamo)\s+([A-ZÀ-ÿa-z\s]+)/i,
+    /(?:[ée] [oa]?)\s+([A-ZÀ-ÿa-z\s]+)/i
   ];
 
   for (const pattern of patterns) {
-    const match = normalized.match(pattern);
+    const match = cleaned.match(pattern);
     if (match && match[1]) {
-      // Grab only the first word from what match returned to avoid full sentences
       const rawName = match[1].trim().split(/\s+/)[0];
-      if (rawName.length >= 2 && rawName.length < 20) {
-        const lowerName = rawName.toLowerCase();
-        if (!ignoreWords.includes(lowerName)) {
-          // Capitalize first letter properly
-          return rawName.charAt(0).toUpperCase() + rawName.slice(1).toLowerCase();
-        }
+      const lower = rawName.toLowerCase();
+      if (rawName.length >= 2 && rawName.length <= 20 && !ignoreWords.has(lower) && !/^\d+$/.test(rawName)) {
+        return rawName.charAt(0).toUpperCase() + rawName.slice(1).toLowerCase();
       }
     }
   }
+
+  // Direct single-word or short phrase name response (e.g. "Leno", "Leno Xavier", "Ana Clara", "Leno, 10 anos")
+  const rawWords = cleaned.split(/[\s,.:;!?-]+/).filter(Boolean);
+  const nameCandidateWords = rawWords.filter(w => {
+    const lw = w.toLowerCase();
+    return /^[A-ZÀ-ÿa-z]+$/.test(w) && w.length >= 2 && w.length <= 20 && !ignoreWords.has(lw);
+  });
+
+  if (nameCandidateWords.length >= 1 && rawWords.length <= 5) {
+    const firstCandidate = nameCandidateWords[0];
+    return firstCandidate.charAt(0).toUpperCase() + firstCandidate.slice(1).toLowerCase();
+  }
+
   return null;
 }
 
