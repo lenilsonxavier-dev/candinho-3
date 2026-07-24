@@ -9,6 +9,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Initialize Gemini Client
 const apiKey = process.env.GEMINI_API_KEY || "";
@@ -1557,6 +1558,82 @@ app.get("/api/proxy-image", async (req: Request, res: Response) => {
   } catch (error) {
     console.error("Erro interno no proxy-image:", error);
     res.status(500).send("Erro interno ao buscar a imagem");
+  }
+});
+
+// --- API WHATSAPP WEBHOOK (SUPORTA TWILIO SANDBOX, Z-API, EVOLUTION API E META) ---
+app.all("/api/whatsapp/webhook", async (req: Request, res: Response) => {
+  try {
+    // Handling GET verification for Meta / Hub
+    const mode = req.query["hub.mode"];
+    const token = req.query["hub.verify_token"];
+    const challenge = req.query["hub.challenge"];
+
+    if (mode && token === "candinho123") {
+      return res.status(200).send(challenge);
+    }
+
+    const body = req.body || {};
+    const query = req.query || {};
+
+    console.log("[WhatsApp Webhook] Incoming request:", {
+      method: req.method,
+      headers: req.headers["content-type"],
+      body: body,
+      query: query
+    });
+
+    // Captura o texto da mensagem enviada (seja em body x-www-form-urlencoded ou JSON ou query params)
+    const incomingText = 
+      body.Body || 
+      query.Body || 
+      body.text || 
+      body.message || 
+      (body.entry?.[0]?.changes?.[0]?.value?.messages?.[0]?.text?.body) || 
+      "";
+
+    const sender = body.From || query.From || body.from || "visitante";
+
+    // Se for apenas um ping no navegador sem parâmetros de mensagem
+    if (req.method === "GET" && !query.Body && !incomingText) {
+      return res.json({ 
+        status: "Webhook do Candinho ativo!", 
+        endpoint: "/api/whatsapp/webhook",
+        suporta: ["Twilio WhatsApp Sandbox (Sem Conta Meta)", "Z-API", "Evolution API", "Meta Cloud API"] 
+      });
+    }
+
+    // Resolve a resposta do Candinho
+    const localRes = resolverMensagemLocalmente(incomingText, bibliotecaCultural);
+    const replyText = localRes 
+      ? localRes.reply 
+      : "Olá! Sou o Candinho, seu amigo artista! 🎨 O que você gostaria de criar ou descobrir hoje no Ateliê?";
+
+    // Se for Twilio Sandbox (Twilio envia AccountSid ou Body ou vem via POST x-www-form-urlencoded)
+    const isTwilio = Boolean(body.AccountSid || query.AccountSid || body.Body || query.Body || sender.includes("whatsapp:"));
+
+    if (isTwilio) {
+      res.set("Content-Type", "text/xml; charset=utf-8");
+      return res.status(200).send(`<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Message><![CDATA[${replyText}]]></Message>
+</Response>`);
+    }
+
+    // Resposta padrão JSON para Z-API / Evolution API / Webhooks Customizados
+    return res.json({
+      to: sender,
+      message: replyText,
+      reply: replyText,
+      status: "success"
+    });
+  } catch (err) {
+    console.error("Erro no webhook do WhatsApp:", err);
+    if (req.body?.AccountSid || req.query?.AccountSid) {
+      res.type("text/xml");
+      return res.send(`<?xml version="1.0" encoding="UTF-8"?><Response><Message>Olá! Sou o Candinho, vamos conversar sobre Arte! 🎨</Message></Response>`);
+    }
+    return res.status(200).send("OK");
   }
 });
 

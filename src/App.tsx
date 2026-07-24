@@ -3,12 +3,16 @@ import {
   Send, 
   Trash2, 
   X,
-  Palette
+  Palette,
+  MessageCircle,
+  CheckCheck,
+  Smartphone
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { bibliotecaCultural } from "./data/bibliotecaCultural";
 import { resolverMensagemLocalmente, extrairNome } from "./utils/conversationalEngine";
 import Typewriter from "./components/Typewriter";
+import WhatsAppModal from "./components/WhatsAppModal";
 
 interface ImagePayload {
   imagemUrl: string;
@@ -64,6 +68,10 @@ export default function App() {
     return localStorage.getItem("candinho_nome_crianca") || "";
   });
   const [contextoEmocional, setContextoEmocional] = useState<string | null>(null);
+  const [showWhatsAppModal, setShowWhatsAppModal] = useState(false);
+  const [isWhatsAppMode, setIsWhatsAppMode] = useState<boolean>(() => {
+    return localStorage.getItem("candinho_modo_whatsapp") === "true";
+  });
 
   const chatEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -359,41 +367,98 @@ export default function App() {
     setShowResetConfirm(false);
   };
 
+  const toggleWhatsAppMode = () => {
+    setIsWhatsAppMode(prev => {
+      const next = !prev;
+      localStorage.setItem("candinho_modo_whatsapp", String(next));
+      return next;
+    });
+  };
+
   return (
-    <div className="min-h-screen bg-[linear-gradient(135deg,_#1a1a2e_0%,_#16213e_100%)] p-3 sm:p-6 flex flex-col items-center justify-start overflow-y-auto overflow-x-hidden font-sans">
+    <div className={`min-h-screen p-3 sm:p-6 flex flex-col items-center justify-start overflow-y-auto overflow-x-hidden font-sans transition-colors duration-500 ${
+      isWhatsAppMode 
+        ? "bg-[#0b141a]" 
+        : "bg-[linear-gradient(135deg,_#1a1a2e_0%,_#16213e_100%)]"
+    }`}>
       
       {/* Main Beautiful Container */}
-      <div className="w-full max-w-[800px] bg-[rgba(22,_33,_62,_0.95)] backdrop-blur-[15px] rounded-[24px] sm:rounded-[30px] p-3.5 sm:p-[25px] shadow-[0_15px_50px_rgba(0,0,0,0.6)] border border-[rgba(255,_215,_0,_0.2)] flex flex-col my-auto">
+      <div className={`w-full max-w-[800px] rounded-[24px] sm:rounded-[30px] p-3.5 sm:p-[25px] shadow-[0_15px_50px_rgba(0,0,0,0.6)] flex flex-col my-auto transition-all duration-500 border ${
+        isWhatsAppMode
+          ? "bg-[#111b21] border-emerald-600/30 shadow-emerald-950/20"
+          : "bg-[rgba(22,_33,_62,_0.95)] backdrop-blur-[15px] border-[rgba(255,_215,_0,_0.2)]"
+      }`}>
         
         {/* Header matching HTML precisely */}
-        <header className="flex items-center gap-3 sm:gap-5 mb-4 sm:mb-5 pb-3 sm:pb-[15px] border-b-2 border-[#e94560] relative">
+        <header className={`flex items-center gap-3 sm:gap-5 mb-3 sm:mb-4 pb-3 sm:pb-[15px] border-b-2 relative transition-colors ${
+          isWhatsAppMode ? "border-emerald-600/80 bg-[#202c33] -mx-3.5 -mt-3.5 p-3.5 rounded-t-[22px] sm:rounded-t-[28px]" : "border-[#e94560]"
+        }`}>
           <img 
             src="https://i.imgur.com/fnMYS0Z.png" 
             alt="Candinho" 
-            className="w-[55px] h-[55px] sm:w-[80px] sm:h-[80px] md:w-[95px] md:h-[95px] rounded-full object-cover border-2 sm:border-3 border-[#ffd700] animate-float flex-shrink-0"
+            className={`w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full object-cover border-2 flex-shrink-0 transition-all ${
+              isWhatsAppMode ? "border-emerald-400" : "border-[#ffd700] animate-float sm:w-[80px] sm:h-[80px]"
+            }`}
             referrerPolicy="no-referrer"
           />
-          <div className="flex-1 min-w-0 pr-16 sm:pr-0">
-            <h1 className="text-lg sm:text-[1.8rem] tracking-wider font-bold text-white leading-tight truncate">Candinho</h1>
-            <p className="text-[#ffd700] italic opacity-90 text-xs sm:text-sm mt-0.5 truncate">
+          <div className="flex-1 min-w-0 pr-28 sm:pr-32">
+            <h1 className="text-base sm:text-xl font-bold text-white leading-tight truncate flex items-center gap-2">
+              Candinho
+              {isWhatsAppMode && (
+                <span className="text-[10px] font-normal px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                  online no WhatsApp
+                </span>
+              )}
+            </h1>
+            <p className={`italic opacity-90 text-xs mt-0.5 truncate ${isWhatsAppMode ? "text-emerald-400 font-medium" : "text-[#ffd700]"}`}>
               {nomeCrianca ? `Conversando com ${nomeCrianca} 🧑‍🎨` : "Seu amigo artista 🎨"}
             </p>
           </div>
 
-          <button 
-            onClick={clearChat}
-            className="absolute top-2 right-2 p-2 rounded-xl bg-slate-800/60 hover:bg-rose-500 hover:text-white transition-all text-slate-400 flex items-center gap-1 text-xs border border-slate-700 cursor-pointer"
-            title="Recomeçar conversa"
-          >
-            <Trash2 size={13} />
-            <span className="hidden sm:inline">Recomeçar</span>
-          </button>
+          <div className="absolute top-2 right-2 flex items-center gap-1.5 sm:gap-2">
+            <button 
+              onClick={() => setShowWhatsAppModal(true)}
+              className="px-2.5 sm:px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white transition-all flex items-center gap-1.5 text-xs font-bold shadow-md cursor-pointer border border-emerald-400/40"
+              title="Experimentar Candinho no WhatsApp"
+            >
+              <MessageCircle size={14} />
+              <span>WhatsApp</span>
+            </button>
+
+            <button 
+              onClick={clearChat}
+              className="p-1.5 sm:px-2.5 sm:py-1.5 rounded-xl bg-slate-800/80 hover:bg-rose-500 hover:text-white transition-all text-slate-300 flex items-center gap-1 text-xs border border-slate-700 cursor-pointer"
+              title="Recomeçar conversa"
+            >
+              <Trash2 size={13} />
+              <span className="hidden sm:inline">Recomeçar</span>
+            </button>
+          </div>
         </header>
+
+        {isWhatsAppMode && (
+          <div className="mb-3 px-3 py-1.5 bg-emerald-950/60 border border-emerald-500/20 rounded-xl text-emerald-300 text-[11px] flex items-center justify-between">
+            <span className="flex items-center gap-1.5 font-medium">
+              <Smartphone size={13} />
+              Modo Simulador do WhatsApp Ativo
+            </span>
+            <button 
+              onClick={() => setShowWhatsAppModal(true)}
+              className="underline hover:text-white font-semibold cursor-pointer"
+            >
+              Ajustar / Guia API
+            </button>
+          </div>
+        )}
 
         {/* Custom scrollbar Chat area with optimized height */}
         <div 
           id="chat"
-          className="h-[300px] sm:h-[380px] md:h-[400px] overflow-y-auto bg-[rgba(15,_52,_96,_0.4)] p-3 sm:p-5 rounded-[20px] mb-4 sm:mb-5 flex flex-col gap-3 sm:gap-[15px] scroll-behavior-smooth custom-scrollbar"
+          className={`h-[300px] sm:h-[380px] md:h-[400px] overflow-y-auto p-3 sm:p-5 rounded-[20px] mb-4 sm:mb-5 flex flex-col gap-3 sm:gap-[15px] scroll-behavior-smooth custom-scrollbar transition-colors ${
+            isWhatsAppMode 
+              ? "bg-[#0b141a] bg-[radial-gradient(#202c33_1px,transparent_1px)] [background-size:16px_16px]" 
+              : "bg-[rgba(15,_52,_96,_0.4)]"
+          }`}
         >
           <AnimatePresence initial={false}>
             {messages.map((msg, idx) => {
@@ -408,8 +473,8 @@ export default function App() {
                   <div
                     className={`msg p-[10px_14px] sm:p-[12px_18px] rounded-[20px] text-sm sm:text-base leading-[1.5] shadow-md transition-all duration-300 ${
                       msg.sender === "user" 
-                        ? "bg-[#4834d4] text-white rounded-br-[4px] self-end" 
-                        : "bg-[#686de0] text-white rounded-bl-[4px] self-start"
+                        ? isWhatsAppMode ? "bg-[#005c4b] text-white rounded-br-[4px] self-end" : "bg-[#4834d4] text-white rounded-br-[4px] self-end"
+                        : isWhatsAppMode ? "bg-[#202c33] text-slate-100 rounded-bl-[4px] self-start border border-slate-700/50" : "bg-[#686de0] text-white rounded-bl-[4px] self-start"
                     }`}
                   >
                     {msg.sender === "bot" ? (
@@ -458,7 +523,15 @@ export default function App() {
                         </div>
                       </div>
                     ) : (
-                      msg.text
+                      <div className="flex flex-col">
+                        <span>{msg.text}</span>
+                        {isWhatsAppMode && (
+                          <span className="self-end text-[10px] text-emerald-300/80 mt-1 flex items-center gap-1">
+                            {new Date(msg.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                            <CheckCheck size={13} className="text-emerald-400 inline" />
+                          </span>
+                        )}
+                      </div>
                     )}
                   </div>
                 </div>
@@ -585,6 +658,14 @@ export default function App() {
       <footer className="text-center text-[0.72rem] text-slate-500 mt-4 flex items-center justify-center gap-1 select-none">
         <span>Candinho 2.0 — Criado com carinho para inspirar jovens alunos de artes!</span>
       </footer>
+
+      {/* WhatsApp Modal */}
+      <WhatsAppModal 
+        isOpen={showWhatsAppModal} 
+        onClose={() => setShowWhatsAppModal(false)} 
+        isWhatsAppMode={isWhatsAppMode}
+        onToggleWhatsAppMode={toggleWhatsAppMode}
+      />
 
     </div>
   );
