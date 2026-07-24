@@ -11927,6 +11927,7 @@ function extrairNome(mensagem) {
 var app = (0, import_express.default)();
 var PORT = 3e3;
 app.use(import_express.default.json());
+app.use(import_express.default.urlencoded({ extended: true }));
 var apiKey = process.env.GEMINI_API_KEY || "";
 var ai = apiKey ? new import_genai.GoogleGenAI({
   apiKey,
@@ -13450,6 +13451,56 @@ app.get("/api/proxy-image", async (req, res) => {
   } catch (error) {
     console.error("Erro interno no proxy-image:", error);
     res.status(500).send("Erro interno ao buscar a imagem");
+  }
+});
+app.all("/api/whatsapp/webhook", async (req, res) => {
+  try {
+    const mode = req.query["hub.mode"];
+    const token = req.query["hub.verify_token"];
+    const challenge = req.query["hub.challenge"];
+    if (mode && token === "candinho123") {
+      return res.status(200).send(challenge);
+    }
+    const body = req.body || {};
+    const query = req.query || {};
+    console.log("[WhatsApp Webhook] Incoming request:", {
+      method: req.method,
+      headers: req.headers["content-type"],
+      body,
+      query
+    });
+    const incomingText = body.Body || query.Body || body.text || body.message || body.entry?.[0]?.changes?.[0]?.value?.messages?.[0]?.text?.body || "";
+    const sender = body.From || query.From || body.from || "visitante";
+    if (req.method === "GET" && !query.Body && !incomingText) {
+      return res.json({
+        status: "Webhook do Candinho ativo!",
+        endpoint: "/api/whatsapp/webhook",
+        suporta: ["Twilio WhatsApp Sandbox (Sem Conta Meta)", "Z-API", "Evolution API", "Meta Cloud API"]
+      });
+    }
+    const localRes = resolverMensagemLocalmente(incomingText, bibliotecaCultural);
+    const replyText = localRes ? localRes.reply : "Ol\xE1! Sou o Candinho, seu amigo artista! \u{1F3A8} O que voc\xEA gostaria de criar ou descobrir hoje no Ateli\xEA?";
+    const isTwilio = Boolean(body.AccountSid || query.AccountSid || body.Body || query.Body || sender.includes("whatsapp:"));
+    if (isTwilio) {
+      res.set("Content-Type", "text/xml; charset=utf-8");
+      return res.status(200).send(`<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Message><![CDATA[${replyText}]]></Message>
+</Response>`);
+    }
+    return res.json({
+      to: sender,
+      message: replyText,
+      reply: replyText,
+      status: "success"
+    });
+  } catch (err) {
+    console.error("Erro no webhook do WhatsApp:", err);
+    if (req.body?.AccountSid || req.query?.AccountSid) {
+      res.type("text/xml");
+      return res.send(`<?xml version="1.0" encoding="UTF-8"?><Response><Message>Ol\xE1! Sou o Candinho, vamos conversar sobre Arte! \u{1F3A8}</Message></Response>`);
+    }
+    return res.status(200).send("OK");
   }
 });
 app.post("/api/groq", async (req, res) => {
