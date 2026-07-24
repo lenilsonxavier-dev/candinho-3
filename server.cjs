@@ -8397,6 +8397,10 @@ Na hora de comprar, voc\xEA vai se deparar com alguns termos t\xE9cnicos. Veja o
       "como faco aquarela",
       "como fazer aquarela",
       "como se faz aquarela",
+      "como se faz uma aquarela",
+      "como se faz a aquarela",
+      "como faz aquarela",
+      "como faz uma aquarela",
       "como e a tecnica da aquarela",
       "como e a tecnica de aquarela",
       "tecnica da aquarela",
@@ -8404,7 +8408,9 @@ Na hora de comprar, voc\xEA vai se deparar com alguns termos t\xE9cnicos. Veja o
       "como pintar com aquarela",
       "como usar aquarela",
       "pintar com aquarela",
-      "como se pinta com aquarela"
+      "como se pinta com aquarela",
+      "fazer aquarela",
+      "aquarela"
     ],
     matchedKey: "como_aquarela",
     reply: `\u{1F4A7} **PARA FAZER AQUARELA: Como fa\xE7o uma aquarela?** \u{1F3A8}
@@ -8871,6 +8877,12 @@ var CONHECIMENTO_CANDINHO = [
   {
     palavras: ["estou ansioso", "ansioso", "ansiedade", "nervoso"],
     resposta: () => getRandomElement(atividadesAnsioso)
+  },
+  // ===== MÚSICA & GRANDES COMPOSITORES =====
+  {
+    palavras: ["mozart", "quem foi mozart", "wolfgang mozart", "wolfgang amadeus mozart", "musica de mozart", "compositor mozart"],
+    resposta: '\u{1F3BC} **Quem foi Mozart?**\n\nWolfgang Amadeus Mozart (1756\u20131791) foi um dos maiores e mais geniais compositores de m\xFAsica cl\xE1ssica de todos os tempos! \u{1F1E6}\u{1F1F9}\u2728\n\n\u{1F3B5} **O Prod\xEDgio da M\xFAsica:**\nEle nasceu na \xC1ustria, come\xE7ou a tocar piano aos 3 anos de idade e j\xE1 compunha m\xFAsicas maravilhosas com apenas 5 anos! Com o seu violino e piano, ele viajava por toda a Europa apresentando seus concertos para reis e rainhas.\n\n\u{1F3A8} **Obras Famosas:**\nEle criou mais de 600 obras incr\xEDveis, incluindo \xF3peras famosas como *"A Flauta M\xE1gica"* \u{1FA84} e a alegre can\xE7\xE3o *"Uma Pequena M\xFAsica Noturna"* (Eine kleine Nachtmusik).\n\n\u{1F4A1} **Curiosidade:**\nAs m\xFAsicas de Mozart s\xE3o t\xE3o organizadas e harmoniosas que muitas pessoas dizem que ouvi-las ajuda a focar a mente e desperta a imagina\xE7\xE3o para desenhar e pintar!\n\n\u{1F449} Voc\xEA gosta de ouvir m\xFAsica enquanto desenha ou faz suas tarefas? \u{1F3B6}',
+    matchedKey: "mozart"
   },
   // ===== TÓPICOS DE CONVERSA SOBRE FAKE NEWS =====
   {
@@ -11671,10 +11683,52 @@ function resolverMensagemLocalmente(mensagem, lib) {
 }
 function extrairNome(mensagem) {
   if (!mensagem) return null;
+  const lowerMsg = mensagem.toLowerCase();
+  const questionOrVerbTriggers = [
+    "?",
+    "como",
+    "quem",
+    "qual",
+    "quais",
+    "onde",
+    "quando",
+    "por que",
+    "porque",
+    "porqu\xEA",
+    "o que",
+    "fazer",
+    "faz",
+    "fazia",
+    "feiz",
+    "fez",
+    "foi",
+    "ser",
+    "sera",
+    "ser\xE1",
+    "sabe",
+    "saber",
+    "ensinar",
+    "explicar",
+    "pintar",
+    "desenhar",
+    "conte",
+    "me conta",
+    "fale",
+    "mostrar",
+    "mostra",
+    "ver",
+    "diga",
+    "posso",
+    "pode",
+    "queria",
+    "gostaria"
+  ];
+  if (questionOrVerbTriggers.some((t) => lowerMsg.includes(t))) {
+    return null;
+  }
   let cleaned = mensagem.replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F700}-\u{1F77F}\u{1F780}-\u{1F7FF}\u{1F800}-\u{1F8FF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, "").trim().replace(/^[!?,.:;–—"'\s]+|[!?,.:;–—"'\s]+$/g, "");
   if (!cleaned) return null;
   const ignoreWords = /* @__PURE__ */ new Set([
-    // Basic Portuguese stop words & pronouns
     "um",
     "uma",
     "uns",
@@ -11722,7 +11776,46 @@ function extrairNome(mensagem) {
     "anos",
     "ano",
     "idade",
-    // Greetings & affirmations & conversational responses
+    "se",
+    "foi",
+    "faz",
+    "fazia",
+    "fez",
+    "feiz",
+    "tem",
+    "ter",
+    "ver",
+    "dar",
+    "ir",
+    "vai",
+    "vem",
+    "sabe",
+    "ser",
+    "esta",
+    "estou",
+    "est\xE1",
+    "tiver",
+    "era",
+    "eram",
+    "quem",
+    "como",
+    "qual",
+    "quais",
+    "onde",
+    "quando",
+    "quanto",
+    "quantos",
+    "sobre",
+    "tudo",
+    "nada",
+    "mais",
+    "menos",
+    "muito",
+    "pouco",
+    "outro",
+    "outra",
+    "aquele",
+    "aquela",
     "oi",
     "oii",
     "oiii",
@@ -11758,20 +11851,6 @@ function extrairNome(mensagem) {
     "certinho",
     "certo",
     "errado",
-    // Questions & verbs
-    "como",
-    "vai",
-    "voc\xEA",
-    "voce",
-    "vc",
-    "quais",
-    "quem",
-    "qual",
-    "onde",
-    "quando",
-    "porque",
-    "porqu\xEA",
-    "por",
     "ajuda",
     "socorro",
     "duvida",
@@ -11785,7 +11864,6 @@ function extrairNome(mensagem) {
     "desenhar",
     "pintar",
     "colorir",
-    "sabe",
     "me",
     "diz",
     "fala",
@@ -11794,7 +11872,6 @@ function extrairNome(mensagem) {
     "mostre",
     "achou",
     "acha",
-    // Domain terms & art keywords
     "esbo\xE7o",
     "esboco",
     "arte",
@@ -11864,7 +11941,6 @@ function extrairNome(mensagem) {
     "medo",
     "ansioso",
     "ansiosa",
-    // Artists
     "tarsila",
     "portinari",
     "candido",
@@ -11882,26 +11958,24 @@ function extrairNome(mensagem) {
     "dal\xED",
     "miro",
     "mir\xF3",
+    "mozart",
+    "beethoven",
+    "bach",
+    "chopin",
     "carolina",
     "jesus",
     "debret",
-    "debas",
-    "cezanne",
-    "renoir",
-    "degas",
-    "matisse",
-    "amaral"
+    "debas"
   ]);
-  const patterns = [
+  const explicitIntroPatterns = [
     /(?:meu nome [ée]|\bmeu nome\b)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
     /(?:me chamo|\bchamo\b)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
     /(?:eu sou [oa]?|sou [oa]?)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
     /(?:pode me chamar de|me chama de|me chamam de|chamam de)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
     /(?:aqui [ée] [oa]?|aqui e [oa]?)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:oi,?\s+sou\s+[oa]?|oi,?\s+me\s+chamo)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:[ée] [oa]?)\s+([A-ZÀ-ÿa-z\s]+)/i
+    /(?:oi,?\s+sou\s+[oa]?|oi,?\s+me\s+chamo)\s+([A-ZÀ-ÿa-z\s]+)/i
   ];
-  for (const pattern of patterns) {
+  for (const pattern of explicitIntroPatterns) {
     const match = cleaned.match(pattern);
     if (match && match[1]) {
       const rawName = match[1].trim().split(/\s+/)[0];
@@ -11912,13 +11986,15 @@ function extrairNome(mensagem) {
     }
   }
   const rawWords = cleaned.split(/[\s,.:;!?-]+/).filter(Boolean);
-  const nameCandidateWords = rawWords.filter((w) => {
-    const lw = w.toLowerCase();
-    return /^[A-ZÀ-ÿa-z]+$/.test(w) && w.length >= 2 && w.length <= 20 && !ignoreWords.has(lw);
-  });
-  if (nameCandidateWords.length >= 1 && rawWords.length <= 5) {
-    const firstCandidate = nameCandidateWords[0];
-    return firstCandidate.charAt(0).toUpperCase() + firstCandidate.slice(1).toLowerCase();
+  if (rawWords.length >= 1 && rawWords.length <= 2) {
+    const isCapitalized = rawWords.every((w) => /^[A-ZÀ-ÿ][a-zÀ-ÿ]+$/.test(w));
+    if (isCapitalized) {
+      const firstCandidate = rawWords[0];
+      const lower = firstCandidate.toLowerCase();
+      if (firstCandidate.length >= 2 && !ignoreWords.has(lower)) {
+        return firstCandidate.charAt(0).toUpperCase() + firstCandidate.slice(1).toLowerCase();
+      }
+    }
   }
   return null;
 }
@@ -13478,8 +13554,29 @@ app.all("/api/whatsapp/webhook", async (req, res) => {
         suporta: ["Twilio WhatsApp Sandbox (Sem Conta Meta)", "Z-API", "Evolution API", "Meta Cloud API"]
       });
     }
+    let replyText = "";
     const localRes = resolverMensagemLocalmente(incomingText, bibliotecaCultural);
-    const replyText = localRes ? localRes.reply : "Ol\xE1! Sou o Candinho, seu amigo artista! \u{1F3A8} O que voc\xEA gostaria de criar ou descobrir hoje no Ateli\xEA?";
+    if (localRes && localRes.reply) {
+      replyText = localRes.reply;
+    } else if (ai) {
+      try {
+        const systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo artista e pintor muito simp\xE1tico, alegre, acolhedor e dial\xF3gico para crian\xE7as de 10 anos. Responda \xE0 mensagem da crian\xE7a em portugu\xEAs simples, entusiasmado e carinhoso, de forma direta e sem rodeios. Nunca repita sauda\xE7\xF5es gen\xE9ricas ou pergunte o nome da crian\xE7a se ela estiver tirando uma d\xFAvida sobre arte, desenhos ou curiosidades. Divida sua explica\xE7\xE3o em pequenos par\xE1grafos f\xE1ceis de ler e termine sempre com uma pergunta interativa e afetuosa convidando-a a conversar sobre arte!";
+        const responseGemini = await ai.models.generateContent({
+          model: "gemini-2.5-flash",
+          contents: incomingText,
+          config: {
+            systemInstruction,
+            temperature: 0.7
+          }
+        });
+        replyText = responseGemini.text || sugerirTemasAlternativos();
+      } catch (e) {
+        console.error("[WhatsApp Webhook] Erro ao chamar Gemini:", e);
+        replyText = sugerirTemasAlternativos();
+      }
+    } else {
+      replyText = sugerirTemasAlternativos();
+    }
     const isTwilio = Boolean(body.AccountSid || query.AccountSid || body.Body || query.Body || sender.includes("whatsapp:"));
     if (isTwilio) {
       res.set("Content-Type", "text/xml; charset=utf-8");
