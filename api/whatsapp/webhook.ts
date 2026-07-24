@@ -1,5 +1,18 @@
+import { GoogleGenAI } from "@google/genai";
 import { bibliotecaCultural } from "../../src/data/bibliotecaCultural.js";
-import { resolverMensagemLocalmente } from "../../src/utils/conversationalEngine.js";
+import { resolverMensagemLocalmente, sugerirTemasAlternativos } from "../../src/utils/conversationalEngine.js";
+
+const apiKey = process.env.GEMINI_API_KEY || "";
+const ai = apiKey
+  ? new GoogleGenAI({
+      apiKey: apiKey,
+      httpOptions: {
+        headers: {
+          "User-Agent": "aistudio-build",
+        },
+      },
+    })
+  : null;
 
 export default async function handler(req: any, res: any) {
   try {
@@ -35,11 +48,36 @@ export default async function handler(req: any, res: any) {
       });
     }
 
-    // 3. Processa a mensagem usando o motor conversacional do Candinho
+    // 3. Processa a mensagem usando o motor conversacional do Candinho ou Gemini
+    let replyText = "";
     const localRes = resolverMensagemLocalmente(incomingText, bibliotecaCultural);
-    const replyText = localRes 
-      ? localRes.reply 
-      : "Olá! Sou o Candinho, seu amigo artista! 🎨 O que você gostaria de criar ou descobrir hoje no Ateliê?";
+
+    if (localRes && localRes.reply) {
+      replyText = localRes.reply;
+    } else if (ai) {
+      try {
+        const systemInstruction = 
+          "Você é o Candinho, um amigo artista e pintor muito simpático, alegre, acolhedor e dialógico para crianças de 10 anos. " +
+          "Responda à mensagem da criança em português simples, entusiasmado e carinhoso, de forma direta e sem rodeios. " +
+          "Nunca repita saudações genéricas ou pergunte o nome da criança se ela estiver tirando uma dúvida sobre arte, desenhos ou curiosidades. " +
+          "Divida sua explicação em pequenos parágrafos fáceis de ler e termine sempre com uma pergunta interativa e afetuosa convidando-a a conversar sobre arte!";
+
+        const responseGemini = await ai.models.generateContent({
+          model: "gemini-2.5-flash",
+          contents: incomingText,
+          config: {
+            systemInstruction: systemInstruction,
+            temperature: 0.7,
+          }
+        });
+        replyText = responseGemini.text || sugerirTemasAlternativos();
+      } catch (e) {
+        console.error("[Vercel Webhook] Erro no Gemini:", e);
+        replyText = sugerirTemasAlternativos();
+      }
+    } else {
+      replyText = sugerirTemasAlternativos();
+    }
 
     // 4. Se a requisição for do Twilio Sandbox
     const isTwilio = Boolean(body.AccountSid || query.AccountSid || body.Body || query.Body || sender.includes("whatsapp:"));

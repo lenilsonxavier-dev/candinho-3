@@ -193,6 +193,10 @@ export const TUTORIAIS_ARTE_CANDINHO: TutorialItem[] = [
       "como faco aquarela",
       "como fazer aquarela",
       "como se faz aquarela",
+      "como se faz uma aquarela",
+      "como se faz a aquarela",
+      "como faz aquarela",
+      "como faz uma aquarela",
       "como e a tecnica da aquarela",
       "como e a tecnica de aquarela",
       "tecnica da aquarela",
@@ -200,7 +204,9 @@ export const TUTORIAIS_ARTE_CANDINHO: TutorialItem[] = [
       "como pintar com aquarela",
       "como usar aquarela",
       "pintar com aquarela",
-      "como se pinta com aquarela"
+      "como se pinta com aquarela",
+      "fazer aquarela",
+      "aquarela"
     ],
     matchedKey: "como_aquarela",
     reply: `💧 **PARA FAZER AQUARELA: Como faço uma aquarela?** 🎨\n\nFazer uma pintura em aquarela é uma experiência deliciosa e muito relaxante! A grande magia dessa técnica é saber trabalhar com a transparência e com a água.\n\nSe você está dando os primeiros passos, aqui está um guia prático para começar a se aventurar:\n\n1. **O Material Básico**\nPara não passar sufoco, o segredo da aquarela está na escolha dos materiais certos:\n• **Papel apropriado:** Este é o item mais importante. Papéis comuns (como o sulfite) enrugam e rasgam. Use papel próprio para aquarela com gramatura de 300g/m² (de preferência com alguma porcentagem de algodão).\n• **Tintas:** Podem ser em pastilha (mais práticas para começar e transportar) ou em bisnaga (que rendem bastante).\n• **Pincéis:** Pincéis de cerdas macias (artificiais ou naturais) que retenham bem a água. Um redondo médio (nº 6 ou 8) e um chato são ótimos para começar.\n• **Água e godê:** Dois potinhos com água (um para limpar o pincel sujo e outro para pegar água limpa) e um pratinho/godê para misturar as cores.\n\n2. **Técnicas Fundamentais para Treinar**\nAntes de partir para um desenho complexo, experimente estas duas técnicas básicas em um papel de rascunho:\n• **Úmido sobre Seco (Wet on Dry):** Molhe o pincel na tinta e pinte diretamente sobre o papel seco.\n  - *Resultado:* Dá mais controle sobre os traços, ideal para detalhes, bordas bem definidas e formas precisas.\n• **Úmido sobre Úmido (Wet on Wet):** Passe primeiro um pincel molhado apenas com água limpa sobre o papel. Em seguida, pegue a tinta e toque nessa área molhada.\n  - *Resultado:* A tinta vai se espalhar sozinha de forma mágica e fluida, criando degradês suaves. Perfeito para fundos, céus e efeitos abstratos.\n\n3. **Passo a Passo do Seu Primeiro Projeto**\n• **Faça o esboço:** Desenhe levemente com um lápis (grafite H ou HB) para não marcar muito o papel. Se errar, apague com cuidado para não danificar as fibras do papel.\n• **Planeje do claro para o escuro:** Diferente de outras tintas (como acrílica ou guache), na aquarela nós começamos aplicando as cores mais claras e diluídas. O "branco" da pintura é o próprio branco do papel que você deixa sem pintar.\n• **Construa em camadas:** Aplique a primeira camada de cor bem aguada e deixe secar completamente antes de vir com a próxima cor por cima. Se você passar tinta úmida sobre tinta úmida, elas vão se misturar (o que é ótimo se for intencional, mas ruim se você quiser definir formas).\n• **Adicione os detalhes:** Deixe para usar tintas mais pigmentadas (com menos água no pincel) e pincéis finos apenas no final, para fazer os contornos e sombras mais fortes.\n\n💡 **Dica de ouro:** Não tente controlar a água perfeitamente. A beleza da aquarela está justamente nos efeitos inesperados que a água cria quando seca! Experimente sem medo de errar.`
@@ -676,6 +682,21 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
   { 
     palavras: ['estou ansioso', 'ansioso', 'ansiedade', 'nervoso'], 
     resposta: () => getRandomElement(atividadesAnsioso)
+  },
+
+  // ===== MÚSICA & GRANDES COMPOSITORES =====
+  {
+    palavras: ['mozart', 'quem foi mozart', 'wolfgang mozart', 'wolfgang amadeus mozart', 'musica de mozart', 'compositor mozart'],
+    resposta: '🎼 **Quem foi Mozart?**\n\n' +
+      'Wolfgang Amadeus Mozart (1756–1791) foi um dos maiores e mais geniais compositores de música clássica de todos os tempos! 🇦🇹✨\n\n' +
+      '🎵 **O Prodígio da Música:**\n' +
+      'Ele nasceu na Áustria, começou a tocar piano aos 3 anos de idade e já compunha músicas maravilhosas com apenas 5 anos! Com o seu violino e piano, ele viajava por toda a Europa apresentando seus concertos para reis e rainhas.\n\n' +
+      '🎨 **Obras Famosas:**\n' +
+      'Ele criou mais de 600 obras incríveis, incluindo óperas famosas como *"A Flauta Mágica"* 🪄 e a alegre canção *"Uma Pequena Música Noturna"* (Eine kleine Nachtmusik).\n\n' +
+      '💡 **Curiosidade:**\n' +
+      'As músicas de Mozart são tão organizadas e harmoniosas que muitas pessoas dizem que ouvi-las ajuda a focar a mente e desperta a imaginação para desenhar e pintar!\n\n' +
+      '👉 Você gosta de ouvir música enquanto desenha ou faz suas tarefas? 🎶',
+    matchedKey: 'mozart'
   },
 
   // ===== TÓPICOS DE CONVERSA SOBRE FAKE NEWS =====
@@ -2822,7 +2843,19 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
 export function extrairNome(mensagem: string): string | null {
   if (!mensagem) return null;
 
-  // Clean emojis, surrounding punctuation like !, ?, ., :, ;, quotes, etc.
+  const lowerMsg = mensagem.toLowerCase();
+  // 1. If the message contains a question or common interrogative/action verbs, it is NOT a name presentation!
+  const questionOrVerbTriggers = [
+    "?", "como", "quem", "qual", "quais", "onde", "quando", "por que", "porque", "porquê",
+    "o que", "fazer", "faz", "fazia", "feiz", "fez", "foi", "ser", "sera", "será",
+    "sabe", "saber", "ensinar", "explicar", "pintar", "desenhar", "conte", "me conta",
+    "fale", "mostrar", "mostra", "ver", "diga", "posso", "pode", "queria", "gostaria"
+  ];
+  if (questionOrVerbTriggers.some(t => lowerMsg.includes(t))) {
+    return null;
+  }
+
+  // Clean emojis, surrounding punctuation
   let cleaned = mensagem
     .replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F700}-\u{1F77F}\u{1F780}-\u{1F7FF}\u{1F800}-\u{1F8FF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '')
     .trim()
@@ -2830,24 +2863,21 @@ export function extrairNome(mensagem: string): string | null {
 
   if (!cleaned) return null;
 
-  // Stopwords / common vocabulary / keywords that should NOT be treated as child names
+  // Extensive Stopwords / Portuguese vocabulary
   const ignoreWords = new Set([
-    // Basic Portuguese stop words & pronouns
     "um", "uma", "uns", "umas", "o", "a", "os", "as", "ele", "ela", "eles", "elas",
     "meu", "minha", "seu", "sua", "nosso", "nossa", "isso", "isto", "aquilo", "este", "esta", "esse", "essa",
     "com", "sem", "para", "pra", "por", "que", "de", "do", "da", "dos", "das", "em", "no", "na", "nos", "nas",
-    "e", "ou", "mas", "anos", "ano", "idade",
-    // Greetings & affirmations & conversational responses
+    "e", "ou", "mas", "anos", "ano", "idade", "se", "foi", "faz", "fazia", "fez", "feiz", "tem", "ter",
+    "ver", "dar", "ir", "vai", "vem", "sabe", "ser", "esta", "estou", "está", "tiver", "era", "eram",
+    "quem", "como", "qual", "quais", "onde", "quando", "quanto", "quantos", "sobre", "tudo", "nada",
+    "mais", "menos", "muito", "pouco", "outro", "outra", "aquele", "aquela",
     "oi", "oii", "oiii", "olá", "ola", "bom", "boa", "dia", "tarde", "noite",
     "tudo", "bem", "sim", "nao", "não", "ok", "okay", "legal", "show", "massa",
     "bacana", "obrigado", "obrigada", "valeu", "porfavor", "favor", "deboa",
     "top", "beleza", "blz", "joia", "jóia", "certinho", "certo", "errado",
-    // Questions & verbs
-    "como", "vai", "você", "voce", "vc", "quais", "quem", "qual", "onde", "quando",
-    "porque", "porquê", "por", "ajuda", "socorro", "duvida", "dúvida", "pergunta",
-    "quero", "saber", "ver", "pode", "fazer", "desenhar", "pintar", "colorir",
-    "sabe", "me", "diz", "fala", "conte", "mostra", "mostre", "achou", "acha",
-    // Domain terms & art keywords
+    "ajuda", "socorro", "duvida", "dúvida", "pergunta", "quero", "saber", "ver", "pode", "fazer",
+    "desenhar", "pintar", "colorir", "me", "diz", "fala", "conte", "mostra", "mostre", "achou", "acha",
     "esboço", "esboco", "arte", "artista", "pintor", "pintora", "desenho", "quadro",
     "tela", "tinta", "pincel", "pincéis", "pinceis", "lapis", "lápis", "papel",
     "aquarela", "guache", "giz", "cera", "acrilica", "acrílica", "música", "musica",
@@ -2857,24 +2887,22 @@ export function extrairNome(mensagem: string): string | null {
     "pessoal", "turma", "gente", "galera", "facil", "fácil", "avancado", "avançado",
     "versao", "versão", "modo", "exemplo", "praticar", "desafio", "atividade",
     "triste", "tristeza", "alegre", "alegria", "raiva", "medo", "ansioso", "ansiosa",
-    // Artists
     "tarsila", "portinari", "candido", "cândido", "monet", "picasso", "vinci", "gogh",
     "romero", "britto", "frida", "kahlo", "kandinsky", "dali", "dalí", "miro", "miró",
-    "carolina", "jesus", "debret", "debas", "cezanne", "renoir", "degas", "matisse", "amaral"
+    "mozart", "beethoven", "bach", "chopin", "carolina", "jesus", "debret", "debas"
   ]);
 
-  // Explicit Portuguese greeting / name patterns
-  const patterns = [
+  // Explicit Portuguese greeting / name intro patterns ONLY
+  const explicitIntroPatterns = [
     /(?:meu nome [ée]|\bmeu nome\b)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
     /(?:me chamo|\bchamo\b)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
     /(?:eu sou [oa]?|sou [oa]?)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
     /(?:pode me chamar de|me chama de|me chamam de|chamam de)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
     /(?:aqui [ée] [oa]?|aqui e [oa]?)\s*:?\s*([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:oi,?\s+sou\s+[oa]?|oi,?\s+me\s+chamo)\s+([A-ZÀ-ÿa-z\s]+)/i,
-    /(?:[ée] [oa]?)\s+([A-ZÀ-ÿa-z\s]+)/i
+    /(?:oi,?\s+sou\s+[oa]?|oi,?\s+me\s+chamo)\s+([A-ZÀ-ÿa-z\s]+)/i
   ];
 
-  for (const pattern of patterns) {
+  for (const pattern of explicitIntroPatterns) {
     const match = cleaned.match(pattern);
     if (match && match[1]) {
       const rawName = match[1].trim().split(/\s+/)[0];
@@ -2885,16 +2913,17 @@ export function extrairNome(mensagem: string): string | null {
     }
   }
 
-  // Direct single-word or short phrase name response (e.g. "Leno", "Leno Xavier", "Ana Clara", "Leno, 10 anos")
+  // Direct short name entry: ONLY if the message is 1 or 2 capitalized words (e.g. "Leno" or "Leno Xavier" or "Ana Clara")
   const rawWords = cleaned.split(/[\s,.:;!?-]+/).filter(Boolean);
-  const nameCandidateWords = rawWords.filter(w => {
-    const lw = w.toLowerCase();
-    return /^[A-ZÀ-ÿa-z]+$/.test(w) && w.length >= 2 && w.length <= 20 && !ignoreWords.has(lw);
-  });
-
-  if (nameCandidateWords.length >= 1 && rawWords.length <= 5) {
-    const firstCandidate = nameCandidateWords[0];
-    return firstCandidate.charAt(0).toUpperCase() + firstCandidate.slice(1).toLowerCase();
+  if (rawWords.length >= 1 && rawWords.length <= 2) {
+    const isCapitalized = rawWords.every(w => /^[A-ZÀ-ÿ][a-zÀ-ÿ]+$/.test(w));
+    if (isCapitalized) {
+      const firstCandidate = rawWords[0];
+      const lower = firstCandidate.toLowerCase();
+      if (firstCandidate.length >= 2 && !ignoreWords.has(lower)) {
+        return firstCandidate.charAt(0).toUpperCase() + firstCandidate.slice(1).toLowerCase();
+      }
+    }
   }
 
   return null;

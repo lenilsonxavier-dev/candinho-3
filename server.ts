@@ -1604,10 +1604,34 @@ app.all("/api/whatsapp/webhook", async (req: Request, res: Response) => {
     }
 
     // Resolve a resposta do Candinho
+    let replyText = "";
     const localRes = resolverMensagemLocalmente(incomingText, bibliotecaCultural);
-    const replyText = localRes 
-      ? localRes.reply 
-      : "Olá! Sou o Candinho, seu amigo artista! 🎨 O que você gostaria de criar ou descobrir hoje no Ateliê?";
+    if (localRes && localRes.reply) {
+      replyText = localRes.reply;
+    } else if (ai) {
+      try {
+        const systemInstruction = 
+          "Você é o Candinho, um amigo artista e pintor muito simpático, alegre, acolhedor e dialógico para crianças de 10 anos. " +
+          "Responda à mensagem da criança em português simples, entusiasmado e carinhoso, de forma direta e sem rodeios. " +
+          "Nunca repita saudações genéricas ou pergunte o nome da criança se ela estiver tirando uma dúvida sobre arte, desenhos ou curiosidades. " +
+          "Divida sua explicação em pequenos parágrafos fáceis de ler e termine sempre com uma pergunta interativa e afetuosa convidando-a a conversar sobre arte!";
+        
+        const responseGemini = await ai.models.generateContent({
+          model: "gemini-2.5-flash",
+          contents: incomingText,
+          config: {
+            systemInstruction: systemInstruction,
+            temperature: 0.7,
+          }
+        });
+        replyText = responseGemini.text || sugerirTemasAlternativos();
+      } catch (e) {
+        console.error("[WhatsApp Webhook] Erro ao chamar Gemini:", e);
+        replyText = sugerirTemasAlternativos();
+      }
+    } else {
+      replyText = sugerirTemasAlternativos();
+    }
 
     // Se for Twilio Sandbox (Twilio envia AccountSid ou Body ou vem via POST x-www-form-urlencoded)
     const isTwilio = Boolean(body.AccountSid || query.AccountSid || body.Body || query.Body || sender.includes("whatsapp:"));
