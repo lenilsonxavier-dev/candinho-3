@@ -868,6 +868,105 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
     matchedKey: 'detetive_da_arte'
   },
 
+  // ===== GLOSSÁRIO DE TECNOLOGIA E INTELIGÊNCIA ARTIFICIAL (IA) =====
+  {
+    palavras: ['inteligencia artificial', 'inteligência artificial', 'o que e inteligencia artificial', 'o que e inteligência artificial', 'o que e ia', 'o que é ia', 'o que significa ia', 'conceito de ia', 'ia'],
+    resposta: '🤖 **Inteligência Artificial (IA)**\n\nÉ um programa de computador que aprende a fazer tarefas, responder perguntas, criar desenhos, escrever textos e ajudar as pessoas.',
+    matchedKey: 'glossario_ia'
+  },
+  {
+    palavras: ['prompt', 'prompts', 'o que e prompt', 'o que é prompt', 'o que e um prompt', 'o que é um prompt', 'significado de prompt'],
+    resposta: '💬 **Prompt**\n\nÉ a mensagem ou pergunta que você escreve para a Inteligência Artificial. Quanto mais clara for a pergunta, melhor será a resposta.',
+    matchedKey: 'glossario_prompt'
+  },
+  {
+    palavras: ['algoritmo', 'algoritmos', 'o que e algoritmo', 'o que é algoritmo', 'o que e um algoritmo', 'o que é um algoritmo'],
+    resposta: '⚙️ **Algoritmo**\n\nÉ uma sequência de passos ou instruções que ensina o computador a resolver um problema ou realizar uma tarefa.',
+    matchedKey: 'glossario_algoritmo'
+  },
+  {
+    palavras: ['token', 'tokens', 'o que e token', 'o que é token', 'o que e um token', 'o que é um token'],
+    resposta: '🧩 **Token**\n\nÉ um pequeno pedaço de um texto. A IA lê e escreve usando esses pedacinhos, como se fossem blocos para montar frases.',
+    matchedKey: 'glossario_token'
+  },
+  {
+    palavras: ['deepfake', 'deepfakes', 'deep fake', 'deep fakes', 'o que e deepfake', 'o que é deepfake', 'o que e um deepfake'],
+    resposta: '🎭 **Deepfake**\n\nÉ uma imagem, vídeo ou áudio criado por IA para parecer verdadeiro, mesmo sendo falso. Por isso, é importante sempre conferir se uma informação é confiável.',
+    matchedKey: 'glossario_deepfake'
+  },
+  {
+    palavras: ['modelo de ia', 'modelos de ia', 'modelo ia', 'o que e modelo de ia', 'o que é modelo de ia', 'o que e um modelo de ia'],
+    resposta: '🧠 **Modelo de IA**\n\nÉ o "cérebro" da Inteligência Artificial. Ele foi treinado com muitos exemplos para aprender a conversar, responder perguntas e criar conteúdos.',
+    matchedKey: 'glossario_modelo_ia'
+  },
+  {
+    palavras: ['banco de dados', 'bancos de dados', 'o que e banco de dados', 'o que é banco de dados', 'o que e um banco de dados'],
+    resposta: '📚 **Banco de Dados**\n\nÉ um lugar onde muitas informações ficam organizadas para que o computador possa encontrá-las rapidamente.',
+    matchedKey: 'glossario_banco_dados'
+  },
+  {
+    palavras: ['internet', 'o que e internet', 'o que é internet', 'o que e a internet', 'o que é a internet'],
+    resposta: '🌐 **Internet**\n\nÉ uma rede que liga computadores do mundo todo e permite acessar sites, vídeos, jogos e informações.',
+    matchedKey: 'glossario_internet'
+  },
+  {
+    palavras: ['pesquisa', 'pesquisas', 'o que e pesquisa', 'o que é pesquisa', 'o que e pesquisar', 'fazer pesquisa'],
+    resposta: '🔍 **Pesquisa**\n\nÉ o ato de procurar informações sobre um assunto usando livros, pessoas ou a internet.',
+    matchedKey: 'glossario_pesquisa'
+  },
+  {
+    palavras: ['programa', 'programas', 'programa de computador', 'o que e programa', 'o que é programa', 'o que e um programa'],
+    resposta: '💻 **Programa**\n\nÉ um conjunto de instruções que diz ao computador exatamente o que fazer.',
+    matchedKey: 'glossario_programa'
+  },
+  {
+    palavras: ['aplicativo', 'aplicativos', 'o que e aplicativo', 'o que é aplicativo', 'o que e um aplicativo', 'o que e app', 'o que é app', 'app'],
+    resposta: '📱 **Aplicativo (App)**\n\nÉ um programa feito para realizar uma tarefa específica, como desenhar, conversar ou jogar.',
+    matchedKey: 'glossario_aplicativo'
+  },
+  {
+    palavras: ['wifi', 'wi-fi', 'wi fi', 'o que e wifi', 'o que é wifi', 'o que e wi-fi', 'o que é wi-fi'],
+    resposta: '🛜 **Wi-Fi**\n\nÉ uma forma de conectar aparelhos à internet sem usar fios.',
+    matchedKey: 'glossario_wifi'
+  },
+  {
+    palavras: ['senha', 'senhas', 'o que e senha', 'o que é senha', 'o que e uma senha'],
+    resposta: '🔒 **Senha**\n\nÉ um código secreto que protege suas contas e seus dados.',
+    matchedKey: 'glossario_senha'
+  },
+  {
+    palavras: ['nuvem', 'cloud', 'o que e nuvem', 'o que é nuvem', 'o que e cloud', 'o que é cloud', 'salvar na nuvem'],
+    resposta: '☁️ **Nuvem (Cloud)**\n\nÉ um lugar na internet onde você pode guardar arquivos para acessá-los de qualquer aparelho.',
+    matchedKey: 'glossario_nuvem'
+  },
+  {
+    palavras: ['seguranca digital', 'segurança digital', 'o que e seguranca digital', 'o que é segurança digital'],
+    resposta: '🦺 **Segurança Digital**\n\nSão cuidados que devemos ter para usar a internet de forma segura, protegendo nossas informações e respeitando as outras pessoas.',
+    matchedKey: 'glossario_seguranca_digital'
+  },
+  {
+    palavras: ['glossario de ia', 'glossário de ia', 'glossario de tecnologia', 'glossário de tecnologia', 'dicionario de ia', 'dicionario de tecnologia', 'termos de ia', 'termos de tecnologia'],
+    resposta: '🤖 **Glossário de IA e Tecnologia do Candinho** 💡\n\n' +
+      'Aprenda os termos mais importantes sobre tecnologia e Inteligência Artificial de forma simples:\n\n' +
+      '🤖 **Inteligência Artificial (IA):** É um programa de computador que aprende a fazer tarefas, responder perguntas, criar desenhos, escrever textos e ajudar as pessoas.\n\n' +
+      '💬 **Prompt:** É a mensagem ou pergunta que você escreve para a Inteligência Artificial. Quanto mais clara for a pergunta, melhor será a resposta.\n\n' +
+      '⚙️ **Algoritmo:** É uma sequência de passos ou instruções que ensina o computador a resolver um problema ou realizar uma tarefa.\n\n' +
+      '🧩 **Token:** É um pequeno pedaço de um texto. A IA lê e escreve usando esses pedacinhos, como se fossem blocos para montar frases.\n\n' +
+      '🎭 **Deepfake:** É uma imagem, vídeo ou áudio criado por IA para parecer verdadeiro, mesmo sendo falso. Por isso, é importante sempre conferir se uma informação é confiável.\n\n' +
+      '🧠 **Modelo de IA:** É o "cérebro" da Inteligência Artificial. Ele foi treinado com muitos exemplos para aprender a conversar, responder perguntas e criar conteúdos.\n\n' +
+      '📚 **Banco de Dados:** É um lugar onde muitas informações ficam organizedas para que o computador possa encontrá-las rapidamente.\n\n' +
+      '🌐 **Internet:** É uma rede que liga computadores do mundo todo e permite acessar sites, vídeos, jogos e informações.\n\n' +
+      '🔍 **Pesquisa:** É o ato de procurar informações sobre um assunto usando livros, pessoas ou a internet.\n\n' +
+      '💻 **Programa:** É um conjunto de instruções que diz ao computador exatamente o que fazer.\n\n' +
+      '📱 **Aplicativo (App):** É um programa feito para realizar uma tarefa específica, como desenhar, conversar ou jogar.\n\n' +
+      '🛜 **Wi-Fi:** É uma forma de conectar aparelhos à internet sem usar fios.\n\n' +
+      '🔒 **Senha:** É um código secreto que protege suas contas e seus dados.\n\n' +
+      '☁️ **Nuvem (Cloud):** É um lugar na internet onde você pode guardar arquivos para acessá-los de qualquer aparelho.\n\n' +
+      '🦺 **Segurança Digital:** São cuidados que devemos ter para usar a internet de forma segura, protegendo nossas informações e respeitando as outras pessoas.\n\n' +
+      '💡 Me pergunte sobre qualquer um desses termos para conversarmos mais!',
+    matchedKey: 'glossario_completo_ia'
+  },
+
   // ===== CONCEITOS GERAIS DE ARTE =====
   { 
     palavras: ['arte', 'o que é arte', 'definir arte', 'definição de arte'], 
