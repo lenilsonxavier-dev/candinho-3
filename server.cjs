@@ -8976,6 +8976,87 @@ var CONHECIMENTO_CANDINHO = [
     resposta: "\u{1F575}\uFE0F **O Detetive da Arte!**\n\nImagine que existe um her\xF3i chamado **Detetive da Arte!** Ele tem uma lupa m\xE1gica e, sempre que v\xEA uma imagem surpreendente na internet, ele faz as **5 perguntas m\xE1gicas** antes de acreditar:\n\n1\uFE0F\u20E3 \u{1F50D} **Quem fez esta imagem?** (Qual \xE9 o nome do autor ou site?)\n2\uFE0F\u20E3 \u{1F4C5} **Quando ela foi criada?** (Foi hoje ou \xE9 uma not\xEDcia velha de anos atr\xE1s?)\n3\uFE0F\u20E3 \u{1F4CD} **Onde ela apareceu primeiro?** (Foi em um site s\xE9rio ou num grupo de mensagem?)\n4\uFE0F\u20E3 \u{1F3A8} **Ela foi modificada ou editada?** (Tem cara de montagem ou filtro?)\n5\uFE0F\u20E3 \u{1F4DA} **Outras fontes confi\xE1veis confirmam?** (Outros detetives tamb\xE9m viram e confirmaram?)\n\nSe o Detetive da Arte n\xE3o conseguir responder a essas perguntas, ele n\xE3o compartilha e guarda sua lupa! Que tal ser um Detetive da Arte comigo hoje e investigar as imagens que voc\xEA v\xEA por a\xED? \u{1F31F}\u{1F526}",
     matchedKey: "detetive_da_arte"
   },
+  // ===== GLOSSÁRIO DE TECNOLOGIA E INTELIGÊNCIA ARTIFICIAL (IA) =====
+  {
+    palavras: ["inteligencia artificial", "intelig\xEAncia artificial", "o que e inteligencia artificial", "o que e intelig\xEAncia artificial", "o que e ia", "o que \xE9 ia", "o que significa ia", "conceito de ia", "ia"],
+    resposta: "\u{1F916} **Intelig\xEAncia Artificial (IA)**\n\n\xC9 um programa de computador que aprende a fazer tarefas, responder perguntas, criar desenhos, escrever textos e ajudar as pessoas.",
+    matchedKey: "glossario_ia"
+  },
+  {
+    palavras: ["prompt", "prompts", "o que e prompt", "o que \xE9 prompt", "o que e um prompt", "o que \xE9 um prompt", "significado de prompt"],
+    resposta: "\u{1F4AC} **Prompt**\n\n\xC9 a mensagem ou pergunta que voc\xEA escreve para a Intelig\xEAncia Artificial. Quanto mais clara for a pergunta, melhor ser\xE1 a resposta.",
+    matchedKey: "glossario_prompt"
+  },
+  {
+    palavras: ["algoritmo", "algoritmos", "o que e algoritmo", "o que \xE9 algoritmo", "o que e um algoritmo", "o que \xE9 um algoritmo"],
+    resposta: "\u2699\uFE0F **Algoritmo**\n\n\xC9 uma sequ\xEAncia de passos ou instru\xE7\xF5es que ensina o computador a resolver um problema ou realizar uma tarefa.",
+    matchedKey: "glossario_algoritmo"
+  },
+  {
+    palavras: ["token", "tokens", "o que e token", "o que \xE9 token", "o que e um token", "o que \xE9 um token"],
+    resposta: "\u{1F9E9} **Token**\n\n\xC9 um pequeno peda\xE7o de um texto. A IA l\xEA e escreve usando esses pedacinhos, como se fossem blocos para montar frases.",
+    matchedKey: "glossario_token"
+  },
+  {
+    palavras: ["deepfake", "deepfakes", "deep fake", "deep fakes", "o que e deepfake", "o que \xE9 deepfake", "o que e um deepfake"],
+    resposta: "\u{1F3AD} **Deepfake**\n\n\xC9 uma imagem, v\xEDdeo ou \xE1udio criado por IA para parecer verdadeiro, mesmo sendo falso. Por isso, \xE9 importante sempre conferir se uma informa\xE7\xE3o \xE9 confi\xE1vel.",
+    matchedKey: "glossario_deepfake"
+  },
+  {
+    palavras: ["modelo de ia", "modelos de ia", "modelo ia", "o que e modelo de ia", "o que \xE9 modelo de ia", "o que e um modelo de ia"],
+    resposta: '\u{1F9E0} **Modelo de IA**\n\n\xC9 o "c\xE9rebro" da Intelig\xEAncia Artificial. Ele foi treinado com muitos exemplos para aprender a conversar, responder perguntas e criar conte\xFAdos.',
+    matchedKey: "glossario_modelo_ia"
+  },
+  {
+    palavras: ["banco de dados", "bancos de dados", "o que e banco de dados", "o que \xE9 banco de dados", "o que e um banco de dados"],
+    resposta: "\u{1F4DA} **Banco de Dados**\n\n\xC9 um lugar onde muitas informa\xE7\xF5es ficam organizadas para que o computador possa encontr\xE1-las rapidamente.",
+    matchedKey: "glossario_banco_dados"
+  },
+  {
+    palavras: ["internet", "o que e internet", "o que \xE9 internet", "o que e a internet", "o que \xE9 a internet"],
+    resposta: "\u{1F310} **Internet**\n\n\xC9 uma rede que liga computadores do mundo todo e permite acessar sites, v\xEDdeos, jogos e informa\xE7\xF5es.",
+    matchedKey: "glossario_internet"
+  },
+  {
+    palavras: ["pesquisa", "pesquisas", "o que e pesquisa", "o que \xE9 pesquisa", "o que e pesquisar", "fazer pesquisa"],
+    resposta: "\u{1F50D} **Pesquisa**\n\n\xC9 o ato de procurar informa\xE7\xF5es sobre um assunto usando livros, pessoas ou a internet.",
+    matchedKey: "glossario_pesquisa"
+  },
+  {
+    palavras: ["programa", "programas", "programa de computador", "o que e programa", "o que \xE9 programa", "o que e um programa"],
+    resposta: "\u{1F4BB} **Programa**\n\n\xC9 um conjunto de instru\xE7\xF5es que diz ao computador exatamente o que fazer.",
+    matchedKey: "glossario_programa"
+  },
+  {
+    palavras: ["aplicativo", "aplicativos", "o que e aplicativo", "o que \xE9 aplicativo", "o que e um aplicativo", "o que e app", "o que \xE9 app", "app"],
+    resposta: "\u{1F4F1} **Aplicativo (App)**\n\n\xC9 um programa feito para realizar uma tarefa espec\xEDfica, como desenhar, conversar ou jogar.",
+    matchedKey: "glossario_aplicativo"
+  },
+  {
+    palavras: ["wifi", "wi-fi", "wi fi", "o que e wifi", "o que \xE9 wifi", "o que e wi-fi", "o que \xE9 wi-fi"],
+    resposta: "\u{1F6DC} **Wi-Fi**\n\n\xC9 uma forma de conectar aparelhos \xE0 internet sem usar fios.",
+    matchedKey: "glossario_wifi"
+  },
+  {
+    palavras: ["senha", "senhas", "o que e senha", "o que \xE9 senha", "o que e uma senha"],
+    resposta: "\u{1F512} **Senha**\n\n\xC9 um c\xF3digo secreto que protege suas contas e seus dados.",
+    matchedKey: "glossario_senha"
+  },
+  {
+    palavras: ["nuvem", "cloud", "o que e nuvem", "o que \xE9 nuvem", "o que e cloud", "o que \xE9 cloud", "salvar na nuvem"],
+    resposta: "\u2601\uFE0F **Nuvem (Cloud)**\n\n\xC9 um lugar na internet onde voc\xEA pode guardar arquivos para acess\xE1-los de qualquer aparelho.",
+    matchedKey: "glossario_nuvem"
+  },
+  {
+    palavras: ["seguranca digital", "seguran\xE7a digital", "o que e seguranca digital", "o que \xE9 seguran\xE7a digital"],
+    resposta: "\u{1F9BA} **Seguran\xE7a Digital**\n\nS\xE3o cuidados que devemos ter para usar a internet de forma segura, protegendo nossas informa\xE7\xF5es e respeitando as outras pessoas.",
+    matchedKey: "glossario_seguranca_digital"
+  },
+  {
+    palavras: ["glossario de ia", "gloss\xE1rio de ia", "glossario de tecnologia", "gloss\xE1rio de tecnologia", "dicionario de ia", "dicionario de tecnologia", "termos de ia", "termos de tecnologia"],
+    resposta: '\u{1F916} **Gloss\xE1rio de IA e Tecnologia do Candinho** \u{1F4A1}\n\nAprenda os termos mais importantes sobre tecnologia e Intelig\xEAncia Artificial de forma simples:\n\n\u{1F916} **Intelig\xEAncia Artificial (IA):** \xC9 um programa de computador que aprende a fazer tarefas, responder perguntas, criar desenhos, escrever textos e ajudar as pessoas.\n\n\u{1F4AC} **Prompt:** \xC9 a mensagem ou pergunta que voc\xEA escreve para a Intelig\xEAncia Artificial. Quanto mais clara for a pergunta, melhor ser\xE1 a resposta.\n\n\u2699\uFE0F **Algoritmo:** \xC9 uma sequ\xEAncia de passos ou instru\xE7\xF5es que ensina o computador a resolver um problema ou realizar uma tarefa.\n\n\u{1F9E9} **Token:** \xC9 um pequeno peda\xE7o de um texto. A IA l\xEA e escreve usando esses pedacinhos, como se fossem blocos para montar frases.\n\n\u{1F3AD} **Deepfake:** \xC9 uma imagem, v\xEDdeo ou \xE1udio criado por IA para parecer verdadeiro, mesmo sendo falso. Por isso, \xE9 importante sempre conferir se uma informa\xE7\xE3o \xE9 confi\xE1vel.\n\n\u{1F9E0} **Modelo de IA:** \xC9 o "c\xE9rebro" da Intelig\xEAncia Artificial. Ele foi treinado com muitos exemplos para aprender a conversar, responder perguntas e criar conte\xFAdos.\n\n\u{1F4DA} **Banco de Dados:** \xC9 um lugar onde muitas informa\xE7\xF5es ficam organizedas para que o computador possa encontr\xE1-las rapidamente.\n\n\u{1F310} **Internet:** \xC9 uma rede que liga computadores do mundo todo e permite acessar sites, v\xEDdeos, jogos e informa\xE7\xF5es.\n\n\u{1F50D} **Pesquisa:** \xC9 o ato de procurar informa\xE7\xF5es sobre um assunto usando livros, pessoas ou a internet.\n\n\u{1F4BB} **Programa:** \xC9 um conjunto de instru\xE7\xF5es que diz ao computador exatamente o que fazer.\n\n\u{1F4F1} **Aplicativo (App):** \xC9 um programa feito para realizar uma tarefa espec\xEDfica, como desenhar, conversar ou jogar.\n\n\u{1F6DC} **Wi-Fi:** \xC9 uma forma de conectar aparelhos \xE0 internet sem usar fios.\n\n\u{1F512} **Senha:** \xC9 um c\xF3digo secreto que protege suas contas e seus dados.\n\n\u2601\uFE0F **Nuvem (Cloud):** \xC9 um lugar na internet onde voc\xEA pode guardar arquivos para acess\xE1-los de qualquer aparelho.\n\n\u{1F9BA} **Seguran\xE7a Digital:** S\xE3o cuidados que devemos ter para usar a internet de forma segura, protegendo nossas informa\xE7\xF5es e respeitando as outras pessoas.\n\n\u{1F4A1} Me pergunte sobre qualquer um desses termos para conversarmos mais!',
+    matchedKey: "glossario_completo_ia"
+  },
   // ===== CONCEITOS GERAIS DE ARTE =====
   {
     palavras: ["arte", "o que \xE9 arte", "definir arte", "defini\xE7\xE3o de arte"],
