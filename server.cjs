@@ -9057,7 +9057,95 @@ var CONHECIMENTO_CANDINHO = [
     resposta: '\u{1F916} **Gloss\xE1rio de IA e Tecnologia do Candinho** \u{1F4A1}\n\nAprenda os termos mais importantes sobre tecnologia e Intelig\xEAncia Artificial de forma simples:\n\n\u{1F916} **Intelig\xEAncia Artificial (IA):** \xC9 um programa de computador que aprende a fazer tarefas, responder perguntas, criar desenhos, escrever textos e ajudar as pessoas.\n\n\u{1F4AC} **Prompt:** \xC9 a mensagem ou pergunta que voc\xEA escreve para a Intelig\xEAncia Artificial. Quanto mais clara for a pergunta, melhor ser\xE1 a resposta.\n\n\u2699\uFE0F **Algoritmo:** \xC9 uma sequ\xEAncia de passos ou instru\xE7\xF5es que ensina o computador a resolver um problema ou realizar uma tarefa.\n\n\u{1F9E9} **Token:** \xC9 um pequeno peda\xE7o de um texto. A IA l\xEA e escreve usando esses pedacinhos, como se fossem blocos para montar frases.\n\n\u{1F3AD} **Deepfake:** \xC9 uma imagem, v\xEDdeo ou \xE1udio criado por IA para parecer verdadeiro, mesmo sendo falso. Por isso, \xE9 importante sempre conferir se uma informa\xE7\xE3o \xE9 confi\xE1vel.\n\n\u{1F9E0} **Modelo de IA:** \xC9 o "c\xE9rebro" da Intelig\xEAncia Artificial. Ele foi treinado com muitos exemplos para aprender a conversar, responder perguntas e criar conte\xFAdos.\n\n\u{1F4DA} **Banco de Dados:** \xC9 um lugar onde muitas informa\xE7\xF5es ficam organizedas para que o computador possa encontr\xE1-las rapidamente.\n\n\u{1F310} **Internet:** \xC9 uma rede que liga computadores do mundo todo e permite acessar sites, v\xEDdeos, jogos e informa\xE7\xF5es.\n\n\u{1F50D} **Pesquisa:** \xC9 o ato de procurar informa\xE7\xF5es sobre um assunto usando livros, pessoas ou a internet.\n\n\u{1F4BB} **Programa:** \xC9 um conjunto de instru\xE7\xF5es que diz ao computador exatamente o que fazer.\n\n\u{1F4F1} **Aplicativo (App):** \xC9 um programa feito para realizar uma tarefa espec\xEDfica, como desenhar, conversar ou jogar.\n\n\u{1F6DC} **Wi-Fi:** \xC9 uma forma de conectar aparelhos \xE0 internet sem usar fios.\n\n\u{1F512} **Senha:** \xC9 um c\xF3digo secreto que protege suas contas e seus dados.\n\n\u2601\uFE0F **Nuvem (Cloud):** \xC9 um lugar na internet onde voc\xEA pode guardar arquivos para acess\xE1-los de qualquer aparelho.\n\n\u{1F9BA} **Seguran\xE7a Digital:** S\xE3o cuidados que devemos ter para usar a internet de forma segura, protegendo nossas informa\xE7\xF5es e respeitando as outras pessoas.\n\n\u{1F4A1} Me pergunte sobre qualquer um desses termos para conversarmos mais!',
     matchedKey: "glossario_completo_ia"
   },
-  // ===== CONCEITOS GERAIS DE ARTE =====
+  // ===== LITERATURA BRASILEIRA =====
+  {
+    palavras: [
+      "literatura brasileira",
+      "o que e a literatura brasileira",
+      "o que \xE9 a literatura brasileira",
+      "o que e literatura brasileira",
+      "o que \xE9 literatura brasileira",
+      "historia da literatura brasileira",
+      "hist\xF3ria da literatura brasileira",
+      "qual e a historia da literatura brasileira",
+      "qual \xE9 a hist\xF3ria da literatura brasileira",
+      "historia da literatura",
+      "hist\xF3ria da literatura",
+      "literatura do brasil",
+      "escritores brasileiros"
+    ],
+    resposta: "\u{1F4DA}\u{1F1E7}\u{1F1F7} **Hist\xF3ria da Literatura Brasileira**\n\nA Literatura Brasileira \xE9 formada por hist\xF3rias, poemas, lendas e livros escritos por autores do Brasil. Ela mostra como as pessoas viviam, pensavam e sonhavam em diferentes \xE9pocas da nossa hist\xF3ria.\n\nVeja um resumo da nossa hist\xF3ria liter\xE1ria:\n\n\u{1F33F} **Antes da chegada dos portugueses**\nOs povos ind\xEDgena j\xE1 contavam hist\xF3rias, cantavam e passavam seus conhecimentos de gera\xE7\xE3o em gera\xE7\xE3o. Tudo era contado de forma oral, sem livros.\n\n\u26F5 **Literatura de Informa\xE7\xE3o (1500)**\nQuando os portugueses chegaram ao Brasil, escreveram cartas e relatos contando como era a nova terra, a natureza e os povos ind\xEDgenas. Um dos textos mais conhecidos \xE9 a carta de Pero Vaz de Caminha.\n\n\u271D\uFE0F **Barroco (s\xE9culo XVII)**\nOs escritores falavam sobre Deus, a f\xE9, a vida e os sentimentos humanos. Usavam muitas compara\xE7\xF5es e palavras bonitas.\n\n\u{1F333} **Arcadismo (s\xE9culo XVIII)**\nOs autores valorizavam a natureza, a vida simples e tranquila no campo.\n\n\u2764\uFE0F **Romantismo (s\xE9culo XIX)**\nFoi uma \xE9poca de muitas hist\xF3rias de amor, aventuras e her\xF3is. Os escritores tamb\xE9m passaram a valorizar o Brasil, seus povos e suas paisagens.\n\n\u{1F52C} **Realismo e Naturalismo**\nOs autores come\xE7aram a mostrar a vida como ela realmente era, falando sobre problemas da sociedade e das pessoas.\n\n\u2728 **Modernismo (s\xE9culo XX)**\nOs escritores inovaram a forma de escrever. Usaram uma linguagem mais simples, divertida e pr\xF3xima da fala das pessoas. Um dos autores mais famosos dessa \xE9poca foi Monteiro Lobato, criador do S\xEDtio do Picapau Amarelo.\n\n\u{1F4D6} **Literatura Brasileira hoje**\nAtualmente, existem livros para todos os gostos: aventuras, mist\xE9rios, fantasia, hist\xF3rias em quadrinhos, poemas e muito mais. Os escritores falam sobre amizade, meio ambiente, diversidade, tecnologia e muitos outros assuntos.\n\n\u{1F31F} **Alguns escritores brasileiros famosos:**\n\u2022 **Monteiro Lobato:** criou hist\xF3rias infantis muito conhecidas.\n\u2022 **Machado de Assis:** escreveu grandes cl\xE1ssicos da literatura.\n\u2022 **Cec\xEDlia Meireles:** escreveu lindos poemas.\n\u2022 **Carlos Drummond de Andrade:** um dos maiores poetas do Brasil.\n\u2022 **Ruth Rocha:** autora de livros infantis divertidos e educativos.\n\u2022 **Ana Maria Machado:** escreveu muitas hist\xF3rias para crian\xE7as.\n\n\u{1F4A1} **Curiosidade:** A primeira hist\xF3ria da literatura brasileira n\xE3o come\xE7ou com um livro de aventuras, mas com uma carta, escrita em 1500 por Pero Vaz de Caminha, contando ao rei de Portugal como era o Brasil.\n\n\u2728 *Em uma frase:* A Literatura Brasileira \xE9 como um grande \xE1lbum de hist\xF3rias que mostra como o Brasil mudou ao longo do tempo e ajuda as pessoas a conhecer melhor sua cultura, sua hist\xF3ria e sua imagina\xE7\xE3o!",
+    matchedKey: "literatura_brasileira"
+  },
+  // ===== FOLCLORE BRASILEIRO E LENDAS =====
+  {
+    palavras: [
+      "folclore",
+      "folclore brasileiro",
+      "o que e folclore",
+      "o que \xE9 folclore",
+      "o que e o folclore",
+      "o que \xE9 o folclore",
+      "lendas",
+      "lendas brasileiras",
+      "principais lendas",
+      "principais lendas do folclore",
+      "lendas do folclore",
+      "folclore e lendas",
+      "historia do folclore",
+      "hist\xF3ria do folclore",
+      "folclore nacional",
+      "o que sao lendas",
+      "o que s\xE3o lendas",
+      "quais as principais lendas",
+      "quais sao as principais lendas",
+      "me conta sobre o folclore"
+    ],
+    resposta: '\u{1F3AD}\u{1F333} **Folclore Brasileiro e Suas Principais Lendas**\n\nO **folclore** \xE9 a reuni\xE3o de todas as tradi\xE7\xF5es, hist\xF3rias, lendas, dan\xE7as, festas, brinquedos e cantigas de um povo transmitidas de gera\xE7\xE3o em gera\xE7\xE3o! \xC9 a alma da nossa cultura e imagina\xE7\xE3o popular brasileira! \u{1F1E7}\u{1F1F7}\u2728\n\nA palavra "Folclore" vem da uni\xE3o de duas palavras em ingl\xEAs: *Folk* (povo) e *Lore* (sabedoria), ou seja, \xE9 o **"Saber do Povo"**!\n\n\u{1F343} **As Principais Lendas do Nosso Folclore:**\n\n\u{1F534} **Saci-Perer\xEA:** Um menino negro de uma perna s\xF3, que usa um gorro vermelho m\xE1gico e adora pregar pe\xE7as, fazer travessuras e rodopiar em redemoinhos nas matas!\n\n\u{1F525} **Curupira:** O protetor das florestas e dos animais! Ele tem cabelos vermelhos como fogo e os p\xE9s virados para tr\xE1s, enganando os ca\xE7adores com pegadas no sentido contr\xE1rio.\n\n\u{1F9DC}\u200D\u2640\uFE0F **Iara (A M\xE3e das \xC1guas):** Uma sereia linda que vive nos rios da Amaz\xF4nia. Com o seu canto suave e hipnotizante, ela encanta as pessoas e protege as \xE1guas.\n\n\u{1F40E} **Mula sem Cabe\xE7a:** Um ser misterioso em formato de mula que no lugar da cabe\xE7a solta chamas brilhantes de fogo! Diz a lenda que ela corre pelas noites assustando quem anda sozinho.\n\n\u{1F42C} **Boto Cor-de-Rosa:** Um boto m\xE1gico dos rios da Amaz\xF4nia que se transforma em um rapaz simp\xE1tico e elegante durante as noites de festa junina.\n\n\u{1F40D} **Boitat\xE1:** Uma grande cobra de fogo com muitos olhos brilhantes que protege os campos e florestas contra queimadas e destrui\xE7\xE3o.\n\n\u{1F40A} **Cuca:** Uma jacar\xE9 velha e muito sabida que vive em uma caverna preparando po\xE7\xF5es m\xE1gicas, famosa por assustar quem n\xE3o quer dormir cedo nas cantigas de embalar!\n\n\u{1F31F} **Outras Manifesta\xE7\xF5es do Folclore:**\nAl\xE9m das lendas, o folclore inclui brincadeiras (como pular corda e pi\xE3o), festas (como Bumba Meu Boi e Festa Junina), prov\xE9rbios, adivinhas e comidas t\xEDpicas (como canjica e pamonha)!\n\n\u{1F4A1} **Curiosidade:** No Brasil, comemoramos o **Dia do Folclore** no dia **22 de Agosto**!\n\n\u2728 Qual \xE9 a sua lenda folcl\xF3rica favorita? Que tal fazermos um desenho lindo sobre ela hoje? \u{1F3A8}',
+    matchedKey: "folclore_brasileiro"
+  },
+  {
+    palavras: ["saci", "saci perere", "saci perer\xEA", "lenda do saci", "quem e o saci", "quem \xE9 o saci"],
+    resposta: "\u{1F534} **Saci-Perer\xEA!**\n\nO Saci \xE9 uma das figuras mais conhecidas e brincalhonas do folclore brasileiro! \u{1F1E7}\u{1F1F7}\u2728\n\n Ele \xE9 um menino negro de uma perna s\xF3, que usa um gorro vermelho m\xE1gico na cabe\xE7a e anda com um cachimbo na boca. O segredo dos poderes do Saci est\xE1 justamente no seu gorro vermelho!\n\n\u{1F32A}\uFE0F **Suas Travessuras:**\nEle adora aprontar nas fazendas e matas: esconde os objetos das pessoas, tran\xE7a a crina dos cavalos, azeda o leite e aparece dentro de redemoinhos de vento e poeira!\n\n\u{1F4A1} **Curiosidade:** Para capturar um Saci, diz a lenda que voc\xEA precisa jogar uma peneira dentro de um redemoinho! Depois de peg\xE1-lo, voc\xEA deve tirar o gorro dele e guard\xE1-lo dentro de uma garrafa de vidro bem fechada com uma rolha! \u{1F37E}\n\n\u{1F3A8} Vamos desenhar um Saci rodopiando no vento com a sua carapu\xE7a vermelha?",
+    matchedKey: "lenda_saci"
+  },
+  {
+    palavras: ["curupira", "lenda do curupira", "quem e o curupira", "quem \xE9 o curupira"],
+    resposta: "\u{1F525} **Curupira \u2014 O Protetor das Matas!**\n\nO Curupira \xE9 um ser m\xEDtico das florestas brasileiras que defende as \xE1rvores e os animais selvagens contra ca\xE7adores malvados e destruidores da natureza! \u{1F333}\u{1F405}\n\n\u{1F9D1}\u200D\u{1F9B0} **Como ele \xE9:**\nEle \xE9 um an\xE3ozinho forte de cabelos vermelhos como fogo e tem uma caracter\xEDstica m\xE1gica \xFAnica: seus p\xE9s s\xE3o virados para tr\xE1s!\n\n\u{1F43E} **O Truque das Pegadas:**\nQuando ele anda para a frente, as pegadas no ch\xE3o apontam para tr\xE1s. Assim, quem tenta segui-lo ou ca\xE7\xE1-lo fica completamente perdido e anda na dire\xE7\xE3o errada na floresta!\n\n\u26A1 Ele tamb\xE9m d\xE1 assobios agudos e cria ilus\xF5es nas matas para assustar quem tenta machucar os animais.\n\n\u{1F49A} O Curupira nos ensina a amar, respeitar e proteger a natureza!",
+    matchedKey: "lenda_curupira"
+  },
+  {
+    palavras: ["iara", "sereia iara", "lenda da iara", "quem e a iara", "quem \xE9 a iara"],
+    resposta: "\u{1F9DC}\u200D\u2640\uFE0F **Iara \u2014 A M\xE3e das \xC1guas!**\n\nA Iara \xE9 a famosa sereia do folclore brasileiro que vive nos rios da Amaz\xF4nia! \u{1F30A}\u2728\n\n\u{1F451} **Sua Hist\xF3ria:**\nEla \xE9 uma linda mulher de cabelos negros compridos, olhos brilhantes e cauda de peixe colorida. Iara costuma ficar sentada nas pedras \xE0 beira dos rios, penteando seus cabelos com um pente de ouro e admirando seu reflexo na \xE1gua.\n\n\u{1F3B6} **O Canto Hipnotizante:**\nEla canta uma melodia doce e irresist\xEDvel que ecoa pelos rios. Diz a lenda que os pescadores que ouvem seu canto ficam encantados e pulam nas \xE1guas profundas para viver com ela no seu pal\xE1cio aqu\xE1tico!\n\n\u{1F4A7} A lenda da Iara representa a for\xE7a, a beleza e os mist\xE9rios dos rios e da floresta amaz\xF4nica!",
+    matchedKey: "lenda_iara"
+  },
+  {
+    palavras: ["mula sem cabeca", "mula sem cabe\xE7a", "lenda da mula sem cabeca", "lenda da mula sem cabe\xE7a"],
+    resposta: "\u{1F40E}\u{1F525} **Mula sem Cabe\xE7a!**\n\nA Mula sem Cabe\xE7a \xE9 uma das criaturas mais assustadoras e misteriosas do folclore do interior do Brasil! \u{1F1E7}\u{1F1F7}\u2728\n\n\u{1F525} **Como ela \xE9:**\nTrata-se de uma grande mula de cor marrom ou preta que, no lugar da cabe\xE7a, solta labaredas brilhantes de fogo! Ela traz r\xE9deas de ferro e ferraduras prateadas que fazem muito barulho ao galopar pelas noites.\n\n\u{1F315} **A Lenda:**\nDiz a tradi\xE7\xE3o que ela aparece nas madrugadas de quinta para sexta-feira nas vilas e matas, correndo em alta velocidade e relinchando t\xE3o alto que se ouve de muito longe.\n\n\u{1F4A1} Para quebrar o feiti\xE7o da Mula sem Cabe\xE7a, diz a lenda que algu\xE9m corajoso precisa tirar o freio de ferro da boca de fogo dela ou pic\xE1-la levemente com uma alfinete de fralda para tirar uma gota de sangue! \u{1F489}",
+    matchedKey: "lenda_mula_sem_cabeca"
+  },
+  {
+    palavras: ["cuca", "lenda da cuca", "quem e a cuca", "quem \xE9 a cuca"],
+    resposta: '\u{1F40A} **Cuca!**\n\nA Cuca \xE9 uma das personagens mais populares das lendas do Brasil, imortalizada tamb\xE9m nas hist\xF3rias do *S\xEDtio do Picapau Amarelo* por Monteiro Lobato! \u{1F3F0}\u2728\n\n\u{1F9D9}\u200D\u2640\uFE0F **Como ela \xE9:**\nEla tem o corpo de uma crocodilo/jacar\xE9 velha, cabelos amarelos e garras afiadas. Mora em uma caverna escura no meio da mata, onde cozinha po\xE7\xF5es m\xE1gicas em um caldeir\xE3o enorme!\n\n\u{1F4A4} **A Cantiga de Ninar:**\nA Cuca ficou famosa pela famosa cantiga infantil: *"Nana nen\xE9m que a Cuca vem pegar, papai foi para a ro\xE7a e a mam\xE3e foi trabalhar..."*\n\n\u{1F4A1} **Curiosidade:** Diz a lenda que a Cuca dorme apenas uma noite a cada sete anos! Por isso ela passa tanto tempo acordada preparando suas feiti\xE7arias!',
+    matchedKey: "lenda_cuca"
+  },
+  {
+    palavras: ["boitata", "boitat\xE1", "lenda do boitata", "lenda do boitat\xE1"],
+    resposta: `\u{1F40D}\u{1F525} **Boitat\xE1 \u2014 A Cobra de Fogo!**
+
+O Boitat\xE1 \xE9 uma cobra gigante feita inteiramente de fogo reluzente que protege os campos e florestas contra as pessoas que provocam queimadas! \u{1F333}\u{1F525}
+
+\u{1F441}\uFE0F **Seus Olhos Brilhantes:**
+Ele possui olhos enormes e flamejantes que parecem far\xF3is na escurid\xE3o. O Boitat\xE1 enxerga perfeitamente no escuro da noite e se transforma em um tora de madeira em chamas para queimar quem destr\xF3i a mata.
+
+\u{1F30A} A palavra "Boitat\xE1" vem da l\xEDngua ind\xEDgena Tupi (*Mba'e-tat\xE1*), que significa "coisa de fogo" ou "cobra de fogo"!`,
+    matchedKey: "lenda_boitata"
+  },
+  {
+    palavras: ["boto cor de rosa", "boto cor-de-rosa", "lenda do boto", "o boto"],
+    resposta: "\u{1F42C}\u{1F338} **Boto Cor-de-Rosa!**\n\nO Boto Cor-de-Rosa \xE9 um animal real e encantador dos rios da Amaz\xF4nia que virou uma das lendas mais charmosas do nosso folclore! \u{1F30A}\u2728\n\n\u{1F3A9} **A Transforma\xE7\xE3o M\xE1gica:**\nDiz a lenda que nas noites de Festa Junina, o Boto sai das \xE1guas do rio e se transforma em um rapaz humano muito bonito, forte e elegante, vestido de roupas brancas e com um chap\xE9u na cabe\xE7a.\n\n\u{1F9E2} **Por que o chap\xE9u?**\nO chap\xE9u serve para esconder as narinas do boto (o buraco pelo qual ele respira), que ficam no topo da sua cabe\xE7a! Ele dan\xE7a com as mo\xE7as nas festas e volta para o rio antes do amanhecer, voltando a ser um boto cor-de-rosa fofo nas \xE1guas da Amaz\xF4nia! \u{1F42C}",
+    matchedKey: "lenda_boto"
+  },
   {
     palavras: ["arte", "o que \xE9 arte", "definir arte", "defini\xE7\xE3o de arte"],
     resposta: "Arte \xE9 uma forma de express\xE3o! Pode ser um desenho, pintura, dan\xE7a, m\xFAsica, teatro\u2026 \xC9 o jeito das pessoas mostrarem sentimentos e ideias. \u{1F3A8}",
@@ -9082,6 +9170,70 @@ var CONHECIMENTO_CANDINHO = [
     palavras: ["m\xFAsica", "musica", "m\xFAsicas", "musicas", "o que \xE9 m\xFAsica", "o que \xE9 musica"],
     resposta: "A m\xFAsica \xE9 a arte de combinar sons e sil\xEAncios de maneira linda! \u{1F3B6} \xC9 a pintura que entra pelos nossos ouvidos. Os instrumentos e as notas musicais cantam hist\xF3rias e despertam sentimentos de alegria, calma e festa em nosso cora\xE7\xE3o! \u{1F3BC}\u{1F3B7}",
     matchedKey: "musica"
+  },
+  // ===== HISTÓRIAS EM QUADRINHOS (HQs) =====
+  {
+    palavras: [
+      "quadrinhos",
+      "historias em quadrinhos",
+      "hist\xF3rias em quadrinhos",
+      "hq",
+      "hqs",
+      "gibi",
+      "gibis",
+      "historia das hqs",
+      "hist\xF3ria das hqs",
+      "historia dos quadrinhos",
+      "hist\xF3ria dos quadrinhos",
+      "historia das historias em quadrinhos",
+      "hist\xF3ria das hist\xF3rias em quadrinhos",
+      "como surgiram as hqs",
+      "como surgiram os quadrinhos",
+      "o que sao quadrinhos",
+      "o que s\xE3o quadrinhos",
+      "turma da monica",
+      "turma da m\xF4nica",
+      "mauricio de sousa"
+    ],
+    resposta: "\u{1F4AC}\u{1F4D6} **Hist\xF3ria das Hist\xF3rias em Quadrinhos (HQs)**\n\nAs hist\xF3rias em quadrinhos (HQs) s\xE3o hist\xF3rias contadas por meio de desenhos e textos organizados em quadrinhos. Elas misturam arte e escrita para divertir, ensinar e emocionar!\n\n\u{1F3A8} **Como surgiram?**\nMuito antes dos gibis, as pessoas j\xE1 contavam hist\xF3rias com imagens, como nas pinturas das cavernas e nos desenhos dos antigos eg\xEDpcios.\nNo final do s\xE9culo XIX, surgiram os primeiros quadrinhos modernos publicados em jornais. Um dos mais famosos foi *The Yellow Kid*, criado em 1895 nos Estados Unidos.\n\n\u{1F680} **O crescimento das HQs:**\nNo s\xE9culo XX, os quadrinhos fizeram muito sucesso. Surgiram personagens inesquec\xEDveis, como Superman, Batman, Mulher-Maravilha, Homem-Aranha e muitos outros. Eles passaram a aparecer em jornais, revistas, livros, desenhos animados e filmes!\n\n\u{1F1E7}\u{1F1F7} **As HQs no Brasil:**\nNo Brasil, as hist\xF3rias em quadrinhos cresceram principalmente com **Mauricio de Sousa**, criador da *Turma da M\xF4nica*, que conquistou crian\xE7as e adultos com personagens como M\xF4nica, Cebolinha, Casc\xE3o e Magali.\nAl\xE9m da Turma da M\xF4nica, muitos outros artistas brasileiros criam quadrinhos sobre aventuras, humor, ci\xEAncia, hist\xF3ria e cultura.\n\n\u{1F4F1} **As HQs hoje:**\nHoje, as hist\xF3rias em quadrinhos podem ser lidas em revistas, livros, jornais, celulares, tablets e computadores. Existem tamb\xE9m os **mang\xE1s**, que s\xE3o os quadrinhos japoneses muito populares no mundo inteiro!\n\n\u{1F31F} **Curiosidade:** No Brasil, as revistas em quadrinhos ficaram t\xE3o populares que ganharam um apelido muito conhecido: **gibi**!\n\n\u2728 *Em uma frase:* As hist\xF3rias em quadrinhos s\xE3o uma forma divertida de contar hist\xF3rias usando desenhos, bal\xF5es de fala e muita imagina\xE7\xE3o! \u{1F3A8}\u{1F4DA}",
+    matchedKey: "historia_hqs"
+  },
+  // ===== HISTÓRIA DA MÚSICA (GERAL) =====
+  {
+    palavras: [
+      "historia da musica",
+      "hist\xF3ria da m\xFAsica",
+      "como surgiu a musica",
+      "como surgiu a m\xFAsica",
+      "origem da musica",
+      "origem da m\xFAsica",
+      "historia de como surgiu a musica",
+      "historia da musica no mundo",
+      "musica no mundo",
+      "m\xFAsica no mundo"
+    ],
+    resposta: "\u{1F3B5} **Hist\xF3ria da M\xFAsica**\n\nA m\xFAsica existe h\xE1 milhares de anos! Ela faz parte da vida das pessoas para celebrar, contar hist\xF3rias, expressar sentimentos e divertir.\n\n\u{1F9B4} **Como surgiu?**\nOs primeiros seres humanos descobriram que podiam fazer sons batendo pedras, paus e tambores feitos de troncos e pele de animais. Tamb\xE9m cantavam usando a pr\xF3pria voz.\n\n\u{1F3DB}\uFE0F **A m\xFAsica na Antiguidade:**\nPovos como os eg\xEDpcios, gregos e romanos usavam a m\xFAsica em festas, cerim\xF4nias religiosas e comemora\xE7\xF5es. Nessa \xE9poca surgiram instrumentos como a harpa, a lira e a flauta.\n\n\u26EA **A m\xFAsica na Idade M\xE9dia:**\nAs m\xFAsicas eram muito usadas nas igrejas. Os m\xFAsicos come\xE7aram a criar formas de escrever as notas musicais para que as can\xE7\xF5es pudessem ser ensinadas e lembradas.\n\n\u{1F3A7} **A m\xFAsica hoje:**\nHoje existem muitos estilos musicais, como pop, rock, rap, funk, jazz, m\xFAsica cl\xE1ssica, sertanejo, pagode e eletr\xF4nica. A m\xFAsica pode ser ouvida em shows, r\xE1dio, televis\xE3o, celulares e na internet.\n\n\u2764\uFE0F **Por que a m\xFAsica \xE9 importante?**\nA m\xFAsica ajuda as pessoas a expressar emo\xE7\xF5es, contar hist\xF3rias, aprender e memorizar, dan\xE7ar e se divertir e conhecer diferentes culturas.\n\n\u{1F31F} **Curiosidade:** O instrumento musical mais antigo conhecido \xE9 uma flauta feita de osso, constru\xEDda h\xE1 mais de 40 mil anos!\n\n\u2728 *Em uma frase:* A m\xFAsica acompanha a humanidade desde a Pr\xE9-Hist\xF3ria e continua unindo pessoas, culturas e sentimentos em todo o mundo! \u{1F3B6}\u{1F30D}",
+    matchedKey: "historia_musica_geral"
+  },
+  // ===== HISTÓRIA DA MÚSICA NO BRASIL =====
+  {
+    palavras: [
+      "historia da musica no brasil",
+      "hist\xF3ria da m\xFAsica no brasil",
+      "musica brasileira",
+      "m\xFAsica brasileira",
+      "historia da musica brasileira",
+      "hist\xF3ria da m\xFAsica brasileira",
+      "ritmos brasileiros",
+      "bossa nova",
+      "tropicalismo",
+      "mpb",
+      "como surgiu a musica brasileira",
+      "origem da musica brasileira",
+      "hist\xF3ria da m\xFAsica no brasil"
+    ],
+    resposta: "\u{1F3B6}\u{1F1E7}\u{1F1F7} **Hist\xF3ria da M\xFAsica no Brasil**\n\nA m\xFAsica brasileira nasce da mistura de tr\xEAs povos: os ind\xEDgenas que j\xE1 viviam aqui, os africanos trazidos como escravos e os portugueses que chegaram em 1500 \u2014 e depois ganhou ainda mais cores com imigrantes de todo o mundo!\n\n\u{1F4DC} **Come\xE7o: As Ra\xEDzes (antes de 1900)**\n\u2022 **M\xFAsica ind\xEDgena:** usavam flautas, chocalhos, tambores e cantavam em rituais, dan\xE7as e para contar hist\xF3rias da natureza.\n\u2022 **M\xFAsica africana:** trouxe a percuss\xE3o forte, ritmos que mexem o corpo e instrumentos como o atabaque, o agog\xF4 e a cu\xEDca \u2014 base do samba, do jongo e do maracatu.\n\u2022 **M\xFAsica portuguesa:** trouxe o viol\xE3o, modinhas cantadas e melodias mais suaves.\n\u2022 Surgem os primeiros estilos mistos: choro, lundu, maxixe \u2014 tocados nas ruas e festas.\n\n\u{1F3BC} **S\xE9culo XX: A m\xFAsica ganha cara brasileira**\n\n\u{1F7E2} **1900\u20131940: O Samba e a Era do R\xE1dio**\n\u2022 *1917:* gravado o primeiro samba oficial (*Pelo Telefone*, de Donga). O samba vira s\xEDmbolo do Carnaval e da cultura popular.\n\u2022 O r\xE1dio leva a m\xFAsica a todo o Brasil: cantores como Francisco Alves, Carmen Miranda e Noel Rosa ficam famosos.\n\u2022 *Sertanejo de raiz:* surgem duplas como Tonico e Tinoco, contando hist\xF3rias do campo.\n\n\u{1F7E2} **1950\u20131960: Bossa Nova e MPB**\n\u2022 *Bossa Nova:* mistura samba com jazz \u2014 mais suave, viol\xE3o leve e letras sobre o Rio. Destaques: Tom Jobim, Vinicius de Moraes, Jo\xE3o Gilberto e a famosa *Garota de Ipanema*.\n\u2022 *Surge a MPB (M\xFAsica Popular Brasileira):* valoriza a identidade nacional, com nomes como Dorival Caymmi e Maria Beth\xE2nia.\n\u2022 *Jovem Guarda:* mistura de rock com jeito brasileiro \u2014 Roberto Carlos faz sucesso entre os jovens.\n\n\u{1F7E2} **1960\u20131970: Tropicalismo e M\xFAsica de Protesto**\n\u2022 *Tropicalismo:* mistura tudo \u2014 rock, bai\xE3o, m\xFAsica erudita e ritmos regionais. L\xEDderes: Caetano Veloso, Gilberto Gil, Gal Costa e Os Mutantes.\n\u2022 Muitas can\xE7\xF5es falam de liberdade e da realidade do pa\xEDs, com Chico Buarque e Elis Regina.\n\n\u{1F7E2} **1980\u20131990: Ritmos de todo o Brasil**\n\u2022 Pagode, Ax\xE9, Forr\xF3, Frevo, Sertanejo \u2014 cada regi\xE3o mostra sua m\xFAsica: Luiz Gonzaga (rei do bai\xE3o), Alcione, Marisa Monte, Skank.\n\u2022 *Rock Nacional:* Legi\xE3o Urbana, Tit\xE3s, Paralamas do Sucesso tocam em todo lugar.\n\n\u{1F7E2} **2000 at\xE9 hoje: Mistura e Novidades**\n\u2022 Funk, Sertanejo, Pagode, MPB moderna \u2014 a m\xFAsica continua mudando e misturando estilos. Artistas como Anitta, Ludmilla, Mar\xEDlia Mendon\xE7a, Emicida levam o Brasil ao mundo.\n\n\u{1F9E9} **Por que isso importa?**\nA m\xFAsica brasileira n\xE3o \xE9 de um s\xF3 lugar ou jeito: ela conta a nossa hist\xF3ria, junta culturas e fala de alegria, saudade, amor e luta. Cada ritmo tem um pedacinho do Brasil! \u{1F1E7}\u{1F1F7}\u{1F3B6}",
+    matchedKey: "historia_musica_brasil"
   },
   { palavras: ["o que e vida", "vida", "o que e a vida", "significado da vida"], resposta: "\u{1F331} A vida \xE9 o maior e mais precioso peda\xE7o de papel em branco que recebemos! Cada dia que vivemos \xE9 como uma pincelada \xFAnica que damos nesse quadro. Para os artistas, a vida \xE9 expressar amor, brincar, cantar, observar a natureza e sorrir com os amigos. Tratar a vida com carinho \xE9 o desenho mais bonito que podemos criar! \u{1F308}\u2728" },
   {
@@ -12022,6 +12174,13 @@ function extrairNome(mensagem) {
     "medo",
     "ansioso",
     "ansiosa",
+    "folclore",
+    "lenda",
+    "lendas",
+    "saci",
+    "curupira",
+    "iara",
+    "cuca",
     "tarsila",
     "portinari",
     "candido",
