@@ -967,7 +967,170 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
     matchedKey: 'glossario_completo_ia'
   },
 
-  // ===== CONCEITOS GERAIS DE ARTE =====
+  // ===== LITERATURA BRASILEIRA =====
+  {
+    palavras: [
+      'literatura brasileira',
+      'o que e a literatura brasileira',
+      'o que é a literatura brasileira',
+      'o que e literatura brasileira',
+      'o que é literatura brasileira',
+      'historia da literatura brasileira',
+      'história da literatura brasileira',
+      'qual e a historia da literatura brasileira',
+      'qual é a história da literatura brasileira',
+      'historia da literatura',
+      'história da literatura',
+      'literatura do brasil',
+      'escritores brasileiros'
+    ],
+    resposta: '📚🇧🇷 **História da Literatura Brasileira**\n\n' +
+      'A Literatura Brasileira é formada por histórias, poemas, lendas e livros escritos por autores do Brasil. Ela mostra como as pessoas viviam, pensavam e sonhavam em diferentes épocas da nossa história.\n\n' +
+      'Veja um resumo da nossa história literária:\n\n' +
+      '🌿 **Antes da chegada dos portugueses**\n' +
+      'Os povos indígena já contavam histórias, cantavam e passavam seus conhecimentos de geração em geração. Tudo era contado de forma oral, sem livros.\n\n' +
+      '⛵ **Literatura de Informação (1500)**\n' +
+      'Quando os portugueses chegaram ao Brasil, escreveram cartas e relatos contando como era a nova terra, a natureza e os povos indígenas. Um dos textos mais conhecidos é a carta de Pero Vaz de Caminha.\n\n' +
+      '✝️ **Barroco (século XVII)**\n' +
+      'Os escritores falavam sobre Deus, a fé, a vida e os sentimentos humanos. Usavam muitas comparações e palavras bonitas.\n\n' +
+      '🌳 **Arcadismo (século XVIII)**\n' +
+      'Os autores valorizavam a natureza, a vida simples e tranquila no campo.\n\n' +
+      '❤️ **Romantismo (século XIX)**\n' +
+      'Foi uma época de muitas histórias de amor, aventuras e heróis. Os escritores também passaram a valorizar o Brasil, seus povos e suas paisagens.\n\n' +
+      '🔬 **Realismo e Naturalismo**\n' +
+      'Os autores começaram a mostrar a vida como ela realmente era, falando sobre problemas da sociedade e das pessoas.\n\n' +
+      '✨ **Modernismo (século XX)**\n' +
+      'Os escritores inovaram a forma de escrever. Usaram uma linguagem mais simples, divertida e próxima da fala das pessoas. Um dos autores mais famosos dessa época foi Monteiro Lobato, criador do Sítio do Picapau Amarelo.\n\n' +
+      '📖 **Literatura Brasileira hoje**\n' +
+      'Atualmente, existem livros para todos os gostos: aventuras, mistérios, fantasia, histórias em quadrinhos, poemas e muito mais. Os escritores falam sobre amizade, meio ambiente, diversidade, tecnologia e muitos outros assuntos.\n\n' +
+      '🌟 **Alguns escritores brasileiros famosos:**\n' +
+      '• **Monteiro Lobato:** criou histórias infantis muito conhecidas.\n' +
+      '• **Machado de Assis:** escreveu grandes clássicos da literatura.\n' +
+      '• **Cecília Meireles:** escreveu lindos poemas.\n' +
+      '• **Carlos Drummond de Andrade:** um dos maiores poetas do Brasil.\n' +
+      '• **Ruth Rocha:** autora de livros infantis divertidos e educativos.\n' +
+      '• **Ana Maria Machado:** escreveu muitas histórias para crianças.\n\n' +
+      '💡 **Curiosidade:** A primeira história da literatura brasileira não começou com um livro de aventuras, mas com uma carta, escrita em 1500 por Pero Vaz de Caminha, contando ao rei de Portugal como era o Brasil.\n\n' +
+      '✨ *Em uma frase:* A Literatura Brasileira é como um grande álbum de histórias que mostra como o Brasil mudou ao longo do tempo e ajuda as pessoas a conhecer melhor sua cultura, sua história e sua imaginação!',
+    matchedKey: 'literatura_brasileira'
+  },
+
+  // ===== FOLCLORE BRASILEIRO E LENDAS =====
+  {
+    palavras: [
+      'folclore',
+      'folclore brasileiro',
+      'o que e folclore',
+      'o que é folclore',
+      'o que e o folclore',
+      'o que é o folclore',
+      'lendas',
+      'lendas brasileiras',
+      'principais lendas',
+      'principais lendas do folclore',
+      'lendas do folclore',
+      'folclore e lendas',
+      'historia do folclore',
+      'história do folclore',
+      'folclore nacional',
+      'o que sao lendas',
+      'o que são lendas',
+      'quais as principais lendas',
+      'quais sao as principais lendas',
+      'me conta sobre o folclore'
+    ],
+    resposta: '🎭🌳 **Folclore Brasileiro e Suas Principais Lendas**\n\n' +
+      'O **folclore** é a reunião de todas as tradições, histórias, lendas, danças, festas, brinquedos e cantigas de um povo transmitidas de geração em geração! É a alma da nossa cultura e imaginação popular brasileira! 🇧🇷✨\n\n' +
+      'A palavra "Folclore" vem da união de duas palavras em inglês: *Folk* (povo) e *Lore* (sabedoria), ou seja, é o **"Saber do Povo"**!\n\n' +
+      '🍃 **As Principais Lendas do Nosso Folclore:**\n\n' +
+      '🔴 **Saci-Pererê:** Um menino negro de uma perna só, que usa um gorro vermelho mágico e adora pregar peças, fazer travessuras e rodopiar em redemoinhos nas matas!\n\n' +
+      '🔥 **Curupira:** O protetor das florestas e dos animais! Ele tem cabelos vermelhos como fogo e os pés virados para trás, enganando os caçadores com pegadas no sentido contrário.\n\n' +
+      '🧜‍♀️ **Iara (A Mãe das Águas):** Uma sereia linda que vive nos rios da Amazônia. Com o seu canto suave e hipnotizante, ela encanta as pessoas e protege as águas.\n\n' +
+      '🐎 **Mula sem Cabeça:** Um ser misterioso em formato de mula que no lugar da cabeça solta chamas brilhantes de fogo! Diz a lenda que ela corre pelas noites assustando quem anda sozinho.\n\n' +
+      '🐬 **Boto Cor-de-Rosa:** Um boto mágico dos rios da Amazônia que se transforma em um rapaz simpático e elegante durante as noites de festa junina.\n\n' +
+      '🐍 **Boitatá:** Uma grande cobra de fogo com muitos olhos brilhantes que protege os campos e florestas contra queimadas e destruição.\n\n' +
+      '🐊 **Cuca:** Uma jacaré velha e muito sabida que vive em uma caverna preparando poções mágicas, famosa por assustar quem não quer dormir cedo nas cantigas de embalar!\n\n' +
+      '🌟 **Outras Manifestações do Folclore:**\n' +
+      'Além das lendas, o folclore inclui brincadeiras (como pular corda e pião), festas (como Bumba Meu Boi e Festa Junina), provérbios, adivinhas e comidas típicas (como canjica e pamonha)!\n\n' +
+      '💡 **Curiosidade:** No Brasil, comemoramos o **Dia do Folclore** no dia **22 de Agosto**!\n\n' +
+      '✨ Qual é a sua lenda folclórica favorita? Que tal fazermos um desenho lindo sobre ela hoje? 🎨',
+    matchedKey: 'folclore_brasileiro'
+  },
+  {
+    palavras: ['saci', 'saci perere', 'saci pererê', 'lenda do saci', 'quem e o saci', 'quem é o saci'],
+    resposta: '🔴 **Saci-Pererê!**\n\n' +
+      'O Saci é uma das figuras mais conhecidas e brincalhonas do folclore brasileiro! 🇧🇷✨\n\n' +
+      ' Ele é um menino negro de uma perna só, que usa um gorro vermelho mágico na cabeça e anda com um cachimbo na boca. O segredo dos poderes do Saci está justamente no seu gorro vermelho!\n\n' +
+      '🌪️ **Suas Travessuras:**\n' +
+      'Ele adora aprontar nas fazendas e matas: esconde os objetos das pessoas, trança a crina dos cavalos, azeda o leite e aparece dentro de redemoinhos de vento e poeira!\n\n' +
+      '💡 **Curiosidade:** Para capturar um Saci, diz a lenda que você precisa jogar uma peneira dentro de um redemoinho! Depois de pegá-lo, você deve tirar o gorro dele e guardá-lo dentro de uma garrafa de vidro bem fechada com uma rolha! 🍾\n\n' +
+      '🎨 Vamos desenhar um Saci rodopiando no vento com a sua carapuça vermelha?',
+    matchedKey: 'lenda_saci'
+  },
+  {
+    palavras: ['curupira', 'lenda do curupira', 'quem e o curupira', 'quem é o curupira'],
+    resposta: '🔥 **Curupira — O Protetor das Matas!**\n\n' +
+      'O Curupira é um ser mítico das florestas brasileiras que defende as árvores e os animais selvagens contra caçadores malvados e destruidores da natureza! 🌳🐅\n\n' +
+      '🧑‍🦰 **Como ele é:**\n' +
+      'Ele é um anãozinho forte de cabelos vermelhos como fogo e tem uma característica mágica única: seus pés são virados para trás!\n\n' +
+      '🐾 **O Truque das Pegadas:**\n' +
+      'Quando ele anda para a frente, as pegadas no chão apontam para trás. Assim, quem tenta segui-lo ou caçá-lo fica completamente perdido e anda na direção errada na floresta!\n\n' +
+      '⚡ Ele também dá assobios agudos e cria ilusões nas matas para assustar quem tenta machucar os animais.\n\n' +
+      '💚 O Curupira nos ensina a amar, respeitar e proteger a natureza!',
+    matchedKey: 'lenda_curupira'
+  },
+  {
+    palavras: ['iara', 'sereia iara', 'lenda da iara', 'quem e a iara', 'quem é a iara'],
+    resposta: '🧜‍♀️ **Iara — A Mãe das Águas!**\n\n' +
+      'A Iara é a famosa sereia do folclore brasileiro que vive nos rios da Amazônia! 🌊✨\n\n' +
+      '👑 **Sua História:**\n' +
+      'Ela é uma linda mulher de cabelos negros compridos, olhos brilhantes e cauda de peixe colorida. Iara costuma ficar sentada nas pedras à beira dos rios, penteando seus cabelos com um pente de ouro e admirando seu reflexo na água.\n\n' +
+      '🎶 **O Canto Hipnotizante:**\n' +
+      'Ela canta uma melodia doce e irresistível que ecoa pelos rios. Diz a lenda que os pescadores que ouvem seu canto ficam encantados e pulam nas águas profundas para viver com ela no seu palácio aquático!\n\n' +
+      '💧 A lenda da Iara representa a força, a beleza e os mistérios dos rios e da floresta amazônica!',
+    matchedKey: 'lenda_iara'
+  },
+  {
+    palavras: ['mula sem cabeca', 'mula sem cabeça', 'lenda da mula sem cabeca', 'lenda da mula sem cabeça'],
+    resposta: '🐎🔥 **Mula sem Cabeça!**\n\n' +
+      'A Mula sem Cabeça é uma das criaturas mais assustadoras e misteriosas do folclore do interior do Brasil! 🇧🇷✨\n\n' +
+      '🔥 **Como ela é:**\n' +
+      'Trata-se de uma grande mula de cor marrom ou preta que, no lugar da cabeça, solta labaredas brilhantes de fogo! Ela traz rédeas de ferro e ferraduras prateadas que fazem muito barulho ao galopar pelas noites.\n\n' +
+      '🌕 **A Lenda:**\n' +
+      'Diz a tradição que ela aparece nas madrugadas de quinta para sexta-feira nas vilas e matas, correndo em alta velocidade e relinchando tão alto que se ouve de muito longe.\n\n' +
+      '💡 Para quebrar o feitiço da Mula sem Cabeça, diz a lenda que alguém corajoso precisa tirar o freio de ferro da boca de fogo dela ou picá-la levemente com uma alfinete de fralda para tirar uma gota de sangue! 💉',
+    matchedKey: 'lenda_mula_sem_cabeca'
+  },
+  {
+    palavras: ['cuca', 'lenda da cuca', 'quem e a cuca', 'quem é a cuca'],
+    resposta: '🐊 **Cuca!**\n\n' +
+      'A Cuca é uma das personagens mais populares das lendas do Brasil, imortalizada também nas histórias do *Sítio do Picapau Amarelo* por Monteiro Lobato! 🏰✨\n\n' +
+      '🧙‍♀️ **Como ela é:**\n' +
+      'Ela tem o corpo de uma crocodilo/jacaré velha, cabelos amarelos e garras afiadas. Mora em uma caverna escura no meio da mata, onde cozinha poções mágicas em um caldeirão enorme!\n\n' +
+      '💤 **A Cantiga de Ninar:**\n' +
+      'A Cuca ficou famosa pela famosa cantiga infantil: *"Nana neném que a Cuca vem pegar, papai foi para a roça e a mamãe foi trabalhar..."*\n\n' +
+      '💡 **Curiosidade:** Diz a lenda que a Cuca dorme apenas uma noite a cada sete anos! Por isso ela passa tanto tempo acordada preparando suas feitiçarias!',
+    matchedKey: 'lenda_cuca'
+  },
+  {
+    palavras: ['boitata', 'boitatá', 'lenda do boitata', 'lenda do boitatá'],
+    resposta: '🐍🔥 **Boitatá — A Cobra de Fogo!**\n\n' +
+      'O Boitatá é uma cobra gigante feita inteiramente de fogo reluzente que protege os campos e florestas contra as pessoas que provocam queimadas! 🌳🔥\n\n' +
+      '👁️ **Seus Olhos Brilhantes:**\n' +
+      'Ele possui olhos enormes e flamejantes que parecem faróis na escuridão. O Boitatá enxerga perfeitamente no escuro da noite e se transforma em um tora de madeira em chamas para queimar quem destrói a mata.\n\n' +
+      '🌊 A palavra "Boitatá" vem da língua indígena Tupi (*Mba\'e-tatá*), que significa "coisa de fogo" ou "cobra de fogo"!',
+    matchedKey: 'lenda_boitata'
+  },
+  {
+    palavras: ['boto cor de rosa', 'boto cor-de-rosa', 'lenda do boto', 'o boto'],
+    resposta: '🐬🌸 **Boto Cor-de-Rosa!**\n\n' +
+      'O Boto Cor-de-Rosa é um animal real e encantador dos rios da Amazônia que virou uma das lendas mais charmosas do nosso folclore! 🌊✨\n\n' +
+      '🎩 **A Transformação Mágica:**\n' +
+      'Diz a lenda que nas noites de Festa Junina, o Boto sai das águas do rio e se transforma em um rapaz humano muito bonito, forte e elegante, vestido de roupas brancas e com um chapéu na cabeça.\n\n' +
+      '🧢 **Por que o chapéu?**\n' +
+      'O chapéu serve para esconder as narinas do boto (o buraco pelo qual ele respira), que ficam no topo da sua cabeça! Ele dança com as moças nas festas e volta para o rio antes do amanhecer, voltando a ser um boto cor-de-rosa fofo nas águas da Amazônia! 🐬',
+    matchedKey: 'lenda_boto'
+  },
   { 
     palavras: ['arte', 'o que é arte', 'definir arte', 'definição de arte'], 
     resposta: 'Arte é uma forma de expressão! Pode ser um desenho, pintura, dança, música, teatro… É o jeito das pessoas mostrarem sentimentos e ideias. 🎨',
@@ -992,6 +1155,124 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
     palavras: ['música', 'musica', 'músicas', 'musicas', 'o que é música', 'o que é musica'], 
     resposta: 'A música é a arte de combinar sons e silêncios de maneira linda! 🎶 É a pintura que entra pelos nossos ouvidos. Os instrumentos e as notas musicais cantam histórias e despertam sentimentos de alegria, calma e festa em nosso coração! 🎼🎷',
     matchedKey: 'musica'
+  },
+
+  // ===== HISTÓRIAS EM QUADRINHOS (HQs) =====
+  {
+    palavras: [
+      'quadrinhos',
+      'historias em quadrinhos',
+      'histórias em quadrinhos',
+      'hq',
+      'hqs',
+      'gibi',
+      'gibis',
+      'historia das hqs',
+      'história das hqs',
+      'historia dos quadrinhos',
+      'história dos quadrinhos',
+      'historia das historias em quadrinhos',
+      'história das histórias em quadrinhos',
+      'como surgiram as hqs',
+      'como surgiram os quadrinhos',
+      'o que sao quadrinhos',
+      'o que são quadrinhos',
+      'turma da monica',
+      'turma da mônica',
+      'mauricio de sousa'
+    ],
+    resposta: '💬📖 **História das Histórias em Quadrinhos (HQs)**\n\n' +
+      'As histórias em quadrinhos (HQs) são histórias contadas por meio de desenhos e textos organizados em quadrinhos. Elas misturam arte e escrita para divertir, ensinar e emocionar!\n\n' +
+      '🎨 **Como surgiram?**\n' +
+      'Muito antes dos gibis, as pessoas já contavam histórias com imagens, como nas pinturas das cavernas e nos desenhos dos antigos egípcios.\n' +
+      'No final do século XIX, surgiram os primeiros quadrinhos modernos publicados em jornais. Um dos mais famosos foi *The Yellow Kid*, criado em 1895 nos Estados Unidos.\n\n' +
+      '🚀 **O crescimento das HQs:**\n' +
+      'No século XX, os quadrinhos fizeram muito sucesso. Surgiram personagens inesquecíveis, como Superman, Batman, Mulher-Maravilha, Homem-Aranha e muitos outros. Eles passaram a aparecer em jornais, revistas, livros, desenhos animados e filmes!\n\n' +
+      '🇧🇷 **As HQs no Brasil:**\n' +
+      'No Brasil, as histórias em quadrinhos cresceram principalmente com **Mauricio de Sousa**, criador da *Turma da Mônica*, que conquistou crianças e adultos com personagens como Mônica, Cebolinha, Cascão e Magali.\n' +
+      'Além da Turma da Mônica, muitos outros artistas brasileiros criam quadrinhos sobre aventuras, humor, ciência, história e cultura.\n\n' +
+      '📱 **As HQs hoje:**\n' +
+      'Hoje, as histórias em quadrinhos podem ser lidas em revistas, livros, jornais, celulares, tablets e computadores. Existem também os **mangás**, que são os quadrinhos japoneses muito populares no mundo inteiro!\n\n' +
+      '🌟 **Curiosidade:** No Brasil, as revistas em quadrinhos ficaram tão populares que ganharam um apelido muito conhecido: **gibi**!\n\n' +
+      '✨ *Em uma frase:* As histórias em quadrinhos são uma forma divertida de contar histórias usando desenhos, balões de fala e muita imaginação! 🎨📚',
+    matchedKey: 'historia_hqs'
+  },
+
+  // ===== HISTÓRIA DA MÚSICA (GERAL) =====
+  {
+    palavras: [
+      'historia da musica',
+      'história da música',
+      'como surgiu a musica',
+      'como surgiu a música',
+      'origem da musica',
+      'origem da música',
+      'historia de como surgiu a musica',
+      'historia da musica no mundo',
+      'musica no mundo',
+      'música no mundo'
+    ],
+    resposta: '🎵 **História da Música**\n\n' +
+      'A música existe há milhares de anos! Ela faz parte da vida das pessoas para celebrar, contar histórias, expressar sentimentos e divertir.\n\n' +
+      '🦴 **Como surgiu?**\n' +
+      'Os primeiros seres humanos descobriram que podiam fazer sons batendo pedras, paus e tambores feitos de troncos e pele de animais. Também cantavam usando a própria voz.\n\n' +
+      '🏛️ **A música na Antiguidade:**\n' +
+      'Povos como os egípcios, gregos e romanos usavam a música em festas, cerimônias religiosas e comemorações. Nessa época surgiram instrumentos como a harpa, a lira e a flauta.\n\n' +
+      '⛪ **A música na Idade Média:**\n' +
+      'As músicas eram muito usadas nas igrejas. Os músicos começaram a criar formas de escrever as notas musicais para que as canções pudessem ser ensinadas e lembradas.\n\n' +
+      '🎧 **A música hoje:**\n' +
+      'Hoje existem muitos estilos musicais, como pop, rock, rap, funk, jazz, música clássica, sertanejo, pagode e eletrônica. A música pode ser ouvida em shows, rádio, televisão, celulares e na internet.\n\n' +
+      '❤️ **Por que a música é importante?**\n' +
+      'A música ajuda as pessoas a expressar emoções, contar histórias, aprender e memorizar, dançar e se divertir e conhecer diferentes culturas.\n\n' +
+      '🌟 **Curiosidade:** O instrumento musical mais antigo conhecido é uma flauta feita de osso, construída há mais de 40 mil anos!\n\n' +
+      '✨ *Em uma frase:* A música acompanha a humanidade desde a Pré-História e continua unindo pessoas, culturas e sentimentos em todo o mundo! 🎶🌍',
+    matchedKey: 'historia_musica_geral'
+  },
+
+  // ===== HISTÓRIA DA MÚSICA NO BRASIL =====
+  {
+    palavras: [
+      'historia da musica no brasil',
+      'história da música no brasil',
+      'musica brasileira',
+      'música brasileira',
+      'historia da musica brasileira',
+      'história da música brasileira',
+      'ritmos brasileiros',
+      'bossa nova',
+      'tropicalismo',
+      'mpb',
+      'como surgiu a musica brasileira',
+      'origem da musica brasileira',
+      'história da música no brasil'
+    ],
+    resposta: '🎶🇧🇷 **História da Música no Brasil**\n\n' +
+      'A música brasileira nasce da mistura de três povos: os indígenas que já viviam aqui, os africanos trazidos como escravos e os portugueses que chegaram em 1500 — e depois ganhou ainda mais cores com imigrantes de todo o mundo!\n\n' +
+      '📜 **Começo: As Raízes (antes de 1900)**\n' +
+      '• **Música indígena:** usavam flautas, chocalhos, tambores e cantavam em rituais, danças e para contar histórias da natureza.\n' +
+      '• **Música africana:** trouxe a percussão forte, ritmos que mexem o corpo e instrumentos como o atabaque, o agogô e a cuíca — base do samba, do jongo e do maracatu.\n' +
+      '• **Música portuguesa:** trouxe o violão, modinhas cantadas e melodias mais suaves.\n' +
+      '• Surgem os primeiros estilos mistos: choro, lundu, maxixe — tocados nas ruas e festas.\n\n' +
+      '🎼 **Século XX: A música ganha cara brasileira**\n\n' +
+      '🟢 **1900–1940: O Samba e a Era do Rádio**\n' +
+      '• *1917:* gravado o primeiro samba oficial (*Pelo Telefone*, de Donga). O samba vira símbolo do Carnaval e da cultura popular.\n' +
+      '• O rádio leva a música a todo o Brasil: cantores como Francisco Alves, Carmen Miranda e Noel Rosa ficam famosos.\n' +
+      '• *Sertanejo de raiz:* surgem duplas como Tonico e Tinoco, contando histórias do campo.\n\n' +
+      '🟢 **1950–1960: Bossa Nova e MPB**\n' +
+      '• *Bossa Nova:* mistura samba com jazz — mais suave, violão leve e letras sobre o Rio. Destaques: Tom Jobim, Vinicius de Moraes, João Gilberto e a famosa *Garota de Ipanema*.\n' +
+      '• *Surge a MPB (Música Popular Brasileira):* valoriza a identidade nacional, com nomes como Dorival Caymmi e Maria Bethânia.\n' +
+      '• *Jovem Guarda:* mistura de rock com jeito brasileiro — Roberto Carlos faz sucesso entre os jovens.\n\n' +
+      '🟢 **1960–1970: Tropicalismo e Música de Protesto**\n' +
+      '• *Tropicalismo:* mistura tudo — rock, baião, música erudita e ritmos regionais. Líderes: Caetano Veloso, Gilberto Gil, Gal Costa e Os Mutantes.\n' +
+      '• Muitas canções falam de liberdade e da realidade do país, com Chico Buarque e Elis Regina.\n\n' +
+      '🟢 **1980–1990: Ritmos de todo o Brasil**\n' +
+      '• Pagode, Axé, Forró, Frevo, Sertanejo — cada região mostra sua música: Luiz Gonzaga (rei do baião), Alcione, Marisa Monte, Skank.\n' +
+      '• *Rock Nacional:* Legião Urbana, Titãs, Paralamas do Sucesso tocam em todo lugar.\n\n' +
+      '🟢 **2000 até hoje: Mistura e Novidades**\n' +
+      '• Funk, Sertanejo, Pagode, MPB moderna — a música continua mudando e misturando estilos. Artistas como Anitta, Ludmilla, Marília Mendonça, Emicida levam o Brasil ao mundo.\n\n' +
+      '🧩 **Por que isso importa?**\n' +
+      'A música brasileira não é de um só lugar ou jeito: ela conta a nossa história, junta culturas e fala de alegria, saudade, amor e luta. Cada ritmo tem um pedacinho do Brasil! 🇧🇷🎶',
+    matchedKey: 'historia_musica_brasil'
   },
   { palavras: ['o que e vida', 'vida', 'o que e a vida', 'significado da vida'], resposta: '🌱 A vida é o maior e mais precioso pedaço de papel em branco que recebemos! Cada dia que vivemos é como uma pincelada única que damos nesse quadro. Para os artistas, a vida é expressar amor, brincar, cantar, observar a natureza e sorrir com os amigos. Tratar a vida com carinho é o desenho mais bonito que podemos criar! 🌈✨' },
   {
@@ -2986,6 +3267,7 @@ export function extrairNome(mensagem: string): string | null {
     "pessoal", "turma", "gente", "galera", "facil", "fácil", "avancado", "avançado",
     "versao", "versão", "modo", "exemplo", "praticar", "desafio", "atividade",
     "triste", "tristeza", "alegre", "alegria", "raiva", "medo", "ansioso", "ansiosa",
+    "folclore", "lenda", "lendas", "saci", "curupira", "iara", "cuca",
     "tarsila", "portinari", "candido", "cândido", "monet", "picasso", "vinci", "gogh",
     "romero", "britto", "frida", "kahlo", "kandinsky", "dali", "dalí", "miro", "miró",
     "mozart", "beethoven", "bach", "chopin", "carolina", "jesus", "debret", "debas"
