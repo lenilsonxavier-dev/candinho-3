@@ -627,6 +627,11 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     titulo: "Definição de Cor",
     credito: "Elementos da Linguagem Visual"
   },
+  circulo_cromatico: {
+    imagemUrl: "https://i.imgur.com/mn14yvw.jpeg",
+    titulo: "Círculo Cromático",
+    credito: "Guia das Cores e Harmonia Visual"
+  },
   espaco: {
     imagemUrl: "https://i.imgur.com/6VvC7Yl.jpeg",
     titulo: "Definição de Espaço",
