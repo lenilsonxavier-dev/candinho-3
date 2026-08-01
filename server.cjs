@@ -7770,6 +7770,11 @@ var GALERIA_IMAGENS = {
     titulo: "Defini\xE7\xE3o de Cor",
     credito: "Elementos da Linguagem Visual"
   },
+  circulo_cromatico: {
+    imagemUrl: "https://i.imgur.com/mn14yvw.jpeg",
+    titulo: "C\xEDrculo Crom\xE1tico",
+    credito: "Guia das Cores e Harmonia Visual"
+  },
   espaco: {
     imagemUrl: "https://i.imgur.com/6VvC7Yl.jpeg",
     titulo: "Defini\xE7\xE3o de Espa\xE7o",
@@ -9057,6 +9062,248 @@ var CONHECIMENTO_CANDINHO = [
     resposta: '\u{1F916} **Gloss\xE1rio de IA e Tecnologia do Candinho** \u{1F4A1}\n\nAprenda os termos mais importantes sobre tecnologia e Intelig\xEAncia Artificial de forma simples:\n\n\u{1F916} **Intelig\xEAncia Artificial (IA):** \xC9 um programa de computador que aprende a fazer tarefas, responder perguntas, criar desenhos, escrever textos e ajudar as pessoas.\n\n\u{1F4AC} **Prompt:** \xC9 a mensagem ou pergunta que voc\xEA escreve para a Intelig\xEAncia Artificial. Quanto mais clara for a pergunta, melhor ser\xE1 a resposta.\n\n\u2699\uFE0F **Algoritmo:** \xC9 uma sequ\xEAncia de passos ou instru\xE7\xF5es que ensina o computador a resolver um problema ou realizar uma tarefa.\n\n\u{1F9E9} **Token:** \xC9 um pequeno peda\xE7o de um texto. A IA l\xEA e escreve usando esses pedacinhos, como se fossem blocos para montar frases.\n\n\u{1F3AD} **Deepfake:** \xC9 uma imagem, v\xEDdeo ou \xE1udio criado por IA para parecer verdadeiro, mesmo sendo falso. Por isso, \xE9 importante sempre conferir se uma informa\xE7\xE3o \xE9 confi\xE1vel.\n\n\u{1F9E0} **Modelo de IA:** \xC9 o "c\xE9rebro" da Intelig\xEAncia Artificial. Ele foi treinado com muitos exemplos para aprender a conversar, responder perguntas e criar conte\xFAdos.\n\n\u{1F4DA} **Banco de Dados:** \xC9 um lugar onde muitas informa\xE7\xF5es ficam organizedas para que o computador possa encontr\xE1-las rapidamente.\n\n\u{1F310} **Internet:** \xC9 uma rede que liga computadores do mundo todo e permite acessar sites, v\xEDdeos, jogos e informa\xE7\xF5es.\n\n\u{1F50D} **Pesquisa:** \xC9 o ato de procurar informa\xE7\xF5es sobre um assunto usando livros, pessoas ou a internet.\n\n\u{1F4BB} **Programa:** \xC9 um conjunto de instru\xE7\xF5es que diz ao computador exatamente o que fazer.\n\n\u{1F4F1} **Aplicativo (App):** \xC9 um programa feito para realizar uma tarefa espec\xEDfica, como desenhar, conversar ou jogar.\n\n\u{1F6DC} **Wi-Fi:** \xC9 uma forma de conectar aparelhos \xE0 internet sem usar fios.\n\n\u{1F512} **Senha:** \xC9 um c\xF3digo secreto que protege suas contas e seus dados.\n\n\u2601\uFE0F **Nuvem (Cloud):** \xC9 um lugar na internet onde voc\xEA pode guardar arquivos para acess\xE1-los de qualquer aparelho.\n\n\u{1F9BA} **Seguran\xE7a Digital:** S\xE3o cuidados que devemos ter para usar a internet de forma segura, protegendo nossas informa\xE7\xF5es e respeitando as outras pessoas.\n\n\u{1F4A1} Me pergunte sobre qualquer um desses termos para conversarmos mais!',
     matchedKey: "glossario_completo_ia"
   },
+  // ===== TECNOLOGIA E MÍDIA PARA CRIANÇAS =====
+  {
+    palavras: [
+      "o que e a internet",
+      "o que \xE9 a internet",
+      "o que e internet",
+      "o que \xE9 internet",
+      "o que significa a palavra internet",
+      "significado da palavra internet",
+      "como surgiu a internet",
+      "origem da internet",
+      "internet na arte"
+    ],
+    resposta: '\u{1F30D} **O que \xE9 a Internet?**\n\nA internet \xE9 uma enorme rede que liga computadores, celulares e tablets do mundo inteiro!\n\nImagine uma cidade cheia de ruas. Cada casa \xE9 um computador. A internet s\xE3o as estradas que permitem que todas essas casas conversem umas com as outras.\n\nGra\xE7as \xE0 internet podemos:\n\u2022 Conversar com pessoas distantes;\n\u2022 Assistir a v\xEDdeos;\n\u2022 Jogar e pesquisar;\n\u2022 Estudar e visitar museus do outro lado do planeta!\n\n\u{1F4D6} **O que significa a palavra "Internet"?**\nA palavra vem do ingl\xEAs e junta duas ideias:\n\u2022 *Inter* = entre\n\u2022 *Net* = rede\nOu seja: **Internet significa "rede entre redes"**! \xC9 como se muitas pequenas redes estivessem conectadas formando uma gigante.\n\n\u{1F570}\uFE0F **Como surgiu?**\nH\xE1 mais de 50 anos, cientistas queriam um jeito de enviar informa\xE7\xF5es rapidamente. Primeiro era usada apenas por pesquisadores, depois chegou \xE0s universidades e mais tarde entrou nas casas das pessoas. Hoje ela conecta bilh\xF5es de pessoas todos os dias!\n\n\u{1F3A8} **A Internet na Arte:**\nA internet ajudou artistas a mostrar seus desenhos, m\xFAsicas, dan\xE7as e pinturas para o mundo inteiro. Hoje uma crian\xE7a pode conhecer obras do Jap\xE3o, da \xC1frica ou do Brasil sem sair da escola!\n\n\u{1F31F} **Curiosidade:** A internet n\xE3o mora dentro do computador! Ela \xE9 formada por milh\xF5es de computadores ligados por cabos gigantes no fundo do mar, antenas e sat\xE9lites no espa\xE7o!',
+    matchedKey: "tecnologia_internet"
+  },
+  {
+    palavras: [
+      "o que e tecnologia",
+      "o que \xE9 tecnologia",
+      "o que e a tecnologia",
+      "o que \xE9 a tecnologia",
+      "exemplos de tecnologia",
+      "tecnologia na arte",
+      "arte e tecnologia"
+    ],
+    resposta: "\u{1F916} **O que \xE9 Tecnologia?**\n\nTecnologia \xE9 tudo aquilo que o ser humano cria para facilitar a vida e resolver problemas!\n\nNem toda tecnologia usa computador. Quer ver s\xF3? Tamb\xE9m s\xE3o tecnologias:\n\u2022 O l\xE1pis \u270F\uFE0F\n\u2022 A roda \u{1F6DE}\n\u2022 A bicicleta \u{1F6B2}\n\u2022 O livro \u{1F4D6}\n\u2022 A m\xE1quina fotogr\xE1fica \u{1F4F7}\n\u2022 O celular \u{1F4F1}\n\u2022 A Intelig\xEAncia Artificial \u{1F916}\n\nA tecnologia muda com o tempo. Cada inven\xE7\xE3o ajuda as pessoas a viver melhor e a criar coisas novas!\n\n\u{1F3A8} **Na Arte:**\nOs artistas sempre usaram a tecnologia da sua \xE9poca:\n\u2022 *Antigamente:* usavam carv\xE3o, tintas naturais e pinc\xE9is artesanais.\n\u2022 *Hoje:* usam tamb\xE9m computadores, tablets, impressoras 3D, realidade virtual e Intelig\xEAncia Artificial!\n\n\u2728 A arte acompanha e aproveita todas as novas tecnologias!",
+    matchedKey: "tecnologia_conceito"
+  },
+  {
+    palavras: [
+      "o que e um meme",
+      "o que \xE9 um meme",
+      "o que e meme",
+      "o que \xE9 meme",
+      "memes",
+      "memes na arte",
+      "meme na arte",
+      "arte e memes"
+    ],
+    resposta: "\u{1F602}\u{1F3A8} **O que \xE9 um Meme?**\n\nMeme \xE9 uma imagem, desenho, v\xEDdeo ou frase engra\xE7ada que muitas pessoas compartilham na internet!\n\nOs memes mudam rapidamente \u2014 \xE0s vezes um meme famoso dura apenas alguns dias. Um meme pode fazer as pessoas rir, pensar, aprender ou refletir sobre alguma situa\xE7\xE3o do dia a dia.\n\n\u{1F3A8} **Memes na Arte:**\nNa arte, os memes podem transformar pinturas famosas em brincadeiras super criativas! Por exemplo: uma pessoa pode pegar um quadro antigo cl\xE1ssico (como a Monalisa) e colocar um bal\xE3o de conversa engra\xE7ado, criando uma nova interpreta\xE7\xE3o divertida da obra.\n\n\u27A1\uFE0F **Regra Importante:** Um meme nunca deve desrespeitar pessoas, sentimentos ou culturas. A arte e o humor servem para divertir sem machucar ningu\xE9m! \u2764\uFE0F",
+    matchedKey: "tecnologia_meme"
+  },
+  {
+    palavras: [
+      "o que e uma trend",
+      "o que \xE9 uma trend",
+      "o que e trend",
+      "o que \xE9 trend",
+      "trends",
+      "tendencia",
+      "tend\xEAncia",
+      "trends na arte"
+    ],
+    resposta: "\u{1F4C8}\u{1F3A8} **O que \xE9 uma Trend?**\n\n*Trend* significa **tend\xEAncia**! \xC9 quando muitas pessoas decidem fazer a mesma coisa bacana na internet ao mesmo tempo.\n\nPode ser:\n\u2022 Uma dan\xE7a \u{1F57A}\n\u2022 Uma m\xFAsica \u{1F3B6}\n\u2022 Um desafio criativo \u{1F3C6}\n\u2022 Uma brincadeira ou filtro \u{1F4F8}\n\u2022 Um estilo de desenho \u{1F58D}\uFE0F\n\nAs trends aparecem rapidamente e tamb\xE9m podem desaparecer r\xE1pido!\n\n\u{1F3A8} **Na Arte:**\nMuitos artistas do mundo todo participam de trends desenhando o mesmo personagem famoso no seu pr\xF3prio estilo ou criando vers\xF5es diferentes de uma mesma ideia art\xEDstica! \xC9 super divertido!",
+    matchedKey: "tecnologia_trend"
+  },
+  {
+    palavras: [
+      "por que as redes sociais podem ser perigosas",
+      "redes sociais perigosas",
+      "perigos das redes sociais",
+      "cuidados nas redes sociais",
+      "perigos da internet",
+      "cuidados na internet",
+      "tempo de tela"
+    ],
+    resposta: '\u{1F4F1}\u26A0\uFE0F **Por que as Redes Sociais precisam de Cuidado?**\n\nAs redes sociais podem ser divertidas, mas precisam ser usadas com muita aten\xE7\xE3o e acompanhamento dos pais! Veja o que pode acontecer:\n\n\u{1F634} **Muito tempo na tela:** Quando passamos horas olhando o celular, sobra menos tempo para brincar, desenhar, ler, praticar esportes e conversar com a fam\xEDlia.\n\n\u{1F61F} **Compara\xE7\xF5es falsas:** Nem tudo o que vemos na internet \xE9 real. Muitas pessoas mostram apenas os seus melhores momentos. Isso pode fazer algu\xE9m pensar "minha vida n\xE3o \xE9 t\xE3o boa", mas isso \xE9 uma ilus\xE3o!\n\n\u{1F620} **Coment\xE1rios maldosos:** Algumas pessoas escrevem mensagens ruins para machucar os outros. Isso n\xE3o \xE9 legal e pode deixar as pessoas tristes.\n\n\u{1F3AD} **Informa\xE7\xF5es falsas:** Nem tudo na internet \xE9 verdade! Sempre devemos perguntar: *Quem escreveu isso? Ser\xE1 que \xE9 verdade? Tem outra fonte confi\xE1vel confirmando?*\n\n\u{1F9E0} **Excesso de v\xEDdeos r\xE1pidos:** V\xEDdeos curtos demais acostumam o c\xE9rebro a querer novidades aceleradas o tempo todo.\n\n\u{1F3A8} **A Arte ajuda o c\xE9rebro a descansar!**\nQuando desenhamos, pintamos ou fazemos escultura, usamos a nossa imagina\xE7\xE3o ativa em vez de ficarmos s\xF3 assistindo. Criar arte acalma a mente e nos faz sentir muito bem! \u{1F308}\u2728',
+    matchedKey: "tecnologia_redes_sociais"
+  },
+  {
+    palavras: [
+      "o que e um hacker",
+      "o que \xE9 um hacker",
+      "o que e hacker",
+      "o que \xE9 hacker",
+      "hacker",
+      "hackers",
+      "o que e hack",
+      "o que \xE9 hack",
+      "o que e hackear",
+      "o que \xE9 hackear",
+      "hacker etico",
+      "hackear e crime"
+    ],
+    resposta: '\u{1F468}\u200D\u{1F4BB}\u{1F513} **O que \xE9 um Hacker, Hack e Hackear?**\n\n\u2022 **O que \xE9 um Hacker?**\nUm hacker \xE9 algu\xE9m que entende MUITO de computadores e programa\xE7\xE3o. Nem todo hacker faz coisas erradas! Existem os **hackers \xE9ticos**, que ajudam empresas a encontrar falhas para proteger os sistemas. Mas existem pessoas que usam esse conhecimento para roubar dados \u2014 isso \xE9 errado e \xE9 crime!\n\n\u2022 **O que significa Hack?**\n*Hack* significa encontrar um jeito diferente e inteligente de resolver um problema ou modificar algo! Por exemplo: criar um suporte de l\xE1pis reutilizando uma garrafa pet \xE9 um "hack" criativo de organiza\xE7\xE3o!\n\n\u2022 **O que significa Hackear?**\n*Hackear* significa entrar ou alterar um sistema de computador. Quando algu\xE9m invade um aparelho sem permiss\xE3o, \xE9 crime. Mas quando profissionais autorizados testam a seguran\xE7a, eles est\xE3o protegendo as pessoas.',
+    matchedKey: "tecnologia_hacker"
+  },
+  {
+    palavras: [
+      "o que e um hater",
+      "o que \xE9 um hater",
+      "o que e hater",
+      "o que \xE9 hater",
+      "hater",
+      "haters",
+      "comentarios maldosos"
+    ],
+    resposta: "\u{1F621}\u{1F6E1}\uFE0F **O que \xE9 um Hater?**\n\n**Hater** \xE9 uma palavra em ingl\xEAs para definir uma pessoa que gosta de espalhar cr\xEDticas ofensivas, coment\xE1rios maldosos ou provoca\xE7\xF5es na internet para deixar os outros tristes.\n\n\u{1F6E1}\uFE0F **Qual \xE9 a melhor atitude contra um Hater?**\n1. **N\xE3o responda com ofensas** (ele quer aten\xE7\xE3o);\n2. **Bloqueie e denuncie** a mensagem;\n3. **Conte imediatamente para um adulto de confian\xE7a** (pais ou professores)!\n\n\u{1F3A8} **Na Arte:** Artistas famosos tamb\xE9m recebem cr\xEDticas! Os bons artistas aprendem a ouvir opini\xF5es respeitosas para melhorar e ignoram ataques sem educa\xE7\xE3o.",
+    matchedKey: "tecnologia_hater"
+  },
+  {
+    palavras: [
+      "tecnologia e midia para criancas",
+      "tecnologia e m\xEDdia para crian\xE7as",
+      "midia e tecnologia",
+      "m\xEDdia e tecnologia",
+      "arte e tecnologia juntas",
+      "a arte pode ajudar na tecnologia",
+      "guia de tecnologia do candinho"
+    ],
+    resposta: '\u{1F310}\u{1F3A8} **Tecnologia e M\xEDdia para Crian\xE7as \u2014 O Guia do Candinho!**\n\nA tecnologia muda o mundo, e a **arte** ajuda a dar sentido a todas essas mudan\xE7as! Veja s\xF3 como a arte nos ensina a usar a tecnologia de forma incr\xEDvel:\n\n\u2728 **A Arte nos ensina a:**\n\u2022 Pensar bem antes de compartilhar algo;\n\u2022 Respeitar opini\xF5es e culturas diferentes;\n\u2022 Criar coisas originais em vez de apenas copiar;\n\u2022 Imaginar novas ideias e expressar sentimentos;\n\u2022 Usar a tecnologia para construir coisas boas!\n\n\u{1F680} Quando **arte e tecnologia** trabalham juntas, podemos criar jogos de videogame, filmes de anima\xE7\xE3o, m\xFAsicas digitais, rob\xF4s desenhistas, museus virtuais e inven\xE7\xF5es fant\xE1sticas!\n\n\u{1F4A1} *Quer aprender mais? Me pergunte sobre: "o que \xE9 internet?", "o que \xE9 meme?", "o que \xE9 um hacker?", "o que \xE9 trend?" ou "por que as redes sociais s\xE3o perigosas?"!*',
+    matchedKey: "tecnologia_midia_geral"
+  },
+  // ===== LEITURA DE IMAGEM =====
+  {
+    palavras: [
+      "leitura de imagem",
+      "leitura de imagens",
+      "o que e leitura de imagem",
+      "o que \xE9 leitura de imagem",
+      "o que e a leitura de imagem",
+      "o que \xE9 a leitura de imagem",
+      "ler uma imagem",
+      "por que chamamos de leitura",
+      "detetive da arte"
+    ],
+    resposta: '\u{1F440}\u{1F4D6} **O que \xE9 Leitura de Imagem?**\n\nLer uma imagem n\xE3o significa ler palavras! Significa **observar, pensar, descobrir e conversar** sobre tudo o que vemos em uma obra de arte, fotografia, desenho, escultura ou ilustra\xE7\xE3o. \u{1F3A8}\u{1F50D}\n\nQuando fazemos a leitura de imagem, usamos nossos olhos, nossa imagina\xE7\xE3o e nossos sentimentos. \xC9 como ser um **detetive da arte**: cada detalhe pode contar uma hist\xF3ria!\n\n\u{1F4D6} **Por que chamamos de "leitura"?**\nAssim como lemos um livro para entender uma hist\xF3ria, tamb\xE9m podemos "ler" uma imagem para descobrir:\n\u2022 O que ela mostra;\n\u2022 Como foi feita;\n\u2022 O que ela quer comunicar;\n\u2022 O que sentimos ao observ\xE1-la.\n\n\u2728 Cada pessoa pode perceber detalhes diferentes, e isso torna a arte \xFAnica e fascinante!\n\n\u{1F4A1} *Quer continuar descobrindo? Voc\xEA pode me perguntar:* \n\u2022 *"Como leio um quadro ou desenho?"*\n\u2022 *"Quais os 8 passos para fazer uma leitura de imagem?"*\n\u2022 *"Como apreciar uma obra de arte?"*\n\u2022 *"Qual \xE9 o desafio do pequeno artista?"*',
+    matchedKey: "leitura_imagem_conceito"
+  },
+  {
+    palavras: [
+      "como leio um quadro",
+      "como ler um quadro",
+      "como leio uma obra",
+      "como ler uma obra",
+      "como leio uma pintura",
+      "como ler uma pintura",
+      "como leio um desenho",
+      "como ler um desenho",
+      "como leio uma imagem",
+      "como ler uma imagem",
+      "como entendo uma obra de arte",
+      "como entendo uma obra",
+      "como entendo um quadro",
+      "como entendo uma pintura",
+      "como entendo um desenho",
+      "como entender uma pintura ou desenho",
+      "como entender uma pintura",
+      "como entender um desenho",
+      "como entender uma obra",
+      "como entender uma obra de arte",
+      "como descobrir o que uma obra quer dizer",
+      "como descobrir o que o quadro quer dizer",
+      "como interpretar um quadro",
+      "como interpretar uma obra",
+      "como entender a arte",
+      "o que a obra quer dizer",
+      "como analisar um quadro",
+      "como analisar uma pintura",
+      "como analisar uma obra",
+      "me ensine a ler imagem",
+      "me ensine a ler um quadro",
+      "me ensine a ler uma obra de arte",
+      "me ensine a ler uma obra",
+      "me ensine a ler uma pintura",
+      "me ensine a ler um desenho",
+      "me ensina a ler imagem",
+      "me ensina a ler um quadro",
+      "me ensina a ler uma obra de arte",
+      "me ensina a ler uma obra",
+      "me ensina a ler uma pintura",
+      "me ensina a ler um desenho",
+      "me ensine a ler",
+      "me ensina a ler"
+    ],
+    resposta: '\u{1F5BC}\uFE0F\u{1F50D} **Como Entender, Ler ou Interpretar um Quadro, Pintura ou Desenho?**\n\nPara ler um quadro ou entender uma pintura, voc\xEA n\xE3o precisa de um dicion\xE1rio! Voc\xEA precisa usar os seus olhos de **detetive da arte** \u{1F575}\uFE0F\u200D\u2642\uFE0F\u{1F3A8} e procurar as pistas que o artista deixou espalhadas na tela.\n\n\u2728 **Aqui est\xE3o os segredos para ler e descobrir o que uma obra quer dizer:**\n\n1. **N\xE3o tenha pressa:** Olhe devagar. As melhores pistas aparecem depois que observamos por alguns segundos!\n2. **Observe os elementos:** Veja as cores (s\xE3o quentes ou frias?), as formas, as linhas e de onde vem a ilumina\xE7\xE3o.\n3. **Sinta a obra:** Como essa pintura faz voc\xEA se sentir? Alegre, calmo, curioso ou assustado?\n4. **Crie sua hist\xF3ria:** Nem sempre existe s\xF3 uma resposta certa. O artista muitas vezes quer que a sua imagina\xE7\xE3o complete a hist\xF3ria!\n\n\u{1F4A1} *Que tal explorarmos os outros t\xF3picos sobre este tema? Me pergunte:* \n\u2022 *"Quais s\xE3o os 8 passos para observar uma imagem?"*\n\u2022 *"Como apreciar uma obra de arte?"*\n\u2022 *"O artista queria dizer exatamente isso?"*\n\u2022 *"O que aprendemos olhando uma obra?"*\n\u2022 *"O que \xE9 o desafio do pequeno artista?"* \u{1F680}\u{1F3A8}',
+    matchedKey: "leitura_imagem_entender_obra"
+  },
+  {
+    palavras: [
+      "como fazer leitura de imagem",
+      "como fazer uma boa leitura de imagem",
+      "como ler uma imagem",
+      "o que observar em uma obra",
+      "o que observar em uma imagem",
+      "passos da leitura de imagem",
+      "como observar uma obra de arte",
+      "como observar uma imagem",
+      "o que observar em uma obra de arte",
+      "o que observar em um quadro"
+    ],
+    resposta: '\u{1F50D}\u{1F5BC}\uFE0F **Como Fazer uma Boa Leitura de Imagem? (Os 8 Aspectos)**\n\nPara ler uma imagem como um verdadeiro especialista em arte, observe estes 8 detalhes:\n\n\u{1F440} **1. Observe com aten\xE7\xE3o:** Olhe devagar, sem pressa. Pergunte: *O que estou vendo? Quem aparece? O que est\xE1 acontecendo?*\n\n\u{1F3A8} **2. Observe as cores:** As cores contam muitas hist\xF3rias! S\xE3o claras ou escuras? Quentes ou frias? Transmitem alegria, calma ou mist\xE9rio?\n\n\u{1F4D0} **3. Observe as formas:** Procure c\xEDrculos, quadrados, linhas, figuras grandes e pequenas que organizam a obra.\n\n\u270F\uFE0F **4. Observe as linhas:** Linhas retas, curvas, finas, grossas, suaves ou agitadas transmitem movimento e emo\xE7\xE3o!\n\n\u{1F4A1} **5. Observe a luz:** De onde vem a luz? Existe sombra? O que est\xE1 bem iluminado?\n\n\u{1F600} **6. Observe as express\xF5es:** Se houver pessoas, elas est\xE3o felizes, assustadas, pensativas ou brincando?\n\n\u{1F4CD} **7. Observe o espa\xE7o:** Veja o que est\xE1 perto, o que est\xE1 longe e como \xE9 a paisagem do fundo.\n\n\u{1F9E9} **8. Observe os detalhes:** Procure animais, plantas, objetos escondidos, s\xEDmbolos e texturas. Quanto mais voc\xEA olha, mais coisas descobre!\n\n\u{1F4A1} *Quer aprender mais? Me pergunte:* \n\u2022 *"Como leio um quadro ou desenho?"*\n\u2022 *"Como apreciar uma obra de arte?"*\n\u2022 *"Cada pessoa v\xEA a mesma coisa em uma obra?"*\n\u2022 *"Qual \xE9 o desafio do pequeno artista?"* \u{1F3A8}',
+    matchedKey: "leitura_imagem_passos"
+  },
+  {
+    palavras: [
+      "como apreciar uma obra de arte",
+      "como apreciar arte",
+      "como apreciar uma obra",
+      "perguntas para olhar uma obra",
+      "apreciar uma obra de arte",
+      "como apreciar um quadro"
+    ],
+    resposta: '\u2764\uFE0F\u{1F5BC}\uFE0F **Como Apreciar uma Obra de Arte?**\n\nApreciar significa olhar com **aten\xE7\xE3o, respeito e curiosidade**! N\xE3o existe apenas uma resposta certa, e cada pessoa pode sentir algo diferente ao olhar o mesmo quadro.\n\n\u2753 **Fa\xE7a estas perguntas ao observar:**\n\u2022 O que vejo primeiro?\n\u2022 O que mais chama minha aten\xE7\xE3o?\n\u2022 Como essa imagem me faz sentir?\n\u2022 O que o artista quis mostrar?\n\u2022 O que eu faria diferente?\n\u2022 Qual parte eu gostei mais?\n\u2022 Que hist\xF3ria essa imagem conta?\n\n\u{1F4A1} *Quer continuar conversando sobre arte? Me pergunte:* \n\u2022 *"O artista queria dizer exatamente isso?"*\n\u2022 *"N\xE3o gostar de um quadro tamb\xE9m faz parte?"*\n\u2022 *"Como leio um quadro ou uma obra?"*\n\u2022 *"O que \xE9 o desafio do pequeno artista?"* \u{1F31F}',
+    matchedKey: "leitura_imagem_apreciar"
+  },
+  {
+    palavras: [
+      "o artista queria dizer isso",
+      "nao gostar tambem faz parte",
+      "n\xE3o gostar tamb\xE9m faz parte",
+      "cada pessoa ve uma coisa",
+      "cada pessoa v\xEA uma coisa",
+      "diferentes opinioes na arte",
+      "o que aprendemos olhando uma obra"
+    ],
+    resposta: '\u{1F3AD}\u{1F9E0} **Diferentes Olhares, Sentimentos e Opini\xF5es na Arte**\n\n\u{1F3A8} **O artista queria dizer exatamente isso?**\nNem sempre! \xC0s vezes o artista explica sua ideia, mas muitas vezes ele deixa que cada pessoa imagine uma hist\xF3ria diferente. \xC9 isso que torna a arte t\xE3o especial!\n\n\u{1F914} **N\xE3o gostar tamb\xE9m faz parte?**\nSim! Voc\xEA pode dizer *"Eu gostei porque..."* ou *"Eu n\xE3o gostei porque..."*. O importante \xE9 explicar sua opini\xE3o com respeito. Na arte, opini\xF5es diferentes ampliam nossa forma de pensar!\n\n\u{1F333} **Cada pessoa v\xEA uma coisa:**\nEm uma pintura de floresta, uma crian\xE7a nota as \xE1rvores \u{1F333}, outra os p\xE1ssaros \u{1F426}, outra a luz do sol \u2600\uFE0F e outra sente calma. Todas est\xE3o certas!\n\n\u{1F9E0} **O que aprendemos olhando uma obra?**\nAprendemos sobre hist\xF3ria, natureza, culturas, sentimentos, costumes, ci\xEAncia, tecnologia e imagina\xE7\xE3o! \u{1F30D}\u2728\n\n\u{1F4A1} *Muito legal, n\xE9? Tente me perguntar:* \n\u2022 *"Como entender uma pintura ou desenho?"*\n\u2022 *"O que observar em uma obra de arte?"*\n\u2022 *"Qual \xE9 o desafio do pequeno artista?"* \u{1F3A8}',
+    matchedKey: "leitura_imagem_opinioes"
+  },
+  {
+    palavras: [
+      "desafio do pequeno artista",
+      "como os artistas observam",
+      "desafio de observar",
+      "desafio do artista"
+    ],
+    resposta: '\u{1F468}\u200D\u{1F3A8}\u{1F31F} **Desafio do Pequeno Artista \u2014 Treine seu Olhar!**\n\n\u{1F3A8} **Como os artistas observam?**\nAntes de criar uma obra, os artistas observam, pesquisam, imaginam, experimentam, desenham e mudam de ideia! Desenhar bem come\xE7a com **aprender a observar bem**.\n\n\u{1F3C6} **O Seu Desafio:**\nNa pr\xF3xima vez que voc\xEA observar uma pintura, tente responder:\n1. O que eu vejo?\n2. Quais cores aparecem?\n3. O que est\xE1 acontecendo?\n4. Como essa imagem me faz sentir?\n5. Que t\xEDtulo eu daria para essa obra?\n6. Se eu pudesse entrar nela, o que faria l\xE1 dentro? \u{1F680}\u{1F3A8}\n\n\u2728 *Afinal, a arte fala com os olhos, mas conversa com o cora\xE7\xE3o e a imagina\xE7\xE3o!*\n\n\u{1F4A1} *Quer aprender mais truques de arte? Me pergunte sobre:* \n\u2022 *"Como leio um quadro?"*\n\u2022 *"O que \xE9 o c\xEDrculo crom\xE1tico?"*\n\u2022 *"Como apreciar uma obra de arte?"*',
+    matchedKey: "leitura_imagem_desafio"
+  },
+  {
+    palavras: [
+      "banco de conhecimento leitura de imagem",
+      "guia de leitura de imagem",
+      "tudo sobre leitura de imagem",
+      "leitura de imagem para criancas",
+      "leitura de imagem completa",
+      "resumo leitura de imagem"
+    ],
+    resposta: '\u{1F440}\u{1F3A8} **Banco de Conhecimento \u2014 Leitura de Imagem**\n\n**O que \xE9?**\nLer uma imagem \xE9 observar, pensar, descobrir e conversar sobre tudo o que vemos em uma obra de arte, fotografia ou desenho. \xC9 ser um detetive da arte! \u{1F575}\uFE0F\u200D\u2642\uFE0F\u{1F3A8}\n\n\u{1F5BC}\uFE0F **O que observar em uma obra?**\n\u2022 **Personagens:** Quem aparece?\n\u2022 **Lugar:** Onde acontece?\n\u2022 **Cores:** Quais predominam? Claras, escuras, quentes ou frias?\n\u2022 **Formas:** S\xE3o redondas? Quadradas? Irregulares?\n\u2022 **Linhas:** S\xE3o retas ou curvas?\n\u2022 **Luz e Sombra:** Existe brilho? Escurid\xE3o?\n\u2022 **Movimento:** Parecem parados ou em movimento?\n\u2022 **Sentimentos:** A obra transmite alegria? Tranquilidade? Mist\xE9rio?\n\u2022 **Mensagem:** O que o artista pode querer contar?\n\n\u{1F308} **Para Lembrar:** Ler uma imagem \xE9 muito mais do que apenas olhar. \xC9 observar, pensar, imaginar e sentir.\n\n\u{1F4A1} *Explore mais t\xF3picos fazendo estas perguntas:* \n\u2022 *"Como leio um quadro ou uma pintura?"*\n\u2022 *"Como descobrir o que uma obra quer dizer?"*\n\u2022 *"Como apreciar uma obra de arte?"*\n\u2022 *"O artista queria dizer exatamente isso?"*\n\u2022 *"Qual \xE9 o desafio do pequeno artista?"* \u{1F3A8}\u2728',
+    matchedKey: "leitura_imagem_guia_completo"
+  },
   // ===== LITERATURA BRASILEIRA =====
   {
     palavras: [
@@ -9486,7 +9733,143 @@ Ele possui olhos enormes e flamejantes que parecem far\xF3is na escurid\xE3o. O 
     resposta: 'As cores s\xE3o sensa\xE7\xF5es visuais que nossos olhos captam quando h\xE1 luz presente. A palavra "cor" vem do latim (color) e significa "cobrir" ou "ocultar". A luz branca \xE9 a uni\xE3o das sete cores do arco-\xEDris: vermelho, laranja, amarelo, verde, azul, anil e violeta. J\xE1 a cor preta representa a aus\xEAncia de luz. \u{1F308}',
     matchedKey: "cor"
   },
-  { palavras: ["c\xEDrculo crom\xE1tico", "circulo das cores", "roda de cores"], resposta: "O c\xEDrculo crom\xE1tico \xE9 como um arco-\xEDris organizado em volta. Nele, as cores est\xE3o dispostas em ordem: vermelho, laranja, amarelo, verde, azul, violeta. Ajuda a ver quais cores combinam! \u{1F504}" },
+  {
+    palavras: ["c\xEDrculo crom\xE1tico", "circulo cromatico", "o que e o circulo cromatico", "o que \xE9 o c\xEDrculo crom\xE1tico", "o que e circulo cromatico", "o que \xE9 c\xEDrculo crom\xE1tico", "circulo das cores", "c\xEDrculo das cores", "roda de cores", "roda das cores", "definicao de circulo cromatico", "defini\xE7\xE3o de c\xEDrculo crom\xE1tico", "para que serve o circulo cromatico", "para que serve o c\xEDrculo crom\xE1tico"],
+    resposta: `\u{1F3A8} **O que \xE9 o C\xEDrculo Crom\xE1tico?**
+
+O c\xEDrculo crom\xE1tico \xE9 uma roda que organiza as cores, mostrando como elas se relacionam e como podemos mistur\xE1-las.
+
+\xC9 como um mapa das cores que ajuda artistas, pintores, ilustradores e designers a criar obras bonitas e equilibradas.
+
+Imagine uma pizza colorida. Cada "fatia" \xE9 uma cor diferente. Quando olhamos para essa pizza, entendemos quais cores combinam entre si e quais formam novas cores.
+
+![C\xEDrculo Crom\xE1tico](https://i.imgur.com/mn14yvw.jpeg)
+
+\u{1F308} **Para que serve?**
+
+O c\xEDrculo crom\xE1tico ajuda os artistas a:
+\u{1F3A8} misturar tintas;
+\u{1F308} descobrir novas cores;
+\u{1F5BC} escolher cores que combinam;
+\u{1F60A} mostrar sentimentos por meio das cores;
+\u270F\uFE0F deixar desenhos mais bonitos.
+
+Por isso ele \xE9 uma ferramenta muito importante para quem faz arte.
+
+\u{1F534}\u{1F7E1}\u{1F535} **As Cores Prim\xE1rias**
+
+As cores prim\xE1rias s\xE3o as primeiras cores.
+Elas s\xE3o especiais porque n\xE3o podem ser feitas misturando outras cores.
+
+S\xE3o elas:
+\u{1F534} Vermelho
+\u{1F7E1} Amarelo
+\u{1F535} Azul
+
+Essas tr\xEAs cores s\xE3o como os ingredientes principais de uma receita.
+
+\u{1F7E0}\u{1F7E2}\u{1F7E3} **As Cores Secund\xE1rias**
+
+Quando misturamos duas cores prim\xE1rias, aparecem as cores secund\xE1rias.
+
+Veja:
+\u{1F534} Vermelho + \u{1F7E1} Amarelo = \u{1F7E0} Laranja
+\u{1F7E1} Amarelo + \u{1F535} Azul = \u{1F7E2} Verde
+\u{1F535} Azul + \u{1F534} Vermelho = \u{1F7E3} Roxo (ou violeta)
+
+\xC9 quase uma m\xE1gica das tintas!
+
+\u{1F31F} **As Cores Terci\xE1rias**
+
+Quando misturamos uma cor prim\xE1ria com uma cor secund\xE1ria, surgem as cores terci\xE1rias.
+
+Alguns exemplos:
+\u2022 amarelo-esverdeado
+\u2022 azul-esverdeado
+\u2022 vermelho-alaranjado
+\u2022 vermelho-arroxeado
+\u2022 azul-arroxeado
+\u2022 amarelo-alaranjado
+
+Essas cores deixam os desenhos ainda mais ricos e variados.
+
+\u2744\uFE0F\u{1F525} **Cores Quentes e Frias**
+
+As cores tamb\xE9m podem passar sensa\xE7\xF5es.
+
+\u{1F525} **Cores Quentes**
+Lembram: Sol \u2600\uFE0F, Fogo \u{1F525}, Ver\xE3o \u{1F31E}
+S\xE3o elas: vermelho, laranja, amarelo
+Elas transmitem energia, alegria e movimento.
+
+\u2744\uFE0F **Cores Frias**
+Lembram: \xE1gua \u{1F4A7}, c\xE9u \u2601\uFE0F, gelo \u2744\uFE0F
+S\xE3o elas: azul, verde, roxo
+Elas transmitem calma, tranquilidad e descanso.
+
+\u{1F308} **O que s\xE3o Cores Complementares?**
+
+S\xE3o as cores que ficam uma de frente para a outra no c\xEDrculo crom\xE1tico.
+
+Alguns exemplos:
+\u{1F534} Vermelho e \u{1F7E2} Verde
+\u{1F535} Azul e \u{1F7E0} Laranja
+\u{1F7E1} Amarelo e \u{1F7E3} Roxo
+
+Quando aparecem juntas, elas chamam bastante aten\xE7\xE3o. Por isso muitos artistas usam essas combina\xE7\xF5es.
+
+\u{1F3AD} **As cores t\xEAm sentimentos?**
+
+As cores n\xE3o sentem emo\xE7\xF5es, mas podem transmitir sensa\xE7\xF5es.
+Por exemplo:
+\u2764\uFE0F Vermelho \u2192 amor, coragem, energia
+\u{1F49B} Amarelo \u2192 alegria, luz, felicidade
+\u{1F499} Azul \u2192 calma, paz, confian\xE7a
+\u{1F49A} Verde \u2192 natureza, esperan\xE7a
+\u{1F7E3} Roxo \u2192 criatividade, imagina\xE7\xE3o
+\u26AB Preto \u2192 mist\xE9rio, eleg\xE2ncia
+\u26AA Branco \u2192 paz, limpeza
+
+Cada artista pode usar as cores para contar uma hist\xF3ria.
+
+\u{1F3A8} **Onde os artistas usam o c\xEDrculo crom\xE1tico?**
+
+Os artistas usam o c\xEDrculo crom\xE1tico para:
+\u2022 pintar quadros;
+\u2022 desenhar;
+\u2022 criar personagens;
+\u2022 fazer hist\xF3rias em quadrinhos;
+\u2022 criar roupas;
+\u2022 decorar ambientes;
+\u2022 produzir filmes e anima\xE7\xF5es.
+
+At\xE9 os criadores de jogos e desenhos animados escolhem cuidadosamente as cores usando esse conhecimento.
+
+\u{1F58C}\uFE0F **Curiosidade**
+
+O famoso pintor Vincent van Gogh gostava de usar azul e amarelo, duas cores que criam um contraste muito bonito. Em obras como Noite Estrelada, essas cores ajudam a dar brilho e emo\xE7\xE3o \xE0 pintura.
+
+\u{1F3A8} **Vamos experimentar?**
+
+Voc\xEA pode fazer seu pr\xF3prio c\xEDrculo crom\xE1tico!
+
+**Materiais:**
+papel, l\xE1pis, r\xE9gua, tinta guache ou l\xE1pis de cor.
+
+**Passos:**
+1. Desenhe um c\xEDrculo.
+2. Divida-o em 12 partes iguais, como uma pizza.
+3. Pinte primeiro as tr\xEAs cores prim\xE1rias.
+4. Depois, complete com as cores secund\xE1rias e terci\xE1rias.
+5. Observe quais cores ficam lado a lado e quais ficam em posi\xE7\xF5es opostas.
+
+Assim, voc\xEA ter\xE1 um mapa das cores para usar em seus desenhos!
+
+\u{1F31F} **Para lembrar**
+
+O c\xEDrculo crom\xE1tico \xE9 como uma b\xFAssola das cores. Ele ajuda os artistas a descobrir combina\xE7\xF5es, criar efeitos especiais e mostrar sentimentos por meio da pintura. Conhecer as cores \xE9 um dos primeiros passos para criar obras cheias de criatividade e beleza. \u{1F3A8}\u2728`,
+    matchedKey: "circulo_cromatico"
+  },
   { palavras: ["harmonia de cores", "harmonia crom\xE1tica", "combina\xE7\xE3o de cores"], resposta: "Harmonia de cores \xE9 quando escolhemos cores que ficam bonitas juntas. Por exemplo, cores vizinhas no c\xEDrculo (como azul e verde) criam harmonia suave; cores opostas (como azul e laranja) criam contraste vibrante! \u{1F308}\u2728" },
   { palavras: ["escala de cores", "gradiente", "degrad\xEA"], resposta: "Uma escala de cores \xE9 quando uma cor vai ficando mais clara ou mais escura aos poucos. Voc\xEA pode fazer isso adicionando branco (tom pastel) ou preto (sombra). Fica lindo em pinturas! \u{1F3A8}" },
   // ===== TEORIA MUSICAL PARA CRIANÇAS =====
@@ -10704,7 +11087,7 @@ ${bestMatch.dicaCandinho}`;
   return null;
 }
 function resolverComoMessage(normalizedMsg) {
-  const startsWithComo = normalizedMsg.startsWith("como ") || normalizedMsg.includes(" como ") || normalizedMsg.startsWith("me ensina a ");
+  const startsWithComo = normalizedMsg.startsWith("como ") || normalizedMsg.includes(" como ") || normalizedMsg.startsWith("me ensina") || normalizedMsg.startsWith("me ensine") || normalizedMsg.includes("leio") || normalizedMsg.includes("ler ") || normalizedMsg.includes("leitura") || normalizedMsg.includes("interpretar") || normalizedMsg.includes("entender");
   if (!startsWithComo) return null;
   const bypassKeywords = [
     "fake",
@@ -10730,6 +11113,39 @@ function resolverComoMessage(normalizedMsg) {
   ];
   if (bypassKeywords.some((keyword) => normalizedMsg.includes(keyword))) {
     return null;
+  }
+  const isLeituraImagemQuery = normalizedMsg.includes("leitura") || normalizedMsg.includes("leio") || normalizedMsg.includes("ler") && (normalizedMsg.includes("imagem") || normalizedMsg.includes("quadro") || normalizedMsg.includes("obra") || normalizedMsg.includes("pintura") || normalizedMsg.includes("desenho") || normalizedMsg.includes("arte") || normalizedMsg.includes("tela")) || normalizedMsg.includes("interpretar") || (normalizedMsg.includes("entender") || normalizedMsg.includes("entendo") || normalizedMsg.includes("compreender") || normalizedMsg.includes("compreendo")) && (normalizedMsg.includes("obra") || normalizedMsg.includes("quadro") || normalizedMsg.includes("pintura") || normalizedMsg.includes("desenho") || normalizedMsg.includes("imagem") || normalizedMsg.includes("arte") || normalizedMsg.includes("tela")) || (normalizedMsg.includes("ensina") || normalizedMsg.includes("ensine")) && (normalizedMsg.includes("imagem") || normalizedMsg.includes("quadro") || normalizedMsg.includes("obra") || normalizedMsg.includes("pintura") || normalizedMsg.includes("desenho") || normalizedMsg.includes("ler") || normalizedMsg.includes("leitura")) || normalizedMsg.includes("quer dizer") && (normalizedMsg.includes("obra") || normalizedMsg.includes("quadro") || normalizedMsg.includes("pintura") || normalizedMsg.includes("desenho") || normalizedMsg.includes("imagem"));
+  if (isLeituraImagemQuery) {
+    return {
+      reply: `\u{1F5BC}\uFE0F\u{1F50D} **COMO LER E ENTENDER UM QUADRO, OBRA DE ARTE, PINTURA OU DESENHO** \u{1F3A8}
+
+Que pergunta incr\xEDvel! Sabia que ler uma imagem \xE9 como ser um **detetive da arte**? \u{1F575}\uFE0F\u200D\u2642\uFE0F\u2728
+Em vez de ler palavras com letras, n\xF3s usamos nossos olhos, nossa imagina\xE7\xE3o e nosso cora\xE7\xE3o para descobrir os segredos que o artista colocou na tela!
+
+\u{1F4D6} **Por que chamamos de "leitura"?**
+Assim como lemos um livro para entender uma hist\xF3ria, tamb\xE9m "lemos" um quadro, pintura ou desenho para descobrir o que ele mostra, como foi feito, o que ele quer comunicar e o que sentimos ao observ\xE1-lo.
+
+\u{1F575}\uFE0F **Passo a Passo do Detetive da Arte:**
+
+1. \u{1F441}\uFE0F **Observe sem pressa (30 segundos):** Olhe para toda a obra devagarzinho. N\xE3o tenha pressa! As melhores pistas aparecem depois que observamos com calma.
+2. \u{1F3AD} **Quem ou o que aparece?** Descubra quem s\xE3o os personagens, animais, objetos ou lugares da pintura.
+3. \u{1F3A8} **Cores de Ouro:** Repare se as cores s\xE3o quentes (amarelo, vermelho) que trazem energia, ou frias (azul, verde) que trazem calmaria e mist\xE9rio!
+4. \u{1F4D0} **Formas e Linhas:** Veja se as linhas s\xE3o retas e firmes ou curvas e onduladas como se estivessem dan\xE7ando.
+5. \u{1F4A1} **Luz e Sombra:** De onde vem o brilho da imagem? O que est\xE1 bem iluminado e o que ficou escondido na sombra?
+6. \u2764\uFE0F **Sentimentos:** Que emo\xE7\xE3o a imagem passa para voc\xEA? Alegria, calma, surpresa, saudade ou curiosidade?
+7. \u{1F4DC} **Crie a sua Hist\xF3ria:** O que aconteceu um minuto antes dessa cena? O que vai acontecer depois? A sua imagina\xE7\xE3o completa a obra!
+
+\u{1F31F} **Lembre-se:** Na arte n\xE3o existe uma \xFAnica resposta certa. Cada pessoa \xE9 \xFAnica e pode perceber detalhes diferentes e maravilhosos na mesma obra!
+
+---
+\u{1F4A1} **Quer continuar explorando os outros t\xF3picos do tema?** Escolha o que voc\xEA gostaria de perguntar agora:
+\u2022 *"Quais os 8 passos para fazer uma leitura de imagem?"*
+\u2022 *"Como apreciar uma obra de arte?"*
+\u2022 *"Cada pessoa v\xEA a mesma coisa em um quadro?"*
+\u2022 *"Qual \xE9 o desafio do pequeno artista?"*
+\u2022 *"O que \xE9 o C\xEDrculo Crom\xE1tico?"* \u{1F3A8}\u2728`,
+      matchedKey: "como_ler_quadro_obra_imagem"
+    };
   }
   if (normalizedMsg.includes("desenhar") || normalizedMsg.includes("desenho") || normalizedMsg.includes("desenha")) {
     if (normalizedMsg.includes("cachorro") || normalizedMsg.includes("cao") || normalizedMsg.includes("dog")) {
@@ -12181,6 +12597,27 @@ function extrairNome(mensagem) {
     "curupira",
     "iara",
     "cuca",
+    "internet",
+    "tecnologia",
+    "meme",
+    "memes",
+    "trend",
+    "trends",
+    "hacker",
+    "hackers",
+    "hack",
+    "hackear",
+    "hater",
+    "haters",
+    "rede",
+    "redes",
+    "midia",
+    "m\xEDdia",
+    "leitura",
+    "imagem",
+    "imagens",
+    "apreciar",
+    "observar",
     "tarsila",
     "portinari",
     "candido",
@@ -12832,6 +13269,11 @@ var ARTISTS_GUARANTEED_IMAGES = {
     imagemUrl: "https://i.imgur.com/eOgA02Z.jpeg",
     titulo: "Defini\xE7\xE3o de Cor",
     credito: "Elementos da Linguagem Visual"
+  },
+  circulo_cromatico: {
+    imagemUrl: "https://i.imgur.com/mn14yvw.jpeg",
+    titulo: "C\xEDrculo Crom\xE1tico",
+    credito: "Guia das Cores e Harmonia Visual"
   },
   espaco: {
     imagemUrl: "https://i.imgur.com/6VvC7Yl.jpeg",
