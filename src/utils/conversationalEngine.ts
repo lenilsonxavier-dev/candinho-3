@@ -870,8 +870,80 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
 
   // ===== GLOSSÁRIO DE TECNOLOGIA E INTELIGÊNCIA ARTIFICIAL (IA) =====
   {
+    palavras: [
+      'posso confiar na ia', 'posso confiar na inteligência artificial', 'posso confiar na inteligencia artificial',
+      'a ia e confiavel', 'a ia é confiável', 'a inteligencia artificial e confiavel', 'a inteligência artificial é confiável',
+      'a ia esta sempre certa', 'a ia está sempre certa', 'a ia da respostas certas', 'a ia dá respostas certas',
+      'a ia erra', 'a ia mente', 'a ia inventa coisas', 'a ia sempre acerta', 'posso confiar nas respostas da ia',
+      'a ia e 100% certa', 'a ia é 100% certa', 'a ia fala a verdade', 'a ia sempre fala a verdade',
+      'ia e confiavel', 'ia é confiável', 'ia dá respostas certas', 'ia da respostas certas', 'pode confiar na ia',
+      'pode confiar na inteligência artificial', 'pode confiar na inteligencia artificial', 'confiar na ia',
+      'confiar na inteligencia artificial', 'confiar na inteligência artificial', 'a ia e confiável', 'ia confiável'
+    ],
+    resposta: '🤖❓ **Posso confiar na IA? Ela dá respostas certas ou está sempre certa?**\n\n' +
+      'A resposta rápida é: **Não! A Inteligência Artificial (IA) nem sempre está certa e você não deve confiar 100% em tudo o que ela diz!** 🧠⚠️\n\n' +
+      'A IA é uma ferramenta fantástica que ajuda a responder perguntas, criar desenhos e realizar tarefas. Ela funciona como um computador super-rápido que aprendeu analisando **padrões** em bilhões de textos da internet.\n\n' +
+      'Mas como ela não é um ser humano e não "pensa" de verdade, ela comete erros! Veja por que você deve usar seu olhar de detetive da informação 🕵️‍♂️:\n\n' +
+      '🤖 **1. O que é a IA?**\n' +
+      'É um programa de computador que aprende padrões para ajudar a gente a responder perguntas e realizar tarefas.\n\n' +
+      '🌀 **2. Alucinação da IA (Quando ela inventa coisas!):**\n' +
+      'Às vezes, quando a IA não sabe a resposta, em vez de dizer "não sei", ela **inventa uma informação** e a apresenta como se fosse a mais pura verdade! Chamamos isso de *alucinação*.\n\n' +
+      '🫅 **3. AI Sycophancy (A "Bajulação" da IA):**\n' +
+      'A IA tenta ser muito boazinha. Por isso, se você fizer uma pergunta ou disser algo errado (como *"O Sol é feito de queijo, né?"*), ela pode **concordar com você só para te agradar**, mesmo estando errado!\n\n' +
+      '⚖️ **4. Viés (Repetindo preconceitos e ideias antigas):**\n' +
+      'Como a IA aprendeu lendo dados da internet, ela tem a tendência de **repetir os mesmos padrões ou preconceitos** que existiam nas informações com que ela aprendeu.\n\n' +
+      '📅 **5. Informação Desatualizada:**\n' +
+      'A IA pode não conhecer acontecimentos super recentes que deram no jornal hoje ou ontem, porque o aprendizado dela foi feito com dados do passado.\n\n' +
+      '🧩 **6. Falta de Contexto:**\n' +
+      'Às vezes a IA entende apenas uma partezinha da pergunta e responde de forma incorreta, por não ter percebido o sentido completo do que você queria saber.\n\n' +
+      '😎 **7. Excesso de Confiança:**\n' +
+      'A IA escreve de um jeito muito bonito e seguro. Ela pode **parecer muito confiante e cheia de certeza mesmo quando está totalmente errada**!\n\n' +
+      '--- \n' +
+      '💡 **Dica do Candinho:** Use a IA para ter ideias, desenhar e estudar, mas **sempre confira o que é importante em livros, sites confiáveis ou com um adulto/professor de confiança**! 📖🔎',
+    matchedKey: 'tecnologia_ia_confiavel'
+  },
+  {
+    palavras: ['alucinacao da ia', 'alucinação da ia', 'o que e alucinacao da ia', 'o que é alucinação da ia', 'alucinacao', 'alucinação', 'alucinação ia', 'alucinacao ia', 'a ia inventa coisas'],
+    resposta: '🌀 **Alucinação da IA**\n\n' +
+      'É quando a Inteligência Artificial inventa uma informação que não existe e a apresenta como se fosse uma grande verdade! 🤖🎭\n\n' +
+      'Como a IA busca padrões para formar frases, quando ela não sabe a resposta, pode acabar "imaginando" nomes, datas e fatos falsos com muita certeza. Por isso, sempre confira as respostas!',
+    matchedKey: 'glossario_alucinacao'
+  },
+  {
+    palavras: ['ai sycophancy', 'sycophancy', 'bajulacao da ia', 'bajulação da ia', 'bajulacao', 'bajulação', 'a ia concorda comigo', 'a ia me bajula'],
+    resposta: '🫅 **AI Sycophancy (Bajulação da IA)**\n\n' +
+      'Ocorre quando a IA concorda com o usuário apenas para agradar, mesmo que ele esteja errado! 🤝😅\n\n' +
+      'Se você fizer uma afirmação incorreta com muita certeza, a IA pode concordar com você em vez de te corrigir, só para tentar ser boazinha. Lembra: concordar nem sempre significa estar certo!',
+    matchedKey: 'glossario_sycophancy'
+  },
+  {
+    palavras: ['vies da ia', 'viés da ia', 'o que e vies', 'o que é viés', 'o que e vies da ia', 'o que é viés da ia', 'vies', 'viés', 'preconceito da ia'],
+    resposta: '⚖️ **Viés da IA**\n\n' +
+      'É a tendência da Inteligência Artificial a repetir padrões ou preconceitos presentes nos dados da internet com os quais ela aprendeu. 📖🤖\n\n' +
+      'Se as informações antigas contiverem ideias injustas ou preconceituosas, a IA pode acabar repetindo esses erros sem perceber.',
+    matchedKey: 'glossario_vies'
+  },
+  {
+    palavras: ['informacao desatualizada', 'informação desatualizada', 'ia esta desatualizada', 'ia está desatualizada', 'a ia sabe de tudo hoje'],
+    resposta: '📅 **Informação Desatualizada**\n\n' +
+      'A IA pode não conhecer acontecimentos super recentes! O "cérebro" dela foi treinado com informações até uma certa data no passado, por isso novidades de hoje ou de ontem podem não estar no conhecimento dela.',
+    matchedKey: 'glossario_informacao_desatualizada'
+  },
+  {
+    palavras: ['falta de contexto', 'falta de contexto na ia', 'a ia nao entende o contexto', 'a ia não entende o contexto'],
+    resposta: '🧩 **Falta de Contexto**\n\n' +
+      'Acontece quando a IA entende apenas uma parte da sua pergunta e responde de forma incorreta, por não ter percebido toda a situação ou os detalhes do que você queria saber.',
+    matchedKey: 'glossario_falta_contexto'
+  },
+  {
+    palavras: ['excesso de confianca', 'excesso de confiança', 'excesso de confianca da ia', 'excesso de confiança da ia', 'a ia fala com certeza'],
+    resposta: '😎 **Excesso de Confiança da IA**\n\n' +
+      'A IA pode parecer muito segura e confiante mesmo quando está totalmente errada! Ela escreve com um tom tão bonitinho e compenetrado que parece um especialista, mas é preciso sempre conferir os fatos.',
+    matchedKey: 'glossario_excesso_confianca'
+  },
+  {
     palavras: ['inteligencia artificial', 'inteligência artificial', 'o que e inteligencia artificial', 'o que e inteligência artificial', 'o que e ia', 'o que é ia', 'o que significa ia', 'conceito de ia', 'ia'],
-    resposta: '🤖 **Inteligência Artificial (IA)**\n\nÉ um programa de computador que aprende a fazer tarefas, responder perguntas, criar desenhos, escrever textos e ajudar as pessoas.',
+    resposta: '🤖 **Inteligência Artificial (IA)**\n\nÉ um programa de computador que aprende padrões para ajudar a responder perguntas, criar desenhos, escrever textos e realizar tarefas.',
     matchedKey: 'glossario_ia'
   },
   {
@@ -948,22 +1020,22 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
     palavras: ['glossario de ia', 'glossário de ia', 'glossario de tecnologia', 'glossário de tecnologia', 'dicionario de ia', 'dicionario de tecnologia', 'termos de ia', 'termos de tecnologia'],
     resposta: '🤖 **Glossário de IA e Tecnologia do Candinho** 💡\n\n' +
       'Aprenda os termos mais importantes sobre tecnologia e Inteligência Artificial de forma simples:\n\n' +
-      '🤖 **Inteligência Artificial (IA):** É um programa de computador que aprende a fazer tarefas, responder perguntas, criar desenhos, escrever textos e ajudar as pessoas.\n\n' +
+      '🤖 **Inteligência Artificial (IA):** Programa de computador que aprende padrões e ajuda a responder perguntas, criar desenhos e realizar tarefas.\n\n' +
+      '🌀 **Alucinação da IA:** Quando a IA inventa uma informação e a apresenta como se fosse verdadeira.\n\n' +
+      '🫅 **AI Sycophancy (Bajulação):** Quando a IA concorda com o usuário apenas para agradar, mesmo que ele esteja errado.\n\n' +
+      '⚖️ **Viés da IA:** Tendência da IA a repetir padrões ou preconceitos presentes nos dados com que aprendeu.\n\n' +
+      '📅 **Informação Desatualizada:** A IA pode não conhecer acontecimentos super recentes de hoje ou ontem.\n\n' +
+      '🧩 **Falta de Contexto:** A IA pode entender apenas parte da pergunta e responder de forma incorreta.\n\n' +
+      '😎 **Excesso de Confiança:** A IA pode parecer muito segura e confiante mesmo quando está errada.\n\n' +
       '💬 **Prompt:** É a mensagem ou pergunta que você escreve para a Inteligência Artificial. Quanto mais clara for a pergunta, melhor será a resposta.\n\n' +
       '⚙️ **Algoritmo:** É uma sequência de passos ou instruções que ensina o computador a resolver um problema ou realizar uma tarefa.\n\n' +
       '🧩 **Token:** É um pequeno pedaço de um texto. A IA lê e escreve usando esses pedacinhos, como se fossem blocos para montar frases.\n\n' +
-      '🎭 **Deepfake:** É uma imagem, vídeo ou áudio criado por IA para parecer verdadeiro, mesmo sendo falso. Por isso, é importante sempre conferir se uma informação é confiável.\n\n' +
+      '🎭 **Deepfake:** É uma imagem, vídeo ou áudio criado por IA para parecer verdadeiro, mesmo sendo falso.\n\n' +
       '🧠 **Modelo de IA:** É o "cérebro" da Inteligência Artificial. Ele foi treinado com muitos exemplos para aprender a conversar, responder perguntas e criar conteúdos.\n\n' +
-      '📚 **Banco de Dados:** É um lugar onde muitas informações ficam organizedas para que o computador possa encontrá-las rapidamente.\n\n' +
+      '📚 **Banco de Dados:** É um lugar onde muitas informações ficam organizadas para que o computador possa encontrá-las rapidamente.\n\n' +
       '🌐 **Internet:** É uma rede que liga computadores do mundo todo e permite acessar sites, vídeos, jogos e informações.\n\n' +
-      '🔍 **Pesquisa:** É o ato de procurar informações sobre um assunto usando livros, pessoas ou a internet.\n\n' +
-      '💻 **Programa:** É um conjunto de instruções que diz ao computador exatamente o que fazer.\n\n' +
-      '📱 **Aplicativo (App):** É um programa feito para realizar uma tarefa específica, como desenhar, conversar ou jogar.\n\n' +
-      '🛜 **Wi-Fi:** É uma forma de conectar aparelhos à internet sem usar fios.\n\n' +
-      '🔒 **Senha:** É um código secreto que protege suas contas e seus dados.\n\n' +
-      '☁️ **Nuvem (Cloud):** É um lugar na internet onde você pode guardar arquivos para acessá-los de qualquer aparelho.\n\n' +
-      '🦺 **Segurança Digital:** São cuidados que devemos ter para usar a internet de forma segura, protegendo nossas informações e respeitando as outras pessoas.\n\n' +
-      '💡 Me pergunte sobre qualquer um desses termos para conversarmos mais!',
+      '🦺 **Segurança Digital:** São cuidados para usar a internet de forma segura, protegendo nossas informações e respeitando as pessoas.\n\n' +
+      '💡 Me pergunte sobre qualquer um desses termos ou se a IA é confiável para conversarmos mais!',
     matchedKey: 'glossario_completo_ia'
   },
 
@@ -3235,11 +3307,13 @@ function resolverComoMessage(normalizedMsg: string): { reply: string, matchedKey
                          
   if (!startsWithComo) return null;
   
-  // Evitar interceptar perguntas sobre fake news, mentiras, segurança e golpes do banco de conhecimentos
+  // Evitar interceptar perguntas sobre fake news, mentiras, segurança, inteligência artificial e golpes do banco de conhecimentos
   const bypassKeywords = [
     "fake", "news", "mentira", "boato", "golpe", "fraude", "seguranca", "segurança", 
     "proteg", "protej", "evitar", "evit", "checar", "checo", "descobrir", 
-    "desmascarar", "saber se e", "saber se e verdade", "sei se e", "sei se"
+    "desmascarar", "saber se e", "saber se e verdade", "sei se e", "sei se",
+    "confiavel", "confiável", "confiar", "certa", "certo", "ia", "alucinacao", "alucinação",
+    "sycophancy", "vies", "viés"
   ];
   if (bypassKeywords.some(keyword => normalizedMsg.includes(keyword))) {
     return null;
