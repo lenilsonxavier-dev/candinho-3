@@ -1323,9 +1323,57 @@ Imagine que existe um herói chamado **Detetive da Arte!** Ele tem uma lupa mág
 4️⃣ 🎨 **Ela foi modificada ou editada?** (Tem cara de montagem ou filtro?)
 5️⃣ 📚 **Outras fontes confiáveis confirmam?** (Outros detetives também viram e confirmaram?)
 
-Se o Detetive da Arte não conseguir responder a essas perguntas, ele não compartilha e guarda sua lupa! Que tal ser um Detetive da Arte comigo hoje e investigar as imagens que você vê por aí? 🌟🔦`,matchedKey:"detetive_da_arte"},{palavras:["inteligencia artificial","inteligência artificial","o que e inteligencia artificial","o que e inteligência artificial","o que e ia","o que é ia","o que significa ia","conceito de ia","ia"],resposta:`🤖 **Inteligência Artificial (IA)**
+Se o Detetive da Arte não conseguir responder a essas perguntas, ele não compartilha e guarda sua lupa! Que tal ser um Detetive da Arte comigo hoje e investigar as imagens que você vê por aí? 🌟🔦`,matchedKey:"detetive_da_arte"},{palavras:["posso confiar na ia","posso confiar na inteligência artificial","posso confiar na inteligencia artificial","a ia e confiavel","a ia é confiável","a inteligencia artificial e confiavel","a inteligência artificial é confiável","a ia esta sempre certa","a ia está sempre certa","a ia da respostas certas","a ia dá respostas certas","a ia erra","a ia mente","a ia inventa coisas","a ia sempre acerta","posso confiar nas respostas da ia","a ia e 100% certa","a ia é 100% certa","a ia fala a verdade","a ia sempre fala a verdade","ia e confiavel","ia é confiável","ia dá respostas certas","ia da respostas certas","pode confiar na ia","pode confiar na inteligência artificial","pode confiar na inteligencia artificial","confiar na ia","confiar na inteligencia artificial","confiar na inteligência artificial","a ia e confiável","ia confiável"],resposta:`🤖❓ **Posso confiar na IA? Ela dá respostas certas ou está sempre certa?**
 
-É um programa de computador que aprende a fazer tarefas, responder perguntas, criar desenhos, escrever textos e ajudar as pessoas.`,matchedKey:"glossario_ia"},{palavras:["prompt","prompts","o que e prompt","o que é prompt","o que e um prompt","o que é um prompt","significado de prompt"],resposta:`💬 **Prompt**
+A resposta rápida é: **Não! A Inteligência Artificial (IA) nem sempre está certa e você não deve confiar 100% em tudo o que ela diz!** 🧠⚠️
+
+A IA é uma ferramenta fantástica que ajuda a responder perguntas, criar desenhos e realizar tarefas. Ela funciona como um computador super-rápido que aprendeu analisando **padrões** em bilhões de textos da internet.
+
+Mas como ela não é um ser humano e não "pensa" de verdade, ela comete erros! Veja por que você deve usar seu olhar de detetive da informação 🕵️‍♂️:
+
+🤖 **1. O que é a IA?**
+É um programa de computador que aprende padrões para ajudar a gente a responder perguntas e realizar tarefas.
+
+🌀 **2. Alucinação da IA (Quando ela inventa coisas!):**
+Às vezes, quando a IA não sabe a resposta, em vez de dizer "não sei", ela **inventa uma informação** e a apresenta como se fosse a mais pura verdade! Chamamos isso de *alucinação*.
+
+🫅 **3. AI Sycophancy (A "Bajulação" da IA):**
+A IA tenta ser muito boazinha. Por isso, se você fizer uma pergunta ou disser algo errado (como *"O Sol é feito de queijo, né?"*), ela pode **concordar com você só para te agradar**, mesmo estando errado!
+
+⚖️ **4. Viés (Repetindo preconceitos e ideias antigas):**
+Como a IA aprendeu lendo dados da internet, ela tem a tendência de **repetir os mesmos padrões ou preconceitos** que existiam nas informações com que ela aprendeu.
+
+📅 **5. Informação Desatualizada:**
+A IA pode não conhecer acontecimentos super recentes que deram no jornal hoje ou ontem, porque o aprendizado dela foi feito com dados do passado.
+
+🧩 **6. Falta de Contexto:**
+Às vezes a IA entende apenas uma partezinha da pergunta e responde de forma incorreta, por não ter percebido o sentido completo do que você queria saber.
+
+😎 **7. Excesso de Confiança:**
+A IA escreve de um jeito muito bonito e seguro. Ela pode **parecer muito confiante e cheia de certeza mesmo quando está totalmente errada**!
+
+--- 
+💡 **Dica do Candinho:** Use a IA para ter ideias, desenhar e estudar, mas **sempre confira o que é importante em livros, sites confiáveis ou com um adulto/professor de confiança**! 📖🔎`,matchedKey:"tecnologia_ia_confiavel"},{palavras:["alucinacao da ia","alucinação da ia","o que e alucinacao da ia","o que é alucinação da ia","alucinacao","alucinação","alucinação ia","alucinacao ia","a ia inventa coisas"],resposta:`🌀 **Alucinação da IA**
+
+É quando a Inteligência Artificial inventa uma informação que não existe e a apresenta como se fosse uma grande verdade! 🤖🎭
+
+Como a IA busca padrões para formar frases, quando ela não sabe a resposta, pode acabar "imaginando" nomes, datas e fatos falsos com muita certeza. Por isso, sempre confira as respostas!`,matchedKey:"glossario_alucinacao"},{palavras:["ai sycophancy","sycophancy","bajulacao da ia","bajulação da ia","bajulacao","bajulação","a ia concorda comigo","a ia me bajula"],resposta:`🫅 **AI Sycophancy (Bajulação da IA)**
+
+Ocorre quando a IA concorda com o usuário apenas para agradar, mesmo que ele esteja errado! 🤝😅
+
+Se você fizer uma afirmação incorreta com muita certeza, a IA pode concordar com você em vez de te corrigir, só para tentar ser boazinha. Lembra: concordar nem sempre significa estar certo!`,matchedKey:"glossario_sycophancy"},{palavras:["vies da ia","viés da ia","o que e vies","o que é viés","o que e vies da ia","o que é viés da ia","vies","viés","preconceito da ia"],resposta:`⚖️ **Viés da IA**
+
+É a tendência da Inteligência Artificial a repetir padrões ou preconceitos presentes nos dados da internet com os quais ela aprendeu. 📖🤖
+
+Se as informações antigas contiverem ideias injustas ou preconceituosas, a IA pode acabar repetindo esses erros sem perceber.`,matchedKey:"glossario_vies"},{palavras:["informacao desatualizada","informação desatualizada","ia esta desatualizada","ia está desatualizada","a ia sabe de tudo hoje"],resposta:`📅 **Informação Desatualizada**
+
+A IA pode não conhecer acontecimentos super recentes! O "cérebro" dela foi treinado com informações até uma certa data no passado, por isso novidades de hoje ou de ontem podem não estar no conhecimento dela.`,matchedKey:"glossario_informacao_desatualizada"},{palavras:["falta de contexto","falta de contexto na ia","a ia nao entende o contexto","a ia não entende o contexto"],resposta:`🧩 **Falta de Contexto**
+
+Acontece quando a IA entende apenas uma parte da sua pergunta e responde de forma incorreta, por não ter percebido toda a situação ou os detalhes do que você queria saber.`,matchedKey:"glossario_falta_contexto"},{palavras:["excesso de confianca","excesso de confiança","excesso de confianca da ia","excesso de confiança da ia","a ia fala com certeza"],resposta:`😎 **Excesso de Confiança da IA**
+
+A IA pode parecer muito segura e confiante mesmo quando está totalmente errada! Ela escreve com um tom tão bonitinho e compenetrado que parece um especialista, mas é preciso sempre conferir os fatos.`,matchedKey:"glossario_excesso_confianca"},{palavras:["inteligencia artificial","inteligência artificial","o que e inteligencia artificial","o que e inteligência artificial","o que e ia","o que é ia","o que significa ia","conceito de ia","ia"],resposta:`🤖 **Inteligência Artificial (IA)**
+
+É um programa de computador que aprende padrões para ajudar a responder perguntas, criar desenhos, escrever textos e realizar tarefas.`,matchedKey:"glossario_ia"},{palavras:["prompt","prompts","o que e prompt","o que é prompt","o que e um prompt","o que é um prompt","significado de prompt"],resposta:`💬 **Prompt**
 
 É a mensagem ou pergunta que você escreve para a Inteligência Artificial. Quanto mais clara for a pergunta, melhor será a resposta.`,matchedKey:"glossario_prompt"},{palavras:["algoritmo","algoritmos","o que e algoritmo","o que é algoritmo","o que e um algoritmo","o que é um algoritmo"],resposta:`⚙️ **Algoritmo**
 
@@ -1357,7 +1405,19 @@ São cuidados que devemos ter para usar a internet de forma segura, protegendo n
 
 Aprenda os termos mais importantes sobre tecnologia e Inteligência Artificial de forma simples:
 
-🤖 **Inteligência Artificial (IA):** É um programa de computador que aprende a fazer tarefas, responder perguntas, criar desenhos, escrever textos e ajudar as pessoas.
+🤖 **Inteligência Artificial (IA):** Programa de computador que aprende padrões e ajuda a responder perguntas, criar desenhos e realizar tarefas.
+
+🌀 **Alucinação da IA:** Quando a IA inventa uma informação e a apresenta como se fosse verdadeira.
+
+🫅 **AI Sycophancy (Bajulação):** Quando a IA concorda com o usuário apenas para agradar, mesmo que ele esteja errado.
+
+⚖️ **Viés da IA:** Tendência da IA a repetir padrões ou preconceitos presentes nos dados com que aprendeu.
+
+📅 **Informação Desatualizada:** A IA pode não conhecer acontecimentos super recentes de hoje ou ontem.
+
+🧩 **Falta de Contexto:** A IA pode entender apenas parte da pergunta e responder de forma incorreta.
+
+😎 **Excesso de Confiança:** A IA pode parecer muito segura e confiante mesmo quando está errada.
 
 💬 **Prompt:** É a mensagem ou pergunta que você escreve para a Inteligência Artificial. Quanto mais clara for a pergunta, melhor será a resposta.
 
@@ -1365,29 +1425,17 @@ Aprenda os termos mais importantes sobre tecnologia e Inteligência Artificial d
 
 🧩 **Token:** É um pequeno pedaço de um texto. A IA lê e escreve usando esses pedacinhos, como se fossem blocos para montar frases.
 
-🎭 **Deepfake:** É uma imagem, vídeo ou áudio criado por IA para parecer verdadeiro, mesmo sendo falso. Por isso, é importante sempre conferir se uma informação é confiável.
+🎭 **Deepfake:** É uma imagem, vídeo ou áudio criado por IA para parecer verdadeiro, mesmo sendo falso.
 
 🧠 **Modelo de IA:** É o "cérebro" da Inteligência Artificial. Ele foi treinado com muitos exemplos para aprender a conversar, responder perguntas e criar conteúdos.
 
-📚 **Banco de Dados:** É um lugar onde muitas informações ficam organizedas para que o computador possa encontrá-las rapidamente.
+📚 **Banco de Dados:** É um lugar onde muitas informações ficam organizadas para que o computador possa encontrá-las rapidamente.
 
 🌐 **Internet:** É uma rede que liga computadores do mundo todo e permite acessar sites, vídeos, jogos e informações.
 
-🔍 **Pesquisa:** É o ato de procurar informações sobre um assunto usando livros, pessoas ou a internet.
+🦺 **Segurança Digital:** São cuidados para usar a internet de forma segura, protegendo nossas informações e respeitando as pessoas.
 
-💻 **Programa:** É um conjunto de instruções que diz ao computador exatamente o que fazer.
-
-📱 **Aplicativo (App):** É um programa feito para realizar uma tarefa específica, como desenhar, conversar ou jogar.
-
-🛜 **Wi-Fi:** É uma forma de conectar aparelhos à internet sem usar fios.
-
-🔒 **Senha:** É um código secreto que protege suas contas e seus dados.
-
-☁️ **Nuvem (Cloud):** É um lugar na internet onde você pode guardar arquivos para acessá-los de qualquer aparelho.
-
-🦺 **Segurança Digital:** São cuidados que devemos ter para usar a internet de forma segura, protegendo nossas informações e respeitando as outras pessoas.
-
-💡 Me pergunte sobre qualquer um desses termos para conversarmos mais!`,matchedKey:"glossario_completo_ia"},{palavras:["o que e a internet","o que é a internet","o que e internet","o que é internet","o que significa a palavra internet","significado da palavra internet","como surgiu a internet","origem da internet","internet na arte"],resposta:`🌍 **O que é a Internet?**
+💡 Me pergunte sobre qualquer um desses termos ou se a IA é confiável para conversarmos mais!`,matchedKey:"glossario_completo_ia"},{palavras:["o que e a internet","o que é a internet","o que e internet","o que é internet","o que significa a palavra internet","significado da palavra internet","como surgiu a internet","origem da internet","internet na arte"],resposta:`🌍 **O que é a Internet?**
 
 A internet é uma enorme rede que liga computadores, celulares e tablets do mundo inteiro!
 
@@ -2548,7 +2596,7 @@ ${p.dicaCandinho}`),p.pergunteTambem&&p.pergunteTambem.length>0&&(O+=`
 `+p.pergunteTambem.map(j=>`- ${j}`).join(`
 `)),O+=`
 
-✨ Como seu professor de arte, adoro ver sua curiosidade colorida brilhando! Quer fazer outra pergunta ou praticar um desenho hoje?`,{reply:O,matchedKey:"porque_arte_banco"}}return null}function fh(c){if(!(c.startsWith("como ")||c.includes(" como ")||c.startsWith("me ensina")||c.startsWith("me ensine")||c.includes("leio")||c.includes("ler ")||c.includes("leitura")||c.includes("interpretar")||c.includes("entender"))||["fake","news","mentira","boato","golpe","fraude","seguranca","segurança","proteg","protej","evitar","evit","checar","checo","descobrir","desmascarar","saber se e","saber se e verdade","sei se e","sei se"].some(O=>c.includes(O)))return null;if(c.includes("leitura")||c.includes("leio")||c.includes("ler")&&(c.includes("imagem")||c.includes("quadro")||c.includes("obra")||c.includes("pintura")||c.includes("desenho")||c.includes("arte")||c.includes("tela"))||c.includes("interpretar")||(c.includes("entender")||c.includes("entendo")||c.includes("compreender")||c.includes("compreendo"))&&(c.includes("obra")||c.includes("quadro")||c.includes("pintura")||c.includes("desenho")||c.includes("imagem")||c.includes("arte")||c.includes("tela"))||(c.includes("ensina")||c.includes("ensine"))&&(c.includes("imagem")||c.includes("quadro")||c.includes("obra")||c.includes("pintura")||c.includes("desenho")||c.includes("ler")||c.includes("leitura"))||c.includes("quer dizer")&&(c.includes("obra")||c.includes("quadro")||c.includes("pintura")||c.includes("desenho")||c.includes("imagem")))return{reply:`🖼️🔍 **COMO LER E ENTENDER UM QUADRO, OBRA DE ARTE, PINTURA OU DESENHO** 🎨
+✨ Como seu professor de arte, adoro ver sua curiosidade colorida brilhando! Quer fazer outra pergunta ou praticar um desenho hoje?`,{reply:O,matchedKey:"porque_arte_banco"}}return null}function fh(c){if(!(c.startsWith("como ")||c.includes(" como ")||c.startsWith("me ensina")||c.startsWith("me ensine")||c.includes("leio")||c.includes("ler ")||c.includes("leitura")||c.includes("interpretar")||c.includes("entender"))||["fake","news","mentira","boato","golpe","fraude","seguranca","segurança","proteg","protej","evitar","evit","checar","checo","descobrir","desmascarar","saber se e","saber se e verdade","sei se e","sei se","confiavel","confiável","confiar","certa","certo","ia","alucinacao","alucinação","sycophancy","vies","viés"].some(O=>c.includes(O)))return null;if(c.includes("leitura")||c.includes("leio")||c.includes("ler")&&(c.includes("imagem")||c.includes("quadro")||c.includes("obra")||c.includes("pintura")||c.includes("desenho")||c.includes("arte")||c.includes("tela"))||c.includes("interpretar")||(c.includes("entender")||c.includes("entendo")||c.includes("compreender")||c.includes("compreendo"))&&(c.includes("obra")||c.includes("quadro")||c.includes("pintura")||c.includes("desenho")||c.includes("imagem")||c.includes("arte")||c.includes("tela"))||(c.includes("ensina")||c.includes("ensine"))&&(c.includes("imagem")||c.includes("quadro")||c.includes("obra")||c.includes("pintura")||c.includes("desenho")||c.includes("ler")||c.includes("leitura"))||c.includes("quer dizer")&&(c.includes("obra")||c.includes("quadro")||c.includes("pintura")||c.includes("desenho")||c.includes("imagem")))return{reply:`🖼️🔍 **COMO LER E ENTENDER UM QUADRO, OBRA DE ARTE, PINTURA OU DESENHO** 🎨
 
 Que pergunta incrível! Sabia que ler uma imagem é como ser um **detetive da arte**? 🕵️‍♂️✨
 Em vez de ler palavras com letras, nós usamos nossos olhos, nossa imaginação e nosso coração para descobrir os segredos que o artista colocou na tela!

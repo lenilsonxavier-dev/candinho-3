@@ -8983,8 +8983,76 @@ var CONHECIMENTO_CANDINHO = [
   },
   // ===== GLOSSÁRIO DE TECNOLOGIA E INTELIGÊNCIA ARTIFICIAL (IA) =====
   {
+    palavras: [
+      "posso confiar na ia",
+      "posso confiar na intelig\xEAncia artificial",
+      "posso confiar na inteligencia artificial",
+      "a ia e confiavel",
+      "a ia \xE9 confi\xE1vel",
+      "a inteligencia artificial e confiavel",
+      "a intelig\xEAncia artificial \xE9 confi\xE1vel",
+      "a ia esta sempre certa",
+      "a ia est\xE1 sempre certa",
+      "a ia da respostas certas",
+      "a ia d\xE1 respostas certas",
+      "a ia erra",
+      "a ia mente",
+      "a ia inventa coisas",
+      "a ia sempre acerta",
+      "posso confiar nas respostas da ia",
+      "a ia e 100% certa",
+      "a ia \xE9 100% certa",
+      "a ia fala a verdade",
+      "a ia sempre fala a verdade",
+      "ia e confiavel",
+      "ia \xE9 confi\xE1vel",
+      "ia d\xE1 respostas certas",
+      "ia da respostas certas",
+      "pode confiar na ia",
+      "pode confiar na intelig\xEAncia artificial",
+      "pode confiar na inteligencia artificial",
+      "confiar na ia",
+      "confiar na inteligencia artificial",
+      "confiar na intelig\xEAncia artificial",
+      "a ia e confi\xE1vel",
+      "ia confi\xE1vel"
+    ],
+    resposta: '\u{1F916}\u2753 **Posso confiar na IA? Ela d\xE1 respostas certas ou est\xE1 sempre certa?**\n\nA resposta r\xE1pida \xE9: **N\xE3o! A Intelig\xEAncia Artificial (IA) nem sempre est\xE1 certa e voc\xEA n\xE3o deve confiar 100% em tudo o que ela diz!** \u{1F9E0}\u26A0\uFE0F\n\nA IA \xE9 uma ferramenta fant\xE1stica que ajuda a responder perguntas, criar desenhos e realizar tarefas. Ela funciona como um computador super-r\xE1pido que aprendeu analisando **padr\xF5es** em bilh\xF5es de textos da internet.\n\nMas como ela n\xE3o \xE9 um ser humano e n\xE3o "pensa" de verdade, ela comete erros! Veja por que voc\xEA deve usar seu olhar de detetive da informa\xE7\xE3o \u{1F575}\uFE0F\u200D\u2642\uFE0F:\n\n\u{1F916} **1. O que \xE9 a IA?**\n\xC9 um programa de computador que aprende padr\xF5es para ajudar a gente a responder perguntas e realizar tarefas.\n\n\u{1F300} **2. Alucina\xE7\xE3o da IA (Quando ela inventa coisas!):**\n\xC0s vezes, quando a IA n\xE3o sabe a resposta, em vez de dizer "n\xE3o sei", ela **inventa uma informa\xE7\xE3o** e a apresenta como se fosse a mais pura verdade! Chamamos isso de *alucina\xE7\xE3o*.\n\n\u{1FAC5} **3. AI Sycophancy (A "Bajula\xE7\xE3o" da IA):**\nA IA tenta ser muito boazinha. Por isso, se voc\xEA fizer uma pergunta ou disser algo errado (como *"O Sol \xE9 feito de queijo, n\xE9?"*), ela pode **concordar com voc\xEA s\xF3 para te agradar**, mesmo estando errado!\n\n\u2696\uFE0F **4. Vi\xE9s (Repetindo preconceitos e ideias antigas):**\nComo a IA aprendeu lendo dados da internet, ela tem a tend\xEAncia de **repetir os mesmos padr\xF5es ou preconceitos** que existiam nas informa\xE7\xF5es com que ela aprendeu.\n\n\u{1F4C5} **5. Informa\xE7\xE3o Desatualizada:**\nA IA pode n\xE3o conhecer acontecimentos super recentes que deram no jornal hoje ou ontem, porque o aprendizado dela foi feito com dados do passado.\n\n\u{1F9E9} **6. Falta de Contexto:**\n\xC0s vezes a IA entende apenas uma partezinha da pergunta e responde de forma incorreta, por n\xE3o ter percebido o sentido completo do que voc\xEA queria saber.\n\n\u{1F60E} **7. Excesso de Confian\xE7a:**\nA IA escreve de um jeito muito bonito e seguro. Ela pode **parecer muito confiante e cheia de certeza mesmo quando est\xE1 totalmente errada**!\n\n--- \n\u{1F4A1} **Dica do Candinho:** Use a IA para ter ideias, desenhar e estudar, mas **sempre confira o que \xE9 importante em livros, sites confi\xE1veis ou com um adulto/professor de confian\xE7a**! \u{1F4D6}\u{1F50E}',
+    matchedKey: "tecnologia_ia_confiavel"
+  },
+  {
+    palavras: ["alucinacao da ia", "alucina\xE7\xE3o da ia", "o que e alucinacao da ia", "o que \xE9 alucina\xE7\xE3o da ia", "alucinacao", "alucina\xE7\xE3o", "alucina\xE7\xE3o ia", "alucinacao ia", "a ia inventa coisas"],
+    resposta: '\u{1F300} **Alucina\xE7\xE3o da IA**\n\n\xC9 quando a Intelig\xEAncia Artificial inventa uma informa\xE7\xE3o que n\xE3o existe e a apresenta como se fosse uma grande verdade! \u{1F916}\u{1F3AD}\n\nComo a IA busca padr\xF5es para formar frases, quando ela n\xE3o sabe a resposta, pode acabar "imaginando" nomes, datas e fatos falsos com muita certeza. Por isso, sempre confira as respostas!',
+    matchedKey: "glossario_alucinacao"
+  },
+  {
+    palavras: ["ai sycophancy", "sycophancy", "bajulacao da ia", "bajula\xE7\xE3o da ia", "bajulacao", "bajula\xE7\xE3o", "a ia concorda comigo", "a ia me bajula"],
+    resposta: "\u{1FAC5} **AI Sycophancy (Bajula\xE7\xE3o da IA)**\n\nOcorre quando a IA concorda com o usu\xE1rio apenas para agradar, mesmo que ele esteja errado! \u{1F91D}\u{1F605}\n\nSe voc\xEA fizer uma afirma\xE7\xE3o incorreta com muita certeza, a IA pode concordar com voc\xEA em vez de te corrigir, s\xF3 para tentar ser boazinha. Lembra: concordar nem sempre significa estar certo!",
+    matchedKey: "glossario_sycophancy"
+  },
+  {
+    palavras: ["vies da ia", "vi\xE9s da ia", "o que e vies", "o que \xE9 vi\xE9s", "o que e vies da ia", "o que \xE9 vi\xE9s da ia", "vies", "vi\xE9s", "preconceito da ia"],
+    resposta: "\u2696\uFE0F **Vi\xE9s da IA**\n\n\xC9 a tend\xEAncia da Intelig\xEAncia Artificial a repetir padr\xF5es ou preconceitos presentes nos dados da internet com os quais ela aprendeu. \u{1F4D6}\u{1F916}\n\nSe as informa\xE7\xF5es antigas contiverem ideias injustas ou preconceituosas, a IA pode acabar repetindo esses erros sem perceber.",
+    matchedKey: "glossario_vies"
+  },
+  {
+    palavras: ["informacao desatualizada", "informa\xE7\xE3o desatualizada", "ia esta desatualizada", "ia est\xE1 desatualizada", "a ia sabe de tudo hoje"],
+    resposta: '\u{1F4C5} **Informa\xE7\xE3o Desatualizada**\n\nA IA pode n\xE3o conhecer acontecimentos super recentes! O "c\xE9rebro" dela foi treinado com informa\xE7\xF5es at\xE9 uma certa data no passado, por isso novidades de hoje ou de ontem podem n\xE3o estar no conhecimento dela.',
+    matchedKey: "glossario_informacao_desatualizada"
+  },
+  {
+    palavras: ["falta de contexto", "falta de contexto na ia", "a ia nao entende o contexto", "a ia n\xE3o entende o contexto"],
+    resposta: "\u{1F9E9} **Falta de Contexto**\n\nAcontece quando a IA entende apenas uma parte da sua pergunta e responde de forma incorreta, por n\xE3o ter percebido toda a situa\xE7\xE3o ou os detalhes do que voc\xEA queria saber.",
+    matchedKey: "glossario_falta_contexto"
+  },
+  {
+    palavras: ["excesso de confianca", "excesso de confian\xE7a", "excesso de confianca da ia", "excesso de confian\xE7a da ia", "a ia fala com certeza"],
+    resposta: "\u{1F60E} **Excesso de Confian\xE7a da IA**\n\nA IA pode parecer muito segura e confiante mesmo quando est\xE1 totalmente errada! Ela escreve com um tom t\xE3o bonitinho e compenetrado que parece um especialista, mas \xE9 preciso sempre conferir os fatos.",
+    matchedKey: "glossario_excesso_confianca"
+  },
+  {
     palavras: ["inteligencia artificial", "intelig\xEAncia artificial", "o que e inteligencia artificial", "o que e intelig\xEAncia artificial", "o que e ia", "o que \xE9 ia", "o que significa ia", "conceito de ia", "ia"],
-    resposta: "\u{1F916} **Intelig\xEAncia Artificial (IA)**\n\n\xC9 um programa de computador que aprende a fazer tarefas, responder perguntas, criar desenhos, escrever textos e ajudar as pessoas.",
+    resposta: "\u{1F916} **Intelig\xEAncia Artificial (IA)**\n\n\xC9 um programa de computador que aprende padr\xF5es para ajudar a responder perguntas, criar desenhos, escrever textos e realizar tarefas.",
     matchedKey: "glossario_ia"
   },
   {
@@ -9059,7 +9127,7 @@ var CONHECIMENTO_CANDINHO = [
   },
   {
     palavras: ["glossario de ia", "gloss\xE1rio de ia", "glossario de tecnologia", "gloss\xE1rio de tecnologia", "dicionario de ia", "dicionario de tecnologia", "termos de ia", "termos de tecnologia"],
-    resposta: '\u{1F916} **Gloss\xE1rio de IA e Tecnologia do Candinho** \u{1F4A1}\n\nAprenda os termos mais importantes sobre tecnologia e Intelig\xEAncia Artificial de forma simples:\n\n\u{1F916} **Intelig\xEAncia Artificial (IA):** \xC9 um programa de computador que aprende a fazer tarefas, responder perguntas, criar desenhos, escrever textos e ajudar as pessoas.\n\n\u{1F4AC} **Prompt:** \xC9 a mensagem ou pergunta que voc\xEA escreve para a Intelig\xEAncia Artificial. Quanto mais clara for a pergunta, melhor ser\xE1 a resposta.\n\n\u2699\uFE0F **Algoritmo:** \xC9 uma sequ\xEAncia de passos ou instru\xE7\xF5es que ensina o computador a resolver um problema ou realizar uma tarefa.\n\n\u{1F9E9} **Token:** \xC9 um pequeno peda\xE7o de um texto. A IA l\xEA e escreve usando esses pedacinhos, como se fossem blocos para montar frases.\n\n\u{1F3AD} **Deepfake:** \xC9 uma imagem, v\xEDdeo ou \xE1udio criado por IA para parecer verdadeiro, mesmo sendo falso. Por isso, \xE9 importante sempre conferir se uma informa\xE7\xE3o \xE9 confi\xE1vel.\n\n\u{1F9E0} **Modelo de IA:** \xC9 o "c\xE9rebro" da Intelig\xEAncia Artificial. Ele foi treinado com muitos exemplos para aprender a conversar, responder perguntas e criar conte\xFAdos.\n\n\u{1F4DA} **Banco de Dados:** \xC9 um lugar onde muitas informa\xE7\xF5es ficam organizedas para que o computador possa encontr\xE1-las rapidamente.\n\n\u{1F310} **Internet:** \xC9 uma rede que liga computadores do mundo todo e permite acessar sites, v\xEDdeos, jogos e informa\xE7\xF5es.\n\n\u{1F50D} **Pesquisa:** \xC9 o ato de procurar informa\xE7\xF5es sobre um assunto usando livros, pessoas ou a internet.\n\n\u{1F4BB} **Programa:** \xC9 um conjunto de instru\xE7\xF5es que diz ao computador exatamente o que fazer.\n\n\u{1F4F1} **Aplicativo (App):** \xC9 um programa feito para realizar uma tarefa espec\xEDfica, como desenhar, conversar ou jogar.\n\n\u{1F6DC} **Wi-Fi:** \xC9 uma forma de conectar aparelhos \xE0 internet sem usar fios.\n\n\u{1F512} **Senha:** \xC9 um c\xF3digo secreto que protege suas contas e seus dados.\n\n\u2601\uFE0F **Nuvem (Cloud):** \xC9 um lugar na internet onde voc\xEA pode guardar arquivos para acess\xE1-los de qualquer aparelho.\n\n\u{1F9BA} **Seguran\xE7a Digital:** S\xE3o cuidados que devemos ter para usar a internet de forma segura, protegendo nossas informa\xE7\xF5es e respeitando as outras pessoas.\n\n\u{1F4A1} Me pergunte sobre qualquer um desses termos para conversarmos mais!',
+    resposta: '\u{1F916} **Gloss\xE1rio de IA e Tecnologia do Candinho** \u{1F4A1}\n\nAprenda os termos mais importantes sobre tecnologia e Intelig\xEAncia Artificial de forma simples:\n\n\u{1F916} **Intelig\xEAncia Artificial (IA):** Programa de computador que aprende padr\xF5es e ajuda a responder perguntas, criar desenhos e realizar tarefas.\n\n\u{1F300} **Alucina\xE7\xE3o da IA:** Quando a IA inventa uma informa\xE7\xE3o e a apresenta como se fosse verdadeira.\n\n\u{1FAC5} **AI Sycophancy (Bajula\xE7\xE3o):** Quando a IA concorda com o usu\xE1rio apenas para agradar, mesmo que ele esteja errado.\n\n\u2696\uFE0F **Vi\xE9s da IA:** Tend\xEAncia da IA a repetir padr\xF5es ou preconceitos presentes nos dados com que aprendeu.\n\n\u{1F4C5} **Informa\xE7\xE3o Desatualizada:** A IA pode n\xE3o conhecer acontecimentos super recentes de hoje ou ontem.\n\n\u{1F9E9} **Falta de Contexto:** A IA pode entender apenas parte da pergunta e responder de forma incorreta.\n\n\u{1F60E} **Excesso de Confian\xE7a:** A IA pode parecer muito segura e confiante mesmo quando est\xE1 errada.\n\n\u{1F4AC} **Prompt:** \xC9 a mensagem ou pergunta que voc\xEA escreve para a Intelig\xEAncia Artificial. Quanto mais clara for a pergunta, melhor ser\xE1 a resposta.\n\n\u2699\uFE0F **Algoritmo:** \xC9 uma sequ\xEAncia de passos ou instru\xE7\xF5es que ensina o computador a resolver um problema ou realizar uma tarefa.\n\n\u{1F9E9} **Token:** \xC9 um pequeno peda\xE7o de um texto. A IA l\xEA e escreve usando esses pedacinhos, como se fossem blocos para montar frases.\n\n\u{1F3AD} **Deepfake:** \xC9 uma imagem, v\xEDdeo ou \xE1udio criado por IA para parecer verdadeiro, mesmo sendo falso.\n\n\u{1F9E0} **Modelo de IA:** \xC9 o "c\xE9rebro" da Intelig\xEAncia Artificial. Ele foi treinado com muitos exemplos para aprender a conversar, responder perguntas e criar conte\xFAdos.\n\n\u{1F4DA} **Banco de Dados:** \xC9 um lugar onde muitas informa\xE7\xF5es ficam organizadas para que o computador possa encontr\xE1-las rapidamente.\n\n\u{1F310} **Internet:** \xC9 uma rede que liga computadores do mundo todo e permite acessar sites, v\xEDdeos, jogos e informa\xE7\xF5es.\n\n\u{1F9BA} **Seguran\xE7a Digital:** S\xE3o cuidados para usar a internet de forma segura, protegendo nossas informa\xE7\xF5es e respeitando as pessoas.\n\n\u{1F4A1} Me pergunte sobre qualquer um desses termos ou se a IA \xE9 confi\xE1vel para conversarmos mais!',
     matchedKey: "glossario_completo_ia"
   },
   // ===== TECNOLOGIA E MÍDIA PARA CRIANÇAS =====
@@ -11109,7 +11177,18 @@ function resolverComoMessage(normalizedMsg) {
     "saber se e",
     "saber se e verdade",
     "sei se e",
-    "sei se"
+    "sei se",
+    "confiavel",
+    "confi\xE1vel",
+    "confiar",
+    "certa",
+    "certo",
+    "ia",
+    "alucinacao",
+    "alucina\xE7\xE3o",
+    "sycophancy",
+    "vies",
+    "vi\xE9s"
   ];
   if (bypassKeywords.some((keyword) => normalizedMsg.includes(keyword))) {
     return null;
