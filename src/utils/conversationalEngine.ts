@@ -1535,93 +1535,355 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
       'O **folclore** é a reunião de todas as tradições, histórias, lendas, danças, festas, brinquedos e cantigas de um povo transmitidas de geração em geração! É a alma da nossa cultura e imaginação popular brasileira! 🇧🇷✨\n\n' +
       'A palavra "Folclore" vem da união de duas palavras em inglês: *Folk* (povo) e *Lore* (sabedoria), ou seja, é o **"Saber do Povo"**!\n\n' +
       '🍃 **As Principais Lendas do Nosso Folclore:**\n\n' +
-      '🔴 **Saci-Pererê:** Um menino negro de uma perna só, que usa um gorro vermelho mágico e adora pregar peças, fazer travessuras e rodopiar em redemoinhos nas matas!\n\n' +
-      '🔥 **Curupira:** O protetor das florestas e dos animais! Ele tem cabelos vermelhos como fogo e os pés virados para trás, enganando os caçadores com pegadas no sentido contrário.\n\n' +
-      '🧜‍♀️ **Iara (A Mãe das Águas):** Uma sereia linda que vive nos rios da Amazônia. Com o seu canto suave e hipnotizante, ela encanta as pessoas e protege as águas.\n\n' +
-      '🐎 **Mula sem Cabeça:** Um ser misterioso em formato de mula que no lugar da cabeça solta chamas brilhantes de fogo! Diz a lenda que ela corre pelas noites assustando quem anda sozinho.\n\n' +
-      '🐬 **Boto Cor-de-Rosa:** Um boto mágico dos rios da Amazônia que se transforma em um rapaz simpático e elegante durante as noites de festa junina.\n\n' +
-      '🐍 **Boitatá:** Uma grande cobra de fogo com muitos olhos brilhantes que protege os campos e florestas contra queimadas e destruição.\n\n' +
-      '🐊 **Cuca:** Uma jacaré velha e muito sabida que vive em uma caverna preparando poções mágicas, famosa por assustar quem não quer dormir cedo nas cantigas de embalar!\n\n' +
-      '🌟 **Outras Manifestações do Folclore:**\n' +
-      'Além das lendas, o folclore inclui brincadeiras (como pular corda e pião), festas (como Bumba Meu Boi e Festa Junina), provérbios, adivinhas e comidas típicas (como canjica e pamonha)!\n\n' +
+      '🐺 **Lobisomem:** Uma pessoa que se transforma em uma criatura parecida com um lobo em noites de lua cheia.\n\n' +
+      '👻 **Corpo-Seco:** Figura misteriosa do interior, que teria sido uma pessoa má não aceita pela terra.\n\n' +
+      '🔥 **Boitatá:** Enorme serpente de fogo que protege as matas e campos contra queimadas.\n\n' +
+      '🌊 **Iara:** Personagem das águas dos rios amazônicos com lindo canto e longos cabelos.\n\n' +
+      '🌸 **Vitória-Régia:** A lenda da jovem Naiá que sonhava em se transformar em estrela e virou uma linda flor aquática.\n\n' +
+      '🐬 **Boto:** Durante a noite, o boto-cor-de-rosa se transforma em um belo rapaz de branco nas festas.\n\n' +
+      '🎃 **Cuca:** Bruxa com aparência de jacaré famosa nas histórias populares e cantigas.\n\n' +
+      '🧢 **Saci-Pererê:** Menino negro de uma perna só e gorro vermelho, famoso por suas travessuras e redemoinhos.\n\n' +
+      '🌿 **Curupira:** Protetor das florestas de cabelos vermelhos e pés virados para trás.\n\n' +
+      '🐾 **Caipora:** Protetora dos animais e das matas montada em um porco-do-mato.\n\n' +
+      '🌊 **Caboclo d\'Água:** Ser forte dos rios que protege as águas e alerta para os perigos das correntezas.\n\n' +
+      '🐍 **Cobra Grande (Boiúna):** Gigantesca serpente que habita os rios da Amazônia.\n\n' +
+      '🌳 **Mapinguari:** Ser gigantesco e forte coberto de pelos que protege a floresta amazônica.\n\n' +
+      '🦜 **Matinta Perera:** Personagem amazônica que pode surgir como mulher ou pássaro com um assobio misterioso.\n\n' +
+      '🧚 **Mãe-d\'Água:** Espírito encantado dos rios que reforça o respeito às águas.\n\n' +
+      '🌙 **Negrinho do Pastoreio:** Lenda do Sul sobre um menino protetor dos objetos perdidos.\n\n' +
+      '🌺 **A lenda do Guaraná:** A história indígena poeticamente ligada à origem do guaraná.\n\n' +
       '💡 **Curiosidade:** No Brasil, comemoramos o **Dia do Folclore** no dia **22 de Agosto**!\n\n' +
-      '✨ Qual é a sua lenda folclórica favorita? Que tal fazermos um desenho lindo sobre ela hoje? 🎨',
+      '✨ Me pergunte sobre qualquer uma das lendas para saber todos os detalhes! 🎨',
     matchedKey: 'folclore_brasileiro'
   },
   {
-    palavras: ['saci', 'saci perere', 'saci pererê', 'lenda do saci', 'quem e o saci', 'quem é o saci'],
-    resposta: '🔴 **Saci-Pererê!**\n\n' +
-      'O Saci é uma das figuras mais conhecidas e brincalhonas do folclore brasileiro! 🇧🇷✨\n\n' +
-      ' Ele é um menino negro de uma perna só, que usa um gorro vermelho mágico na cabeça e anda com um cachimbo na boca. O segredo dos poderes do Saci está justamente no seu gorro vermelho!\n\n' +
-      '🌪️ **Suas Travessuras:**\n' +
-      'Ele adora aprontar nas fazendas e matas: esconde os objetos das pessoas, trança a crina dos cavalos, azeda o leite e aparece dentro de redemoinhos de vento e poeira!\n\n' +
-      '💡 **Curiosidade:** Para capturar um Saci, diz a lenda que você precisa jogar uma peneira dentro de um redemoinho! Depois de pegá-lo, você deve tirar o gorro dele e guardá-lo dentro de uma garrafa de vidro bem fechada com uma rolha! 🍾\n\n' +
-      '🎨 Vamos desenhar um Saci rodopiando no vento com a sua carapuça vermelha?',
-    matchedKey: 'lenda_saci'
+    palavras: [
+      'lobisomem', 'lenda do lobisomem', 'me fale do lobisomem', 'me fala do lobisomem',
+      'o que e o lobisomem', 'o que é o lobisomem', 'quem e o lobisomem', 'quem é o lobisomem',
+      'fale sobre o lobisomem', 'fale do lobisomem', 'historia do lobisomem', 'história do lobisomem'
+    ],
+    resposta: '🐺 **Lobisomem**\n\n' +
+      'O Lobisomem é um dos seres mais conhecidos do folclore brasileiro. Segundo algumas versões da lenda, uma pessoa pode se transformar em uma criatura parecida com um lobo durante determinadas noites, especialmente nas noites de lua cheia. Em algumas regiões, acredita-se que a transformação esteja relacionada a uma maldição ou a uma condição transmitida pela família.\n\n' +
+      'A história do Lobisomem chegou ao Brasil principalmente por meio das tradições europeias, mas ganhou características próprias nas diferentes regiões brasileiras. As histórias costumam falar de alguém que durante o dia parece uma pessoa comum, mas que à noite se transforma e percorre estradas e lugares afastados.',
+    matchedKey: 'lenda_lobisomem'
   },
   {
-    palavras: ['curupira', 'lenda do curupira', 'quem e o curupira', 'quem é o curupira'],
-    resposta: '🔥 **Curupira — O Protetor das Matas!**\n\n' +
-      'O Curupira é um ser mítico das florestas brasileiras que defende as árvores e os animais selvagens contra caçadores malvados e destruidores da natureza! 🌳🐅\n\n' +
-      '🧑‍🦰 **Como ele é:**\n' +
-      'Ele é um anãozinho forte de cabelos vermelhos como fogo e tem uma característica mágica única: seus pés são virados para trás!\n\n' +
-      '🐾 **O Truque das Pegadas:**\n' +
-      'Quando ele anda para a frente, as pegadas no chão apontam para trás. Assim, quem tenta segui-lo ou caçá-lo fica completamente perdido e anda na direção errada na floresta!\n\n' +
-      '⚡ Ele também dá assobios agudos e cria ilusões nas matas para assustar quem tenta machucar os animais.\n\n' +
-      '💚 O Curupira nos ensina a amar, respeitar e proteger a natureza!',
-    matchedKey: 'lenda_curupira'
+    palavras: [
+      'corpo seco', 'corpo-seco', 'lenda do corpo seco', 'lenda do corpo-seco',
+      'me fale do corpo seco', 'me fala do corpo seco', 'me fale do corpo-seco', 'me fala do corpo-seco',
+      'o que e o corpo seco', 'o que é o corpo seco', 'quem e o corpo seco', 'quem é o corpo seco',
+      'fale sobre o corpo seco', 'fale do corpo seco'
+    ],
+    resposta: '👻 **Corpo-Seco**\n\n' +
+      'O Corpo-Seco é uma figura assustadora presente principalmente em histórias do interior do Brasil. Diz a lenda que era uma pessoa muito má que, depois de morrer, não foi aceita nem pela terra nem pelos espíritos. Por isso, seu corpo teria ficado extremamente magro e seco.\n\n' +
+      'Em algumas versões, o Corpo-Seco aparece preso a árvores ou vagando durante a noite. A história funciona também como uma narrativa de ensinamento: quem pratica maldades e não respeita os outros pode acabar sendo lembrado de maneira negativa.',
+    matchedKey: 'lenda_corpo_seco'
   },
   {
-    palavras: ['iara', 'sereia iara', 'lenda da iara', 'quem e a iara', 'quem é a iara'],
-    resposta: '🧜‍♀️ **Iara — A Mãe das Águas!**\n\n' +
-      'A Iara é a famosa sereia do folclore brasileiro que vive nos rios da Amazônia! 🌊✨\n\n' +
-      '👑 **Sua História:**\n' +
-      'Ela é uma linda mulher de cabelos negros compridos, olhos brilhantes e cauda de peixe colorida. Iara costuma ficar sentada nas pedras à beira dos rios, penteando seus cabelos com um pente de ouro e admirando seu reflexo na água.\n\n' +
-      '🎶 **O Canto Hipnotizante:**\n' +
-      'Ela canta uma melodia doce e irresistível que ecoa pelos rios. Diz a lenda que os pescadores que ouvem seu canto ficam encantados e pulam nas águas profundas para viver com ela no seu palácio aquático!\n\n' +
-      '💧 A lenda da Iara representa a força, a beleza e os mistérios dos rios e da floresta amazônica!',
-    matchedKey: 'lenda_iara'
-  },
-  {
-    palavras: ['mula sem cabeca', 'mula sem cabeça', 'lenda da mula sem cabeca', 'lenda da mula sem cabeça'],
-    resposta: '🐎🔥 **Mula sem Cabeça!**\n\n' +
-      'A Mula sem Cabeça é uma das criaturas mais assustadoras e misteriosas do folclore do interior do Brasil! 🇧🇷✨\n\n' +
-      '🔥 **Como ela é:**\n' +
-      'Trata-se de uma grande mula de cor marrom ou preta que, no lugar da cabeça, solta labaredas brilhantes de fogo! Ela traz rédeas de ferro e ferraduras prateadas que fazem muito barulho ao galopar pelas noites.\n\n' +
-      '🌕 **A Lenda:**\n' +
-      'Diz a tradição que ela aparece nas madrugadas de quinta para sexta-feira nas vilas e matas, correndo em alta velocidade e relinchando tão alto que se ouve de muito longe.\n\n' +
-      '💡 Para quebrar o feitiço da Mula sem Cabeça, diz a lenda que alguém corajoso precisa tirar o freio de ferro da boca de fogo dela ou picá-la levemente com uma alfinete de fralda para tirar uma gota de sangue! 💉',
-    matchedKey: 'lenda_mula_sem_cabeca'
-  },
-  {
-    palavras: ['cuca', 'lenda da cuca', 'quem e a cuca', 'quem é a cuca'],
-    resposta: '🐊 **Cuca!**\n\n' +
-      'A Cuca é uma das personagens mais populares das lendas do Brasil, imortalizada também nas histórias do *Sítio do Picapau Amarelo* por Monteiro Lobato! 🏰✨\n\n' +
-      '🧙‍♀️ **Como ela é:**\n' +
-      'Ela tem o corpo de uma crocodilo/jacaré velha, cabelos amarelos e garras afiadas. Mora em uma caverna escura no meio da mata, onde cozinha poções mágicas em um caldeirão enorme!\n\n' +
-      '💤 **A Cantiga de Ninar:**\n' +
-      'A Cuca ficou famosa pela famosa cantiga infantil: *"Nana neném que a Cuca vem pegar, papai foi para a roça e a mamãe foi trabalhar..."*\n\n' +
-      '💡 **Curiosidade:** Diz a lenda que a Cuca dorme apenas uma noite a cada sete anos! Por isso ela passa tanto tempo acordada preparando suas feitiçarias!',
-    matchedKey: 'lenda_cuca'
-  },
-  {
-    palavras: ['boitata', 'boitatá', 'lenda do boitata', 'lenda do boitatá'],
-    resposta: '🐍🔥 **Boitatá — A Cobra de Fogo!**\n\n' +
-      'O Boitatá é uma cobra gigante feita inteiramente de fogo reluzente que protege os campos e florestas contra as pessoas que provocam queimadas! 🌳🔥\n\n' +
-      '👁️ **Seus Olhos Brilhantes:**\n' +
-      'Ele possui olhos enormes e flamejantes que parecem faróis na escuridão. O Boitatá enxerga perfeitamente no escuro da noite e se transforma em um tora de madeira em chamas para queimar quem destrói a mata.\n\n' +
-      '🌊 A palavra "Boitatá" vem da língua indígena Tupi (*Mba\'e-tatá*), que significa "coisa de fogo" ou "cobra de fogo"!',
+    palavras: [
+      'boitata', 'boitatá', 'lenda do boitata', 'lenda do boitatá',
+      'me fale do boitata', 'me fala do boitata', 'me fale do boitatá', 'me fala do boitatá',
+      'o que e o boitata', 'o que é o boitatá', 'quem e o boitata', 'quem é o boitatá',
+      'fale sobre o boitata', 'cobra de fogo'
+    ],
+    resposta: '🔥 **Boitatá**\n\n' +
+      'O Boitatá é uma enorme serpente de fogo que protege as matas, os campos e os animais. Seu nome vem de línguas indígenas e costuma ser relacionado à ideia de "cobra de fogo".\n\n' +
+      'Uma das versões conta que o Boitatá surgiu depois de uma grande enchente. A criatura teria se alimentado dos olhos dos animais mortos e, por isso, seu corpo passou a brilhante intensamente.\n\n' +
+      'O Boitatá também aparece como guardião da natureza, assustando pessoas que colocam fogo na mata ou destroem a floresta.',
     matchedKey: 'lenda_boitata'
   },
   {
-    palavras: ['boto cor de rosa', 'boto cor-de-rosa', 'lenda do boto', 'o boto'],
-    resposta: '🐬🌸 **Boto Cor-de-Rosa!**\n\n' +
-      'O Boto Cor-de-Rosa é um animal real e encantador dos rios da Amazônia que virou uma das lendas mais charmosas do nosso folclore! 🌊✨\n\n' +
-      '🎩 **A Transformação Mágica:**\n' +
-      'Diz a lenda que nas noites de Festa Junina, o Boto sai das águas do rio e se transforma em um rapaz humano muito bonito, forte e elegante, vestido de roupas brancas e com um chapéu na cabeça.\n\n' +
-      '🧢 **Por que o chapéu?**\n' +
-      'O chapéu serve para esconder as narinas do boto (o buraco pelo qual ele respira), que ficam no topo da sua cabeça! Ele dança com as moças nas festas e volta para o rio antes do amanhecer, voltando a ser um boto cor-de-rosa fofo nas águas da Amazônia! 🐬',
+    palavras: [
+      'iara', 'sereia iara', 'lenda da iara', 'me fale da iara', 'me fala da iara',
+      'o que e a iara', 'o que é a iara', 'quem e a iara', 'quem é a iara',
+      'fale sobre a iara', 'fale da iara'
+    ],
+    resposta: '🌊 **Iara**\n\n' +
+      'Iara é uma personagem das águas, geralmente representada como uma mulher muito bonita que vive nos rios da Amazônia. Ela possui longos cabelos e costuma cantar para atrair quem passa perto do rio.\n\n' +
+      'Em algumas versões, Iara era uma jovem indígena que acabou sendo transformada em criatura das águas. Sua história recebeu diferentes influências ao longo do tempo.\n\n' +
+      'A lenda também pode ser interpretada como um alerta: os rios são lugares belos, mas também podem ser perigosos, especialmente para quem se aproxima sem cuidado.',
+    matchedKey: 'lenda_iara'
+  },
+  {
+    palavras: [
+      'vitoria regia', 'vitória-régia', 'vitoria-regia', 'vitória régia',
+      'lenda da vitoria regia', 'lenda da vitória-régia', 'lenda da vitória régia',
+      'me fale da lenda da vitoria regia', 'me fale da lenda da victoria regia', 'me fale da vitoria regia', 'me fala da lenda da vitoria regia',
+      'o que e a vitoria regia', 'o que é a vitória-régia', 'naia', 'naiá', 'fale sobre a vitoria regia'
+    ],
+    resposta: '🌸 **Vitória-Régia**\n\n' +
+      'A lenda da Vitória-Régia conta a história de uma jovem indígena chamada Naiá, que sonhava em se transformar em uma estrela.\n\n' +
+      'Todas as noites, ela observava a Lua e acreditava que ela escolhia algumas jovens para se tornarem estrelas. Certa noite, ao ver o reflexo da Lua nas águas de um rio, Naiá tentou alcançá-lo e acabou desaparecendo.\n\n' +
+      'A Lua teria ficado comovida e transformado Naiá em uma enorme flor aquática: a vitória-régia. Suas grandes folhas passaram a flutuar sobre as águas, como uma homenagem à jovem.',
+    matchedKey: 'lenda_vitoria_regia'
+  },
+  {
+    palavras: [
+      'boto', 'boto cor de rosa', 'boto cor-de-rosa', 'lenda do boto',
+      'me fale do boto', 'me fala do boto', 'o boto', 'o que e o boto', 'o que é o boto',
+      'quem e o boto', 'quem é o boto', 'fale sobre o boto'
+    ],
+    resposta: '🐬 **Boto**\n\n' +
+      'O Boto é uma das lendas mais conhecidas da região amazônica. Segundo a tradição, durante a noite, especialmente em festas, o boto-cor-de-rosa pode se transformar em um belo rapaz vestido de branco.\n\n' +
+      'Ele aparece nas festas, dança com as pessoas e depois desaparece misteriosamente. Quando chega a madrugada, retorna para o rio e recupera sua forma de boto.\n\n' +
+      'A lenda ajudou a explicar acontecimentos misteriosos nas comunidades ribeirinhas e acabou se tornando uma das histórias mais famosas da cultura amazônica.',
     matchedKey: 'lenda_boto'
+  },
+  {
+    palavras: [
+      'cuca', 'lenda da cuca', 'quem e a cuca', 'quem é a cuca',
+      'me fale da cuca', 'me fala da cuca', 'o que e a cuca', 'o que é a cuca', 'fale sobre a cuca'
+    ],
+    resposta: '🎃 **Cuca**\n\n' +
+      'A Cuca é uma criatura muito conhecida pelas histórias populares brasileiras. Geralmente aparece como uma espécie de bruxa com aparência de jacaré, embora existam várias representações diferentes.\n\n' +
+      'A personagem ficou famosa principalmente por meio das histórias de Monteiro Lobato, mas sua origem está relacionada a antigas tradições europeias que chegaram ao Brasil.\n\n' +
+      'Durante muito tempo, adultos contavam histórias da Cuca para assustar crianças que não queriam dormir ou que desobedeciam. Assim, ela acabou se tornando uma espécie de personagem do imaginário infantil brasileiro.',
+    matchedKey: 'lenda_cuca'
+  },
+  {
+    palavras: [
+      'saci', 'saci perere', 'saci pererê', 'saci-pererê', 'lenda do saci',
+      'me fale do saci', 'me fala do saci', 'o que e o saci', 'o que é o saci',
+      'quem e o saci', 'quem é o saci', 'fale sobre o saci', 'fale do saci'
+    ],
+    resposta: '🧢 **Saci-Pererê**\n\n' +
+      'O Saci é um dos personagens mais famosos do folclore brasileiro. Ele é representado como um menino negro, de uma perna só, que usa um gorro vermelho e costuma carregar um cachimbo.\n\n' +
+      'Conhecido por suas travessuras, o Saci pode esconder objetos, dar nós em crinas de cavalos, apagar fogueiras e provocar pequenos problemas.\n\n' +
+      'Sua história reúne diferentes influências culturais. A figura ganhou características indígenas, africanas e europeias ao longo da formação do folclore brasileiro.\n\n' +
+      'Uma de suas marcas é o redemoinho de vento. Segundo a lenda, quando aparece um redemoinho, pode ser sinal de que o Saci está por perto.',
+    matchedKey: 'lenda_saci'
+  },
+  {
+    palavras: [
+      'curupira', 'lenda do curupira', 'me fale do curupira', 'me fala do curupira',
+      'o que e o curupira', 'o que é o curupira', 'quem e o curupira', 'quem é o curupira',
+      'fale sobre o curupira', 'fale do curupira'
+    ],
+    resposta: '🌿 **Curupira**\n\n' +
+      'O Curupira é um dos grandes protetores das florestas brasileiras. É geralmente representado como um menino ou jovem de cabelos vermelhos e pés virados para trás.\n\n' +
+      'Seus pés têm uma função especial: ao caminhar, deixam pegadas que apontam para a direção errada. Assim, caçadores e pessoas que entram na floresta para destruir a natureza podem acabar perdidos.\n\n' +
+      'O Curupira representa uma ideia muito importante presente em diversas tradições indígenas: a floresta possui forças e seres que precisam ser respeitados.',
+    matchedKey: 'lenda_curupira'
+  },
+  {
+    palavras: [
+      'caipora', 'lenda da caipora', 'me fale da caipora', 'me fala da caipora',
+      'o que e a caipora', 'o que é a caipora', 'quem e a caipora', 'quem é a caipora',
+      'fale sobre a caipora', 'fale da caipora'
+    ],
+    resposta: '🐾 **Caipora**\n\n' +
+      'A Caipora é outro ser ligado à proteção das matas. Em muitas versões, aparece como uma figura indígena pequena, que anda pela floresta e protege os animais.\n\n' +
+      'Ela pode enganar caçadores, esconder os animais e provocar aqueles que entram na mata apenas para matar ou destruir.\n\n' +
+      'Em algumas histórias, a Caipora aparece montada em um porco-do-mato e produz sons para confundir quem está caçando.',
+    matchedKey: 'lenda_caipora'
+  },
+  {
+    palavras: [
+      'caboclo d agua', 'caboclo d\'agua', 'caboclo dagua', 'caboclo de agua',
+      'lenda do caboclo d agua', 'lenda do caboclo dagua', 'me fale do caboclo d agua',
+      'me fala do caboclo d agua', 'me fale do caboclo dagua', 'o que e o caboclo d agua',
+      'quem e o caboclo d agua', 'fale sobre o caboclo d agua'
+    ],
+    resposta: '🌊 **Caboclo d\'Água**\n\n' +
+      'O Caboclo d\'Água é uma criatura das águas presente principalmente em histórias de comunidades ribeirinhas. É descrito de diferentes maneiras, mas geralmente como um ser forte e misterioso que vive nos rios.\n\n' +
+      'Segundo algumas histórias, ele pode virar barcos, assustar pescadores e proteger determinados lugares do rio.\n\n' +
+      'A lenda também pode ser entendida como uma maneira de explicar os perigos dos rios, como correntezas fortes, redemoinhos e mudanças repentinas nas águas.',
+    matchedKey: 'lenda_caboclo_dagua'
+  },
+  {
+    palavras: [
+      'cobra grande', 'lenda da cobra grande', 'me fale da cobra grande', 'me fala da cobra grande',
+      'o que e a cobra grande', 'o que é a cobra grande', 'boiuna', 'boiuuna', 'boiúna',
+      'lenda da boiuna', 'fale sobre a cobra grande'
+    ],
+    resposta: '🐍 **Cobra Grande**\n\n' +
+      'A Cobra Grande, também chamada de Boiúna em algumas tradições amazônicas, é uma gigantesca serpente que habitaria rios e igarapés.\n\n' +
+      'Algumas histórias dizem que ela pode ser tão grande que parece uma ilha ou uma embarcação quando está sobre a água. Também existem narrativas nas quais seus olhos brilham durante a noite.\n\n' +
+      'A Cobra Grande representa a força e o mistério dos grandes rios amazônicos.',
+    matchedKey: 'lenda_cobra_grande'
+  },
+  {
+    palavras: [
+      'mapinguari', 'lenda do mapinguari', 'me fale do mapinguari', 'me fala do mapinguari',
+      'o que e o mapinguari', 'o que é o mapinguari', 'quem e o mapinguari', 'quem é o mapinguari',
+      'fale sobre o mapinguari', 'fale do mapinguari'
+    ],
+    resposta: '🌳 **Mapinguari**\n\n' +
+      'O Mapinguari é um ser gigantesco associado às florestas da Amazônia. Algumas histórias o descrevem com corpo coberto de pelos, grande força e aparência assustadora.\n\n' +
+      'Diz-se que ele protege a floresta e pode perseguir caçadores que matam animais sem necessidade ou destroem a natureza.\n\n' +
+      'Existem muitas versões da história, e algumas misturam elementos indígenas com narrativas populares mais recentes.',
+    matchedKey: 'lenda_mapinguari'
+  },
+  {
+    palavras: [
+      'matinta perera', 'matinta pereira', 'lenda da matinta perera', 'me fale da matinta perera',
+      'me fala da matinta perera', 'o que e a matinta perera', 'quem e a matinta perera',
+      'fale sobre a matinta perera'
+    ],
+    resposta: '🦜 **Matinta Perera**\n\n' +
+      'A Matinta Perera é uma personagem muito conhecida na região amazônica. À noite, ela pode aparecer como uma mulher ou como uma criatura semelhante a um pássaro misterioso.\n\n' +
+      'Ela costuma emitir um assobio forte e estranho. Quando alguém promete dar-lhe alguma coisa, como comida ou outro presente, o assobio desaparece.\n\n' +
+      'No dia seguinte, a pessoa que fez a promessa precisa cumprir o combinado.',
+    matchedKey: 'lenda_matinta_perera'
+  },
+  {
+    palavras: [
+      'mae d agua', 'mãe-d\'água', 'mae dagua', 'mãe d\'água', 'lenda da mae d agua',
+      'lenda da mãe-d\'água', 'me fale da mae d agua', 'me fala da mae d agua',
+      'me fale da mãe d\'água', 'o que e a mae d agua', 'quem e a mae d agua',
+      'fale sobre a mae d agua'
+    ],
+    resposta: '🧚 **Mãe-d\'Água**\n\n' +
+      'A Mãe-d\'Água aparece em diferentes tradições brasileiras como um espírito ou ser encantado relacionado aos rios.\n\n' +
+      'Em algumas versões, ela é parecida com uma sereia. Em outras, possui características próprias das tradições indígenas e ribeirinhas.\n\n' +
+      'Sua presença reforça uma ideia recorrente nas lendas brasileiras: a água não é apenas um recurso da natureza, mas um espaço cheio de vida, mistério e histórias.',
+    matchedKey: 'lenda_mae_dagua'
+  },
+  {
+    palavras: [
+      'negrinho do pastoreio', 'lenda do negrinho do pastoreio', 'me fale do negrinho do pastoreio',
+      'me fala do negrinho do pastoreio', 'o que e o negrinho do pastoreio', 'quem e o negrinho do pastoreio',
+      'fale sobre o negrinho do pastoreio'
+    ],
+    resposta: '🌙 **Negrinho do Pastoreio**\n\n' +
+      'O Negrinho do Pastoreio é uma lenda tradicional do Sul do Brasil. A história conta que um menino escravizado teria sido castigado cruelmente depois de perder alguns cavalos.\n\n' +
+      'Segundo a tradição, ele teria sido encontrado posteriormente junto aos cavalos, protegido pela Virgem Maria. Depois disso, passou a ser considerado uma figura capaz de ajudar pessoas a encontrar objetos perdidos.\n\n' +
+      'É uma lenda particularmente importante porque também preserva a memória da violência da escravidão e da esperança de proteção e justiça.',
+    matchedKey: 'lenda_negrinho_do_pastoreio'
+  },
+  {
+    palavras: [
+      'lenda do guarana', 'lenda do guaraná', 'me fale da lenda do guarana', 'me fala da lenda do guarana',
+      'me fale da lenda do guaraná', 'guarana', 'guaraná', 'origem do guarana',
+      'historia do guarana', 'história do guaraná', 'fale sobre a lenda do guarana'
+    ],
+    resposta: '🌺 **A lenda do Guaraná**\n\n' +
+      'Uma tradição indígena conta que uma criança muito querida por sua comunidade morreu depois de ser atacada por uma serpente.\n\n' +
+      'Comovida, a mãe plantou os olhos da criança. Deles nasceu uma planta cujas sementes lembravam pequenos olhos: o guaraná.\n\n' +
+      'A narrativa explica poeticamente a origem de uma planta muito importante para diferentes povos da Amazônia.',
+    matchedKey: 'lenda_do_guarana'
+  },
+  {
+    palavras: [
+      'mula sem cabeca', 'mula sem cabeça', 'lenda da mula sem cabeca', 'lenda da mula sem cabeça',
+      'me fale da mula sem cabeca', 'me fale da mula sem cabeça', 'me fala da mula sem cabeca',
+      'o que e a mula sem cabeca', 'quem e a mula sem cabeca'
+    ],
+    resposta: '🐎🔥 **Mula sem Cabeça**\n\n' +
+      'A Mula sem Cabeça é uma das criaturas mais conhecidas do folclore brasileiro. Trata-se de uma grande mula que, no lugar da cabeça, solta labaredas brilhantes de fogo e galopa pelas noites de quinta para sexta-feira soltando um relincho assustador.',
+    matchedKey: 'lenda_mula_sem_cabeca'
+  },
+  // ===== NOVOS PERSONAGENS FOLCLÓRICOS PARA INSPIRAÇÃO =====
+  {
+    palavras: ['araci', 'guardia das sementes', 'guardiã das sementes', 'araci a guardia das sementes', 'araci a guardiã das sementes'],
+    resposta: '🌱 **Araci, a Guardiã das Sementes**\n*Feminino | Norte | Amazônia*\n\n' +
+      'Araci é uma jovem encantada que protege sementes e árvores da floresta. Carrega uma pequena bolsa feita de fibras naturais onde guarda sementes de espécies que estão desaparecendo.\n\n' +
+      'Quando alguém destrói a floresta sem necessidade, Araci faz surgir raízes no caminho e espalha sementes pelo chão. Quando percebe alguém cuidando da mata, ajuda as plantas a crescerem.\n\n' +
+      '✨ **Poder:** Fazer sementes germinarem rapidamente.\n' +
+      '🌍 **Elemento:** Terra e floresta.\n' +
+      '🐾 **Animal companheiro:** Cutia.\n' +
+      '💚 **Lição:** Proteger a biodiversidade.',
+    matchedKey: 'lenda_araci'
+  },
+  {
+    palavras: ['ubirata', 'ubiratã', 'guardiao dos rios', 'guardião dos rios', 'ubirata o guardiao dos rios', 'ubiratã o guardião dos rios'],
+    resposta: '🐟 **Ubiratã, o Guardião dos Rios**\n*Masculino | Norte | Amazônia*\n\n' +
+      'Ubiratã conhece todos os rios, igarapés e caminhos da floresta. Dizem que consegue ouvir a água conversando com as árvores.\n\n' +
+      'Ele aparece para pessoas que estão perdidas e mostra o caminho de volta, mas pode confundir aqueles que poluem os rios.\n\n' +
+      '✨ **Poder:** Conversar com os rios e perceber quando a água está sendo contaminada.\n' +
+      '🌊 **Elemento:** Água.\n' +
+      '🐾 **Animal companheiro:** Ariranha.\n' +
+      '💚 **Lição:** Cuidar dos rios.',
+    matchedKey: 'lenda_ubirata'
+  },
+  {
+    palavras: ['jaciara', 'menina da lua', 'jaciara a menina da lua'],
+    resposta: '🌙 **Jaciara, a Menina da Lua**\n*Feminino | Centro-Oeste | Cerrado*\n\n' +
+      'Jaciara aparece nas noites de lua cheia caminhando pelo Cerrado. Seu cabelo parece feito de capim dourado e pequenas flores nascem por onde passa.\n\n' +
+      'Ela conhece plantas medicinais e ajuda animais durante períodos de seca. Quando a primeira chuva chega, dança entre as árvores e faz florescer o campo.\n\n' +
+      '✨ **Poder:** Despertar plantas durante a época das chuvas.\n' +
+      '🌕 **Elemento:** Lua e água.\n' +
+      '🐾 **Animal companheiro:** Lobo-guará.\n' +
+      '💚 **Lição:** Respeitar os ciclos da natureza.',
+    matchedKey: 'lenda_jaciara'
+  },
+  {
+    palavras: ['guaraci', 'menino do vento', 'guaraci o menino do vento'],
+    resposta: '🍃 **Guaraci, o Menino do Vento**\n*Masculino | Nordeste | Caatinga*\n\n' +
+      'Guaraci é um menino encantado que viaja pelos sertões seguindo o vento. Ele consegue sentir onde existe água escondida sob a terra.\n\n' +
+      'Quando uma comunidade está sofrendo com a seca, Guaraci conduz as pessoas até lugares onde podem encontrar água.\n\n' +
+      '✨ **Poder:** Conversar com o vento e encontrar água subterrânea.\n' +
+      '💨 **Elemento:** Vento.\n' +
+      '🕊️ **Animal companheiro:** Asa-branca.\n' +
+      '💚 **Lição:** Valorizar a água e conhecer o ambiente.',
+    matchedKey: 'lenda_guaraci'
+  },
+  {
+    palavras: ['ybira', 'guardia da mata atlantica', 'guardiã da mata atlântica', 'ybira a guardia da mata atlantica', 'ybira a guardiã da mata atlântica'],
+    resposta: '🌳 **Ybira, a Guardiã da Mata Atlântica**\n*Feminino | Sudeste/Sul | Mata Atlântica*\n\n' +
+      'Ybira vive entre árvores muito antigas. Seu corpo muda de aparência conforme a estação: às vezes parece coberto de folhas, outras vezes de flores.\n\n' +
+      'Ela protege árvores centenárias e pode fazer uma pessoa ouvir as histórias que uma floresta guarda.\n\n' +
+      '✨ **Poder:** Ouvir as memórias das árvores.\n' +
+      '🌿 **Elemento:** Árvores.\n' +
+      '🐒 **Animal companheiro:** Muriqui.\n' +
+      '💚 **Lição:** Preservar a Mata Atlântica e sua biodiversidade.',
+    matchedKey: 'lenda_ybira'
+  },
+  {
+    palavras: ['dandara', 'dandara das estrelas'],
+    resposta: '✨ **Dandara das Estrelas**\n*Feminino | Nordeste | Bahia*\n\n' +
+      'Dandara aparece durante as noites de festa e conhece histórias que foram esquecidas pelas pessoas.\n\n' +
+      'Ela carrega um pequeno tambor que, quando tocado, faz surgir imagens do passado. Assim, crianças podem conhecer histórias de pessoas que lutaram pela liberdade.\n\n' +
+      '✨ **Poder:** Despertar memórias esquecidas.\n' +
+      '🥁 **Objeto mágico:** Tambor.\n' +
+      '🐦 **Animal companheiro:** Beija-flor.\n' +
+      '❤️ **Tema:** Memória, resistência e liberdade.',
+    matchedKey: 'lenda_dandara'
+  },
+  {
+    palavras: ['zumbi do vento'],
+    resposta: '🌪️ **Zumbi do Vento**\n*Masculino | Nordeste | Pernambuco/Alagoas*\n\n' +
+      'Zumbi do Vento é um personagem fantástico inspirado na ideia de liberdade. Ele nunca fica parado.\n\n' +
+      'Viaja pelos caminhos do Nordeste e aparece quando alguém está sendo injustiçado. Seu corpo se transforma em vento e ele consegue atravessar lugares impossíveis.\n\n' +
+      '✨ **Poder:** Transformar-se em vento.\n' +
+      '🪵 **Objeto:** Bastão de madeira.\n' +
+      '🦅 **Animal companheiro:** Gavião.\n' +
+      '❤️ **Tema:** Liberdade e resistência.\n\n' +
+      '*(Nota: Trata-se de um personagem fantástico inspirado na ideia de liberdade, distinto da figura histórica de Zumbi dos Palmares).*',
+    matchedKey: 'lenda_zumbi_vento'
+  },
+  {
+    palavras: ['mae kalunga', 'mãe kalunga'],
+    resposta: '🌊 **Mãe Kalunga**\n*Feminino | Centro-Oeste | Goiás*\n\n' +
+      'Mãe Kalunga é uma guardiã das águas e das histórias de uma comunidade. Ela aparece perto dos rios ao anoitecer e carrega um colar formado por pequenas sementes.\n\n' +
+      'Quando alguém esquece uma história importante de sua comunidade, ela aparece para lembrá-la.\n\n' +
+      '✨ **Poder:** Transformar histórias em imagens.\n' +
+      '📿 **Objeto:** Colar de sementes.\n' +
+      '🦩 **Animal companheiro:** Garça.\n' +
+      '❤️ **Tema:** Ancestralidade, memória e comunidade.',
+    matchedKey: 'lenda_mae_kalunga'
+  },
+  {
+    palavras: ['tamborim', 'menino do ritmo', 'tamborim o menino do ritmo'],
+    resposta: '🥁 **Tamborim, o Menino do Ritmo**\n*Masculino | Sudeste | Rio de Janeiro*\n\n' +
+      'Tamborim é um pequeno ser encantado que vive onde existe música, dança e festa.\n\n' +
+      'Ele consegue descobrir o ritmo escondido nas coisas: o som da chuva, dos passos, das folhas e das ondas. Quando começa a tocar, pessoas diferentes conseguem dançar juntas.\n\n' +
+      '✨ **Poder:** Transformar sons cotidianos em música.\n' +
+      '🪘 **Objeto:** Pequeno tambor.\n' +
+      '🐤 **Animal companheiro:** Sabiá.\n' +
+      '❤️ **Tema:** Música, dança e diversidade cultural.',
+    matchedKey: 'lenda_tamborim'
+  },
+  {
+    palavras: ['mavambo', 'mensageiro das aguas', 'mensageiro das águas', 'mavambo o mensageiro das aguas', 'mavambo o mensageiro das águas'],
+    resposta: '💧 **Mavambo, o Mensageiro das Águas**\n*Masculino | Sul | Rio Grande do Sul*\n\n' +
+      'Mavambo viaja pelos rios e caminhos do Sul carregando mensagens entre comunidades. Ele aparece quando alguém precisa encontrar uma pessoa ou recuperar uma história perdida.\n\n' +
+      'Suas pegadas brilham por alguns segundos e desaparecem depois.\n\n' +
+      '✨ **Poder:** Levar mensagens através dos rios e do vento.\n' +
+      '📜 **Objeto:** Pequena bolsa de mensagens.\n' +
+      '🦦 **Animal companheiro:** Lontra.\n' +
+      '❤️ **Tema:** Comunicação, ancestralidade e encontros culturais.',
+    matchedKey: 'lenda_mavambo'
   },
   { 
     palavras: ['arte', 'o que é arte', 'definir arte', 'definição de arte'], 
@@ -3576,6 +3838,161 @@ function resolverFollowUpMessage(normalizedMsg: string): { reply: string, matche
   return null;
 }
 
+export const PERSONAGENS_INSPIRACAO_FOLCLORE = [
+  {
+    nome: 'Araci, a Guardiã das Sementes 🌱',
+    categoria: 'Floresta e Tradições Indígenas',
+    detalhes: '🌱 **Araci, a Guardiã das Sementes**\n*Feminino | Norte | Amazônia*\n\n' +
+      'Araci é uma jovem encantada que protege sementes e árvores da floresta. Carrega uma pequena bolsa feita de fibras naturais onde guarda sementes de espécies que estão desaparecendo.\n\n' +
+      'Quando alguém destrói a floresta sem necessidade, Araci faz surgir raízes no caminho e espalha sementes pelo chão. Quando percebe alguém cuidando da mata, ajuda as plantas a crescerem.\n\n' +
+      '✨ **Poder:** Fazer sementes germinarem rapidamente.\n' +
+      '🌍 **Elemento:** Terra e floresta.\n' +
+      '🐾 **Animal companheiro:** Cutia.\n' +
+      '💚 **Lição:** Proteger a biodiversidade.',
+    matchedKey: 'lenda_araci'
+  },
+  {
+    nome: 'Ubiratã, o Guardião dos Rios 🐟',
+    categoria: 'Floresta e Tradições Indígenas',
+    detalhes: '🐟 **Ubiratã, o Guardião dos Rios**\n*Masculino | Norte | Amazônia*\n\n' +
+      'Ubiratã conhece todos os rios, igarapés e caminhos da floresta. Dizem que consegue ouvir a água conversando com as árvores.\n\n' +
+      'Ele aparece para pessoas que estão perdidas e mostra o caminho de volta, mas pode confundir aqueles que poluem os rios.\n\n' +
+      '✨ **Poder:** Conversar com os rios e perceber quando a água está sendo contaminada.\n' +
+      '🌊 **Elemento:** Água.\n' +
+      '🐾 **Animal companheiro:** Ariranha.\n' +
+      '💚 **Lição:** Cuidar dos rios.',
+    matchedKey: 'lenda_ubirata'
+  },
+  {
+    nome: 'Jaciara, a Menina da Lua 🌙',
+    categoria: 'Floresta e Tradições Indígenas',
+    detalhes: '🌙 **Jaciara, a Menina da Lua**\n*Feminino | Centro-Oeste | Cerrado*\n\n' +
+      'Jaciara aparece nas noites de lua cheia caminhando pelo Cerrado. Seu cabelo parece feito de capim dourado e pequenas flores nascem por onde passa.\n\n' +
+      'Ela conhece plantas medicinais e ajuda animais durante períodos de seca. Quando a primeira chuva chega, dança entre as árvores e faz florescer o campo.\n\n' +
+      '✨ **Poder:** Despertar plantas durante a época das chuvas.\n' +
+      '🌕 **Elemento:** Lua e água.\n' +
+      '🐾 **Animal companheiro:** Lobo-guará.\n' +
+      '💚 **Lição:** Respeitar os ciclos da natureza.',
+    matchedKey: 'lenda_jaciara'
+  },
+  {
+    nome: 'Guaraci, o Menino do Vento 🍃',
+    categoria: 'Floresta e Tradições Indígenas',
+    detalhes: '🍃 **Guaraci, o Menino do Vento**\n*Masculino | Nordeste | Caatinga*\n\n' +
+      'Guaraci é um menino encantado que viaja pelos sertões seguindo o vento. Ele consegue sentir onde existe água escondida sob a terra.\n\n' +
+      'Quando uma comunidade está sofrendo com a seca, Guaraci conduz as pessoas até lugares onde podem encontrar água.\n\n' +
+      '✨ **Poder:** Conversar com o vento e encontrar água subterrânea.\n' +
+      '💨 **Elemento:** Vento.\n' +
+      '🕊️ **Animal companheiro:** Asa-branca.\n' +
+      '💚 **Lição:** Valorizar a água e conhecer o ambiente.',
+    matchedKey: 'lenda_guaraci'
+  },
+  {
+    nome: 'Ybira, a Guardiã da Mata Atlântica 🌳',
+    categoria: 'Floresta e Tradições Indígenas',
+    detalhes: '🌳 **Ybira, a Guardiã da Mata Atlântica**\n*Feminino | Sudeste/Sul | Mata Atlântica*\n\n' +
+      'Ybira vive entre árvores muito antigas. Seu corpo muda de aparência conforme a estação: às vezes parece coberto de folhas, outras vezes de flores.\n\n' +
+      'Ela protege árvores centenárias e pode fazer uma pessoa ouvir as histórias que uma floresta guarda.\n\n' +
+      '✨ **Poder:** Ouvir as memórias das árvores.\n' +
+      '🌿 **Elemento:** Árvores.\n' +
+      '🐒 **Animal companheiro:** Muriqui.\n' +
+      '💚 **Lição:** Preservar a Mata Atlântica e sua biodiversidade.',
+    matchedKey: 'lenda_ybira'
+  },
+  {
+    nome: 'Dandara das Estrelas ✨',
+    categoria: 'Inspiração Afro-Brasileira',
+    detalhes: '✨ **Dandara das Estrelas**\n*Feminino | Nordeste | Bahia*\n\n' +
+      'Dandara aparece durante as noites de festa e conhece histórias que foram esquecidas pelas pessoas.\n\n' +
+      'Ela carrega um pequeno tambor que, quando tocado, faz surgir imagens do passado. Assim, crianças podem conhecer histórias de pessoas que lutaram pela liberdade.\n\n' +
+      '✨ **Poder:** Despertar memórias esquecidas.\n' +
+      '🥁 **Objeto mágico:** Tambor.\n' +
+      '🐦 **Animal companheiro:** Beija-flor.\n' +
+      '❤️ **Tema:** Memória, resistência e liberdade.',
+    matchedKey: 'lenda_dandara'
+  },
+  {
+    nome: 'Zumbi do Vento 🌪️',
+    categoria: 'Inspiração Afro-Brasileira',
+    detalhes: '🌪️ **Zumbi do Vento**\n*Masculino | Nordeste | Pernambuco/Alagoas*\n\n' +
+      'Zumbi do Vento é um personagem fantástico inspirado na ideia de liberdade. Ele nunca fica parado.\n\n' +
+      'Viaja pelos caminhos do Nordeste e aparece quando alguém está sendo injustiçado. Seu corpo se transforma em vento e ele consegue atravessar lugares impossíveis.\n\n' +
+      '✨ **Poder:** Transformar-se em vento.\n' +
+      '🪵 **Objeto:** Bastão de madeira.\n' +
+      '🦅 **Animal companheiro:** Gavião.\n' +
+      '❤️ **Tema:** Liberdade e resistência.\n\n' +
+      '*(Nota: Trata-se de um personagem fantástico inspirado na ideia de liberdade, distinto da figura histórica de Zumbi dos Palmares).*',
+    matchedKey: 'lenda_zumbi_vento'
+  },
+  {
+    nome: 'Mãe Kalunga 🌊',
+    categoria: 'Inspiração Afro-Brasileira',
+    detalhes: '🌊 **Mãe Kalunga**\n*Feminino | Centro-Oeste | Goiás*\n\n' +
+      'Mãe Kalunga é uma guardiã das águas e das histórias de uma comunidade. Ela aparece perto dos rios ao anoitecer e carrega um colar formado por pequenas sementes.\n\n' +
+      'Quando alguém esquece uma história importante de sua comunidade, ela aparece para lembrá-la.\n\n' +
+      '✨ **Poder:** Transformar histórias em imagens.\n' +
+      '📿 **Objeto:** Colar de sementes.\n' +
+      '🦩 **Animal companheiro:** Garça.\n' +
+      '❤️ **Tema:** Ancestralidade, memória e comunidade.',
+    matchedKey: 'lenda_mae_kalunga'
+  },
+  {
+    nome: 'Tamborim, o Menino do Ritmo 🥁',
+    categoria: 'Inspiração Afro-Brasileira',
+    detalhes: '🥁 **Tamborim, o Menino do Ritmo**\n*Masculino | Sudeste | Rio de Janeiro*\n\n' +
+      'Tamborim é um pequeno ser encantado que vive onde existe música, dança e festa.\n\n' +
+      'Ele consegue descobrir o ritmo escondido nas coisas: o som da chuva, dos passos, das folhas e das ondas. Quando começa a tocar, pessoas diferentes conseguem dançar juntas.\n\n' +
+      '✨ **Poder:** Transformar sons cotidianos em música.\n' +
+      '🪘 **Objeto:** Pequeno tambor.\n' +
+      '🐤 **Animal companheiro:** Sabiá.\n' +
+      '❤️ **Tema:** Música, dança e diversidade cultural.',
+    matchedKey: 'lenda_tamborim'
+  },
+  {
+    nome: 'Mavambo, o Mensageiro das Águas 💧',
+    categoria: 'Inspiração Afro-Brasileira',
+    detalhes: '💧 **Mavambo, o Mensageiro das Águas**\n*Masculino | Sul | Rio Grande do Sul*\n\n' +
+      'Mavambo viaja pelos rios e caminhos do Sul carregando mensagens entre comunidades. Ele aparece quando alguém precisa encontrar uma pessoa ou recuperar uma história perdida.\n\n' +
+      'Suas pegadas brilham por alguns segundos e desaparecem depois.\n\n' +
+      '✨ **Poder:** Levar mensagens através dos rios e do vento.\n' +
+      '📜 **Objeto:** Pequena bolsa de mensagens.\n' +
+      '🦦 **Animal companheiro:** Lontra.\n' +
+      '❤️ **Tema:** Comunicação, ancestralidade e encontros culturais.',
+    matchedKey: 'lenda_mavambo'
+  }
+];
+
+let indexPersonagemInspiracao = 0;
+
+function resolverCriarPersonagemFolclorico(normalizedMsg: string): { reply: string, matchedKey?: string } | null {
+  const temCriarOuIdeia = normalizedMsg.includes("criar") || normalizedMsg.includes("criacao") || normalizedMsg.includes("criação") ||
+                          normalizedMsg.includes("inventar") || normalizedMsg.includes("ajud") || normalizedMsg.includes("ideia") ||
+                          normalizedMsg.includes("inspir") || normalizedMsg.includes("sugest") || normalizedMsg.includes("exemplo") ||
+                          normalizedMsg.includes("me da") || normalizedMsg.includes("me de") || normalizedMsg.includes("mande") ||
+                          normalizedMsg.includes("mostre");
+
+  const temPersonagemOuFolclore = normalizedMsg.includes("personag") || normalizedMsg.includes("folclor") || 
+                                  normalizedMsg.includes("folclór") || normalizedMsg.includes("lenda");
+
+  if (!temCriarOuIdeia || !temPersonagemOuFolclore) return null;
+
+  const char = PERSONAGENS_INSPIRACAO_FOLCLORE[indexPersonagemInspiracao % PERSONAGENS_INSPIRACAO_FOLCLORE.length];
+  indexPersonagemInspiracao++;
+
+  const replyText = 
+    `🎨✨ **Criando seu próprio Personagem Folclórico!**\n\n` +
+    `Essas histórias e ideias que preparei servem para **inspirar você a criar o seu próprio personagem folclórico a partir da leitura dessas ideias**!\n\n` +
+    `Aqui está **uma ideia de inspiração** (${char.categoria}) para acender a sua imaginação:\n\n` +
+    `${char.detalhes}\n\n` +
+    `---\n` +
+    `💡 **Sua vez de inventar:** A partir da leitura dessa ideia, que tal inventar o SEU próprio personagem folclórico? Qual seria o nome dele, as roupas, a missão especial e o animal companheiro dele? Me conte suas ideias ou faça um lindo desenho no papel! 🎨🌟`;
+
+  return {
+    reply: replyText,
+    matchedKey: `criar_${char.matchedKey}`
+  };
+}
+
 function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any>): { reply: string, matchedKey?: string } | null {
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
@@ -3593,6 +4010,10 @@ function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any
       matchedKey: "saudacao_nome"
     };
   }
+
+  // Intercept character creation / inspiration requests
+  const criarPersonagemRes = resolverCriarPersonagemFolclorico(normalizedMsg);
+  if (criarPersonagemRes) return criarPersonagemRes;
 
   // Intercept specific art tutorials
   const tutorialRes = resolverTutoriaisArteCandinho(normalizedMsg);
