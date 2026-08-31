@@ -4,7 +4,13 @@ import {
   Trash2, 
   X,
   Palette,
-  CheckCheck
+  CheckCheck,
+  Copy,
+  Check,
+  Share2,
+  ExternalLink,
+  MessageCircle,
+  Link as LinkIcon
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { bibliotecaCultural } from "./data/bibliotecaCultural";
@@ -65,6 +71,10 @@ export default function App() {
     return localStorage.getItem("candinho_nome_crianca") || "";
   });
   const [contextoEmocional, setContextoEmocional] = useState<string | null>(null);
+  const [copiedMessageId, setCopiedMessageId] = useState<string | null>(null);
+  const [showShareModal, setShowShareModal] = useState(false);
+  const [copiedShareLink, setCopiedShareLink] = useState(false);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   const chatEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -342,6 +352,76 @@ export default function App() {
     );
   };
 
+  const showToast = (msg: string) => {
+    setToastMessage(msg);
+    setTimeout(() => {
+      setToastMessage((prev) => (prev === msg ? null : prev));
+    }, 3000);
+  };
+
+  const handleCopyResponse = async (id: string, text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopiedMessageId(id);
+      showToast("Resposta copiada para a área de transferência! 📋");
+      setTimeout(() => {
+        setCopiedMessageId((prev) => (prev === id ? null : prev));
+      }, 2500);
+    } catch (err) {
+      console.error("Erro ao copiar resposta:", err);
+      showToast("Não foi possível copiar automaticamente. 😕");
+    }
+  };
+
+  const getShareUrl = () => {
+    if (typeof window !== "undefined" && window.location.href) {
+      return window.location.href;
+    }
+    return "https://lenilsonxavier-dev.github.io/candinho-3";
+  };
+
+  const handleShareLink = async () => {
+    const url = getShareUrl();
+    const shareData = {
+      title: "Candinho - Seu amigo artista",
+      text: "Converse com o Candinho e descubra o mundo da arte de forma simples e divertida! 🎨✨",
+      url: url
+    };
+
+    if (navigator.share && typeof navigator.canShare === "function" && navigator.canShare(shareData)) {
+      try {
+        await navigator.share(shareData);
+        return;
+      } catch (err) {
+        if ((err as Error).name !== "AbortError") {
+          setShowShareModal(true);
+        }
+        return;
+      }
+    }
+
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopiedShareLink(true);
+      showToast("Link copiado com sucesso! 🔗");
+      setTimeout(() => setCopiedShareLink(false), 3000);
+    } catch {
+      // ignore
+    }
+    setShowShareModal(true);
+  };
+
+  const handleCopyShareLinkDirect = async () => {
+    try {
+      await navigator.clipboard.writeText(getShareUrl());
+      setCopiedShareLink(true);
+      showToast("Link copiado para a área de transferência! 🔗");
+      setTimeout(() => setCopiedShareLink(false), 2500);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   const clearChat = () => {
     setShowResetConfirm(true);
   };
@@ -374,7 +454,7 @@ export default function App() {
             className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] rounded-full object-cover border-2 border-[#ffd700] animate-float sm:w-[80px] sm:h-[80px] flex-shrink-0 transition-all"
             referrerPolicy="no-referrer"
           />
-          <div className="flex-1 min-w-0 pr-20 sm:pr-24">
+          <div className="flex-1 min-w-0 pr-28 sm:pr-48">
             <h1 className="text-base sm:text-xl font-bold text-white leading-tight truncate flex items-center gap-2">
               Candinho
             </h1>
@@ -385,8 +465,16 @@ export default function App() {
 
           <div className="absolute top-2 right-2 flex items-center gap-1.5 sm:gap-2">
             <button 
+              onClick={handleShareLink}
+              className="p-1.5 sm:px-2.5 sm:py-1.5 rounded-xl bg-slate-800/80 hover:bg-[#ffd700] hover:text-slate-900 transition-all text-slate-300 flex items-center gap-1 text-xs border border-slate-700 cursor-pointer font-medium"
+              title="Compartilhar link do Candinho"
+            >
+              <Share2 size={13} />
+              <span className="hidden sm:inline">Compartilhar link</span>
+            </button>
+            <button 
               onClick={clearChat}
-              className="p-1.5 sm:px-2.5 sm:py-1.5 rounded-xl bg-slate-800/80 hover:bg-rose-500 hover:text-white transition-all text-slate-300 flex items-center gap-1 text-xs border border-slate-700 cursor-pointer"
+              className="p-1.5 sm:px-2.5 sm:py-1.5 rounded-xl bg-slate-800/80 hover:bg-rose-500 hover:text-white transition-all text-slate-300 flex items-center gap-1 text-xs border border-slate-700 cursor-pointer font-medium"
               title="Recomeçar conversa"
             >
               <Trash2 size={13} />
@@ -432,16 +520,43 @@ export default function App() {
                             <p className="whitespace-pre-line">{msg.text}</p>
                           )}
                           
-                          {/* Display "Ver Ilustração/Obra 🖼️" button under message if image exists and wasn't loaded */}
-                          {msg.image && !msg.isImageRequested && (
-                            <div className="mt-3 pt-2.5 border-t border-indigo-400/30">
-                              <button
-                                onClick={() => handleRequestImage(msg.id)}
-                                className="bg-[#ffd700] hover:bg-yellow-300 text-slate-900 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[10px] sm:text-xs font-bold transition-all shadow hover:scale-105 cursor-pointer flex items-center gap-1.5"
-                              >
-                                <Palette size={13} />
-                                Ver Ilustração/Obra 🖼️
-                              </button>
+                          {/* Bot Message Action Toolbar (não exibe na mensagem de boas-vindas/apresentação inicial) */}
+                          {(msg.id !== "welcome" && msg.id !== "welcome-reset" && (msg.image && !msg.isImageRequested || true)) && (
+                            <div className="mt-3 pt-2 border-t border-indigo-400/30 flex flex-wrap items-center justify-between gap-2">
+                              {msg.id !== "welcome" && msg.id !== "welcome-reset" && (
+                                <button
+                                  onClick={() => handleCopyResponse(msg.id, msg.text)}
+                                  className={`px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-medium transition-all flex items-center gap-1.5 cursor-pointer shadow-sm ${
+                                    copiedMessageId === msg.id 
+                                      ? "bg-emerald-500 text-white font-bold" 
+                                      : "bg-indigo-900/60 hover:bg-indigo-800 text-indigo-100 border border-indigo-300/30 hover:text-white"
+                                  }`}
+                                  title="Copiar resposta do Candinho"
+                                >
+                                  {copiedMessageId === msg.id ? (
+                                    <>
+                                      <Check size={12} className="text-white" />
+                                      <span>Copiado!</span>
+                                    </>
+                                  ) : (
+                                    <>
+                                      <Copy size={12} />
+                                      <span>Copiar resposta</span>
+                                    </>
+                                  )}
+                                </button>
+                              )}
+
+                              {/* Display "Ver Ilustração/Obra 🖼️" button under message if image exists and wasn't loaded */}
+                              {msg.image && !msg.isImageRequested && (
+                                <button
+                                  onClick={() => handleRequestImage(msg.id)}
+                                  className="bg-[#ffd700] hover:bg-yellow-300 text-slate-900 px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold transition-all shadow hover:scale-105 cursor-pointer flex items-center gap-1.5"
+                                >
+                                  <Palette size={12} />
+                                  <span>Ver Ilustração/Obra 🖼️</span>
+                                </button>
+                              )}
                             </div>
                           )}
 
@@ -587,6 +702,98 @@ export default function App() {
           </div>
         </div>
       )}
+
+      {/* Share Modal */}
+      {showShareModal && (
+        <div 
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex justify-center items-center p-4 animate-fade-in"
+          onClick={() => setShowShareModal(false)}
+        >
+          <div 
+            className="w-full max-w-md bg-[#16213e] rounded-[24px] p-5 sm:p-6 shadow-2xl border border-[#ffd700]/30 text-center relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setShowShareModal(false)}
+              className="absolute top-4 right-4 bg-slate-800/80 hover:bg-rose-500 p-1.5 rounded-full text-white transition-all border border-slate-700 cursor-pointer"
+              title="Fechar"
+            >
+              <X size={16} />
+            </button>
+
+            <div className="mx-auto w-14 h-14 rounded-full bg-slate-800/80 border border-[#ffd700]/40 flex items-center justify-center text-2xl mb-3 shadow-md">
+              🎨
+            </div>
+
+            <h3 className="text-white font-bold text-lg sm:text-xl mb-1">Compartilhar o Candinho</h3>
+            <p className="text-gray-300 text-xs sm:text-sm mb-4">
+              Compartilhe o link com seus amigos, professores ou colegas para descobrirem o mundo da arte juntos! ✨
+            </p>
+
+            <div className="bg-slate-900/90 rounded-2xl p-2.5 sm:p-3 border border-slate-700 mb-4 flex items-center gap-2">
+              <input
+                type="text"
+                readOnly
+                value={getShareUrl()}
+                className="bg-transparent text-gray-200 text-xs flex-1 outline-none truncate select-all px-1 font-mono"
+              />
+              <button
+                onClick={handleCopyShareLinkDirect}
+                className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
+                  copiedShareLink
+                    ? "bg-emerald-500 text-white"
+                    : "bg-[#ffd700] hover:bg-yellow-300 text-slate-900"
+                }`}
+              >
+                {copiedShareLink ? (
+                  <>
+                    <Check size={13} />
+                    <span>Copiado!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy size={13} />
+                    <span>Copiar</span>
+                  </>
+                )}
+              </button>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-2.5 justify-center">
+              <a
+                href={`https://api.whatsapp.com/send?text=${encodeURIComponent("Venha conversar e aprender sobre arte com o Candinho! 🎨 " + getShareUrl())}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2.5 rounded-full text-white bg-[#25D366] hover:bg-[#20bd5a] transition-all font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md cursor-pointer"
+              >
+                <MessageCircle size={16} />
+                <span>WhatsApp</span>
+              </a>
+              <button
+                onClick={() => setShowShareModal(false)}
+                className="px-5 py-2.5 rounded-full text-white bg-slate-800/80 hover:bg-slate-700 transition-all font-semibold text-xs sm:text-sm border border-slate-700 cursor-pointer"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Floating Toast Notification */}
+      <AnimatePresence>
+        {toastMessage && (
+          <motion.div
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.95 }}
+            className="fixed bottom-6 z-50 bg-[#16213e]/95 border border-[#ffd700]/50 text-white px-4 py-2.5 rounded-full shadow-2xl flex items-center gap-2 text-xs sm:text-sm font-medium backdrop-blur-md"
+          >
+            <CheckCheck size={16} className="text-emerald-400" />
+            <span>{toastMessage}</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Footer */}
       <footer className="text-center text-[0.72rem] text-slate-500 mt-4 flex items-center justify-center gap-1 select-none">
