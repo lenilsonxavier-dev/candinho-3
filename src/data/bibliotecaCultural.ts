@@ -19,6 +19,213 @@ export interface BibliotecaItem {
 }
 
 export const bibliotecaCultural: Record<string, BibliotecaItem> = {
+  conceito_verso: {
+    palavras_chave: [
+      "o que e um verso",
+      "o que e verso",
+      "o que sao versos",
+      "me explica o que e verso",
+      "significado de verso",
+      "conceito de verso"
+    ],
+    inicio: [
+      "📝 **Candinho explica: O que é um verso?**\n\n**Verso é cada linha de um poema.**"
+    ],
+    explicacao_curta: [
+      "### 🌟 Exemplo:\n> *O sol nasceu no céu.*\n> *A passarada cantou.*\n> *O dia ficou bonito.*\n\n👉 **Cada linha é um verso!** (No exemplo acima, temos 3 versos)."
+    ],
+    explicacao_aprofundada: [
+      "💡 **Dica do Candinho:**\n> “Conte as linhas do poema. Cada uma delas é um verso!”"
+    ],
+    categoria: "Conceitos Literários"
+  },
+  conceito_estrofe: {
+    palavras_chave: [
+      "o que e uma estrofe",
+      "o que e estrofe",
+      "o que sao estrofes",
+      "me explica o que e estrofe",
+      "significado de estrofe",
+      "conceito de estrofe"
+    ],
+    inicio: [
+      "📖 **Candinho explica: O que é uma estrofe?**\n\n**Estrofe é um conjunto de versos que ficam juntos no poema.**"
+    ],
+    explicacao_curta: [
+      "### 🌟 Exemplo:\n> *O sol nasceu no céu,*\n> *a passarada cantou,*\n> *o dia ficou bonito,*\n> *e a manhã começou.*\n\nTemos **4 versos** formando **uma estrofe**."
+    ],
+    explicacao_aprofundada: [
+      "Quando há uma separação entre grupos de versos, temos outra estrofe.\n\n👉 **Pense assim com o Candinho:**\n• **Verso** = uma linha ✏️\n• **Estrofe** = um grupo de linhas 📚"
+    ],
+    categoria: "Conceitos Literários"
+  },
+  conceito_rima: {
+    palavras_chave: [
+      "o que e rima",
+      "o que e uma rima",
+      "o que sao rimas",
+      "me explica o que e rima",
+      "significado de rima",
+      "conceito de rima"
+    ],
+    inicio: [
+      "🎵 **Candinho explica: O que é rima?**\n\n**Rima acontece quando palavras apresentam sons parecidos, principalmente no final dos versos.**"
+    ],
+    explicacao_curta: [
+      "### 🌟 Exemplo 1:\n> *O gato pulou no **chão**,*\n> *depois correu pelo **portão**.*\n👉 **chão / portão** → rimam.\n\n### 🌟 Exemplo 2:\n> *Vi uma linda **flor**,*\n> *que me lembrou o **amor**.*\n👉 **flor / amor** → rimam."
+    ],
+    explicacao_aprofundada: [
+      "⚠️ **Importante do Candinho:** Um poema **não precisa ter rimas**!"
+    ],
+    categoria: "Conceitos Literários"
+  },
+  conceito_poema: {
+    palavras_chave: [
+      "o que e um poema",
+      "o que e poema",
+      "o que sao poemas",
+      "me explica o que e poema",
+      "significado de poema",
+      "conceito de poema",
+      "definicao de poema"
+    ],
+    inicio: [
+      "📜 **Candinho explica: O que é um poema?**\n\n**Poema é um texto organizado em versos, que pode usar ritmo, imagens, sons, palavras e sentimentos para expressar uma ideia.**"
+    ],
+    explicacao_curta: [
+      "Um poema pode falar sobre praticamente qualquer coisa: 🌳 natureza, ❤️ amor, 😂 humor, 😢 saudade, 🤝 amizade, 🌎 sociedade, ✨ sonhos.\n\n*(Lembre-se: um poema pode ter rimas ou não!)*"
+    ],
+    categoria: "Conceitos Literários"
+  },
+  conceito_poesia: {
+    palavras_chave: [
+      "o que e poesia",
+      "o que e a poesia",
+      "o que sao poesias",
+      "me explica o que e poesia",
+      "significado de poesia",
+      "conceito de poesia",
+      "diferenca entre poema e poesia",
+      "qual a diferenca entre poema e poesia"
+    ],
+    inicio: [
+      "💭 **Candinho explica: O que é poesia?**\n\n**Poesia é a linguagem artística que transforma sentimentos, pensamentos, imagens e ideias em uma experiência de criação.**"
+    ],
+    explicacao_curta: [
+      "Ela pode estar em um poema, mas também pode aparecer em uma **música**, em uma **pintura**, em uma **fotografia** ou até em uma **cena de filme**!\n\n> **Candinho:** “Poema é o texto. Poesia é aquilo que faz a gente sentir, imaginar ou perceber algo de um jeito especial.”"
+    ],
+    explicacao_aprofundada: [
+      "### 🍰 Uma comparação simples do Candinho\nImagine uma receita:\n• 🍰 **Poema** = o bolo que foi preparado.\n• ✨ **Poesia** = o sabor e a sensação que sentimos ao comer."
+    ],
+    categoria: "Conceitos Literários"
+  },
+  oficina_poesia: {
+    palavras_chave: [
+      "como criar uma poesia",
+      "como fazer uma poesia",
+      "como escrever uma poesia",
+      "como criar um poema",
+      "como fazer um poema",
+      "como escrever um poema",
+      "oficina de poesia",
+      "oficina de poemas",
+      "candinho ensina como criar uma poesia",
+      "como criar poesia",
+      "como fazer poesia",
+      "como escrever poesia"
+    ],
+    inicio: [
+      "🎨 **Candinho ensina: Como criar uma poesia**\n\n> “Uma poesia é uma maneira criativa de transformar ideias, sentimentos e histórias em palavras. Vamos criar uma?”"
+    ],
+    explicacao_curta: [
+      "### ✏️ Passo 1: Escolha um tema\nPode ser **amizade, amor, família, natureza, escola, sonhos, animais ou algo que você gostaria de mudar no mundo**.\n\n### 💭 Passo 2: Pense no que quer dizer\nPergunte a si mesmo: > **“O que eu quero contar ou fazer as pessoas sentirem?”**"
+    ],
+    explicacao_aprofundada: [
+      "### 🎨 Passo 3: Use a imaginação\nTransforme suas ideias em imagens e frases criativas. Em vez de: “A noite está bonita.”, você pode escrever: “A noite acendeu suas estrelas.”\n\n### 🎵 Passo 4: Dê ritmo\nLeia seu poema em voz alta. Você pode usar **rimas, repetições e palavras que tenham ritmo**. Mas lembre: **uma poesia não precisa rimar.**\n\n### 🎤 Passo 5: Transforme em música!\nUma poesia pode ganhar **melodia** e virar uma canção.\n• Se falar de **amor ou sentimentos**, pode virar uma **canção romântica**. ❤️\n• Se falar de **problemas sociais, desigualdade, preconceito, meio ambiente, comunidade ou coisas que precisam mudar**, pode ganhar batida e rimas e virar um **rap**. 🎤\n\n> **Candinho:** “Primeiro vem a ideia. Depois encontramos as palavras. E, se colocarmos ritmo e música, o poema pode ganhar asas!”"
+    ],
+    atividade: [
+      "### 🖌️ Desafio do Candinho\n> **Escolha um tema, escreva uma mensagem e crie de 4 a 8 versos. Depois me conte: seu poema poderia virar uma música ou um rap? Por quê?**"
+    ],
+    categoria: "Oficina Criativa"
+  },
+  oficina_rap: {
+    palavras_chave: [
+      "como criar um rap",
+      "como fazer um rap",
+      "como escrever um rap",
+      "oficina de rap",
+      "oficina de rima",
+      "oficina de rimas",
+      "candinho ensina como fazer um rap",
+      "candinho ensina como criar um rap",
+      "como criar rap",
+      "como fazer rap",
+      "como escrever rap",
+      "formula do rap"
+    ],
+    inicio: [
+      "🎤 **Candinho ensina: Como fazer um rap**\n\n> “Rap é uma forma de usar palavras, ritmo e voz para contar uma história, expressar sentimentos ou falar sobre algo que queremos mudar. Vamos criar?”"
+    ],
+    explicacao_curta: [
+      "### 1. 🎯 Escolha um assunto\nPense em algo para contar ou defender: amizade, escola, família, natureza, respeito, sonhos, preconceito, problemas do bairro, proteção dos animais.\n\n### 2. 💡 Tenha uma mensagem\nPergunte: *“O que eu quero que as pessoas pensem depois de ouvir meu rap?”*"
+    ],
+    explicacao_aprofundada: [
+      "### 3. ✍️ Faça uma lista de palavras e rimas\nEx: vida → perdida → protegida | coração → união → transformação\n\n### 4. 🎵 Crie os versos\nMonte frases curtas com ritmo: *“Tem árvore, tem rio, tem vida no chão / cuidar da floresta é nossa missão...”*\n\n### 5. 🥁 Encontre o ritmo\nMarque o ritmo: **PÁ | PÁ | PUM | PÁ** com palmas.\n\n### 6. 🎤 Crie um refrão\nUma parte marcante que se repete: *“Cuida, cuida da floresta! A natureza viva é o que importa!”*\n\n🚀 **A FÓRMULA DO CANDINHO:** TEMA → MENSAGEM → PALAVRAS → RIMAS → VERSOS → RITMO → REFRÃO"
+    ],
+    atividade: [
+      "### 🎤 Desafio do Candinho\n> Escolha um tema, defina sua mensagem, ache 2 rimas e monte 4 versos e um refrão marcante!"
+    ],
+    categoria: "Oficina Criativa"
+  },
+  oficina_funk: {
+    palavras_chave: [
+      "como criar um funk",
+      "como fazer um funk",
+      "como escrever um funk",
+      "oficina de funk",
+      "oficina de batida",
+      "candinho ensina como fazer um funk",
+      "candinho ensina como criar um funk",
+      "como criar funk",
+      "como fazer funk",
+      "como escrever funk",
+      "formula do funk"
+    ],
+    inicio: [
+      "🥁 **Candinho ensina: Como fazer um funk**\n\n> “O funk é um gênero musical que tem muita força no Brasil. Ele valoriza o ritmo, a batida, a repetição e a criatividade das palavras. Vamos criar um funk?”"
+    ],
+    explicacao_curta: [
+      "### 🥁 1. Escolha um tema\nEscola 🏫, amizade 🤝, esporte ⚽, arte 🎨, natureza 🌳, cidade 🌎, diversão 😂 ou sonhos ⭐.\n\n### 💡 2. Pense em uma mensagem\nPergunte: *“O que quero dizer com meu funk?”*\n*Exemplo:* Tema: escola → Mensagem: aprender também pode ser divertido."
+    ],
+    explicacao_aprofundada: [
+      "### ✍️ 3. Crie frases curtas\nNo funk, frases curtas funcionam muito bem acompanhando a batida:\n> *Na escola eu vou chegar,*\n> *tenho muito pra aprender,*\n> *com meus amigos do lado,*\n> *fica bom de acontecer!*\n\n### 🔄 4. Use repetição\nA repetição ajuda a criar um refrão marcante: *“Vem aprender! Vem criar! Vem com a turma participar!”*\n\n### 🎵 5. Crie o ritmo\nMarque a batida: **PÁ – PÁ – PUM | PÁ – PÁ – PUM**.\n\n### 🎤 6. Faça um refrão\nEscolha uma frase fácil de lembrar e repita: *“Arte na mente! Arte no coração! Desenha, pinta, cria e solta a imaginação!”*\n\n### ⭐ 7. Agora junte tudo\n**TEMA → MENSAGEM → VERSOS → RITMO → REFRÃO**\n> *“Você não precisa usar palavras difíceis para fazer um bom funk. Precisa ter criatividade, ritmo e algo para dizer.”*"
+    ],
+    atividade: [
+      "### 🎨 Desafio do Candinho\n> Crie um funk sobre um assunto que você gosta! Defina seu tema, sua mensagem, 2 palavras que combinam, versos curtos e um refrão marcante!"
+    ],
+    categoria: "Oficina Criativa"
+  },
+  diferenca_poesia_rap: {
+    palavras_chave: [
+      "diferenca entre poesia e rap",
+      "diferenca de poesia e rap",
+      "qual a diferenca entre poesia e rap",
+      "poesia e rap e a mesma coisa",
+      "poesia ou rap",
+      "poesia rap e funk",
+      "poesia, rap e funk",
+      "diferenca entre poesia rap e funk",
+      "diferenca entre poesia e funk",
+      "diferenca de rap e funk"
+    ],
+    inicio: [
+      "🎨📖🎤🥁 **Candinho explica: Poesia, Rap e Funk**\n\n> “A poesia usa palavras para criar imagens e sentimentos. O rap costuma valorizar muito as rimas, a mensagem e o ritmo. O funk valoriza bastante a batida, a repetição, o ritmo e os versos que combinam com a música. Os três podem usar poesia!”"
+    ],
+    explicacao_curta: [
+      "• **📖 Poesia:** Arte de expressar sentimentos, imagens e ideias através de palavras livres e rimas suaves.\n• **🎤 Rap (Ritmo e Poesia):** Poesia com velocidade, métrica, batida forte e atitude para falar sobre a realidade e causas sociais.\n• **🥁 Funk:** Gênero brasileiro que valoriza a batida contagiante (**PÁ-PÁ-PUM**), repetição, ritmo dançante e frases curtas que grudam na mente."
+    ],
+    categoria: "Oficina Criativa"
+  },
   // --- BASE ORIGINAL RE-Mapeada & Unificada ---
   portinari: {
     palavras_chave: ["portinari", "candido portinari", "cândido portinari", "guerra e paz", "meninos brincando", "rodopiando"],

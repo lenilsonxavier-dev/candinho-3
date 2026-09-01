@@ -1507,6 +1507,375 @@ const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
     matchedKey: 'literatura_brasileira'
   },
 
+  // ===== CONCEITOS LITERÁRIOS: VERSO, ESTROFE, RIMA, POEMA, POESIA =====
+  {
+    palavras: [
+      'o que e um verso',
+      'o que e verso',
+      'o que sao versos',
+      'o que e versos',
+      'me explica o que e verso',
+      'significado de verso',
+      'conceito de verso',
+      'o que significa verso'
+    ],
+    resposta: '📝 **Candinho explica: O que é um verso?**\n\n' +
+      '**Verso é cada linha de um poema.**\n\n' +
+      '### 🌟 Exemplo:\n' +
+      '> *O sol nasceu no céu.*\n' +
+      '> *A passarada cantou.*\n' +
+      '> *O dia ficou bonito.*\n\n' +
+      '👉 **Cada linha é um verso!** (No exemplo acima, temos 3 versos).\n\n' +
+      '💡 **Dica do Candinho:**\n' +
+      '> “Conte as linhas do poema. Cada uma delas é um verso!”',
+    matchedKey: 'conceito_verso'
+  },
+  {
+    palavras: [
+      'o que e uma estrofe',
+      'o que e estrofe',
+      'o que sao estrofes',
+      'o que e estrofes',
+      'me explica o que e estrofe',
+      'significado de estrofe',
+      'conceito de estrofe',
+      'o que significa estrofe'
+    ],
+    resposta: '📖 **Candinho explica: O que é uma estrofe?**\n\n' +
+      '**Estrofe é um conjunto de versos que ficam juntos no poema.**\n\n' +
+      '### 🌟 Exemplo:\n' +
+      '> *O sol nasceu no céu,*\n' +
+      '> *a passarada cantou,*\n' +
+      '> *o dia ficou bonito,*\n' +
+      '> *e a manhã começou.*\n\n' +
+      'Temos **4 versos** formando **uma estrofe**.\n\n' +
+      'Quando há uma separação entre grupos de versos, temos outra estrofe.\n\n' +
+      '👉 **Pense assim com o Candinho:**\n' +
+      '• **Verso** = uma linha ✏️\n' +
+      '• **Estrofe** = um grupo de linhas 📚',
+    matchedKey: 'conceito_estrofe'
+  },
+  {
+    palavras: [
+      'o que e rima',
+      'o que e uma rima',
+      'o que sao rimas',
+      'o que e rimas',
+      'me explica o que e rima',
+      'significado de rima',
+      'conceito de rima',
+      'o que significa rima',
+      'como funciona a rima'
+    ],
+    resposta: '🎵 **Candinho explica: O que é rima?**\n\n' +
+      '**Rima acontece quando palavras apresentam sons parecidos, principalmente no final dos versos.**\n\n' +
+      '### 🌟 Exemplo 1:\n' +
+      '> *O gato pulou no **chão**,*\n' +
+      '> *depois correu pelo **portão**.*\n\n' +
+      '👉 **chão / portão** → rimam.\n\n' +
+      '### 🌟 Exemplo 2:\n' +
+      '> *Vi uma linda **flor**,*\n' +
+      '> *que me lembrou o **amor**.*\n\n' +
+      '👉 **flor / amor** → rimam.\n\n' +
+      '⚠️ **Importante do Candinho:** Um poema **não precisa ter rimas**!',
+    matchedKey: 'conceito_rima'
+  },
+  {
+    palavras: [
+      'o que e um poema',
+      'o que e poema',
+      'o que sao poemas',
+      'o que e poemas',
+      'me explica o que e poema',
+      'significado de poema',
+      'conceito de poema',
+      'o que significa poema',
+      'definicao de poema'
+    ],
+    resposta: '📜 **Candinho explica: O que é um poema?**\n\n' +
+      '**Poema é um texto organizado em versos, que pode usar ritmo, imagens, sons, palavras e sentimentos para expressar uma ideia.**\n\n' +
+      'Um poema pode falar sobre praticamente qualquer coisa:\n' +
+      '• 🌳 **natureza**\n' +
+      '• ❤️ **amor**\n' +
+      '• 😂 **humor**\n' +
+      '• 😢 **saudade**\n' +
+      '• 🤝 **amizade**\n' +
+      '• 🌎 **sociedade**\n' +
+      '• ✨ **sonhos**\n\n' +
+      '*(Lembre-se: um poema pode ter rimas ou não!)*',
+    matchedKey: 'conceito_poema'
+  },
+  {
+    palavras: [
+      'o que e poesia',
+      'o que e a poesia',
+      'o que sao poesias',
+      'me explica o que e poesia',
+      'significado de poesia',
+      'conceito de poesia',
+      'o que significa poesia',
+      'definicao de poesia',
+      'diferenca entre poema e poesia',
+      'diferenca de poema e poesia',
+      'poema e poesia diferenca',
+      'qual a diferenca entre poema e poesia',
+      'poema ou poesia'
+    ],
+    resposta: '💭 **Candinho explica: O que é poesia?**\n\n' +
+      '**Poesia é a linguagem artística que transforma sentimentos, pensamentos, imagens e ideias em uma experiência de criação.**\n\n' +
+      'Ela pode estar em um poema, mas também pode aparecer em uma **música**, em uma **pintura**, em uma **fotografia** ou até em uma **cena de filme**! 🎨🎬🎵\n\n' +
+      '> **Candinho:** “Poema é o texto. Poesia é aquilo que faz a gente sentir, imaginar ou perceber algo de um jeito especial.”\n\n' +
+      '### 🍰 Uma comparação simples do Candinho\n' +
+      'Imagine uma receita:\n' +
+      '• 🍰 **Poema** = o bolo que foi preparado.\n' +
+      '• ✨ **Poesia** = o sabor e a sensação que sentimos ao comer.',
+    matchedKey: 'conceito_poesia'
+  },
+
+  // ===== OFICINA DE POESIA / COMO CRIAR UMA POESIA =====
+  {
+    palavras: [
+      'como criar uma poesia',
+      'como fazer uma poesia',
+      'como escrever uma poesia',
+      'como criar um poema',
+      'como fazer um poema',
+      'como escrever um poema',
+      'oficina de poesia',
+      'oficina de poemas',
+      'oficina de poesias',
+      'candinho ensina como criar uma poesia',
+      'como criar poesia',
+      'como fazer poesia',
+      'como escrever poesia',
+      'como criar poema',
+      'como fazer poema',
+      'como escrever poema',
+      'dicas para escrever poesia',
+      'passo a passo para fazer poesia',
+      'como se faz uma poesia',
+      'como se escreve uma poesia',
+      'passo a passo poesia',
+      'etapas para criar poesia',
+      'aprenda a criar poesia'
+    ],
+    resposta: '🎨 **Candinho ensina: Como criar uma poesia**\n\n' +
+      '> “Uma poesia é uma maneira criativa de transformar ideias, sentimentos e histórias em palavras. Vamos criar uma?”\n\n' +
+      '### ✏️ Passo 1: Escolha um tema\n' +
+      'Pode ser **amizade, amor, família, natureza, escola, sonhos, animais ou algo que você gostaria de mudar no mundo**.\n\n' +
+      '### 💭 Passo 2: Pense no que quer dizer\n' +
+      'Pergunte a si mesmo:\n' +
+      '> **“O que eu quero contar ou fazer as pessoas sentirem?”**\n\n' +
+      '### 🎨 Passo 3: Use a imaginação\n' +
+      'Transforme suas ideias em imagens e frases criativas.\n' +
+      'Em vez de:\n' +
+      '> “A noite está bonita.”\n' +
+      'Você pode escrever:\n' +
+      '> “A noite acendeu suas estrelas.”\n\n' +
+      '### 🎵 Passo 4: Dê ritmo\n' +
+      'Leia seu poema em voz alta. Você pode usar **rimas, repetições e palavras que tenham ritmo**. Mas lembre: **uma poesia não precisa rimar.**\n\n' +
+      '### 🎤 Passo 5: Transforme em música!\n' +
+      'Uma poesia pode ganhar **melodia** e virar uma canção.\n' +
+      '• Se falar de **amor ou sentimentos**, pode virar uma **canção romântica**. ❤️\n' +
+      '• Se falar de **problemas sociais, desigualdade, preconceito, meio ambiente, comunidade ou coisas que precisam mudar**, pode ganhar batida e rimas e virar um **rap**. 🎤\n\n' +
+      '> **Candinho:** “Primeiro vem a ideia. Depois encontramos as palavras. E, se colocarmos ritmo e música, o poema pode ganhar asas!”\n\n' +
+      '### 🖌️ Desafio do Candinho\n' +
+      '> **Escolha um tema, escreva uma mensagem e crie de 4 a 8 versos. Depois me conte: seu poema poderia virar uma música ou um rap? Por quê?**',
+    matchedKey: 'oficina_de_poesia'
+  },
+
+  // ===== OFICINA DE RAP / COMO FAZER UM RAP =====
+  {
+    palavras: [
+      'como criar um rap',
+      'como fazer um rap',
+      'como escrever um rap',
+      'oficina de rap',
+      'oficina de rima',
+      'oficina de rimas',
+      'candinho ensina como fazer um rap',
+      'candinho ensina como criar um rap',
+      'como criar rap',
+      'como fazer rap',
+      'como escrever rap',
+      'como rimar no rap',
+      'dicas para fazer rap',
+      'dicas para escrever rap',
+      'passo a passo para fazer rap',
+      'passo a passo para criar rap',
+      'passo a passo rap',
+      'etapas para criar rap',
+      'como se faz um rap',
+      'como se escreve um rap',
+      'formula do rap',
+      'aprenda a fazer rap'
+    ],
+    resposta: '🎤 **Candinho ensina: Como fazer um rap**\n\n' +
+      '> “Rap é uma forma de usar palavras, ritmo e voz para contar uma história, expressar sentimentos ou falar sobre algo que queremos mudar. Vamos criar?”\n\n' +
+      '### 1. 🎯 Escolha um assunto\n' +
+      'Pense em algo que você queira contar ou defender. Pode ser:\n' +
+      '• **amizade** 🤝\n' +
+      '• **escola** 🏫\n' +
+      '• **família** 🏡\n' +
+      '• **natureza** 🌳\n' +
+      '• **respeito e união** ✨\n' +
+      '• **sonhos** 🚀\n' +
+      '• **preconceito e desigualdade** ✊\n' +
+      '• **problemas do bairro** 🏙️\n' +
+      '• **proteção dos animais** 🐾\n\n' +
+      '### 2. 💡 Tenha uma mensagem\n' +
+      'Pergunte:\n' +
+      '> **“O que eu quero que as pessoas pensem depois de ouvir meu rap?”**\n\n' +
+      '*Exemplo:* Tema: meio ambiente → Mensagem: precisamos cuidar das árvores.\n\n' +
+      '### 3. ✍️ Faça uma lista de palavras\n' +
+      'Escolha palavras relacionadas ao tema.\n' +
+      '*Floresta:* árvore, rio, vida, chuva, animal, futuro, cuidar...\n' +
+      'Agora procure algumas palavras que rimem:\n' +
+      '• vida → perdida → protegida\n' +
+      '• coração → união → transformação\n\n' +
+      '### 4. 🎵 Crie os versos\n' +
+      'Monte frases curtas usando suas ideias. Por exemplo:\n\n' +
+      '> *Tem árvore, tem rio, tem vida no chão,*\n' +
+      '> *cuidar da floresta é nossa missão.*\n' +
+      '> *Se a gente protege, o futuro agradece,*\n' +
+      '> *quando a natureza vive, a gente também cresce.*\n\n' +
+      '*(Não precisa fazer todas as linhas rimarem. O mais importante é ter sentido e ritmo!)*\n\n' +
+      '### 5. 🥁 Encontre o ritmo\n' +
+      'Leia os versos em voz alta. Você pode marcar:\n' +
+      '👉 **PÁ | PÁ | PUM | PÁ** ou bater palmas enquanto fala.\n' +
+      'O rap pode ser falado de maneira ritmada, acompanhando uma batida.\n\n' +
+      '### 6. 🎤 Crie um refrão\n' +
+      'O refrão é a parte marcante que pode se repetir:\n\n' +
+      '> *“Cuida, cuida, cuida da floresta!*\n' +
+      '> *A natureza viva é o que importa!”*\n\n' +
+      'Você pode repetir o refrão depois de cada grupo de versos.\n\n' +
+      '---\n' +
+      '🚀 **A FÓRMULA DO CANDINHO:**\n' +
+      '**TEMA → MENSAGEM → PALAVRAS → RIMAS → VERSOS → RITMO → REFRÃO**\n\n' +
+      '> **Candinho:** “Um bom rap não precisa falar difícil. Precisa ter uma ideia para dizer, ritmo para ouvir e uma voz que tenha algo a contar.”\n\n' +
+      '### 🎤 Desafio do Candinho\n' +
+      'Escolha um problema ou assunto importante para você e preencha:\n' +
+      '• **Meu tema:** ___________________________\n' +
+      '• **Minha mensagem:** _____________________\n' +
+      '• **3 palavras:** __________________________\n' +
+      '• **2 palavras que rimam:** _________________\n' +
+      '• **Meu rap (4 versos):**\n' +
+      '• **Meu refrão:**',
+    matchedKey: 'oficina_de_rap'
+  },
+
+  // ===== DIFERENÇA ENTRE POESIA, RAP E FUNK =====
+  {
+    palavras: [
+      'diferenca entre poesia e rap',
+      'diferenca de poesia e rap',
+      'diferenca entre poema e rap',
+      'qual a diferenca entre poesia e rap',
+      'qual a diferenca de poesia e rap',
+      'poesia e rap e a mesma coisa',
+      'poesia e rap sao a mesma coisa',
+      'poesia ou rap',
+      'poema ou rap',
+      'poesia e rap',
+      'relacao entre poesia e rap',
+      'poesia rap e funk',
+      'poesia, rap e funk',
+      'poema rap e funk',
+      'diferenca entre poesia rap e funk',
+      'diferenca entre poesia e funk',
+      'diferenca de rap e funk',
+      'qual a diferenca entre poesia rap e funk',
+      'poesia rap ou funk',
+      'funk e poesia',
+      'o funk e poesia'
+    ],
+    resposta: '🎨📖🎤🥁 **Candinho explica: Poesia, Rap e Funk**\n\n' +
+      '> “A poesia usa palavras para criar imagens e sentimentos. O rap costuma valorizar muito as rimas, a mensagem e o ritmo. O funk valoriza bastante a batida, a repetição, o ritmo e os versos que combinam com a música. Os três podem usar poesia!” 🌟\n\n' +
+      '• **📖 Poesia:** É a arte de expressar sentimentos, imagens e ideias através de palavras livres e rimas suaves.\n' +
+      '• **🎤 Rap (Ritmo e Poesia):** A poesia que ganha velocidade, métrica, batida forte e atitude na voz para contar histórias e defender causas.\n' +
+      '• **🥁 Funk:** Gênero musical brasileiro que valoriza muito a batida contagiante (**PÁ-PÁ-PUM**), o ritmo dançante, versos curtos e repetições marcantes no refrão!\n\n' +
+      '💡 **Uma mesma ideia pode virar poesia, rap ou funk! Quer aprender a criar?**\n' +
+      '1. *“Candinho, me ensina a fazer uma poesia!”* 📝\n' +
+      '2. *“Candinho, me ensina a fazer um rap!”* 🎤\n' +
+      '3. *“Candinho, me ensina a fazer um funk!”* 🥁',
+    matchedKey: 'diferenca_poesia_rap_funk'
+  },
+
+  // ===== OFICINA DE FUNK / COMO FAZER UM FUNK =====
+  {
+    palavras: [
+      'como criar um funk',
+      'como fazer um funk',
+      'como escrever um funk',
+      'oficina de funk',
+      'oficina de batida',
+      'candinho ensina como fazer um funk',
+      'candinho ensina como criar um funk',
+      'como criar funk',
+      'como fazer funk',
+      'como escrever funk',
+      'dicas para fazer funk',
+      'dicas para escrever funk',
+      'passo a passo para fazer funk',
+      'passo a passo para criar funk',
+      'passo a passo funk',
+      'etapas para criar funk',
+      'como se faz um funk',
+      'como se escreve um funk',
+      'formula do funk',
+      'aprenda a fazer funk'
+    ],
+    resposta: '🥁 **Candinho ensina: Como fazer um funk**\n\n' +
+      '> “O funk é um gênero musical que tem muita força no Brasil. Ele valoriza o ritmo, a batida, a repetição e a criatividade das palavras. Vamos criar um funk?”\n\n' +
+      '### 🥁 1. Escolha um tema\n' +
+      'Escolha algo que você queira contar:\n' +
+      '• 🏫 **escola**\n' +
+      '• 🤝 **amizade**\n' +
+      '• ⚽ **esporte**\n' +
+      '• 🎨 **arte**\n' +
+      '• 🌳 **natureza**\n' +
+      '• 🌎 **cidade**\n' +
+      '• 😂 **diversão**\n' +
+      '• ⭐ **sonhos**\n\n' +
+      '### 💡 2. Pense em uma mensagem\n' +
+      'Pergunte:\n' +
+      '> **“O que quero dizer com meu funk?”**\n\n' +
+      '*Exemplo:* Tema: escola → Mensagem: aprender também pode ser divertido.\n\n' +
+      '### ✍️ 3. Crie frases curtas\n' +
+      'No funk, frases curtas funcionam muito bem porque acompanham a batida:\n\n' +
+      '> *Na escola eu vou chegar,*\n' +
+      '> *tenho muito pra aprender,*\n' +
+      '> *com meus amigos do lado,*\n' +
+      '> *fica bom de acontecer!*\n\n' +
+      '### 🔄 4. Use repetição\n' +
+      'A repetição ajuda a criar um refrão marcante e contagiante:\n\n' +
+      '> *Vem aprender!*\n' +
+      '> *Vem criar!*\n' +
+      '> *Vem com a turma*\n' +
+      '> *participar!*\n\n' +
+      '### 🎵 5. Crie o ritmo\n' +
+      'Leia seus versos marcando uma batida:\n' +
+      '👉 **PÁ – PÁ – PUM | PÁ – PÁ – PUM**\n\n' +
+      'Tente encaixar as palavras no ritmo! O funk pode ter **batida forte, repetição e versos curtos**.\n\n' +
+      '### 🎤 6. Faça um refrão\n' +
+      'Escolha uma frase fácil de lembrar e repita:\n\n' +
+      '> *“Arte na mente!*\n' +
+      '> *Arte no coração!*\n' +
+      '> *Desenha, pinta, cria*\n' +
+      '> *e solta a imaginação!”*\n\n' +
+      '### ⭐ 7. Agora junte tudo\n' +
+      '**TEMA → MENSAGEM → VERSOS → RITMO → REFRÃO**\n\n' +
+      '> **Candinho:** “Você não precisa usar palavras difíceis para fazer um bom funk. Precisa ter criatividade, ritmo e algo para dizer.”\n\n' +
+      '### 🎨 Desafio do Candinho\n' +
+      'Crie um funk sobre um assunto que você gosta:\n' +
+      '• **Meu tema:** __________________________\n' +
+      '• **Minha mensagem:** ____________________\n' +
+      '• **Duas palavras que combinam ou rimam:** ________________ + ________________\n' +
+      '• **Meus versos:**\n' +
+      '• **Meu refrão:**',
+    matchedKey: 'oficina_de_funk'
+  },
+
   // ===== FOLCLORE BRASILEIRO E LENDAS =====
   {
     palavras: [
@@ -3993,6 +4362,602 @@ function resolverCriarPersonagemFolclorico(normalizedMsg: string): { reply: stri
   };
 }
 
+function resolverAjudaPoesia(normalizedMsg: string): { reply: string, matchedKey?: string } | null {
+  // 1. Perguntas de "como criar/escrever/fazer uma poesia ou poema" -> Entrega a Oficina completa de 5 passos
+  const ehPerguntaComoFazer = 
+    normalizedMsg.includes("como escrever uma poesia") ||
+    normalizedMsg.includes("como escrever um poema") ||
+    normalizedMsg.includes("como criar uma poesia") ||
+    normalizedMsg.includes("como criar um poema") ||
+    normalizedMsg.includes("como fazer uma poesia") ||
+    normalizedMsg.includes("como fazer um poema") ||
+    normalizedMsg.includes("como se escreve uma poesia") ||
+    normalizedMsg.includes("como se escreve um poema") ||
+    normalizedMsg.includes("como se faz uma poesia") ||
+    normalizedMsg.includes("como se faz um poema") ||
+    normalizedMsg === "oficina de poesia" ||
+    normalizedMsg === "oficina de poemas" ||
+    normalizedMsg === "oficina de poesias" ||
+    normalizedMsg.includes("dicas para escrever poesia") ||
+    normalizedMsg.includes("passo a passo para fazer poesia") ||
+    normalizedMsg.includes("passo a passo para criar poesia") ||
+    normalizedMsg.includes("passo a passo poesia") ||
+    normalizedMsg.includes("etapas para criar poesia") ||
+    normalizedMsg.includes("candinho ensina como criar uma poesia");
+
+  if (ehPerguntaComoFazer && !normalizedMsg.includes("sobre ") && !normalizedMsg.includes(" pra ") && !normalizedMsg.includes(" para ")) {
+    return null; // Deixa bater direto no item CONHECIMENTO_CANDINHO (Oficina de Poesia de 5 passos)
+  }
+
+  const temPoesiaOuPoema = 
+    normalizedMsg.includes("poesia") || 
+    normalizedMsg.includes("poema") || 
+    normalizedMsg.includes("verso") || 
+    normalizedMsg.includes("rimar") || 
+    normalizedMsg.includes("rima");
+
+  const pedeAjudaOuCriacao = 
+    normalizedMsg.includes("ajud") || 
+    normalizedMsg.includes("escrev") || 
+    normalizedMsg.includes("cri") || 
+    normalizedMsg.includes("faz") || 
+    normalizedMsg.includes("fazer") || 
+    normalizedMsg.includes("montar") ||
+    normalizedMsg.includes("inventar") || 
+    normalizedMsg.includes("quero") ||
+    normalizedMsg.includes("queria") ||
+    normalizedMsg.includes("gostaria") ||
+    normalizedMsg.includes("precis") || 
+    normalizedMsg.includes("preciso") || 
+    normalizedMsg.includes("vamos") || 
+    normalizedMsg.includes("dicas") ||
+    normalizedMsg.includes("ensina") || 
+    normalizedMsg.includes("fazer um");
+
+  if (!temPoesiaOuPoema || !pedeAjudaOuCriacao) return null;
+
+  // 2. Tentar extrair tema específico do pedido (ex: "me ajude a escrever um poema sobre a paz", "preciso escrever um poema de amor")
+  const temasConhecidos: Record<string, { nome: string, imagens: string, palavras: string }> = {
+    amizade: {
+      nome: "Amizade e Companheirismo 🤝",
+      imagens: "Em vez de 'meu amigo é legal', que tal 'um amigo é como um sol nos dias de chuva' ou 'um abraço que guarda segredos'?",
+      palavras: "Amigo / abrigo, sorrisos / caminhos, lealdade, parceria, brincadeiras."
+    },
+    amigo: {
+      nome: "Amigos e Parceria 🤝",
+      imagens: "Em vez de 'meu amigo é legal', que tal 'um amigo é como um sol nos dias de chuva' ou 'um abraço que guarda segredos'?",
+      palavras: "Amigo / abrigo, sorrisos / caminhos, lealdade, parceria, brincadeiras."
+    },
+    amor: {
+      nome: "Amor e Sentimentos ❤️",
+      imagens: "Em vez de 'eu te amo muito', que tal 'o carinho acende uma luz quentinha' ou 'meu coração bate no ritmo de uma canção'?",
+      palavras: "Coração / canção, abraço / laço, carinho / ninho, luz, afeto."
+    },
+    natureza: {
+      nome: "Natureza e Meio Ambiente 🌿",
+      imagens: "Em vez de 'a floresta tem árvores', que tal 'as árvores contam segredos para o vento' ou 'o rio desenha curvas de prata na terra'?",
+      palavras: "Brisa / riso, folha / escolha, sementes, raízes, rios, florescer."
+    },
+    animais: {
+      nome: "Animais e Bichinhos 🐾",
+      imagens: "Em vez de 'o cachorro late', que tal 'patinhas ligeiras que correm atrás do vento' ou 'olhos brilhantes cheios de lealdade'?",
+      palavras: "Patinhas / asinhas, latido / amigo, ronronar, voar, liberdade."
+    },
+    animal: {
+      nome: "Animais e Bichinhos 🐾",
+      imagens: "Em vez de 'o animal é fofo', que tal 'patinhas ligeiras que correm atrás do vento' ou 'olhos curiosos e coração leal'?",
+      palavras: "Patinhas / asinhas, amigo / abrigo, ronronar, voar, brincar."
+    },
+    gato: {
+      nome: "Gatinhos e Felinos 🐱",
+      imagens: "Em vez de 'o gato mia', que tal 'passos de veludo que passeiam no telhado da noite' ou 'um novelo de ronrons carinhosos'?",
+      palavras: "Gato / mato / sapato, bigode / pode, ronronar, mistério, maciez."
+    },
+    cachorro: {
+      nome: "Cachorrinhos e Cães 🐶",
+      imagens: "Em vez de 'o cachorro late', que tal 'um rabinho alegre que abana felicidade' ou 'o guardião dos passos e das brincadeiras'?",
+      palavras: "Cão / coração, latido / amigo, lealdade, corrida, festa."
+    },
+    paz: {
+      nome: "Paz, União e Harmonia 🕊️",
+      imagens: "Em vez de 'a paz é boa', que tal 'a paz é um abraço que acalma qualquer vendaval' ou 'uma ponte feita de respeito e sorrisos'?",
+      palavras: "Paz / capaz, união / coração, calma, harmonia, luz, esperança."
+    },
+    escola: {
+      nome: "Escola e Aprendizado 📚",
+      imagens: "Em vez de 'eu vou pra escola', que tal 'o caderno é um passaporte para outros mundos' ou 'o lápis desenha o futuro no papel'?",
+      palavras: "Caderno / eterno, saber / crescer, lápis, cores, amigos, descobertas."
+    },
+    mae: {
+      nome: "Mãe e Carinho Materno 🌸",
+      imagens: "Em vez de 'minha mãe é boa', que tal 'o abraço de mãe é o ninho mais seguro do mundo' ou 'seu sorriso acalma qualquer tempestade'?",
+      palavras: "Mãe / flor / amor, ninho / caminho, carinho, luz, colo."
+    },
+    pai: {
+      nome: "Pai e Família 🌟",
+      imagens: "Em vez de 'meu pai é forte', que tal 'mãos que seguram as minhas para me ensinar a voar' ou 'passos firmes que iluminam a estrada'?",
+      palavras: "Pai / cais, proteção / coração, guia, força, carinho."
+    },
+    familia: {
+      nome: "Família e União 🏡",
+      imagens: "Em vez de 'minha família mora junta', que tal 'nossa casa é feita de risadas e histórias ao redor da mesa'?",
+      palavras: "Lar / cantar, união / coração, afeto, abraço, raiz."
+    },
+    sonhos: {
+      nome: "Sonhos e Imaginação ✨",
+      imagens: "Em vez de 'eu tive um sonho', que tal 'a imaginação abre asas no céu da mente' ou 'sonhar é viajar de olhos fechados'?",
+      palavras: "Sonhar / voar, estrelas / fitas, asas, infinito, magia."
+    },
+    mar: {
+      nome: "Mar e Águas 🌊",
+      imagens: "Em vez de 'o mar é grande', que tal 'as ondas dançam e cantam canções de ninar para a areia'?",
+      palavras: "Mar / cantar, onda / redonda, espuma, maré, conchinhas, segredos."
+    },
+    chuva: {
+      nome: "Chuva e Tempo 🌧️",
+      imagens: "Em vez de 'a chuva cai', que tal 'gotinhas que tamborilam na janela como notas musicais' ou 'o céu regando as flores da terra'?",
+      palavras: "Chuva / luva, pingo / domingo, frescor, terra molhada, orvalho."
+    },
+    cores: {
+      nome: "Cores e Pintura 🎨",
+      imagens: "Em vez de 'as cores são bonitas', que tal 'o pincel acende arco-íris no papel em branco'?",
+      palavras: "Cor / flor / amor, tinta / pinta, pincel, brilho, tela, imaginação."
+    }
+  };
+
+  let temaDetectado: { nome: string, imagens: string, palavras: string } | null = null;
+  for (const [chave, dados] of Object.entries(temasConhecidos)) {
+    if (normalizedMsg.includes(chave)) {
+      temaDetectado = dados;
+      break;
+    }
+  }
+
+  // Se o usuário especificou "sobre [algum tema]" que não está nos pré-definidos (ex: "sobre brinquedos", "sobre a lua", "sobre borboletas")
+  let temaExtraidoTexto = "";
+  const matchSobre = normalizedMsg.match(/(?:sobre|de|pra|para)\s+([a-záàâãéèêíïóôõöúçñ\s]+)/i);
+  if (matchSobre && matchSobre[1]) {
+    temaExtraidoTexto = matchSobre[1].replace(/poema|poesia|rimas|versos/g, "").trim();
+  }
+
+  if (temaDetectado) {
+    const reply = 
+      `🎨✍️ **Oficina de Poesia do Candinho — Tema: ${temaDetectado.nome}**\n\n` +
+      `Que tema maravilhoso para uma poesia! Como seu parceiro e professor de criação artística, eu não vou só te entregar um poema pronto de bandeja — nós vamos **construir a sua própria poesia juntos**, para que ela tenha o SEU toque e a sua voz de artista! 🌟\n\n` +
+      `💡 **Dicas e Inspirações para você criar:**\n` +
+      `• **💭 Ideia & Sentimento:** Pense no que você quer contar ou fazer as pessoas sentirem ao ouvirem seu poema!\n` +
+      `• **🎨 Imagens Poéticas:** ${temaDetectado.imagens}\n` +
+      `• **🎵 Ritmo e Palavras mágicas:** Brinque com ideias como: *${temaDetectado.palavras}*\n\n` +
+      `🖌️ **Seu Desafio de Criação:**\n` +
+      `Escreva os primeiros **4 a 8 versos** no seu caderno ou digite aqui para mim! Depois me conte: o seu poema combinaria mais com uma **canção suave** ou com o ritmo forte de um **rap**? 🎤❤️ Estou ansioso para ler o que você vai inventar!`;
+
+    return {
+      reply,
+      matchedKey: "oficina_poesia_com_tema"
+    };
+  }
+
+  if (temaExtraidoTexto && temaExtraidoTexto.length > 2) {
+    const reply = 
+      `🎨✍️ **Oficina de Poesia do Candinho — Tema: ${temaExtraidoTexto.toUpperCase()}**\n\n` +
+      `Que tema maravilhoso e criativo para uma poesia! Como seu parceiro e professor de criação artística, eu não vou só te entregar um poema pronto de bandeja — nós vamos **construir a sua própria poesia juntos**, para que ela tenha o SEU toque e a sua imaginação de artista! 🌟\n\n` +
+      `💡 **Dicas e Inspirações para o seu poema sobre ${temaExtraidoTexto}:**\n` +
+      `• **💭 O que você sente:** Quando você pensa em **${temaExtraidoTexto}**, qual é a primeira lembrança, cor ou sentimento que vem ao seu coração?\n` +
+      `• **🎨 Transforme em Imagens:** Em vez de descrever de forma simples, use metáforas e comparações criativas (ex: compare com as estrelas, com o vento ou com um abraço quentinho)!\n` +
+      `• **🎵 Dê ritmo:** Leia em voz alta e brinque com palavras que rimam ou que tenham uma batida gostosa de falar!\n\n` +
+      `🖌️ **Seu Desafio de Criação:**\n` +
+      `Escreva de **4 a 8 versos** sobre ${temaExtraidoTexto} e digite aqui para mim! Depois me conte: o seu poema combinaria mais com uma **canção melodiosa** ou com a batida de um **rap**? 🎤✨`;
+
+    return {
+      reply,
+      matchedKey: "oficina_poesia_tema_personalizado"
+    };
+  }
+
+  // Sem tema específico (ex: "preciso escrever um poema", "me ajude a escrever uma poesia", "quero fazer um poema"):
+  // Pergunta primeiro o tema e a ideia (Modo Professor de Criação)
+  const reply = 
+    `🎨✍️ **Oficina de Poesia do Candinho — Vamos criar juntos!**\n\n` +
+    `Que ideia incrível! Eu amo poesias e vou adorar te ajudar a criar a sua! Como seu amigo e professor de criação artística, eu não vou só te entregar um poema pronto — nós vamos **construir a sua própria poesia juntos**, do seu jeitinho! 🌟\n\n` +
+    `Para darmos os nossos primeiros passos:\n\n` +
+    `✏️ **1. Qual é o tema que você gostaria de escolher?**\n` +
+    `Pode ser sobre *amizade, amor, família, natureza, escola, sonhos, animais, seu bichinho ou algo que você gostaria de mudar no mundo*!\n\n` +
+    `💭 **2. O que você quer contar ou fazer as pessoas sentirem?**\n` +
+    `Qual é a mensagem que está no seu coração para esse poema?\n\n` +
+    `---\n` +
+    `Me responda aqui com o **tema e a ideia** que você escolheu! Assim que você me contar, eu vou te sugerir palavras mágicas, imagens poéticas e rimas para te ajudar a escrever seus próprios versos de 4 a 8 linhas! 📝✨`;
+
+  return {
+    reply,
+    matchedKey: "oficina_poesia_interativa"
+  };
+}
+
+function resolverAjudaRap(normalizedMsg: string): { reply: string, matchedKey?: string } | null {
+  // 1. Perguntas de "como criar/escrever/fazer um rap" -> Entrega a Oficina completa de 6 passos
+  const ehPerguntaComoFazer = 
+    normalizedMsg.includes("como escrever um rap") ||
+    normalizedMsg.includes("como criar um rap") ||
+    normalizedMsg.includes("como fazer um rap") ||
+    normalizedMsg.includes("como se escreve um rap") ||
+    normalizedMsg.includes("como se faz um rap") ||
+    normalizedMsg === "oficina de rap" ||
+    normalizedMsg === "oficina de rima" ||
+    normalizedMsg === "oficina de rimas" ||
+    normalizedMsg.includes("dicas para fazer rap") ||
+    normalizedMsg.includes("dicas para escrever rap") ||
+    normalizedMsg.includes("passo a passo para fazer rap") ||
+    normalizedMsg.includes("passo a passo para criar rap") ||
+    normalizedMsg.includes("passo a passo rap") ||
+    normalizedMsg.includes("etapas para criar rap") ||
+    normalizedMsg.includes("candinho ensina como fazer um rap") ||
+    normalizedMsg.includes("candinho ensina como criar um rap") ||
+    normalizedMsg.includes("formula do rap");
+
+  if (ehPerguntaComoFazer && !normalizedMsg.includes("sobre ") && !normalizedMsg.includes(" pra ") && !normalizedMsg.includes(" para ")) {
+    return null; // Deixa bater direto no item CONHECIMENTO_CANDINHO (Oficina de Rap completa de 6 passos)
+  }
+
+  // Diferença entre poesia e rap
+  if (normalizedMsg.includes("diferenca entre poesia e rap") ||
+      normalizedMsg.includes("diferenca de poesia e rap") ||
+      normalizedMsg.includes("qual a diferenca entre poesia e rap") ||
+      normalizedMsg.includes("poesia e rap e a mesma coisa") ||
+      normalizedMsg.includes("poesia e rap sao a mesma coisa") ||
+      normalizedMsg.includes("poesia ou rap")) {
+    return null; // Deixa bater direto na resposta da diferença entre poesia e rap
+  }
+
+  const temRap = 
+    normalizedMsg.includes("rap") || 
+    normalizedMsg.includes("rimar") || 
+    normalizedMsg.includes("rima") ||
+    normalizedMsg.includes("batida") ||
+    normalizedMsg.includes("refrao") ||
+    normalizedMsg.includes("refrão");
+
+  const pedeAjudaOuCriacao = 
+    normalizedMsg.includes("ajud") || 
+    normalizedMsg.includes("escrev") || 
+    normalizedMsg.includes("cri") || 
+    normalizedMsg.includes("faz") || 
+    normalizedMsg.includes("fazer") || 
+    normalizedMsg.includes("montar") ||
+    normalizedMsg.includes("inventar") || 
+    normalizedMsg.includes("quero") ||
+    normalizedMsg.includes("queria") ||
+    normalizedMsg.includes("gostaria") ||
+    normalizedMsg.includes("precis") || 
+    normalizedMsg.includes("preciso") || 
+    normalizedMsg.includes("vamos") || 
+    normalizedMsg.includes("dicas") ||
+    normalizedMsg.includes("ensina") || 
+    normalizedMsg.includes("fazer um");
+
+  if (!temRap || !pedeAjudaOuCriacao) return null;
+
+  // Temas conhecidos para Rap com mensagens fortes e rimas
+  const temasRap: Record<string, { nome: string, mensagem: string, rimas: string, exemploVerso: string, sugestaoRefrao: string }> = {
+    natureza: {
+      nome: "Natureza e Meio Ambiente 🌳",
+      mensagem: "Precisamos cuidar das árvores, dos rios e do futuro do nosso planeta!",
+      rimas: "floresta / festa, chão / missão, agradecer / crescer, semente / mente / gente",
+      exemploVerso: "Tem árvore, tem rio, tem vida no chão,\ncuidar da floresta é nossa missão.\nSe a gente protege, o futuro agradece,\nquando a natureza vive, a gente também cresce.",
+      sugestaoRefrao: "“Cuida, cuida, cuida da floresta!\nA natureza viva é o que importa!”"
+    },
+    meio_ambiente: {
+      nome: "Meio Ambiente e Planeta 🌍",
+      mensagem: "Cuidar da Terra e combater a poluição é compromisso de todos nós.",
+      rimas: "planeta / meta, poluição / união, cuidar / transformar, ar / respirar",
+      exemploVerso: "O céu tá cinzento, o rio pede ajuda,\na nossa atitude é a força que muda.\nLugar de lixo é na lixeira, respeita o lugar,\npra todo mundo junto ter ar puro pra respirar.",
+      sugestaoRefrao: "“Planeta limpo, terra protegida!\nCuidar do meio ambiente é cuidar da vida!”"
+    },
+    escola: {
+      nome: "Escola e Educação 🏫",
+      mensagem: "O conhecimento abre portas e ninguém pode tirar o que a gente aprende.",
+      rimas: "saber / vencer / crescer, futuro / muro, caneta / meta, estudo / tudo",
+      exemploVerso: "Mochila nas costas, caneta na mão,\no meu aprendizado é minha revolução.\nNa sala de aula eu venço o escuro,\nestudo todo dia pra construir o futuro.",
+      sugestaoRefrao: "“Escola é futuro, saber é poder!\nCom foco e atitude a gente vai vencer!”"
+    },
+    amizade: {
+      nome: "Amizade e União 🤝",
+      mensagem: "Amigo de verdade apoia nas horas difíceis e divide as alegrias.",
+      rimas: "irmão / coração / união, lealdade / verdade, caminho / sozinho, abrigo / amigo",
+      exemploVerso: "Caminhando lado a lado, ninguém fica pra trás,\num abraço de amigo traz força e traz paz.\nNa vitória ou no corre a gente tá junto,\nfechamento certo em qualquer assunto.",
+      sugestaoRefrao: "“Tamo junto, irmão, na palma da mão!\nAmizade verdadeira vem do coração!”"
+    },
+    respeito: {
+      nome: "Respeito e Igualdade ✨",
+      mensagem: "Cada pessoa é única e todo mundo merece respeito sem preconceito.",
+      rimas: "respeito / peito / direito, cor / valor / amor, igualdade / verdade, voz / nós",
+      exemploVerso: "Não importa a cor, o jeito ou o sotaque,\no preconceito perde se o respeito entra no ataque.\nDireito igual pra todo cidadão,\ntodo mundo é diferente com o mesmo coração.",
+      sugestaoRefrao: "“Respeito no peito, respeito na voz!\nA diferença é o que une todos nós!”"
+    },
+    preconceito: {
+      nome: "Contra o Preconceito e Desigualdade ✊",
+      mensagem: "Nenhuma discriminação tem espaço: queremos igualdade, voz e respeito.",
+      rimas: "direito / preconceito / respeito, igualdade / liberdade, voz / nós, atitude / juventude",
+      exemploVerso: "Diga não ao preconceito, venha na consciência,\na nossa diversidade é nossa maior potência.\nQuebre as barreiras, faça o mundo escutar,\ntodo ser humano nasceu pra brilhar.",
+      sugestaoRefrao: "“Sem preconceito, com muita atitude!\nA voz da igualdade tá na juventude!”"
+    },
+    animais: {
+      nome: "Proteção dos Animais 🐾",
+      mensagem: "Animais sentem dor e amor, precisam de proteção, carinho e respeito.",
+      rimas: "bicho / capricho, leal / animal, abrigo / amigo, coração / proteção",
+      exemploVerso: "Bicho não é brinquedo, sente frio e sente dor,\nmerece comida, cuidado e amor.\nSe você tem um bichinho, seja protetor,\nele retribui com carinho e valor.",
+      sugestaoRefrao: "“Proteja os bichinhos, dê amor e carinho!\nNenhum animal merece ficar sozinho!”"
+    },
+    sonhos: {
+      nome: "Sonhos e Superação 🚀",
+      mensagem: "Acreditar no próprio talento e nunca desistir diante dos obstáculos.",
+      rimas: "voar / sonhar / alcançar, meta / seta, vencer / aprender, vitória / história",
+      exemploVerso: "Olho pro horizonte com fé no olhar,\nse tem tempestade eu aprendo a voar.\nNenhum obstáculo vai me parar,\neu tenho um sonho e vou conquistar.",
+      sugestaoRefrao: "“Sonhar pra voar, lutar pra vencer!\nO futuro é nosso, vamos acontecer!”"
+    },
+    bairro: {
+      nome: "Comunidade e Meu Bairro 🏙️",
+      mensagem: "Melhorar a nossa praça, as ruas e a união entre os vizinhos.",
+      rimas: "rua / sua, praça / raça, comunidade / cidade, união / coração",
+      exemploVerso: "Nossa comunidade tem força e tem talento,\na gente quer praça, cultura e movimento.\nCuidar da nossa rua com união e respeito,\npra ver o nosso bairro no caminho perfeito.",
+      sugestaoRefrao: "“Nosso bairro é forte, nossa voz não para!\nUnião da quebrada ninguém separa!”"
+    }
+  };
+
+  let temaDetectado: { nome: string, mensagem: string, rimas: string, exemploVerso: string, sugestaoRefrao: string } | null = null;
+  for (const [chave, dados] of Object.entries(temasRap)) {
+    if (normalizedMsg.includes(chave)) {
+      temaDetectado = dados;
+      break;
+    }
+  }
+
+  let temaExtraidoTexto = "";
+  const matchSobre = normalizedMsg.match(/(?:sobre|de|pra|para)\s+([a-záàâãéèêíïóôõöúçñ\s]+)/i);
+  if (matchSobre && matchSobre[1]) {
+    temaExtraidoTexto = matchSobre[1].replace(/rap|rima|rimas|versos|refrao|refrão/g, "").trim();
+  }
+
+  if (temaDetectado) {
+    const reply = 
+      `🎤🔥 **Oficina de Rap do Candinho — Tema: ${temaDetectado.nome}**\n\n` +
+      `Mandou muito bem na escolha do assunto! Como seu parceiro e professor de criação, eu não vou só te dar um rap pronto — nós vamos **montar a sua própria rima juntos**, no ritmo da sua voz! 🎧💥\n\n` +
+      `💡 **Guia de Criação para o seu Rap:**\n` +
+      `• 🎯 **Tema:** ${temaDetectado.nome}\n` +
+      `• 💡 **Mensagem:** ${temaDetectado.mensagem}\n` +
+      `• ✍️ **Rimas no Flow:** *${temaDetectado.rimas}*\n` +
+      `• 🥁 **Batida:** Marque o ritmo: **PÁ | PÁ | PUM | PÁ** batendo palma ou na mesa!\n\n` +
+      `🎶 **Inspiração de Versos:**\n` +
+      `> *“${temaDetectado.exemploVerso.replace(/\n/g, "\n> ")}”*\n\n` +
+      `🎤 **Inspiração de Refrão:**\n` +
+      `> ${temaDetectado.sugestaoRefrao}\n\n` +
+      `---\n` +
+      `🚀 **Desafio do Candinho:**\n` +
+      `Agora é a sua vez no microfone! Escreva **4 versos com a sua mensagem** e crie um **refrão marcante de 2 linhas**. Digite aqui para eu ouvir o seu flow! 🎤✨`;
+
+    return {
+      reply,
+      matchedKey: "oficina_rap_com_tema"
+    };
+  }
+
+  if (temaExtraidoTexto && temaExtraidoTexto.length > 2) {
+    const reply = 
+      `🎤🔥 **Oficina de Rap do Candinho — Tema: ${temaExtraidoTexto.toUpperCase()}**\n\n` +
+      `Excelente assunto para soltar a voz! Como seu parceiro e professor de criação, nós vamos **construir o seu próprio rap juntos**! 🎧💥\n\n` +
+      `🚀 **Aplique a Fórmula do Candinho para criar sobre ${temaExtraidoTexto}:**\n` +
+      `1. 🎯 **Tema:** ${temaExtraidoTexto}\n` +
+      `2. 💡 **Mensagem:** O que você quer que as pessoas pensem ou sintam ao ouvir o seu rap sobre isso?\n` +
+      `3. ✍️ **Lista de Palavras & Rimas:** Escolha 4 palavras ligadas a ${temaExtraidoTexto} e ache rimas fortes para elas!\n` +
+      `4. 🥁 **Ritmo:** Fale com atitude marcando a batida: **PÁ | PÁ | PUM | PÁ**!\n` +
+      `5. 🎤 **Refrão:** Crie uma frase curta e marcante que se repete!\n\n` +
+      `> **Candinho:** *“Um bom rap não precisa falar difícil. Precisa ter uma ideia para dizer, ritmo para ouvir e uma voz que tenha algo a contar.”*\n\n` +
+      `🎤 **Seu Desafio:**\n` +
+      `Escreva os seus **4 primeiros versos** e o seu **refrão** sobre ${temaExtraidoTexto} e digite aqui para mim! Estou ansioso para ver a sua rima! 📝🔥`;
+
+    return {
+      reply,
+      matchedKey: "oficina_rap_tema_personalizado"
+    };
+  }
+
+  // Pedido aberto de ajuda para rap (ex: "me ajude a fazer um rap", "como rimar no rap", "quero criar um rap")
+  const reply = 
+    `🎤🔥 **Oficina de Rap do Candinho — Vamos rimar juntos!**\n\n` +
+    `Demais! O rap é uma das formas mais incríveis de usar palavras, ritmo e voz para contar histórias e mudar o mundo! 🌟\n\n` +
+    `Como seu amigo e professor de criação, eu vou te ajudar a construir o seu rap passo a passo:\n\n` +
+    `🎯 **1. Escolha o seu assunto:**\n` +
+    `Pode ser sobre *amizade, escola, meio ambiente, respeito, preconceito, animais, sonhos ou a sua comunidade*!\n\n` +
+    `💡 **2. Qual é a sua mensagem?**\n` +
+    `O que você quer que as pessoas pensem ou sintam depois de ouvir o seu som?\n\n` +
+    `---\n` +
+    `🚀 **A Fórmula do Candinho:**\n` +
+    `**TEMA → MENSAGEM → PALAVRAS → RIMAS → VERSOS → RITMO → REFRÃO**\n\n` +
+    `Me diga aqui: **qual assunto você quer escolher?** Assim que você me contar, eu te ajudo com rimas, batidas e na criação do seu refrão! 🎤🎧`;
+
+  return {
+    reply,
+    matchedKey: "oficina_rap_interativa"
+  };
+}
+
+function resolverAjudaFunk(normalizedMsg: string): { reply: string, matchedKey?: string } | null {
+  // 1. Perguntas de "como criar/escrever/fazer um funk" -> Entrega a Oficina completa de passos
+  const ehPerguntaComoFazer = 
+    normalizedMsg.includes("como escrever um funk") ||
+    normalizedMsg.includes("como criar um funk") ||
+    normalizedMsg.includes("como fazer um funk") ||
+    normalizedMsg.includes("como se escreve um funk") ||
+    normalizedMsg.includes("como se faz um funk") ||
+    normalizedMsg === "oficina de funk" ||
+    normalizedMsg === "oficina de batida" ||
+    normalizedMsg.includes("dicas para fazer funk") ||
+    normalizedMsg.includes("dicas para escrever funk") ||
+    normalizedMsg.includes("passo a passo para fazer funk") ||
+    normalizedMsg.includes("passo a passo para criar funk") ||
+    normalizedMsg.includes("passo a passo funk") ||
+    normalizedMsg.includes("etapas para criar funk") ||
+    normalizedMsg.includes("candinho ensina como fazer um funk") ||
+    normalizedMsg.includes("candinho ensina como criar um funk") ||
+    normalizedMsg.includes("formula do funk");
+
+  if (ehPerguntaComoFazer && !normalizedMsg.includes("sobre ") && !normalizedMsg.includes(" pra ") && !normalizedMsg.includes(" para ")) {
+    return null; // Deixa bater direto no item CONHECIMENTO_CANDINHO (Oficina de Funk)
+  }
+
+  const temFunk = 
+    normalizedMsg.includes("funk") || 
+    normalizedMsg.includes("passinho") || 
+    normalizedMsg.includes("batida do funk");
+
+  const pedeAjudaOuCriacao = 
+    normalizedMsg.includes("ajud") || 
+    normalizedMsg.includes("escrev") || 
+    normalizedMsg.includes("cri") || 
+    normalizedMsg.includes("faz") || 
+    normalizedMsg.includes("fazer") || 
+    normalizedMsg.includes("montar") ||
+    normalizedMsg.includes("inventar") || 
+    normalizedMsg.includes("quero") ||
+    normalizedMsg.includes("queria") ||
+    normalizedMsg.includes("gostaria") ||
+    normalizedMsg.includes("precis") || 
+    normalizedMsg.includes("preciso") || 
+    normalizedMsg.includes("vamos") || 
+    normalizedMsg.includes("dicas") ||
+    normalizedMsg.includes("ensina") || 
+    normalizedMsg.includes("fazer um");
+
+  if (!temFunk || !pedeAjudaOuCriacao) return null;
+
+  // Temas conhecidos para Funk com batida e refrão contagiante
+  const temasFunk: Record<string, { nome: string, mensagem: string, rimas: string, exemploVerso: string, sugestaoRefrao: string }> = {
+    escola: {
+      nome: "Escola e Aprendizado 🏫",
+      mensagem: "Aprender também pode ser divertido e cheio de energia!",
+      rimas: "chegar / aprender / acontecer, estudar / criar",
+      exemploVerso: "Na escola eu vou chegar,\ntenho muito pra aprender,\ncom meus amigos do lado,\nfica bom de acontecer!",
+      sugestaoRefrao: "“Vem aprender!\nVem criar!\nVem com a turma participar!”"
+    },
+    arte: {
+      nome: "Arte e Criatividade 🎨",
+      mensagem: "A arte liberta a imaginação e colore o nosso dia a dia.",
+      rimas: "mente / coração, imaginação / criação, pintar / dançar",
+      exemploVerso: "Pega a tinta, o pincel,\nsolta a cor no papel,\narte viva em movimento,\nliberdade e talento!",
+      sugestaoRefrao: "“Arte na mente!\nArte no coração!\nDesenha, pinta, cria\ne solta a imaginação!”"
+    },
+    amizade: {
+      nome: "Amizade e Turma 🤝",
+      mensagem: "Estar com os amigos faz qualquer momento ficar mais alegre e divertido.",
+      rimas: "irmão / coração, animar / dançar, alegria / companhia",
+      exemploVerso: "Minha turma tá colada,\nnão tem tempo pra tristeza,\nquando a gente se junta,\né alegria com certeza!",
+      sugestaoRefrao: "“Bate a palma no compasso!\nJunta a turma no pedaço!”"
+    },
+    esporte: {
+      nome: "Esporte e Futebol ⚽",
+      mensagem: "Praticar esportes traz saúde, respeito, união e muita garra.",
+      rimas: "bola / sacola / escola, gol / show, jogar / comemorar",
+      exemploVerso: "Bola rolando no chão,\no time entra com garra,\nrespeito no campeonato,\naqui a festa não para!",
+      sugestaoRefrao: "“Chuta a bola, corre pro gol!\nO esporte é nosso show!”"
+    },
+    natureza: {
+      nome: "Natureza e Meio Ambiente 🌳",
+      mensagem: "Cuidar dos rios, plantas e animais com ritmo e conscientização.",
+      rimas: "cuidar / preservar, chão / pulmão, verde / sede",
+      exemploVerso: "Planta a árvore no quintal,\ncuidar da terra é vital,\nágua limpa pro futuro,\nplaneta vivo e sem mal!",
+      sugestaoRefrao: "“Cuida da terra, cuida do ar!\nA natureza vai agradecer e cantar!”"
+    },
+    diversao: {
+      nome: "Diversão e Alegria 😂",
+      mensagem: "Sorrir, dançar e espalhar energia boa por onde passar.",
+      rimas: "sorrir / curtir, animação / emoção, pular / dançar",
+      exemploVerso: "Solta o som, entra no clima,\nvem trazendo a energia,\nquem dança é mais feliz,\nespalhando a alegria!",
+      sugestaoRefrao: "“Pula, dança, sai do chão!\nO funk é só diversão!”"
+    },
+    sonhos: {
+      nome: "Sonhos e Conquistas ⭐",
+      mensagem: "Acreditar no próprio potencial e correr atrás dos seus objetivos com alegria.",
+      rimas: "brilhar / alcançar, lutar / conquistar, visão / coração",
+      exemploVerso: "Eu tenho um sonho no peito,\neu vou correr atrás,\ncom muita garra e respeito,\na gente é capaz!",
+      sugestaoRefrao: "“Brilha, brilha, vai no topo!\nQuem acredita nunca tá no sufoco!”"
+    }
+  };
+
+  let temaDetectado: { nome: string, mensagem: string, rimas: string, exemploVerso: string, sugestaoRefrao: string } | null = null;
+  for (const [chave, dados] of Object.entries(temasFunk)) {
+    if (normalizedMsg.includes(chave)) {
+      temaDetectado = dados;
+      break;
+    }
+  }
+
+  let temaExtraidoTexto = "";
+  const matchSobre = normalizedMsg.match(/(?:sobre|de|pra|para)\s+([a-záàâãéèêíïóôõöúçñ\s]+)/i);
+  if (matchSobre && matchSobre[1]) {
+    temaExtraidoTexto = matchSobre[1].replace(/funk|batida|rima|rimas|versos|refrao|refrão/g, "").trim();
+  }
+
+  if (temaDetectado) {
+    const reply = 
+      `🥁🔥 **Oficina de Funk do Candinho — Tema: ${temaDetectado.nome}**\n\n` +
+      `Sensacional! O funk tem muita força, ritmo e batida no Brasil! Como seu parceiro e professor de criação, nós vamos **construir o seu próprio funk juntos**, com frases curtas e refrão contagiante! 🎧💥\n\n` +
+      `💡 **Guia de Criação para o seu Funk:**\n` +
+      `• 🥁 **Tema:** ${temaDetectado.nome}\n` +
+      `• 💡 **Mensagem:** ${temaDetectado.mensagem}\n` +
+      `• ✍️ **Palavras & Rimas:** *${temaDetectado.rimas}*\n` +
+      `• 🎵 **Batida:** Marque no ritmo: **PÁ – PÁ – PUM | PÁ – PÁ – PUM**!\n\n` +
+      `🎶 **Inspiração de Versos Curtos:**\n` +
+      `> *“${temaDetectado.exemploVerso.replace(/\n/g, "\n> ")}”*\n\n` +
+      `🎤 **Inspiração de Refrão (com Repetição):**\n` +
+      `> ${temaDetectado.sugestaoRefrao.replace(/\n/g, "\n> ")}\n\n` +
+      `---\n` +
+      `🚀 **Desafio do Candinho:**\n` +
+      `Escreva os seus **4 versos curtos** e monte um **refrão fácil de repetir** sobre ${temaDetectado.nome}! Digite aqui para vermos como ficou a sua batida! 🥁✨`;
+
+    return {
+      reply,
+      matchedKey: "oficina_funk_com_tema"
+    };
+  }
+
+  if (temaExtraidoTexto && temaExtraidoTexto.length > 2) {
+    const reply = 
+      `🥁🔥 **Oficina de Funk do Candinho — Tema: ${temaExtraidoTexto.toUpperCase()}**\n\n` +
+      `Muito legal! O funk valoriza a batida, a repetição e a criatividade das palavras! Vamos **criar o seu funk sobre ${temaExtraidoTexto} juntos**! 🎧💥\n\n` +
+      `🚀 **Fórmula do Funk do Candinho:**\n` +
+      `1. 🥁 **Tema:** ${temaExtraidoTexto}\n` +
+      `2. 💡 **Mensagem:** O que você quer dizer sobre isso?\n` +
+      `3. ✍️ **Frases Curtas:** Crie versos de 2 a 4 linhas que acompanhem a batida!\n` +
+      `4. 🎵 **Ritmo:** Marque com palmas: **PÁ – PÁ – PUM | PÁ – PÁ – PUM**!\n` +
+      `5. 🎤 **Refrão com Repetição:** Uma frase fácil de lembrar e que todo mundo possa cantar junto!\n\n` +
+      `> **Candinho:** *“Você não precisa usar palavras difíceis para fazer um bom funk. Precisa ter criatividade, ritmo e algo para dizer.”*\n\n` +
+      `🎨 **Seu Desafio:**\n` +
+      `Escreva seus **versos curtos** e o seu **refrão repetido** sobre ${temaExtraidoTexto} e digite aqui para mim! 🥁📝`;
+
+    return {
+      reply,
+      matchedKey: "oficina_funk_tema_personalizado"
+    };
+  }
+
+  // Pedido aberto de ajuda para funk
+  const reply = 
+    `🥁🔥 **Oficina de Funk do Candinho — Vamos criar um som!**\n\n` +
+    `Demais! O funk é um gênero musical que tem muita força no Brasil. Ele valoriza o ritmo, a batida, a repetição e a criatividade das palavras! 🌟\n\n` +
+    `Como seu amigo e professor de criação, vamos montar o seu funk passo a passo:\n\n` +
+    `🥁 **1. Escolha o seu tema:**\n` +
+    `Pode ser sobre *escola, amizade, esporte, arte, natureza, cidade, diversão ou seus sonhos*!\n\n` +
+    `💡 **2. O que você quer dizer no seu funk?**\n` +
+    `Qual é a mensagem ou história divertida que você quer passar?\n\n` +
+    `---\n` +
+    `🚀 **Fórmula:** **TEMA → MENSAGEM → VERSOS CURTOS → RITMO (PÁ-PÁ-PUM) → REFRÃO**\n\n` +
+    `Me conte aqui: **qual tema você escolheu?** Assim que você me disser, nós vamos criar os versos e o refrão juntos! 🥁🎧`;
+
+  return {
+    reply,
+    matchedKey: "oficina_funk_interativa"
+  };
+}
+
 function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any>): { reply: string, matchedKey?: string } | null {
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
@@ -4014,6 +4979,18 @@ function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any
   // Intercept character creation / inspiration requests
   const criarPersonagemRes = resolverCriarPersonagemFolclorico(normalizedMsg);
   if (criarPersonagemRes) return criarPersonagemRes;
+
+  // Intercept poetry creation & help (Oficina de Poesia)
+  const ajudaPoesiaRes = resolverAjudaPoesia(normalizedMsg);
+  if (ajudaPoesiaRes) return ajudaPoesiaRes;
+
+  // Intercept rap creation & help (Oficina de Rap)
+  const ajudaRapRes = resolverAjudaRap(normalizedMsg);
+  if (ajudaRapRes) return ajudaRapRes;
+
+  // Intercept funk creation & help (Oficina de Funk)
+  const ajudaFunkRes = resolverAjudaFunk(normalizedMsg);
+  if (ajudaFunkRes) return ajudaFunkRes;
 
   // Intercept specific art tutorials
   const tutorialRes = resolverTutoriaisArteCandinho(normalizedMsg);
