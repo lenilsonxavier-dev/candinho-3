@@ -4362,6 +4362,52 @@ function resolverCriarPersonagemFolclorico(normalizedMsg: string): { reply: stri
   };
 }
 
+/**
+ * Extrai um tema limpo e válido para as oficinas de Poesia, Rap e Funk,
+ * evitando capturar verbos e preposições de ação (como 'a fazer um', 'de criar uma', etc.).
+ */
+function extrairTemaLimpo(normalizedMsg: string): string | null {
+  let raw = "";
+
+  // Procura por preposições claras de tema ("sobre o...", "tema de...", "falando sobre...", "a respeito de...")
+  const matchSobre = normalizedMsg.match(/(?:sobre\s+(?:o|a|os|as)?|tema\s+(?:de|da|do|sobre)?|falando\s+(?:de|sobre|da|do)|a\s+respeito\s+de)\s+([a-záàâãéèêíïóôõöúçñ\s]+)/i);
+  if (matchSobre && matchSobre[1]) {
+    raw = matchSobre[1];
+  } else {
+    // Procura por "de/pra/para [substantivo]" evitando quando seguido imediatamente por verbos de ação
+    const matchDePara = normalizedMsg.match(/(?:(?:de|pra|para)\s+(?:o|a|um|uma|os|as)?\s*)([a-záàâãéèêíïóôõöúçñ\s]+)/i);
+    if (matchDePara && matchDePara[1]) {
+      raw = matchDePara[1];
+    }
+  }
+
+  if (!raw) return null;
+
+  // Limpa palavras de gênero, comandos e artigos/conectivos
+  let cleaned = raw
+    .replace(/\b(poema|poemas|poesia|poesias|rap|raps|funk|funks|musica|musicas|música|músicas|rima|rimas|verso|versos|refrao|refrão|letra|letras|estilo|batida)\b/gi, "")
+    .replace(/\b(como|fazer|faz|faca|faça|criar|cria|escrever|escreve|inventar|montar|aprender|ensinar|ensina|ajudar|ajuda|ajude|quero|queria|gostaria|preciso|precisa|vamos|bora)\b/gi, "")
+    .replace(/\b(um|uma|uns|umas|o|a|os|as|de|do|da|dos|das|em|no|na|nos|nas|com|por|pra|para|sobre|ao|aos|à|às)\b/gi, "")
+    .trim();
+
+  // Se ficou vazio, com menos de 3 caracteres ou termos genéricos, descarta
+  if (!cleaned || cleaned.length < 3) {
+    return null;
+  }
+
+  const palavrasInvalidas = new Set([
+    "algo", "coisa", "nada", "tudo", "mim", "voce", "você", "candinho", "professor", "amigo",
+    "facil", "fácil", "dificil", "difícil", "rapido", "rápido", "legal", "bonito", "novo", "nova",
+    "aqui", "ali", "hoje", "bom", "boa", "bem", "fazer um", "fazer uma", "criar um", "criar uma"
+  ]);
+
+  if (palavrasInvalidas.has(cleaned.toLowerCase())) {
+    return null;
+  }
+
+  return cleaned;
+}
+
 function resolverAjudaPoesia(normalizedMsg: string): { reply: string, matchedKey?: string } | null {
   // 1. Perguntas de "como criar/escrever/fazer uma poesia ou poema" -> Entrega a Oficina completa de 5 passos
   const ehPerguntaComoFazer = 
@@ -4513,12 +4559,8 @@ function resolverAjudaPoesia(normalizedMsg: string): { reply: string, matchedKey
     }
   }
 
-  // Se o usuário especificou "sobre [algum tema]" que não está nos pré-definidos (ex: "sobre brinquedos", "sobre a lua", "sobre borboletas")
-  let temaExtraidoTexto = "";
-  const matchSobre = normalizedMsg.match(/(?:sobre|de|pra|para)\s+([a-záàâãéèêíïóôõöúçñ\s]+)/i);
-  if (matchSobre && matchSobre[1]) {
-    temaExtraidoTexto = matchSobre[1].replace(/poema|poesia|rimas|versos/g, "").trim();
-  }
+  // Se o usuário especificou "sobre [algum tema]" ou um tema personalizado limpo
+  const temaExtraidoTexto = extrairTemaLimpo(normalizedMsg);
 
   if (temaDetectado) {
     const reply = 
@@ -4537,7 +4579,7 @@ function resolverAjudaPoesia(normalizedMsg: string): { reply: string, matchedKey
     };
   }
 
-  if (temaExtraidoTexto && temaExtraidoTexto.length > 2) {
+  if (temaExtraidoTexto && temaExtraidoTexto.length >= 3) {
     const reply = 
       `🎨✍️ **Oficina de Poesia do Candinho — Tema: ${temaExtraidoTexto.toUpperCase()}**\n\n` +
       `Que tema maravilhoso e criativo para uma poesia! Como seu parceiro e professor de criação artística, eu não vou só te entregar um poema pronto de bandeja — nós vamos **construir a sua própria poesia juntos**, para que ela tenha o SEU toque e a sua imaginação de artista! 🌟\n\n` +
@@ -4711,11 +4753,7 @@ function resolverAjudaRap(normalizedMsg: string): { reply: string, matchedKey?: 
     }
   }
 
-  let temaExtraidoTexto = "";
-  const matchSobre = normalizedMsg.match(/(?:sobre|de|pra|para)\s+([a-záàâãéèêíïóôõöúçñ\s]+)/i);
-  if (matchSobre && matchSobre[1]) {
-    temaExtraidoTexto = matchSobre[1].replace(/rap|rima|rimas|versos|refrao|refrão/g, "").trim();
-  }
+  const temaExtraidoTexto = extrairTemaLimpo(normalizedMsg);
 
   if (temaDetectado) {
     const reply = 
@@ -4740,7 +4778,7 @@ function resolverAjudaRap(normalizedMsg: string): { reply: string, matchedKey?: 
     };
   }
 
-  if (temaExtraidoTexto && temaExtraidoTexto.length > 2) {
+  if (temaExtraidoTexto && temaExtraidoTexto.length >= 3) {
     const reply = 
       `🎤🔥 **Oficina de Rap do Candinho — Tema: ${temaExtraidoTexto.toUpperCase()}**\n\n` +
       `Excelente assunto para soltar a voz! Como seu parceiro e professor de criação, nós vamos **construir o seu próprio rap juntos**! 🎧💥\n\n` +
@@ -4890,11 +4928,7 @@ function resolverAjudaFunk(normalizedMsg: string): { reply: string, matchedKey?:
     }
   }
 
-  let temaExtraidoTexto = "";
-  const matchSobre = normalizedMsg.match(/(?:sobre|de|pra|para)\s+([a-záàâãéèêíïóôõöúçñ\s]+)/i);
-  if (matchSobre && matchSobre[1]) {
-    temaExtraidoTexto = matchSobre[1].replace(/funk|batida|rima|rimas|versos|refrao|refrão/g, "").trim();
-  }
+  const temaExtraidoTexto = extrairTemaLimpo(normalizedMsg);
 
   if (temaDetectado) {
     const reply = 
@@ -4919,7 +4953,7 @@ function resolverAjudaFunk(normalizedMsg: string): { reply: string, matchedKey?:
     };
   }
 
-  if (temaExtraidoTexto && temaExtraidoTexto.length > 2) {
+  if (temaExtraidoTexto && temaExtraidoTexto.length >= 3) {
     const reply = 
       `🥁🔥 **Oficina de Funk do Candinho — Tema: ${temaExtraidoTexto.toUpperCase()}**\n\n` +
       `Muito legal! O funk valoriza a batida, a repetição e a criatividade das palavras! Vamos **criar o seu funk sobre ${temaExtraidoTexto} juntos**! 🎧💥\n\n` +
@@ -5238,8 +5272,14 @@ function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any
 export function tornarRespostaDialogica(reply: string, matchedKey?: string): string {
   if (!reply) return reply;
   
-  // Se for uma resposta estruturada de "como_" ou "followup", ela já tem guias e opções de interação
-  if (matchedKey && (matchedKey.startsWith("como_") || matchedKey.includes("followup"))) {
+  // Se for uma resposta estruturada de oficinas, tutoriais, "como_" ou "followup", ela já tem guias e chamadas para ação próprias
+  if (matchedKey && (
+    matchedKey.startsWith("como_") ||
+    matchedKey.startsWith("oficina_") ||
+    matchedKey.startsWith("criar_") ||
+    matchedKey.startsWith("tutorial_") ||
+    matchedKey.includes("followup")
+  )) {
     return reply;
   }
   
