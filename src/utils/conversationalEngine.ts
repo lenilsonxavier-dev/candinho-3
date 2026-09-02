@@ -4385,9 +4385,9 @@ function extrairTemaLimpo(normalizedMsg: string): string | null {
 
   // Limpa palavras de gênero, comandos e artigos/conectivos
   let cleaned = raw
-    .replace(/\b(poema|poemas|poesia|poesias|rap|raps|funk|funks|musica|musicas|música|músicas|rima|rimas|verso|versos|refrao|refrão|letra|letras|estilo|batida)\b/gi, "")
+    .replace(/\b(poema|poemas|poesia|poesias|rap|raps|funk|funks|musica|musicas|música|músicas|rima|rimas|verso|versos|refrao|refrão|letra|letras|estilo|batida|flow)\b/gi, "")
     .replace(/\b(como|fazer|faz|faca|faça|criar|cria|escrever|escreve|inventar|montar|aprender|ensinar|ensina|ajudar|ajuda|ajude|quero|queria|gostaria|preciso|precisa|vamos|bora)\b/gi, "")
-    .replace(/\b(um|uma|uns|umas|o|a|os|as|de|do|da|dos|das|em|no|na|nos|nas|com|por|pra|para|sobre|ao|aos|à|às)\b/gi, "")
+    .replace(/\b(um|uma|uns|umas|o|a|os|as|de|do|da|dos|das|em|no|na|nos|nas|com|por|pra|para|sobre|ao|aos|à|às|me|te|se|lhe|nos|vos)\b/gi, "")
     .trim();
 
   // Se ficou vazio, com menos de 3 caracteres ou termos genéricos, descarta
@@ -4396,12 +4396,19 @@ function extrairTemaLimpo(normalizedMsg: string): string | null {
   }
 
   const palavrasInvalidas = new Set([
-    "algo", "coisa", "nada", "tudo", "mim", "voce", "você", "candinho", "professor", "amigo",
+    "algo", "coisa", "coisas", "nada", "tudo", "mim", "voce", "você", "candinho", "professor", "amigo",
     "facil", "fácil", "dificil", "difícil", "rapido", "rápido", "legal", "bonito", "novo", "nova",
-    "aqui", "ali", "hoje", "bom", "boa", "bem", "fazer um", "fazer uma", "criar um", "criar uma"
+    "aqui", "ali", "hoje", "bom", "boa", "bem", "fazer um", "fazer uma", "criar um", "criar uma", "fazer", "criar",
+    "fazer rap", "criar rap", "fazer funk", "criar funk", "fazer poesia", "criar poesia"
   ]);
 
   if (palavrasInvalidas.has(cleaned.toLowerCase())) {
+    return null;
+  }
+
+  // Verifica se restou apenas verbos ou conectivos
+  const palavrasRestantes = cleaned.toLowerCase().split(/\s+/).filter(Boolean);
+  if (palavrasRestantes.every(p => palavrasInvalidas.has(p) || p.length <= 2)) {
     return null;
   }
 
