@@ -12994,13 +12994,14 @@ function extrairTemaLimpo(normalizedMsg) {
     }
   }
   if (!raw) return null;
-  let cleaned = raw.replace(/\b(poema|poemas|poesia|poesias|rap|raps|funk|funks|musica|musicas|música|músicas|rima|rimas|verso|versos|refrao|refrão|letra|letras|estilo|batida)\b/gi, "").replace(/\b(como|fazer|faz|faca|faça|criar|cria|escrever|escreve|inventar|montar|aprender|ensinar|ensina|ajudar|ajuda|ajude|quero|queria|gostaria|preciso|precisa|vamos|bora)\b/gi, "").replace(/\b(um|uma|uns|umas|o|a|os|as|de|do|da|dos|das|em|no|na|nos|nas|com|por|pra|para|sobre|ao|aos|à|às)\b/gi, "").trim();
+  let cleaned = raw.replace(/\b(poema|poemas|poesia|poesias|rap|raps|funk|funks|musica|musicas|música|músicas|rima|rimas|verso|versos|refrao|refrão|letra|letras|estilo|batida|flow)\b/gi, "").replace(/\b(como|fazer|faz|faca|faça|criar|cria|escrever|escreve|inventar|montar|aprender|ensinar|ensina|ajudar|ajuda|ajude|quero|queria|gostaria|preciso|precisa|vamos|bora)\b/gi, "").replace(/\b(um|uma|uns|umas|o|a|os|as|de|do|da|dos|das|em|no|na|nos|nas|com|por|pra|para|sobre|ao|aos|à|às|me|te|se|lhe|nos|vos)\b/gi, "").trim();
   if (!cleaned || cleaned.length < 3) {
     return null;
   }
   const palavrasInvalidas = /* @__PURE__ */ new Set([
     "algo",
     "coisa",
+    "coisas",
     "nada",
     "tudo",
     "mim",
@@ -13028,9 +13029,21 @@ function extrairTemaLimpo(normalizedMsg) {
     "fazer um",
     "fazer uma",
     "criar um",
-    "criar uma"
+    "criar uma",
+    "fazer",
+    "criar",
+    "fazer rap",
+    "criar rap",
+    "fazer funk",
+    "criar funk",
+    "fazer poesia",
+    "criar poesia"
   ]);
   if (palavrasInvalidas.has(cleaned.toLowerCase())) {
+    return null;
+  }
+  const palavrasRestantes = cleaned.toLowerCase().split(/\s+/).filter(Boolean);
+  if (palavrasRestantes.every((p) => palavrasInvalidas.has(p) || p.length <= 2)) {
     return null;
   }
   return cleaned;
