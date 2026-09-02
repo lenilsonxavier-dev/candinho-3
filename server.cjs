@@ -12982,6 +12982,59 @@ ${char.detalhes}
     matchedKey: `criar_${char.matchedKey}`
   };
 }
+function extrairTemaLimpo(normalizedMsg) {
+  let raw = "";
+  const matchSobre = normalizedMsg.match(/(?:sobre\s+(?:o|a|os|as)?|tema\s+(?:de|da|do|sobre)?|falando\s+(?:de|sobre|da|do)|a\s+respeito\s+de)\s+([a-záàâãéèêíïóôõöúçñ\s]+)/i);
+  if (matchSobre && matchSobre[1]) {
+    raw = matchSobre[1];
+  } else {
+    const matchDePara = normalizedMsg.match(/(?:(?:de|pra|para)\s+(?:o|a|um|uma|os|as)?\s*)([a-záàâãéèêíïóôõöúçñ\s]+)/i);
+    if (matchDePara && matchDePara[1]) {
+      raw = matchDePara[1];
+    }
+  }
+  if (!raw) return null;
+  let cleaned = raw.replace(/\b(poema|poemas|poesia|poesias|rap|raps|funk|funks|musica|musicas|música|músicas|rima|rimas|verso|versos|refrao|refrão|letra|letras|estilo|batida)\b/gi, "").replace(/\b(como|fazer|faz|faca|faça|criar|cria|escrever|escreve|inventar|montar|aprender|ensinar|ensina|ajudar|ajuda|ajude|quero|queria|gostaria|preciso|precisa|vamos|bora)\b/gi, "").replace(/\b(um|uma|uns|umas|o|a|os|as|de|do|da|dos|das|em|no|na|nos|nas|com|por|pra|para|sobre|ao|aos|à|às)\b/gi, "").trim();
+  if (!cleaned || cleaned.length < 3) {
+    return null;
+  }
+  const palavrasInvalidas = /* @__PURE__ */ new Set([
+    "algo",
+    "coisa",
+    "nada",
+    "tudo",
+    "mim",
+    "voce",
+    "voc\xEA",
+    "candinho",
+    "professor",
+    "amigo",
+    "facil",
+    "f\xE1cil",
+    "dificil",
+    "dif\xEDcil",
+    "rapido",
+    "r\xE1pido",
+    "legal",
+    "bonito",
+    "novo",
+    "nova",
+    "aqui",
+    "ali",
+    "hoje",
+    "bom",
+    "boa",
+    "bem",
+    "fazer um",
+    "fazer uma",
+    "criar um",
+    "criar uma"
+  ]);
+  if (palavrasInvalidas.has(cleaned.toLowerCase())) {
+    return null;
+  }
+  return cleaned;
+}
 function resolverAjudaPoesia(normalizedMsg) {
   const ehPerguntaComoFazer = normalizedMsg.includes("como escrever uma poesia") || normalizedMsg.includes("como escrever um poema") || normalizedMsg.includes("como criar uma poesia") || normalizedMsg.includes("como criar um poema") || normalizedMsg.includes("como fazer uma poesia") || normalizedMsg.includes("como fazer um poema") || normalizedMsg.includes("como se escreve uma poesia") || normalizedMsg.includes("como se escreve um poema") || normalizedMsg.includes("como se faz uma poesia") || normalizedMsg.includes("como se faz um poema") || normalizedMsg === "oficina de poesia" || normalizedMsg === "oficina de poemas" || normalizedMsg === "oficina de poesias" || normalizedMsg.includes("dicas para escrever poesia") || normalizedMsg.includes("passo a passo para fazer poesia") || normalizedMsg.includes("passo a passo para criar poesia") || normalizedMsg.includes("passo a passo poesia") || normalizedMsg.includes("etapas para criar poesia") || normalizedMsg.includes("candinho ensina como criar uma poesia");
   if (ehPerguntaComoFazer && !normalizedMsg.includes("sobre ") && !normalizedMsg.includes(" pra ") && !normalizedMsg.includes(" para ")) {
@@ -13084,11 +13137,7 @@ function resolverAjudaPoesia(normalizedMsg) {
       break;
     }
   }
-  let temaExtraidoTexto = "";
-  const matchSobre = normalizedMsg.match(/(?:sobre|de|pra|para)\s+([a-záàâãéèêíïóôõöúçñ\s]+)/i);
-  if (matchSobre && matchSobre[1]) {
-    temaExtraidoTexto = matchSobre[1].replace(/poema|poesia|rimas|versos/g, "").trim();
-  }
+  const temaExtraidoTexto = extrairTemaLimpo(normalizedMsg);
   if (temaDetectado) {
     const reply2 = `\u{1F3A8}\u270D\uFE0F **Oficina de Poesia do Candinho \u2014 Tema: ${temaDetectado.nome}**
 
@@ -13106,7 +13155,7 @@ Escreva os primeiros **4 a 8 versos** no seu caderno ou digite aqui para mim! De
       matchedKey: "oficina_poesia_com_tema"
     };
   }
-  if (temaExtraidoTexto && temaExtraidoTexto.length > 2) {
+  if (temaExtraidoTexto && temaExtraidoTexto.length >= 3) {
     const reply2 = `\u{1F3A8}\u270D\uFE0F **Oficina de Poesia do Candinho \u2014 Tema: ${temaExtraidoTexto.toUpperCase()}**
 
 Que tema maravilhoso e criativo para uma poesia! Como seu parceiro e professor de cria\xE7\xE3o art\xEDstica, eu n\xE3o vou s\xF3 te entregar um poema pronto de bandeja \u2014 n\xF3s vamos **construir a sua pr\xF3pria poesia juntos**, para que ela tenha o SEU toque e a sua imagina\xE7\xE3o de artista! \u{1F31F}
@@ -13225,11 +13274,7 @@ function resolverAjudaRap(normalizedMsg) {
       break;
     }
   }
-  let temaExtraidoTexto = "";
-  const matchSobre = normalizedMsg.match(/(?:sobre|de|pra|para)\s+([a-záàâãéèêíïóôõöúçñ\s]+)/i);
-  if (matchSobre && matchSobre[1]) {
-    temaExtraidoTexto = matchSobre[1].replace(/rap|rima|rimas|versos|refrao|refrão/g, "").trim();
-  }
+  const temaExtraidoTexto = extrairTemaLimpo(normalizedMsg);
   if (temaDetectado) {
     const reply2 = `\u{1F3A4}\u{1F525} **Oficina de Rap do Candinho \u2014 Tema: ${temaDetectado.nome}**
 
@@ -13255,7 +13300,7 @@ Agora \xE9 a sua vez no microfone! Escreva **4 versos com a sua mensagem** e cri
       matchedKey: "oficina_rap_com_tema"
     };
   }
-  if (temaExtraidoTexto && temaExtraidoTexto.length > 2) {
+  if (temaExtraidoTexto && temaExtraidoTexto.length >= 3) {
     const reply2 = `\u{1F3A4}\u{1F525} **Oficina de Rap do Candinho \u2014 Tema: ${temaExtraidoTexto.toUpperCase()}**
 
 Excelente assunto para soltar a voz! Como seu parceiro e professor de cria\xE7\xE3o, n\xF3s vamos **construir o seu pr\xF3prio rap juntos**! \u{1F3A7}\u{1F4A5}
@@ -13364,11 +13409,7 @@ function resolverAjudaFunk(normalizedMsg) {
       break;
     }
   }
-  let temaExtraidoTexto = "";
-  const matchSobre = normalizedMsg.match(/(?:sobre|de|pra|para)\s+([a-záàâãéèêíïóôõöúçñ\s]+)/i);
-  if (matchSobre && matchSobre[1]) {
-    temaExtraidoTexto = matchSobre[1].replace(/funk|batida|rima|rimas|versos|refrao|refrão/g, "").trim();
-  }
+  const temaExtraidoTexto = extrairTemaLimpo(normalizedMsg);
   if (temaDetectado) {
     const reply2 = `\u{1F941}\u{1F525} **Oficina de Funk do Candinho \u2014 Tema: ${temaDetectado.nome}**
 
@@ -13394,7 +13435,7 @@ Escreva os seus **4 versos curtos** e monte um **refr\xE3o f\xE1cil de repetir**
       matchedKey: "oficina_funk_com_tema"
     };
   }
-  if (temaExtraidoTexto && temaExtraidoTexto.length > 2) {
+  if (temaExtraidoTexto && temaExtraidoTexto.length >= 3) {
     const reply2 = `\u{1F941}\u{1F525} **Oficina de Funk do Candinho \u2014 Tema: ${temaExtraidoTexto.toUpperCase()}**
 
 Muito legal! O funk valoriza a batida, a repeti\xE7\xE3o e a criatividade das palavras! Vamos **criar o seu funk sobre ${temaExtraidoTexto} juntos**! \u{1F3A7}\u{1F4A5}
@@ -13673,7 +13714,7 @@ Incr\xEDvel, n\xE3o \xE9? A arte sempre nos ajuda a ver em novos tons! Se quiser
 }
 function tornarRespostaDialogica(reply, matchedKey) {
   if (!reply) return reply;
-  if (matchedKey && (matchedKey.startsWith("como_") || matchedKey.includes("followup"))) {
+  if (matchedKey && (matchedKey.startsWith("como_") || matchedKey.startsWith("oficina_") || matchedKey.startsWith("criar_") || matchedKey.startsWith("tutorial_") || matchedKey.includes("followup"))) {
     return reply;
   }
   const cleanReply = reply.trim();
