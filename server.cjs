@@ -3609,6 +3609,63 @@ Hoje, sua obra \xE9 reconhecida internacionalmente e considerada um dos maiores 
     emocao: "uniao",
     nivel: "leve"
   },
+  danca_samba: {
+    tema: "dancas",
+    subtema: "samba",
+    categoria: "Dan\xE7as",
+    resposta_direta: `\u{1F3B5} **Samba**
+
+**O que \xE9:**
+O samba \xE9 um g\xEAnero musical e uma manifesta\xE7\xE3o cultural brasileira, marcado principalmente pelo ritmo, pela dan\xE7a e pela presen\xE7a de instrumentos de percuss\xE3o, como pandeiro, surdo, tamborim e cu\xEDca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.
+
+**Origem:**
+O samba nasceu da mistura de tradi\xE7\xF5es musicais africanas com elementos culturais desenvolvidos no Brasil. Suas ra\xEDzes est\xE3o especialmente ligadas \xE0s comunidades negras, aos batuques e \xE0s rodas de m\xFAsica e dan\xE7a. O samba de roda do Rec\xF4ncavo Baiano \xE9 uma de suas importantes manifesta\xE7\xF5es tradicionais. No in\xEDcio do s\xE9culo XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.
+
+**Samba-enredo:**
+O samba-enredo \xE9 um tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo, ou seja, uma hist\xF3ria ou tema que ser\xE1 apresentado no desfile, e cria uma m\xFAsica para contar esse tema. O samba-enredo ajuda a escola a apresentar sua hist\xF3ria por meio da m\xFAsica, da dan\xE7a, das fantasias, das alegorias e das alas.
+
+**Curiosidade:**
+O samba \xE9 uma das manifesta\xE7\xF5es culturais brasileiras mais conhecidas no mundo e possui diferentes formas e tradi\xE7\xF5es em v\xE1rias regi\xF5es do Brasil. O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade em 2005.`,
+    palavras_chave: [
+      "samba",
+      "danca samba",
+      "dan\xE7a samba",
+      "dancas samba",
+      "dan\xE7as samba",
+      "samba de roda",
+      "samba enredo",
+      "samba-enredo",
+      "partido alto",
+      "samba de gafieira",
+      "origem do samba",
+      "historia do samba",
+      "o que e samba",
+      "o que e o samba"
+    ],
+    inicio: [
+      "\u{1F3B5} **Samba**\n\n**O que \xE9:**\nO samba \xE9 um g\xEAnero musical e uma manifesta\xE7\xE3o cultural brasileira, marcado principalmente pelo ritmo, pela dan\xE7a e pela presen\xE7a de instrumentos de percuss\xE3o, como pandeiro, surdo, tamborim e cu\xEDca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira."
+    ],
+    explicacao_curta: [
+      "**Origem:**\nO samba nasceu da mistura de tradi\xE7\xF5es musicais africanas com elementos culturais desenvolvidos no Brasil. Suas ra\xEDzes est\xE3o especialmente ligadas \xE0s comunidades negras, aos batuques e \xE0s rodas de m\xFAsica e dan\xE7a. O samba de roda do Rec\xF4ncavo Baiano \xE9 uma de suas importantes manifesta\xE7\xF5es tradicionais. No in\xEDcio do s\xE9culo XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira."
+    ],
+    explicacao_aprofundada: [
+      "**Samba-enredo:**\nO samba-enredo \xE9 um tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo, ou seja, uma hist\xF3ria ou tema que ser\xE1 apresentado no desfile, e cria uma m\xFAsica para contar esse tema. O samba-enredo ajuda a escola a apresentar sua hist\xF3ria por meio da m\xFAsica, da dan\xE7a, das fantasias, das alegorias e das alas."
+    ],
+    curiosidade: [
+      "**Curiosidade:**\nO samba \xE9 uma das manifesta\xE7\xF5es culturais brasileiras mais conhecidas no mundo e possui diferentes formas e tradi\xE7\xF5es em v\xE1rias regi\xF5es do Brasil. O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade em 2005. \u{1F3C6}\u2728"
+    ],
+    interacao: [
+      "Voc\xEA gosta de ouvir ou dan\xE7ar samba? Qual instrumento de percuss\xE3o voc\xEA acha que d\xE1 mais energia \xE0 batida?"
+    ],
+    atividade: [
+      "Experimente criar um ritmo animado de samba batendo na mesa ou com palmas no compasso do pandeiro! \u{1F941}\u{1F483}"
+    ],
+    final: [
+      "O samba une ritmo, hist\xF3ria, movimento e a alegria do povo brasileiro! \u{1F308}\u{1F1E7}\u{1F1F7}"
+    ],
+    emocao: "alegria",
+    nivel: "leve"
+  },
   danca_carimbo: {
     tema: "dancas",
     subtema: "carimbo",
@@ -5544,12 +5601,33 @@ Os artistas impressionisas preferiam pintar ao ar livre para observar as mudan\x
   samba: {
     tema: "ritmos_musicais",
     subtema: "samba",
+    resposta_direta: `\u{1F3B5} **Samba**
+
+**O que \xE9:**
+O samba \xE9 um g\xEAnero musical e uma manifesta\xE7\xE3o cultural brasileira, marcado principalmente pelo ritmo, pela dan\xE7a e pela presen\xE7a de instrumentos de percuss\xE3o, como pandeiro, surdo, tamborim e cu\xEDca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.
+
+**Origem:**
+O samba nasceu da mistura de tradi\xE7\xF5es musicais africanas com elementos culturais desenvolvidos no Brasil. Suas ra\xEDzes est\xE3o especialmente ligadas \xE0s comunidades negras, aos batuques e \xE0s rodas de m\xFAsica e dan\xE7a. O samba de roda do Rec\xF4ncavo Baiano \xE9 uma de suas importantes manifesta\xE7\xF5es tradicionais. No in\xEDcio do s\xE9culo XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.
+
+**Samba-enredo:**
+O samba-enredo \xE9 um tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo, ou seja, uma hist\xF3ria ou tema que ser\xE1 apresentado no desfile, e cria uma m\xFAsica para contar esse tema. O samba-enredo ajuda a escola a apresentar sua hist\xF3ria por meio da m\xFAsica, da dan\xE7a, das fantasias, das alegorias e das alas.
+
+**Curiosidade:**
+O samba \xE9 uma das manifesta\xE7\xF5es culturais brasileiras mais conhecidas no mundo e possui diferentes formas e tradi\xE7\xF5es em v\xE1rias regi\xF5es do Brasil. O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade em 2005.`,
     palavras_chave: ["samba", "ritmo de samba", "musica de samba", "genero samba"],
-    inicio: ["O samba \xE9 um dos ritmos mais famosos do Brasil \u{1F941}"],
-    explicacao_curta: ["O samba possui ritmo alegre e cheio de energia."],
-    explicacao_aprofundada: ["Ele est\xE1 presente em festas, rodas de m\xFAsica e no carnaval brasileiro."],
-    curiosidade: ["O samba nasceu da mistura de influ\xEAncias africanas e brasileiras \u2728"],
-    interacao: ["Voc\xEA consegue acompanhar um ritmo batendo palmas?"],
+    inicio: [
+      "\u{1F3B5} **Samba**\n\n**O que \xE9:**\nO samba \xE9 um g\xEAnero musical e uma manifesta\xE7\xE3o cultural brasileira, marcado principalmente pelo ritmo, pela dan\xE7a e pela presen\xE7a de instrumentos de percuss\xE3o, como pandeiro, surdo, tamborim e cu\xEDca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira."
+    ],
+    explicacao_curta: [
+      "**Origem:**\nO samba nasceu da mistura de tradi\xE7\xF5es musicais africanas com elementos culturais desenvolvidos no Brasil. Suas ra\xEDzes est\xE3o especialmente ligadas \xE0s comunidades negras, aos batuques e \xE0s rodas de m\xFAsica e dan\xE7a. O samba de roda do Rec\xF4ncavo Baiano \xE9 uma de suas importantes manifesta\xE7\xF5es tradicionais. No in\xEDcio do s\xE9culo XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira."
+    ],
+    explicacao_aprofundada: [
+      "**Samba-enredo:**\nO samba-enredo \xE9 um tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo, ou seja, uma hist\xF3ria ou tema que ser\xE1 apresentado no desfile, e cria uma m\xFAsica para contar esse tema. O samba-enredo ajuda a escola a apresentar sua hist\xF3ria por meio da m\xFAsica, da dan\xE7a, das fantasias, das alegorias e das alas."
+    ],
+    curiosidade: [
+      "**Curiosidade:**\nO samba \xE9 uma das manifesta\xE7\xF5es culturais brasileiras mais conhecidas no mundo e possui diferentes formas e tradi\xE7\xF5es em v\xE1rias regi\xF5es do Brasil. O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade em 2005. \u{1F3C6}\u2728"
+    ],
+    interacao: ["Voc\xEA consegue acompanhar um ritmo de samba batendo palmas?"],
     atividade: ["Crie um ritmo usando mesa, palmas e p\xE9s \u{1F941}"],
     final: ["O samba espalha alegria e movimento \u{1F308}"],
     emocao: "animacao",
@@ -7945,6 +8023,21 @@ var GALERIA_IMAGENS = {
   arte_africana: {
     imagemUrl: "https://i.imgur.com/TIWhZhH.jpeg",
     titulo: "Arte Africana",
+    credito: "Wikimedia Commons"
+  },
+  samba: {
+    imagemUrl: "https://i.imgur.com/BS3t0kL.jpeg",
+    titulo: "Samba de Roda do Rec\xF4ncavo - Bahia",
+    credito: "Wikimedia Commons"
+  },
+  danca_samba: {
+    imagemUrl: "https://i.imgur.com/BS3t0kL.jpeg",
+    titulo: "Samba de Roda do Rec\xF4ncavo - Bahia",
+    credito: "Wikimedia Commons"
+  },
+  samba_de_roda: {
+    imagemUrl: "https://i.imgur.com/BS3t0kL.jpeg",
+    titulo: "Samba de Roda do Rec\xF4ncavo - Bahia",
     credito: "Wikimedia Commons"
   },
   danca_brasil: {
@@ -10792,8 +10885,21 @@ O c\xEDrculo crom\xE1tico \xE9 como uma b\xFAssola das cores. Ele ajuda os artis
     resposta: "\u{1F3A4} Rock tem energia, atitude e guitarras el\xE9tricas. Pode ser calmo ou barulhento, e fala de liberdade e juventude."
   },
   {
-    palavras: ["samba"],
-    resposta: "\u{1F3A4} Samba \xE9 ritmo brasileiro ligado \xE0 dan\xE7a e \xE0 comunidade. Usa percuss\xE3o e alegria, muito presente no carnaval."
+    palavras: ["samba", "musica samba", "ritmo samba", "o que e samba", "o que e o samba", "historia do samba", "origem do samba", "samba enredo", "samba-enredo", "samba de roda"],
+    resposta: `\u{1F3B5} **Samba**
+
+**O que \xE9:**
+O samba \xE9 um g\xEAnero musical e uma manifesta\xE7\xE3o cultural brasileira, marcado principalmente pelo ritmo, pela dan\xE7a e pela presen\xE7a de instrumentos de percuss\xE3o, como pandeiro, surdo, tamborim e cu\xEDca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.
+
+**Origem:**
+O samba nasceu da mistura de tradi\xE7\xF5es musicais africanas com elementos culturais desenvolvidos no Brasil. Suas ra\xEDzes est\xE3o especialmente ligadas \xE0s comunidades negras, aos batuques e \xE0s rodas de m\xFAsica e dan\xE7a. O samba de roda do Rec\xF4ncavo Baiano \xE9 uma de suas importantes manifesta\xE7\xF5es tradicionais. No in\xEDcio do s\xE9culo XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.
+
+**Samba-enredo:**
+O samba-enredo \xE9 um tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo, ou seja, uma hist\xF3ria ou tema que ser\xE1 apresentado no desfile, e cria uma m\xFAsica para contar esse tema. O samba-enredo ajuda a escola a apresentar sua hist\xF3ria por meio da m\xFAsica, da dan\xE7a, das fantasias, das alegorias e das alas.
+
+**Curiosidade:**
+O samba \xE9 uma das manifesta\xE7\xF5es culturais brasileiras mais conhecidas no mundo e possui diferentes formas e tradi\xE7\xF5es em v\xE1rias regi\xF5es do Brasil. O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade em 2005.`,
+    matchedKey: "samba"
   },
   {
     palavras: ["bossa nova"],
@@ -10899,8 +11005,21 @@ O c\xEDrculo crom\xE1tico \xE9 como uma b\xFAssola das cores. Ele ajuda os artis
     resposta: "\u{1F3B7} O jazz \xE9 um estilo de dan\xE7a marcado pelo improviso e pelas ra\xEDzes populares. Surgiu nos Estados Unidos com a m\xFAsica jazz e incorpora elements do bal\xE9 e da dan\xE7a moderna, com movimentos energ\xE9ticos e expressivos."
   },
   {
-    palavras: ["samba dan\xE7a", "dan\xE7a samba"],
-    resposta: "\u{1F1E7}\u{1F1F7} O samba \xE9 uma express\xE3o da cultura popular brasileira, com influ\xEAncia africana. Como dan\xE7a, pode ser dan\xE7ado solo ou em par, com movimentos de quadris, passos r\xE1pidos e muita alegria. \xC9 a alma do carnaval!"
+    palavras: ["samba dan\xE7a", "dan\xE7a samba", "danca samba", "dan\xE7as samba", "dancas samba", "dan\xE7a do samba", "danca do samba"],
+    resposta: `\u{1F3B5} **Samba**
+
+**O que \xE9:**
+O samba \xE9 um g\xEAnero musical e uma manifesta\xE7\xE3o cultural brasileira, marcado principalmente pelo ritmo, pela dan\xE7a e pela presen\xE7a de instrumentos de percuss\xE3o, como pandeiro, surdo, tamborim e cu\xEDca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.
+
+**Origem:**
+O samba nasceu da mistura de tradi\xE7\xF5es musicais africanas com elementos culturais desenvolvidos no Brasil. Suas ra\xEDzes est\xE3o especialmente ligadas \xE0s comunidades negras, aos batuques e \xE0s rodas de m\xFAsica e dan\xE7a. O samba de roda do Rec\xF4ncavo Baiano \xE9 uma de suas importantes manifesta\xE7\xF5es tradicionais. No in\xEDcio do s\xE9culo XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.
+
+**Samba-enredo:**
+O samba-enredo \xE9 um tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo, ou seja, uma hist\xF3ria ou tema que ser\xE1 apresentado no desfile, e cria uma m\xFAsica para contar esse tema. O samba-enredo ajuda a escola a apresentar sua hist\xF3ria por meio da m\xFAsica, da dan\xE7a, das fantasias, das alegorias e das alas.
+
+**Curiosidade:**
+O samba \xE9 uma das manifesta\xE7\xF5es culturais brasileiras mais conhecidas no mundo e possui diferentes formas e tradi\xE7\xF5es em v\xE1rias regi\xF5es do Brasil. O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade em 2005.`,
+    matchedKey: "samba"
   },
   {
     palavras: ["forr\xF3 dan\xE7a", "dan\xE7a forr\xF3"],
@@ -10936,7 +11055,14 @@ O c\xEDrculo crom\xE1tico \xE9 como uma b\xFAssola das cores. Ele ajuda os artis
   },
   {
     palavras: ["samba de roda"],
-    resposta: "\u{1F504} Samba de roda \xE9 uma forma tradicional de samba, dan\xE7ado em roda, com participa\xE7\xE3o de todos. Nasceu no Rec\xF4ncavo Baiano e \xE9 patrim\xF4nio cultural brasileiro. As pessoas entram na roda, sambam e d\xE3o lugar a outras."
+    resposta: `\u{1F3B5} **Samba de Roda**
+
+**Origem & Tradi\xE7\xE3o:**
+O samba de roda nasceu no Rec\xF4ncavo Baiano da mistura de tradi\xE7\xF5es musicais africanas com elementos culturais desenvolvidos no Brasil. \xC9 dan\xE7ado em roda, com muita alegria, palmas, cantos e participa\xE7\xE3o de todos.
+
+**Curiosidade Hist\xF3rica:**
+O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade em 2005! \u{1F3C6}\u2728`,
+    matchedKey: "samba"
   },
   {
     palavras: ["jongo"],
@@ -14685,6 +14811,21 @@ var ARTISTS_GUARANTEED_IMAGES = {
     titulo: "Arte Africana",
     credito: "Wikimedia Commons"
   },
+  samba: {
+    imagemUrl: "https://i.imgur.com/BS3t0kL.jpeg",
+    titulo: "Samba de Roda do Rec\xF4ncavo - Bahia",
+    credito: "Wikimedia Commons"
+  },
+  danca_samba: {
+    imagemUrl: "https://i.imgur.com/BS3t0kL.jpeg",
+    titulo: "Samba de Roda do Rec\xF4ncavo - Bahia",
+    credito: "Wikimedia Commons"
+  },
+  samba_de_roda: {
+    imagemUrl: "https://i.imgur.com/BS3t0kL.jpeg",
+    titulo: "Samba de Roda do Rec\xF4ncavo - Bahia",
+    credito: "Wikimedia Commons"
+  },
   danca_brasil: {
     imagemUrl: "https://i.imgur.com/CVHkdCZ.jpg",
     titulo: "Dan\xE7a Tradicional no Brasil",
@@ -15194,6 +15335,9 @@ async function buscarImagem(pergunta, matchedKey, lib) {
     }
     if (lowerQuery.includes("carimbo") || lowerQuery.includes("carimb\xF3")) {
       return ARTISTS_GUARANTEED_IMAGES.carimbo;
+    }
+    if (lowerQuery.includes("samba") || lowerQuery.includes("samba de roda") || lowerQuery.includes("samba-enredo") || lowerQuery.includes("samba enredo")) {
+      return ARTISTS_GUARANTEED_IMAGES.samba;
     }
     if (lowerQuery.includes("bale") || lowerQuery.includes("ballet") || lowerQuery.includes("bal\xE9")) {
       return ARTISTS_GUARANTEED_IMAGES.bale;
@@ -15810,7 +15954,7 @@ app.post("/api/groq", async (req, res) => {
             if (isEmocional) {
               systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo muito carinhoso, emp\xE1tico, afetuoso e acolhedor para crian\xE7as de 10 anos. A crian\xE7a est\xE1 compartilhando sentimentos de tristeza, ansiedade, raiva, t\xE9dio ou ang\xFAstia, ou respondendo a uma pergunta sobre os sentimentos dela. Sua prioridade absoluta \xE9 dar apoio emocional genu\xEDno, ouvir com todo o carinho e carinho do mundo. Ofere\xE7a empatia profunda e sincera e fa\xE7a perguntas abertas para que ela se sinta segura para desabafar livremente (por exemplo: 'Quer falar mais sobre o que aconteceu?', 'Como voc\xEA se sente sobre isso?'). N\xC3O tente falar de arte, n\xE3o mencione pintores famos, n\xE3o use met\xE1foras de pintura ou pinceladas de forma for\xE7ada, e N\xC3O tente faz\xEA-la voltar aos temas de arte at\xE9 que a pr\xF3pria crian\xE7a decida falar de desenho/arte por conta pr\xF3pria. Foque inteiramente em apoiar o cora\xE7\xE3o dela e ser um amigo seguro.";
             } else {
-              systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo artista e pintor muito simp\xE1tico, acolhedor, dial\xF3gico e conversador para crian\xE7as de 10 anos. ATEN\xC7\xC3O CR\xCDTICA: Nunca aja como um 'respondedor' frio ou professor distante que apenas d\xE1 uma resposta longa, joga um monte de texto e vai embora. Voc\xEA deve ser um verdadeiro amiguinho de conversa, promovendo um di\xE1logo ativo e natural! Mantenha suas respostas leves, din\xE2micas e divididas em pequenos par\xE1grafos de f\xE1cil leitura. Sempre termine ou inclua na sua resposta uma pergunta aberta e instigante direcionada \xE0 crian\xE7a para convid\xE1-la a compartilhar o que ela acha, sente ou se ela j\xE1 experimentou algo parecido (ex: 'E voc\xEA, o que achou disso?', 'Qual cor voc\xEA mais gosta de usar para pintar?', 'Voc\xEA j\xE1 tentou desenhar um gatinho assim? Me conta!', 'O que voc\xEA achou dessa curiosidade?', 'Como voc\xEA imagina que seria essa pintura?'). Responda sempre em portugu\xEAs de forma simples, alegre, positiva e entusiasmada, usando met\xE1foras sutis de pintura e pinceladas de forma org\xE2nica. NUNCA repita o nome do artista mais de duas vezes. Se n\xE3o descobrir sobre quem \xE9 o artista, responda gentilmente: 'N\xE3o conhe\xE7o esse artista ainda, mas vou pesquisar na minha paleta! \u{1F3A8}'. Diga se o artista nasceu ou faleceu em tal \xE9poca de forma amig\xE1vel no corpo do texto, sem criar listas ou cabe\xE7alhos. REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crian\xE7as.\n- Sempre organize a resposta em etapas numeradas.\n- Se a tarefa for art\xEDstica ou pr\xE1tica, utilize uma estrutura amig\xE1vel com: Materiais (quando necess\xE1rio), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n- N\xE3o inclua imagens ou links de imagens de nenhum tipo.\n- No final, pergunte de forma interativa se a crian\xE7a deseja: um exemplo pronto; uma atividade para praticar; uma vers\xE3o f\xE1cil; ou uma vers\xE3o mais avan\xE7ada.\n\nREGRA ESPECIAL DE OFICINA DE POESIA / AJUDA PARA CRIAR POEMAS:\n- Quando uma crian\xE7a pedir ajuda para escrever ou criar uma poesia/poema (ou pedir para voc\xEA escrever um poema para ela), NUNCA entregue o poema pronto de bandeja!\n- Aja como um professor e parceiro de cria\xE7\xE3o (Oficina de Poesia): primeiro pergunte o tema e a ideia/sentimento que ela quer transmitir.\n- Depois pode sugerir palavras m\xE1gicas, rimas, imagens po\xE9ticas e ideias de versos, mas deve sempre incentivar e desafiar a crian\xE7a a criar e escrever seu pr\xF3prio poema de 4 a 8 versos!\n- Lembre a crian\xE7a de que a poesia pode virar uma can\xE7\xE3o suave ou um rap e pergunte qual estilo ela prefere.\n\nREGRA ESPECIAL DE CONCEITOS LITER\xC1RIOS (VERSO, ESTROFE, RIMA, POEMA, POESIA):\n- Verso: Cada linha de um poema (Dica: 'Conte as linhas do poema. Cada uma delas \xE9 um verso!').\n- Estrofe: Conjunto de versos que ficam juntos (Verso = uma linha, Estrofe = grupo de linhas).\n- Rima: Palavras com sons parecidos, principalmente no final dos versos (lembre que poema n\xE3o precisa ter rima).\n- Poema: Texto organizado em versos que expressa ideias e sentimentos.\n- Poesia: A experi\xEAncia art\xEDstica e o sentimento (Poema = o bolo preparado, Poesia = o sabor e a sensa\xE7\xE3o ao comer).\n\nREGRA ESPECIAL DE OFICINA DE RAP / COMO FAZER UM RAP:\n- Quando a crian\xE7a perguntar sobre fazer um rap ou pedir ajuda para criar um rap, ensine a 'F\xF3rmula do Candinho': TEMA \u2192 MENSAGEM \u2192 PALAVRAS \u2192 RIMAS \u2192 VERSOS \u2192 RITMO (P\xC1 | P\xC1 | PUM | P\xC1) \u2192 REFR\xC3O.\n- Cita\xE7\xE3o do Candinho: 'Um bom rap n\xE3o precisa falar dif\xEDcil. Precisa ter uma ideia para dizer, ritmo para ouvir e uma voz que tenha algo a contar.'\n- Se a crian\xE7a perguntar a diferen\xE7a entre poesia e rap: 'Todo rap pode usar poesia, mas uma poesia n\xE3o precisa ser um rap. Quando colocamos ritmo, batida e uma maneira pr\xF3pria de falar os versos, podemos transformar a poesia em rap.'\n- Se ela pedir ajuda para criar um rap sobre algum assunto, nunca d\xEA a letra inteira pronta: d\xEA sugest\xF5es de palavras, rimas e batida e a desafie a criar seus pr\xF3prios versos e refr\xE3o!\n\nREGRA ESPECIAL DE OFICINA DE FUNK / COMO FAZER UM FUNK:\n- Candinho: 'O funk \xE9 um g\xEAnero musical que tem muita for\xE7a no Brasil. Ele valoriza o ritmo, a batida, a repeti\xE7\xE3o e a criatividade das palavras. Vamos criar um funk?'\n- Passos: 1. Escolha um tema (escola, amizade, esporte, arte, natureza, cidade, divers\xE3o, sonhos) | 2. Pense em uma mensagem | 3. Crie frases curtas | 4. Use repeti\xE7\xE3o no refr\xE3o | 5. Crie o ritmo (P\xC1 \u2013 P\xC1 \u2013 PUM | P\xC1 \u2013 P\xC1 \u2013 PUM) | 6. Fa\xE7a um refr\xE3o | 7. Junte tudo: TEMA \u2192 MENSAGEM \u2192 VERSOS \u2192 RITMO \u2192 REFR\xC3O.\n- Cita\xE7\xE3o do Candinho: 'Voc\xEA n\xE3o precisa usar palavras dif\xEDceis para fazer um bom funk. Precisa ter criatividade, ritmo e algo para dizer.'\n- Compara\xE7\xE3o Poesia, Rap e Funk: 'A poesia usa palavras para criar imagens e sentimentos. O rap costuma valorizar muito as rimas, a mensagem e o ritmo. O funk valoriza bastante a batida, a repeti\xE7\xE3o, o ritmo e os versos que combinam com a m\xFAsica. Os tr\xEAs podem usar poesia!'\n- Se pedir ajuda para criar um funk, nunca entregue pronto: d\xEA sugest\xF5es de frases curtas, batida e repeti\xE7\xE3o para a crian\xE7a criar!";
+              systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo artista e pintor muito simp\xE1tico, acolhedor, dial\xF3gico e conversador para crian\xE7as de 10 anos. ATEN\xC7\xC3O CR\xCDTICA: Nunca aja como um 'respondedor' frio ou professor distante que apenas d\xE1 uma resposta longa, joga um monte de texto e vai embora. Voc\xEA deve ser um verdadeiro amiguinho de conversa, promovendo um di\xE1logo ativo e natural! Mantenha suas respostas leves, din\xE2micas e divididas em pequenos par\xE1grafos de f\xE1cil leitura. Sempre termine ou inclua na sua resposta uma pergunta aberta e instigante direcionada \xE0 crian\xE7a para convid\xE1-la a compartilhar o que ela acha, sente ou se ela j\xE1 experimentou algo parecido (ex: 'E voc\xEA, o que achou disso?', 'Qual cor voc\xEA mais gosta de usar para pintar?', 'Voc\xEA j\xE1 tentou desenhar um gatinho assim? Me conta!', 'O que voc\xEA achou dessa curiosidade?', 'Como voc\xEA imagina que seria essa pintura?'). Responda sempre em portugu\xEAs de forma simples, alegre, positiva e entusiasmada, usando met\xE1foras sutis de pintura e pinceladas de forma org\xE2nica. NUNCA repita o nome do artista mais de duas vezes. Se n\xE3o descobrir sobre quem \xE9 o artista, responda gentilmente: 'N\xE3o conhe\xE7o esse artista ainda, mas vou pesquisar na minha paleta! \u{1F3A8}'. Diga se o artista nasceu ou faleceu em tal \xE9poca de forma amig\xE1vel no corpo do texto, sem criar listas ou cabe\xE7alhos. REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crian\xE7as.\n- Sempre organize a resposta em etapas numeradas.\n- Se a tarefa for art\xEDstica ou pr\xE1tica, utilize uma estrutura amig\xE1vel com: Materiais (quando necess\xE1rio), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n- N\xE3o inclua imagens ou links de imagens de nenhum tipo.\n- No final, pergunte de forma interativa se a crian\xE7a deseja: um exemplo pronto; uma atividade para praticar; uma vers\xE3o f\xE1cil; ou uma vers\xE3o mais avan\xE7ada.\n\nREGRA ESPECIAL DE OFICINA DE POESIA / AJUDA PARA CRIAR POEMAS:\n- Quando uma crian\xE7a pedir ajuda para escrever ou criar uma poesia/poema (ou pedir para voc\xEA escrever um poema para ela), NUNCA entregue o poema pronto de bandeja!\n- Aja como um professor e parceiro de cria\xE7\xE3o (Oficina de Poesia): primeiro pergunte o tema e a ideia/sentimento que ela quer transmitir.\n- Depois pode sugerir palavras m\xE1gicas, rimas, imagens po\xE9ticas e ideias de versos, mas deve sempre incentivar e desafiar a crian\xE7a a criar e escrever seu pr\xF3prio poema de 4 a 8 versos!\n- Lembre a crian\xE7a de que a poesia pode virar uma can\xE7\xE3o suave ou um rap e pergunte qual estilo ela prefere.\n\nREGRA ESPECIAL DE CONCEITOS LITER\xC1RIOS (VERSO, ESTROFE, RIMA, POEMA, POESIA):\n- Verso: Cada linha de um poema (Dica: 'Conte as linhas do poema. Cada uma delas \xE9 um verso!').\n- Estrofe: Conjunto de versos que ficam juntos (Verso = uma linha, Estrofe = grupo de linhas).\n- Rima: Palavras com sons parecidos, principalmente no final dos versos (lembre que poema n\xE3o precisa ter rima).\n- Poema: Texto organizado em versos que expressa ideias e sentimentos.\n- Poesia: A experi\xEAncia art\xEDstica e o sentimento (Poema = o bolo preparado, Poesia = o sabor e a sensa\xE7\xE3o ao comer).\n\nREGRA ESPECIAL DE OFICINA DE RAP / COMO FAZER UM RAP:\n- Quando a crian\xE7a perguntar sobre fazer um rap ou pedir ajuda para criar um rap, ensine a 'F\xF3rmula do Candinho': TEMA \u2192 MENSAGEM \u2192 PALAVRAS \u2192 RIMAS \u2192 VERSOS \u2192 RITMO (P\xC1 | P\xC1 | PUM | P\xC1) \u2192 REFR\xC3O.\n- Cita\xE7\xE3o do Candinho: 'Um bom rap n\xE3o precisa falar dif\xEDcil. Precisa ter uma ideia para dizer, ritmo para ouvir e uma voz que tenha algo a contar.'\n- Se a crian\xE7a perguntar a diferen\xE7a entre poesia e rap: 'Todo rap pode usar poesia, mas uma poesia n\xE3o precisa ser um rap. Quando colocamos ritmo, batida e uma maneira pr\xF3pria de falar os versos, podemos transformar a poesia em rap.'\n- Se ela pedir ajuda para criar um rap sobre algum assunto, nunca d\xEA a letra inteira pronta: d\xEA sugest\xF5es de palavras, rimas e batida e a desafie a criar seus pr\xF3prios versos e refr\xE3o!\n\nREGRA ESPECIAL DE OFICINA DE FUNK / COMO FAZER UM FUNK:\n- Candinho: 'O funk \xE9 um g\xEAnero musical que tem muita for\xE7a no Brasil. Ele valoriza o ritmo, a batida, a repeti\xE7\xE3o e a criatividade das palavras. Vamos criar um funk?'\n- Passos: 1. Escolha um tema (escola, amizade, esporte, arte, natureza, cidade, divers\xE3o, sonhos) | 2. Pense em uma mensagem | 3. Crie frases curtas | 4. Use repeti\xE7\xE3o no refr\xE3o | 5. Crie o ritmo (P\xC1 \u2013 P\xC1 \u2013 PUM | P\xC1 \u2013 P\xC1 \u2013 PUM) | 6. Fa\xE7a um refr\xE3o | 7. Junte tudo: TEMA \u2192 MENSAGEM \u2192 VERSOS \u2192 RITMO \u2192 REFR\xC3O.\n- Cita\xE7\xE3o do Candinho: 'Voc\xEA n\xE3o precisa usar palavras dif\xEDceis para fazer um bom funk. Precisa ter criatividade, ritmo e algo para dizer.'\n- Compara\xE7\xE3o Poesia, Rap e Funk: 'A poesia usa palavras para criar imagens e sentimentos. O rap costuma valorizar muito as rimas, a mensagem e o ritmo. O funk valoriza bastante a batida, a repeti\xE7\xE3o, o ritmo e os versos que combinam com a m\xFAsica. Os tr\xEAs podem usar poesia!'\n- Se pedir ajuda para criar um funk, nunca entregue pronto: d\xEA sugest\xF5es de frases curtas, batida e repeti\xE7\xE3o para a crian\xE7a criar!\n\nBASE DE CONHECIMENTO DE DAN\xC7AS E M\xDASICA - SAMBA:\n- O que \xE9: O samba \xE9 um g\xEAnero musical e uma manifesta\xE7\xE3o cultural brasileira, marcado principalmente pelo ritmo, pela dan\xE7a e pela presen\xE7a de instrumentos de percuss\xE3o, como pandeiro, surdo, tamborim e cu\xEDca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.\n- Origem: Nasceu da mistura de tradi\xE7\xF5es musicais africanas com elementos culturais desenvolvidos no Brasil. Suas ra\xEDzes est\xE3o especialmente ligadas \xE0s comunidades negras, aos batuques e \xE0s rodas de m\xFAsica e dan\xE7a. O samba de roda do Rec\xF4ncavo Baiano \xE9 uma de suas importantes manifesta\xE7\xF5es tradicionais. No in\xEDcio do s\xE9culo XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.\n- Samba-enredo: Tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo (hist\xF3ria ou tema) e cria uma m\xFAsica para contar esse tema por meio da m\xFAsica, da dan\xE7a, das fantasias, das alegorias e das alas.\n- Curiosidade: O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade em 2005.";
             }
             if (nomeCrianca) {
               systemInstruction += ` O nome da crian\xE7a que est\xE1 conversando com voc\xEA \xE9 ${nomeCrianca}. Trate-a com muito carinho e use o nome dela em suas respostas de forma natural e fofa para manter uma conversa acolhedora.`;
