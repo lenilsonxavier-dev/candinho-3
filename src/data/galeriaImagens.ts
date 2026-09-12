@@ -194,6 +194,21 @@ export const GALERIA_IMAGENS: Record<string, GaleriaItem | GaleriaItem[]> = {
     titulo: "Arte Africana",
     credito: "Wikimedia Commons"
   },
+  samba: {
+    imagemUrl: "https://i.imgur.com/BS3t0kL.jpeg",
+    titulo: "Samba de Roda do Recôncavo - Bahia",
+    credito: "Wikimedia Commons"
+  },
+  danca_samba: {
+    imagemUrl: "https://i.imgur.com/BS3t0kL.jpeg",
+    titulo: "Samba de Roda do Recôncavo - Bahia",
+    credito: "Wikimedia Commons"
+  },
+  samba_de_roda: {
+    imagemUrl: "https://i.imgur.com/BS3t0kL.jpeg",
+    titulo: "Samba de Roda do Recôncavo - Bahia",
+    credito: "Wikimedia Commons"
+  },
   danca_brasil: {
     imagemUrl: "https://i.imgur.com/CVHkdCZ.jpg",
     titulo: "Dança Tradicional no Brasil",

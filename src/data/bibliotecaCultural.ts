@@ -3597,6 +3597,51 @@ Hoje, sua obra é reconhecida internacionalmente e considerada um dos maiores te
     emocao: "uniao",
     nivel: "leve"
   },
+  danca_samba: {
+    tema: "dancas",
+    subtema: "samba",
+    categoria: "Danças",
+    resposta_direta: `🎵 **Samba**\n\n**O que é:**\nO samba é um gênero musical e uma manifestação cultural brasileira, marcado principalmente pelo ritmo, pela dança e pela presença de instrumentos de percussão, como pandeiro, surdo, tamborim e cuíca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.\n\n**Origem:**\nO samba nasceu da mistura de tradições musicais africanas com elementos culturais desenvolvidos no Brasil. Suas raízes estão especialmente ligadas às comunidades negras, aos batuques e às rodas de música e dança. O samba de roda do Recôncavo Baiano é uma de suas importantes manifestações tradicionais. No início do século XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.\n\n**Samba-enredo:**\nO samba-enredo é um tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo, ou seja, uma história ou tema que será apresentado no desfile, e cria uma música para contar esse tema. O samba-enredo ajuda a escola a apresentar sua história por meio da música, da dança, das fantasias, das alegorias e das alas.\n\n**Curiosidade:**\nO samba é uma das manifestações culturais brasileiras mais conhecidas no mundo e possui diferentes formas e tradições em várias regiões do Brasil. O samba de roda do Recôncavo Baiano foi reconhecido pela UNESCO como Patrimônio Cultural Imaterial da Humanidade em 2005.`,
+    palavras_chave: [
+      "samba",
+      "danca samba",
+      "dança samba",
+      "dancas samba",
+      "danças samba",
+      "samba de roda",
+      "samba enredo",
+      "samba-enredo",
+      "partido alto",
+      "samba de gafieira",
+      "origem do samba",
+      "historia do samba",
+      "o que e samba",
+      "o que e o samba"
+    ],
+    inicio: [
+      "🎵 **Samba**\n\n**O que é:**\nO samba é um gênero musical e uma manifestação cultural brasileira, marcado principalmente pelo ritmo, pela dança e pela presença de instrumentos de percussão, como pandeiro, surdo, tamborim e cuíca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira."
+    ],
+    explicacao_curta: [
+      "**Origem:**\nO samba nasceu da mistura de tradições musicais africanas com elementos culturais desenvolvidos no Brasil. Suas raízes estão especialmente ligadas às comunidades negras, aos batuques e às rodas de música e dança. O samba de roda do Recôncavo Baiano é uma de suas importantes manifestações tradicionais. No início do século XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira."
+    ],
+    explicacao_aprofundada: [
+      "**Samba-enredo:**\nO samba-enredo é um tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo, ou seja, uma história ou tema que será apresentado no desfile, e cria uma música para contar esse tema. O samba-enredo ajuda a escola a apresentar sua história por meio da música, da dança, das fantasias, das alegorias e das alas."
+    ],
+    curiosidade: [
+      "**Curiosidade:**\nO samba é uma das manifestações culturais brasileiras mais conhecidas no mundo e possui diferentes formas e tradições em várias regiões do Brasil. O samba de roda do Recôncavo Baiano foi reconhecido pela UNESCO como Patrimônio Cultural Imaterial da Humanidade em 2005. 🏆✨"
+    ],
+    interacao: [
+      "Você gosta de ouvir ou dançar samba? Qual instrumento de percussão você acha que dá mais energia à batida?"
+    ],
+    atividade: [
+      "Experimente criar um ritmo animado de samba batendo na mesa ou com palmas no compasso do pandeiro! 🥁💃"
+    ],
+    final: [
+      "O samba une ritmo, história, movimento e a alegria do povo brasileiro! 🌈🇧🇷"
+    ],
+    emocao: "alegria",
+    nivel: "leve"
+  },
   danca_carimbo: {
     tema: "dancas",
     subtema: "carimbo",
@@ -5536,12 +5581,21 @@ Os artistas impressionisas preferiam pintar ao ar livre para observar as mudanç
   samba: {
     tema: "ritmos_musicais",
     subtema: "samba",
+    resposta_direta: `🎵 **Samba**\n\n**O que é:**\nO samba é um gênero musical e uma manifestação cultural brasileira, marcado principalmente pelo ritmo, pela dança e pela presença de instrumentos de percussão, como pandeiro, surdo, tamborim e cuíca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.\n\n**Origem:**\nO samba nasceu da mistura de tradições musicais africanas com elementos culturais desenvolvidos no Brasil. Suas raízes estão especialmente ligadas às comunidades negras, aos batuques e às rodas de música e dança. O samba de roda do Recôncavo Baiano é uma de suas importantes manifestações tradicionais. No início do século XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.\n\n**Samba-enredo:**\nO samba-enredo é um tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo, ou seja, uma história ou tema que será apresentado no desfile, e cria uma música para contar esse tema. O samba-enredo ajuda a escola a apresentar sua história por meio da música, da dança, das fantasias, das alegorias e das alas.\n\n**Curiosidade:**\nO samba é uma das manifestações culturais brasileiras mais conhecidas no mundo e possui diferentes formas e tradições em várias regiões do Brasil. O samba de roda do Recôncavo Baiano foi reconhecido pela UNESCO como Patrimônio Cultural Imaterial da Humanidade em 2005.`,
     palavras_chave: ["samba", "ritmo de samba", "musica de samba", "genero samba"],
-    inicio: ["O samba é um dos ritmos mais famosos do Brasil 🥁"],
-    explicacao_curta: ["O samba possui ritmo alegre e cheio de energia."],
-    explicacao_aprofundada: ["Ele está presente em festas, rodas de música e no carnaval brasileiro."],
-    curiosidade: ["O samba nasceu da mistura de influências africanas e brasileiras ✨"],
-    interacao: ["Você consegue acompanhar um ritmo batendo palmas?"],
+    inicio: [
+      "🎵 **Samba**\n\n**O que é:**\nO samba é um gênero musical e uma manifestação cultural brasileira, marcado principalmente pelo ritmo, pela dança e pela presença de instrumentos de percussão, como pandeiro, surdo, tamborim e cuíca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira."
+    ],
+    explicacao_curta: [
+      "**Origem:**\nO samba nasceu da mistura de tradições musicais africanas com elementos culturais desenvolvidos no Brasil. Suas raízes estão especialmente ligadas às comunidades negras, aos batuques e às rodas de música e dança. O samba de roda do Recôncavo Baiano é uma de suas importantes manifestações tradicionais. No início do século XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira."
+    ],
+    explicacao_aprofundada: [
+      "**Samba-enredo:**\nO samba-enredo é um tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo, ou seja, uma história ou tema que será apresentado no desfile, e cria uma música para contar esse tema. O samba-enredo ajuda a escola a apresentar sua história por meio da música, da dança, das fantasias, das alegorias e das alas."
+    ],
+    curiosidade: [
+      "**Curiosidade:**\nO samba é uma das manifestações culturais brasileiras mais conhecidas no mundo e possui diferentes formas e tradições em várias regiões do Brasil. O samba de roda do Recôncavo Baiano foi reconhecido pela UNESCO como Patrimônio Cultural Imaterial da Humanidade em 2005. 🏆✨"
+    ],
+    interacao: ["Você consegue acompanhar um ritmo de samba batendo palmas?"],
     atividade: ["Crie um ritmo usando mesa, palmas e pés 🥁"],
     final: ["O samba espalha alegria e movimento 🌈"],
     emocao: "animacao",

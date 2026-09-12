@@ -2943,8 +2943,9 @@ O círculo cromático é como uma bússola das cores. Ele ajuda os artistas a de
     resposta: '🎤 Rock tem energia, atitude e guitarras elétricas. Pode ser calmo ou barulhento, e fala de liberdade e juventude.' 
   },
   { 
-    palavras: ['samba'], 
-    resposta: '🎤 Samba é ritmo brasileiro ligado à dança e à comunidade. Usa percussão e alegria, muito presente no carnaval.' 
+    palavras: ['samba', 'musica samba', 'ritmo samba', 'o que e samba', 'o que e o samba', 'historia do samba', 'origem do samba', 'samba enredo', 'samba-enredo', 'samba de roda'], 
+    resposta: `🎵 **Samba**\n\n**O que é:**\nO samba é um gênero musical e uma manifestação cultural brasileira, marcado principalmente pelo ritmo, pela dança e pela presença de instrumentos de percussão, como pandeiro, surdo, tamborim e cuíca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.\n\n**Origem:**\nO samba nasceu da mistura de tradições musicais africanas com elementos culturais desenvolvidos no Brasil. Suas raízes estão especialmente ligadas às comunidades negras, aos batuques e às rodas de música e dança. O samba de roda do Recôncavo Baiano é uma de suas importantes manifestações tradicionais. No início do século XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.\n\n**Samba-enredo:**\nO samba-enredo é um tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo, ou seja, uma história ou tema que será apresentado no desfile, e cria uma música para contar esse tema. O samba-enredo ajuda a escola a apresentar sua história por meio da música, da dança, das fantasias, das alegorias e das alas.\n\n**Curiosidade:**\nO samba é uma das manifestações culturais brasileiras mais conhecidas no mundo e possui diferentes formas e tradições em várias regiões do Brasil. O samba de roda do Recôncavo Baiano foi reconhecido pela UNESCO como Patrimônio Cultural Imaterial da Humanidade em 2005.`,
+    matchedKey: 'samba'
   },
   { 
     palavras: ['bossa nova'], 
@@ -3051,8 +3052,9 @@ O círculo cromático é como uma bússola das cores. Ele ajuda os artistas a de
     resposta: '🎷 O jazz é um estilo de dança marcado pelo improviso e pelas raízes populares. Surgiu nos Estados Unidos com a música jazz e incorpora elements do balé e da dança moderna, com movimentos energéticos e expressivos.' 
   },
   { 
-    palavras: ['samba dança', 'dança samba'], 
-    resposta: '🇧🇷 O samba é uma expressão da cultura popular brasileira, com influência africana. Como dança, pode ser dançado solo ou em par, com movimentos de quadris, passos rápidos e muita alegria. É a alma do carnaval!' 
+    palavras: ['samba dança', 'dança samba', 'danca samba', 'danças samba', 'dancas samba', 'dança do samba', 'danca do samba'], 
+    resposta: `🎵 **Samba**\n\n**O que é:**\nO samba é um gênero musical e uma manifestação cultural brasileira, marcado principalmente pelo ritmo, pela dança e pela presença de instrumentos de percussão, como pandeiro, surdo, tamborim e cuíca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.\n\n**Origem:**\nO samba nasceu da mistura de tradições musicais africanas com elementos culturais desenvolvidos no Brasil. Suas raízes estão especialmente ligadas às comunidades negras, aos batuques e às rodas de música e dança. O samba de roda do Recôncavo Baiano é uma de suas importantes manifestações tradicionais. No início do século XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.\n\n**Samba-enredo:**\nO samba-enredo é um tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo, ou seja, uma história ou tema que será apresentado no desfile, e cria uma música para contar esse tema. O samba-enredo ajuda a escola a apresentar sua história por meio da música, da dança, das fantasias, das alegorias e das alas.\n\n**Curiosidade:**\nO samba é uma das manifestações culturais brasileiras mais conhecidas no mundo e possui diferentes formas e tradições em várias regiões do Brasil. O samba de roda do Recôncavo Baiano foi reconhecido pela UNESCO como Patrimônio Cultural Imaterial da Humanidade em 2005.`,
+    matchedKey: 'samba'
   },
   { 
     palavras: ['forró dança', 'dança forró'], 
@@ -3088,7 +3090,8 @@ O círculo cromático é como uma bússola das cores. Ele ajuda os artistas a de
   },
   { 
     palavras: ['samba de roda'], 
-    resposta: '🔄 Samba de roda é uma forma tradicional de samba, dançado em roda, com participação de todos. Nasceu no Recôncavo Baiano e é patrimônio cultural brasileiro. As pessoas entram na roda, sambam e dão lugar a outras.' 
+    resposta: `🎵 **Samba de Roda**\n\n**Origem & Tradição:**\nO samba de roda nasceu no Recôncavo Baiano da mistura de tradições musicais africanas com elementos culturais desenvolvidos no Brasil. É dançado em roda, com muita alegria, palmas, cantos e participação de todos.\n\n**Curiosidade Histórica:**\nO samba de roda do Recôncavo Baiano foi reconhecido pela UNESCO como Patrimônio Cultural Imaterial da Humanidade em 2005! 🏆✨`,
+    matchedKey: 'samba'
   },
   { 
     palavras: ['jongo'], 

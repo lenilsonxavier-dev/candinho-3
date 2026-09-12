@@ -602,6 +602,21 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     titulo: "Arte Africana",
     credito: "Wikimedia Commons"
   },
+  samba: {
+    imagemUrl: "https://i.imgur.com/BS3t0kL.jpeg",
+    titulo: "Samba de Roda do Recôncavo - Bahia",
+    credito: "Wikimedia Commons"
+  },
+  danca_samba: {
+    imagemUrl: "https://i.imgur.com/BS3t0kL.jpeg",
+    titulo: "Samba de Roda do Recôncavo - Bahia",
+    credito: "Wikimedia Commons"
+  },
+  samba_de_roda: {
+    imagemUrl: "https://i.imgur.com/BS3t0kL.jpeg",
+    titulo: "Samba de Roda do Recôncavo - Bahia",
+    credito: "Wikimedia Commons"
+  },
   danca_brasil: {
     imagemUrl: "https://i.imgur.com/CVHkdCZ.jpg",
     titulo: "Dança Tradicional no Brasil",
@@ -1119,6 +1134,9 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
     }
     if (lowerQuery.includes("carimbo") || lowerQuery.includes("carimbó")) {
       return ARTISTS_GUARANTEED_IMAGES.carimbo;
+    }
+    if (lowerQuery.includes("samba") || lowerQuery.includes("samba de roda") || lowerQuery.includes("samba-enredo") || lowerQuery.includes("samba enredo")) {
+      return ARTISTS_GUARANTEED_IMAGES.samba;
     }
     if (lowerQuery.includes("bale") || lowerQuery.includes("ballet") || lowerQuery.includes("balé")) {
       return ARTISTS_GUARANTEED_IMAGES.bale;
@@ -1807,7 +1825,12 @@ app.post("/api/groq", async (req: Request, res: Response) => {
                 "- Passos: 1. Escolha um tema (escola, amizade, esporte, arte, natureza, cidade, diversão, sonhos) | 2. Pense em uma mensagem | 3. Crie frases curtas | 4. Use repetição no refrão | 5. Crie o ritmo (PÁ – PÁ – PUM | PÁ – PÁ – PUM) | 6. Faça um refrão | 7. Junte tudo: TEMA → MENSAGEM → VERSOS → RITMO → REFRÃO.\n" +
                 "- Citação do Candinho: 'Você não precisa usar palavras difíceis para fazer um bom funk. Precisa ter criatividade, ritmo e algo para dizer.'\n" +
                 "- Comparação Poesia, Rap e Funk: 'A poesia usa palavras para criar imagens e sentimentos. O rap costuma valorizar muito as rimas, a mensagem e o ritmo. O funk valoriza bastante a batida, a repetição, o ritmo e os versos que combinam com a música. Os três podem usar poesia!'\n" +
-                "- Se pedir ajuda para criar um funk, nunca entregue pronto: dê sugestões de frases curtas, batida e repetição para a criança criar!";
+                "- Se pedir ajuda para criar um funk, nunca entregue pronto: dê sugestões de frases curtas, batida e repetição para a criança criar!\n\n" +
+                "BASE DE CONHECIMENTO DE DANÇAS E MÚSICA - SAMBA:\n" +
+                "- O que é: O samba é um gênero musical e uma manifestação cultural brasileira, marcado principalmente pelo ritmo, pela dança e pela presença de instrumentos de percussão, como pandeiro, surdo, tamborim e cuíca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.\n" +
+                "- Origem: Nasceu da mistura de tradições musicais africanas com elementos culturais desenvolvidos no Brasil. Suas raízes estão especialmente ligadas às comunidades negras, aos batuques e às rodas de música e dança. O samba de roda do Recôncavo Baiano é uma de suas importantes manifestações tradicionais. No início do século XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.\n" +
+                "- Samba-enredo: Tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo (história ou tema) e cria uma música para contar esse tema por meio da música, da dança, das fantasias, das alegorias e das alas.\n" +
+                "- Curiosidade: O samba de roda do Recôncavo Baiano foi reconhecido pela UNESCO como Patrimônio Cultural Imaterial da Humanidade em 2005.";
             }
 
             if (nomeCrianca) {

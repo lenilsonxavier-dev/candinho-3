@@ -227,6 +227,7 @@ export default function App() {
         queryText.toLowerCase().includes("arte") ||
         queryText.toLowerCase().includes("dança") ||
         queryText.toLowerCase().includes("danca") ||
+        queryText.toLowerCase().includes("samba") ||
         queryText.toLowerCase().includes("poema") ||
         queryText.toLowerCase().includes("poesia") ||
         queryText.toLowerCase().includes("verso") ||
@@ -299,6 +300,7 @@ export default function App() {
         queryText.toLowerCase().includes("arte") ||
         queryText.toLowerCase().includes("dança") ||
         queryText.toLowerCase().includes("danca") ||
+        queryText.toLowerCase().includes("samba") ||
         queryText.toLowerCase().includes("poema") ||
         queryText.toLowerCase().includes("poesia") ||
         queryText.toLowerCase().includes("verso") ||
