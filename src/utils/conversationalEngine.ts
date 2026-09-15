@@ -58,6 +58,18 @@ export interface TutorialItem {
   reply: string;
 }
 
+export const RESPOSTA_INOVACAO = `Inovação é a criação ou aplicação de novas ideias, métodos, recursos ou soluções que produzem melhorias ou novas possibilidades em determinado contexto. Inovar não significa necessariamente inventar algo completamente novo, mas transformar ou combinar conhecimentos e recursos existentes de maneira significativa.
+
+Nesse sentido, o projeto  Candinho: Do Pincel ao Pixel é inovador por integrar Arte, educação e tecnologia digital em uma proposta voltada à aprendizagem e à criatividade infantil. O projeto abarca o aplicativo Pequenos Artistas do Quirino, reunindo a IA Candinho, conteúdos de Arte, artistas, linguagens artísticas, atividades, jogos e recursos digitais em um ambiente de aprendizagem pensado para as crianças.
+
+Sua inovação está na articulação entre o fazer artístico e as possibilidades do universo digital, estabelecendo uma ponte entre o pincel e o pixel. A tecnologia não é apresentada como substituta da experiência humana, mas como recurso para ampliar as possibilidades de criação, exploração, aprendizagem e expressão artística.
+
+Essa perspectiva encontra eco nas palavras de Fei-Fei Li, pesquisadora de inteligência artificial e professora da Universidade Stanford:
+
+“A inteligência artificial não é um substituto para a inteligência humana; é uma ferramenta para ampliar a criatividade e a engenhosidade humanas.”
+
+Fei-Fei Li`;
+
 export const TUTORIAIS_ARTE_CANDINHO: TutorialItem[] = [
   {
     keywords: [
@@ -653,6 +665,29 @@ export const atividadesAnsioso = [
 ];
 
 const CONHECIMENTO_CANDINHO: ConhecimentoItem[] = [
+  // ===== INOVAÇÃO E PROJETO CANDINHO =====
+  {
+    palavras: [
+      'o que e inovacao', 'o que e inovação', 'o que é inovacao', 'o que é inovação',
+      'o que e ser inovador', 'o que é ser inovador',
+      'o que e ser inovador para o candinho', 'o que é ser inovador para o candinho',
+      'por que o candinho e inovador', 'por que o candinho é inovador',
+      'porque o candinho e inovador', 'porque o candinho é inovador',
+      'por que voce e inovador', 'por que você é inovador',
+      'voce e inovador', 'você é inovador',
+      'candinho e inovador', 'candinho é inovador', 'candinho inovador',
+      'o candinho e inovador', 'o candinho é inovador',
+      'o que e inovador', 'o que é inovador',
+      'o que significa inovar', 'o que e inovar', 'o que é inovar',
+      'qual a inovacao do candinho', 'qual a inovação do candinho',
+      'qual a inovacao do projeto', 'qual a inovação do projeto',
+      'do pincel ao pixel', 'pequenos artistas do quirino', 'fei fei li', 'fei-fei li',
+      'inovacao', 'inovação', 'inovador', 'inovadora', 'inovar'
+    ],
+    resposta: RESPOSTA_INOVACAO,
+    matchedKey: 'inovacao'
+  },
+
   // ===== RESPOSTAS EMOCIONAIS HUMANIZADAS =====
   { 
     palavras: ['estou triste', 'triste', 'me sinto triste', 'sentindo triste', 'tristeza', 'saudade', 'melancolia'], 
@@ -3870,6 +3905,30 @@ export const PORQUES_ARTE: PorqueItem[] = [
     experimenteEmoji: "🎨",
     comoFazerEsboco: "Passo 1: Observe bem o que você quer desenhar.\n\nOlhe para as formas principais. Um gato pode começar com círculos. Uma casa pode começar com um quadrado e um triângulo.\n\nPasso 2: Faça linhas bem leves.\n\nNão aperte o lápis. Assim, será fácil apagar ou mudar o desenho.\n\nPasso 3: Desenhe as formas básicas.\n\nUse círculos, ovais, quadrados, retângulos e triângulos para montar a estrutura.\n\nPasso 4: Acrescente os detalhes.\n\nDepois que as formas estiverem no lugar certo, desenhe olhos, janelas, folhas, roupas ou outros detalhes.\n\nPasso 5: Faça o contorno.\n\nPasse o lápis com um traço mais firme nas linhas que farão parte do desenho final.\n\nPasso 6: Apague as linhas de construção.\n\nRetire apenas as linhas que serviram como guia.",
     dicaCandinho: "Não tenha medo de fazer um esboço \"torto\". Quase todo desenho bonito começou com linhas simples e algumas correções. O esboço é um espaço para experimentar e aprender."
+  },
+  {
+    keywords: [
+      "candinho inovador",
+      "candinho e inovador",
+      "candinho é inovador",
+      "o candinho e inovador",
+      "o candinho é inovador",
+      "por que o candinho e inovador",
+      "por que o candinho é inovador",
+      "porque o candinho e inovador",
+      "porque o candinho é inovador",
+      "o que e inovacao",
+      "o que é inovação",
+      "o que e ser inovador",
+      "o que é ser inovador",
+      "o que e ser inovador para o candinho",
+      "o que é ser inovador para o candinho",
+      "inovador",
+      "inovacao",
+      "inovação"
+    ],
+    pergunta: "Por que o Candinho é inovador? O que é inovação?",
+    resposta: RESPOSTA_INOVACAO
   }
 ];
 
@@ -5002,6 +5061,28 @@ function resolverAjudaFunk(normalizedMsg: string): { reply: string, matchedKey?:
   };
 }
 
+export function resolverPerguntaInovacao(normalizedMsg: string): { reply: string, matchedKey: string } | null {
+  if (!normalizedMsg) return null;
+
+  const isPerguntaInovacao = 
+    normalizedMsg.includes("inovac") || // inovacao, inovação, inovações...
+    normalizedMsg.includes("inovad") || // inovador, inovadora, inovadores...
+    normalizedMsg.includes("inovar") || // inovar, inova...
+    normalizedMsg.includes("pincel ao pixel") ||
+    normalizedMsg.includes("artistas do quirino") ||
+    normalizedMsg.includes("fei fei li") ||
+    normalizedMsg.includes("fei-fei li");
+
+  if (isPerguntaInovacao) {
+    return {
+      reply: RESPOSTA_INOVACAO,
+      matchedKey: "inovacao"
+    };
+  }
+
+  return null;
+}
+
 function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any>): { reply: string, matchedKey?: string } | null {
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
@@ -5019,6 +5100,10 @@ function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any
       matchedKey: "saudacao_nome"
     };
   }
+
+  // Intercept innovation and project Candinho questions
+  const inovacaoRes = resolverPerguntaInovacao(normalizedMsg);
+  if (inovacaoRes) return inovacaoRes;
 
   // Intercept character creation / inspiration requests
   const criarPersonagemRes = resolverCriarPersonagemFolclorico(normalizedMsg);
@@ -5282,13 +5367,15 @@ function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any
 export function tornarRespostaDialogica(reply: string, matchedKey?: string): string {
   if (!reply) return reply;
   
-  // Se for uma resposta estruturada de oficinas, tutoriais, "como_" ou "followup", ela já tem guias e chamadas para ação próprias
+  // Se for uma resposta estruturada de oficinas, tutoriais, "como_", "followup" ou resposta institucional de inovação, mantém o texto limpo e fiel
   if (matchedKey && (
     matchedKey.startsWith("como_") ||
     matchedKey.startsWith("oficina_") ||
     matchedKey.startsWith("criar_") ||
     matchedKey.startsWith("tutorial_") ||
-    matchedKey.includes("followup")
+    matchedKey.includes("followup") ||
+    matchedKey === "inovacao" ||
+    matchedKey.includes("inovac")
   )) {
     return reply;
   }

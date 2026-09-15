@@ -274,6 +274,52 @@ Portinari produziu mais de 5 mil obras ao longo da vida. Seu trabalho é reconhe
 
 **Resumo**: Cândido Portinari foi um pintor modernista brasileiro que retratou a vida do povo, as brincadeiras infantis e as questões sociais do Brasil, tornando-se um dos maiores artistas da história do país. 🇧🇷🎨`
   },
+  candinho_inovacao: {
+    palavras_chave: [
+      "inovacao",
+      "inovação",
+      "inovador",
+      "o que e inovacao",
+      "o que é inovação",
+      "o que e ser inovador",
+      "o que é ser inovador",
+      "o que e ser inovador para o candinho",
+      "o que é ser inovador para o candinho",
+      "por que o candinho e inovador",
+      "por que o candinho é inovador",
+      "porque o candinho e inovador",
+      "porque o candinho é inovador",
+      "do pincel ao pixel",
+      "pequenos artistas do quirino"
+    ],
+    inicio: [
+      "Inovação é a criação ou aplicação de novas ideias, métodos, recursos ou soluções que produzem melhorias ou novas possibilidades em determinado contexto."
+    ],
+    explicacao_curta: [
+      "O projeto Candinho: Do Pincel ao Pixel é inovador por integrar Arte, educação e tecnologia digital em uma proposta voltada à aprendizagem e à criatividade infantil."
+    ],
+    explicacao_aprofundada: [
+      "Sua inovação está na articulação entre o fazer artístico e as possibilidades do universo digital, estabelecendo uma ponte entre o pincel e o pixel."
+    ],
+    curiosidade: [
+      "“A inteligência artificial não é um substituto para a inteligência humana; é uma ferramenta para ampliar a criatividade e a engenhosidade humanas.” — Fei-Fei Li"
+    ],
+    interacao: [""],
+    atividade: [""],
+    final: [""],
+    categoria: "Inovação",
+    resposta_direta: `Inovação é a criação ou aplicação de novas ideias, métodos, recursos ou soluções que produzem melhorias ou novas possibilidades em determinado contexto. Inovar não significa necessariamente inventar algo completamente novo, mas transformar ou combinar conhecimentos e recursos existentes de maneira significativa.
+
+Nesse sentido, o projeto  Candinho: Do Pincel ao Pixel é inovador por integrar Arte, educação e tecnologia digital em uma proposta voltada à aprendizagem e à criatividade infantil. O projeto abarca o aplicativo Pequenos Artistas do Quirino, reunindo a IA Candinho, conteúdos de Arte, artistas, linguagens artísticas, atividades, jogos e recursos digitais em um ambiente de aprendizagem pensado para as crianças.
+
+Sua inovação está na articulação entre o fazer artístico e as possibilidades do universo digital, estabelecendo uma ponte entre o pincel e o pixel. A tecnologia não é apresentada como substituta da experiência humana, mas como recurso para ampliar as possibilidades de criação, exploração, aprendizagem e expressão artística.
+
+Essa perspectiva encontra eco nas palavras de Fei-Fei Li, pesquisadora de inteligência artificial e professora da Universidade Stanford:
+
+“A inteligência artificial não é um substituto para a inteligência humana; é uma ferramenta para ampliar a criatividade e a engenhosidade humanas.”
+
+Fei-Fei Li`
+  },
   tarsila: {
     palavras_chave: ["tarsila", "amaral", "abaporu", "operarios", "operários", "antropofagia"],
     inicio: [
