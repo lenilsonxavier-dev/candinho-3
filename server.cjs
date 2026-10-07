@@ -8343,6 +8343,1044 @@ var GALERIA_IMAGENS = {
   }
 };
 
+// src/data/estadosBrasilCultural.ts
+var BANCO_ESTADOS_BRASIL = {
+  estados: [
+    {
+      estado: "Acre",
+      sigla: "AC",
+      capital: "Rio Branco",
+      regiao: "Norte",
+      artista: "H\xE9lio Melo",
+      biografia: "Artista visual, seringueiro, escritor e m\xFAsico acreano que retratou com sensibilidade a floresta amaz\xF4nica, os rios e o cotidiano nos seringais.",
+      obra: "A Floresta e os Seringais",
+      descricao_da_obra: "Desenhos e pinturas que revelam a rela\xE7\xE3o entre os trabalhadores da floresta, as \xE1rvores seringueiras, os animais e os mist\xE9rios da Amaz\xF4nia.",
+      danca: "Marujada e Dan\xE7a do Caiari",
+      instrumentos: [
+        "viol\xE3o",
+        "tambores",
+        "marac\xE1",
+        "flauta"
+      ],
+      atividade: "Desenhe uma floresta cheia de \xE1rvores gigantes e esconda pequenos animais e personagens entre os troncos e folhas.",
+      curiosidade: "H\xE9lio Melo produzia muitas de suas tintas usando pigmentos naturais extra\xEDdos de plantas, sementes e argilas da pr\xF3pria floresta amaz\xF4nica.",
+      fonte: [
+        {
+          nome: "Ita\xFA Cultural",
+          url: "https://enciclopedia.itaucultural.org.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Alagoas",
+      sigla: "AL",
+      capital: "Macei\xF3",
+      regiao: "Nordeste",
+      artista: "Rosalvo Ribeiro",
+      biografia: "Pintor alagoano de grande import\xE2ncia hist\xF3rica que estudou na Europa e dedicou parte importante de sua carreira ao ensino e \xE0 pintura em Macei\xF3, ao lado da rica tradi\xE7\xE3o de mestres populares alagoanos como Mestre Zumba e Tania de Maya Pedrosa.",
+      obra: "Cenas Hist\xF3ricas e Paisagens Alagoanas",
+      descricao_da_obra: "Pinturas marcadas pelo dom\xEDnio da luz, retratando personagens, cenas do cotidiano e paisagens ligadas \xE0 mem\xF3ria de Alagoas.",
+      danca: "Guerreiro Alagoano",
+      instrumentos: [
+        "sanfona",
+        "pandeiro",
+        "zabumba",
+        "ganz\xE1"
+      ],
+      atividade: "Desenhe um chap\xE9u de Guerreiro Alagoano bem colorido, decorado com formas geom\xE9tricas que lembrem espelhos, fitas e estrelas.",
+      curiosidade: "No Guerreiro Alagoano, os chap\xE9us dos brincantes parecem verdadeiras catedrais brilhantes enfeitadas com espelhos, contas e fitas coloridas!",
+      fonte: [
+        {
+          nome: "Pinacoteca Universit\xE1ria da UFAL",
+          url: "https://ufal.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Amap\xE1",
+      sigla: "AP",
+      capital: "Macap\xE1",
+      regiao: "Norte",
+      artista: "Raimundo Braga (R. Peixe)",
+      biografia: "Artista pl\xE1stico amapaense conhecido por retratar a vida ribeirinha, a fauna, os barcos e as manifesta\xE7\xF5es culturais da Amaz\xF4nia amapaense.",
+      obra: "Cotidiano Ribeirinho e Cultura do Marabaixo",
+      descricao_da_obra: "Pinturas vibrantes que destacam as cores das festas tradicionais, as embarca\xE7\xF5es do Rio Amazonas e a for\xE7a cultural do povo amapaense.",
+      danca: "Marabaixo",
+      instrumentos: [
+        "caixas de marabaixo",
+        "tambores",
+        "chocalhos"
+      ],
+      atividade: "Crie uma pintura usando cores bem alegres para representar pessoas dan\xE7ando em roda com saias rodadas e tambores.",
+      curiosidade: "No Marabaixo, os versos cantados s\xE3o chamados de 'Ladr\xF5es de Marabaixo' e contam hist\xF3rias reais e mem\xF3rias das comunidades negras do Amap\xE1.",
+      fonte: [
+        {
+          nome: "IPHAN - Instituto do Patrim\xF4nio Hist\xF3rico e Art\xEDstico Nacional",
+          url: "https://www.gov.br/iphan/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Amazonas",
+      sigla: "AM",
+      capital: "Manaus",
+      regiao: "Norte",
+      artista: "Moacir Andrade",
+      biografia: "Pintor, desenhista e escritor amazonense que dedicou sua obra a retratar a paisagem amaz\xF4nica, os rios, os barcos regionais, as lendas e a vida cabocla.",
+      obra: "Paisagens, Barcos e Lendas da Amaz\xF4nia",
+      descricao_da_obra: "Telas luminosas e cheias de detalhes que mostram o encontro das \xE1guas, as embarca\xE7\xF5es coloridas e o imagin\xE1rio dos povos da floresta.",
+      danca: "Boi-Bumb\xE1 (Festival de Parintins) e Ciranda Amaz\xF4nica",
+      instrumentos: [
+        "surdo",
+        "palminha",
+        "marac\xE1",
+        "caixinha",
+        "charango"
+      ],
+      atividade: "Imagine uma embarca\xE7\xE3o m\xE1gica navegando pelos rios da Amaz\xF4nia ao p\xF4r do sol e pinte o reflexo das cores na \xE1gua.",
+      curiosidade: "Em Parintins, no Amazonas, a festa do Boi-Bumb\xE1 divide a ilha nas cores azul (Boi Caprichoso) e vermelho (Boi Garantido) em um espet\xE1culo art\xEDstico gigantesco!",
+      fonte: [
+        {
+          nome: "Secretaria de Cultura e Economia Criativa do Amazonas",
+          url: "https://cultura.am.gov.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Bahia",
+      sigla: "BA",
+      capital: "Salvador",
+      regiao: "Nordeste",
+      artista: "Rubem Valentim",
+      biografia: "Pintor, escultor e gravador baiano nascido em Salvador, reconhecido internacionalmente por unir a geometria construtivista aos s\xEDmbolos e emblemas da cultura afro-brasileira, ao lado de outros grandes nomes ligados \xE0 Bahia como Caryb\xE9.",
+      obra: "Emblemas e Relevos Afro-Brasileiros",
+      descricao_da_obra: "Pinturas e esculturas geom\xE9tricas com cores intensas e formas sim\xE9tricas que dialogam com a ancestralidade e a mem\xF3ria afro-baiana.",
+      danca: "Samba de Roda",
+      instrumentos: [
+        "pandeiro",
+        "atabaque",
+        "viola machete",
+        "berimbau",
+        "ag\xF4g\xF4"
+      ],
+      atividade: "Crie um escudo ou painel art\xEDstico usando apenas tri\xE2ngulos, c\xEDrculos, linhas retas e cores bem vibrantes em simetria.",
+      curiosidade: "O Samba de Roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade e \xE9 uma das ra\xEDzes do samba brasileiro!",
+      fonte: [
+        {
+          nome: "Museu de Arte Moderna da Bahia (MAM-BA)",
+          url: "http://www.mam.ba.gov.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Cear\xE1",
+      sigla: "CE",
+      capital: "Fortaleza",
+      regiao: "Nordeste",
+      artista: "Aldemir Martins",
+      biografia: "Pintor, gravador e desenhista cearense nascido no Vale do Cariri, famoso pelo tra\xE7o expressivo e pelas cores tropicais com que retratou animais, frutas, cangaceiros e o povo nordestino, ao lado de nomes marcantes como Chico da Silva.",
+      obra: "Gatos, Cangaceiros e Natureza Brasileira",
+      descricao_da_obra: "Obras de linhas marcantes e cores luminosas que transformam figuras da fauna e da cultura popular brasileira em imagens vibrantes.",
+      danca: "Maracatu Cearense e Forr\xF3",
+      instrumentos: [
+        "alfaia",
+        "ferro (agog\xF4)",
+        "caixa",
+        "sanfona",
+        "zabumba",
+        "tri\xE2ngulo"
+      ],
+      atividade: "Desenhe um animal (como um gato, p\xE1ssaro ou peixe) preenchendo o corpo dele com linhas rendadas e cores bem quentes e alegres.",
+      curiosidade: "Aldemir Martins adorava tanto desenhar gatos coloridos e cheios de padr\xF5es que eles se tornaram uma das marcas mais famosas de toda a sua arte!",
+      fonte: [
+        {
+          nome: "Museu da Cultura Cearense - Drag\xE3o do Mar",
+          url: "http://www.dragaodomar.org.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Distrito Federal",
+      sigla: "DF",
+      capital: "Bras\xEDlia",
+      regiao: "Centro-Oeste",
+      artista: "Athos Bulc\xE3o",
+      biografia: "Pintor, escultor e desenhista que marcou profundamente a identidade visual de Bras\xEDlia com seus pain\xE9is de azulejos geom\xE9tricos integrados \xE0 arquitetura moderna.",
+      obra: "Pain\xE9is de Azulejos de Bras\xEDlia (Igrejinha Nossa Senhora de F\xE1tima e espa\xE7os p\xFAblicos)",
+      descricao_da_obra: "Composi\xE7\xF5es geom\xE9tricas em azulejos que criam ritmo, movimento e jogos visuais nas paredes e edif\xEDcios da capital federal.",
+      danca: "Bumba Meu Boi do Seu Teodoro e Seu Estrelo e o Fu\xE1 do Terreiro",
+      instrumentos: [
+        "tambores",
+        "pandeir\xF5es",
+        "matracas",
+        "marac\xE1s",
+        "alfaia"
+      ],
+      atividade: "Desenhe v\xE1rios quadrados iguais (como se fossem azulejos) e crie um padr\xE3o geom\xE9trico repetindo duas ou tr\xEAs formas simples em posi\xE7\xF5es diferentes.",
+      curiosidade: "Athos Bulc\xE3o gostava de deixar que os pr\xF3prios oper\xE1rios da constru\xE7\xE3o posicionassem alguns azulejos livremente, criando surpresas visuais nos murais!",
+      fonte: [
+        {
+          nome: "Funda\xE7\xE3o Athos Bulc\xE3o",
+          url: "https://www.fundathos.org.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Esp\xEDrito Santo",
+      sigla: "ES",
+      capital: "Vit\xF3ria",
+      regiao: "Sudeste",
+      artista: "Homero Massena",
+      biografia: "Pintor ligado \xE0 hist\xF3ria art\xEDstica capixaba, conhecido por registrar as paisagens, o mar, as montanhas e a luz do Esp\xEDrito Santo, especialmente em Vila Velha.",
+      obra: "Paisagens Capixabas",
+      descricao_da_obra: "Pinturas ao ar livre que capturam as cores do litoral, dos morros e da arquitetura hist\xF3rica capixaba.",
+      danca: "Congo Capixaba",
+      instrumentos: [
+        "casaca",
+        "tambores de congo",
+        "cu\xEDca",
+        "chocalho",
+        "apito"
+      ],
+      atividade: "Desenhe uma paisagem com mar e montanhas ao fundo e crie um instrumento musical imagin\xE1rio inspirado na casaca capixaba.",
+      curiosidade: "A 'casaca' \xE9 um instrumento musical tradicional do Esp\xEDrito Santo feito de madeira e bambu com uma cabecinha esculpida no topo, tocado como um reco-reco!",
+      fonte: [
+        {
+          nome: "Museu de Arte do Esp\xEDrito Santo Dion\xEDsio Del Santo (MAES)",
+          url: "https://secult.es.gov.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Goi\xE1s",
+      sigla: "GO",
+      capital: "Goi\xE2nia",
+      regiao: "Centro-Oeste",
+      artista: "Goiandira do Couto",
+      biografia: "Artista pl\xE1stica goiana nascida em Catal\xE3o e radicada na Cidade de Goi\xE1s, c\xE9lebre por sua t\xE9cnica \xFAnica de pintar paisagens e casar\xF5es hist\xF3ricos usando areias coloridas naturais da Serra Dourada, ao lado de nomes importantes como Siron Franco.",
+      obra: "Paisagens e Casar\xF5es com Areias da Serra Dourada",
+      descricao_da_obra: "Quadros feitos sem tinta tradicional, utilizando centenas de tons naturais de areia fixados na tela para retratar a arquitetura colonial e a natureza de Goi\xE1s.",
+      danca: "Catira",
+      instrumentos: [
+        "viola caipira",
+        "palmas",
+        "batidas dos p\xE9s"
+      ],
+      atividade: "Experimente criar um desenho texturizado colando gr\xE3os pequenos, terra peneirada ou fazendo pontinhos coloridos bem juntinhos para simular gr\xE3os de areia.",
+      curiosidade: "Goiandira do Couto catalogou mais de 500 tonalidades diferentes de areia natural retiradas da Serra Dourada para compor suas obras!",
+      fonte: [
+        {
+          nome: "Museu Casa de Cora Coralina / Museus de Goi\xE1s",
+          url: "https://www.goias.gov.br/cultura/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Maranh\xE3o",
+      sigla: "MA",
+      capital: "S\xE3o Lu\xEDs",
+      regiao: "Nordeste",
+      artista: "P\xE9ricles Rocha",
+      biografia: "Pintor, aquarelista e escultor maranhense que retratou com cores intensas as ladeiras, os casar\xF5es de azulejos e as festas populares de S\xE3o Lu\xEDs do Maranh\xE3o.",
+      obra: "Casar\xF5es e Festas Populares do Maranh\xE3o",
+      descricao_da_obra: "Aquarelas e pinturas vibrantes que celebram a arquitetura hist\xF3rica e o movimento do Bumba Meu Boi e do Tambor de Crioula.",
+      danca: "Bumba Meu Boi do Maranh\xE3o e Tambor de Crioula",
+      instrumentos: [
+        "matraca",
+        "pandeir\xE3o",
+        "tambor-on\xE7a",
+        "marac\xE1",
+        "tambores de crioula"
+      ],
+      atividade: "Desenhe e decore o couro de um Boi de festa usando estrelas, flores, fitas e cores bem brilhantes.",
+      curiosidade: "No Maranh\xE3o, o Bumba Meu Boi possui diferentes 'sotaques' (estilos musicais e de dan\xE7a), como o sotaque de matraca, de zabumba e de orquestra!",
+      fonte: [
+        {
+          nome: "Museu de Artes Visuais do Maranh\xE3o",
+          url: "https://www.cultura.ma.gov.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Mato Grosso",
+      sigla: "MT",
+      capital: "Cuiab\xE1",
+      regiao: "Centro-Oeste",
+      artista: "Gervane de Paula",
+      biografia: "Artista visual mato-grossense nascido em Cuiab\xE1, cuja obra dialoga de forma criativa com a natureza do Pantanal, o Cerrado e as transforma\xE7\xF5es culturais da regi\xE3o Centro-Oeste.",
+      obra: "Cenas e Cores do Pantanal e Cerrado",
+      descricao_da_obra: "Pinturas e instala\xE7\xF5es de cores fortes que retratam animais pantaneiros, rios, personagens locais e quest\xF5es ambientais.",
+      danca: "Siriri e Cururu",
+      instrumentos: [
+        "viola de cocho",
+        "ganz\xE1",
+        "mocho"
+      ],
+      atividade: "Desenhe os animais e as \xE1guas do Pantanal usando cores intensas e crie um instrumento musical inspirado na viola de cocho.",
+      curiosidade: "A viola de cocho, usada no Siriri e no Cururu, \xE9 esculpida artesanalmente em um \xFAnico tronco de madeira macia, no formato de um pequeno cocho!",
+      fonte: [
+        {
+          nome: "Museu de Arte e de Cultura Popular da UFMT",
+          url: "https://www.ufmt.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Mato Grosso do Sul",
+      sigla: "MS",
+      capital: "Campo Grande",
+      regiao: "Centro-Oeste",
+      artista: "Concei\xE7\xE3o dos Bugres",
+      biografia: "Escultora popular radicada no Mato Grosso do Sul que se tornou um \xEDcone da arte sul-mato-grossense ao esculpir na madeira e na cera de abelha os famosos 'Bugrinhos'.",
+      obra: "Bugrinhos",
+      descricao_da_obra: "Esculturas em madeira recobertas com cera e tinta que homenageiam os povos ind\xEDgenas e a identidade cultural sul-mato-grossense com formas sint\xE9ticas e expressivas.",
+      danca: "Chamam\xE9 e Cururu",
+      instrumentos: [
+        "acordeona (sanfona)",
+        "viol\xE3o",
+        "viola",
+        "contrabaixo"
+      ],
+      atividade: "Modele com massinha (ou desenhe em 3D) uma pequena escultura humana usando formas simples, arredondadas e expressivas.",
+      curiosidade: "Concei\xE7\xE3o dos Bugres come\xE7ou esculpindo em uma raiz de mandioca e depois passou a talhar madeira com fac\xE3o e cobrir as pe\xE7as com cera de abelha!",
+      fonte: [
+        {
+          nome: "Museu de Arte Contempor\xE2nea de Mato Grosso do Sul (MARCO)",
+          url: "https://www.fundacaodecultura.ms.gov.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Minas Gerais",
+      sigla: "MG",
+      capital: "Belo Horizonte",
+      regiao: "Sudeste",
+      artista: "Aleijadinho (Ant\xF4nio Francisco Lisboa)",
+      biografia: "Escultor, entalhador e arquiteto nascido em Ouro Preto (antiga Vila Rica), considerado o maior mestre do Barroco no Brasil, ao lado de grandes pintores ligados a Minas Gerais como Mestre Ata\xEDde e Alberto da Veiga Guignard.",
+      obra: "Conjunto dos Doze Profetas de Congonhas",
+      descricao_da_obra: "Conjunto monumental de esculturas em pedra-sab\xE3o posicionadas no adro do Santu\xE1rio do Bom Jesus de Matosinhos, em Congonhas, cheias de movimento, express\xE3o e dramaticidade.",
+      danca: "Congado Mineiro e Folia de Reis",
+      instrumentos: [
+        "caixas de folia",
+        "gunga (chocalho de tornozelo)",
+        "pandeiro",
+        "viola",
+        "sanfona"
+      ],
+      atividade: "Observe como as roupas e os gestos das esculturas de Aleijadinho parecem se mexer com o vento e desenhe um personagem em uma pose cheia de express\xE3o.",
+      curiosidade: "Aleijadinho esculpiu dezenas de obras-primas usando a pedra-sab\xE3o, uma rocha t\xEDpica de Minas Gerais que \xE9 macia para talhar mas resiste ao tempo por s\xE9culos!",
+      fonte: [
+        {
+          nome: "IPHAN - Santu\xE1rio de Congonhas (Patrim\xF4nio Mundial)",
+          url: "https://www.gov.br/iphan/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Par\xE1",
+      sigla: "PA",
+      capital: "Bel\xE9m",
+      regiao: "Norte",
+      artista: "Mestre Cardoso e Tradi\xE7\xE3o Ceramista Marajoara",
+      biografia: "O Par\xE1 destaca-se tanto por artistas modernos como Ismael Nery (nascido em Bel\xE9m) quanto pela tradi\xE7\xE3o milenar da cer\xE2mica Marajoara e Tapaj\xF4nica, recriada e preservada por mestres ceramistas paraenses como Mestre Cardoso, de Icoaraci.",
+      obra: "Vasos e Grafismos de Inspira\xE7\xE3o Marajoara",
+      descricao_da_obra: "Pe\xE7as cer\xE2micas decoradas com labirintos, linhas geom\xE9tricas sim\xE9tricas e representa\xE7\xF5es estilizadas da fauna amaz\xF4nica, como cobras, corujas e tartarugas.",
+      danca: "Carimb\xF3",
+      instrumentos: [
+        "curimb\xF3 (tambor de tronco)",
+        "marac\xE1",
+        "banjo amaz\xF4nico",
+        "flauta",
+        "reco-reco"
+      ],
+      atividade: "Desenhe o formato de um vaso grande e decore-o com linhas geom\xE9tricas, espirais e caminhos que se repetem em simetria.",
+      curiosidade: "No Carimb\xF3 paraense, o nome da dan\xE7a vem do tambor 'curimb\xF3', que na l\xEDngua tupi significa 'pau que produz som' (curi = pau, mb\xF3 = furado/oco)!",
+      fonte: [
+        {
+          nome: "Museu Paraense Em\xEDlio Goeldi / Sistema Integrado de Museus do Par\xE1",
+          url: "https://www.museu-goeldi.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Para\xEDba",
+      sigla: "PB",
+      capital: "Jo\xE3o Pessoa",
+      regiao: "Nordeste",
+      artista: "Fl\xE1vio Tavares",
+      biografia: "Pintor, desenhista e muralista paraibano nascido em Jo\xE3o Pessoa, reconhecido por retratar cenas hist\xF3ricas, festas populares e o universo cultural do Nordeste, estado onde tamb\xE9m nasceu o c\xE9lebre pintor hist\xF3rico Pedro Am\xE9rico (em Areia).",
+      obra: "Cenas e Personagens da Cultura Paraibana",
+      descricao_da_obra: "Pinturas figurativas ricas em movimento, cores e narrativas que dialogam com a mem\xF3ria e o imagin\xE1rio popular da Para\xEDba.",
+      danca: "Coco de Roda e Ciranda",
+      instrumentos: [
+        "zabumba",
+        "ganz\xE1",
+        "pandeiro",
+        "tamancos de madeira"
+      ],
+      atividade: "Desenhe uma grande roda de crian\xE7as e adultos de m\xE3os dadas dan\xE7ando na beira da praia ou na pra\xE7a da cidade.",
+      curiosidade: "No Coco de Roda da Para\xEDba, o som ritmado das batidas dos p\xE9s no ch\xE3o conversa diretamente com a batida da zabumba e do ganz\xE1!",
+      fonte: [
+        {
+          nome: "Funda\xE7\xE3o Espa\xE7o Cultural da Para\xEDba (FUNESC)",
+          url: "https://funesc.pb.gov.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Paran\xE1",
+      sigla: "PR",
+      capital: "Curitiba",
+      regiao: "Sul",
+      artista: "Poty Lazzarotto",
+      biografia: "Desenhista, gravador e muralista curitibano que criou grandes pain\xE9is p\xFAblicos em azulejo e concreto, retratando a hist\xF3ria, os trabalhadores, as arauc\xE1rias e as lendas do Paran\xE1, ao lado de precursores como Alfredo Andersen.",
+      obra: "Murais de Curitiba e Gravuras da Cultura Paranaense",
+      descricao_da_obra: "Pain\xE9is urbanos e ilustra\xE7\xF5es de tra\xE7o expressivo que contam a hist\xF3ria dos tropeiros, das matas de arauc\xE1rias e do cotidiano paranaense.",
+      danca: "Fandango Cai\xE7ara / Paranaense",
+      instrumentos: [
+        "rabeca",
+        "viola fandangueira",
+        "adufe (pandeiro)",
+        "tamancos de madeira"
+      ],
+      atividade: "Desenhe uma paisagem com \xE1rvores arauc\xE1rias (pinheiros-do-paran\xE1) e crie uma hist\xF3ria em quadrinhos de tr\xEAs quadros como se fosse um mural.",
+      curiosidade: "No Fandango do litoral do Paran\xE1, os homens usam tamancos especiais de madeira de laranjeira para bater os p\xE9s no assoalho, transformando o ch\xE3o em um instrumento musical!",
+      fonte: [
+        {
+          nome: "Museu Oscar Niemeyer (MON)",
+          url: "https://www.museuoscarniemeyer.org.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Pernambuco",
+      sigla: "PE",
+      capital: "Recife",
+      regiao: "Nordeste",
+      artista: "Mestre Vitalino",
+      biografia: "Ceramista popular pernambucano nascido em Caruaru que transformou a arte figurativa em barro do Alto do Moura em s\xEDmbolo mundial da cultura nordestina, ao lado de grandes artistas pernambucanos como J. Borges e Francisco Brennand.",
+      obra: "Bonecos de Barro do Cotidiano Nordestino (Banda de P\xEDfanos, Bumba Meu Boi e Retirantes)",
+      descricao_da_obra: "Esculturas em argila que retratam m\xFAsicos, fam\xEDlias do sert\xE3o, festas populares, animais e profiss\xF5es com grande expressividade e riqueza narrativa.",
+      danca: "Frevo e Maracatu",
+      instrumentos: [
+        "trompete",
+        "trombone",
+        "saxofone",
+        "tuba",
+        "caixa",
+        "surdo",
+        "alfaia"
+      ],
+      atividade: "Modele com massinha ou desenhe um grupo de m\xFAsicos tocando instrumentos bem alegres, ou crie uma sombrinha de Frevo bem colorida!",
+      curiosidade: "O Frevo pernambucano tem mais de 120 passos acrob\xE1ticos catalogados (como 'dobradi\xE7a', 'tesoura' e 'ferrolho') e \xE9 Patrim\xF4nio Imaterial da Humanidade!",
+      fonte: [
+        {
+          nome: "Museu do Barro de Caruaru / Pa\xE7o do Frevo",
+          url: "https://pacodofrevo.org.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Piau\xED",
+      sigla: "PI",
+      capital: "Teresina",
+      regiao: "Nordeste",
+      artista: "Mestre Dezinho",
+      biografia: "Escultor piauiense considerado o patriarca da arte santeira em madeira de Teresina, al\xE9m de o Piau\xED abrigar um dos maiores tesouros de arte rupestre pr\xE9-hist\xF3rica do mundo na Serra da Capivara.",
+      obra: "Esculturas em Madeira da Arte Santeira Piauiense",
+      descricao_da_obra: "Esculturas entalhadas em madeira de cedro e umburana, marcadas por linhas sim\xE9tricas, rendilhados na madeira e express\xF5es serenas.",
+      danca: "Reisado Piauiense e Cavalo Pianc\xF3",
+      instrumentos: [
+        "sanfona",
+        "zabumba",
+        "tri\xE2ngulo",
+        "pandeiro",
+        "palmas"
+      ],
+      atividade: "Fa\xE7a um desenho inspirado nas pinturas rupestres da Serra da Capivara, mostrando pequenas figuras em movimento brincando, dan\xE7ando e correndo.",
+      curiosidade: "No Parque Nacional da Serra da Capivara, no Piau\xED, existem milhares de pinturas feitas nas rochas h\xE1 milhares de anos pelos primeiros habitantes das Am\xE9ricas!",
+      fonte: [
+        {
+          nome: "Museu do Piau\xED / Funda\xE7\xE3o Museu do Homem Americano (FUMDHAM)",
+          url: "http://fumdham.org.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Rio de Janeiro",
+      sigla: "RJ",
+      capital: "Rio de Janeiro",
+      regiao: "Sudeste",
+      artista: "Heitor dos Prazeres",
+      biografia: "Pintor, compositor e sambista carioca autodidata que retratou com cores vibrantes as rodas de samba, as festas populares, as crian\xE7as brincando e a vida nas comunidades do Rio de Janeiro, ao lado de grandes nomes cariocas como Di Cavalcanti.",
+      obra: "Rodas de Samba e Festas Cariocas",
+      descricao_da_obra: "Pinturas alegres e cheias de ritmo em que os personagens aparecem dan\xE7ando com os rostos voltados para o alto e roupas coloridas.",
+      danca: "Samba Carioca e Jongo",
+      instrumentos: [
+        "cavaquinho",
+        "pandeiro",
+        "surdo",
+        "tamborim",
+        "cu\xEDca",
+        "viol\xE3o"
+      ],
+      atividade: "Desenhe pessoas dan\xE7ando ou tocando instrumentos musicais de um jeito que at\xE9 as roupas e o cen\xE1rio pare\xE7am estar se mexendo no ritmo da m\xFAsica!",
+      curiosidade: "Heitor dos Prazeres era ao mesmo tempo um grande pintor e um grande m\xFAsico: ele participou da funda\xE7\xE3o das primeiras escolas de samba do Rio de Janeiro!",
+      fonte: [
+        {
+          nome: "Museu de Arte do Rio (MAR)",
+          url: "https://museudeartedorio.org.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Rio Grande do Norte",
+      sigla: "RN",
+      capital: "Natal",
+      regiao: "Nordeste",
+      artista: "Newton Navarro",
+      biografia: "Pintor, desenhista e escritor potiguar nascido em Natal, fundamental para a arte moderna no Rio Grande do Norte ao retratar jangadeiros, dunas, cavalos-marinhos e manifesta\xE7\xF5es populares ao lado de artistas como Dorian Gray Caldas.",
+      obra: "Jangadeiros e Folguedos Potiguares",
+      descricao_da_obra: "Desenhos e pinturas de linhas po\xE9ticas e cores luminosas que celebram o mar, os ventos e as tradi\xE7\xF5es culturais do litoral potiguar.",
+      danca: "Pastoril e Coco de Zamb\xEA",
+      instrumentos: [
+        "tambor zamb\xEA",
+        "pandeiro",
+        "ganz\xE1",
+        "sanfona"
+      ],
+      atividade: "Desenhe uma praia com dunas de areia, o mar azul e jangadas com velas coloridas sopradas pelo vento.",
+      curiosidade: "O Coco de Zamb\xEA, tradicional do litoral sul do Rio Grande do Norte, \xE9 tocado com tambores feitos de tronco de \xE1rvore chamados 'zamb\xEA'!",
+      fonte: [
+        {
+          nome: "Pinacoteca do Estado do Rio Grande do Norte",
+          url: "http://www.cultura.rn.gov.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Rio Grande do Sul",
+      sigla: "RS",
+      capital: "Porto Alegre",
+      regiao: "Sul",
+      artista: "Iber\xEA Camargo",
+      biografia: "Pintor, gravador e professor ga\xFAcho nascido em Restinga Seca, considerado um dos grandes mestres do expressionismo e da arte moderna brasileira no s\xE9culo XX.",
+      obra: "S\xE9rie Carret\xE9is e Ciclistas",
+      descricao_da_obra: "Pinturas de pinceladas intensas e expressivas que transformam mem\xF3rias de inf\xE2ncia, como carret\xE9is de linha na mesa de costura da m\xE3e, em formas art\xEDsticas profundas.",
+      danca: "Chula e Dan\xE7a do Pezinho",
+      instrumentos: [
+        "gaita (acordeona)",
+        "viol\xE3o",
+        "bombo leg\xFCero"
+      ],
+      atividade: "Escolha um brinquedo ou objeto simples da sua casa (como um carretel, pi\xE3o ou bicicleta) e fa\xE7a um desenho usando pinceladas ou tra\xE7os bem fortes e expressivos.",
+      curiosidade: "Na dan\xE7a ga\xFAcha da Chula, os dan\xE7arinos realizam passos \xE1geis de sapateado por cima de uma lan\xE7a de madeira colocada no ch\xE3o sem nunca encostar nela!",
+      fonte: [
+        {
+          nome: "Funda\xE7\xE3o Iber\xEA Camargo",
+          url: "https://iberecamargo.org.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Rond\xF4nia",
+      sigla: "RO",
+      capital: "Porto Velho",
+      regiao: "Norte",
+      artista: "Produ\xE7\xE3o Art\xEDstica Ribeirinha e Ind\xEDgena de Rond\xF4nia",
+      biografia: "A produ\xE7\xE3o art\xEDstica de Rond\xF4nia destaca-se pelas pinturas que retratam o Rio Madeira, a hist\xF3rica Estrada de Ferro Madeira-Mamor\xE9 e pela rica arte plum\xE1ria, cestaria e grafismos dos povos ind\xEDgenas do estado, como os Suru\xED Paiter e Karitiana.",
+      obra: "Mem\xF3rias do Rio Madeira e Grafismos Amaz\xF4nicos",
+      descricao_da_obra: "Obras visuais que unem a mem\xF3ria hist\xF3rica amaz\xF4nica \xE0s cores da floresta, dos rios e dos saberes tradicionais dos povos origin\xE1rios e ribeirinhos.",
+      danca: "Boi-Bumb\xE1 (Duelo na Fronteira) e Siriri Amaz\xF4nico",
+      instrumentos: [
+        "tambores",
+        "marac\xE1s",
+        "flautas de bambu",
+        "chocalhos"
+      ],
+      atividade: "Crie um desenho que mostre um grande rio cortando a floresta e conectando diferentes comunidades e hist\xF3rias.",
+      curiosidade: "Em Guajar\xE1-Mirim, em Rond\xF4nia, acontece o tradicional festival folcl\xF3rico 'Duelo na Fronteira', celebrando a cultura amaz\xF4nica na divisa do Brasil com a Bol\xEDvia!",
+      fonte: [
+        {
+          nome: "Superintend\xEAncia Estadual da Juventude, Cultura, Esporte e Lazer de Rond\xF4nia",
+          url: "https://rondonia.ro.gov.br/sejucel/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Roraima",
+      sigla: "RR",
+      capital: "Boa Vista",
+      regiao: "Norte",
+      artista: "Jaider Esbell",
+      biografia: "Artista ind\xEDgena contempor\xE2neo do povo Makuxi, nascido em Normandia, Roraima, reconhecido internacionalmente como curador, escritor e pintor que levou a arte ind\xEDgena contempor\xE2nea para grandes museus e bienais.",
+      obra: "Entidades e Cosmologia Makuxi",
+      descricao_da_obra: "Pinturas vibrantes sobre fundos escuros com linhas luminosas e coloridas que representam a floresta, as \xE1guas, a cobra grande e a conex\xE3o espiritual entre os povos ind\xEDgenas e a natureza.",
+      danca: "Parixara",
+      instrumentos: [
+        "marac\xE1s",
+        "flautas de bambu",
+        "tambores",
+        "chocalhos de sementes"
+      ],
+      atividade: "Crie uma imagem que represente a rela\xE7\xE3o entre uma comunidade e seu territ\xF3rio.",
+      curiosidade: "Jaider Esbell levou refer\xEAncias da cosmologia Makuxi para importantes espa\xE7os da arte contempor\xE2nea.",
+      fonte: [
+        {
+          nome: "Museu de Arte Moderna de S\xE3o Paulo",
+          url: "https://mam.org.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Santa Catarina",
+      sigla: "SC",
+      capital: "Florian\xF3polis",
+      regiao: "Sul",
+      artista: "Victor Meirelles",
+      biografia: "Pintor catarinense de grande import\xE2ncia na pintura hist\xF3rica brasileira, formado na Academia Imperial de Belas Artes.",
+      obra: "Primeira Missa no Brasil",
+      descricao_da_obra: "Grande pintura hist\xF3rica que representa a missa celebrada em 1500, constru\xEDda com composi\xE7\xE3o monumental e muitos personagens.",
+      danca: "Boi de Mam\xE3o",
+      instrumentos: [
+        "viola",
+        "pandeiro",
+        "caixa",
+        "rabeca"
+      ],
+      atividade: "Observe uma pintura hist\xF3rica e imagine como seria contar a mesma hist\xF3ria de outro ponto de vista.",
+      curiosidade: "Victor Meirelles nasceu em Desterro, atual Florian\xF3polis.",
+      fonte: [
+        {
+          nome: "Museu Nacional de Belas Artes",
+          url: "https://mnba.gov.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "S\xE3o Paulo",
+      sigla: "SP",
+      capital: "S\xE3o Paulo",
+      regiao: "Sudeste",
+      artista: "Tarsila do Amaral",
+      biografia: "Uma das figuras centrais do modernismo brasileiro, nascida em Capivari, S\xE3o Paulo, e conhecida por obras que reinventaram imagens do Brasil.",
+      obra: "Abaporu",
+      descricao_da_obra: "Figura de formas ampliadas e cores marcantes tornou-se um dos s\xEDmbolos mais conhecidos do modernismo brasileiro.",
+      danca: "Samba de Bumbo",
+      instrumentos: [
+        "bumbo",
+        "caixa",
+        "chocalhos"
+      ],
+      atividade: "Crie uma personagem com partes do corpo propositalmente grandes ou pequenas.",
+      curiosidade: "O nome Abaporu vem do tupi e costuma ser traduzido como 'homem que come gente'.",
+      fonte: [
+        {
+          nome: "Museu de Arte Latino-Americana de Buenos Aires / MALBA",
+          "url": "https://www.malba.org.ar/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Sergipe",
+      sigla: "SE",
+      capital: "Aracaju",
+      regiao: "Nordeste",
+      artista: "J. In\xE1cio",
+      biografia: "Artista sergipano ligado \xE0 pintura e ao registro de paisagens, personagens e aspectos da cultura local.",
+      obra: "Paisagens e tipos sergipanos",
+      descricao_da_obra: "A produ\xE7\xE3o registra ambientes e figuras do cotidiano sergipano.",
+      danca: "Samba de Pareia",
+      instrumentos: [
+        "tambores",
+        "pandeiros",
+        "palmas"
+      ],
+      atividade: "Observe pessoas em movimento e transforme suas posi\xE7\xF5es em uma sequ\xEAncia de desenhos.",
+      curiosidade: "A produ\xE7\xE3o visual sergipana dialoga fortemente com festas, paisagens e manifesta\xE7\xF5es populares.",
+      fonte: [
+        {
+          nome: "Museu da Gente Sergipana",
+          url: "https://www.museudagentesergipana.com.br/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    },
+    {
+      estado: "Tocantins",
+      sigla: "TO",
+      capital: "Palmas",
+      regiao: "Norte",
+      artista: "Daiara Tukano",
+      biografia: "Artista ind\xEDgena contempor\xE2nea, educadora e pesquisadora ligada \xE0 produ\xE7\xE3o visual ind\xEDgena brasileira. Sua presen\xE7a aqui representa uma abordagem ampliada das artes ind\xEDgenas contempor\xE2neas no territ\xF3rio brasileiro.",
+      obra: "Produ\xE7\xF5es visuais inspiradas na cosmologia ind\xEDgena",
+      descricao_da_obra: "Grafismos, s\xEDmbolos, cores e narrativas ind\xEDgenas podem ser utilizados para discutir identidade, territ\xF3rio e mem\xF3ria.",
+      danca: "S\xFAssia",
+      instrumentos: [
+        "tambores",
+        "pandeiros",
+        "palmas"
+      ],
+      atividade: "Crie um grafismo inspirado em elementos da natureza, sem copiar grafismos tradicionais de povos espec\xEDficos.",
+      curiosidade: "Para uma vers\xE3o final, a curadoria deve priorizar um artista nascido ou radicado no Tocantins, mantendo Daiara Tukano como refer\xEAncia para o eixo nacional de arte ind\xEDgena.",
+      fonte: [
+        {
+          nome: "Minist\xE9rio da Cultura",
+          url: "https://www.gov.br/cultura/"
+        }
+      ],
+      tipo_de_selecao: "artista representativo do estado ou fortemente ligado \xE0 sua identidade cultural",
+      observacao_curatorial: "A associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho a produ\xE7\xE3o art\xEDstica do estado."
+    }
+  ]
+};
+function normalizar(texto) {
+  return texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^\w\s-]/g, " ").replace(/\s+/g, " ").trim();
+}
+function contemTermoIsolado(textoNorm, termoNorm) {
+  const escaped = termoNorm.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const regex = new RegExp(`(?:^|\\s)${escaped}(?:$|\\s)`, "i");
+  return regex.test(textoNorm);
+}
+var MAPA_ALIASES_ESTADOS = {
+  AC: ["acre", "acreano", "acreana", "rio branco", "helio melo", "dan\xE7a do caiari", "danca do caiari"],
+  AL: ["alagoas", "alagoano", "alagoana", "maceio", "rosalvo ribeiro", "guerreiro alagoano"],
+  AP: ["amapa", "amapaense", "macapa", "raimundo braga", "r peixe", "marabaixo"],
+  AM: ["amazonas", "amazonense", "manaus", "parintins", "moacir andrade", "boi bumba", "boi-bumba", "ciranda amazonica"],
+  BA: ["bahia", "baiano", "baiana", "salvador", "reconcavo baiano", "rubem valentim", "samba de roda"],
+  CE: ["ceara", "cearense", "fortaleza", "aldemir martins", "maracatu cearense"],
+  DF: ["distrito federal", "brasilia", "brasiliense", "athos bulcao", "seu estrelo", "boi do seu teodoro"],
+  ES: ["espirito santo", "capixaba", "congo capixaba", "homero massena", "casaca capixaba"],
+  GO: ["goias", "goiano", "goiana", "goiania", "goiandira do couto", "serra dourada"],
+  MA: ["maranhao", "maranhense", "sao luis", "pericles rocha", "bumba meu boi do maranhao", "tambor de crioula"],
+  MT: ["mato grosso", "mato-grossense", "cuiaba", "gervane de paula", "siriri", "cururu", "viola de cocho"],
+  MS: ["mato grosso do sul", "sul-mato-grossense", "campo grande", "conceicao dos bugres", "bugrinhos", "chamame"],
+  MG: ["minas gerais", "mineiro", "mineira", "belo horizonte", "congonhas", "ouro preto", "aleijadinho", "congado mineiro", "doze profetas"],
+  PA: ["no para", "do para", "estado do para", "paraense", "belem", "marajoara", "mestre cardoso", "ismael nery", "carimbo"],
+  PB: ["paraiba", "paraibano", "paraibana", "joao pessoa", "flavio tavares", "coco de roda"],
+  PR: ["parana", "paranaense", "curitiba", "poty lazzarotto", "fandango caicara", "fandango paranaense"],
+  PE: ["pernambuco", "pernambucano", "pernambucana", "recife", "caruaru", "mestre vitalino", "alto do moura"],
+  PI: ["piaui", "piauiense", "teresina", "mestre dezinho", "arte santeira", "cavalo pianco", "reisado piauiense", "serra da capivara"],
+  RJ: ["rio de janeiro", "carioca", "fluminense", "heitor dos prazeres", "samba carioca"],
+  RN: ["rio grande do norte", "potiguar", "natal", "newton navarro", "coco de zambe", "pastoril"],
+  RS: ["rio grande do sul", "gaucho", "gaucha", "porto alegre", "ibere camargo", "danca do pezinho", "chula"],
+  RO: ["rondonia", "rondoniense", "porto velho", "madeira-mamore", "duelo na fronteira"],
+  RR: ["roraima", "roraimense", "boa vista", "jaider esbell", "parixara", "cosmologia makuxi"],
+  SC: ["santa catarina", "catarinense", "florianopolis", "desterro", "victor meirelles", "boi de mamao", "primeira missa no brasil"],
+  SP: ["sao paulo", "paulista", "paulistano", "capivari", "samba de bumbo"],
+  SE: ["sergipe", "sergipano", "sergipana", "aracaju", "j inacio", "j. inacio", "samba de pareia", "tipos sergipanos"],
+  TO: ["tocantins", "tocantinense", "palmas", "daiara tukano", "sussia"]
+};
+function identificarEstadoNaMensagem(mensagemOriginal, normMsg) {
+  if (/(?:^|\s|de|do|no|em)pará(?:$|\s|[?!.,])/i.test(mensagemOriginal)) {
+    const estadoPA = BANCO_ESTADOS_BRASIL.estados.find((e) => e.sigla === "PA");
+    if (estadoPA) return estadoPA;
+  }
+  const ordemPrioridadeSiglas = [
+    "MS",
+    "MT",
+    "RN",
+    "RS",
+    "RJ",
+    "DF",
+    "ES",
+    "MG",
+    "SC",
+    "SP",
+    "SE",
+    "TO",
+    "RR",
+    "RO",
+    "PR",
+    "PE",
+    "PB",
+    "PI",
+    "PA",
+    "MA",
+    "GO",
+    "CE",
+    "BA",
+    "AM",
+    "AP",
+    "AL",
+    "AC"
+  ];
+  let melhorEstado = null;
+  let maiorTamanhoAlias = 0;
+  for (const sigla of ordemPrioridadeSiglas) {
+    const aliases = MAPA_ALIASES_ESTADOS[sigla] || [];
+    for (const alias of aliases) {
+      const aliasNorm = normalizar(alias);
+      if (aliasNorm && contemTermoIsolado(normMsg, aliasNorm)) {
+        if (aliasNorm.length > maiorTamanhoAlias) {
+          maiorTamanhoAlias = aliasNorm.length;
+          melhorEstado = BANCO_ESTADOS_BRASIL.estados.find((e) => e.sigla === sigla) || null;
+        }
+      }
+    }
+  }
+  if (!melhorEstado && (contemTermoIsolado(normMsg, "de minas") || contemTermoIsolado(normMsg, "em minas") || contemTermoIsolado(normMsg, "estado de minas"))) {
+    melhorEstado = BANCO_ESTADOS_BRASIL.estados.find((e) => e.sigla === "MG") || null;
+  }
+  return melhorEstado;
+}
+function identificarRegiaoNaMensagem(normMsg) {
+  const falsosPositivos = [
+    "coreia do norte",
+    "coreia do sul",
+    "america do norte",
+    "america do sul",
+    "africa do sul",
+    "polo norte",
+    "polo sul",
+    "irlanda do norte",
+    "vento norte",
+    "vento sul"
+  ];
+  for (const fp of falsosPositivos) {
+    if (normMsg.includes(fp)) return null;
+  }
+  if (contemTermoIsolado(normMsg, "centro oeste") || contemTermoIsolado(normMsg, "centro-oeste")) {
+    return "Centro-Oeste";
+  }
+  if (contemTermoIsolado(normMsg, "nordeste") || contemTermoIsolado(normMsg, "nordestino") || contemTermoIsolado(normMsg, "nordestina") || contemTermoIsolado(normMsg, "nordestinos") || contemTermoIsolado(normMsg, "nordestinas")) {
+    return "Nordeste";
+  }
+  if (contemTermoIsolado(normMsg, "sudeste")) {
+    return "Sudeste";
+  }
+  if (contemTermoIsolado(normMsg, "regiao norte") || contemTermoIsolado(normMsg, "no norte") || contemTermoIsolado(normMsg, "do norte") || contemTermoIsolado(normMsg, "norte do brasil")) {
+    return "Norte";
+  }
+  if (contemTermoIsolado(normMsg, "regiao sul") || contemTermoIsolado(normMsg, "no sul") || contemTermoIsolado(normMsg, "do sul") || contemTermoIsolado(normMsg, "sul do brasil") || contemTermoIsolado(normMsg, "sulista")) {
+    return "Sul";
+  }
+  return null;
+}
+function resolverCulturaEstadosRegioes(mensagem) {
+  if (!mensagem) return null;
+  const normMsg = normalizar(mensagem);
+  if (!normMsg) return null;
+  const pedeDanca = contemTermoIsolado(normMsg, "danca") || contemTermoIsolado(normMsg, "dancas") || contemTermoIsolado(normMsg, "ritmo") || contemTermoIsolado(normMsg, "ritmos") || contemTermoIsolado(normMsg, "bailado") || contemTermoIsolado(normMsg, "folclore") || contemTermoIsolado(normMsg, "festa popular") || contemTermoIsolado(normMsg, "festas populares");
+  const pedeArtista = contemTermoIsolado(normMsg, "artista") || contemTermoIsolado(normMsg, "artistas") || contemTermoIsolado(normMsg, "pintor") || contemTermoIsolado(normMsg, "pintora") || contemTermoIsolado(normMsg, "pintores") || contemTermoIsolado(normMsg, "escultor") || contemTermoIsolado(normMsg, "escultora") || contemTermoIsolado(normMsg, "representativo") || contemTermoIsolado(normMsg, "quem pintou");
+  const pedeObra = contemTermoIsolado(normMsg, "obra") || contemTermoIsolado(normMsg, "obras") || contemTermoIsolado(normMsg, "quadro") || contemTermoIsolado(normMsg, "quadros") || contemTermoIsolado(normMsg, "pintura") || contemTermoIsolado(normMsg, "pinturas") || contemTermoIsolado(normMsg, "escultura") || contemTermoIsolado(normMsg, "esculturas");
+  const pedeInstrumento = contemTermoIsolado(normMsg, "instrumento") || contemTermoIsolado(normMsg, "instrumentos") || contemTermoIsolado(normMsg, "musica") || contemTermoIsolado(normMsg, "musical") || contemTermoIsolado(normMsg, "musicais");
+  const pedeAtividade = contemTermoIsolado(normMsg, "atividade") || contemTermoIsolado(normMsg, "desafio") || contemTermoIsolado(normMsg, "exercicio") || contemTermoIsolado(normMsg, "pratica");
+  const pedeCuriosidade = contemTermoIsolado(normMsg, "curiosidade") || contemTermoIsolado(normMsg, "curiosidades") || contemTermoIsolado(normMsg, "segredo") || contemTermoIsolado(normMsg, "voce sabia");
+  const estadoEncontrado = identificarEstadoNaMensagem(mensagem, normMsg);
+  if (estadoEncontrado) {
+    const e = estadoEncontrado;
+    const listaInstrumentos = e.instrumentos.join(", ");
+    const fontesTexto = e.fonte.map((f) => `${f.nome} (${f.url})`).join(" | ");
+    if ((pedeDanca || pedeInstrumento) && !pedeArtista && !pedeObra) {
+      const reply2 = `\u{1F483}\u{1F3B6} Que viagem musical maravilhosa at\xE9 **${e.estado} (${e.sigla})**, cuja capital \xE9 **${e.capital}**, na regi\xE3o **${e.regiao}**!
+
+Uma das manifesta\xE7\xF5es e dan\xE7as mais famosas e queridas ligadas \xE0 identidade cultural de **${e.estado}** \xE9: **${e.danca}**! \u{1F31F}
+
+\u{1F941} **Quais instrumentos d\xE3o ritmo a essa dan\xE7a?**
+Para fazer todo mundo se movimentar, costumam ser usados instrumentos como: **${listaInstrumentos}**.
+
+\u{1F3A8} **Pontes com as Artes Visuais em ${e.estado}:**
+Sabia que a m\xFAsica e a pintura caminham juntas na cultura de cada lugar? Na nossa curadoria pedag\xF3gica, um artista muito representativo ligado a **${e.estado}** \xE9 **${e.artista}**, autor de *${e.obra}* (${e.descricao_da_obra.charAt(0).toLowerCase() + e.descricao_da_obra.slice(1)})
+
+\u{1F913} **Curiosidade cultural:**
+${e.curiosidade}
+
+\u270F\uFE0F **Vamos experimentar juntos?**
+${e.atividade}
+
+*(Fonte de pesquisa: ${fontesTexto})*
+
+E a\xED, voc\xEA j\xE1 tinha ouvido o som de **${listaInstrumentos}** ou visto algu\xE9m dan\xE7ar **${e.danca}**? Qual outro estado ou ritmo voc\xEA quer explorar comigo agora? \u{1F60A}`;
+      return {
+        reply: reply2,
+        matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`
+      };
+    }
+    if ((pedeArtista || pedeObra) && !pedeDanca && !pedeInstrumento) {
+      const reply2 = `\u{1F3A8}\u2728 Que pergunta incr\xEDvel sobre a arte de **${e.estado} (${e.sigla})**, na regi\xE3o **${e.regiao}** (capital **${e.capital}** )!
+
+Na nossa sele\xE7\xE3o pedag\xF3gica, o artista destacado como grande refer\xEAncia ligada \xE0 identidade cultural de **${e.estado}** \xE9 **${e.artista}**!
+*(\u{1F4A1} Vale lembrar que ${e.observacao_curatorial.charAt(0).toLowerCase() + e.observacao_curatorial.slice(1)})*
+
+\u{1F469}\u200D\u{1F3A8} **Quem \xE9 ${e.artista}?**
+${e.biografia}
+
+\u{1F5BC}\uFE0F **Obra em destaque \u2014 *${e.obra}*:**
+${e.descricao_da_obra}
+
+\u{1F913} **Curiosidade:**
+${e.curiosidade}
+
+\u{1F483} **E no ritmo da cultura local:**
+Em **${e.estado}**, tamb\xE9m brilha a dan\xE7a **${e.danca}**, acompanhada por instrumentos como **${listaInstrumentos}**!
+
+\u270F\uFE0F **Convite criativo do Candinho:**
+${e.atividade}
+
+*(Fonte de refer\xEAncia: ${fontesTexto})*
+
+O que mais chamou a sua aten\xE7\xE3o na obra *${e.obra}* de **${e.artista}**? Se voc\xEA fosse criar algo inspirado em **${e.estado}**, como come\xE7aria o seu desenho? \u{1F3A8}\u{1F60A}`;
+      return {
+        reply: reply2,
+        matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`
+      };
+    }
+    const reply = `\u{1F5FA}\uFE0F\u{1F3A8} Vamos fazer um passeio cultural por **${e.estado} (${e.sigla})**, estado da regi\xE3o **${e.regiao}** cuja capital \xE9 **${e.capital}**!
+
+\u{1F31F} **Artista em destaque:** **${e.artista}**
+${e.biografia}
+*(Nota curatorial: ${e.observacao_curatorial})*
+
+\u{1F5BC}\uFE0F **Obra para conhecer \u2014 *${e.obra}*:**
+${e.descricao_da_obra}
+
+\u{1F483} **Dan\xE7a tradicional:** **${e.danca}**
+\u{1F941} **Instrumentos presentes:** ${listaInstrumentos}.
+
+\u{1F913} **Curiosidade:**
+${e.curiosidade}
+
+\u270F\uFE0F **Atividade art\xEDstica para voc\xEA experimentar:**
+${e.atividade}
+
+*(Fonte: ${fontesTexto})*
+
+Me conta: voc\xEA gostou mais de conhecer a arte de **${e.artista}**, o ritmo de **${e.danca}** ou quer tentar fazer essa atividade agora comigo? \u{1F604}\u2728`;
+    return {
+      reply,
+      matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`
+    };
+  }
+  const regiaoEncontrada = identificarRegiaoNaMensagem(normMsg);
+  if (regiaoEncontrada) {
+    const estadosDaRegiao = BANCO_ESTADOS_BRASIL.estados.filter((e) => e.regiao === regiaoEncontrada);
+    if ((pedeDanca || pedeInstrumento) && !pedeArtista && !pedeObra) {
+      const listaDancas = estadosDaRegiao.map((e) => `\u2022 **${e.estado} (${e.sigla}):** *${e.danca}* \u2014 ao som de ${e.instrumentos.join(", ")}.`).join("\n");
+      const exemploDestaque = estadosDaRegiao[0];
+      const reply2 = `\u{1F483}\u{1F941} A regi\xE3o **${regiaoEncontrada}** \xE9 t\xE3o rica e diversa que n\xE3o existe apenas uma \xFAnica dan\xE7a famosa, mas um verdadeiro tesouro de ritmos que encantam o Brasil inteiro!
+
+Olha s\xF3 as dan\xE7as mais populares e representativas de cada estado da regi\xE3o **${regiaoEncontrada}** na nossa curadoria cultural:
+
+${listaDancas}
+
+\u2728 **Sabia disso?**
+Em **${exemploDestaque.estado}**, por exemplo, ${exemploDestaque.curiosidade.charAt(0).toLowerCase() + exemploDestaque.curiosidade.slice(1)}
+
+Qual dessas dan\xE7as da regi\xE3o **${regiaoEncontrada}** mais deu vontade de conhecer ou desenhar? Se voc\xEA escolher um desses estados, eu te conto tudo sobre o artista, a obra e uma atividade super divertida dele! \u{1F3A8}\u{1F60A}`;
+      return {
+        reply: reply2,
+        matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`
+      };
+    }
+    if ((pedeArtista || pedeObra) && !pedeDanca && !pedeInstrumento) {
+      const listaArtistas = estadosDaRegiao.map((e) => `\u2022 **${e.estado} (${e.sigla}):** **${e.artista}** \u2014 Obra em destaque: *${e.obra}* (${e.descricao_da_obra})`).join("\n\n");
+      const reply2 = `\u{1F3A8}\u{1F31F} A regi\xE3o **${regiaoEncontrada}** re\xFAne artistas extraordin\xE1rios que ajudam a contar a hist\xF3ria e a identidade do Brasil!
+*(Lembrando sempre que a escolha de um artista por estado \xE9 pedag\xF3gica e curatorial, pois cada estado tem muitos criadores incr\xEDveis!)*
+
+Veja os artistas e obras representativos de cada estado da regi\xE3o **${regiaoEncontrada}**:
+
+${listaArtistas}
+
+Qual desses artistas ou obras da regi\xE3o **${regiaoEncontrada}** despertou mais a sua curiosidade? Me diga o nome de um estado ou artista que n\xF3s conversamos mais e fazemos uma atividade criativa juntos! \u{1F58C}\uFE0F\u{1F604}`;
+      return {
+        reply: reply2,
+        matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`
+      };
+    }
+    const panorama = estadosDaRegiao.map((e) => `\u2022 **${e.estado} (${e.capital}):** Artista **${e.artista}** (*${e.obra}*) | Dan\xE7a: **${e.danca}** (${e.instrumentos.slice(0, 3).join(", ")})`).join("\n");
+    const reply = `\u{1F5FA}\uFE0F\u2728 Que alegria explorar a cultura da regi\xE3o **${regiaoEncontrada}** com voc\xEA! Ela \xE9 formada por **${estadosDaRegiao.length} unidades federativas**, cada uma com cores, obras, artistas e dan\xE7as fascinantes:
+
+${panorama}
+
+*(\u{1F4A1} Nota curatorial: cada artista e dan\xE7a foi escolhido pedagogicamente para dialogar com a identidade cultural do estado, representando uma porta de entrada para muitas outras express\xF5es!)*
+
+Por qual estado da regi\xE3o **${regiaoEncontrada}** voc\xEA quer come\xE7ar a nossa viagem art\xEDstica hoje? Posso te contar curiosidades, falar das obras ou propor um desafio de desenho! \u{1F3A8}\u{1F60A}`;
+    return {
+      reply,
+      matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`
+    };
+  }
+  const mencionaEstadosBrasil = (contemTermoIsolado(normMsg, "estados") || contemTermoIsolado(normMsg, "regioes") || contemTermoIsolado(normMsg, "27 estados")) && (pedeDanca || pedeArtista || pedeObra || pedeInstrumento || contemTermoIsolado(normMsg, "brasil"));
+  if (mencionaEstadosBrasil) {
+    const regioes = [
+      "Norte",
+      "Nordeste",
+      "Centro-Oeste",
+      "Sudeste",
+      "Sul"
+    ];
+    const resumoRegioes = regioes.map((reg) => {
+      const ests = BANCO_ESTADOS_BRASIL.estados.filter((e) => e.regiao === reg);
+      const exemplos = ests.slice(0, 3).map((e) => `${e.estado} (${e.artista} / ${e.danca})`).join(", ");
+      return `\u2022 **Regi\xE3o ${reg}** (${ests.length} estados): como ${exemplos}...`;
+    }).join("\n");
+    const reply = `\u{1F1E7}\u{1F1F7}\u{1F3A8} Eu tenho na minha mem\xF3ria cultural os **27 registros das Unidades Federativas do Brasil** (os 26 estados e o Distrito Federal), com suas capitais, regi\xF5es, artistas representativos, obras, dan\xE7as tradicionais, instrumentos, curiosidades e atividades criativas!
+
+Veja um gostinho do que podemos explorar pelas 5 regi\xF5es:
+
+${resumoRegioes}
+
+Me pergunte sobre qualquer estado (como *"Qual a dan\xE7a mais famosa da Bahia?"*, *"Qual o artista representativo de Minas Gerais?"*, *"Me fale sobre Santa Catarina"*) ou sobre qualquer regi\xE3o (como *"Quais as dan\xE7as do Nordeste?"*)! Qual estado ou regi\xE3o voc\xEA quer descobrir primeiro? \u{1F60A}\u2728`;
+    return {
+      reply,
+      matchedKey: "estados_brasil_panorama"
+    };
+  }
+  return null;
+}
+
 // src/utils/conversationalEngine.ts
 function normalizarTexto(txt) {
   if (!txt) return "";
@@ -13796,6 +14834,8 @@ Me conta: o que voc\xEA mais gosta de desenhar ou qual curiosidade de arte voc\x
   if (comoRes) return comoRes;
   const followUpRes = resolverFollowUpMessage(normalizedMsg);
   if (followUpRes) return followUpRes;
+  const estadosRegioesRes = resolverCulturaEstadosRegioes(mensagem);
+  if (estadosRegioesRes) return estadosRegioesRes;
   const PERIODS_TO_PRIORITIZE = [
     "arte_antiga",
     "arte_egipcia",
@@ -13996,7 +15036,7 @@ Incr\xEDvel, n\xE3o \xE9? A arte sempre nos ajuda a ver em novos tons! Se quiser
 }
 function tornarRespostaDialogica(reply, matchedKey) {
   if (!reply) return reply;
-  if (matchedKey && (matchedKey.startsWith("como_") || matchedKey.startsWith("oficina_") || matchedKey.startsWith("criar_") || matchedKey.startsWith("tutorial_") || matchedKey.includes("followup") || matchedKey === "inovacao" || matchedKey.includes("inovac"))) {
+  if (matchedKey && (matchedKey.startsWith("como_") || matchedKey.startsWith("oficina_") || matchedKey.startsWith("criar_") || matchedKey.startsWith("tutorial_") || matchedKey.startsWith("estado_cultura_") || matchedKey.startsWith("regiao_cultura_") || matchedKey.startsWith("estados_brasil_") || matchedKey.includes("followup") || matchedKey === "inovacao" || matchedKey.includes("inovac"))) {
     return reply;
   }
   const cleanReply = reply.trim();
@@ -16097,7 +17137,7 @@ app.post("/api/groq", async (req, res) => {
             if (isEmocional) {
               systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo muito carinhoso, emp\xE1tico, afetuoso e acolhedor para crian\xE7as de 10 anos. A crian\xE7a est\xE1 compartilhando sentimentos de tristeza, ansiedade, raiva, t\xE9dio ou ang\xFAstia, ou respondendo a uma pergunta sobre os sentimentos dela. Sua prioridade absoluta \xE9 dar apoio emocional genu\xEDno, ouvir com todo o carinho e carinho do mundo. Ofere\xE7a empatia profunda e sincera e fa\xE7a perguntas abertas para que ela se sinta segura para desabafar livremente (por exemplo: 'Quer falar mais sobre o que aconteceu?', 'Como voc\xEA se sente sobre isso?'). N\xC3O tente falar de arte, n\xE3o mencione pintores famos, n\xE3o use met\xE1foras de pintura ou pinceladas de forma for\xE7ada, e N\xC3O tente faz\xEA-la voltar aos temas de arte at\xE9 que a pr\xF3pria crian\xE7a decida falar de desenho/arte por conta pr\xF3pria. Foque inteiramente em apoiar o cora\xE7\xE3o dela e ser um amigo seguro.";
             } else {
-              systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo artista e pintor muito simp\xE1tico, acolhedor, dial\xF3gico e conversador para crian\xE7as de 10 anos. ATEN\xC7\xC3O CR\xCDTICA: Nunca aja como um 'respondedor' frio ou professor distante que apenas d\xE1 uma resposta longa, joga um monte de texto e vai embora. Voc\xEA deve ser um verdadeiro amiguinho de conversa, promovendo um di\xE1logo ativo e natural! Mantenha suas respostas leves, din\xE2micas e divididas em pequenos par\xE1grafos de f\xE1cil leitura. Sempre termine ou inclua na sua resposta uma pergunta aberta e instigante direcionada \xE0 crian\xE7a para convid\xE1-la a compartilhar o que ela acha, sente ou se ela j\xE1 experimentou algo parecido (ex: 'E voc\xEA, o que achou disso?', 'Qual cor voc\xEA mais gosta de usar para pintar?', 'Voc\xEA j\xE1 tentou desenhar um gatinho assim? Me conta!', 'O que voc\xEA achou dessa curiosidade?', 'Como voc\xEA imagina que seria essa pintura?'). Responda sempre em portugu\xEAs de forma simples, alegre, positiva e entusiasmada, usando met\xE1foras sutis de pintura e pinceladas de forma org\xE2nica. NUNCA repita o nome do artista mais de duas vezes. Se n\xE3o descobrir sobre quem \xE9 o artista, responda gentilmente: 'N\xE3o conhe\xE7o esse artista ainda, mas vou pesquisar na minha paleta! \u{1F3A8}'. Diga se o artista nasceu ou faleceu em tal \xE9poca de forma amig\xE1vel no corpo do texto, sem criar listas ou cabe\xE7alhos. REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crian\xE7as.\n- Sempre organize a resposta em etapas numeradas.\n- Se a tarefa for art\xEDstica ou pr\xE1tica, utilize uma estrutura amig\xE1vel com: Materiais (quando necess\xE1rio), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n- N\xE3o inclua imagens ou links de imagens de nenhum tipo.\n- No final, pergunte de forma interativa se a crian\xE7a deseja: um exemplo pronto; uma atividade para praticar; uma vers\xE3o f\xE1cil; ou uma vers\xE3o mais avan\xE7ada.\n\nREGRA ESPECIAL DE OFICINA DE POESIA / AJUDA PARA CRIAR POEMAS:\n- Quando uma crian\xE7a pedir ajuda para escrever ou criar uma poesia/poema (ou pedir para voc\xEA escrever um poema para ela), NUNCA entregue o poema pronto de bandeja!\n- Aja como um professor e parceiro de cria\xE7\xE3o (Oficina de Poesia): primeiro pergunte o tema e a ideia/sentimento que ela quer transmitir.\n- Depois pode sugerir palavras m\xE1gicas, rimas, imagens po\xE9ticas e ideias de versos, mas deve sempre incentivar e desafiar a crian\xE7a a criar e escrever seu pr\xF3prio poema de 4 a 8 versos!\n- Lembre a crian\xE7a de que a poesia pode virar uma can\xE7\xE3o suave ou um rap e pergunte qual estilo ela prefere.\n\nREGRA ESPECIAL DE CONCEITOS LITER\xC1RIOS (VERSO, ESTROFE, RIMA, POEMA, POESIA):\n- Verso: Cada linha de um poema (Dica: 'Conte as linhas do poema. Cada uma delas \xE9 um verso!').\n- Estrofe: Conjunto de versos que ficam juntos (Verso = uma linha, Estrofe = grupo de linhas).\n- Rima: Palavras com sons parecidos, principalmente no final dos versos (lembre que poema n\xE3o precisa ter rima).\n- Poema: Texto organizado em versos que expressa ideias e sentimentos.\n- Poesia: A experi\xEAncia art\xEDstica e o sentimento (Poema = o bolo preparado, Poesia = o sabor e a sensa\xE7\xE3o ao comer).\n\nREGRA ESPECIAL DE OFICINA DE RAP / COMO FAZER UM RAP:\n- Quando a crian\xE7a perguntar sobre fazer um rap ou pedir ajuda para criar um rap, ensine a 'F\xF3rmula do Candinho': TEMA \u2192 MENSAGEM \u2192 PALAVRAS \u2192 RIMAS \u2192 VERSOS \u2192 RITMO (P\xC1 | P\xC1 | PUM | P\xC1) \u2192 REFR\xC3O.\n- Cita\xE7\xE3o do Candinho: 'Um bom rap n\xE3o precisa falar dif\xEDcil. Precisa ter uma ideia para dizer, ritmo para ouvir e uma voz que tenha algo a contar.'\n- Se a crian\xE7a perguntar a diferen\xE7a entre poesia e rap: 'Todo rap pode usar poesia, mas uma poesia n\xE3o precisa ser um rap. Quando colocamos ritmo, batida e uma maneira pr\xF3pria de falar os versos, podemos transformar a poesia em rap.'\n- Se ela pedir ajuda para criar um rap sobre algum assunto, nunca d\xEA a letra inteira pronta: d\xEA sugest\xF5es de palavras, rimas e batida e a desafie a criar seus pr\xF3prios versos e refr\xE3o!\n\nREGRA ESPECIAL DE OFICINA DE FUNK / COMO FAZER UM FUNK:\n- Candinho: 'O funk \xE9 um g\xEAnero musical que tem muita for\xE7a no Brasil. Ele valoriza o ritmo, a batida, a repeti\xE7\xE3o e a criatividade das palavras. Vamos criar um funk?'\n- Passos: 1. Escolha um tema (escola, amizade, esporte, arte, natureza, cidade, divers\xE3o, sonhos) | 2. Pense em uma mensagem | 3. Crie frases curtas | 4. Use repeti\xE7\xE3o no refr\xE3o | 5. Crie o ritmo (P\xC1 \u2013 P\xC1 \u2013 PUM | P\xC1 \u2013 P\xC1 \u2013 PUM) | 6. Fa\xE7a um refr\xE3o | 7. Junte tudo: TEMA \u2192 MENSAGEM \u2192 VERSOS \u2192 RITMO \u2192 REFR\xC3O.\n- Cita\xE7\xE3o do Candinho: 'Voc\xEA n\xE3o precisa usar palavras dif\xEDceis para fazer um bom funk. Precisa ter criatividade, ritmo e algo para dizer.'\n- Compara\xE7\xE3o Poesia, Rap e Funk: 'A poesia usa palavras para criar imagens e sentimentos. O rap costuma valorizar muito as rimas, a mensagem e o ritmo. O funk valoriza bastante a batida, a repeti\xE7\xE3o, o ritmo e os versos que combinam com a m\xFAsica. Os tr\xEAs podem usar poesia!'\n- Se pedir ajuda para criar um funk, nunca entregue pronto: d\xEA sugest\xF5es de frases curtas, batida e repeti\xE7\xE3o para a crian\xE7a criar!\n\nBASE DE CONHECIMENTO DE DAN\xC7AS E M\xDASICA - SAMBA:\n- O que \xE9: O samba \xE9 um g\xEAnero musical e uma manifesta\xE7\xE3o cultural brasileira, marcado principalmente pelo ritmo, pela dan\xE7a e pela presen\xE7a de instrumentos de percuss\xE3o, como pandeiro, surdo, tamborim e cu\xEDca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.\n- Origem: Nasceu da mistura de tradi\xE7\xF5es musicais africanas com elementos culturais desenvolvidos no Brasil. Suas ra\xEDzes est\xE3o especialmente ligadas \xE0s comunidades negras, aos batuques e \xE0s rodas de m\xFAsica e dan\xE7a. O samba de roda do Rec\xF4ncavo Baiano \xE9 uma de suas importantes manifesta\xE7\xF5es tradicionais. No in\xEDcio do s\xE9culo XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.\n- Samba-enredo: Tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo (hist\xF3ria ou tema) e cria uma m\xFAsica para contar esse tema por meio da m\xFAsica, da dan\xE7a, das fantasias, das alegorias e das alas.\n- Curiosidade: O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade em 2005.\n\nREGRA MANDAT\xD3RIA SOBRE INOVA\xC7\xC3O E O PROJETO CANDINHO:\nSe algu\xE9m perguntar 'o que \xE9 inova\xE7\xE3o?', 'por que o Candinho \xE9 inovador?', 'o que \xE9 ser inovador?', 'o que \xE9 ser inovador para o Candinho?' ou qualquer pergunta sobre inova\xE7\xE3o, inovar ou sobre o projeto Candinho / Do Pincel ao Pixel / Pequenos Artistas do Quirino, responda EXATAMENTE:\nInova\xE7\xE3o \xE9 a cria\xE7\xE3o ou aplica\xE7\xE3o de novas ideias, m\xE9todos, recursos ou solu\xE7\xF5es que produzem melhorias ou novas possibilidades em determinado contexto. Inovar n\xE3o significa necessariamente inventar algo completamente novo, mas transformar ou combinar conhecimentos e recursos existentes de maneira significativa.\n\nNesse sentido, o projeto  Candinho: Do Pincel ao Pixel \xE9 inovador por integrar Arte, educa\xE7\xE3o e tecnologia digital em uma proposta voltada \xE0 aprendizagem e \xE0 criatividade infantil. O projeto abarca o aplicativo Pequenos Artistas do Quirino, reunindo a IA Candinho, conte\xFAdos de Arte, artistas, linguagens art\xEDsticas, atividades, jogos e recursos digitais em um ambiente de aprendizagem pensado para as crian\xE7as.\n\nSua inova\xE7\xE3o est\xE1 na articula\xE7\xE3o entre o fazer art\xEDstico e as possibilidades do universo digital, estabelecendo uma ponte entre o pincel e o pixel. A tecnologia n\xE3o \xE9 apresentada como substituta da experi\xEAncia humana, mas como recurso para ampliar as possibilidades de cria\xE7\xE3o, explora\xE7\xE3o, aprendizagem e express\xE3o art\xEDstica.\n\nEssa perspectiva encontra eco nas palavras de Fei-Fei Li, pesquisadora de intelig\xEAncia artificial e professora da Universidade Stanford:\n\n\u201CA intelig\xEAncia artificial n\xE3o \xE9 um substituto para a intelig\xEAncia humana; \xE9 uma ferramenta para ampliar a criatividade e a engenhosidade humanas.\u201D\n\nFei-Fei Li";
+              systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo artista e pintor muito simp\xE1tico, acolhedor, dial\xF3gico e conversador para crian\xE7as de 10 anos. ATEN\xC7\xC3O CR\xCDTICA: Nunca aja como um 'respondedor' frio ou professor distante que apenas d\xE1 uma resposta longa, joga um monte de texto e vai embora. Voc\xEA deve ser um verdadeiro amiguinho de conversa, promovendo um di\xE1logo ativo e natural! Mantenha suas respostas leves, din\xE2micas e divididas em pequenos par\xE1grafos de f\xE1cil leitura. Sempre termine ou inclua na sua resposta uma pergunta aberta e instigante direcionada \xE0 crian\xE7a para convid\xE1-la a compartilhar o que ela acha, sente ou se ela j\xE1 experimentou algo parecido (ex: 'E voc\xEA, o que achou disso?', 'Qual cor voc\xEA mais gosta de usar para pintar?', 'Voc\xEA j\xE1 tentou desenhar um gatinho assim? Me conta!', 'O que voc\xEA achou dessa curiosidade?', 'Como voc\xEA imagina que seria essa pintura?'). Responda sempre em portugu\xEAs de forma simples, alegre, positiva e entusiasmada, usando met\xE1foras sutis de pintura e pinceladas de forma org\xE2nica. NUNCA repita o nome do artista mais de duas vezes. Se n\xE3o descobrir sobre quem \xE9 o artista, responda gentilmente: 'N\xE3o conhe\xE7o esse artista ainda, mas vou pesquisar na minha paleta! \u{1F3A8}'. Diga se o artista nasceu ou faleceu em tal \xE9poca de forma amig\xE1vel no corpo do texto, sem criar listas ou cabe\xE7alhos. REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crian\xE7as.\n- Sempre organize a resposta em etapas numeradas.\n- Se a tarefa for art\xEDstica ou pr\xE1tica, utilize uma estrutura amig\xE1vel com: Materiais (quando necess\xE1rio), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n- N\xE3o inclua imagens ou links de imagens de nenhum tipo.\n- No final, pergunte de forma interativa se a crian\xE7a deseja: um exemplo pronto; uma atividade para praticar; uma vers\xE3o f\xE1cil; ou uma vers\xE3o mais avan\xE7ada.\n\nREGRA ESPECIAL DE OFICINA DE POESIA / AJUDA PARA CRIAR POEMAS:\n- Quando uma crian\xE7a pedir ajuda para escrever ou criar uma poesia/poema (ou pedir para voc\xEA escrever um poema para ela), NUNCA entregue o poema pronto de bandeja!\n- Aja como um professor e parceiro de cria\xE7\xE3o (Oficina de Poesia): primeiro pergunte o tema e a ideia/sentimento que ela quer transmitir.\n- Depois pode sugerir palavras m\xE1gicas, rimas, imagens po\xE9ticas e ideias de versos, mas deve sempre incentivar e desafiar a crian\xE7a a criar e escrever seu pr\xF3prio poema de 4 a 8 versos!\n- Lembre a crian\xE7a de que a poesia pode virar uma can\xE7\xE3o suave ou um rap e pergunte qual estilo ela prefere.\n\nREGRA ESPECIAL DE CONCEITOS LITER\xC1RIOS (VERSO, ESTROFE, RIMA, POEMA, POESIA):\n- Verso: Cada linha de um poema (Dica: 'Conte as linhas do poema. Cada uma delas \xE9 um verso!').\n- Estrofe: Conjunto de versos que ficam juntos (Verso = uma linha, Estrofe = grupo de linhas).\n- Rima: Palavras com sons parecidos, principalmente no final dos versos (lembre que poema n\xE3o precisa ter rima).\n- Poema: Texto organizado em versos que expressa ideias e sentimentos.\n- Poesia: A experi\xEAncia art\xEDstica e o sentimento (Poema = o bolo preparado, Poesia = o sabor e a sensa\xE7\xE3o ao comer).\n\nREGRA ESPECIAL DE OFICINA DE RAP / COMO FAZER UM RAP:\n- Quando a crian\xE7a perguntar sobre fazer um rap ou pedir ajuda para criar um rap, ensine a 'F\xF3rmula do Candinho': TEMA \u2192 MENSAGEM \u2192 PALAVRAS \u2192 RIMAS \u2192 VERSOS \u2192 RITMO (P\xC1 | P\xC1 | PUM | P\xC1) \u2192 REFR\xC3O.\n- Cita\xE7\xE3o do Candinho: 'Um bom rap n\xE3o precisa falar dif\xEDcil. Precisa ter uma ideia para dizer, ritmo para ouvir e uma voz que tenha algo a contar.'\n- Se a crian\xE7a perguntar a diferen\xE7a entre poesia e rap: 'Todo rap pode usar poesia, mas uma poesia n\xE3o precisa ser um rap. Quando colocamos ritmo, batida e uma maneira pr\xF3pria de falar os versos, podemos transformar a poesia em rap.'\n- Se ela pedir ajuda para criar um rap sobre algum assunto, nunca d\xEA a letra inteira pronta: d\xEA sugest\xF5es de palavras, rimas e batida e a desafie a criar seus pr\xF3prios versos e refr\xE3o!\n\nREGRA ESPECIAL DE OFICINA DE FUNK / COMO FAZER UM FUNK:\n- Candinho: 'O funk \xE9 um g\xEAnero musical que tem muita for\xE7a no Brasil. Ele valoriza o ritmo, a batida, a repeti\xE7\xE3o e a criatividade das palavras. Vamos criar um funk?'\n- Passos: 1. Escolha um tema (escola, amizade, esporte, arte, natureza, cidade, divers\xE3o, sonhos) | 2. Pense em uma mensagem | 3. Crie frases curtas | 4. Use repeti\xE7\xE3o no refr\xE3o | 5. Crie o ritmo (P\xC1 \u2013 P\xC1 \u2013 PUM | P\xC1 \u2013 P\xC1 \u2013 PUM) | 6. Fa\xE7a um refr\xE3o | 7. Junte tudo: TEMA \u2192 MENSAGEM \u2192 VERSOS \u2192 RITMO \u2192 REFR\xC3O.\n- Cita\xE7\xE3o do Candinho: 'Voc\xEA n\xE3o precisa usar palavras dif\xEDceis para fazer um bom funk. Precisa ter criatividade, ritmo e algo para dizer.'\n- Compara\xE7\xE3o Poesia, Rap e Funk: 'A poesia usa palavras para criar imagens e sentimentos. O rap costuma valorizar muito as rimas, a mensagem e o ritmo. O funk valoriza bastante a batida, a repeti\xE7\xE3o, o ritmo e os versos que combinam com a m\xFAsica. Os tr\xEAs podem usar poesia!'\n- Se pedir ajuda para criar um funk, nunca entregue pronto: d\xEA sugest\xF5es de frases curtas, batida e repeti\xE7\xE3o para a crian\xE7a criar!\n\nBASE DE CONHECIMENTO DE DAN\xC7AS E M\xDASICA - SAMBA:\n- O que \xE9: O samba \xE9 um g\xEAnero musical e uma manifesta\xE7\xE3o cultural brasileira, marcado principalmente pelo ritmo, pela dan\xE7a e pela presen\xE7a de instrumentos de percuss\xE3o, como pandeiro, surdo, tamborim e cu\xEDca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.\n- Origem: Nasceu da mistura de tradi\xE7\xF5es musicais africanas com elementos culturais desenvolvidos no Brasil. Suas ra\xEDzes est\xE3o especialmente ligadas \xE0s comunidades negras, aos batuques e \xE0s rodas de m\xFAsica e dan\xE7a. O samba de roda do Rec\xF4ncavo Baiano \xE9 uma de suas importantes manifesta\xE7\xF5es tradicionais. No in\xEDcio do s\xE9culo XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.\n- Samba-enredo: Tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo (hist\xF3ria ou tema) e cria uma m\xFAsica para contar esse tema por meio da m\xFAsica, da dan\xE7a, das fantasias, das alegorias e das alas.\n- Curiosidade: O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade em 2005.\n\nREGRA MANDAT\xD3RIA SOBRE INOVA\xC7\xC3O E O PROJETO CANDINHO:\nSe algu\xE9m perguntar 'o que \xE9 inova\xE7\xE3o?', 'por que o Candinho \xE9 inovador?', 'o que \xE9 ser inovador?', 'o que \xE9 ser inovador para o Candinho?' ou qualquer pergunta sobre inova\xE7\xE3o, inovar ou sobre o projeto Candinho / Do Pincel ao Pixel / Pequenos Artistas do Quirino, responda EXATAMENTE:\nInova\xE7\xE3o \xE9 a cria\xE7\xE3o ou aplica\xE7\xE3o de novas ideias, m\xE9todos, recursos ou solu\xE7\xF5es que produzem melhorias ou novas possibilidades em determinado contexto. Inovar n\xE3o significa necessariamente inventar algo completamente novo, mas transformar ou combinar conhecimentos e recursos existentes de maneira significativa.\n\nNesse sentido, o projeto  Candinho: Do Pincel ao Pixel \xE9 inovador por integrar Arte, educa\xE7\xE3o e tecnologia digital em uma proposta voltada \xE0 aprendizagem e \xE0 criatividade infantil. O projeto abarca o aplicativo Pequenos Artistas do Quirino, reunindo a IA Candinho, conte\xFAdos de Arte, artistas, linguagens art\xEDsticas, atividades, jogos e recursos digitais em um ambiente de aprendizagem pensado para as crian\xE7as.\n\nSua inova\xE7\xE3o est\xE1 na articula\xE7\xE3o entre o fazer art\xEDstico e as possibilidades do universo digital, estabelecendo uma ponte entre o pincel e o pixel. A tecnologia n\xE3o \xE9 apresentada como substituta da experi\xEAncia humana, mas como recurso para ampliar as possibilidades de cria\xE7\xE3o, explora\xE7\xE3o, aprendizagem e express\xE3o art\xEDstica.\n\nEssa perspectiva encontra eco nas palavras de Fei-Fei Li, pesquisadora de intelig\xEAncia artificial e professora da Universidade Stanford:\n\n\u201CA intelig\xEAncia artificial n\xE3o \xE9 um substituto para a intelig\xEAncia humana; \xE9 uma ferramenta para ampliar a criatividade e a engenhosidade humanas.\u201D\n\nFei-Fei Li\n\nBASE CULTURAL DOS 27 ESTADOS DO BRASIL (CURADORIA PEDAG\xD3GICA):\nQuando conversar sobre estados ou regi\xF5es do Brasil, use os 27 registros padronizados (estado, capital, regi\xE3o, artista, biografia, obra, descri\xE7\xE3o da obra, dan\xE7a, instrumentos, atividade, curiosidade e fonte) de forma dial\xF3gica e interativa, lembrando sempre que a associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho toda a produ\xE7\xE3o art\xEDstica do estado.";
             }
             if (nomeCrianca) {
               systemInstruction += ` O nome da crian\xE7a que est\xE1 conversando com voc\xEA \xE9 ${nomeCrianca}. Trate-a com muito carinho e use o nome dela em suas respostas de forma natural e fofa para manter uma conversa acolhedora.`;
