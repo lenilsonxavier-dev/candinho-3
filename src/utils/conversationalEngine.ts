@@ -1,5 +1,6 @@
 import { CURIOSIDADES_ACERVO, buscarCuriosidadePorKeyword } from "../data/curiosidadesAcervo.js";
 import { GALERIA_IMAGENS, GaleriaItem } from "../data/galeriaImagens.js";
+import { BANCO_ESTADOS_BRASIL, resolverCulturaEstadosRegioes } from "../data/estadosBrasilCultural.js";
 
 export interface DialogIntent {
   keywords: string[];
@@ -5137,6 +5138,10 @@ function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any
   const followUpRes = resolverFollowUpMessage(normalizedMsg);
   if (followUpRes) return followUpRes;
 
+  // Intercept Brazilian States (27 UFs) and Regions cultural conversations (dances, artists, works, instruments, activities)
+  const estadosRegioesRes = resolverCulturaEstadosRegioes(mensagem);
+  if (estadosRegioesRes) return estadosRegioesRes;
+
   // Step A.00: Prioritized Art Periods Check to prevent shadowing or outdated definitions from remote libraries
   const PERIODS_TO_PRIORITIZE = [
     'arte_antiga', 'arte_egipcia', 'arte_grega', 'arte_romana', 'arte_medieval',
@@ -5373,6 +5378,9 @@ export function tornarRespostaDialogica(reply: string, matchedKey?: string): str
     matchedKey.startsWith("oficina_") ||
     matchedKey.startsWith("criar_") ||
     matchedKey.startsWith("tutorial_") ||
+    matchedKey.startsWith("estado_cultura_") ||
+    matchedKey.startsWith("regiao_cultura_") ||
+    matchedKey.startsWith("estados_brasil_") ||
     matchedKey.includes("followup") ||
     matchedKey === "inovacao" ||
     matchedKey.includes("inovac")

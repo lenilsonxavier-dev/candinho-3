@@ -4,6 +4,7 @@ import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import { bibliotecaCultural } from "./src/data/bibliotecaCultural.js";
 import { resolverMensagemLocalmente, sugerirTemasAlternativos, extrairNome, normalizarTexto } from "./src/utils/conversationalEngine.js";
+import { BANCO_ESTADOS_BRASIL } from "./src/data/estadosBrasilCultural.js";
 
 const app = express();
 const PORT = 3000;
@@ -1838,7 +1839,9 @@ app.post("/api/groq", async (req: Request, res: Response) => {
                 "Sua inovação está na articulação entre o fazer artístico e as possibilidades do universo digital, estabelecendo uma ponte entre o pincel e o pixel. A tecnologia não é apresentada como substituta da experiência humana, mas como recurso para ampliar as possibilidades de criação, exploração, aprendizagem e expressão artística.\n\n" +
                 "Essa perspectiva encontra eco nas palavras de Fei-Fei Li, pesquisadora de inteligência artificial e professora da Universidade Stanford:\n\n" +
                 "“A inteligência artificial não é um substituto para a inteligência humana; é uma ferramenta para ampliar a criatividade e a engenhosidade humanas.”\n\n" +
-                "Fei-Fei Li";
+                "Fei-Fei Li\n\n" +
+                "BASE CULTURAL DOS 27 ESTADOS DO BRASIL (CURADORIA PEDAGÓGICA):\n" +
+                "Quando conversar sobre estados ou regiões do Brasil, use os 27 registros padronizados (estado, capital, região, artista, biografia, obra, descrição da obra, dança, instrumentos, atividade, curiosidade e fonte) de forma dialógica e interativa, lembrando sempre que a associação entre artista e estado é uma escolha pedagógica/curatorial e não significa que o artista represente sozinho toda a produção artística do estado.";
             }
 
             if (nomeCrianca) {
