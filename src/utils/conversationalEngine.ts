@@ -304,6 +304,21 @@ function obterImagemDaGaleria(key: string): { imagemUrl: string; titulo: string;
   
   let targetKey = key.toLowerCase().trim();
 
+  // Se a chave for de cultura dos estados ou regiões do Brasil (danças, artistas, obras, capitais, panorama)
+  if (
+    targetKey.startsWith("estado_cultura_") ||
+    targetKey.startsWith("regiao_cultura_") ||
+    targetKey === "estados_brasil_panorama" ||
+    targetKey.includes("cultura_estados") ||
+    targetKey.includes("cultura_regioes")
+  ) {
+    return {
+      imagemUrl: "https://i.imgur.com/J75vSuh.png",
+      titulo: "Mapa Cultural dos Estados e Regiões do Brasil",
+      credito: "Pequenos Artistas do Quirino / Candinho"
+    };
+  }
+
   // Mapear chaves da biblioteca cultural que começam com danca_ para as chaves corretas da galeria
   if (targetKey.startsWith("danca_")) {
     const semDanca = targetKey.substring(6); // e.g. "danca_frevo" -> "frevo", "danca_bale" -> "bale"
@@ -5084,7 +5099,7 @@ export function resolverPerguntaInovacao(normalizedMsg: string): { reply: string
   return null;
 }
 
-function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any>): { reply: string, matchedKey?: string } | null {
+function resolverMensagemLocalmenteRaw(mensagem: string, lib: Record<string, any>): BotLocalResponse | null {
   const normalizedMsg = normalizarTexto(mensagem);
   if (!normalizedMsg) return null;
 
@@ -5426,6 +5441,11 @@ export function resolverMensagemLocalmente(mensagem: string, lib: Record<string,
 
   // Torna a resposta local mais dialógica e amigável para conversar com a criança
   result.reply = tornarRespostaDialogica(result.reply, result.matchedKey);
+
+  // Se o resultado já tiver imagem associada (ex: das conversas culturais de estados/regiões)
+  if (result.image) {
+    return result;
+  }
 
   // Se houver matchedKey, vamos verificar se existe imagem correspondente na nossa Galeria
   if (result.matchedKey) {

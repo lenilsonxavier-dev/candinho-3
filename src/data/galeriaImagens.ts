@@ -463,5 +463,16 @@ export const GALERIA_IMAGENS: Record<string, GaleriaItem | GaleriaItem[]> = {
     imagemUrl: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=600&auto=format&fit=crop",
     titulo: "Domando as Camadas e Blending dos Lápis de Cor",
     credito: "Unsplash"
+  },
+  estados_brasil_panorama: {
+    imagemUrl: "https://i.imgur.com/J75vSuh.png",
+    titulo: "Mapa Cultural dos Estados e Regiões do Brasil",
+    credito: "Pequenos Artistas do Quirino / Candinho"
+  },
+  cultura_estados_brasil: {
+    imagemUrl: "https://i.imgur.com/J75vSuh.png",
+    titulo: "Mapa Cultural dos Estados e Regiões do Brasil",
+    credito: "Pequenos Artistas do Quirino / Candinho"
   }
 };
+

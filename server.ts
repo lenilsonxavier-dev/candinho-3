@@ -835,6 +835,23 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
       }
     }
 
+    // Se a pergunta ou matchedKey for sobre a cultura de um estado ou região do Brasil (dança, artista, obra, panorama)
+    if (
+      mK && (
+        mK.startsWith("estado_cultura_") ||
+        mK.startsWith("regiao_cultura_") ||
+        mK === "estados_brasil_panorama" ||
+        mK.includes("cultura_estados") ||
+        mK.includes("cultura_regioes")
+      )
+    ) {
+      return {
+        imagemUrl: "https://i.imgur.com/J75vSuh.png",
+        titulo: "Mapa Cultural dos Estados e Regiões do Brasil",
+        credito: "Pequenos Artistas do Quirino / Candinho"
+      };
+    }
+
     // Primeiro tenta correspondência direta com as imagens garantidas por chave identificada
     if (mK && ARTISTS_GUARANTEED_IMAGES[mK]) {
       const item = ARTISTS_GUARANTEED_IMAGES[mK];
@@ -1900,37 +1917,53 @@ app.post("/api/groq", async (req: Request, res: Response) => {
     // 3. Busca Imagem Unificada
     let imagemResult = null;
     const nMsg = normalizarTexto(mensagem);
-    const isComoQuestion = nMsg.startsWith("como") || (localResult && localResult.matchedKey && localResult.matchedKey.startsWith("como_"));
-    const isPorqueQuestion = nMsg.startsWith("por que") || nMsg.startsWith("porque") || nMsg.startsWith("porquê") || (localResult && localResult.matchedKey && localResult.matchedKey.startsWith("porque_arte_banco"));
 
-    if (isComoQuestion || isPorqueQuestion) {
-      const COMO_PORQUE_IMAGES = [
-        "https://i.imgur.com/TBtYr8Q.jpeg",
-        "https://i.imgur.com/TBtYr8Q.jpeg",
-        "https://i.imgur.com/rWvBZj5.jpeg",
-        "https://i.imgur.com/Lmr8RJT.jpeg",
-        "https://i.imgur.com/BqPOUHm.jpeg",
-        "https://i.imgur.com/7BU6khE.jpeg",
-        "https://i.imgur.com/WjeStw7.jpeg"
-      ];
-      const randomImg = COMO_PORQUE_IMAGES[Math.floor(Math.random() * COMO_PORQUE_IMAGES.length)];
-      
-      let titulo = isComoQuestion ? "Aprenda com o Candinho! 🎨" : "Porquês da Arte com o Candinho! 💡";
-      
-      // Ajuste de título para tópicos de fake news e proteção na internet
-      if (localResult && localResult.matchedKey) {
-        const mk = localResult.matchedKey;
-        if (mk === "como_proteger_fake_news" || mk === "evitar_golpes_internet" || mk.includes("fake_news") || mk.includes("golpe")) {
-          titulo = "Detetive da Informação! 🕵️";
-        }
-      }
+    const isEstadoOuRegiaoCultural = localResult && localResult.matchedKey && (
+      localResult.matchedKey.startsWith("estado_cultura_") ||
+      localResult.matchedKey.startsWith("regiao_cultura_") ||
+      localResult.matchedKey === "estados_brasil_panorama" ||
+      localResult.matchedKey.includes("cultura_estados") ||
+      localResult.matchedKey.includes("cultura_regioes")
+    );
 
-      imagemResult = {
-        imagemUrl: randomImg,
-        titulo: titulo,
-        credito: "Ilustração Educacional"
+    if (isEstadoOuRegiaoCultural) {
+      imagemResult = localResult?.image || {
+        imagemUrl: "https://i.imgur.com/J75vSuh.png",
+        titulo: "Mapa Cultural dos Estados e Regiões do Brasil",
+        credito: "Pequenos Artistas do Quirino / Candinho"
       };
-    } else if (acabouDeSeApresentar) {
+    } else {
+      const isComoQuestion = nMsg.startsWith("como") || (localResult && localResult.matchedKey && localResult.matchedKey.startsWith("como_"));
+      const isPorqueQuestion = nMsg.startsWith("por que") || nMsg.startsWith("porque") || nMsg.startsWith("porquê") || (localResult && localResult.matchedKey && localResult.matchedKey.startsWith("porque_arte_banco"));
+
+      if (isComoQuestion || isPorqueQuestion) {
+        const COMO_PORQUE_IMAGES = [
+          "https://i.imgur.com/TBtYr8Q.jpeg",
+          "https://i.imgur.com/TBtYr8Q.jpeg",
+          "https://i.imgur.com/rWvBZj5.jpeg",
+          "https://i.imgur.com/Lmr8RJT.jpeg",
+          "https://i.imgur.com/BqPOUHm.jpeg",
+          "https://i.imgur.com/7BU6khE.jpeg",
+          "https://i.imgur.com/WjeStw7.jpeg"
+        ];
+        const randomImg = COMO_PORQUE_IMAGES[Math.floor(Math.random() * COMO_PORQUE_IMAGES.length)];
+        
+        let titulo = isComoQuestion ? "Aprenda com o Candinho! 🎨" : "Porquês da Arte com o Candinho! 💡";
+        
+        // Ajuste de título para tópicos de fake news e proteção na internet
+        if (localResult && localResult.matchedKey) {
+          const mk = localResult.matchedKey;
+          if (mk === "como_proteger_fake_news" || mk === "evitar_golpes_internet" || mk.includes("fake_news") || mk.includes("golpe")) {
+            titulo = "Detetive da Informação! 🕵️";
+          }
+        }
+
+        imagemResult = {
+          imagemUrl: randomImg,
+          titulo: titulo,
+          credito: "Ilustração Educacional"
+        };
+      } else if (acabouDeSeApresentar) {
       const CANDINHO_GREETINGS_IMAGES = [
         "https://i.imgur.com/PYAYlUY.jpg",
         "https://i.imgur.com/UDl1c5j.png",
@@ -1948,6 +1981,7 @@ app.post("/api/groq", async (req: Request, res: Response) => {
     } else {
       imagemResult = localResult?.image || await buscarImagem(mensagem, localResult?.matchedKey, lib);
     }
+  }
 
     // 4. Retorno Unificado
     return res.status(200).json({

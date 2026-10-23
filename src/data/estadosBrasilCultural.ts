@@ -890,7 +890,23 @@ function identificarRegiaoNaMensagem(normMsg: string): "Norte" | "Nordeste" | "C
   return null;
 }
 
-export function resolverCulturaEstadosRegioes(mensagem: string): { reply: string; matchedKey: string } | null {
+export const ILUSTRACAO_CULTURA_ESTADOS_REGIOES = {
+  imagemUrl: "https://i.imgur.com/J75vSuh.png",
+  titulo: "Mapa Cultural dos Estados e Regiões do Brasil",
+  credito: "Pequenos Artistas do Quirino / Candinho"
+};
+
+export interface CulturaEstadoResultado {
+  reply: string;
+  matchedKey: string;
+  image: {
+    imagemUrl: string;
+    titulo: string;
+    credito: string;
+  };
+}
+
+export function resolverCulturaEstadosRegioes(mensagem: string): CulturaEstadoResultado | null {
   if (!mensagem) return null;
   const normMsg = normalizar(mensagem);
   if (!normMsg) return null;
@@ -973,7 +989,8 @@ export function resolverCulturaEstadosRegioes(mensagem: string): { reply: string
 
       return {
         reply,
-        matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`
+        matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`,
+        image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
       };
     }
 
@@ -998,7 +1015,8 @@ export function resolverCulturaEstadosRegioes(mensagem: string): { reply: string
 
       return {
         reply,
-        matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`
+        matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`,
+        image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
       };
     }
 
@@ -1021,7 +1039,8 @@ export function resolverCulturaEstadosRegioes(mensagem: string): { reply: string
 
     return {
       reply,
-      matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`
+      matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`,
+      image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
     };
   }
 
@@ -1047,7 +1066,8 @@ export function resolverCulturaEstadosRegioes(mensagem: string): { reply: string
 
       return {
         reply,
-        matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`
+        matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`,
+        image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
       };
     }
 
@@ -1066,7 +1086,8 @@ export function resolverCulturaEstadosRegioes(mensagem: string): { reply: string
 
       return {
         reply,
-        matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`
+        matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`,
+        image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
       };
     }
 
@@ -1083,7 +1104,8 @@ export function resolverCulturaEstadosRegioes(mensagem: string): { reply: string
 
     return {
       reply,
-      matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`
+      matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`,
+      image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
     };
   }
 
@@ -1110,7 +1132,8 @@ export function resolverCulturaEstadosRegioes(mensagem: string): { reply: string
 
     return {
       reply,
-      matchedKey: "estados_brasil_panorama"
+      matchedKey: "estados_brasil_panorama",
+      image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
     };
   }
 
