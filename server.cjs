@@ -8340,6 +8340,16 @@ var GALERIA_IMAGENS = {
     imagemUrl: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=600&auto=format&fit=crop",
     titulo: "Domando as Camadas e Blending dos L\xE1pis de Cor",
     credito: "Unsplash"
+  },
+  estados_brasil_panorama: {
+    imagemUrl: "https://i.imgur.com/J75vSuh.png",
+    titulo: "Mapa Cultural dos Estados e Regi\xF5es do Brasil",
+    credito: "Pequenos Artistas do Quirino / Candinho"
+  },
+  cultura_estados_brasil: {
+    imagemUrl: "https://i.imgur.com/J75vSuh.png",
+    titulo: "Mapa Cultural dos Estados e Regi\xF5es do Brasil",
+    credito: "Pequenos Artistas do Quirino / Candinho"
   }
 };
 
@@ -9208,6 +9218,11 @@ function identificarRegiaoNaMensagem(normMsg) {
   }
   return null;
 }
+var ILUSTRACAO_CULTURA_ESTADOS_REGIOES = {
+  imagemUrl: "https://i.imgur.com/J75vSuh.png",
+  titulo: "Mapa Cultural dos Estados e Regi\xF5es do Brasil",
+  credito: "Pequenos Artistas do Quirino / Candinho"
+};
 function resolverCulturaEstadosRegioes(mensagem) {
   if (!mensagem) return null;
   const normMsg = normalizar(mensagem);
@@ -9245,7 +9260,8 @@ ${e.atividade}
 E a\xED, voc\xEA j\xE1 tinha ouvido o som de **${listaInstrumentos}** ou visto algu\xE9m dan\xE7ar **${e.danca}**? Qual outro estado ou ritmo voc\xEA quer explorar comigo agora? \u{1F60A}`;
       return {
         reply: reply2,
-        matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`
+        matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`,
+        image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
       };
     }
     if ((pedeArtista || pedeObra) && !pedeDanca && !pedeInstrumento) {
@@ -9274,7 +9290,8 @@ ${e.atividade}
 O que mais chamou a sua aten\xE7\xE3o na obra *${e.obra}* de **${e.artista}**? Se voc\xEA fosse criar algo inspirado em **${e.estado}**, como come\xE7aria o seu desenho? \u{1F3A8}\u{1F60A}`;
       return {
         reply: reply2,
-        matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`
+        matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`,
+        image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
       };
     }
     const reply = `\u{1F5FA}\uFE0F\u{1F3A8} Vamos fazer um passeio cultural por **${e.estado} (${e.sigla})**, estado da regi\xE3o **${e.regiao}** cuja capital \xE9 **${e.capital}**!
@@ -9300,7 +9317,8 @@ ${e.atividade}
 Me conta: voc\xEA gostou mais de conhecer a arte de **${e.artista}**, o ritmo de **${e.danca}** ou quer tentar fazer essa atividade agora comigo? \u{1F604}\u2728`;
     return {
       reply,
-      matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`
+      matchedKey: `estado_cultura_${e.sigla.toLowerCase()}`,
+      image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
     };
   }
   const regiaoEncontrada = identificarRegiaoNaMensagem(normMsg);
@@ -9321,7 +9339,8 @@ Em **${exemploDestaque.estado}**, por exemplo, ${exemploDestaque.curiosidade.cha
 Qual dessas dan\xE7as da regi\xE3o **${regiaoEncontrada}** mais deu vontade de conhecer ou desenhar? Se voc\xEA escolher um desses estados, eu te conto tudo sobre o artista, a obra e uma atividade super divertida dele! \u{1F3A8}\u{1F60A}`;
       return {
         reply: reply2,
-        matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`
+        matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`,
+        image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
       };
     }
     if ((pedeArtista || pedeObra) && !pedeDanca && !pedeInstrumento) {
@@ -9336,7 +9355,8 @@ ${listaArtistas}
 Qual desses artistas ou obras da regi\xE3o **${regiaoEncontrada}** despertou mais a sua curiosidade? Me diga o nome de um estado ou artista que n\xF3s conversamos mais e fazemos uma atividade criativa juntos! \u{1F58C}\uFE0F\u{1F604}`;
       return {
         reply: reply2,
-        matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`
+        matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`,
+        image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
       };
     }
     const panorama = estadosDaRegiao.map((e) => `\u2022 **${e.estado} (${e.capital}):** Artista **${e.artista}** (*${e.obra}*) | Dan\xE7a: **${e.danca}** (${e.instrumentos.slice(0, 3).join(", ")})`).join("\n");
@@ -9349,7 +9369,8 @@ ${panorama}
 Por qual estado da regi\xE3o **${regiaoEncontrada}** voc\xEA quer come\xE7ar a nossa viagem art\xEDstica hoje? Posso te contar curiosidades, falar das obras ou propor um desafio de desenho! \u{1F3A8}\u{1F60A}`;
     return {
       reply,
-      matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`
+      matchedKey: `regiao_cultura_${normalizar(regiaoEncontrada)}`,
+      image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
     };
   }
   const mencionaEstadosBrasil = (contemTermoIsolado(normMsg, "estados") || contemTermoIsolado(normMsg, "regioes") || contemTermoIsolado(normMsg, "27 estados")) && (pedeDanca || pedeArtista || pedeObra || pedeInstrumento || contemTermoIsolado(normMsg, "brasil"));
@@ -9375,7 +9396,8 @@ ${resumoRegioes}
 Me pergunte sobre qualquer estado (como *"Qual a dan\xE7a mais famosa da Bahia?"*, *"Qual o artista representativo de Minas Gerais?"*, *"Me fale sobre Santa Catarina"*) ou sobre qualquer regi\xE3o (como *"Quais as dan\xE7as do Nordeste?"*)! Qual estado ou regi\xE3o voc\xEA quer descobrir primeiro? \u{1F60A}\u2728`;
     return {
       reply,
-      matchedKey: "estados_brasil_panorama"
+      matchedKey: "estados_brasil_panorama",
+      image: ILUSTRACAO_CULTURA_ESTADOS_REGIOES
     };
   }
   return null;
@@ -9925,6 +9947,13 @@ function getRandomElement(arr) {
 function obterImagemDaGaleria(key) {
   if (!key) return null;
   let targetKey = key.toLowerCase().trim();
+  if (targetKey.startsWith("estado_cultura_") || targetKey.startsWith("regiao_cultura_") || targetKey === "estados_brasil_panorama" || targetKey.includes("cultura_estados") || targetKey.includes("cultura_regioes")) {
+    return {
+      imagemUrl: "https://i.imgur.com/J75vSuh.png",
+      titulo: "Mapa Cultural dos Estados e Regi\xF5es do Brasil",
+      credito: "Pequenos Artistas do Quirino / Candinho"
+    };
+  }
   if (targetKey.startsWith("danca_")) {
     const semDanca = targetKey.substring(6);
     if (GALERIA_IMAGENS[semDanca]) {
@@ -15068,6 +15097,9 @@ function resolverMensagemLocalmente(mensagem, lib) {
   const result = resolverMensagemLocalmenteRaw(mensagem, lib);
   if (!result) return null;
   result.reply = tornarRespostaDialogica(result.reply, result.matchedKey);
+  if (result.image) {
+    return result;
+  }
   if (result.matchedKey) {
     const imgObj = obterImagemDaGaleria(result.matchedKey);
     if (imgObj) {
@@ -16223,6 +16255,13 @@ async function buscarImagem(pergunta, matchedKey, lib) {
         mK = "coco_pernambucano";
       }
     }
+    if (mK && (mK.startsWith("estado_cultura_") || mK.startsWith("regiao_cultura_") || mK === "estados_brasil_panorama" || mK.includes("cultura_estados") || mK.includes("cultura_regioes"))) {
+      return {
+        imagemUrl: "https://i.imgur.com/J75vSuh.png",
+        titulo: "Mapa Cultural dos Estados e Regi\xF5es do Brasil",
+        credito: "Pequenos Artistas do Quirino / Candinho"
+      };
+    }
     if (mK && ARTISTS_GUARANTEED_IMAGES[mK]) {
       const item = ARTISTS_GUARANTEED_IMAGES[mK];
       if (Array.isArray(item)) {
@@ -17186,47 +17225,56 @@ app.post("/api/groq", async (req, res) => {
     }
     let imagemResult = null;
     const nMsg = normalizarTexto(mensagem);
-    const isComoQuestion = nMsg.startsWith("como") || localResult && localResult.matchedKey && localResult.matchedKey.startsWith("como_");
-    const isPorqueQuestion = nMsg.startsWith("por que") || nMsg.startsWith("porque") || nMsg.startsWith("porqu\xEA") || localResult && localResult.matchedKey && localResult.matchedKey.startsWith("porque_arte_banco");
-    if (isComoQuestion || isPorqueQuestion) {
-      const COMO_PORQUE_IMAGES = [
-        "https://i.imgur.com/TBtYr8Q.jpeg",
-        "https://i.imgur.com/TBtYr8Q.jpeg",
-        "https://i.imgur.com/rWvBZj5.jpeg",
-        "https://i.imgur.com/Lmr8RJT.jpeg",
-        "https://i.imgur.com/BqPOUHm.jpeg",
-        "https://i.imgur.com/7BU6khE.jpeg",
-        "https://i.imgur.com/WjeStw7.jpeg"
-      ];
-      const randomImg = COMO_PORQUE_IMAGES[Math.floor(Math.random() * COMO_PORQUE_IMAGES.length)];
-      let titulo = isComoQuestion ? "Aprenda com o Candinho! \u{1F3A8}" : "Porqu\xEAs da Arte com o Candinho! \u{1F4A1}";
-      if (localResult && localResult.matchedKey) {
-        const mk = localResult.matchedKey;
-        if (mk === "como_proteger_fake_news" || mk === "evitar_golpes_internet" || mk.includes("fake_news") || mk.includes("golpe")) {
-          titulo = "Detetive da Informa\xE7\xE3o! \u{1F575}\uFE0F";
-        }
-      }
-      imagemResult = {
-        imagemUrl: randomImg,
-        titulo,
-        credito: "Ilustra\xE7\xE3o Educacional"
-      };
-    } else if (acabouDeSeApresentar) {
-      const CANDINHO_GREETINGS_IMAGES = [
-        "https://i.imgur.com/PYAYlUY.jpg",
-        "https://i.imgur.com/UDl1c5j.png",
-        "https://i.imgur.com/Le0VpzC.jpg",
-        "https://i.imgur.com/iWmEdZz.jpg",
-        "https://i.imgur.com/REfhO7r.jpg"
-      ];
-      const idx = Math.floor(Math.random() * CANDINHO_GREETINGS_IMAGES.length);
-      imagemResult = {
-        imagemUrl: CANDINHO_GREETINGS_IMAGES[idx],
-        titulo: `Bem-vindo ao Ateli\xEA, ${nomeCrianca || "Pequeno Artista"}! \u{1F3A8}`,
-        credito: "Ilustra\xE7\xE3o do Candinho"
+    const isEstadoOuRegiaoCultural = localResult && localResult.matchedKey && (localResult.matchedKey.startsWith("estado_cultura_") || localResult.matchedKey.startsWith("regiao_cultura_") || localResult.matchedKey === "estados_brasil_panorama" || localResult.matchedKey.includes("cultura_estados") || localResult.matchedKey.includes("cultura_regioes"));
+    if (isEstadoOuRegiaoCultural) {
+      imagemResult = localResult?.image || {
+        imagemUrl: "https://i.imgur.com/J75vSuh.png",
+        titulo: "Mapa Cultural dos Estados e Regi\xF5es do Brasil",
+        credito: "Pequenos Artistas do Quirino / Candinho"
       };
     } else {
-      imagemResult = localResult?.image || await buscarImagem(mensagem, localResult?.matchedKey, lib);
+      const isComoQuestion = nMsg.startsWith("como") || localResult && localResult.matchedKey && localResult.matchedKey.startsWith("como_");
+      const isPorqueQuestion = nMsg.startsWith("por que") || nMsg.startsWith("porque") || nMsg.startsWith("porqu\xEA") || localResult && localResult.matchedKey && localResult.matchedKey.startsWith("porque_arte_banco");
+      if (isComoQuestion || isPorqueQuestion) {
+        const COMO_PORQUE_IMAGES = [
+          "https://i.imgur.com/TBtYr8Q.jpeg",
+          "https://i.imgur.com/TBtYr8Q.jpeg",
+          "https://i.imgur.com/rWvBZj5.jpeg",
+          "https://i.imgur.com/Lmr8RJT.jpeg",
+          "https://i.imgur.com/BqPOUHm.jpeg",
+          "https://i.imgur.com/7BU6khE.jpeg",
+          "https://i.imgur.com/WjeStw7.jpeg"
+        ];
+        const randomImg = COMO_PORQUE_IMAGES[Math.floor(Math.random() * COMO_PORQUE_IMAGES.length)];
+        let titulo = isComoQuestion ? "Aprenda com o Candinho! \u{1F3A8}" : "Porqu\xEAs da Arte com o Candinho! \u{1F4A1}";
+        if (localResult && localResult.matchedKey) {
+          const mk = localResult.matchedKey;
+          if (mk === "como_proteger_fake_news" || mk === "evitar_golpes_internet" || mk.includes("fake_news") || mk.includes("golpe")) {
+            titulo = "Detetive da Informa\xE7\xE3o! \u{1F575}\uFE0F";
+          }
+        }
+        imagemResult = {
+          imagemUrl: randomImg,
+          titulo,
+          credito: "Ilustra\xE7\xE3o Educacional"
+        };
+      } else if (acabouDeSeApresentar) {
+        const CANDINHO_GREETINGS_IMAGES = [
+          "https://i.imgur.com/PYAYlUY.jpg",
+          "https://i.imgur.com/UDl1c5j.png",
+          "https://i.imgur.com/Le0VpzC.jpg",
+          "https://i.imgur.com/iWmEdZz.jpg",
+          "https://i.imgur.com/REfhO7r.jpg"
+        ];
+        const idx = Math.floor(Math.random() * CANDINHO_GREETINGS_IMAGES.length);
+        imagemResult = {
+          imagemUrl: CANDINHO_GREETINGS_IMAGES[idx],
+          titulo: `Bem-vindo ao Ateli\xEA, ${nomeCrianca || "Pequeno Artista"}! \u{1F3A8}`,
+          credito: "Ilustra\xE7\xE3o do Candinho"
+        };
+      } else {
+        imagemResult = localResult?.image || await buscarImagem(mensagem, localResult?.matchedKey, lib);
+      }
     }
     return res.status(200).json({
       reply: textoFinal || "Que pergunta curiosa! Vamos descobrir juntos sobre arte? \u{1F3A8}",
