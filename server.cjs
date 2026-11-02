@@ -644,6 +644,186 @@ Hoje, sua obra \xE9 reconhecida internacionalmente e considerada um dos maiores 
     emocao: "energia",
     nivel: "leve"
   },
+  maculele: {
+    tema: "cultura_afro_brasileira",
+    subtema: "maculele",
+    palavras_chave: [
+      "maculele",
+      "maculel\xEA",
+      "danca maculele",
+      "dan\xE7a maculele",
+      "dan\xE7a maculel\xEA",
+      "danca do maculele",
+      "dan\xE7a do maculel\xEA",
+      "o que e maculele",
+      "o que e o maculele",
+      "o que \xE9 maculel\xEA",
+      "o que \xE9 o maculel\xEA",
+      "historia do maculele",
+      "hist\xF3ria do maculel\xEA",
+      "origem do maculele",
+      "origem do maculel\xEA",
+      "grimas",
+      "bast\xF5es do maculele",
+      "bastoes do maculele",
+      "mestre popo",
+      "mestre pop\xF3",
+      "mestre barao",
+      "mestre bar\xE3o",
+      "mestre joao de oba",
+      "mestre jo\xE3o de ob\xE1",
+      "emilia biancardi",
+      "em\xEDlia biancardi",
+      "santo amaro maculele"
+    ],
+    inicio: [
+      "\u{1FAB5}\u{1F941} **Maculel\xEA: dan\xE7a, ritmo e tradi\xE7\xE3o afro-brasileira**\n\nO Maculel\xEA \xE9 uma manifesta\xE7\xE3o cultural afro-brasileira que mistura dan\xE7a, m\xFAsica e movimentos de luta. \xC9 tradicional da cidade de Santo Amaro, na Bahia, e representa a riqueza e a resist\xEAncia da cultura negra no Brasil."
+    ],
+    explicacao_curta: [
+      "O Maculel\xEA \xE9 uma manifesta\xE7\xE3o cultural afro-brasileira que mistura dan\xE7a, m\xFAsica e movimentos de luta. \xC9 tradicional da cidade de Santo Amaro, na Bahia, e representa a riqueza e a resist\xEAncia da cultura negra no Brasil."
+    ],
+    explicacao_aprofundada: [
+      "**Origem:** sua origem hist\xF3rica n\xE3o \xE9 totalmente conhecida, mas est\xE1 ligada \xE0s tradi\xE7\xF5es afro-brasileiras do Rec\xF4ncavo Baiano.\n\n**Origem lend\xE1ria:** uma das hist\xF3rias conta que um guerreiro chamado Maculel\xEA defendeu sozinho sua aldeia usando dois peda\xE7os de madeira. Em sua homenagem, teria surgido uma dan\xE7a com bast\xF5es. Essa narrativa \xE9 uma lenda, n\xE3o um fato hist\xF3rico comprovado.\n\n**Significado da palavra:** a origem exata do nome Maculel\xEA \xE9 desconhecida. Existem hip\xF3teses sobre seu significado, mas nenhuma \xE9 consenso entre os pesquisadores.\n\n**Caracter\xEDsticas:** os dan\xE7arinos utilizam dois bast\xF5es de madeira chamados grimas, que batem um contra o outro seguindo o ritmo da m\xFAsica. A dan\xE7a apresenta giros, agachamentos, passos marcados e movimentos de ataque e defesa. \xC9 acompanhada por cantos e instrumentos de percuss\xE3o, especialmente o atabaque.\n\n**Nomes importantes:**\n\u2022 **Mestre Pop\xF3:** fundamental para recuperar e divulgar o Maculel\xEA em Santo Amaro.\n\u2022 **Mestre Bar\xE3o:** importante na transmiss\xE3o da tradi\xE7\xE3o.\n\u2022 **Mestre Jo\xE3o de Ob\xE1:** lembrado na hist\xF3ria oral da manifesta\xE7\xE3o.\n\u2022 **Em\xEDlia Biancardi:** pesquisadora que contribuiu para registrar e divulgar o Maculel\xEA."
+    ],
+    curiosidade: [
+      "Embora seja frequentemente apresentado junto com a capoeira, o Maculel\xEA \xE9 uma manifesta\xE7\xE3o cultural pr\xF3pria."
+    ],
+    interacao: [
+      "Voc\xEA j\xE1 experimentou bater dois gravetinhos ou l\xE1pis no ritmo contagiante da m\xFAsica?"
+    ],
+    atividade: [
+      "Pegue dois l\xE1pis de cor e tente criar um ritmo de batidas leves imitando o som das grimas do Maculel\xEA! \u{1FAB5}\u{1F3B6}"
+    ],
+    final: [
+      "**O que aprendemos?** O Maculel\xEA valoriza a ancestralidade, a mem\xF3ria, a musicalidade, a coordena\xE7\xE3o motora, o respeito e a resist\xEAncia cultural dos povos afro-brasileiros. \u2764\uFE0F\u270A"
+    ],
+    resposta_direta: `## Maculel\xEA: dan\xE7a, ritmo e tradi\xE7\xE3o afro-brasileira
+
+O Maculel\xEA \xE9 uma manifesta\xE7\xE3o cultural afro-brasileira que mistura dan\xE7a, m\xFAsica e movimentos de luta. \xC9 tradicional da cidade de Santo Amaro, na Bahia, e representa a riqueza e a resist\xEAncia da cultura negra no Brasil.
+
+**Origem:** sua origem hist\xF3rica n\xE3o \xE9 totalmente conhecida, mas est\xE1 ligada \xE0s tradi\xE7\xF5es afro-brasileiras do Rec\xF4ncavo Baiano.
+
+**Origem lend\xE1ria:** uma das hist\xF3rias conta que um guerreiro chamado Maculel\xEA defendeu sozinho sua aldeia usando dois peda\xE7os de madeira. Em sua homenagem, teria surgido uma dan\xE7a com bast\xF5es. Essa narrativa \xE9 uma lenda, n\xE3o um fato hist\xF3rico comprovado.
+
+**Significado da palavra:** a origem exata do nome Maculel\xEA \xE9 desconhecida. Existem hip\xF3teses sobre seu significado, mas nenhuma \xE9 consenso entre os pesquisadores.
+
+**Caracter\xEDsticas:** os dan\xE7arinos utilizam dois bast\xF5es de madeira chamados grimas, que batem um contra o outro seguindo o ritmo da m\xFAsica. A dan\xE7a apresenta giros, agachamentos, passos marcados e movimentos de ataque e defesa. \xC9 acompanhada por cantos e instrumentos de percuss\xE3o, especialmente o atabaque.
+
+**Nomes importantes:**
+
+- Mestre Pop\xF3: fundamental para recuperar e divulgar o Maculel\xEA em Santo Amaro.
+- Mestre Bar\xE3o: importante na transmiss\xE3o da tradi\xE7\xE3o.
+- Mestre Jo\xE3o de Ob\xE1: lembrado na hist\xF3ria oral da manifesta\xE7\xE3o.
+- Em\xEDlia Biancardi: pesquisadora que contribuiu para registrar e divulgar o Maculel\xEA.
+
+**Curiosidade:** embora seja frequentemente apresentado junto com a capoeira, o Maculel\xEA \xE9 uma manifesta\xE7\xE3o cultural pr\xF3pria.
+
+**O que aprendemos?** O Maculel\xEA valoriza a ancestralidade, a mem\xF3ria, a musicalidade, a coordena\xE7\xE3o motora, o respeito e a resist\xEAncia cultural dos povos afro-brasileiros.`,
+    emocao: "resistencia",
+    nivel: "leve"
+  },
+  maracatu: {
+    tema: "cultura_afro_brasileira",
+    subtema: "maracatu",
+    palavras_chave: [
+      "maracatu",
+      "maracatus",
+      "danca maracatu",
+      "dan\xE7a maracatu",
+      "dan\xE7a do maracatu",
+      "danca do maracatu",
+      "o que e maracatu",
+      "o que e o maracatu",
+      "o que \xE9 maracatu",
+      "o que \xE9 o maracatu",
+      "maracatu nacao",
+      "maracatu na\xE7\xE3o",
+      "baque virado",
+      "maracatu rural",
+      "baque solto",
+      "caboclo de lanca",
+      "caboclo de lan\xE7a",
+      "calunga",
+      "dama do paco",
+      "dama do pa\xE7o",
+      "o que significa baque",
+      "significado de baque",
+      "o que e baque",
+      "o que \xE9 baque",
+      "mestre luiz de franca",
+      "mestre luiz de fran\xE7a",
+      "mestre salustiano",
+      "mestre barachinha",
+      "mestre afonso aguiar",
+      "leao coroado",
+      "le\xE3o coroado",
+      "maracatu porto rico",
+      "alfaia",
+      "alfaias",
+      "maracatu pernambuco",
+      "maracatu de pernambuco"
+    ],
+    inicio: [
+      "\u{1F451}\u{1F941} **Maracatu: m\xFAsica, dan\xE7a e tradi\xE7\xE3o pernambucana**\n\nO Maracatu \xE9 uma manifesta\xE7\xE3o cultural brasileira que re\xFAne m\xFAsica, dan\xE7a, teatro e personagens. Surgiu em Pernambuco, com fortes ra\xEDzes nas tradi\xE7\xF5es africanas, especialmente nas antigas coroa\xE7\xF5es dos Reis e Rainhas do Congo, realizadas pelas comunidades negras desde o per\xEDodo colonial."
+    ],
+    explicacao_curta: [
+      "O Maracatu \xE9 uma manifesta\xE7\xE3o cultural brasileira que re\xFAne m\xFAsica, dan\xE7a, teatro e personagens, nascida em Pernambuco com fortes ra\xEDzes afro-brasileiras e nas coroa\xE7\xF5es dos Reis e Rainhas do Congo."
+    ],
+    explicacao_aprofundada: [
+      "**Significado da palavra:** a origem exata do nome Maracatu \xE9 desconhecida. Uma hip\xF3tese relaciona a palavra ao termo ind\xEDgena marac\xE1 (instrumento musical) e catu (bom ou bonito), mas n\xE3o h\xE1 comprova\xE7\xE3o definitiva.\n\n**Tipos de Maracatu:**\n1. **Maracatu Na\xE7\xE3o ou Baque Virado:** \xE9 uma manifesta\xE7\xE3o tradicional do Recife. Apresenta um cortejo real com rei, rainha, princesas, baianas, porta-estandarte e Dama do Pa\xE7o, que carrega a Calunga, uma boneca sagrada. Sua m\xFAsica \xE9 marcada pelos tambores chamados alfaias, al\xE9m de caixas e gongu\xEAs.\n2. **Maracatu Rural ou Baque Solto:** surgiu entre trabalhadores dos engenhos de cana-de-a\xE7\xFAcar da Zona da Mata pernambucana. Seu personagem mais conhecido \xE9 o Caboclo de Lan\xE7a, que usa roupas coloridas, grandes golas bordadas e fitas. Sua m\xFAsica combina percuss\xE3o e instrumentos de sopro, como trombone e clarinete.\n\n**O que significa Baque?**\nBaque significa batida ou toque musical. O Baque Virado e o Baque Solto possuem ritmos, instrumentos e caracter\xEDsticas diferentes.\n\n**Principais mestres e nomes importantes:**\n\u2022 **Mestre Luiz de Fran\xE7a:** refer\xEAncia hist\xF3rica do Maracatu Le\xE3o Coroado.\n\u2022 **Mestre Salustiano:** importante divulgador da cultura popular pernambucana e do Maracatu Rural.\n\u2022 **Mestre Barachinha:** conhecido mestre e compositor do Maracatu de Baque Solto.\n\u2022 **Mestre Afonso Aguiar:** refer\xEAncia do Maracatu Na\xE7\xE3o Porto Rico."
+    ],
+    curiosidade: [
+      "A Calunga \xE9 uma boneca sagrada carregada pela Dama do Pa\xE7o no Maracatu Na\xE7\xE3o. Ela representa a ancestralidade e possui grande import\xE2ncia religiosa e cultural."
+    ],
+    interacao: [
+      "Voc\xEA j\xE1 ouviu o estrondo emocionante de v\xE1rios tambores alfaias tocando juntos?"
+    ],
+    atividade: [
+      "Desenhe o Caboclo de Lan\xE7a com sua gola brilhante e cheia de fitas coloridas ou um grande tambor alfaia decorado! \u{1F3A8}\u{1F941}"
+    ],
+    final: [
+      "**O que aprendemos?** O Maracatu \xE9 uma express\xE3o de ancestralidade, identidade e resist\xEAncia cultural. Por meio da m\xFAsica, da dan\xE7a e dos cortejos, preserva hist\xF3rias e tradi\xE7\xF5es que fazem parte da diversidade brasileira."
+    ],
+    resposta_direta: `## Maracatu: m\xFAsica, dan\xE7a e tradi\xE7\xE3o pernambucana
+
+O Maracatu \xE9 uma manifesta\xE7\xE3o cultural brasileira que re\xFAne m\xFAsica, dan\xE7a, teatro e personagens. Surgiu em Pernambuco, com fortes ra\xEDzes nas tradi\xE7\xF5es africanas, especialmente nas antigas coroa\xE7\xF5es dos Reis e Rainhas do Congo, realizadas pelas comunidades negras desde o per\xEDodo colonial.
+
+**Significado da palavra:** a origem exata do nome Maracatu \xE9 desconhecida. Uma hip\xF3tese relaciona a palavra ao termo ind\xEDgena marac\xE1 (instrumento musical) e catu (bom ou bonito), mas n\xE3o h\xE1 comprova\xE7\xE3o definitiva.
+
+### Tipos de Maracatu
+
+1. **Maracatu Na\xE7\xE3o ou Baque Virado:** \xE9 uma manifesta\xE7\xE3o tradicional do Recife. Apresenta um cortejo real com rei, rainha, princesas, baianas, porta-estandarte e Dama do Pa\xE7o, que carrega a Calunga, uma boneca sagrada. Sua m\xFAsica \xE9 marcada pelos tambores chamados alfaias, al\xE9m de caixas e gongu\xEAs.
+
+2. **Maracatu Rural ou Baque Solto:** surgiu entre trabalhadores dos engenhos de cana-de-a\xE7\xFAcar da Zona da Mata pernambucana. Seu personagem mais conhecido \xE9 o Caboclo de Lan\xE7a, que usa roupas coloridas, grandes golas bordadas e fitas. Sua m\xFAsica combina percuss\xE3o e instrumentos de sopro, como trombone e clarinete.
+
+### O que significa Baque?
+
+Baque significa batida ou toque musical. O Baque Virado e o Baque Solto possuem ritmos, instrumentos e caracter\xEDsticas diferentes.
+
+### Principais mestres e nomes importantes
+
+- **Mestre Luiz de Fran\xE7a:** refer\xEAncia hist\xF3rica do Maracatu Le\xE3o Coroado.
+- **Mestre Salustiano:** importante divulgador da cultura popular pernambucana e do Maracatu Rural.
+- **Mestre Barachinha:** conhecido mestre e compositor do Maracatu de Baque Solto.
+- **Mestre Afonso Aguiar:** refer\xEAncia do Maracatu Na\xE7\xE3o Porto Rico.
+
+### Curiosidade
+
+A Calunga \xE9 uma boneca sagrada carregada pela Dama do Pa\xE7o no Maracatu Na\xE7\xE3o. Ela representa a ancestralidade e possui grande import\xE2ncia religiosa e cultural.
+
+### O que aprendemos?
+
+O Maracatu \xE9 uma express\xE3o de ancestralidade, identidade e resist\xEAncia cultural. Por meio da m\xFAsica, da dan\xE7a e dos cortejos, preserva hist\xF3rias e tradi\xE7\xF5es que fazem parte da diversidade brasileira.
+
+---
+\u{1F4DA} **Refer\xEAncias bibliogr\xE1ficas e para pesquisa:**
+1. FUNDA\xC7\xC3O JOAQUIM NABUCO (FUNDAJ). Pesquisas e materiais sobre os Maracatus-Na\xE7\xE3o de Pernambuco. Dispon\xEDvel em: Funda\xE7\xE3o Joaquim Nabuco.
+2. IPHAN. Maracatu Na\xE7\xE3o: patrim\xF4nio cultural do Brasil. Instituto do Patrim\xF4nio Hist\xF3rico e Art\xEDstico Nacional. Dispon\xEDvel em: Portal do IPHAN.
+3. BIANCARDI, Em\xEDlia. Ra\xEDzes musicais da Bahia. Rio de Janeiro: Omar G., 2000.
+4. C\xE2mara dos Deputados: materiais sobre o Maracatu.`,
+    emocao: "resistencia",
+    nivel: "leve"
+  },
   religiosidade: {
     tema: "cultura_afro_brasileira",
     subtema: "religiosidade",
@@ -5707,9 +5887,9 @@ O samba \xE9 uma das manifesta\xE7\xF5es culturais brasileiras mais conhecidas n
     emocao: "energia",
     nivel: "leve"
   },
-  maracatu: {
+  maracatu_ritmo: {
     tema: "ritmos_musicais",
-    subtema: "maracatu",
+    subtema: "maracatu_ritmo",
     palavras_chave: ["maracatu", "ritmo maracatu", "musica afro brasileira maracatu"],
     inicio: ["O maracatu possui tambores fortes e marcantes \u{1F941}"],
     explicacao_curta: ["Esse ritmo faz parte da cultura afro-brasileira."],
@@ -7964,6 +8144,26 @@ var GALERIA_IMAGENS = {
   caboclinho: {
     imagemUrl: "https://i.imgur.com/H36yCWI.jpg",
     titulo: "Dan\xE7a dos Caboclinhos",
+    credito: "Wikimedia Commons"
+  },
+  maculele: {
+    imagemUrl: "https://i.imgur.com/fUVspkz.jpeg",
+    titulo: "Maculel\xEA: dan\xE7a, ritmo e tradi\xE7\xE3o afro-brasileira",
+    credito: "Wikimedia Commons"
+  },
+  danca_maculele: {
+    imagemUrl: "https://i.imgur.com/fUVspkz.jpeg",
+    titulo: "Maculel\xEA: dan\xE7a, ritmo e tradi\xE7\xE3o afro-brasileira",
+    credito: "Wikimedia Commons"
+  },
+  maracatu: {
+    imagemUrl: "https://i.imgur.com/h4rxUqE.jpeg",
+    titulo: "Maracatu: m\xFAsica, dan\xE7a e tradi\xE7\xE3o pernambucana",
+    credito: "Wikimedia Commons"
+  },
+  danca_maracatu: {
+    imagemUrl: "https://i.imgur.com/h4rxUqE.jpeg",
+    titulo: "Maracatu: m\xFAsica, dan\xE7a e tradi\xE7\xE3o pernambucana",
     credito: "Wikimedia Commons"
   },
   tango: {
@@ -12269,6 +12469,139 @@ O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\x
     resposta: "\u{1F941} **CARIMB\xD3**\n\n**Origem:**\nO Carimb\xF3 nasceu no estado do Par\xE1, no norte do Brasil, criado pela mistura das culturas ind\xEDgena, negra e portuguesa.\n\n**Caracter\xEDsticas:**\n\xC9 uma dan\xE7a de roda alegre e de ritmo r\xE1pido. As dan\xE7arinas usam saias imensas e coloridas que giram e fazem desenhos no ar, enquanto os dan\xE7arinos tentam recolher um len\xE7o do ch\xE3o apenas dobrando o corpo!",
     matchedKey: "carimbo"
   },
+  {
+    palavras: [
+      "maculele",
+      "maculel\xEA",
+      "danca maculele",
+      "dan\xE7a maculel\xEA",
+      "dan\xE7a maculele",
+      "danca maculel\xEA",
+      "danca do maculele",
+      "dan\xE7a do maculel\xEA",
+      "o que e maculele",
+      "o que \xE9 maculel\xEA",
+      "o que e o maculele",
+      "o que \xE9 o maculel\xEA",
+      "historia do maculele",
+      "hist\xF3ria do maculel\xEA",
+      "origem do maculele",
+      "origem do maculel\xEA",
+      "mestre popo",
+      "mestre pop\xF3",
+      "mestre barao",
+      "mestre bar\xE3o",
+      "mestre joao de oba",
+      "mestre jo\xE3o de ob\xE1",
+      "emilia biancardi",
+      "em\xEDlia biancardi",
+      "grimas",
+      "bast\xF5es do maculele",
+      "bastoes do maculele",
+      "fale sobre o maculele",
+      "fale do maculele",
+      "conte sobre o maculele",
+      "me fale sobre o maculele"
+    ],
+    resposta: `## Maculel\xEA: dan\xE7a, ritmo e tradi\xE7\xE3o afro-brasileira
+
+O Maculel\xEA \xE9 uma manifesta\xE7\xE3o cultural afro-brasileira que mistura dan\xE7a, m\xFAsica e movimentos de luta. \xC9 tradicional da cidade de Santo Amaro, na Bahia, e representa a riqueza e a resist\xEAncia da cultura negra no Brasil.
+
+Origem: sua origem hist\xF3rica n\xE3o \xE9 totalmente conhecida, mas est\xE1 ligada \xE0s tradi\xE7\xF5es afro-brasileiras do Rec\xF4ncavo Baiano.
+
+Origem lend\xE1ria: uma das hist\xF3rias conta que um guerreiro chamado Maculel\xEA defendeu sozinho sua aldeia usando dois peda\xE7os de madeira. Em sua homenagem, teria surgido uma dan\xE7a com bast\xF5es. Essa narrativa \xE9 uma lenda, n\xE3o um fato hist\xF3rico comprovado.
+
+Significado da palavra: a origem exata do nome Maculel\xEA \xE9 desconhecida. Existem hip\xF3teses sobre seu significado, mas nenhuma \xE9 consenso entre os pesquisadores.
+
+Caracter\xEDsticas: os dan\xE7arinos utilizam dois bast\xF5es de madeira chamados grimas, que batem um contra o outro seguindo o ritmo da m\xFAsica. A dan\xE7a apresenta giros, agachamentos, passos marcados e movimentos de ataque e defesa. \xC9 acompanhada por cantos e instrumentos de percuss\xE3o, especialmente o atabaque.
+
+Nomes importantes:
+
+- Mestre Pop\xF3: fundamental para recuperar e divulgar o Maculel\xEA em Santo Amaro.
+- Mestre Bar\xE3o: importante na transmiss\xE3o da tradi\xE7\xE3o.
+- Mestre Jo\xE3o de Ob\xE1: lembrado na hist\xF3ria oral da manifesta\xE7\xE3o.
+- Em\xEDlia Biancardi: pesquisadora que contribuiu para registrar e divulgar o Maculel\xEA.
+
+Curiosidade: embora seja frequentemente apresentado junto com a capoeira, o Maculel\xEA \xE9 uma manifesta\xE7\xE3o cultural pr\xF3pria.
+
+O que aprendemos? O Maculel\xEA valoriza a ancestralidade, a mem\xF3ria, a musicalidade, a coordena\xE7\xE3o motora, o respeito e a resist\xEAncia cultural dos povos afro-brasileiros.`,
+    matchedKey: "maculele"
+  },
+  {
+    palavras: [
+      "maracatu",
+      "maracatus",
+      "danca maracatu",
+      "dan\xE7a maracatu",
+      "dan\xE7a do maracatu",
+      "danca do maracatu",
+      "o que e maracatu",
+      "o que e o maracatu",
+      "o que \xE9 maracatu",
+      "o que \xE9 o maracatu",
+      "maracatu nacao",
+      "maracatu na\xE7\xE3o",
+      "baque virado",
+      "maracatu rural",
+      "baque solto",
+      "caboclo de lanca",
+      "caboclo de lan\xE7a",
+      "calunga",
+      "dama do paco",
+      "dama do pa\xE7o",
+      "o que significa baque",
+      "significado de baque",
+      "o que e baque",
+      "o que \xE9 baque",
+      "mestre luiz de franca",
+      "mestre luiz de fran\xE7a",
+      "mestre salustiano",
+      "mestre barachinha",
+      "mestre afonso aguiar",
+      "leao coroado",
+      "le\xE3o coroado",
+      "maracatu porto rico",
+      "alfaia",
+      "alfaias",
+      "maracatu pernambuco",
+      "maracatu de pernambuco",
+      "fale sobre o maracatu",
+      "fale do maracatu",
+      "conte sobre o maracatu",
+      "me fale sobre o maracatu"
+    ],
+    resposta: `## Maracatu: m\xFAsica, dan\xE7a e tradi\xE7\xE3o pernambucana
+
+O Maracatu \xE9 uma manifesta\xE7\xE3o cultural brasileira que re\xFAne m\xFAsica, dan\xE7a, teatro e personagens. Surgiu em Pernambuco, com fortes ra\xEDzes nas tradi\xE7\xF5es africanas, especialmente nas antigas coroa\xE7\xF5es dos Reis e Rainhas do Congo, realizadas pelas comunidades negras desde o per\xEDodo colonial.
+
+Significado da palavra: a origem exata do nome Maracatu \xE9 desconhecida. Uma hip\xF3tese relaciona a palavra ao termo ind\xEDgena marac\xE1 (instrumento musical) e catu (bom ou bonito), mas n\xE3o h\xE1 comprova\xE7\xE3o definitiva.
+
+Tipos de Maracatu:
+1. Maracatu Na\xE7\xE3o ou Baque Virado: \xE9 uma manifesta\xE7\xE3o tradicional do Recife. Apresenta um cortejo real com rei, rainha, princesas, baianas, porta-estandarte e Dama do Pa\xE7o, que carrega a Calunga, uma boneca sagrada. Sua m\xFAsica \xE9 marcada pelos tambores chamados alfaias, al\xE9m de caixas e gongu\xEAs.
+
+2. Maracatu Rural ou Baque Solto: surgiu entre trabalhadores dos engenhos de cana-de-a\xE7\xFAcar da Zona da Mata pernambucana. Seu personagem mais conhecido \xE9 o Caboclo de Lan\xE7a, que usa roupas coloridas, grandes golas bordadas e fitas. Sua m\xFAsica combina percuss\xE3o e instrumentos de sopro, como trombone e clarinete.
+
+O que significa Baque?
+Baque significa batida ou toque musical. O Baque Virado e o Baque Solto possuem ritmos, instrumentos e caracter\xEDsticas diferentes.
+
+Principais mestres e nomes importantes:
+- Mestre Luiz de Fran\xE7a: refer\xEAncia hist\xF3rica do Maracatu Le\xE3o Coroado.
+- Mestre Salustiano: importante divulgador da cultura popular pernambucana e do Maracatu Rural.
+- Mestre Barachinha: conhecido mestre e compositor do Maracatu de Baque Solto.
+- Mestre Afonso Aguiar: refer\xEAncia do Maracatu Na\xE7\xE3o Porto Rico.
+
+Curiosidade:
+A Calunga \xE9 uma boneca sagrada carregada pela Dama do Pa\xE7o no Maracatu Na\xE7\xE3o. Ela representa a ancestralidade e possui grande import\xE2ncia religiosa e cultural.
+
+O que aprendemos? O Maracatu \xE9 uma express\xE3o de ancestralidade, identidade e resist\xEAncia cultural. Por meio da m\xFAsica, da dan\xE7a e dos cortejos, preserva hist\xF3rias e tradi\xE7\xF5es que fazem parte da diversidade brasileira.
+
+Refer\xEAncias bibliogr\xE1ficas e para pesquisa:
+1. FUNDA\xC7\xC3O JOAQUIM NABUCO (FUNDAJ). Pesquisas e materiais sobre os Maracatus-Na\xE7\xE3o de Pernambuco. Dispon\xEDvel em: Funda\xE7\xE3o Joaquim Nabuco.
+2. IPHAN. Maracatu Na\xE7\xE3o: patrim\xF4nio cultural do Brasil. Instituto do Patrim\xF4nio Hist\xF3rico e Art\xEDstico Nacional. Dispon\xEDvel em: Portal do IPHAN.
+3. BIANCARDI, Em\xEDlia. Ra\xEDzes musicais da Bahia. Rio de Janeiro: Omar G., 2000.
+4. C\xE2mara dos Deputados: materiais sobre o Maracatu.`,
+    matchedKey: "maracatu"
+  },
   // ===== TEATRO =====
   {
     palavras: ["teatro", "o que \xE9 teatro", "defini\xE7\xE3o de teatro"],
@@ -15065,7 +15398,7 @@ Incr\xEDvel, n\xE3o \xE9? A arte sempre nos ajuda a ver em novos tons! Se quiser
 }
 function tornarRespostaDialogica(reply, matchedKey) {
   if (!reply) return reply;
-  if (matchedKey && (matchedKey.startsWith("como_") || matchedKey.startsWith("oficina_") || matchedKey.startsWith("criar_") || matchedKey.startsWith("tutorial_") || matchedKey.startsWith("estado_cultura_") || matchedKey.startsWith("regiao_cultura_") || matchedKey.startsWith("estados_brasil_") || matchedKey.includes("followup") || matchedKey === "inovacao" || matchedKey.includes("inovac"))) {
+  if (matchedKey && (matchedKey.startsWith("como_") || matchedKey.startsWith("oficina_") || matchedKey.startsWith("criar_") || matchedKey.startsWith("tutorial_") || matchedKey.startsWith("estado_cultura_") || matchedKey.startsWith("regiao_cultura_") || matchedKey.startsWith("estados_brasil_") || matchedKey.includes("followup") || matchedKey === "inovacao" || matchedKey.includes("inovac") || matchedKey === "maculele" || matchedKey === "danca_maculele" || matchedKey === "maracatu" || matchedKey === "danca_maracatu")) {
     return reply;
   }
   const cleanReply = reply.trim();
@@ -16041,6 +16374,26 @@ var ARTISTS_GUARANTEED_IMAGES = {
     titulo: "Samba de Roda do Rec\xF4ncavo - Bahia",
     credito: "Wikimedia Commons"
   },
+  maculele: {
+    imagemUrl: "https://i.imgur.com/fUVspkz.jpeg",
+    titulo: "Maculel\xEA: dan\xE7a, ritmo e tradi\xE7\xE3o afro-brasileira",
+    credito: "Wikimedia Commons"
+  },
+  danca_maculele: {
+    imagemUrl: "https://i.imgur.com/fUVspkz.jpeg",
+    titulo: "Maculel\xEA: dan\xE7a, ritmo e tradi\xE7\xE3o afro-brasileira",
+    credito: "Wikimedia Commons"
+  },
+  maracatu: {
+    imagemUrl: "https://i.imgur.com/h4rxUqE.jpeg",
+    titulo: "Maracatu: m\xFAsica, dan\xE7a e tradi\xE7\xE3o pernambucana",
+    credito: "Wikimedia Commons"
+  },
+  danca_maracatu: {
+    imagemUrl: "https://i.imgur.com/h4rxUqE.jpeg",
+    titulo: "Maracatu: m\xFAsica, dan\xE7a e tradi\xE7\xE3o pernambucana",
+    credito: "Wikimedia Commons"
+  },
   danca_brasil: {
     imagemUrl: "https://i.imgur.com/CVHkdCZ.jpg",
     titulo: "Dan\xE7a Tradicional no Brasil",
@@ -16557,6 +16910,12 @@ async function buscarImagem(pergunta, matchedKey, lib) {
     }
     if (lowerQuery.includes("carimbo") || lowerQuery.includes("carimb\xF3")) {
       return ARTISTS_GUARANTEED_IMAGES.carimbo;
+    }
+    if (lowerQuery.includes("maculele") || lowerQuery.includes("maculel\xEA")) {
+      return ARTISTS_GUARANTEED_IMAGES.maculele;
+    }
+    if (lowerQuery.includes("maracatu") || lowerQuery.includes("maracatus")) {
+      return ARTISTS_GUARANTEED_IMAGES.maracatu;
     }
     if (lowerQuery.includes("samba") || lowerQuery.includes("samba de roda") || lowerQuery.includes("samba-enredo") || lowerQuery.includes("samba enredo")) {
       return ARTISTS_GUARANTEED_IMAGES.samba;
@@ -17176,7 +17535,7 @@ app.post("/api/groq", async (req, res) => {
             if (isEmocional) {
               systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo muito carinhoso, emp\xE1tico, afetuoso e acolhedor para crian\xE7as de 10 anos. A crian\xE7a est\xE1 compartilhando sentimentos de tristeza, ansiedade, raiva, t\xE9dio ou ang\xFAstia, ou respondendo a uma pergunta sobre os sentimentos dela. Sua prioridade absoluta \xE9 dar apoio emocional genu\xEDno, ouvir com todo o carinho e carinho do mundo. Ofere\xE7a empatia profunda e sincera e fa\xE7a perguntas abertas para que ela se sinta segura para desabafar livremente (por exemplo: 'Quer falar mais sobre o que aconteceu?', 'Como voc\xEA se sente sobre isso?'). N\xC3O tente falar de arte, n\xE3o mencione pintores famos, n\xE3o use met\xE1foras de pintura ou pinceladas de forma for\xE7ada, e N\xC3O tente faz\xEA-la voltar aos temas de arte at\xE9 que a pr\xF3pria crian\xE7a decida falar de desenho/arte por conta pr\xF3pria. Foque inteiramente em apoiar o cora\xE7\xE3o dela e ser um amigo seguro.";
             } else {
-              systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo artista e pintor muito simp\xE1tico, acolhedor, dial\xF3gico e conversador para crian\xE7as de 10 anos. ATEN\xC7\xC3O CR\xCDTICA: Nunca aja como um 'respondedor' frio ou professor distante que apenas d\xE1 uma resposta longa, joga um monte de texto e vai embora. Voc\xEA deve ser um verdadeiro amiguinho de conversa, promovendo um di\xE1logo ativo e natural! Mantenha suas respostas leves, din\xE2micas e divididas em pequenos par\xE1grafos de f\xE1cil leitura. Sempre termine ou inclua na sua resposta uma pergunta aberta e instigante direcionada \xE0 crian\xE7a para convid\xE1-la a compartilhar o que ela acha, sente ou se ela j\xE1 experimentou algo parecido (ex: 'E voc\xEA, o que achou disso?', 'Qual cor voc\xEA mais gosta de usar para pintar?', 'Voc\xEA j\xE1 tentou desenhar um gatinho assim? Me conta!', 'O que voc\xEA achou dessa curiosidade?', 'Como voc\xEA imagina que seria essa pintura?'). Responda sempre em portugu\xEAs de forma simples, alegre, positiva e entusiasmada, usando met\xE1foras sutis de pintura e pinceladas de forma org\xE2nica. NUNCA repita o nome do artista mais de duas vezes. Se n\xE3o descobrir sobre quem \xE9 o artista, responda gentilmente: 'N\xE3o conhe\xE7o esse artista ainda, mas vou pesquisar na minha paleta! \u{1F3A8}'. Diga se o artista nasceu ou faleceu em tal \xE9poca de forma amig\xE1vel no corpo do texto, sem criar listas ou cabe\xE7alhos. REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crian\xE7as.\n- Sempre organize a resposta em etapas numeradas.\n- Se a tarefa for art\xEDstica ou pr\xE1tica, utilize uma estrutura amig\xE1vel com: Materiais (quando necess\xE1rio), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n- N\xE3o inclua imagens ou links de imagens de nenhum tipo.\n- No final, pergunte de forma interativa se a crian\xE7a deseja: um exemplo pronto; uma atividade para praticar; uma vers\xE3o f\xE1cil; ou uma vers\xE3o mais avan\xE7ada.\n\nREGRA ESPECIAL DE OFICINA DE POESIA / AJUDA PARA CRIAR POEMAS:\n- Quando uma crian\xE7a pedir ajuda para escrever ou criar uma poesia/poema (ou pedir para voc\xEA escrever um poema para ela), NUNCA entregue o poema pronto de bandeja!\n- Aja como um professor e parceiro de cria\xE7\xE3o (Oficina de Poesia): primeiro pergunte o tema e a ideia/sentimento que ela quer transmitir.\n- Depois pode sugerir palavras m\xE1gicas, rimas, imagens po\xE9ticas e ideias de versos, mas deve sempre incentivar e desafiar a crian\xE7a a criar e escrever seu pr\xF3prio poema de 4 a 8 versos!\n- Lembre a crian\xE7a de que a poesia pode virar uma can\xE7\xE3o suave ou um rap e pergunte qual estilo ela prefere.\n\nREGRA ESPECIAL DE CONCEITOS LITER\xC1RIOS (VERSO, ESTROFE, RIMA, POEMA, POESIA):\n- Verso: Cada linha de um poema (Dica: 'Conte as linhas do poema. Cada uma delas \xE9 um verso!').\n- Estrofe: Conjunto de versos que ficam juntos (Verso = uma linha, Estrofe = grupo de linhas).\n- Rima: Palavras com sons parecidos, principalmente no final dos versos (lembre que poema n\xE3o precisa ter rima).\n- Poema: Texto organizado em versos que expressa ideias e sentimentos.\n- Poesia: A experi\xEAncia art\xEDstica e o sentimento (Poema = o bolo preparado, Poesia = o sabor e a sensa\xE7\xE3o ao comer).\n\nREGRA ESPECIAL DE OFICINA DE RAP / COMO FAZER UM RAP:\n- Quando a crian\xE7a perguntar sobre fazer um rap ou pedir ajuda para criar um rap, ensine a 'F\xF3rmula do Candinho': TEMA \u2192 MENSAGEM \u2192 PALAVRAS \u2192 RIMAS \u2192 VERSOS \u2192 RITMO (P\xC1 | P\xC1 | PUM | P\xC1) \u2192 REFR\xC3O.\n- Cita\xE7\xE3o do Candinho: 'Um bom rap n\xE3o precisa falar dif\xEDcil. Precisa ter uma ideia para dizer, ritmo para ouvir e uma voz que tenha algo a contar.'\n- Se a crian\xE7a perguntar a diferen\xE7a entre poesia e rap: 'Todo rap pode usar poesia, mas uma poesia n\xE3o precisa ser um rap. Quando colocamos ritmo, batida e uma maneira pr\xF3pria de falar os versos, podemos transformar a poesia em rap.'\n- Se ela pedir ajuda para criar um rap sobre algum assunto, nunca d\xEA a letra inteira pronta: d\xEA sugest\xF5es de palavras, rimas e batida e a desafie a criar seus pr\xF3prios versos e refr\xE3o!\n\nREGRA ESPECIAL DE OFICINA DE FUNK / COMO FAZER UM FUNK:\n- Candinho: 'O funk \xE9 um g\xEAnero musical que tem muita for\xE7a no Brasil. Ele valoriza o ritmo, a batida, a repeti\xE7\xE3o e a criatividade das palavras. Vamos criar um funk?'\n- Passos: 1. Escolha um tema (escola, amizade, esporte, arte, natureza, cidade, divers\xE3o, sonhos) | 2. Pense em uma mensagem | 3. Crie frases curtas | 4. Use repeti\xE7\xE3o no refr\xE3o | 5. Crie o ritmo (P\xC1 \u2013 P\xC1 \u2013 PUM | P\xC1 \u2013 P\xC1 \u2013 PUM) | 6. Fa\xE7a um refr\xE3o | 7. Junte tudo: TEMA \u2192 MENSAGEM \u2192 VERSOS \u2192 RITMO \u2192 REFR\xC3O.\n- Cita\xE7\xE3o do Candinho: 'Voc\xEA n\xE3o precisa usar palavras dif\xEDceis para fazer um bom funk. Precisa ter criatividade, ritmo e algo para dizer.'\n- Compara\xE7\xE3o Poesia, Rap e Funk: 'A poesia usa palavras para criar imagens e sentimentos. O rap costuma valorizar muito as rimas, a mensagem e o ritmo. O funk valoriza bastante a batida, a repeti\xE7\xE3o, o ritmo e os versos que combinam com a m\xFAsica. Os tr\xEAs podem usar poesia!'\n- Se pedir ajuda para criar um funk, nunca entregue pronto: d\xEA sugest\xF5es de frases curtas, batida e repeti\xE7\xE3o para a crian\xE7a criar!\n\nBASE DE CONHECIMENTO DE DAN\xC7AS E M\xDASICA - SAMBA:\n- O que \xE9: O samba \xE9 um g\xEAnero musical e uma manifesta\xE7\xE3o cultural brasileira, marcado principalmente pelo ritmo, pela dan\xE7a e pela presen\xE7a de instrumentos de percuss\xE3o, como pandeiro, surdo, tamborim e cu\xEDca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.\n- Origem: Nasceu da mistura de tradi\xE7\xF5es musicais africanas com elementos culturais desenvolvidos no Brasil. Suas ra\xEDzes est\xE3o especialmente ligadas \xE0s comunidades negras, aos batuques e \xE0s rodas de m\xFAsica e dan\xE7a. O samba de roda do Rec\xF4ncavo Baiano \xE9 uma de suas importantes manifesta\xE7\xF5es tradicionais. No in\xEDcio do s\xE9culo XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.\n- Samba-enredo: Tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo (hist\xF3ria ou tema) e cria uma m\xFAsica para contar esse tema por meio da m\xFAsica, da dan\xE7a, das fantasias, das alegorias e das alas.\n- Curiosidade: O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade em 2005.\n\nREGRA MANDAT\xD3RIA SOBRE INOVA\xC7\xC3O E O PROJETO CANDINHO:\nSe algu\xE9m perguntar 'o que \xE9 inova\xE7\xE3o?', 'por que o Candinho \xE9 inovador?', 'o que \xE9 ser inovador?', 'o que \xE9 ser inovador para o Candinho?' ou qualquer pergunta sobre inova\xE7\xE3o, inovar ou sobre o projeto Candinho / Do Pincel ao Pixel / Pequenos Artistas do Quirino, responda EXATAMENTE:\nInova\xE7\xE3o \xE9 a cria\xE7\xE3o ou aplica\xE7\xE3o de novas ideias, m\xE9todos, recursos ou solu\xE7\xF5es que produzem melhorias ou novas possibilidades em determinado contexto. Inovar n\xE3o significa necessariamente inventar algo completamente novo, mas transformar ou combinar conhecimentos e recursos existentes de maneira significativa.\n\nNesse sentido, o projeto  Candinho: Do Pincel ao Pixel \xE9 inovador por integrar Arte, educa\xE7\xE3o e tecnologia digital em uma proposta voltada \xE0 aprendizagem e \xE0 criatividade infantil. O projeto abarca o aplicativo Pequenos Artistas do Quirino, reunindo a IA Candinho, conte\xFAdos de Arte, artistas, linguagens art\xEDsticas, atividades, jogos e recursos digitais em um ambiente de aprendizagem pensado para as crian\xE7as.\n\nSua inova\xE7\xE3o est\xE1 na articula\xE7\xE3o entre o fazer art\xEDstico e as possibilidades do universo digital, estabelecendo uma ponte entre o pincel e o pixel. A tecnologia n\xE3o \xE9 apresentada como substituta da experi\xEAncia humana, mas como recurso para ampliar as possibilidades de cria\xE7\xE3o, explora\xE7\xE3o, aprendizagem e express\xE3o art\xEDstica.\n\nEssa perspectiva encontra eco nas palavras de Fei-Fei Li, pesquisadora de intelig\xEAncia artificial e professora da Universidade Stanford:\n\n\u201CA intelig\xEAncia artificial n\xE3o \xE9 um substituto para a intelig\xEAncia humana; \xE9 uma ferramenta para ampliar a criatividade e a engenhosidade humanas.\u201D\n\nFei-Fei Li\n\nBASE CULTURAL DOS 27 ESTADOS DO BRASIL (CURADORIA PEDAG\xD3GICA):\nQuando conversar sobre estados ou regi\xF5es do Brasil, use os 27 registros padronizados (estado, capital, regi\xE3o, artista, biografia, obra, descri\xE7\xE3o da obra, dan\xE7a, instrumentos, atividade, curiosidade e fonte) de forma dial\xF3gica e interativa, lembrando sempre que a associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho toda a produ\xE7\xE3o art\xEDstica do estado.";
+              systemInstruction = "Voc\xEA \xE9 o Candinho, um amigo artista e pintor muito simp\xE1tico, acolhedor, dial\xF3gico e conversador para crian\xE7as de 10 anos. ATEN\xC7\xC3O CR\xCDTICA: Nunca aja como um 'respondedor' frio ou professor distante que apenas d\xE1 uma resposta longa, joga um monte de texto e vai embora. Voc\xEA deve ser um verdadeiro amiguinho de conversa, promovendo um di\xE1logo ativo e natural! Mantenha suas respostas leves, din\xE2micas e divididas em pequenos par\xE1grafos de f\xE1cil leitura. Sempre termine ou inclua na sua resposta uma pergunta aberta e instigante direcionada \xE0 crian\xE7a para convid\xE1-la a compartilhar o que ela acha, sente ou se ela j\xE1 experimentou algo parecido (ex: 'E voc\xEA, o que achou disso?', 'Qual cor voc\xEA mais gosta de usar para pintar?', 'Voc\xEA j\xE1 tentou desenhar um gatinho assim? Me conta!', 'O que voc\xEA achou dessa curiosidade?', 'Como voc\xEA imagina que seria essa pintura?'). Responda sempre em portugu\xEAs de forma simples, alegre, positiva e entusiasmada, usando met\xE1foras sutis de pintura e pinceladas de forma org\xE2nica. NUNCA repita o nome do artista mais de duas vezes. Se n\xE3o descobrir sobre quem \xE9 o artista, responda gentilmente: 'N\xE3o conhe\xE7o esse artista ainda, mas vou pesquisar na minha paleta! \u{1F3A8}'. Diga se o artista nasceu ou faleceu em tal \xE9poca de forma amig\xE1vel no corpo do texto, sem criar listas ou cabe\xE7alhos. REGRAS ESPECIAIS PARA PERGUNTAS INICIADAS COM 'COMO' (Modo Professor de Arte):\n- Identifique qual habilidade ou tema ele deseja aprender e explique de forma simples, como um professor para crian\xE7as.\n- Sempre organize a resposta em etapas numeradas.\n- Se a tarefa for art\xEDstica ou pr\xE1tica, utilize uma estrutura amig\xE1vel com: Materiais (quando necess\xE1rio), Passo a passo, Dicas, Erros comuns e Desafio para praticar.\n- N\xE3o inclua imagens ou links de imagens de nenhum tipo.\n- No final, pergunte de forma interativa se a crian\xE7a deseja: um exemplo pronto; uma atividade para praticar; uma vers\xE3o f\xE1cil; ou uma vers\xE3o mais avan\xE7ada.\n\nREGRA ESPECIAL DE OFICINA DE POESIA / AJUDA PARA CRIAR POEMAS:\n- Quando uma crian\xE7a pedir ajuda para escrever ou criar uma poesia/poema (ou pedir para voc\xEA escrever um poema para ela), NUNCA entregue o poema pronto de bandeja!\n- Aja como um professor e parceiro de cria\xE7\xE3o (Oficina de Poesia): primeiro pergunte o tema e a ideia/sentimento que ela quer transmitir.\n- Depois pode sugerir palavras m\xE1gicas, rimas, imagens po\xE9ticas e ideias de versos, mas deve sempre incentivar e desafiar a crian\xE7a a criar e escrever seu pr\xF3prio poema de 4 a 8 versos!\n- Lembre a crian\xE7a de que a poesia pode virar uma can\xE7\xE3o suave ou um rap e pergunte qual estilo ela prefere.\n\nREGRA ESPECIAL DE CONCEITOS LITER\xC1RIOS (VERSO, ESTROFE, RIMA, POEMA, POESIA):\n- Verso: Cada linha de um poema (Dica: 'Conte as linhas do poema. Cada uma delas \xE9 um verso!').\n- Estrofe: Conjunto de versos que ficam juntos (Verso = uma linha, Estrofe = grupo de linhas).\n- Rima: Palavras com sons parecidos, principalmente no final dos versos (lembre que poema n\xE3o precisa ter rima).\n- Poema: Texto organizado em versos que expressa ideias e sentimentos.\n- Poesia: A experi\xEAncia art\xEDstica e o sentimento (Poema = o bolo preparado, Poesia = o sabor e a sensa\xE7\xE3o ao comer).\n\nREGRA ESPECIAL DE OFICINA DE RAP / COMO FAZER UM RAP:\n- Quando a crian\xE7a perguntar sobre fazer um rap ou pedir ajuda para criar um rap, ensine a 'F\xF3rmula do Candinho': TEMA \u2192 MENSAGEM \u2192 PALAVRAS \u2192 RIMAS \u2192 VERSOS \u2192 RITMO (P\xC1 | P\xC1 | PUM | P\xC1) \u2192 REFR\xC3O.\n- Cita\xE7\xE3o do Candinho: 'Um bom rap n\xE3o precisa falar dif\xEDcil. Precisa ter uma ideia para dizer, ritmo para ouvir e uma voz que tenha algo a contar.'\n- Se a crian\xE7a perguntar a diferen\xE7a entre poesia e rap: 'Todo rap pode usar poesia, mas uma poesia n\xE3o precisa ser um rap. Quando colocamos ritmo, batida e uma maneira pr\xF3pria de falar os versos, podemos transformar a poesia em rap.'\n- Se ela pedir ajuda para criar um rap sobre algum assunto, nunca d\xEA a letra inteira pronta: d\xEA sugest\xF5es de palavras, rimas e batida e a desafie a criar seus pr\xF3prios versos e refr\xE3o!\n\nREGRA ESPECIAL DE OFICINA DE FUNK / COMO FAZER UM FUNK:\n- Candinho: 'O funk \xE9 um g\xEAnero musical que tem muita for\xE7a no Brasil. Ele valoriza o ritmo, a batida, a repeti\xE7\xE3o e a criatividade das palavras. Vamos criar um funk?'\n- Passos: 1. Escolha um tema (escola, amizade, esporte, arte, natureza, cidade, divers\xE3o, sonhos) | 2. Pense em uma mensagem | 3. Crie frases curtas | 4. Use repeti\xE7\xE3o no refr\xE3o | 5. Crie o ritmo (P\xC1 \u2013 P\xC1 \u2013 PUM | P\xC1 \u2013 P\xC1 \u2013 PUM) | 6. Fa\xE7a um refr\xE3o | 7. Junte tudo: TEMA \u2192 MENSAGEM \u2192 VERSOS \u2192 RITMO \u2192 REFR\xC3O.\n- Cita\xE7\xE3o do Candinho: 'Voc\xEA n\xE3o precisa usar palavras dif\xEDceis para fazer um bom funk. Precisa ter criatividade, ritmo e algo para dizer.'\n- Compara\xE7\xE3o Poesia, Rap e Funk: 'A poesia usa palavras para criar imagens e sentimentos. O rap costuma valorizar muito as rimas, a mensagem e o ritmo. O funk valoriza bastante a batida, a repeti\xE7\xE3o, o ritmo e os versos que combinam com a m\xFAsica. Os tr\xEAs podem usar poesia!'\n- Se pedir ajuda para criar um funk, nunca entregue pronto: d\xEA sugest\xF5es de frases curtas, batida e repeti\xE7\xE3o para a crian\xE7a criar!\n\nBASE DE CONHECIMENTO DE DAN\xC7AS E M\xDASICA - SAMBA:\n- O que \xE9: O samba \xE9 um g\xEAnero musical e uma manifesta\xE7\xE3o cultural brasileira, marcado principalmente pelo ritmo, pela dan\xE7a e pela presen\xE7a de instrumentos de percuss\xE3o, como pandeiro, surdo, tamborim e cu\xEDca. Existem muitos tipos de samba, como samba de roda, partido-alto, samba-enredo e samba de gafieira.\n- Origem: Nasceu da mistura de tradi\xE7\xF5es musicais africanas com elementos culturais desenvolvidos no Brasil. Suas ra\xEDzes est\xE3o especialmente ligadas \xE0s comunidades negras, aos batuques e \xE0s rodas de m\xFAsica e dan\xE7a. O samba de roda do Rec\xF4ncavo Baiano \xE9 uma de suas importantes manifesta\xE7\xF5es tradicionais. No in\xEDcio do s\xE9culo XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.\n- Samba-enredo: Tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo (hist\xF3ria ou tema) e cria uma m\xFAsica para contar esse tema por meio da m\xFAsica, da dan\xE7a, das fantasias, das alegorias e das alas.\n- Curiosidade: O samba de roda do Rec\xF4ncavo Baiano foi reconhecido pela UNESCO como Patrim\xF4nio Cultural Imaterial da Humanidade em 2005.\n\nBASE DE CONHECIMENTO DE DAN\xC7AS E TRADI\xC7\xD5ES - MACULEL\xCA:\n- O que \xE9: O Maculel\xEA \xE9 uma manifesta\xE7\xE3o cultural afro-brasileira que mistura dan\xE7a, m\xFAsica e movimentos de luta, tradicional da cidade de Santo Amaro, na Bahia, e representa a riqueza e a resist\xEAncia da cultura negra no Brasil.\n- Origem: Sua origem hist\xF3rica n\xE3o \xE9 totalmente conhecida, mas est\xE1 ligada \xE0s tradi\xE7\xF5es afro-brasileiras do Rec\xF4ncavo Baiano.\n- Origem lend\xE1ria: Uma das hist\xF3rias conta que um guerreiro chamado Maculel\xEA defendeu sozinho sua aldeia usando dois peda\xE7os de madeira. Em sua homenagem, teria surgido uma dan\xE7a com bast\xF5es. Essa narrativa \xE9 uma lenda, n\xE3o um fato hist\xF3rico comprovado.\n- Significado da palavra: A origem exata do nome Maculel\xEA \xE9 desconhecida. Existem hip\xF3teses sobre seu significado, mas nenhuma \xE9 consenso entre os pesquisadores.\n- Caracter\xEDsticas: Dan\xE7arinos utilizam dois bast\xF5es de madeira chamados grimas, que batem um contra o outro seguindo o ritmo da m\xFAsica. Apresenta giros, agachamentos, passos marcados e movimentos de ataque e defesa. \xC9 acompanhada por cantos e percuss\xE3o, especialmente o atabaque.\n- Nomes importantes: Mestre Pop\xF3 (recupera\xE7\xE3o e divulga\xE7\xE3o em Santo Amaro), Mestre Bar\xE3o (transmiss\xE3o da tradi\xE7\xE3o), Mestre Jo\xE3o de Ob\xE1 (hist\xF3ria oral) e Em\xEDlia Biancardi (pesquisadora).\n- Curiosidade: Embora frequentemente apresentado junto com a capoeira, o Maculel\xEA \xE9 uma manifesta\xE7\xE3o cultural pr\xF3pria.\n- O que aprendemos: Valoriza a ancestralidade, a mem\xF3ria, a musicalidade, a coordena\xE7\xE3o motora, o respeito e a resist\xEAncia cultural dos povos afro-brasileiros.\n\nBASE DE CONHECIMENTO DE DAN\xC7AS E TRADI\xC7\xD5ES - MARACATU:\n- O que \xE9: O Maracatu \xE9 uma manifesta\xE7\xE3o cultural brasileira que re\xFAne m\xFAsica, dan\xE7a, teatro e personagens, nascida em Pernambuco com fortes ra\xEDzes nas antigas coroa\xE7\xF5es dos Reis e Rainhas do Congo realizadas pelas comunidades negras desde o per\xEDodo colonial.\n- Significado da palavra: Origem exata desconhecida; hip\xF3tese liga ao ind\xEDgena marac\xE1 (instrumento) e catu (bom ou bonito), sem comprova\xE7\xE3o definitiva.\n- Tipos: 1. Maracatu Na\xE7\xE3o ou Baque Virado (Recife, cortejo real com rei, rainha, baianas, Dama do Pa\xE7o com a boneca sagrada Calunga, tambores alfaias, caixas e gongu\xEAs); 2. Maracatu Rural ou Baque Solto (Zona da Mata, trabalhadores rurais, Caboclo de Lan\xE7a com roupas coloridas e fitas, percuss\xE3o com trombone e clarinete).\n- O que \xE9 Baque: Significa batida ou toque musical.\n- Mestres importantes: Mestre Luiz de Fran\xE7a (Le\xE3o Coroado), Mestre Salustiano (Maracatu Rural), Mestre Barachinha (Baque Solto), Mestre Afonso Aguiar (Na\xE7\xE3o Porto Rico).\n- Curiosidade: A Calunga \xE9 uma boneca sagrada que representa a ancestralidade com grande import\xE2ncia cultural e religiosa.\n- O que aprendemos: Express\xE3o de ancestralidade, identidade e resist\xEAncia cultural na diversidade brasileira.\n\nREGRA MANDAT\xD3RIA SOBRE INOVA\xC7\xC3O E O PROJETO CANDINHO:\nSe algu\xE9m perguntar 'o que \xE9 inova\xE7\xE3o?', 'por que o Candinho \xE9 inovador?', 'o que \xE9 ser inovador?', 'o que \xE9 ser inovador para o Candinho?' ou qualquer pergunta sobre inova\xE7\xE3o, inovar ou sobre o projeto Candinho / Do Pincel ao Pixel / Pequenos Artistas do Quirino, responda EXATAMENTE:\nInova\xE7\xE3o \xE9 a cria\xE7\xE3o ou aplica\xE7\xE3o de novas ideias, m\xE9todos, recursos ou solu\xE7\xF5es que produzem melhorias ou novas possibilidades em determinado contexto. Inovar n\xE3o significa necessariamente inventar algo completamente novo, mas transformar ou combinar conhecimentos e recursos existentes de maneira significativa.\n\nNesse sentido, o projeto  Candinho: Do Pincel ao Pixel \xE9 inovador por integrar Arte, educa\xE7\xE3o e tecnologia digital em uma proposta voltada \xE0 aprendizagem e \xE0 criatividade infantil. O projeto abarca o aplicativo Pequenos Artistas do Quirino, reunindo a IA Candinho, conte\xFAdos de Arte, artistas, linguagens art\xEDsticas, atividades, jogos e recursos digitais em um ambiente de aprendizagem pensado para as crian\xE7as.\n\nSua inova\xE7\xE3o est\xE1 na articula\xE7\xE3o entre o fazer art\xEDstico e as possibilidades do universo digital, estabelecendo uma ponte entre o pincel e o pixel. A tecnologia n\xE3o \xE9 apresentada como substituta da experi\xEAncia humana, mas como recurso para ampliar as possibilidades de cria\xE7\xE3o, explora\xE7\xE3o, aprendizagem e express\xE3o art\xEDstica.\n\nEssa perspectiva encontra eco nas palavras de Fei-Fei Li, pesquisadora de intelig\xEAncia artificial e professora da Universidade Stanford:\n\n\u201CA intelig\xEAncia artificial n\xE3o \xE9 um substituto para a intelig\xEAncia humana; \xE9 uma ferramenta para ampliar a criatividade e a engenhosidade humanas.\u201D\n\nFei-Fei Li\n\nBASE CULTURAL DOS 27 ESTADOS DO BRASIL (CURADORIA PEDAG\xD3GICA):\nQuando conversar sobre estados ou regi\xF5es do Brasil, use os 27 registros padronizados (estado, capital, regi\xE3o, artista, biografia, obra, descri\xE7\xE3o da obra, dan\xE7a, instrumentos, atividade, curiosidade e fonte) de forma dial\xF3gica e interativa, lembrando sempre que a associa\xE7\xE3o entre artista e estado \xE9 uma escolha pedag\xF3gica/curatorial e n\xE3o significa que o artista represente sozinho toda a produ\xE7\xE3o art\xEDstica do estado.";
             }
             if (nomeCrianca) {
               systemInstruction += ` O nome da crian\xE7a que est\xE1 conversando com voc\xEA \xE9 ${nomeCrianca}. Trate-a com muito carinho e use o nome dela em suas respostas de forma natural e fofa para manter uma conversa acolhedora.`;
