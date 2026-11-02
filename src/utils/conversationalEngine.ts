@@ -3179,6 +3179,84 @@ O círculo cromático é como uma bússola das cores. Ele ajuda os artistas a de
     resposta: '🥁 **CARIMBÓ**\n\n**Origem:**\nO Carimbó nasceu no estado do Pará, no norte do Brasil, criado pela mistura das culturas indígena, negra e portuguesa.\n\n**Características:**\nÉ uma dança de roda alegre e de ritmo rápido. As dançarinas usam saias imensas e coloridas que giram e fazem desenhos no ar, enquanto os dançarinos tentam recolher um lenço do chão apenas dobrando o corpo!',
     matchedKey: 'carimbo'
   },
+  {
+    palavras: [
+      'maculele', 'maculelê', 'danca maculele', 'dança maculelê', 'dança maculele', 'danca maculelê',
+      'danca do maculele', 'dança do maculelê', 'o que e maculele', 'o que é maculelê',
+      'o que e o maculele', 'o que é o maculelê', 'historia do maculele', 'história do maculelê',
+      'origem do maculele', 'origem do maculelê', 'mestre popo', 'mestre popó',
+      'mestre barao', 'mestre barão', 'mestre joao de oba', 'mestre joão de obá',
+      'emilia biancardi', 'emília biancardi', 'grimas', 'bastões do maculele', 'bastoes do maculele',
+      'fale sobre o maculele', 'fale do maculele', 'conte sobre o maculele', 'me fale sobre o maculele'
+    ],
+    resposta: `## Maculelê: dança, ritmo e tradição afro-brasileira
+
+O Maculelê é uma manifestação cultural afro-brasileira que mistura dança, música e movimentos de luta. É tradicional da cidade de Santo Amaro, na Bahia, e representa a riqueza e a resistência da cultura negra no Brasil.
+
+Origem: sua origem histórica não é totalmente conhecida, mas está ligada às tradições afro-brasileiras do Recôncavo Baiano.
+
+Origem lendária: uma das histórias conta que um guerreiro chamado Maculelê defendeu sozinho sua aldeia usando dois pedaços de madeira. Em sua homenagem, teria surgido uma dança com bastões. Essa narrativa é uma lenda, não um fato histórico comprovado.
+
+Significado da palavra: a origem exata do nome Maculelê é desconhecida. Existem hipóteses sobre seu significado, mas nenhuma é consenso entre os pesquisadores.
+
+Características: os dançarinos utilizam dois bastões de madeira chamados grimas, que batem um contra o outro seguindo o ritmo da música. A dança apresenta giros, agachamentos, passos marcados e movimentos de ataque e defesa. É acompanhada por cantos e instrumentos de percussão, especialmente o atabaque.
+
+Nomes importantes:
+
+- Mestre Popó: fundamental para recuperar e divulgar o Maculelê em Santo Amaro.
+- Mestre Barão: importante na transmissão da tradição.
+- Mestre João de Obá: lembrado na história oral da manifestação.
+- Emília Biancardi: pesquisadora que contribuiu para registrar e divulgar o Maculelê.
+
+Curiosidade: embora seja frequentemente apresentado junto com a capoeira, o Maculelê é uma manifestação cultural própria.
+
+O que aprendemos? O Maculelê valoriza a ancestralidade, a memória, a musicalidade, a coordenação motora, o respeito e a resistência cultural dos povos afro-brasileiros.`,
+    matchedKey: 'maculele'
+  },
+  {
+    palavras: [
+      'maracatu', 'maracatus', 'danca maracatu', 'dança maracatu', 'dança do maracatu', 'danca do maracatu',
+      'o que e maracatu', 'o que e o maracatu', 'o que é maracatu', 'o que é o maracatu',
+      'maracatu nacao', 'maracatu nação', 'baque virado', 'maracatu rural', 'baque solto',
+      'caboclo de lanca', 'caboclo de lança', 'calunga', 'dama do paco', 'dama do paço',
+      'o que significa baque', 'significado de baque', 'o que e baque', 'o que é baque',
+      'mestre luiz de franca', 'mestre luiz de frança', 'mestre salustiano', 'mestre barachinha',
+      'mestre afonso aguiar', 'leao coroado', 'leão coroado', 'maracatu porto rico',
+      'alfaia', 'alfaias', 'maracatu pernambuco', 'maracatu de pernambuco',
+      'fale sobre o maracatu', 'fale do maracatu', 'conte sobre o maracatu', 'me fale sobre o maracatu'
+    ],
+    resposta: `## Maracatu: música, dança e tradição pernambucana
+
+O Maracatu é uma manifestação cultural brasileira que reúne música, dança, teatro e personagens. Surgiu em Pernambuco, com fortes raízes nas tradições africanas, especialmente nas antigas coroações dos Reis e Rainhas do Congo, realizadas pelas comunidades negras desde o período colonial.
+
+Significado da palavra: a origem exata do nome Maracatu é desconhecida. Uma hipótese relaciona a palavra ao termo indígena maracá (instrumento musical) e catu (bom ou bonito), mas não há comprovação definitiva.
+
+Tipos de Maracatu:
+1. Maracatu Nação ou Baque Virado: é uma manifestação tradicional do Recife. Apresenta um cortejo real com rei, rainha, princesas, baianas, porta-estandarte e Dama do Paço, que carrega a Calunga, uma boneca sagrada. Sua música é marcada pelos tambores chamados alfaias, além de caixas e gonguês.
+
+2. Maracatu Rural ou Baque Solto: surgiu entre trabalhadores dos engenhos de cana-de-açúcar da Zona da Mata pernambucana. Seu personagem mais conhecido é o Caboclo de Lança, que usa roupas coloridas, grandes golas bordadas e fitas. Sua música combina percussão e instrumentos de sopro, como trombone e clarinete.
+
+O que significa Baque?
+Baque significa batida ou toque musical. O Baque Virado e o Baque Solto possuem ritmos, instrumentos e características diferentes.
+
+Principais mestres e nomes importantes:
+- Mestre Luiz de França: referência histórica do Maracatu Leão Coroado.
+- Mestre Salustiano: importante divulgador da cultura popular pernambucana e do Maracatu Rural.
+- Mestre Barachinha: conhecido mestre e compositor do Maracatu de Baque Solto.
+- Mestre Afonso Aguiar: referência do Maracatu Nação Porto Rico.
+
+Curiosidade:
+A Calunga é uma boneca sagrada carregada pela Dama do Paço no Maracatu Nação. Ela representa a ancestralidade e possui grande importância religiosa e cultural.
+
+O que aprendemos? O Maracatu é uma expressão de ancestralidade, identidade e resistência cultural. Por meio da música, da dança e dos cortejos, preserva histórias e tradições que fazem parte da diversidade brasileira.
+
+Referências bibliográficas e para pesquisa:
+1. FUNDAÇÃO JOAQUIM NABUCO (FUNDAJ). Pesquisas e materiais sobre os Maracatus-Nação de Pernambuco. Disponível em: Fundação Joaquim Nabuco.
+2. IPHAN. Maracatu Nação: patrimônio cultural do Brasil. Instituto do Patrimônio Histórico e Artístico Nacional. Disponível em: Portal do IPHAN.
+3. BIANCARDI, Emília. Raízes musicais da Bahia. Rio de Janeiro: Omar G., 2000.
+4. Câmara dos Deputados: materiais sobre o Maracatu.`,
+    matchedKey: 'maracatu'
+  },
 
   // ===== TEATRO =====
   { 
@@ -5398,7 +5476,11 @@ export function tornarRespostaDialogica(reply: string, matchedKey?: string): str
     matchedKey.startsWith("estados_brasil_") ||
     matchedKey.includes("followup") ||
     matchedKey === "inovacao" ||
-    matchedKey.includes("inovac")
+    matchedKey.includes("inovac") ||
+    matchedKey === "maculele" ||
+    matchedKey === "danca_maculele" ||
+    matchedKey === "maracatu" ||
+    matchedKey === "danca_maracatu"
   )) {
     return reply;
   }

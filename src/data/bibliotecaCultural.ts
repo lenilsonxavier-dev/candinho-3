@@ -623,6 +623,204 @@ Hoje, sua obra é reconhecida internacionalmente e considerada um dos maiores te
     emocao: "energia",
     nivel: "leve"
   },
+  maculele: {
+    tema: "cultura_afro_brasileira",
+    subtema: "maculele",
+    palavras_chave: [
+      "maculele",
+      "maculelê",
+      "danca maculele",
+      "dança maculele",
+      "dança maculelê",
+      "danca do maculele",
+      "dança do maculelê",
+      "o que e maculele",
+      "o que e o maculele",
+      "o que é maculelê",
+      "o que é o maculelê",
+      "historia do maculele",
+      "história do maculelê",
+      "origem do maculele",
+      "origem do maculelê",
+      "grimas",
+      "bastões do maculele",
+      "bastoes do maculele",
+      "mestre popo",
+      "mestre popó",
+      "mestre barao",
+      "mestre barão",
+      "mestre joao de oba",
+      "mestre joão de obá",
+      "emilia biancardi",
+      "emília biancardi",
+      "santo amaro maculele"
+    ],
+    inicio: [
+      "🪵🥁 **Maculelê: dança, ritmo e tradição afro-brasileira**\n\nO Maculelê é uma manifestação cultural afro-brasileira que mistura dança, música e movimentos de luta. É tradicional da cidade de Santo Amaro, na Bahia, e representa a riqueza e a resistência da cultura negra no Brasil."
+    ],
+    explicacao_curta: [
+      "O Maculelê é uma manifestação cultural afro-brasileira que mistura dança, música e movimentos de luta. É tradicional da cidade de Santo Amaro, na Bahia, e representa a riqueza e a resistência da cultura negra no Brasil."
+    ],
+    explicacao_aprofundada: [
+      "**Origem:** sua origem histórica não é totalmente conhecida, mas está ligada às tradições afro-brasileiras do Recôncavo Baiano.\n\n" +
+      "**Origem lendária:** uma das histórias conta que um guerreiro chamado Maculelê defendeu sozinho sua aldeia usando dois pedaços de madeira. Em sua homenagem, teria surgido uma dança com bastões. Essa narrativa é uma lenda, não um fato histórico comprovado.\n\n" +
+      "**Significado da palavra:** a origem exata do nome Maculelê é desconhecida. Existem hipóteses sobre seu significado, mas nenhuma é consenso entre os pesquisadores.\n\n" +
+      "**Características:** os dançarinos utilizam dois bastões de madeira chamados grimas, que batem um contra o outro seguindo o ritmo da música. A dança apresenta giros, agachamentos, passos marcados e movimentos de ataque e defesa. É acompanhada por cantos e instrumentos de percussão, especialmente o atabaque.\n\n" +
+      "**Nomes importantes:**\n" +
+      "• **Mestre Popó:** fundamental para recuperar e divulgar o Maculelê em Santo Amaro.\n" +
+      "• **Mestre Barão:** importante na transmissão da tradição.\n" +
+      "• **Mestre João de Obá:** lembrado na história oral da manifestação.\n" +
+      "• **Emília Biancardi:** pesquisadora que contribuiu para registrar e divulgar o Maculelê."
+    ],
+    curiosidade: [
+      "Embora seja frequentemente apresentado junto com a capoeira, o Maculelê é uma manifestação cultural própria."
+    ],
+    interacao: [
+      "Você já experimentou bater dois gravetinhos ou lápis no ritmo contagiante da música?"
+    ],
+    atividade: [
+      "Pegue dois lápis de cor e tente criar um ritmo de batidas leves imitando o som das grimas do Maculelê! 🪵🎶"
+    ],
+    final: [
+      "**O que aprendemos?** O Maculelê valoriza a ancestralidade, a memória, a musicalidade, a coordenação motora, o respeito e a resistência cultural dos povos afro-brasileiros. ❤️✊"
+    ],
+    resposta_direta: `## Maculelê: dança, ritmo e tradição afro-brasileira
+
+O Maculelê é uma manifestação cultural afro-brasileira que mistura dança, música e movimentos de luta. É tradicional da cidade de Santo Amaro, na Bahia, e representa a riqueza e a resistência da cultura negra no Brasil.
+
+**Origem:** sua origem histórica não é totalmente conhecida, mas está ligada às tradições afro-brasileiras do Recôncavo Baiano.
+
+**Origem lendária:** uma das histórias conta que um guerreiro chamado Maculelê defendeu sozinho sua aldeia usando dois pedaços de madeira. Em sua homenagem, teria surgido uma dança com bastões. Essa narrativa é uma lenda, não um fato histórico comprovado.
+
+**Significado da palavra:** a origem exata do nome Maculelê é desconhecida. Existem hipóteses sobre seu significado, mas nenhuma é consenso entre os pesquisadores.
+
+**Características:** os dançarinos utilizam dois bastões de madeira chamados grimas, que batem um contra o outro seguindo o ritmo da música. A dança apresenta giros, agachamentos, passos marcados e movimentos de ataque e defesa. É acompanhada por cantos e instrumentos de percussão, especialmente o atabaque.
+
+**Nomes importantes:**
+
+- Mestre Popó: fundamental para recuperar e divulgar o Maculelê em Santo Amaro.
+- Mestre Barão: importante na transmissão da tradição.
+- Mestre João de Obá: lembrado na história oral da manifestação.
+- Emília Biancardi: pesquisadora que contribuiu para registrar e divulgar o Maculelê.
+
+**Curiosidade:** embora seja frequentemente apresentado junto com a capoeira, o Maculelê é uma manifestação cultural própria.
+
+**O que aprendemos?** O Maculelê valoriza a ancestralidade, a memória, a musicalidade, a coordenação motora, o respeito e a resistência cultural dos povos afro-brasileiros.`,
+    emocao: "resistencia",
+    nivel: "leve"
+  },
+  maracatu: {
+    tema: "cultura_afro_brasileira",
+    subtema: "maracatu",
+    palavras_chave: [
+      "maracatu",
+      "maracatus",
+      "danca maracatu",
+      "dança maracatu",
+      "dança do maracatu",
+      "danca do maracatu",
+      "o que e maracatu",
+      "o que e o maracatu",
+      "o que é maracatu",
+      "o que é o maracatu",
+      "maracatu nacao",
+      "maracatu nação",
+      "baque virado",
+      "maracatu rural",
+      "baque solto",
+      "caboclo de lanca",
+      "caboclo de lança",
+      "calunga",
+      "dama do paco",
+      "dama do paço",
+      "o que significa baque",
+      "significado de baque",
+      "o que e baque",
+      "o que é baque",
+      "mestre luiz de franca",
+      "mestre luiz de frança",
+      "mestre salustiano",
+      "mestre barachinha",
+      "mestre afonso aguiar",
+      "leao coroado",
+      "leão coroado",
+      "maracatu porto rico",
+      "alfaia",
+      "alfaias",
+      "maracatu pernambuco",
+      "maracatu de pernambuco"
+    ],
+    inicio: [
+      "👑🥁 **Maracatu: música, dança e tradição pernambucana**\n\nO Maracatu é uma manifestação cultural brasileira que reúne música, dança, teatro e personagens. Surgiu em Pernambuco, com fortes raízes nas tradições africanas, especialmente nas antigas coroações dos Reis e Rainhas do Congo, realizadas pelas comunidades negras desde o período colonial."
+    ],
+    explicacao_curta: [
+      "O Maracatu é uma manifestação cultural brasileira que reúne música, dança, teatro e personagens, nascida em Pernambuco com fortes raízes afro-brasileiras e nas coroações dos Reis e Rainhas do Congo."
+    ],
+    explicacao_aprofundada: [
+      "**Significado da palavra:** a origem exata do nome Maracatu é desconhecida. Uma hipótese relaciona a palavra ao termo indígena maracá (instrumento musical) e catu (bom ou bonito), mas não há comprovação definitiva.\n\n" +
+      "**Tipos de Maracatu:**\n" +
+      "1. **Maracatu Nação ou Baque Virado:** é uma manifestação tradicional do Recife. Apresenta um cortejo real com rei, rainha, princesas, baianas, porta-estandarte e Dama do Paço, que carrega a Calunga, uma boneca sagrada. Sua música é marcada pelos tambores chamados alfaias, além de caixas e gonguês.\n" +
+      "2. **Maracatu Rural ou Baque Solto:** surgiu entre trabalhadores dos engenhos de cana-de-açúcar da Zona da Mata pernambucana. Seu personagem mais conhecido é o Caboclo de Lança, que usa roupas coloridas, grandes golas bordadas e fitas. Sua música combina percussão e instrumentos de sopro, como trombone e clarinete.\n\n" +
+      "**O que significa Baque?**\n" +
+      "Baque significa batida ou toque musical. O Baque Virado e o Baque Solto possuem ritmos, instrumentos e características diferentes.\n\n" +
+      "**Principais mestres e nomes importantes:**\n" +
+      "• **Mestre Luiz de França:** referência histórica do Maracatu Leão Coroado.\n" +
+      "• **Mestre Salustiano:** importante divulgador da cultura popular pernambucana e do Maracatu Rural.\n" +
+      "• **Mestre Barachinha:** conhecido mestre e compositor do Maracatu de Baque Solto.\n" +
+      "• **Mestre Afonso Aguiar:** referência do Maracatu Nação Porto Rico."
+    ],
+    curiosidade: [
+      "A Calunga é uma boneca sagrada carregada pela Dama do Paço no Maracatu Nação. Ela representa a ancestralidade e possui grande importância religiosa e cultural."
+    ],
+    interacao: [
+      "Você já ouviu o estrondo emocionante de vários tambores alfaias tocando juntos?"
+    ],
+    atividade: [
+      "Desenhe o Caboclo de Lança com sua gola brilhante e cheia de fitas coloridas ou um grande tambor alfaia decorado! 🎨🥁"
+    ],
+    final: [
+      "**O que aprendemos?** O Maracatu é uma expressão de ancestralidade, identidade e resistência cultural. Por meio da música, da dança e dos cortejos, preserva histórias e tradições que fazem parte da diversidade brasileira."
+    ],
+    resposta_direta: `## Maracatu: música, dança e tradição pernambucana
+
+O Maracatu é uma manifestação cultural brasileira que reúne música, dança, teatro e personagens. Surgiu em Pernambuco, com fortes raízes nas tradições africanas, especialmente nas antigas coroações dos Reis e Rainhas do Congo, realizadas pelas comunidades negras desde o período colonial.
+
+**Significado da palavra:** a origem exata do nome Maracatu é desconhecida. Uma hipótese relaciona a palavra ao termo indígena maracá (instrumento musical) e catu (bom ou bonito), mas não há comprovação definitiva.
+
+### Tipos de Maracatu
+
+1. **Maracatu Nação ou Baque Virado:** é uma manifestação tradicional do Recife. Apresenta um cortejo real com rei, rainha, princesas, baianas, porta-estandarte e Dama do Paço, que carrega a Calunga, uma boneca sagrada. Sua música é marcada pelos tambores chamados alfaias, além de caixas e gonguês.
+
+2. **Maracatu Rural ou Baque Solto:** surgiu entre trabalhadores dos engenhos de cana-de-açúcar da Zona da Mata pernambucana. Seu personagem mais conhecido é o Caboclo de Lança, que usa roupas coloridas, grandes golas bordadas e fitas. Sua música combina percussão e instrumentos de sopro, como trombone e clarinete.
+
+### O que significa Baque?
+
+Baque significa batida ou toque musical. O Baque Virado e o Baque Solto possuem ritmos, instrumentos e características diferentes.
+
+### Principais mestres e nomes importantes
+
+- **Mestre Luiz de França:** referência histórica do Maracatu Leão Coroado.
+- **Mestre Salustiano:** importante divulgador da cultura popular pernambucana e do Maracatu Rural.
+- **Mestre Barachinha:** conhecido mestre e compositor do Maracatu de Baque Solto.
+- **Mestre Afonso Aguiar:** referência do Maracatu Nação Porto Rico.
+
+### Curiosidade
+
+A Calunga é uma boneca sagrada carregada pela Dama do Paço no Maracatu Nação. Ela representa a ancestralidade e possui grande importância religiosa e cultural.
+
+### O que aprendemos?
+
+O Maracatu é uma expressão de ancestralidade, identidade e resistência cultural. Por meio da música, da dança e dos cortejos, preserva histórias e tradições que fazem parte da diversidade brasileira.
+
+---
+📚 **Referências bibliográficas e para pesquisa:**
+1. FUNDAÇÃO JOAQUIM NABUCO (FUNDAJ). Pesquisas e materiais sobre os Maracatus-Nação de Pernambuco. Disponível em: Fundação Joaquim Nabuco.
+2. IPHAN. Maracatu Nação: patrimônio cultural do Brasil. Instituto do Patrimônio Histórico e Artístico Nacional. Disponível em: Portal do IPHAN.
+3. BIANCARDI, Emília. Raízes musicais da Bahia. Rio de Janeiro: Omar G., 2000.
+4. Câmara dos Deputados: materiais sobre o Maracatu.`,
+    emocao: "resistencia",
+    nivel: "leve"
+  },
   religiosidade: {
     tema: "cultura_afro_brasileira",
     subtema: "religiosidade",
@@ -5675,9 +5873,9 @@ Os artistas impressionisas preferiam pintar ao ar livre para observar as mudanç
     emocao: "energia",
     nivel: "leve"
   },
-  maracatu: {
+  maracatu_ritmo: {
     tema: "ritmos_musicais",
-    subtema: "maracatu",
+    subtema: "maracatu_ritmo",
     palavras_chave: ["maracatu", "ritmo maracatu", "musica afro brasileira maracatu"],
     inicio: ["O maracatu possui tambores fortes e marcantes 🥁"],
     explicacao_curta: ["Esse ritmo faz parte da cultura afro-brasileira."],

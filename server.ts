@@ -618,6 +618,26 @@ const ARTISTS_GUARANTEED_IMAGES: Record<string, { imagemUrl: string; titulo: str
     titulo: "Samba de Roda do Recôncavo - Bahia",
     credito: "Wikimedia Commons"
   },
+  maculele: {
+    imagemUrl: "https://i.imgur.com/fUVspkz.jpeg",
+    titulo: "Maculelê: dança, ritmo e tradição afro-brasileira",
+    credito: "Wikimedia Commons"
+  },
+  danca_maculele: {
+    imagemUrl: "https://i.imgur.com/fUVspkz.jpeg",
+    titulo: "Maculelê: dança, ritmo e tradição afro-brasileira",
+    credito: "Wikimedia Commons"
+  },
+  maracatu: {
+    imagemUrl: "https://i.imgur.com/h4rxUqE.jpeg",
+    titulo: "Maracatu: música, dança e tradição pernambucana",
+    credito: "Wikimedia Commons"
+  },
+  danca_maracatu: {
+    imagemUrl: "https://i.imgur.com/h4rxUqE.jpeg",
+    titulo: "Maracatu: música, dança e tradição pernambucana",
+    credito: "Wikimedia Commons"
+  },
   danca_brasil: {
     imagemUrl: "https://i.imgur.com/CVHkdCZ.jpg",
     titulo: "Dança Tradicional no Brasil",
@@ -1152,6 +1172,12 @@ async function buscarImagem(pergunta: string, matchedKey?: string, lib?: any) {
     }
     if (lowerQuery.includes("carimbo") || lowerQuery.includes("carimbó")) {
       return ARTISTS_GUARANTEED_IMAGES.carimbo;
+    }
+    if (lowerQuery.includes("maculele") || lowerQuery.includes("maculelê")) {
+      return ARTISTS_GUARANTEED_IMAGES.maculele;
+    }
+    if (lowerQuery.includes("maracatu") || lowerQuery.includes("maracatus")) {
+      return ARTISTS_GUARANTEED_IMAGES.maracatu;
     }
     if (lowerQuery.includes("samba") || lowerQuery.includes("samba de roda") || lowerQuery.includes("samba-enredo") || lowerQuery.includes("samba enredo")) {
       return ARTISTS_GUARANTEED_IMAGES.samba;
@@ -1849,6 +1875,23 @@ app.post("/api/groq", async (req: Request, res: Response) => {
                 "- Origem: Nasceu da mistura de tradições musicais africanas com elementos culturais desenvolvidos no Brasil. Suas raízes estão especialmente ligadas às comunidades negras, aos batuques e às rodas de música e dança. O samba de roda do Recôncavo Baiano é uma de suas importantes manifestações tradicionais. No início do século XX, o samba ganhou grande destaque no Rio de Janeiro e passou a fazer parte da identidade cultural brasileira.\n" +
                 "- Samba-enredo: Tipo de samba criado especialmente para acompanhar os desfiles das escolas de samba no Carnaval. Cada escola escolhe um enredo (história ou tema) e cria uma música para contar esse tema por meio da música, da dança, das fantasias, das alegorias e das alas.\n" +
                 "- Curiosidade: O samba de roda do Recôncavo Baiano foi reconhecido pela UNESCO como Patrimônio Cultural Imaterial da Humanidade em 2005.\n\n" +
+                "BASE DE CONHECIMENTO DE DANÇAS E TRADIÇÕES - MACULELÊ:\n" +
+                "- O que é: O Maculelê é uma manifestação cultural afro-brasileira que mistura dança, música e movimentos de luta, tradicional da cidade de Santo Amaro, na Bahia, e representa a riqueza e a resistência da cultura negra no Brasil.\n" +
+                "- Origem: Sua origem histórica não é totalmente conhecida, mas está ligada às tradições afro-brasileiras do Recôncavo Baiano.\n" +
+                "- Origem lendária: Uma das histórias conta que um guerreiro chamado Maculelê defendeu sozinho sua aldeia usando dois pedaços de madeira. Em sua homenagem, teria surgido uma dança com bastões. Essa narrativa é uma lenda, não um fato histórico comprovado.\n" +
+                "- Significado da palavra: A origem exata do nome Maculelê é desconhecida. Existem hipóteses sobre seu significado, mas nenhuma é consenso entre os pesquisadores.\n" +
+                "- Características: Dançarinos utilizam dois bastões de madeira chamados grimas, que batem um contra o outro seguindo o ritmo da música. Apresenta giros, agachamentos, passos marcados e movimentos de ataque e defesa. É acompanhada por cantos e percussão, especialmente o atabaque.\n" +
+                "- Nomes importantes: Mestre Popó (recuperação e divulgação em Santo Amaro), Mestre Barão (transmissão da tradição), Mestre João de Obá (história oral) e Emília Biancardi (pesquisadora).\n" +
+                "- Curiosidade: Embora frequentemente apresentado junto com a capoeira, o Maculelê é uma manifestação cultural própria.\n" +
+                "- O que aprendemos: Valoriza a ancestralidade, a memória, a musicalidade, a coordenação motora, o respeito e a resistência cultural dos povos afro-brasileiros.\n\n" +
+                "BASE DE CONHECIMENTO DE DANÇAS E TRADIÇÕES - MARACATU:\n" +
+                "- O que é: O Maracatu é uma manifestação cultural brasileira que reúne música, dança, teatro e personagens, nascida em Pernambuco com fortes raízes nas antigas coroações dos Reis e Rainhas do Congo realizadas pelas comunidades negras desde o período colonial.\n" +
+                "- Significado da palavra: Origem exata desconhecida; hipótese liga ao indígena maracá (instrumento) e catu (bom ou bonito), sem comprovação definitiva.\n" +
+                "- Tipos: 1. Maracatu Nação ou Baque Virado (Recife, cortejo real com rei, rainha, baianas, Dama do Paço com a boneca sagrada Calunga, tambores alfaias, caixas e gonguês); 2. Maracatu Rural ou Baque Solto (Zona da Mata, trabalhadores rurais, Caboclo de Lança com roupas coloridas e fitas, percussão com trombone e clarinete).\n" +
+                "- O que é Baque: Significa batida ou toque musical.\n" +
+                "- Mestres importantes: Mestre Luiz de França (Leão Coroado), Mestre Salustiano (Maracatu Rural), Mestre Barachinha (Baque Solto), Mestre Afonso Aguiar (Nação Porto Rico).\n" +
+                "- Curiosidade: A Calunga é uma boneca sagrada que representa a ancestralidade com grande importância cultural e religiosa.\n" +
+                "- O que aprendemos: Expressão de ancestralidade, identidade e resistência cultural na diversidade brasileira.\n\n" +
                 "REGRA MANDATÓRIA SOBRE INOVAÇÃO E O PROJETO CANDINHO:\n" +
                 "Se alguém perguntar 'o que é inovação?', 'por que o Candinho é inovador?', 'o que é ser inovador?', 'o que é ser inovador para o Candinho?' ou qualquer pergunta sobre inovação, inovar ou sobre o projeto Candinho / Do Pincel ao Pixel / Pequenos Artistas do Quirino, responda EXATAMENTE:\n" +
                 "Inovação é a criação ou aplicação de novas ideias, métodos, recursos ou soluções que produzem melhorias ou novas possibilidades em determinado contexto. Inovar não significa necessariamente inventar algo completamente novo, mas transformar ou combinar conhecimentos e recursos existentes de maneira significativa.\n\n" +

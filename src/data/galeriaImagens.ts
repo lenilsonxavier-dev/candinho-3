@@ -89,6 +89,26 @@ export const GALERIA_IMAGENS: Record<string, GaleriaItem | GaleriaItem[]> = {
     titulo: "Dança dos Caboclinhos",
     credito: "Wikimedia Commons"
   },
+  maculele: {
+    imagemUrl: "https://i.imgur.com/fUVspkz.jpeg",
+    titulo: "Maculelê: dança, ritmo e tradição afro-brasileira",
+    credito: "Wikimedia Commons"
+  },
+  danca_maculele: {
+    imagemUrl: "https://i.imgur.com/fUVspkz.jpeg",
+    titulo: "Maculelê: dança, ritmo e tradição afro-brasileira",
+    credito: "Wikimedia Commons"
+  },
+  maracatu: {
+    imagemUrl: "https://i.imgur.com/h4rxUqE.jpeg",
+    titulo: "Maracatu: música, dança e tradição pernambucana",
+    credito: "Wikimedia Commons"
+  },
+  danca_maracatu: {
+    imagemUrl: "https://i.imgur.com/h4rxUqE.jpeg",
+    titulo: "Maracatu: música, dança e tradição pernambucana",
+    credito: "Wikimedia Commons"
+  },
   tango: {
     imagemUrl: "https://i.imgur.com/S2eEbmj.jpeg",
     titulo: "Dançando Tango",
